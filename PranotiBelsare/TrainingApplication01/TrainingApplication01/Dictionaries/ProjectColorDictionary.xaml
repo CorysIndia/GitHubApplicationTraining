@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!--****************************************************
+        Define Open/Close valve colors                 
+    ****************************************************-->
+    <Color x:Key="OpenValveColor">Black</Color>
+    <Color x:Key="CloseValveColor">White</Color>
+
+    
+    <!--****************************************************
+        Define Open/Close/FullOpen valve colors 
+        and Open/Close/FullOpen limit values Open=]CloseLimitValueOfValvePosition, FullOpenLimitValueOfValvePosition[    
+    ****************************************************-->
+    <Color x:Key="GlobeValve_OpenColor">Black</Color>
+    <Color x:Key="GlobeValve_CloseColor">White</Color>
+    <Color x:Key="GlobeValve_FullOpenColor">Black</Color>
+    <system:Double x:Key="GlobeValve_FullOpenLimitValueOfPosition">98</system:Double>
+    <system:Double x:Key="GlobeValve_CloseLimitValueOfPosition">1</system:Double>    
+    
+    
+    <!--****************************************************
+          Define Open/Close pump colors on FOD faceplate 	
+    ****************************************************-->
+    <Color  x:Key="OpenMotorColor">Lime</Color>
+    <Color x:Key="CloseMotorColor">White</Color>
+    
+    
+    <!--****************************************************
+        Define the stroke color of controls 	            
+    ****************************************************-->
+    <!--<system:String x:Key="ControlsStrokeColor">green</system:String>-->
+
+
+</ResourceDictionary>

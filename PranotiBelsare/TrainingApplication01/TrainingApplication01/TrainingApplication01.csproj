@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDCB9AD1-F499-4E13-9800-08A24D5F476A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrainingApplication01</RootNamespace>
+    <AssemblyName>TrainingApplication01</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ExpressionBlendVersion>12.0.51020.0</ExpressionBlendVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Icons\application.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiproSoftware.Docking.Wpf351">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\ActiproSoftware.Docking.Wpf351.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiproSoftware.Editors.Wpf351">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\ActiproSoftware.Editors.Wpf351.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IOComp.Common">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\IOComp.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Gauge.Wpf351">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\ActiproSoftware.Gauge.Wpf351.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RSI.Common.LocalizationService">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\V3\SdkRSI\RSI.Common.LocalizationService.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.LocalizationService.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\V3\SdkRSI\RSI.Common.LocalizationService.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Instructor.Engine">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Instructor.Engine.Extension.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Ribbon.Wpf351">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\ActiproSoftware.Ribbon.Wpf351.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiproSoftware.Shared.Wpf351">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\ActiproSoftware.Shared.Wpf351.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.Wpf">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\OxyPlot.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp-WPF">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\PdfSharp-WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Xps">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\PdfSharp.Xps.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Controls.Grid">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Controls.Grid.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Services.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Services.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Instructor.Engine.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Instructor.Engine.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Ramp.Interfaces">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Ramp.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Shapes">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Shapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Ciloci.Flee">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\Ciloci.Flee.dll</HintPath>
+    </Reference>
+    <Reference Include="FleeConverter">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\FleeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="ManagedInterfaces">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\ManagedInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="PlotComponent.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\PlotComponent.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Converters">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Converters.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Localization.WpfExtensions">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Localization.WpfExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Locator">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Logger">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Mvvm">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Mvvm.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Mvvm.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Mvvm.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Tools">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Tools.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Tools.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.WPFTools">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.WPFTools.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.WPFTools.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.WPFTools.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.DataSheet.Resources">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.DataSheet.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.IndissLike.Controls">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\EmulationAssemblies\RSI\RSI.IndissLike.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Localization.Resources">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\EmulationAssemblies\RSI\RSI.Localization.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Emulation.Controls">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\EmulationAssemblies\RSI\RSI.Emulation.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Emulation.Controls.Deprecated">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\EmulationAssemblies\RSI\RSI.Emulation.Controls.Deprecated.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Core">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\EmulationAssemblies\RSI\RSI.Common.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.IndissPlus.Interactions">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.IndissPlus.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.IndissPlus.Plots">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.IndissPlus.Plots.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.IndissPlus.Solution">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.IndissPlus.Solution.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Kernel.Model">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Kernel.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Kernel.Model.Enums">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Kernel.Model.Enums.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Kernel.Model.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Kernel.Model.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.OTS.HMI">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.OTS.HMI.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.OTS.HMI.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.OTS.HMI.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Alarm.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Alarm.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Kernel.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Kernel.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.MarkupExtensions">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.MarkupExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Model">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Model.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Model.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Parameter.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Parameter.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Persistence">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Kernel.PersistedContainers">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Kernel.PersistedContainers.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.IndissPlus.Extensibility.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.IndissPlus.Extensibility.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Plot">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Plot.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Plot.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Plot.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Proxies">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Proxies.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Recorder.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Recorder.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Simulator.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Simulator.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Snapshot.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Snapshot.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Time.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Time.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.UnitConverter">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.UnitConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.UnitConverter.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.UnitConverter.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.XamlLoader">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.XamlLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.XamlLoader.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.XamlLoader.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.WPFApplication.Core">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.WPFApplication.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="BootStrap\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="BootStrap\RSIControlsStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dictionaries\ColorDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dictionaries\ProjectColorDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HMI\JournalLine.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HMI\TrayNumber.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TOC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AlarmScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BootStrap\ApplicationScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootStrap\ConnectedScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ControlGroupScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlSchemeScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BootStrap\DisconnectedScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ESDScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomeScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OverviewScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProcessScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProfileScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReportScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrendScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Trend\Trend.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Trend\TrendLabel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Trend\TrendLabelTransmit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Trend\TrendValue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmScreen.xaml.cs">
+      <DependentUpon>AlarmScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrap\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrap\ApplicationScreen.xaml.cs">
+      <DependentUpon>ApplicationScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrap\ConnectedScreen.xaml.cs">
+      <DependentUpon>ConnectedScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlGroupScreen.xaml.cs">
+      <DependentUpon>ControlGroupScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSchemeScreen.xaml.cs">
+      <DependentUpon>ControlSchemeScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrap\DisconnectedScreen.xaml.cs">
+      <DependentUpon>DisconnectedScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrap\RSIEmulationViewModel.cs" />
+    <Compile Include="ESDScreen.xaml.cs">
+      <DependentUpon>ESDScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\JournalLine.cs" />
+    <Compile Include="HMI\TrayNumber.xaml.cs">
+      <DependentUpon>TrayNumber.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomeScreen.xaml.cs">
+      <DependentUpon>HomeScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OverviewScreen.xaml.cs">
+      <DependentUpon>OverviewScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessScreen.xaml.cs">
+      <DependentUpon>ProcessScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileScreen.xaml.cs">
+      <DependentUpon>ProfileScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReportScreen.xaml.cs">
+      <DependentUpon>ReportScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Trend\Trend.xaml.cs">
+      <DependentUpon>Trend.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Trend\TrendLabelTransmit.xaml.cs">
+      <DependentUpon>TrendLabelTransmit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Trend\TrendLabel.xaml.cs">
+      <DependentUpon>TrendLabel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrendScreen.xaml.cs">
+      <DependentUpon>TrendScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Trend\TrendValue.xaml.cs">
+      <DependentUpon>TrendValue.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ConfigurationFiles\Database.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\application.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Home32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Corys logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\StartPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\IFPTraining.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

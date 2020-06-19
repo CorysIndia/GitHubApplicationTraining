@@ -1,0 +1,353 @@
+﻿<core:CoreApplication
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:core="clr-namespace:RSI.WPFApplication.Core;assembly=RSI.WPFApplication.Core"
+	SplashScreenName="Resources/splashscreen.png"
+	x:Class="TrainingApplication01.BootStrap.App">
+
+    <core:CoreApplication.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/RSI.Emulation.Controls;component/Resources.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/RSI.Common.Core;component/Resources.xaml" />
+                <ResourceDictionary Source="../TOC.xaml" />
+                <ResourceDictionary Source="../Dictionaries/ColorDictionary.xaml" />
+                <ResourceDictionary Source="../Dictionaries/ProjectColorDictionary.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/RSI.Emulation.Controls.Deprecated;component/Resources.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/BootStrap/RSIControlsStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            
+            <Style TargetType="{x:Type RSI_ValveActuator}">
+                <Setter Property="Width" Value="20" />
+                <Setter Property="ColorClose" Value="White"/>
+                <Setter Property="ColorOpen" Value="Black"/>
+                <Setter Property="ColorTravel" Value="Black"/>
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="BorderBrush" Value="Black" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type RSI_ValveActuator}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid x:Name="Body" Background="{TemplateBinding Background}" Grid.Column="1">
+
+                                    <Path x:Name="path"
+                                          Data="M0,0L1,1 1,0 0,1z"
+                                          Fill="{TemplateBinding CurrentColor}"
+                                          RenderTransformOrigin="0.5,0.5"
+                                          Stretch="Fill"
+                                          Height="{Binding ActualHeight, ElementName=Body}"
+                                          Width="{Binding ActualWidth, ElementName=Body}"
+                                          Stroke="{TemplateBinding BorderBrush}"
+                                          StrokeThickness="{TemplateBinding BorderThickness}"/>
+
+                                    <Flash x:Name="Flash"
+                                           Margin="0,-10,-10,0"
+                                           HorizontalAlignment="Right"
+                                           VerticalAlignment="Top"
+                                           Visibility="Visible"
+                                           Visitor="{Binding RelativeSource={RelativeSource TemplatedParent}}" />
+                                </Grid>
+
+                                <!--  TagName/Value  -->
+                                <Grid x:Name="Tagname" 
+                                      VerticalAlignment="Bottom" 
+                                      HorizontalAlignment="Center" 
+                                      Grid.Column="1" 
+                                      Margin="-200,0,-200,-15">
+                                    <TextBlock x:Name="textTagname"
+                                               Text="{TemplateBinding TagName}"
+                                               Visibility="{TAGNAMESBinding}" 
+                                               TextAlignment="Center" 
+                                               VerticalAlignment="Center" 
+                                               HorizontalAlignment="Center" 
+                                               Foreground="{TemplateBinding Foreground}"/>
+                                    <TextBlock x:Name="value"
+                                        Visibility="{Binding Visibility, ElementName=textTagname, Converter={VisibilityToInverseVisibility}}" 
+                                        TextAlignment="Center" 
+                                        VerticalAlignment="Center" 
+                                        HorizontalAlignment="Center" >
+                                        <Run Text="{Value PositionIndicator}"/> <Run Text="%"/>
+                                    </TextBlock>
+                                </Grid>
+                            </Grid>
+
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Orientation" Value="West">
+                                    <Setter TargetName="path" Property="RenderTransform">
+                                        <Setter.Value>
+                                            <RotateTransform Angle="-90" />
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Setter TargetName="Tagname" Property="HorizontalAlignment" Value="Left"/>
+                                    <Setter TargetName="Tagname" Property="VerticalAlignment" Value="Center"/>
+                                    <Setter TargetName="Tagname" Property="Margin" Value="0,0,-200,0"/>
+                                    <Setter TargetName="Tagname" Property="Grid.Column" Value="2"/>
+                                </Trigger>
+                                <Trigger Property="Orientation" Value="East">
+                                    <Setter TargetName="path" Property="RenderTransform">
+                                        <Setter.Value>
+                                            <RotateTransform Angle="90" />
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Setter TargetName="Tagname" Property="HorizontalAlignment" Value="Right"/>
+                                    <Setter TargetName="Tagname" Property="VerticalAlignment" Value="Center"/>
+                                    <Setter TargetName="Tagname" Property="Margin" Value="-200,0,0,0"/>
+                                    <Setter TargetName="Tagname" Property="Grid.Column" Value="0"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style TargetType="{x:Type RSI_StdSelectorIn}">
+                <Setter Property="Height" Value="43"/>
+            </Style>
+
+            <Style TargetType="{x:Type RSI_StdSelectorOut}">
+                <Setter Property="Height" Value="43"/>
+            </Style>
+
+            <Style TargetType="{x:Type RSI_AirCooler}">
+                <Setter Property="Width" Value="80"/>
+                <Setter Property="Height" Value="41"/>
+            </Style>
+
+            <Style TargetType="{x:Type RSI_PVI}">
+                <Setter Property="Margin" Value="10 0 -3 0"/>
+                <Setter Property="FODFaceplateName" Value=""/>
+            </Style>
+ 
+            <Style TargetType="{x:Type RSI_MotorActuator}">
+                <Setter Property="Width" Value="20"/>
+                <Setter Property="Height" Value="20"/>
+                <Setter Property="StandardFaceplateName" Value="Std_FODMotorActuator_FacePlate"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type RSI_MotorActuator}">
+                            <Grid>
+                                <RSIBorder BorderThickness="1" BorderBrush="Black" Background="{TemplateBinding CurrentColor}">
+                                    <RSIBorder.Animations>
+                                        <Animation Condition="$TAGNAME.ESD=True">
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="Red"/>
+                                        </Animation>
+                                    </RSIBorder.Animations>
+                                    <TextBlock Text="{TemplateBinding TagName, Converter={SubstringConverter 4}}" TextAlignment="Center"/>
+                                </RSIBorder>
+                                <Flash HorizontalAlignment="Right" Margin="0,0,-11,0" Visibility="Visible" VerticalAlignment="Top" Visitor="{Binding RelativeSource={RelativeSource TemplatedParent}}"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style TargetType="{x:Type RSI_StdGauge}">
+                <Setter Property="Width" Value="20"/>
+                <Setter Property="Height" Value="80"/>
+                <Setter Property="Color" Value="DarkRed"/>
+                <Setter Property="ParameterName" Value="PV"/>
+            </Style>
+
+            <Style TargetType="{x:Type RSI_HeatExchanger}">
+                <Setter Property="Width" Value="60"/>
+                <Setter Property="Height" Value="60"/>
+            </Style>
+            
+            <Style TargetType="{x:Type RSI_PressureSafetyValve}">
+                <Setter Property="DecimalFormat" Value="F1" />
+                <Setter Property="Height" Value="20" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="BorderBrush" Value="Black" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type RSI_PressureSafetyValve}">
+                            <Grid Background="Transparent">
+                                <Grid x:Name="draw">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="0"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.RenderTransform>
+                                        <RotateTransform Angle="{Binding Angle, RelativeSource={RelativeSource TemplatedParent}}" />
+                                    </Grid.RenderTransform>
+
+                                    <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" Width="20" Margin="5,0,0,0">
+                                        <Path Stretch="Fill" Stroke="Black" Width="1" Height="14" Canvas.Left="7.062" Canvas.Top="-5.5" Data="M7.0633986,6.6874174 L7.3125,-4.9930827"/>
+                                        <Path Stretch="Fill" Stroke="Black" Width="6" Height="3.625" Canvas.Left="4.5" Data="M4.5000596,1.875 L9.4994631,4.5" Canvas.Top="1.875"/>
+                                        <Path Stretch="Fill" Stroke="Black" Width="6" Height="3.625" Canvas.Left="4.5" Canvas.Top="-1.75" Data="M4.5000596,1.875 L9.4994631,4.5"/>
+                                        <Path Stretch="Fill" Stroke="Black" Width="6" Height="3.625" Canvas.Left="4.526" Canvas.Top="-5.401" Data="M4.5271981,-1.7764009 L9.5266016,0.84859907"/>
+                                    </Canvas>
+
+                                    <Path x:Name="path"
+                                        Grid.Row="1"
+                                        Width="{Binding ActualHeight, ElementName=path}"
+                                        Margin="5,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        Data="M0,20 L15,20 7.5,7.5 20,15 20,0 7.5,7.5 z"
+                                        Fill="{TemplateBinding ComputedColor}"
+                                        RenderTransformOrigin="0.385,0.383"
+                                        Stretch="Fill"
+                                        Stroke="{TemplateBinding BorderBrush}"
+                                        StrokeEndLineCap="Triangle"
+                                        StrokeLineJoin="Bevel"
+                                        StrokeMiterLimit="0"
+                                        StrokeStartLineCap="Triangle"/>
+                                </Grid>
+                                <!--  Flash  -->
+                                <Flash Margin="0,-10,-10,0"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Top"
+                                    Visitor="{Binding RelativeSource={RelativeSource TemplatedParent}}" />
+                            </Grid>
+                        </ControlTemplate>
+
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="RSI_Navigation_RightArrowStyle" TargetType="{x:Type RSI_Navigation}">
+                <Setter Property="Background" Value="DarkRed"/>
+            </Style>
+
+            <Style x:Key="RSI_Navigation_LeftArrowStyle" BasedOn="{StaticResource RSI_Navigation_RightArrowStyle}" TargetType="{x:Type RSI_Navigation}">
+                <Setter Property="Angle" Value="-180"/>
+            </Style>
+
+            <Style x:Key="RSI_Navigation_TextStyle" TargetType="{x:Type RSI_Navigation}">
+                <Setter Property="Width" Value="65"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="BorderBrush" Value="Black"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type RSI_Navigation}">
+                            <RSIText
+                                HorizontalContentAlignment="Center"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                FontSize="{TemplateBinding FontSize}"
+                                FontWeight="{TemplateBinding FontWeight}"
+                                TextWrapping="Wrap"
+                                Text="{TemplateBinding Text}"/>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="RSI_ValveActuator_EsdEffectStyle" TargetType="{x:Type RSI_ValveActuator}">
+                <Setter Property="Height" Value="28" />
+                <Setter Property="Width" Value="100" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type RSI_ValveActuator}">
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="0"/>
+                                </Grid.ColumnDefinitions>
+                                <Border x:Name="Border"
+                                                BorderBrush="{Value ESDStatus, Converter={IfThenElse Red:Black}}"
+                                                BorderThickness="1">
+                                            <TextBlock Text="{TemplateBinding TagName, Converter={SubstringConverter 2}}"
+                                                       Foreground="{Binding BorderBrush, ElementName=Border}"
+                                                       FontSize="16" 
+                                                       TextAlignment="Center"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center"/>
+                                </Border>
+                                <RSITouchTarget WindowLinkName="{Value ProcessDisplay}"/>                                
+
+                                <TextBlock Text="{Value ESDAction, Converter={IfThenElse CLOSE:OPEN}}"
+                                           Grid.Column="1"
+                                           Margin="2,0,-50,0"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Center"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="RSI_MotorActuator_EsdEffectStyle" TargetType="{x:Type RSI_MotorActuator}">
+                <Setter Property="Height" Value="28" />
+                <Setter Property="Width" Value="100" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type RSI_MotorActuator}">
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="0"/>
+                                </Grid.ColumnDefinitions>
+                                <Border x:Name="Border"
+                                        BorderBrush="{Value ESD, Converter={IfThenElse Red:Black}}"
+                                        BorderThickness="1">
+                                    <TextBlock Text="{TemplateBinding TagName, Converter={SubstringConverter 2}}"
+                                               Foreground="{Binding BorderBrush, ElementName=Border}"
+                                               FontSize="16" 
+                                               TextAlignment="Center"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center"/>
+                                </Border>
+                                <RSITouchTarget WindowLinkName="{Value ProcessDisplay}"/>
+
+                                <TextBlock Text="{TemplateBinding Tag}"
+                                           Grid.Column="1"
+                                           Margin="2,0,-50,0"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Center"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="RSI_PID_EsdEffectStyle" TargetType="{x:Type RSI_PID}">
+                <Setter Property="Height" Value="30" />
+                <Setter Property="Width" Value="100" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type RSI_PID}">
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="0"/>
+                                </Grid.ColumnDefinitions>
+                                <Border x:Name="Border"
+                                        BorderBrush="{Value PSW, Converter={IfThenElse Red:Black}}"
+                                        BorderThickness="1">
+                                    <TextBlock Text="{TemplateBinding TagName}"
+                                               Foreground="{Binding BorderBrush, ElementName=Border}"
+                                               FontSize="16" 
+                                               TextAlignment="Center"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center"/>
+                                </Border>
+                                <RSITouchTarget WindowLinkName="{Value ProcessDisplay}"/>
+
+                                <TextBlock Grid.Column="1"
+                                           Margin="2,0,-100,0"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Center"
+                                           FontSize="12">
+                                    <Run Text="Manu"/><LineBreak/><Run Text="OV:"/><Run Text="{TemplateBinding Tag}"/>
+                                </TextBlock>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+        </ResourceDictionary>
+    </core:CoreApplication.Resources>
+
+</core:CoreApplication>
