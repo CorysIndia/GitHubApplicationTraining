@@ -1,0 +1,67 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Class="RSIStandardEmulationV1ToV3App1.TrendValue"
+	mc:Ignorable="d">
+    <RSIStackPanel Orientation="Horizontal" 
+                   TextElement.FontSize="13.333"
+                   Height="20" >
+        <RSIStackPanel.Animations>
+            <Animation Condition="$TAGNAME = null">
+                <!--<Invisible/>-->
+                <ChangePropertyValue PropertyName="IsEnabled" Value="False"/>
+            </Animation>
+        </RSIStackPanel.Animations>
+        <RSIRectangle Width="20" Margin="10,0">
+            <RSIRectangle.Animations>
+                <Animation>
+                    <ChangePropertyValue PropertyName="Fill" Value="$COLOR"/>
+                </Animation>
+            </RSIRectangle.Animations>
+        </RSIRectangle>
+        <RSIText Text="$TAGNAME" BorderBrush="Black" BorderThickness="1" MinWidth="80" Margin="10,0" TextAlignment="Center" >
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME = null">
+                    <ChangeText Text=""/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText Text="\$TAGNAME.SL\" IsInput="True" Background="White"  MinWidth="80" Margin="10,0" TextAlignment="Center">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME = null">
+                    <ChangeText Text=""/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText Text="\$TAGNAME.SH\" IsInput="True" Background="White"  MinWidth="80" Margin="10,0" TextAlignment="Center">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME = null">
+                    <ChangeText Text=""/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText Text="\$TAGNAME.PV:#.###\" BorderBrush="Black" BorderThickness="1" MinWidth="80" Margin="10,0" TextAlignment="Center">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME = null">
+                    <ChangeText Text=""/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText Text="\$TAGNAME.PV.CursorValue:#.###\" BorderBrush="Black" BorderThickness="1" MinWidth="80" Margin="10,0" TextAlignment="Center">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME = null">
+                    <ChangeText Text=""/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText Text="\$TAGNAME.PVUnit\" BorderThickness="1" MinWidth="80" Margin="10,0" TextAlignment="Center">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME = null">
+                    <ChangeText Text=""/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSIStackPanel>
+</RSIControl>
