@@ -295,6 +295,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Graphics\Synoptic1.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="HMI\JournalLine.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -405,6 +409,9 @@
     <Compile Include="BootStrap\RSIEmulationViewModel.cs" />
     <Compile Include="ESDScreen.xaml.cs">
       <DependentUpon>ESDScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Graphics\Synoptic1.xaml.cs">
+      <DependentUpon>Synoptic1.xaml</DependentUpon>
     </Compile>
     <Compile Include="HMI\JournalLine.cs" />
     <Compile Include="HMI\TrayNumber.xaml.cs">
