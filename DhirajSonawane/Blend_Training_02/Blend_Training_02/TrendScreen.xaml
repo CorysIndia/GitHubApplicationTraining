@@ -1,0 +1,43 @@
+﻿<RSIMimic
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:local="clr-namespace:Blend_Training_02" x:Class="Blend_Training_02.TrendScreen"
+          Background="LightGray"
+          Height="1048"
+          Width="1920"
+          mc:Ignorable="d">
+
+    <local:Trend >
+        <local:Trend.Parameters>
+            <!-- Example of parameters -->
+            <!--
+            <Param Name="$TAGNAME1" Value="TT03"/>
+            <Param Name="$TAGLABEL1" Value="Column Temp"/>
+
+            <Param Name="$TAGNAME2" Value="AT01"/>
+            <Param Name="$TAGLABEL2" Value="AT01"/>
+
+            <Param Name="$TAGNAME3" Value="AT02"/>
+            <Param Name="$TAGLABEL3" Value="AT02"/>
+
+            <Param Name="$TAGNAME4" Value="FT01"/>
+            <Param Name="$TAGLABEL4" Value="FT01"/>
+
+            <Param Name="$TAGNAME5" Value="FT03"/>
+            <Param Name="$TAGLABEL5" Value="FT03 "/>
+
+            <Param Name="$TAGNAME6" Value="FT05"/>
+            <Param Name="$TAGLABEL6" Value="FT05 "/>
+
+            <Param Name="$TAGNAME7" Value="LT02"/>
+            <Param Name="$TAGLABEL7" Value="LT02 "/>
+
+            <Param Name="$TAGNAME8" Value="PT01"/>
+            <Param Name="$TAGLABEL8" Value="PT01 "/>
+            -->
+        </local:Trend.Parameters>
+    </local:Trend>
+
+</RSIMimic>

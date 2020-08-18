@@ -1,0 +1,215 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:local="clr-namespace:Blend_Training_02"
+	xmlns:System="clr-namespace:System;assembly=mscorlib"
+	mc:Ignorable="d"
+	x:Class="Blend_Training_02.Trend"
+	Width="1920" 
+	Height="1048"
+	Background="LightGray">
+    <RSIControl.Resources>
+        <System:String x:Key="Trend1Color">Red</System:String>
+        <System:String x:Key="Trend2Color">Purple</System:String>
+        <System:String x:Key="Trend3Color">Blue</System:String>
+        <System:String x:Key="Trend4Color">Green</System:String>
+        <System:String x:Key="Trend5Color">Orange</System:String>
+        <System:String x:Key="Trend6Color">Pink</System:String>
+        <System:String x:Key="Trend7Color">Brown</System:String>
+        <System:String x:Key="Trend8Color">LightBLue</System:String>
+    </RSIControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="222"/>
+        </Grid.RowDefinitions>
+        <RSITrend x:Name="MainTrend"
+			IsStyletMode="True"
+			UseCommonYAxis="True" >
+            <RSITrend.ParameterDefinitions>
+                <TrendParameterDefinition AlternateName="$TAGLABEL1"
+					Maximum="$TAGNAME1.Value.max"
+					Minimum="$TAGNAME1.Value.min"
+					TagName="$TAGNAME1.Value"
+					Color="{StaticResource Trend1Color}" />
+                <TrendParameterDefinition AlternateName="$TAGLABEL2"
+					Maximum="$TAGNAME2.Value.max"
+					Minimum="$TAGNAME2.Value.min"
+					TagName="$TAGNAME2.Value"
+					Color="{StaticResource Trend2Color}" />
+                <TrendParameterDefinition AlternateName="$TAGLABEL3"
+					Maximum="$TAGNAME3.Value.max"
+					Minimum="$TAGNAME3.Value.min"
+					TagName="$TAGNAME3.Value"
+					Color="{StaticResource Trend3Color}" />
+                <TrendParameterDefinition AlternateName="$TAGLABEL4"
+					Maximum="$TAGNAME4.Value.max"
+					Minimum="$TAGNAME4.Value.min"
+					TagName="$TAGNAME4.Value"
+					Color="{StaticResource Trend4Color}" />
+                <TrendParameterDefinition AlternateName="$TAGLABEL5"
+					Maximum="$TAGNAME5.Value.max"
+					Minimum="$TAGNAME5.Value.min"
+					TagName="$TAGNAME5.Value"
+					Color="{StaticResource Trend5Color}" />
+                <TrendParameterDefinition AlternateName="$TAGLABEL6"
+					Maximum="$TAGNAME6.Value.max"
+					Minimum="$TAGNAME6.Value.min"
+					TagName="$TAGNAME6.Value"
+					Color="{StaticResource Trend6Color}" />
+                <TrendParameterDefinition AlternateName="$TAGLABEL7"
+					Maximum="$TAGNAME7.Value.max"
+					Minimum="$TAGNAME7.Value.min"
+					TagName="$TAGNAME7.Value"
+					Color="{StaticResource Trend7Color}" />
+                <TrendParameterDefinition AlternateName="$TAGLABEL8"
+					Maximum="$TAGNAME8.Value.max"
+					Minimum="$TAGNAME8.Value.min"
+					TagName="$TAGNAME8.Value"
+					Color="{StaticResource Trend8Color}" />
+            </RSITrend.ParameterDefinitions>
+        </RSITrend>
+
+        <!-- Span  -->
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,2" HorizontalAlignment="Left">
+            <RSIButton Content="00:10:00" Margin="5,0,0,0" FontSize="16">
+                <RSIButton.Animations>
+                    <Animation Condition="$histo1  ==  0">
+                        <ChangePropertyValue PropertyName="Background" Value="#000000" />
+                        <ChangePropertyValue PropertyName="Foreground" Value="#FFFF80" />
+                    </Animation>
+                    <ClickAnimation>
+                        <Assignment Expression="0" Variable="$histo1" />
+                        <SetTrendTimespan TrendName="MainTrend" TimeSpan="00:10:00"/>
+                    </ClickAnimation>
+                </RSIButton.Animations>
+            </RSIButton>
+
+            <RSIButton Content="00:20:00" Margin="5,0,0,0" FontSize="16">
+                <RSIButton.Animations>
+                    <Animation Condition="$histo1  ==  1">
+                        <ChangePropertyValue PropertyName="Background" Value="#000000" />
+                        <ChangePropertyValue PropertyName="Foreground" Value="#FFFF80" />
+                    </Animation>
+                    <ClickAnimation>
+                        <Assignment Expression="1" Variable="$histo1" />
+                        <SetTrendTimespan TrendName="MainTrend" TimeSpan="00:20:00"/>
+                    </ClickAnimation>
+                </RSIButton.Animations>
+            </RSIButton>
+
+            <RSIButton Content="01:00:00" Margin="5,0,0,0" FontSize="16">
+                <RSIButton.Animations>
+                    <Animation Condition="$histo1  == 2">
+                        <ChangePropertyValue PropertyName="Background" Value="#000000" />
+                        <ChangePropertyValue PropertyName="Foreground" Value="#FFFF80" />
+                    </Animation>
+                    <ClickAnimation>
+                        <Assignment Expression="2" Variable="$histo1" />
+                        <SetTrendTimespan TrendName="MainTrend" TimeSpan="01:00:00"/>
+                    </ClickAnimation>
+                </RSIButton.Animations>
+            </RSIButton>
+
+            <RSIButton Content="Tracking" Margin="15,0,0,0" FontSize="16" Height="27" VerticalAlignment="Top">
+                <RSIButton.Animations>
+                    <ClickAnimation>
+                        <TrendTrack TrendName="MainTrend" />
+                    </ClickAnimation>
+                </RSIButton.Animations>
+            </RSIButton>
+        </StackPanel>
+
+        <!-- cursor time-->
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0" >
+            <TextBlock Text="Cursor time" FontSize="18.667" FontWeight="Bold"/>
+
+            <RSIText FontSize="16" Margin="5,0,0,0" Background="#000000" Foreground="#FFFF80" VerticalAlignment="Center" >
+                <RSIText.Animations>
+                    <Animation>
+                        <DisplayTrendCursorTime TrendName="MainTrend" Format="hh:mm:ss"/>
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+        </StackPanel>
+
+        <!-- Row values-->        
+        <Grid  Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <local:TrendLabel />
+            <local:TrendLabel Grid.Column="1"/>
+
+            <local:TrendLabelTransmit Grid.Row="1">
+                <local:TrendLabelTransmit.Parameters>
+                    <Param Name="$TAGNAME" Value="$TAGNAME1"/>
+                    <Param Name="$PARAM" Value="$PARAM1"/>
+                    <Param Name="$COLOR" Value="{StaticResource Trend1Color}"/>
+                </local:TrendLabelTransmit.Parameters>
+            </local:TrendLabelTransmit>
+
+            <local:TrendLabelTransmit Grid.Row="2">
+                <local:TrendLabelTransmit.Parameters>
+                    <Param Name="$TAGNAME" Value="$TAGNAME2"/>
+                    <Param Name="$COLOR" Value="{StaticResource Trend2Color}"/>
+                </local:TrendLabelTransmit.Parameters>
+            </local:TrendLabelTransmit>
+
+            <local:TrendLabelTransmit Grid.Row="3">
+                <local:TrendLabelTransmit.Parameters>
+                    <Param Name="$TAGNAME" Value="$TAGNAME3"/>
+                    <Param Name="$COLOR" Value="{StaticResource Trend3Color}"/>
+                </local:TrendLabelTransmit.Parameters>
+            </local:TrendLabelTransmit>
+
+            <local:TrendLabelTransmit Grid.Row="4">
+                <local:TrendLabelTransmit.Parameters>
+                    <Param Name="$TAGNAME" Value="$TAGNAME4"/>
+                    <Param Name="$COLOR" Value="{StaticResource Trend4Color}"/>
+                </local:TrendLabelTransmit.Parameters>
+            </local:TrendLabelTransmit>
+
+            <local:TrendLabelTransmit  Grid.Row="1" Grid.Column="1">
+                <local:TrendLabelTransmit.Parameters>
+                    <Param Name="$TAGNAME" Value="$TAGNAME5"/>
+                    <Param Name="$COLOR" Value="{StaticResource Trend5Color}"/>
+                </local:TrendLabelTransmit.Parameters>
+            </local:TrendLabelTransmit>
+
+            <local:TrendLabelTransmit  Grid.Column="1" Grid.Row="2">
+                <local:TrendLabelTransmit.Parameters>
+                    <Param Name="$TAGNAME" Value="$TAGNAME6"/>
+                    <Param Name="$COLOR" Value="{StaticResource Trend6Color}"/>
+                </local:TrendLabelTransmit.Parameters>
+            </local:TrendLabelTransmit>
+
+            <local:TrendLabelTransmit  Grid.Column="1" Grid.Row="3">
+                <local:TrendLabelTransmit.Parameters>
+                    <Param Name="$TAGNAME" Value="$TAGNAME7"/>
+                    <Param Name="$COLOR" Value="{StaticResource Trend7Color}"/>
+                </local:TrendLabelTransmit.Parameters>
+            </local:TrendLabelTransmit>
+
+            <local:TrendLabelTransmit  Grid.Column="1" Grid.Row="4">
+                <local:TrendLabelTransmit.Parameters>
+                    <Param Name="$TAGNAME" Value="$TAGNAME8"/>
+                    <Param Name="$COLOR" Value="{StaticResource Trend8Color}"/>
+                </local:TrendLabelTransmit.Parameters>
+            </local:TrendLabelTransmit>
+        </Grid>
+
+    </Grid>
+</RSIControl>
