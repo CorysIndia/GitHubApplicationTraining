@@ -24,6 +24,7 @@
         <RSICanvas x:Name="FAILURE"
                 Visibility="{FAILUREBinding}" d:IsLocked="True"/>
         <Button Content="Button" Height="128.528" Canvas.Left="352.629" Canvas.Top="451.497" Width="293.308"/>
+        <Button Content="Button1&#xD;&#xA;" Height="128.528" Canvas.Left="844.629" Canvas.Top="451.497" Width="293.308"/>
         <Button Content="Button2&#xA;" Height="128.528" Canvas.Left="630.129" Canvas.Top="644.997" Width="293.308"/>
 
     </RSICanvas>
