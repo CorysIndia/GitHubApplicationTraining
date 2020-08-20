@@ -1,0 +1,16 @@
+//ft112
+1. ASMON getting value after comparison need to be have upper range of max transmitter input irrespectivce of alarm generation.
+2. BXFR OUTPUT is not connected anywhere else
+
+
+//STEPS FOR DCS WORKING
+1. Generate bulk modelling for SPPA_ASMON,SPPA_TTMON,SPPA_BSMON,SPPA_CCTRL_CC based on IODB received 
+2. Generate same amount of SPPA_NOT as valid signal from SPPA_ASMON,SPPA_TTMON to CCTRl_CC
+3. exctract data from IODB for SPPA_ASMON,SPPA_TTMON,SPPA_BSMON,SPPA_CCTRL_CC and configured with Indiss_Config.
+4. Configured SPPA_ASMON,SPPA_TTMON,SPPA_BSMON Limit Signal Generation1-4(LSG1-LSG4) same as that of .HI_LOW1 to HI_LOW4
+5. Most of SPPA_ASMON & SPPA_TTMON are DCS IO Type of (AI,AIR,RTD).---check before implementation
+6. Most of SPPA_BSMON are DCS IO Type of (DI). ---check before implementation
+7. Most of SPPA_CCTRL_CC are DCS IO Type of (AOR).---check before implementation
+8. Use Tag No. as prefix to SPPA block for easy identification (ex. 171TI104_SPPA_AND etc.)
+9. Use Connection mgmt Plugins for easy connection between Process Transmitter and DCS blocks.
+
