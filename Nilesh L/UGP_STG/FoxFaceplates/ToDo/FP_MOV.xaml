@@ -1,0 +1,327 @@
+<RSIFacePlate
+    x:Class="UGP_STG.HMI.FP_MOV"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <RSICanvas
+        Width="521"
+        Height="451"
+        Background="#FF717171"
+        TextElement.FontFamily="Arial"
+        TextElement.FontSize="12">
+        <hmi:Button_Close
+            x:Name="Button_Close1"
+            Canvas.Left="93.99989"
+            Canvas.Top="366.0002"
+            Width="60.17434"
+            Height="51.578" />
+        <RSICanvas
+            Name="Execute"
+            Width="183.4253"
+            Height="48.33563"
+            Left="31.99988"
+            Top="303.056">
+            <RSIRectangle
+                x:Name="Element25"
+                Width="183.4253"
+                Height="48.33563"
+                Fill="#FF000000"
+                Stroke="#FFFFFFFF"
+                StrokeThickness="1" />
+            <RSIRectangle
+                x:Name="Rectangle1"
+                Width="183.4253"
+                Height="48.33563"
+                Fill="#FF000000"
+                Stroke="#FFFFFFFF"
+                StrokeThickness="1">
+                <RSIRectangle.Animations>
+                    <Animation />
+                    <!--  InTouch:ZHMI_COMMAND = "Momentary " + PICK + " 3 1";  -->
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIText
+                x:Name="Element26"
+                Canvas.Left="46.11987"
+                Canvas.Top="14.3343"
+                Width="92.76682"
+                Height="19.88672"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FFFFFFFF"
+                IsHitTestVisible="False"
+                Text="EXECUTE"
+                TextElement.FontSize="12"
+                TextElement.FontWeight="Bold" />
+        </RSICanvas>
+        <RSICanvas
+            Name="Faceplate_Body"
+            Width="247"
+            Height="336.806"
+            Left="241.969"
+            Top="32.493">
+            <RSIRectangle
+                x:Name="Element3"
+                Width="247"
+                Height="336.806"
+                Fill="#FFBCBCBC"
+                Stroke="#FFFFFFFF"
+                StrokeThickness="1" />
+            <RSICanvas
+                Name="Header"
+                Width="247"
+                Height="130.2079"
+                Left="0"
+                Top="0">
+                <RSIRectangle
+                    x:Name="Element5"
+                    Width="247"
+                    Height="130.2079"
+                    Fill="#FF717171"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1" />
+                <RSIText
+                    x:Name="DESCRIPTION1"
+                    Canvas.Left="10.494"
+                    Canvas.Top="5.563"
+                    Width="198.781"
+                    VerticalContentAlignment="Center"
+                    BorderBrush="Transparent"
+                    Foreground="#FFFFFFFF"
+                    IsHitTestVisible="False"
+                    Text="\$TAGNAME.DESCRP\"
+                    TextElement.FontSize="12"
+                    TextWrapping="Wrap" />
+                <RSIText
+                    x:Name="DESCRIPTION1_Copy"
+                    Canvas.Left="10.494"
+                    Canvas.Top="30.063"
+                    Width="198.781"
+                    VerticalContentAlignment="Center"
+                    BorderBrush="Transparent"
+                    Foreground="#FFFFFFFF"
+                    IsHitTestVisible="False"
+                    Text="\$TAGNAME.TagComment1\"
+                    TextElement.FontSize="12"
+                    TextWrapping="Wrap" />
+                <RSIText
+                    x:Name="DESCRIPTION1_Copy1"
+                    Canvas.Left="10.494"
+                    Canvas.Top="54.563"
+                    Width="198.781"
+                    VerticalContentAlignment="Center"
+                    BorderBrush="Transparent"
+                    Foreground="#FFFFFFFF"
+                    IsHitTestVisible="False"
+                    Text="\$TAGNAME.TagComment2\"
+                    TextElement.FontSize="12"
+                    TextWrapping="Wrap" />
+                <RSIText
+                    x:Name="DESCRIPTION1_Copy2"
+                    Canvas.Left="10"
+                    Canvas.Top="102.937"
+                    Width="198.781"
+                    VerticalContentAlignment="Center"
+                    BorderBrush="Transparent"
+                    Foreground="#FFFFFFFF"
+                    IsHitTestVisible="False"
+                    Text="$TAGNAME"
+                    TextElement.FontSize="12"
+                    TextWrapping="Wrap" />
+                <RSIText
+                    Canvas.Left="167"
+                    Canvas.Top="72.909"
+                    Width="70"
+                    Height="40"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    FontFamily="Arial"
+                    FontSize="9.333"
+                    FontWeight="Bold"
+                    Foreground="#FFFFFF"
+                    Text="\$TAGNAME.block_alm_word\">
+                    <RSIText.Animations>
+                        <!--  UnAck  -->
+                        <Animation Condition="$TAGNAME.alm_state == 1">
+                            <Blink
+                                PropertyName="Foreground"
+                                From="Red"
+                                To="White" />
+                        </Animation>
+
+                        <!--  Ack  -->
+                        <Animation Condition="$TAGNAME.alm_state == 2">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#FF0000" />
+                        </Animation>
+                    </RSIText.Animations>
+                </RSIText>
+            </RSICanvas>
+            <RSIText
+                x:Name="Element13_2_Copy"
+                Canvas.Left="31.25"
+                Canvas.Top="233.899"
+                Width="180"
+                Height="50"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                Background="LightGray"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Foreground="White"
+                Text="LOCAL"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="12">
+                <RSIText.Animations>
+                    <Animation Condition="$TAGNAME.PositionSwitch = 1">
+                        <ChangePropertyValue PropertyName="Background" Value="gray" />
+                        <ChangeText Text="REMOTE" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText
+                x:Name="Element13_2"
+                Canvas.Left="31.25"
+                Canvas.Top="165.035"
+                Width="180"
+                Height="50"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                Background="Yellow"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Foreground="Black"
+                Text="STATUS"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="12">
+                <RSIText.Animations>
+                    <Animation Condition="$TAGNAME.LocalOpenSwitch = 1 OR $TAGNAME.RemoteOpenSwitch = 1">
+                        <ChangePropertyValue PropertyName="Background" Value="Green" />
+                        <ChangePropertyValue PropertyName="Foreground" Value="White" />
+                        <ChangeText Text="OPEN" />
+                    </Animation>
+                    <Animation Condition="$TAGNAME.LocalCloseSwitch = 1 OR $TAGNAME.RemoteCloseSwitch = 1">
+                        <ChangePropertyValue PropertyName="Background" Value="Red" />
+                        <ChangePropertyValue PropertyName="Foreground" Value="White" />
+                        <ChangeText Text="CLOSE" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+        </RSICanvas>
+        <RSIButton
+            x:Name="Element36_Copy"
+            Canvas.Left="40.75"
+            Canvas.Top="200"
+            Width="80"
+            Height="80"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Background="#FF717171"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            Content="OPEN"
+            Foreground="#FFFFFFFF"
+            IsHitTestVisible="False"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12">
+            <RSIButton.Animations>
+                <ClickAnimation Condition="$TAGNAME.PositionSwitch = 0">
+                    <Assignment Expression="1" Variable="$TAGNAME.LocalOpenSwitch" />
+                </ClickAnimation>
+                <ClickAnimation Condition="$TAGNAME.PositionSwitch = 1">
+                    <Assignment Expression="1" Variable="$TAGNAME.RemoteOpenSwitch" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            x:Name="Element36_Copy3"
+            Canvas.Left="125.75"
+            Canvas.Top="30"
+            Width="80"
+            Height="80"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Background="#FF717171"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            Content="ACK"
+            Foreground="#FFFFFFFF"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <AckUnitAlarms TagName="$TAGNAME" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            x:Name="Element36"
+            Canvas.Left="40.75"
+            Canvas.Top="30"
+            Width="80"
+            Height="80"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Background="#FF717171"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            Content="DETAIL"
+            Foreground="#FFFFFFFF"
+            IsHitTestVisible="False"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <RSIButton
+            x:Name="Element36_Copy2"
+            Canvas.Left="125.75"
+            Canvas.Top="200"
+            Width="80"
+            Height="80"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Background="#FF717171"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            Content="CLOSE"
+            Foreground="#FFFFFFFF"
+            IsHitTestVisible="False"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12">
+            <RSIButton.Animations>
+                <ClickAnimation Condition="$TAGNAME.PositionSwitch = 0">
+                    <Assignment Expression="1" Variable="$TAGNAME.LocalCloseSwitch" />
+                </ClickAnimation>
+                <ClickAnimation Condition="$TAGNAME.PositionSwitch = 1">
+                    <Assignment Expression="1" Variable="$TAGNAME.RemoteCloseSwitch" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            x:Name="Element36_Copy1"
+            Canvas.Left="83.238"
+            Canvas.Top="115"
+            Width="80"
+            Height="80"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Background="#FF717171"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            Content="STOP"
+            Foreground="#FFFFFFFF"
+            IsHitTestVisible="False"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12">
+            <RSIButton.Animations>
+                <ClickAnimation Condition="$TAGNAME.PositionSwitch = 0">
+                    <Assignment Expression="1" Variable="$TAGNAME.LocalStopSwitch" />
+                </ClickAnimation>
+                <ClickAnimation Condition="$TAGNAME.PositionSwitch = 1">
+                    <Assignment Expression="1" Variable="$TAGNAME.RemoteStopSwitch" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+    </RSICanvas>
+</RSIFacePlate>

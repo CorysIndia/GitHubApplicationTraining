@@ -1,0 +1,36 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:FP_Alarm2}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:FP_Alarm2}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" 
+                      Stretch="Fill">
+                        <RSIText x:Name="ACK_Text"
+                           Foreground="#FFFFFFFF"
+                           Width="85.72154"
+                           Height="70.38921"
+                           Background="#FF717171"
+                           BorderBrush="#FFFFFFFF"
+                           BorderThickness="1"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           Text="ACK">
+                            <RSIText.Animations>
+                                <ClickAnimation>
+                                    <AckUnitAlarms TagName="$TAGNAME" />
+                                </ClickAnimation>
+                            </RSIText.Animations>
+                        </RSIText>
+                    </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

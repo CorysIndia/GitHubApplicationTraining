@@ -1,0 +1,29 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="UGP_STG.FoxFaceplates.Controls.Almst">
+    <!--  Alarm Name  -->
+    <RSIText 
+             Foreground="#FFFFFFFF"
+             Text="\$TAGNAME.block_alm_word\"
+             HorizontalContentAlignment="Center"
+             VerticalContentAlignment="Center">
+        <RSIText.Animations>
+            <!--  UnAck  -->
+            <Animation Condition="$TAGNAME.alm_state == 1">
+                <Blink From="Red"
+                               PropertyName="Foreground"
+                               To="White" />
+            </Animation>
+
+            <!--  Ack  -->
+            <Animation Condition="$TAGNAME.alm_state == 2">
+                <ChangePropertyValue PropertyName="Foreground" Value="#FF0000" />
+            </Animation>
+        </RSIText.Animations>
+
+    </RSIText>
+</RSIControl>

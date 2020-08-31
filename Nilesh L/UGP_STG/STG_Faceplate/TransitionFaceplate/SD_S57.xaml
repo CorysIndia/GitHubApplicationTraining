@@ -1,0 +1,63 @@
+﻿<RSIFacePlate
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:HMI="clr-namespace:UGP_STG.HMI"
+	xmlns:Faceplate_Mimics="clr-namespace:UGP_STG.STG_Faceplate.Faceplate_Mimics"
+	mc:Ignorable="d"
+	x:Class="UGP_STG.STG_Faceplate.TransitionFaceplate.SD_S57"
+	Width="977" 
+	Height="755.75"
+	Background="#FFB6B6BE">
+    <RSICanvas Margin="0,-0.5,0,0.5"  >
+        <RSI_And Canvas.Left="-853.598" Canvas.Top="516.55"  ModelName="ST_S2_L1_AND1" InputNumber="6" IsPermissive="True"/>
+        <RSI_And Canvas.Left="-750.301" Canvas.Top="518.6" ModelName="ST_S1_AND02" InputNumber="2" />
+        <RSI_And Canvas.Left="-734.598" Canvas.Top="435.1" ModelName="ST_S1_AND03" InputNumber="2" />
+        <RSIRectangle Fill="DarkGray" Height="100" Canvas.Left="-513" Stroke="Black" Canvas.Top="478.6" Width="45">
+            <RSIRectangle.Animations>
+                <Animation Condition="$TAGNAME_L1AND01"/>
+            </RSIRectangle.Animations>
+        </RSIRectangle>
+        <RSIText x:Name="rSIText" Height="100" Canvas.Left="-447.5" TextWrapping="Wrap" Text="RSIText" Canvas.Top="463.63" Width="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontWeight="Bold"/>
+        <RSILine Fill="DarkGray" Height="2" Canvas.Left="-568" Stroke="Black" Canvas.Top="484.848" Width="55" StrokeThickness="2"/>
+        <RSILine Fill="DarkGray" Height="2" Canvas.Left="-568" Stroke="Black" Canvas.Top="534.1" Width="55" StrokeThickness="2"/>
+        <RSILine Fill="DarkGray" Height="2" Canvas.Left="-568" Stroke="Black" Canvas.Top="500.1" Width="55" StrokeThickness="2"/>
+        <RSILine Fill="DarkGray" Height="2" Canvas.Left="-568" Stroke="Black" Canvas.Top="516.1" Width="55" StrokeThickness="2"/>
+        <RSILine Fill="DarkGray" Height="2" Canvas.Left="-568" Stroke="Black" Canvas.Top="567.85" Width="55" StrokeThickness="2"/>
+        <RSILine Fill="DarkGray" Height="2" Canvas.Left="-568" Stroke="Black" Canvas.Top="551.6" Width="55" StrokeThickness="2"/>
+        <RSICanvas x:Name="Description01" Height="16.5" Canvas.Left="-686.083"  Canvas.Top="493.225" Width="117.708" >
+            <RSIText x:Name="rSIText01" Height="8.168" TextWrapping="Wrap" Text="RSIText" Width="117.708" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="8" Background="White" Canvas.Top="0.124"/>
+            <RSIText x:Name="rSIText01_Copy" Height="8.167" TextWrapping="Wrap" Text="LUBE OIL RESERVOIR MIST FANA" Width="117.708" VerticalContentAlignment="Center" Foreground="Black" FontSize="8" Canvas.Top="8.292" Background="White"/>
+        </RSICanvas>
+        <RSICanvas x:Name="Description_Copy" Height="16.5" Canvas.Left="-686.083"  Canvas.Top="476.725" Width="117.708" >
+            <RSIText x:Name="rSIText1" Height="8.168" TextWrapping="Wrap" Text="RSIText" Width="117.708" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="8" Background="White" Canvas.Top="0.124"/>
+            <RSIText x:Name="rSIText01_Copy1" Height="8.167" TextWrapping="Wrap" Text="LUBE OIL RESERVOIR MIST FANA" Width="117.708" VerticalContentAlignment="Center" Foreground="Black" FontSize="8" Canvas.Top="8.292" Background="White"/>
+        </RSICanvas>
+        <RSICircle x:Name="Input01NOT" Fill="White" Height="4.166" Canvas.Left="-396.931" Stroke="Black" Canvas.Top="428.001" Width="10.166" StrokeThickness="0.5"/>
+        <RSIRectangle Fill="#FF6A6A6F" Height="73.5" Stroke="Black" Width="192" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="756.402" Canvas.Top="653.579">
+            <RSIRectangle.Animations>
+                <Animation Condition="$TAGNAME_L1AND01"/>
+            </RSIRectangle.Animations>
+        </RSIRectangle>
+        <RSIText x:Name="rSIText01_Copy9" Height="17.667" TextWrapping="Wrap" Width="103.208" VerticalContentAlignment="Center" Foreground="Black" Canvas.Top="667.459" Background="White" Text="INVERTED SIGNAL" Canvas.Left="834.902" BorderBrush="Black" HorizontalContentAlignment="Center"/>
+        <RSIText x:Name="rSIText01_Copy10" Height="17.667" TextWrapping="Wrap" Width="103.208" VerticalContentAlignment="Center" Foreground="Black" Canvas.Top="692.459" Background="White" Text="RELEASE PATH" Canvas.Left="834.902" BorderBrush="Black" HorizontalContentAlignment="Center"/>
+        <RSICircle x:Name="Input01NOT_Copy4" Fill="White" Height="10.166" Stroke="Black" Width="10.166" StrokeThickness="0.5" Canvas.Left="791.234" Canvas.Top="671.581"/>
+        <RSILine x:Name="OutputResult" Fill="DarkGray" Height="2" Stroke="Lime" Width="55" StrokeThickness="2" VerticalAlignment="Stretch" Canvas.Left="773.666" Canvas.Top="702.241">
+            <RSILine.Animations>
+                <Animation Condition="$BLKName.result == 1">
+                    <ChangePropertyValue PropertyName="Stroke" Value="Green"/>
+                </Animation>
+            </RSILine.Animations>
+        </RSILine>
+        <RSIText x:Name="rSIText01_Copy11" Height="25" TextWrapping="Wrap" Width="212.917" VerticalContentAlignment="Center" Foreground="White" Canvas.Top="25.959" Background="#FF010081" Text="SHUTDOWN SEQUENCE T57" Canvas.Left="735.485" BorderBrush="Black" HorizontalContentAlignment="Center" FontSize="16"/>
+        <HMI:Button Canvas.Left="513.402" Canvas.Top="265.322" BLKName="SD_S57_L1_AND1" BLKText="&amp;" INPUT_01="True" INPUT_02="True" INPUT_01_TEXT01="TXAL2711_PP_SWP" INPUT_01_TEXT02="ST MP LIVE ST.CONTROL VALVE A" INPUT_02_TEXT01="TXAL2712_PP_SWP" INPUT_02_TEXT02="ST MP LIVE ST.CONTROL VALVE B" OUTPUTArrowVisible="True" INPUT_04_TEXT02="ST LIVE STEAM" INPUT_01_TEXTVisible="True" INPUT_03_TEXT01="TAL2714_PP_WRN" INPUT_03_TEXT02="ST LIVE STEAM" INPUT_04_TEXT01="PAH2714_PP_WRN" INPUT_05_TEXT01="PAL2714_PP_WRN" INPUT_05_TEXT02="ST LIVE STEAM" INPUT_02_TEXTVisible="True"/>
+
+
+
+
+
+
+
+    </RSICanvas>
+</RSIFacePlate>

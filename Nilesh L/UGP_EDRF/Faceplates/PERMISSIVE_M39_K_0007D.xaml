@@ -1,0 +1,54 @@
+<RSIFacePlate x:Class="UGP_EDRF.HMI.PERMISSIVE_M39_K_0007D"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+  <RSICanvas Width="400"
+             Height="250"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <RSIRectangle x:Name="Rectangle2"
+                  Width="400"
+                  Height="250"
+                  Fill="#FF9A9A9A"
+                  Stroke="#FF000000"
+                  StrokeThickness="1" />
+    <hmi:NameplateResetPanel_III x:Name="NameplateResetPanel_III1"
+                                 Canvas.Left="46"
+                                 Canvas.Top="18"
+                                 Width="308"
+                                 Height="28" LABELDescription01="K0007D PERMISSIVES" />
+    <hmi:fIND_D_01_S1_M_III x:Name="fIND_D_01_S1_M_III1"
+                            Canvas.Left="47.00002"
+                            Canvas.Top="63"
+                            Width="306"
+                            Height="30"
+                            Tooltip="False" TagDescrp="ESD START PERMISSIVE" ModelName="006D_XS_1068" />
+    <hmi:fIND_D_01_S1_M_III x:Name="fIND_D_01_S1_M_III2"
+                            Canvas.Left="47.00002"
+                            Canvas.Top="95"
+                            Width="306"
+                            Height="30"
+                            Tooltip="False" TagDescrp="NO TRIP" ModelName="m006D_TRIP" />
+    <hmi:fIND_D_01_S1_M_III x:Name="fIND_D_01_S1_M_III3"
+                            Canvas.Left="47.00002"
+                            Canvas.Top="127"
+                            Width="306"
+                            Height="30"
+                            Tooltip="False" TagDescrp="FV-0225 VALVE OPEN" ModelName="a006D_FXI_0225_CIN" />
+    <hmi:fIND_D_01_S1_M_III x:Name="fIND_D_01_S1_M_III4"
+                            Canvas.Left="47.00002"
+                            Canvas.Top="159"
+                            Width="306"
+                            Height="30"
+                            Tooltip="False" TagDescrp="FV-0230 VALVE OPEN" ModelName="a006D_FXI_0230_CIN" />
+    <hmi:fIND_D_01_S1_M_III x:Name="fIND_D_01_S1_M_III5"
+                            Canvas.Left="47"
+                            Canvas.Top="191"
+                            Width="306.007"
+                            Height="30"
+                            Tooltip="False" TagDescrp="I/O HP CASTING TEMP TRX FAIL" ModelName="m006D_TAF_3639" />
+  </RSICanvas>
+</RSIFacePlate>

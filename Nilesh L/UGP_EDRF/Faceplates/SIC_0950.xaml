@@ -1,0 +1,279 @@
+<RSIFacePlate x:Class="UGP_EDRF.HMI.SIC_0950"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+    <RSICanvas Width="315"
+             Height="397"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+        <hmi:ContFpVPID_01 x:Name="ContFpVPID_011"
+                       Width="315"
+                       Height="397" />
+        <RSIText x:Name="Label"
+            Width="315"
+            Height="28"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="SPEED CONTROL SIC-0950" />
+        <RSIText x:Name="SP_VAL"
+            Canvas.Left="177.657"
+            Canvas.Top="85.037"
+            Width="73.575"
+            Height="14.057"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Stretch"
+            Foreground="#FF00FF00"
+            Text="345.5 "
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center">
+            <RSIText.Animations>
+                <Animation>
+                    <ChangeText Text="\$TAGNAME.SPT:#.#\ "/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="SP_UNIT_Copy"
+            Canvas.Left="224.22"
+            Canvas.Top="101.594"
+            Width="27.012"
+            Height="12.406"
+            HorizontalAlignment="Right"
+            Foreground="#FFFFFFFF"
+            IsHitTestVisible="False"
+            Text="RPM"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF343434" />
+        <RSIText x:Name="SP_UNIT_Copy1"
+            Canvas.Left="204.54"
+            Canvas.Top="69.881"
+            Width="46.692"
+            Height="12.406"
+            HorizontalAlignment="Right"
+            Foreground="#FFFFFFFF"
+            IsHitTestVisible="False"
+            Text="RPM"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF343434" />
+        <RSIText x:Name="PV_VAL_Copy"
+            Canvas.Left="175.782"
+            Canvas.Top="119"
+            Width="75.45"
+            Height="14.057"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Stretch"
+            Foreground="#FF00FF00"
+            Text="345.5 "
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center">
+            <RSIText.Animations>
+                <Animation>
+                    <ChangeText Text="\$TAGNAME.MEAS:#.#\ "/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="SP_UNIT_Copy2"
+            Canvas.Left="224.22"
+            Canvas.Top="133.057"
+            Width="27.012"
+            Height="12.406"
+            HorizontalAlignment="Right"
+            Foreground="#FFFFFFFF"
+            IsHitTestVisible="False"
+            Text="RPM"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF343434" />
+        <RSIText x:Name="SP_UNIT_Copy3"
+            Canvas.Left="204.54"
+            Canvas.Top="181.39"
+            Width="46.692"
+            Height="12.406"
+            HorizontalAlignment="Right"
+            Foreground="#FFFFFFFF"
+            IsHitTestVisible="False"
+            Text="RPM"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF343434" />
+        <RSIText
+            x:Name="OP_CMD"
+            Canvas.Left="175.032"
+            Canvas.Top="198.796"
+            Width="76.2"
+            Height="14.148"
+            HorizontalAlignment="Right"
+            Foreground="#FF0000FF"
+            Text="345.5 "
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" IsInput="True">
+            <!--RSIText.Animations>
+                                        <Animation>
+                                            <ChangeText Text="{Value Value, Converter={FormatConverter F1}}" />
+                                        </Animation>
+                                        <Animation Condition="Value_Fail">
+                                            <ChangeColor Color="#FF0000FF" />
+                                        </Animation>
+                                    </-->
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.MODE == 0">
+                    <ChangePropertyValue PropertyName="IsInput" Value="True"/>
+                </Animation>
+                <Animation Condition="$TAGNAME.MODE == 1">
+                    <ChangePropertyValue PropertyName="IsInput" Value="False"/>
+                </Animation>
+                <Animation>
+                    <ChangeText Text="\$TAGNAME.OUT:#.#\"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="SP_UNIT_Copy4"
+            Canvas.Left="149.04"
+            Canvas.Top="147.594"
+            Width="107.942"
+            Height="85.906"
+            HorizontalAlignment="Right"
+            IsHitTestVisible="False"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFCECECE" OpacityMask="Black" SelectionBrush="#FFCECECE" />
+        <hmi:PID_VALUE_DISPLAY2_III x:Name="OP"
+            Canvas.Left="150.874"
+            Canvas.Top="147.427"
+            Width="103.178"
+            Height="31.286" />
+        <RSIRectangle x:Name="Rectangle1"
+            Canvas.Left="180.583"
+            Canvas.Top="35.726"
+            Width="23.333"
+            Height="15.267"
+            Stroke="#FF666666"
+            StrokeThickness="1">
+            <RSIRectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="0" Color="#FFE0E0E0" />
+                    <GradientStop Offset="0" Color="#FFD7D3D3" />
+                    <GradientStop Offset="1" Color="#FF595959" />
+                </LinearGradientBrush>
+            </RSIRectangle.Fill>
+        </RSIRectangle>
+        <RSIText x:Name="Text3_Copy"
+            Canvas.Left="178.021"
+            Canvas.Top="35.726"
+            Width="25.895"
+            Height="13.406"
+            HorizontalAlignment="Left"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="DCS"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <RSIRectangle x:Name="Rectangle1_Copy"
+            Canvas.Left="178.021"
+            Canvas.Top="50.993"
+            Width="74.695"
+            Height="15.934"
+            Stroke="#FF3E3E40"
+            StrokeThickness="1" Fill="#FF343434"/>
+        <RSIRectangle x:Name="Rectangle1_Copy1"
+            Canvas.Left="206.666"
+            Canvas.Top="35.059"
+            Width="46.692"
+            Height="15.934"
+            Stroke="#FF3C3C3E"
+            StrokeThickness="1">
+            <RSIRectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="0" Color="#FFE0E0E0" />
+                    <GradientStop Offset="0" Color="#FFD7D3D3" />
+                    <GradientStop Offset="1" Color="#FF343434" />
+                </LinearGradientBrush>
+            </RSIRectangle.Fill>
+        </RSIRectangle>
+        <RSIRectangle x:Name="Rectangle2_1"
+            Width="46.8"
+            Height="15"
+            Stroke="#FFFFFF00"
+            StrokeThickness="2" Canvas.Left="206.666" Canvas.Top="35.726">
+            <RSIRectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="1" Color="#FFEFEFEF" />
+                    <GradientStop Offset="0" Color="#FFFFFFFF" />
+                </LinearGradientBrush>
+            </RSIRectangle.Fill>
+        </RSIRectangle>
+        <RSIRectangle x:Name="Rectangle1_Copy2"
+            Canvas.Left="206.676"
+            Canvas.Top="65.427"
+            Width="46.04"
+            Height="17.361"
+            Stroke="#FF3C3C3E"
+            StrokeThickness="1" Fill="#FF343434"/>
+        <RSIText x:Name="DCS_SP443"
+            Canvas.Left="205.707"
+            Canvas.Top="35.726"
+            Width="47.651"
+            Height="15"
+            HorizontalAlignment="Right"
+            Foreground="#FF00FF00"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME_in_dcs_enb.CIN==True">
+                    <ChangePropertyValue PropertyName="IsInput" Value="True"/>
+                </Animation>
+                <Animation>
+                    <ChangeText Text="\$TAGNAME_in_dcs_tsp.Value:#.#\"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="TGT_UNIT"
+            Canvas.Left="223.22"
+            Canvas.Top="59.521"
+            Width="29.246"
+            Height="14.906"
+            HorizontalAlignment="Right"
+            IsHitTestVisible="False"
+            Text="RPM"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF343434" Foreground="White" />
+        <RSIText
+            x:Name="OP_CMD_Copy"
+            Canvas.Left="175.032"
+            Canvas.Top="150.463"
+            Width="76.2"
+            Height="14.148"
+            HorizontalAlignment="Right"
+            Foreground="#FF0000FF"
+            Text="345.5 "
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" IsInput="True">
+            <!--RSIText.Animations>
+                                        <Animation>
+                                            <ChangeText Text="{Value Value, Converter={FormatConverter F1}}" />
+                                        </Animation>
+                                        <Animation Condition="Value_Fail">
+                                            <ChangeColor Color="#FF0000FF" />
+                                        </Animation>
+                                    </-->
+            <RSIText.Animations>
+                <Animation>
+                    <ChangeText Text="\$TAGNAME.OUT:#.#\"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+</RSIFacePlate>

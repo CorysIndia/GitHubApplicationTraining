@@ -1,0 +1,608 @@
+<UserControl x:Class="UGP_EDRF._09DISP02_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+  <RSICanvas Width="1500"
+             Height="750.000001907349"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:Background_Disp x:Name="Background_Disp1"
+                         Canvas.Top="1.907349E-06"
+                         Width="1500"
+                         Height="750" />
+    <hmi:SYM_TITLE_1 x:Name="SGUG_TITLE_11"
+                     Width="1500"
+                     Height="32.986"
+                     BP_NAV="false"
+                     BYPASS="ACT_1"
+                     DisplayTitle="PLANT &amp; INSTR AIR N2, UTILITY WATER &amp; METHANOL"
+                     DispName="09DISP02"
+                     ESD_NAV="false"
+                     H_H2S_NAV="true"
+                     H_LEL_NAV="true"
+                     H2S="ACT"
+                     H2S_LEL_4="NO_ACT"
+                     HH_H2S_NAV="true"
+                     HH_LEL_NAV="true"
+                     LEL="ACT"
+                     NAV_H2S2="true"
+                     NAV_LEL2="true"
+                     NEXT_ALM="False"
+                     NextDisplay="09DISP01"
+                     OverviewDisplay="09CAT01"
+                     PREV_RECENT="PREV"
+                     PreviousDisplay="09DISP01"
+                     TRAIN_CLR="LIT_BLUE" />
+    <RSIBorder x:Name="Line1"
+               Canvas.Left="1026.25"
+               Canvas.Top="108.805201907349"
+               Width="1.5"
+               Height="20.4448">
+      <RSIPath Data="M1026.25,108.805201907349 L1026.25,129.250001907349"
+               Stretch="Fill"
+               Stroke="#FF4D4D4D"
+               StrokeDashArray="1"
+               StrokeThickness="2" />
+    </RSIBorder>
+    <hmi:Pipeline x:Name="EmbeddedSymbol2"
+                  Canvas.Left="39.99963"
+                  Canvas.Top="131.500001907349"
+                  Width="1428.408"
+                  Line="Utility" />
+    <RSIText x:Name="Text3"
+             Canvas.Left="1329.999"
+             Canvas.Top="110.000001907349"
+             Width="121.7813"
+             Height="17.875"
+             HorizontalAlignment="Right"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="UTILITY WATER"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIText x:Name="Text4"
+             Canvas.Left="50"
+             Canvas.Top="110.000001907349"
+             Width="121.7813"
+             Height="17.875"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="UTILITY WATER"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <hmi:Pipeline x:Name="Pipeline1"
+                  Canvas.Left="40.00005"
+                  Canvas.Top="201.500101907349"
+                  Width="1428.408"
+                  Line="Utility" />
+    <RSIText x:Name="Text1"
+             Canvas.Left="1315.781"
+             Canvas.Top="180.000201907349"
+             Width="136"
+             Height="17.875"
+             HorizontalAlignment="Right"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="INSTRUMENT AIR"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIText x:Name="Text2"
+             Canvas.Left="50.00005"
+             Canvas.Top="180.000201907349"
+             Width="136"
+             Height="17.875"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="INSTRUMENT AIR"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <hmi:Pipeline x:Name="EmbeddedSymbol5"
+                  Canvas.Left="39.9998"
+                  Canvas.Top="271.500201907349"
+                  Width="1428.408"
+                  Line="Utility" />
+    <RSIText x:Name="Text5"
+             Canvas.Left="1369.093"
+             Canvas.Top="250.000201907349"
+             Width="82.6875"
+             Height="17.875"
+             HorizontalAlignment="Right"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="PLANT AIR"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIText x:Name="Text6"
+             Canvas.Left="49.9998"
+             Canvas.Top="250.000201907349"
+             Width="82.6875"
+             Height="17.875"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="PLANT AIR"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <hmi:Pipeline x:Name="EmbeddedSymbol9"
+                  Canvas.Left="39.99979"
+                  Canvas.Top="341.500201907349"
+                  Width="1428.408"
+                  Line="Utility" />
+    <RSIText x:Name="Text7"
+             Canvas.Left="1367.335"
+             Canvas.Top="320.000201907349"
+             Width="84.44531"
+             Height="17.875"
+             HorizontalAlignment="Right"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="NITROGEN"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIText x:Name="Text8"
+             Canvas.Left="49.99979"
+             Canvas.Top="320.000201907349"
+             Width="84.44531"
+             Height="17.875"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="NITROGEN"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <hmi:Pipeline x:Name="EmbeddedSymbol12"
+                  Canvas.Left="39.99984"
+                  Canvas.Top="478.500201907349"
+                  Width="1428.408"
+                  Line="Utility" />
+    <RSIText x:Name="Text9"
+             Canvas.Left="1362.882"
+             Canvas.Top="457.000201907349"
+             Width="88.89844"
+             Height="17.875"
+             HorizontalAlignment="Right"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="METHANOL"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIText x:Name="Text10"
+             Canvas.Left="49.99978"
+             Canvas.Top="457.000201907349"
+             Width="115.5703"
+             Height="17.875"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="HP METHANOL"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <hmi:SYM_IND_01 x:Name="SYM_EDR_IND_011"
+                    Canvas.Left="940"
+                    Canvas.Top="74.000031907349"
+                    Width="173.6649"
+                    Height="45.19995"
+                    BLK="09FI0004"
+                    CIN="false"
+                    CMP="9CMP_F_CF09"
+                    EU="TRUE"
+                    GraphicTagName="09FI0004"
+                    LOC="9"
+                    LOOP_ID="M39-009-F-0004"
+                    TAGNAME="FI004"
+                    Type="RIN" />
+    <RSIBorder x:Name="Line2"
+               Canvas.Left="1179.25"
+               Canvas.Top="181.197001907349"
+               Width="1.5"
+               Height="21.05299">
+      <RSIPath Data="M1179.25,181.197001907349 L1179.25,202.250001907349"
+               Stretch="Fill"
+               Stroke="#FF4D4D4D"
+               StrokeDashArray="1"
+               StrokeThickness="2" />
+    </RSIBorder>
+    <hmi:SYM_IND_01 x:Name="SYM_EDR_IND_012"
+                    Canvas.Left="1090"
+                    Canvas.Top="148.000001907349"
+                    Width="173.6649"
+                    Height="45.19995"
+                    BLK="09FI0003"
+                    CIN="false"
+                    CMP="9CMP_F_CF09"
+                    EU="TRUE"
+                    GraphicTagName="09FI0003"
+                    LOC="9"
+                    LOOP_ID="M39-009-F-0003"
+                    TAGNAME="FI003"
+                    Type="RIN" />
+    <RSIBorder x:Name="Line3"
+               Canvas.Left="1026.25"
+               Canvas.Top="250.197001907349"
+               Width="1.5"
+               Height="21.05299">
+      <RSIPath Data="M1026.25,250.197001907349 L1026.25,271.250001907349"
+               Stretch="Fill"
+               Stroke="#FF4D4D4D"
+               StrokeDashArray="1"
+               StrokeThickness="2" />
+    </RSIBorder>
+    <hmi:SYM_IND_01 x:Name="SYM_EDR_IND_013"
+                    Canvas.Left="940"
+                    Canvas.Top="218.000001907349"
+                    Width="173.6649"
+                    Height="45.19995"
+                    BLK="09FI0002"
+                    CIN="false"
+                    CMP="9CMP_F_CF09"
+                    EU="TRUE"
+                    GraphicTagName="09FI0002"
+                    LOC="9"
+                    LOOP_ID="M39-009-F-0002"
+                    TAGNAME="FI002"
+                    Type="RIN" />
+    <RSIBorder x:Name="Line4"
+               Canvas.Left="1179.25"
+               Canvas.Top="321.197001907349"
+               Width="1.5"
+               Height="21.0531">
+      <RSIPath Data="M1179.25,321.197001907349 L1179.25,342.250101907349"
+               Stretch="Fill"
+               Stroke="#FF4D4D4D"
+               StrokeDashArray="1"
+               StrokeThickness="2" />
+    </RSIBorder>
+    <hmi:SYM_IND_01 x:Name="SYM_EDR_IND_014"
+                    Canvas.Left="1090"
+                    Canvas.Top="288.000001907349"
+                    Width="173.6649"
+                    Height="45.19995"
+                    BLK="09FI0001"
+                    CIN="false"
+                    CMP="9CMP_F_CF09"
+                    EU="TRUE"
+                    GraphicTagName="09FI0001"
+                    LOC="9"
+                    LOOP_ID="M39-009-F-0001"
+                    TAGNAME="FI001"
+                    Type="RIN" />
+    <hmi:Pipeline x:Name="EmbeddedSymbol19"
+                  Canvas.Left="1119.9998"
+                  Canvas.Top="478.500570907349"
+                  Width="118.4996"
+                  Line="Utility"
+                  RenderTransformOrigin="0,0">
+      <hmi:Pipeline.RenderTransform>
+        <RotateTransform Angle="90" />
+      </hmi:Pipeline.RenderTransform>
+    </hmi:Pipeline>
+    <hmi:Pipeline x:Name="EmbeddedSymbol21"
+                  Canvas.Left="1120.0013"
+                  Canvas.Top="596.999901907349"
+                  Width="1080"
+                  Line="Utility"
+                  RenderTransformOrigin="0,0">
+      <hmi:Pipeline.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Pipeline.RenderTransform>
+    </hmi:Pipeline>
+    <RSIText x:Name="Text13"
+             Canvas.Left="49.99978"
+             Canvas.Top="577.000001907349"
+             Width="112.9141"
+             Height="17.875"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="LP METHANOL"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIPath x:Name="PolyLine1"
+             Canvas.Left="928.5"
+             Canvas.Top="535.500001907349"
+             Width="77.6535"
+             Height="47.97363"
+             Data="M0,0 L1,0 1,1 "
+             Stretch="Fill"
+             Stroke="#FF4D4D4D"
+             StrokeDashArray="1"
+             StrokeThickness="2" />
+    <hmi:SYM_CTRVLV_01 x:Name="SYM_EDR_GVLVST_011"
+                       Canvas.Left="961"
+                       Canvas.Top="575.000001907349"
+                       Width="89"
+                       Height="65"
+                       BLK="09PCV0280"
+                       CMP="9CMP_P_CF09"
+                       FAIL="NONE"
+                       GraphicTagName="PCV280"
+                       HORZ_OUTVALUE="true"
+                       LOC="2"
+                       LOOP_ID="M39-009-P-0280"
+                       PRT="9"
+                       SPARE_VLV="false"
+                       TAG_VERT="RIGHT"
+                       TAGNAME="PCV280"
+                       VERT_L_OUTVALUE="false"
+                       VERT_R_OUTVALUE="false"
+                       VLV_POS="HORZ" />
+    <RSIBorder x:Name="Line5"
+               Canvas.Left="890.3099"
+               Canvas.Top="554.398501907349"
+               Width="1.5"
+               Height="41.20032">
+      <RSIPath Data="M890.3099,554.398501907349 L890.3099,595.598801907349"
+               Stretch="Fill"
+               Stroke="#FF4D4D4D"
+               StrokeDashArray="1"
+               StrokeThickness="2" />
+    </RSIBorder>
+    <hmi:SYM_PID_01 x:Name="SYM_EDR_PID_011"
+                    Canvas.Left="810.0001"
+                    Canvas.Top="487.000001907349"
+                    Width="154.0001"
+                    Height="80.60001"
+                    BLK="09PIC0280"
+                    CMP="9CMP_P_CF09"
+                    GraphicTagName="PIC280"
+                    LOC="2"
+                    LOOP_ID="M39-009-P-0280"
+                    PRT="9"
+                    TAGNAME="PIC280" />
+    <hmi:SYM_ARROW_RIGHT_01 x:Name="EmbeddedSymbol23"
+                            Canvas.Left="1009.9999"
+                            Canvas.Top="562.000001907349"
+                            Width="14"
+                            Height="10"
+                            RenderTransformOrigin="0,0"
+                            Type="Main">
+      <hmi:SYM_ARROW_RIGHT_01.RenderTransform>
+        <RotateTransform Angle="90" />
+      </hmi:SYM_ARROW_RIGHT_01.RenderTransform>
+    </hmi:SYM_ARROW_RIGHT_01>
+    <hmi:SYM_ARROW_RIGHT_01 x:Name="EmbeddedSymbol24"
+                            Canvas.Left="895.99986"
+                            Canvas.Top="580.000001907349"
+                            Width="14"
+                            Height="10"
+                            RenderTransformOrigin="0,0"
+                            Type="Main">
+      <hmi:SYM_ARROW_RIGHT_01.RenderTransform>
+        <TransformGroup>
+          <RotateTransform Angle="90" />
+          <ScaleTransform ScaleX="1" ScaleY="-1" />
+        </TransformGroup>
+      </hmi:SYM_ARROW_RIGHT_01.RenderTransform>
+    </hmi:SYM_ARROW_RIGHT_01>
+    <RSIBorder x:Name="Line6"
+               Canvas.Left="296.25"
+               Canvas.Top="309.250001907349"
+               Width="1.5"
+               Height="33">
+      <RSIPath Data="M296.25,342.250001907349 L296.25,309.250001907349"
+               Stretch="Fill"
+               Stroke="#FF4D4D4D"
+               StrokeDashArray="1"
+               StrokeThickness="2" />
+    </RSIBorder>
+    <hmi:SYM_IND_01 x:Name="EmbeddedSymbol8"
+                    Canvas.Left="210"
+                    Canvas.Top="284.000001907349"
+                    Width="173.6649"
+                    Height="45.19995"
+                    BLK="09FI0152"
+                    CIN="false"
+                    CMP="9CMP_F_CF09"
+                    EU="TRUE"
+                    GraphicTagName="09FI0152"
+                    LOC="9"
+                    LOOP_ID="M39-009-F-0152"
+                    TAGNAME="FI152"
+                    Type="RIN" />
+    <hmi:Pipeline x:Name="EmbeddedSymbol18"
+                  Canvas.Left="603.9989"
+                  Canvas.Top="341.333270907349"
+                  Width="67.83289"
+                  Line="Utility"
+                  RenderTransformOrigin="0,0">
+      <hmi:Pipeline.RenderTransform>
+        <RotateTransform Angle="90" />
+      </hmi:Pipeline.RenderTransform>
+    </hmi:Pipeline>
+    <hmi:Pipeline x:Name="EmbeddedSymbol20"
+                  Canvas.Left="604.6667"
+                  Canvas.Top="409.166401907349"
+                  Width="562.3403"
+                  Line="Utility"
+                  RenderTransformOrigin="0,0">
+      <hmi:Pipeline.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Pipeline.RenderTransform>
+    </hmi:Pipeline>
+    <RSIText x:Name="Text14"
+             Canvas.Left="50.33331"
+             Canvas.Top="389.166101907349"
+             Width="101.3359"
+             Height="17.875"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="TO NGL UNIT"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIText x:Name="Text15"
+             Canvas.Left="50"
+             Canvas.Top="344.990901907349"
+             Width="60.44531"
+             Height="17.875"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="TO EDR"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <hmi:Navigaton x:Name="EmbeddedSymbol22"
+                   Canvas.Left="46.6667"
+                   Canvas.Top="359.767071907349"
+                   Width="29.00003"
+                   Height="38.78306"
+                   DISP="09DISP04"
+                   PRT="11"
+                   RenderTransformOrigin="0,0"
+                   Type="Main">
+      <hmi:Navigaton.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Navigaton.RenderTransform>
+    </hmi:Navigaton>
+    <hmi:Navigaton x:Name="EmbeddedSymbol1"
+                   Canvas.Left="1490.667"
+                   Canvas.Top="360.767211907349"
+                   Width="29"
+                   Height="38.78302"
+                   DISP="XA-A29345006"
+                   PRT="11"
+                   RenderTransformOrigin="0,0"
+                   Type="Main">
+      <hmi:Navigaton.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Navigaton.RenderTransform>
+    </hmi:Navigaton>
+    <hmi:Navigaton x:Name="EmbeddedSymbol13"
+                   Canvas.Left="46.6668"
+                   Canvas.Top="615.116301907349"
+                   Width="29"
+                   Height="38.78302"
+                   DISP="BA-038477001"
+                   PRT="11"
+                   RenderTransformOrigin="0,0"
+                   Type="Main">
+      <hmi:Navigaton.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Navigaton.RenderTransform>
+    </hmi:Navigaton>
+    <hmi:Navigaton x:Name="Navigaton1"
+                   Canvas.Left="46.6668"
+                   Canvas.Top="496.899381907349"
+                   Width="29"
+                   Height="38.78302"
+                   DISP="BA-038477001"
+                   PRT="11"
+                   RenderTransformOrigin="0,0"
+                   Type="Main">
+      <hmi:Navigaton.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Navigaton.RenderTransform>
+    </hmi:Navigaton>
+    <hmi:Navigaton x:Name="EmbeddedSymbol4"
+                   Canvas.Left="1490.667"
+                   Canvas.Top="497.899731907349"
+                   Width="29"
+                   Height="38.78302"
+                   DISP="XA-A29345006"
+                   PRT="11"
+                   RenderTransformOrigin="0,0"
+                   Type="Main">
+      <hmi:Navigaton.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Navigaton.RenderTransform>
+    </hmi:Navigaton>
+    <hmi:Navigaton x:Name="EmbeddedSymbol10"
+                   Canvas.Left="46.6667"
+                   Canvas.Top="149.116401907349"
+                   Width="29"
+                   Height="38.7831"
+                   DISP="BA_038479001"
+                   PRT="11"
+                   RenderTransformOrigin="0,0"
+                   Type="Utility">
+      <hmi:Navigaton.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Navigaton.RenderTransform>
+    </hmi:Navigaton>
+    <hmi:Navigaton x:Name="EmbeddedSymbol11"
+                   Canvas.Left="1490.667"
+                   Canvas.Top="150.418001907349"
+                   Width="29"
+                   Height="38.78302"
+                   DISP="BA-490608001"
+                   PRT="11"
+                   RenderTransformOrigin="0,0"
+                   Type="Utility">
+      <hmi:Navigaton.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Navigaton.RenderTransform>
+    </hmi:Navigaton>
+    <hmi:Navigaton x:Name="EmbeddedSymbol16"
+                   Canvas.Left="46.6668"
+                   Canvas.Top="220.201001907349"
+                   Width="29"
+                   Height="38.78302"
+                   DISP="09DISP01"
+                   PRT="11"
+                   RenderTransformOrigin="0,0"
+                   Type="Utility">
+      <hmi:Navigaton.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Navigaton.RenderTransform>
+    </hmi:Navigaton>
+    <hmi:Navigaton x:Name="EmbeddedSymbol17"
+                   Canvas.Left="1490.667"
+                   Canvas.Top="221.201101907349"
+                   Width="29"
+                   Height="38.78302"
+                   DISP="XA-A29345006"
+                   PRT="11"
+                   RenderTransformOrigin="0,0"
+                   Type="Utility">
+      <hmi:Navigaton.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Navigaton.RenderTransform>
+    </hmi:Navigaton>
+    <hmi:Navigaton x:Name="EmbeddedSymbol6"
+                   Canvas.Left="46.6667"
+                   Canvas.Top="290.984101907349"
+                   Width="29.00003"
+                   Height="38.78306"
+                   DISP="BA-038476003"
+                   PRT="11"
+                   RenderTransformOrigin="0,0"
+                   Type="Utility">
+      <hmi:Navigaton.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Navigaton.RenderTransform>
+    </hmi:Navigaton>
+    <hmi:Navigaton x:Name="EmbeddedSymbol14"
+                   Canvas.Left="1490.667"
+                   Canvas.Top="289.984101907349"
+                   Width="29"
+                   Height="38.78302"
+                   DISP="XA-A29345006"
+                   PRT="11"
+                   RenderTransformOrigin="0,0"
+                   Type="Utility">
+      <hmi:Navigaton.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Navigaton.RenderTransform>
+    </hmi:Navigaton>
+    <hmi:Navigaton x:Name="EmbeddedSymbol25"
+                   Canvas.Left="46.9999"
+                   Canvas.Top="424.782986907349"
+                   Width="29"
+                   Height="38.78302"
+                   PRT="11"
+                   RenderTransformOrigin="0,0"
+                   Type="Main">
+      <hmi:Navigaton.RenderTransform>
+        <RotateTransform Angle="180" />
+      </hmi:Navigaton.RenderTransform>
+    </hmi:Navigaton>
+  </RSICanvas>
+</UserControl>

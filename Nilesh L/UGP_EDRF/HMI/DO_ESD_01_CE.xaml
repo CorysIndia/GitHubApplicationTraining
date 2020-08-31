@@ -1,0 +1,107 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+
+    <Style TargetType="{x:Type hmi:DO_ESD_01_CE}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:DO_ESD_01_CE}">
+                    <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+                        <RSIGrid Background="Transparent" Width="36" Height="177">
+                            <RSIGrid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition/>
+                            </RSIGrid.RowDefinitions>
+                            <RSIRectangle x:Name="Rectangle1"
+                              Width="Auto"
+                              Height="Auto"
+                              Fill="#FFE0E0E0"
+                              Stroke="#FF000000"
+                              StrokeThickness="1" Margin="0">
+                                <RSIRectangle.Animations>
+                                    <ClickAnimation>
+                                        <Link WindowName="$DISP" />
+                                    </ClickAnimation>
+                                </RSIRectangle.Animations>
+                            </RSIRectangle>
+                            <!--<RSICanvas Height="Auto" Margin="0" Grid.Row="1" VerticalAlignment="Stretch" Width="Auto">
+                                <RSIText x:Name="TextBox5"
+                         Width="137"
+                         Height="36"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="#FF000000"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"   
+                         RenderTransformOrigin="0,-1.5"
+                         Text="$TAG"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" Margin="0" Background="#FFE8C2C2" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.Left="15" Canvas.Top="0" d:IsHidden="True">
+                                    -->
+                            <!--<RSIText.RenderTransform>
+                                        <RotateTransform Angle="-90" />
+                                    </RSIText.RenderTransform>-->
+                            <!--
+                                    <RSIText.Animations>
+                                        <Animation />
+                                        -->
+                            <!--
+                      if PICK1 == PICK1VAR and PICK3 == PICK2VAR and PICK2 == TAG then
+                      PICK1 = "";
+                      PICK2 = "";
+                      else
+                      PICK1 = PICK1VAR;
+                      PICK3 = PICK2VAR;
+                      PICK2 = TAG;
+                      endif;
+                    -->
+                            <!--
+                                        <Animation Condition="$BLK_T.CIN==1">
+                                            <ChangePropertyValue PropertyName="Background" Value="red"/>
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                            </RSICanvas>-->
+                            <RSIText Height="Auto" TextWrapping="Wrap" Text="{TemplateBinding TAG}" Width="Auto" Margin="-51.25,50.75,-50.75,50.25" Grid.RowSpan="1" Grid.Row="1" Background="{x:Null}" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FlowDirection="LeftToRight" Padding="0" BorderBrush="Black" BorderThickness="1">
+                                <RSIText.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="270"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RSIText.RenderTransform>
+                                <RSIText.Animations>
+                                    <Animation Condition="$BLK_T.CIN==False">
+                                        <ChangePropertyValue PropertyName="Background" Value="red"/>
+                                    </Animation>
+                                </RSIText.Animations>
+                            </RSIText>
+                            <RSIText TextWrapping="Wrap" Width="Auto" Margin="0,10,0,15.562" Grid.RowSpan="1" Background="{x:Null}" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FlowDirection="LeftToRight" Padding="0" BorderBrush="Black" BorderThickness="0" Text="{TemplateBinding PICK1VAR}">
+                                <RSIText.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RSIText.RenderTransform>
+                                <RSIText.Animations>
+                                    <ClickAnimation>
+                                        <Link WindowName="$DISP" />
+                                    </ClickAnimation>
+                                </RSIText.Animations>
+                            </RSIText>
+                        </RSIGrid>
+                    </RSIViewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,26 @@
+<RSIFacePlate x:Class="UGP_STG.HMI.SIC_0956"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_STG.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+  <RSICanvas Width="315"
+             Height="397"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:ContFpVPID_01 x:Name="ContFpVPID_011"
+                       Width="315"
+                       Height="397" />
+    <hmi:COSwitchConf_01 x:Name="COSwitchConf_011"
+                         Canvas.Left="167.990002"
+                         Canvas.Top="251.0027"
+                         Width="97"
+                         Height="125"
+                         ConfirmIndirect="IADAS.5CCS_D_CS03.05IGV_M_CMD.IN"
+                         FeedbackIndirect="IADAS.5CCS_D_CS03.05IGV_M_FBK.CIN"
+                         LeftMessage="CONFIRM SWITCH TO MANUAL GOVERNOR CONTROL?"
+                         NameStore="CONFIRMATION_SCREEN"
+                         RightMessage="CONFIRM SWITCH TO AUTO GOVERNOR CONTROL?" />
+  </RSICanvas>
+</RSIFacePlate>

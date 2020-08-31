@@ -1,0 +1,176 @@
+<RSIFacePlate x:Class="UGP_EDRF.HMI.FP_EDR_SP_GEN_CASE4"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+  <RSICanvas Width="500"
+             Height="374.132"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:SYM_FP_BACKGROUND_01 x:Name="Background_1"
+                              Width="500"
+                              Height="374.132"
+                              TYPE="STANDARD" />
+    <hmi:SYM_FP_CLOSE_01 x:Name="Button_Close1"
+                         Canvas.Left="220.0001"
+                         Canvas.Top="294.0002"
+                         Width="60.17438"
+                         Height="51.578" />
+    <RSICanvas Name="EXECUTE"
+               Width="116.1251"
+               Height="57.07501"
+               Left="191.875"
+               Top="194">
+      <RSIRectangle x:Name="Element14"
+                    Width="116"
+                    Height="57.07501"
+                    Fill="#FF000000"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+      <RSIRectangle x:Name="Rectangle1"
+                    Width="116"
+                    Height="57.07501"
+                    Fill="#FF000000"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1" />
+      <RSIText x:Name="Element15"
+               Canvas.Left="14.625"
+               Canvas.Top="18.842"
+               Width="88"
+               Height="20"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="EXECUTE"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+      <hmi:SYM_ACTION_01 x:Name="EmbeddedSymbol1"
+                         Canvas.Left="0.125"
+                         Width="116"
+                         Height="57.07501"
+                         BLKOVL="4"
+                         LOC="0"
+                         OVL="FP_CONFIRMATION_SP_GEN"
+                         PRT="1" />
+    </RSICanvas>
+    <RSICanvas Name="CASEB"
+               Width="116"
+               Height="57.07501"
+               Left="286.57"
+               Top="100.857">
+      <RSIRectangle x:Name="Element5"
+                    Width="116"
+                    Height="57.07501"
+                    Fill="#FF000000"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1">
+        <RSIRectangle.Animations>
+          <Animation />
+          <!--
+            if SELECTED == 2 then
+            SELECTED = 0;
+            else
+            SELECTED = 2;
+            endif;
+          -->
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==4_and_IADAS_1CMP_H_CF01_SP_GENERATOR_II0002==2}">
+            <ChangeColor Color="#FF00BA00" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo true}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+        </RSIRectangle.Animations>
+      </RSIRectangle>
+      <RSIText x:Name="Element7"
+               Canvas.Left="23.438"
+               Canvas.Top="5.73599999999999"
+               Width="69.992"
+               Height="20"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="UBTG-2"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+      <RSIText x:Name="Element13"
+               Canvas.Left="23.438"
+               Canvas.Top="31.561"
+               Width="69.992"
+               Height="20"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="SELECT"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+    </RSICanvas>
+    <RSICanvas Name="CASEA"
+               Width="116"
+               Height="57.07501"
+               Left="96.57"
+               Top="100.857">
+      <RSIRectangle x:Name="Element4"
+                    Width="116"
+                    Height="57.07501"
+                    Fill="#FF000000"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1">
+        <RSIRectangle.Animations>
+          <Animation />
+          <!--
+            if SELECTED == 1 then
+            SELECTED = 0;
+            else
+            SELECTED = 1;
+            endif;
+          -->
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==4_and_IADAS_1CMP_H_CF01_SP_GENERATOR_II0002==1}">
+            <ChangeColor Color="#FF00BA00" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo true}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+        </RSIRectangle.Animations>
+      </RSIRectangle>
+      <RSIText x:Name="Element6"
+               Canvas.Left="18.438"
+               Canvas.Top="5.21699999999998"
+               Width="79.992"
+               Height="19.99997"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="UBTG-1"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+      <RSIText x:Name="Element11"
+               Canvas.Left="23.438"
+               Canvas.Top="31.042"
+               Width="68.992"
+               Height="20.00003"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="SELECT"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+    </RSICanvas>
+  </RSICanvas>
+</RSIFacePlate>

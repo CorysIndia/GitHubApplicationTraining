@@ -1,0 +1,175 @@
+<UserControl 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+             xmlns:local="clr-namespace:UGP_EDRF" 
+             xmlns:UGP_MIMICS="clr-namespace:UGP_EDRF.UGP_MIMICS" xmlns:HMI="clr-namespace:UGP_EDRF.HMI" x:Class="UGP_EDRF.TURBO_EXPANDER_A_STARTUP" 
+             mc:Ignorable="d">
+    <Grid>
+        <!--  Graphic Part  -->
+        <local:TURBO_EXPANDER_A_STARTUP_Translation x:Name="GRAPHIC" d:IsLocked="True"  />
+
+        <!-- Normal Graphic Layer Path -->
+        <Canvas x:Name="GRAPHIC_OVERLAY">
+            <RSIText x:Name="rSIText_Copy39" Canvas.Left="1291.611" TextWrapping="Wrap" Text="PIC_0195CA" Canvas.Top="835.327" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="94.177" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="36.163" Opacity="0.001">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0195CA" WindowName="PIC_0195CA_PD" TagName="M39_005PIC0195CA_PD"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy" Canvas.Left="1441.833" TextWrapping="Wrap" Text="FIC_0106" Canvas.Top="899.589" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="37.343" Width="86.501" Opacity="0.01">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FIC-0106" WindowName="FIC_0106" TagName="M39_005FIC0106"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <UGP_MIMICS:Trend2 Height="613.66" Canvas.Left="410.167"  Canvas.Top="190" Width="1139.75" Background="Transparent"/>
+            <RSIRectangle Fill="Gray" Height="466.675" Canvas.Left="366" Stroke="Black" Canvas.Top="190.593" Width="44.167" StrokeThickness="0"/>
+            <RSIText x:Name="rSIText" Height="13.5" Canvas.Left="366.5" TextWrapping="Wrap" Text="1200" Canvas.Top="197.003" Width="43.667" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14.667"/>
+            <RSIText x:Name="rSIText_Copy1" Height="13.5" Canvas.Left="366.5" TextWrapping="Wrap" Text="RPM" Canvas.Top="391" Width="43.667" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14.667"/>
+            <RSIText x:Name="rSIText_Copy2" Height="13.5" Canvas.Left="366.5" TextWrapping="Wrap" Text="0" Canvas.Top="568.667" Width="43.667" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14.667"/>
+            <HMI:ButtonBackPanel_III x:Name="ButtonBackPanel_III1"
+        Canvas.Left="410.167"
+        Canvas.Top="656.704"
+        Width="1139.75"
+        Height="157.061" />
+            <HMI:PbMomFb_01_Dn_M x:Name="PbMomFb_01_Dn_M1"
+        Canvas.Left="1117.282"
+        Canvas.Top="684.127"
+        Width="104.937"
+        Height="119.265" ModelName="g005A_SPEED_L_DCS" />
+            <HMI:PbMomFb_01_Up_M x:Name="PbMomFb_01_Up_M1"
+        Canvas.Left="902.343"
+        Canvas.Top="684.127"
+        Width="103.938"
+        Height="118.425" ModelName="g005A_SPEED_R_DCS" />
+            <HMI:PbMomFbConf_01_M x:Name="EmbeddedSymbol1345"
+        Canvas.Left="687.375"
+        Canvas.Top="684.944"
+        Width="104"
+        Height="119.265"
+        ConfirmationMessage="CONFIRM TO NORMAL STOP?"
+        ConfirmIndirect="IADAS.5K0003A_CF04.05ZX0091.IN"
+        NameStore="SELECTION_SCREEN_PLS" ZDescription01="NORMAL" ZDescription02="STOP" Colour="2" ModelName="05ZX0091" />
+            <RSICanvas x:Name="Group1"
+                Width="595"
+                Height="28.367"
+                Canvas.Left="660"
+                Canvas.Top="610.004">
+                <RSIRectangle x:Name="Rectangle2"
+                    Width="595"
+                    Height="28.3667"
+                    Fill="#FF848484"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1" />
+                <RSIRectangle x:Name="Rectangle3"
+                    Canvas.Left="55"
+                    Canvas.Top="3.4384"
+                    Width="30"
+                    Height="4.297974"
+                    Fill="Red"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+                <RSIText x:Name="Text5"
+                    Canvas.Left="11"
+                    Canvas.Top="12.669"
+                    Width="121"
+                    Height="12.48425"
+                    VerticalAlignment="Center"
+                    Foreground="#FFFFFFFF"
+                    IsHitTestVisible="False"
+                    Text="TARGET SPEED SP"
+                    TextElement.FontFamily="Arial"
+                    TextElement.FontSize="8"
+                    TextElement.FontWeight="Bold" />
+                <RSIRectangle x:Name="Rectangle4"
+                    Canvas.Left="212"
+                    Canvas.Top="3.4384"
+                    Width="30"
+                    Height="4.297974"
+                    Fill="Purple"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+                <RSIText x:Name="Text6"
+                    Canvas.Left="166"
+                    Canvas.Top="12.669"
+                    Width="121"
+                    Height="12.48425"
+                    VerticalAlignment="Center"
+                    Foreground="#FFFFFFFF"
+                    IsHitTestVisible="False"
+                    Text="ACTUAL SPEED SP"
+                    TextElement.FontFamily="Arial"
+                    TextElement.FontSize="8"
+                    TextElement.FontWeight="Bold" />
+                <RSIText x:Name="Text7"
+                    Canvas.Left="331"
+                    Canvas.Top="12.669"
+                    Width="99"
+                    Height="12.48425"
+                    VerticalAlignment="Center"
+                    Foreground="#FFFFFFFF"
+                    IsHitTestVisible="False"
+                    Text="ACTUAL SPEED"
+                    TextElement.FontFamily="Arial"
+                    TextElement.FontSize="8"
+                    TextElement.FontWeight="Bold" />
+                <RSIRectangle x:Name="Rectangle5"
+                    Canvas.Left="369"
+                    Canvas.Top="3.4384"
+                    Width="30"
+                    Height="4.297974"
+                    Fill="Blue"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+                <RSIText x:Name="Text8"
+                    Canvas.Left="484"
+                    Canvas.Top="12.669"
+                    Width="63"
+                    Height="12.48425"
+                    VerticalAlignment="Center"
+                    Foreground="#FFFFFFFF"
+                    IsHitTestVisible="False"
+                    Text="           GV"
+                    TextElement.FontFamily="Arial"
+                    TextElement.FontSize="8"
+                    TextElement.FontWeight="Bold" />
+                <RSIRectangle x:Name="Rectangle6"
+                    Canvas.Left="527"
+                    Canvas.Top="3.4384"
+                    Width="30"
+                    Height="4.297974"
+                    Fill="Green"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            </RSICanvas>
+            <HMI:NameplateResetPanel_III_2 x:Name="NameplateResetPanel_III_21"
+                Canvas.Left="799"
+                Canvas.Top="660.706"
+                Width="308"
+                Height="24.069" LABEL="OPERATOR PANEL" />
+        </Canvas>
+
+        <!-- FOD Part -->
+        <Canvas x:Name='FOD' Visibility="{FODBinding}" d:IsLocked="True">
+            <!-- Start FOD -->
+            <!-- Stop FOD -->
+        </Canvas>
+
+        <!-- BL Part -->
+        <Canvas x:Name='BL' Visibility='{BLBinding}' d:IsLocked="True" >
+            <!-- Start BL -->
+            <!-- Stop BL -->
+        </Canvas>
+
+        <!-- FAILURE Part -->
+        <Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' d:IsLocked="True" >
+            <!-- Start FAILURE -->
+            <!-- Stop FAILURE -->
+        </Canvas>
+
+    </Grid>
+</UserControl>

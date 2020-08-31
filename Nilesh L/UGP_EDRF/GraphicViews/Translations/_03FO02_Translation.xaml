@@ -1,0 +1,71 @@
+<UserControl x:Class="UGP_EDRF._03FO02_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+  <RSICanvas Width="1500"
+             Height="750.000001907349"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:Background_Disp x:Name="Background_Disp1"
+                         Canvas.Top="1.907349E-06"
+                         Width="1500"
+                         Height="750" />
+    <hmi:SYM_TITLE_BAR_01 x:Name="SYM_TITLE_BAR_011"
+                          Width="1500"
+                          Height="32.986"
+                         
+                          PREV_RECENT="PREV"
+                          TRAIN_CLR="GREY" />
+    <hmi:NameplateResetPanel_III x:Name="Panel"
+                                 Canvas.Left="596"
+                                 Canvas.Top="60.000001907349"
+                                 Width="308"
+                                 Height="28" LABELDescription01="G-0013A TRIPS" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO03"
+                           Canvas.Left="524.9979"
+                           Canvas.Top="170.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="TUV_SD - LOSS OF CONTROL SIGNAL (ESD)" ModelName="03TUV_SD_2_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO02"
+                           Canvas.Left="524.9979"
+                           Canvas.Top="140.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03PSLL0264 - FR-D-0050 TO G-0050A STEAM CONDENSATE" ModelName="03PSLL0264_2_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO01"
+                           Canvas.Left="524.9979"
+                           Canvas.Top="110.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03LSLL0088 - D-0050 STEAM CONDENSATE DRUM LEVEL" ModelName="03LSLL0088_2_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO06"
+                           Canvas.Left="524.9979"
+                           Canvas.Top="230.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="06ZCX1351 - ESD P2P UNIT 6 TO UNIT 3 SALES GAS COMP. UNIT SD" ModelName="06ZCX1351_2_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO05"
+                           Canvas.Left="524.9979"
+                           Canvas.Top="200.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZCX1033 - ESD P2P UNIT 5 TO UNIT 3 NGL RECOVERY UNIT SD" ModelName="05ZCX1033_2_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO11"
+                           Canvas.Left="524.9979"
+                           Canvas.Top="349.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03ZX0937 - STEAM CONDENSATE AT G-0013A STOP RELAY" ModelName="03ZX0937_2_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO10"
+                           Canvas.Left="524.9979"
+                           Canvas.Top="319.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="11ZCX0140 - ESD P2P UNIT 1 TO UNIT 3 LOCAL ACT.BUTTON OVERALL PLANT" ModelName="11ZCX0140_2_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO09"
+                           Canvas.Left="524.9979"
+                           Canvas.Top="290.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="09ZCX0111 - ESD P2P UNIT 1 TO UNIT 3 LOSS OF INST.AIR TO UNIT 3" ModelName="09ZCX0111_2_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO08"
+                           Canvas.Left="524.9979"
+                           Canvas.Top="260.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="11ZHS0100C" ModelName="11ZHS0100C_2_FO" />
+  </RSICanvas>
+</UserControl>

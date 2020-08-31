@@ -1,0 +1,139 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Style TargetType="{x:Type hmi:dIndTxt_01}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:dIndTxt_01}">
+                    <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+                        <RSIGrid Background="Transparent">
+                            <RSICanvas Width="305"
+                         Height="30"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                                <RSICanvas Name="Group1"
+                           Width="305"
+                           Height="30"
+                           Left="0"
+                           Top="0">
+                                    <RSIRectangle x:Name="Rectangle3"
+                                Width="305"
+                                Height="30"
+                                Stroke="#FF343434"
+                                StrokeThickness="1">
+                                        <RSIRectangle.Fill>
+                                            <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                                <GradientStop Offset="0.5" Color="#FF000000" />
+                                                <GradientStop Offset="0" Color="#FFBFBFBF" />
+                                                <GradientStop Offset="1" Color="#FFBFBFBF" />
+                                            </LinearGradientBrush>
+                                        </RSIRectangle.Fill>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle4"
+                                Canvas.Left="3"
+                                Canvas.Top="3"
+                                Width="299"
+                                Height="24"
+                                Stroke="#FF000000"
+                                StrokeThickness="1">
+                                        <RSIRectangle.Fill>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="1" Color="#FF666666" />
+                                                <GradientStop Offset="0" Color="#FF343434" />
+                                            </LinearGradientBrush>
+                                        </RSIRectangle.Fill>
+                                    </RSIRectangle>
+                                    <RSIText x:Name="Description"
+                           Canvas.Left="182.974"
+                           Canvas.Top="8.354"
+                           Width="114.842"
+                           Height="14.523"
+                           HorizontalAlignment="Stretch"
+                           VerticalAlignment="Stretch"
+                           Foreground="#FF00FFFF"
+                           RenderTransformOrigin="0,0"
+                           Text="DESCRIPTION"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10"
+                           TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                                        <RSIText.Animations>
+                                            <Animation Condition="$TAGNAME.value == 0">
+                                                <ChangeText Text="$Int00Txt"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.value == 1">
+                                                <ChangeText Text="$Int01Txt"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.value == 2">
+                                                <ChangeText Text="$Int02Txt"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.value == 3">
+                                                <ChangeText Text="$Int03Txt"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.value == 4">
+                                                <ChangeText Text="$Int04Txt"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.value == 5">
+                                                <ChangeText Text="$Int05Txt"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.value == 6">
+                                                <ChangeText Text="$Int06Txt"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.value == 7">
+                                                <ChangeText Text="$Int07Txt"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.value == 8">
+                                                <ChangeText Text="$Int08Txt"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.value == 9">
+                                                <ChangeText Text="$Int09Txt"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.value == 10">
+                                                <ChangeText Text="$Int10Txt"/>
+                                            </Animation>
+                                        </RSIText.Animations>
+                                        <RSIText.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform ScaleY="1" ScaleX="1"/>
+                                                <SkewTransform AngleY="0" AngleX="0"/>
+                                                <RotateTransform Angle="-7.0164775638926606E-15"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </RSIText.RenderTransform>
+                                    </RSIText>
+                                </RSICanvas>
+                                <RSIText x:Name="Description_1"
+                         Canvas.Left="6.408"
+                         Canvas.Top="7.125"
+                         Width="124.223"
+                         Height="14.523"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Stretch"
+                         Foreground="#FFFFFFFF"
+                         IsHitTestVisible="False"
+                         RenderTransformOrigin="0,0"
+                         Text="OPERATING MODE:"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold" VerticalContentAlignment="Center">
+                                    <RSIText.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleY="1" ScaleX="1"/>
+                                            <SkewTransform AngleY="0" AngleX="0"/>
+                                            <RotateTransform Angle="-7.0164775638926606E-15"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </RSIText.RenderTransform>
+                                </RSIText>
+                            </RSICanvas>
+                        </RSIGrid>
+                    </RSIViewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+</ResourceDictionary>

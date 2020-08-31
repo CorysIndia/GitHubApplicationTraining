@@ -1,0 +1,445 @@
+<UserControl x:Class="UGP_EDRF.SRG_CONTROL_M39_K_0001_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+    <RSICanvas Width="1918.00000148342"
+             Height="950.0624"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+        <hmi:ButtonBackPanel_III x:Name="ButtonBackPanel_III1"
+                             Canvas.Left="1390.00000148342"
+                             Canvas.Top="209.0625"
+                             Width="412.0001"
+                             Height="317.9999" 
+                            />
+        <hmi:aIndDesLab_01_L x:Name="aIndDesLab_01_L1"
+                         Canvas.Left="1407.00000148342"
+                         Canvas.Top="377.1158"
+                         Width="309"
+                         Height="29.99994"
+                         TagName="NO. OF SURGE" ModelName="r003_SRG_CNT_TOTAL" />
+        <hmi:ButtonBackPanel_III x:Name="ButtonBackPanel_III2"
+                             Canvas.Left="890.000401483419"
+                             Canvas.Top="209.0624"
+                             Width="328.9999"
+                             Height="398.9999" />
+        <RSIRectangle x:Name="Rectangle1"
+                  Canvas.Left="1.483419E-06"
+                  Canvas.Top="160.0625"
+                  Width="1918"
+                  Height="35"
+                  Fill="#FF4F4F4F"
+                  Stroke="#FFFFFFFF"
+                  StrokeThickness="1" />
+        <!-- <hmi:SurgeMap_Med_III x:Name="SurgeMap_Med_III1"
+                          Canvas.Top="210.0625"
+                          Width="759.0004"
+                          Height="577.0001"
+                               ZOperatingPT_XaxisUO="r003_HC"/>-->
+        <hmi:NameplateResetPanel_SRG_III x:Name="NameplateResetPanel_SRG_III1"
+                                     Canvas.Left="902.000201483419"
+                                     Canvas.Top="219.0625"
+                                     Width="299.9999"
+                                     Height="28" ModelName="FIELD INSTRUMENTS" />
+        <hmi:NameplateResetPanel_SRG_III x:Name="NameplateResetPanel_SRG_III2"
+                                     Canvas.Left="1414.00000148342"
+                                     Canvas.Top="219.0625"
+                                     Width="300"
+                                     Height="28" ModelName="SURGE CONTROLLER DETAILS" />
+        <hmi:NameplateResetPanel_SRG_III x:Name="NameplateResetPanel_SRG_III3"
+                                     Canvas.Left="902.000201483419"
+                                     Canvas.Top="452.0625"
+                                     Width="299.9999"
+                                     Height="28" ModelName="SURGE CONTROL STATUS" />
+        <RSIBorder x:Name="Line1"
+               Canvas.Left="1680.25000148342"
+               Canvas.Top="598.3126"
+               Width="102"
+               Height="1.5">
+            <RSIPath Data="M1680.25000148342,598.3126 L1782.25000148342,598.3126"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line2"
+               Canvas.Left="1579.25000148342"
+               Canvas.Top="677.3126"
+               Width="110"
+               Height="1.5">
+            <RSIPath Data="M1579.25000148342,677.3126 L1689.25000148342,677.3126"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line3"
+               Canvas.Left="1579.25000148342"
+               Canvas.Top="642.3126"
+               Width="110"
+               Height="1.5">
+            <RSIPath Data="M1579.25000148342,642.3126 L1689.25000148342,642.3126"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line4"
+               Canvas.Left="1579.25000148342"
+               Canvas.Top="574.3126"
+               Width="110"
+               Height="1.5">
+            <RSIPath Data="M1579.25000148342,574.3126 L1689.25000148342,574.3126"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line5"
+               Canvas.Left="1579.25000148342"
+               Canvas.Top="607.3126"
+               Width="110"
+               Height="1.5">
+            <RSIPath Data="M1579.25000148342,607.3126 L1689.25000148342,607.3126"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:HighSelector_a_III x:Name="HighSelector_a_III1"
+                            Canvas.Left="1658.00000148342"
+                            Canvas.Top="561.0627"
+                            Width="39"
+                            Height="135.9999" />
+        <RSIBorder x:Name="Line6"
+               Canvas.Left="1780.25000148342"
+               Canvas.Top="599.3126"
+               Width="1.5"
+               Height="116">
+            <RSIPath Data="M1780.25000148342,599.3126 L1780.25000148342,715.3126"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:dIndDesLab_01_8Prop_L x:Name="dIndDesLab_01_8Prop_L1"
+                               Canvas.Left="898.000201483419"
+                               Canvas.Top="488.0625"
+                               Width="308.9999"
+                               Height="30"
+                               GraphicTagName="SURGE"
+                               TagName="SURGE" TagDescrp="SURGE CONTROL ENABLED" ModelName="f003_SRGENB" />
+        <hmi:aIndDesLab_01_L x:Name="aIndDesLab_01_L2"
+                         Canvas.Left="1407.00000148342"
+                         Canvas.Top="268.1107"
+                         Width="309"
+                         Height="29.99997"
+                         TagName="OPERATING POINT"
+                         Units="%" ModelName="r003_HC" />
+        <hmi:aIndDesLab_01_L x:Name="aIndDesLab_01_L3"
+                         Canvas.Left="1407.00000148342"
+                         Canvas.Top="304.077"
+                         Width="309"
+                         Height="29.99997"
+                         TagName="TOTAL SAFETY MARGIN"
+                         Units="%" ModelName="r003_TOT_SAFETY" />
+        <hmi:aIndDesLab_01_L x:Name="aIndDesLab_01_L4"
+                         Canvas.Left="1407.00000148342"
+                         Canvas.Top="340.0979"
+                         Width="309"
+                         Height="29.99997"
+                         TagName="MARGIN"
+                         Units="%" ModelName="r003_MARGIN" />
+        <hmi:aIndDesLab_01_L x:Name="aIndDesLab_01_L5"
+                         Canvas.Left="1407.00000148342"
+                         Canvas.Top="450.0767"
+                         Width="309"
+                         Height="29.99997"
+                         TagName="NO. OF RECALIBRATION" ModelName="r003_REC_CNT" />
+        <hmi:dIndDesLab_01_5Prop_L x:Name="dIndDesLab_01_5Prop_L1"
+                               Canvas.Left="1407.00000148342"
+                               Canvas.Top="487.0626"
+                               Width="309"
+                               Height="29.99997"
+                               TagName="MIN FLOW ALGORITHM" ModelName="m003_MINFLW_ON" />
+        <hmi:dIndDesLab_01_8Prop1_L x:Name="dIndDesLab_01_8Prop1_L1"
+                                Canvas.Left="898.000201483419"
+                                Canvas.Top="523.0625"
+                                Width="308.9999"
+                                Height="30"
+                                GraphicTagName="COMPRESSOR"
+                                TagName="COMPRESSOR" TagDescrp="COMPRESSOR IN SURGE" ModelName="m003_INSUR" />
+        <hmi:dIndDesLab_01_8Prop1_L x:Name="dIndDesLab_01_8Prop1_L2"
+                                Canvas.Left="898.000201483419"
+                                Canvas.Top="559.0625"
+                                Width="308.9999"
+                                Height="30"
+                                GraphicTagName="FAF0180"
+                                TagName="FAF0180" TagDescrp="FAF0180 - FLOW TRANSMITTER FAILURE" ModelName="m003_FAF_0180B" />
+        <hmi:Valve_a x:Name="Valve_a1"
+                 Canvas.Left="1760.00000148342"
+                 Canvas.Top="692.0625"
+                 Width="42"
+                 Height="40"
+                 FillColor="Red" ModelName="M39_003FCV0181" />
+        <RSIPath x:Name="Polygon1"
+             Canvas.Left="1771.00000148342"
+             Canvas.Top="674.0626"
+             Width="21"
+             Height="15"
+             Data="M0,0 L1,0 0.5238096,1 z"
+             Fill="#FF848484"
+             Stretch="Fill"
+             Stroke="#FFC0C0C0"
+             StrokeThickness="1" />
+        <hmi:IndicatorAnalogMedium_LED_New x:Name="IndicatorAnalogMedium_LED_New1"
+                                       Canvas.Left="1296.00000148342"
+                                       Canvas.Top="561.0625"
+                                       Width="286"
+                                       Height="30" ZDescription01="SURGE PID" ModelName="r003_SRG_CON" ZBOX="f003_SRG_PID" ZUNIT="%" />
+        <hmi:IndicatorAnalogMedium_LED_New x:Name="IndicatorAnalogMedium_LED_New2"
+                                       Canvas.Left="1296.00000148342"
+                                       Canvas.Top="596.0625"
+                                       Width="286"
+                                       Height="30" ZDescription01="SURGE OVERRIDE" ModelName="r003_SRG_OVRD" ZBOX="f003_SRG_OVRD" ZUNIT="%" />
+        <hmi:IndicatorAnalogMedium_LED_New x:Name="IndicatorAnalogMedium_LED_New3"
+                                       Canvas.Left="1296.00000148342"
+                                       Canvas.Top="630.0625"
+                                       Width="286"
+                                       Height="30" ZDescription01="PROCESS OVERRIDE" ModelName="r003_DCPL_SRG_OP" ZBOX="f003_PROC_OVRD" ZUNIT="%" />
+        <hmi:IndicatorAnalogMedium_LED_New x:Name="IndicatorAnalogMedium_LED_New4"
+                                       Canvas.Left="1296.00000148342"
+                                       Canvas.Top="666.0625"
+                                       Width="286"
+                                       Height="30" ZDescription01="MANUAL DEMAND" ModelName="r003_SRG_DMD" ZBOX="f003_MAN_OVRD" ZUNIT="%" />
+        <hmi:aIndDesLab_01_M x:Name="aIndDesLab_01_M1"
+                         Canvas.Left="899.000201483419"
+                         Canvas.Top="258.0625"
+                         Width="309.0001"
+                         Height="30"
+                         DESCR="COMPENSATED FLOW"
+                         GraphicTagName="MMSCFD"
+                         TAG="MMSCFD" ModelName="r003_FI_0180B_C" />
+        <hmi:aIndDesLab_01_M x:Name="aIndDesLab_01_M2"
+                         Canvas.Left="899.000201483419"
+                         Canvas.Top="293.0625"
+                         Width="309.0001"
+                         Height="30"
+                         DESCR="FLOW FI-0180B"
+                         GraphicTagName="MMSCFD"
+                         TAG="MMSCFD" ModelName="a003_FI_0180B" />
+        <hmi:aIndDesLab_01_M x:Name="aIndDesLab_01_M398909"
+                         Canvas.Left="899.000201483419"
+                         Canvas.Top="367.0625"
+                         Width="309.0001"
+                         Height="30"
+                         DESCR="SUCTION PRESS PI-0190"
+                         GraphicTagName="psi"
+                         TAG="psi" ModelName="r003_PI_0190S" />
+        <hmi:aIndDesLab_01_M x:Name="aIndDesLab_01_M4"
+                         Canvas.Left="899.000201483419"
+                         Canvas.Top="329.0625"
+                         Width="309.0001"
+                         Height="30"
+                         DESCR="SUCTION TEMP TI-0186"
+                         GraphicTagName=" °F"
+                         TAG=" °F" ModelName="r003_TI_0186S" />
+        <hmi:PID_Display2_9Letter x:Name="PID_Display2_9Letter1"
+                              Canvas.Left="1612.275"
+                              Canvas.Top="741.063"
+                              Width="88.4"
+                              Height="37"
+                              NameStore="FIC-0181" ModelName="M39_003FIC0181" />
+        <hmi:Type1_AO_Display_9Letter x:Name="Type1_AO_Display_9Letter1"
+                                  Canvas.Left="1740.00000148342"
+                                  Canvas.Top="740.0626"
+                                  Width="91"
+                                  Height="38" ModelName="r003_FCV_0181" ZTAG="FCV-0181" />
+        <hmi:TOP_BANNER_M39_K_0001 x:Name="TOP_BANNER_M39_K_00011"
+                               Canvas.Left="1.483419E-06"
+                               Width="1870"
+                               Height="158.3867" />
+        <hmi:LOWER_DATA_BAR_M39_K_0001 x:Name="LOWER_DATA_BAR_M39_K_00011"
+                                   Canvas.Left="0.000180471119"
+                                   Canvas.Top="812.0624"
+                                   Width="1908"
+                                   Height="138" />
+        <hmi:aIndDesLab_01_M x:Name="EmbeddedSymbol19098909"
+                         Canvas.Left="898.000201483419"
+                         Canvas.Top="405.0625"
+                         Width="309.0001"
+                         Height="30"
+                         DESCR="DISCHARGE PRESS PI-0189"
+                         GraphicTagName="psi"
+                         TAG="psi" ModelName="r003_PI_0189S" />
+        <RSICanvas Name="EmbeddedSymbol2"
+               Width="309"
+               Height="29.99994"
+               Left="1407.00000148342"
+               Top="413.0946">
+            <RSICanvas Name="Path2"
+                 Width="28.96982"
+                 Height="309"
+                 IsHitTestVisible="false"
+                 Left="137.2196"
+                 Top="1307.677">
+                <RSIPath x:Name="Arc2"
+                 Canvas.Left="-131.4488"
+                 Canvas.Top="-1282.4263"
+                 Width="3.74556"
+                 Height="5.789307"
+                 Data="M 0,1 A 1,1 0 0 0 1,0"
+                 Fill="#FF9A9A9A"
+                 RenderTransformOrigin="0.133491387135702,0.08636612292283"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="1">
+                    <RSIPath.RenderTransform>
+                        <RotateTransform Angle="90" />
+                    </RSIPath.RenderTransform>
+                </RSIPath>
+                <RSIPath x:Name="Arc3"
+                 Canvas.Left="-129.5196"
+                 Canvas.Top="-1304.8723"
+                 Width="7.718994"
+                 Height="2.809113"
+                 Data="M 0,1 A 1,1 0 0 0 1,0"
+                 Fill="#FF9A9A9A"
+                 RenderTransformOrigin="0.0647752803020704,0.177992127764173"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="1">
+                    <RSIPath.RenderTransform>
+                        <RotateTransform Angle="180" />
+                    </RSIPath.RenderTransform>
+                </RSIPath>
+                <RSIPath x:Name="Arc8"
+                 Canvas.Left="163.9357"
+                 Canvas.Top="-1304.8572"
+                 Width="7.718994"
+                 Height="2.824646"
+                 Data="M 0,1 A 1,1 0 0 0 1,0"
+                 Fill="#FF9A9A9A"
+                 RenderTransformOrigin="0.0647752803020704,0.177013331936108"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="1">
+                    <RSIPath.RenderTransform>
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                    </RSIPath.RenderTransform>
+                </RSIPath>
+                <RSIPath x:Name="Arc6"
+                 Canvas.Left="163.9356"
+                 Canvas.Top="-1282.87799"
+                 Width="7.718872"
+                 Height="2.824585"
+                 Data="M 0,1 A 1,1 0 0 0 1,0"
+                 Fill="#FF9A9A9A"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="1" />
+            </RSICanvas>
+            <RSIRectangle x:Name="Rectangle3"
+                    Width="309"
+                    Height="29.99991"
+                    Stroke="#FF343434"
+                    StrokeThickness="1">
+                <RSIRectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                        <GradientStop Offset="0.5" Color="#FF000000" />
+                        <GradientStop Offset="0" Color="#FFBFBFBF" />
+                        <GradientStop Offset="1" Color="#FFBFBFBF" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Fill>
+            </RSIRectangle>
+            <RSICanvas Name="Group7"
+                 Width="300"
+                 Height="23.99982"
+                 Left="3"
+                 Top="2.99989999999997">
+                <RSIRectangle x:Name="Rectangle4"
+                      Canvas.Top="-9.99999999748979E-05"
+                      Width="300"
+                      Height="23.99982"
+                      Stroke="#FF000000"
+                      StrokeThickness="1">
+                    <RSIRectangle.Fill>
+                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                            <GradientStop Offset="1" Color="#FF666666" />
+                            <GradientStop Offset="0" Color="#FF343434" />
+                        </LinearGradientBrush>
+                    </RSIRectangle.Fill>
+                </RSIRectangle>
+                <RSIText x:Name="Text3"
+                 Canvas.Left="4.72000000000003"
+                 Canvas.Top="5.07580000000002"
+                 Width="117.4796"
+                 Height="14.52338"
+                 VerticalAlignment="Center"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="LAST RESET DATE"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="10"
+                 TextElement.FontWeight="Bold" />
+            </RSICanvas>
+        </RSICanvas>
+        <RSICanvas Name="Group1"
+               Width="73.06299"
+               Height="14.52344"
+               Left="1627.61200148342"
+               Top="421.2443">
+            <Grid x:Name="Text4"
+            Canvas.Left="42.143"
+            Width="3.611572"
+            Height="14.52344"
+            IsHitTestVisible="False"
+            RenderTransformOrigin="0,0">
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                    </TransformGroup>
+                </Grid.RenderTransform>
+            </Grid>
+            <Grid x:Name="Unit"
+            Canvas.Left="20.0709999999999"
+            Width="3.611572"
+            Height="14.52344"
+            IsHitTestVisible="False"
+            RenderTransformOrigin="0,0">
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                    </TransformGroup>
+                </Grid.RenderTransform>
+            </Grid>
+            <RSIText x:Name="rSIText" Height="15.773" Canvas.Left="-2.112" TextWrapping="Wrap" Text="## ## ##" Width="77.25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="-1.25" Foreground="Lime"/>
+            <RSIText x:Name="rSIText_Copy" Height="15.773" Canvas.Left="25.39" TextWrapping="Wrap" Text="/" Width="5.75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="-0.503" Foreground="Black" FontSize="16" FontWeight="Bold"/>
+            <RSIText x:Name="rSIText_Copy1" Height="15.773" Canvas.Left="42.05" TextWrapping="Wrap" Text="/" Width="5.75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="-0.503" Foreground="Black" FontSize="16" FontWeight="Bold"/>
+        </RSICanvas>
+        <hmi:PbMomConf_02_S x:Name="PbMomConf_02_S2"
+                        Canvas.Left="1751.00000148342"
+                        Canvas.Top="381.0625"
+                        Width="46"
+                        Height="23"
+                        ConfirmationMessage="RESET NO. OF SURGE?"
+                        fTagName="IADAS.3CCS_D_CS01.03SC_RST_DCS.IN"
+                        gTagName="IADAS.3CCS_D_CS01.03SC_RST_DCS.IN"
+                        NameStore="CONFIRMATION_SCREEN_PLS" ModelName="g003_SC_RST_DCS" WinName="RESET" />
+        <hmi:PbMomConf_02_S x:Name="PbMomConf_02_S3"
+                        Canvas.Left="1751.00200148342"
+                        Canvas.Top="440.0626"
+                        Width="45.98315"
+                        Height="23"
+                        ConfirmationMessage="RESET NO. OF RECALIBRATION?"
+                        fTagName="IADAS.3CCS_D_CS01.03RECAL_RST.IN"
+                        gTagName="IADAS.3CCS_D_CS01.03RECAL_RST.IN"
+                        NameStore="CONFIRMATION_SCREEN_PLS" ModelName="g003_RECAL_RST_DCS" WinName="RESET" />
+        <RSIText x:Name="rSIText_Copy12" Canvas.Left="1612.275" TextWrapping="Wrap" Text="FIC_0106" Canvas.Top="740.063" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="88.4" Height="38" Opacity="0.01">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Open Title="FIC-0181" WindowName="FIC_0181" TagName="M39_003FIC0181"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+</UserControl>

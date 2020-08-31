@@ -1,0 +1,215 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:Type1_Display_3Letter_III_3}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:Type1_Display_3Letter_III_3}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="38"
+                         Height="14.802345"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIRectangle x:Name="RoundRectangle3"
+                              Width="38"
+                              Height="14"
+                              StrokeThickness="1"> 
+                  <RSIRectangle.Stroke>
+                    <RadialGradientBrush>
+                      <GradientStop Offset="0" Color="#FF000000" />
+                      <GradientStop Offset="0" Color="#FFFFFFFF" />
+                      <GradientStop Offset="1" Color="#FF000000" />
+                    </RadialGradientBrush>
+                  </RSIRectangle.Stroke> 
+                  <RSIRectangle.Fill>
+                    <RadialGradientBrush>
+                      <GradientStop Offset="0" Color="#FF004200" />
+                      <GradientStop Offset="0" Color="#FF000000" />
+                      <GradientStop Offset="1" Color="#FF004200" />
+                    </RadialGradientBrush>
+                  </RSIRectangle.Fill>
+                  <RSIRectangle.Animations>
+                    <Animation Condition="Colour, Converter={IsEqualTo 1}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 2}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 3}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 4}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 5}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 6}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 7}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 8}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                  </RSIRectangle.Animations>
+                </RSIRectangle>
+                <RSIRectangle x:Name="RoundRectangle2"
+                              Width="38"
+                              Height="14"
+                              StrokeThickness="1"> 
+                  <RSIRectangle.Stroke>
+                    <RadialGradientBrush>
+                      <GradientStop Offset="0" Color="#FF4D4D4D" />
+                      <GradientStop Offset="0" Color="#FFFFFFFF" />
+                      <GradientStop Offset="1" Color="#FF4D4D4D" />
+                    </RadialGradientBrush>
+                  </RSIRectangle.Stroke> 
+                  <RSIRectangle.Fill>
+                    <RadialGradientBrush>
+                      <GradientStop Offset="0" Color="#FFB3B3B3" />
+                      <GradientStop Offset="0" Color="#FFB3B3B3" />
+                      <GradientStop Offset="0" Color="#FF7E7E7E" />
+                      <GradientStop Offset="0" Color="#FFB3B3B3" />
+                      <GradientStop Offset="1" Color="#FFB3B3B3" />
+                    </RadialGradientBrush>
+                  </RSIRectangle.Fill>
+                  <RSIRectangle.Animations>
+                    <Animation Condition="Value==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="Value==false">
+                      <Invisible />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 1}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 2}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 3}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 4}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 5}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 6}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 7}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                    <Animation Condition="Colour, Converter={IsEqualTo 8}">
+                      <ChangeColor Color="" />
+                    </Animation>
+                  </RSIRectangle.Animations>
+                </RSIRectangle>
+                <RSIRectangle x:Name="RoundRectangle1"
+                              Canvas.Left="1.59163"
+                              Canvas.Top="2.6375"
+                              Width="35.8"
+                              Height="5"
+                              StrokeThickness="0"> 
+                  <RSIRectangle.Stroke>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                      <GradientStop Offset="0" Color="#FFE0E0E0" />
+                      <GradientStop Offset="0" Color="#FF4D4D4D" />
+                      <GradientStop Offset="1" Color="#FF4D4D4D" />
+                    </LinearGradientBrush>
+                  </RSIRectangle.Stroke> 
+                  <RSIRectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                      <GradientStop Offset="0" Color="#FFFFFFFF" />
+                      <GradientStop Offset="0" Color="#00FFFFFF" />
+                      <GradientStop Offset="1" Color="#00FFFFFF" />
+                    </LinearGradientBrush>
+                  </RSIRectangle.Fill>
+                  <RSIRectangle.Animations>
+                    <Animation Condition="Value==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="Value==false">
+                      <Invisible />
+                    </Animation>
+                    <Animation Condition="Value">
+                      <ChangeColor Color="" />
+                    </Animation>
+                  </RSIRectangle.Animations>
+                </RSIRectangle>
+                <RSIText x:Name="Text3"
+                         Canvas.Left="6.79114"
+                         Canvas.Top="0.278905"
+                         Width="26.0127"
+                         Height="14.52344"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         Text="XXX"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold">
+                  <RSIText.Animations>
+                    <Animation Condition="Value">
+                      <ChangeColor Color="#FF000000" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSICanvas Name="Group2"
+                           Width="34"
+                           Height="9.999999"
+                           Left="2.19162"
+                           Top="2.637435">
+                  <RSIBorder x:Name="Line1"
+                             Canvas.Left="-0.750010000000003"
+                             Canvas.Top="-0.750001"
+                             Width="34"
+                             Height="9.999992">
+                    <RSIPath Data="M33.24999,9.249995 L-0.750010000000003,-0.750001"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="1" />
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line2"
+                             Canvas.Left="33.24999"
+                             Canvas.Top="-0.750001"
+                             Width="33.99998"
+                             Height="9.999992"
+                             RenderTransformOrigin="0.00980392733564353,0.0333333600000213">
+                    <RSIPath Data="M-0.749990000000004,9.249995 L33.24999,-0.750001"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="1">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                </RSICanvas>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

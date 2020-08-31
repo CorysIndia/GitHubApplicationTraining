@@ -1,0 +1,1227 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:Timer2_CCS}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:Timer2_CCS}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="48.00017"
+                         Height="15.00003"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSICanvas Name="MinuteDisplay"
+                           Width="21.98871"
+                           Height="15.00003"
+                           Left="0"
+                           Top="0">
+                  <RSICanvas Name="Tens"
+                             Width="9.292694"
+                             Height="15.00003"
+                             Left="0"
+                             Top="0">
+                    <RSICanvas Name="SgementsOff"
+                               Width="9.292694"
+                               Height="15.00003"
+                               Left="0"
+                               Top="-9.99999999748979E-05">
+                      <RSIPath x:Name="LEDTop"
+                               Canvas.Left="0.992609999999956"
+                               Canvas.Top="0.000159999999993943"
+                               Width="7.399506"
+                               Height="1.649326"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF001E00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0" />
+                      <RSIPath x:Name="LEDLeftTop"
+                               Canvas.Left="-0.000310000000013133"
+                               Canvas.Top="7.32087999999999"
+                               Width="6.972466"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="-90" />
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDLeftBottom"
+                               Canvas.Left="0.000199999999949796"
+                               Canvas.Top="7.67954999999995"
+                               Width="6.972462"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="-90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightTop"
+                               Canvas.Left="9.29232999999999"
+                               Canvas.Top="7.32054999999997"
+                               Width="6.972466"
+                               Height="1.732605"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightBottom"
+                               Canvas.Left="9.29395"
+                               Canvas.Top="7.67902999999995"
+                               Width="6.972466"
+                               Height="1.732666"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="90" />
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDBottom"
+                               Canvas.Left="8.30124999999998"
+                               Canvas.Top="14.9998"
+                               Width="7.399506"
+                               Height="1.64933"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="180" />
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDMiddle"
+                               Canvas.Left="0.975299999999947"
+                               Canvas.Top="6.59359999999998"
+                               Width="7.287292"
+                               Height="1.827148"
+                               Data="M0.1465034,0 L0.8539917,0 1,0.5024127 0.8600907,1 0.1465034,1 0,0.5027753 z"
+                               Fill="#FF001E00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0" />
+                    </RSICanvas>
+                    <RSICanvas Name="SegmentsOn"
+                               Width="9.292694"
+                               Height="15.00003"
+                               Left="0"
+                               Top="-9.99999999748979E-05">
+                      <RSIPath x:Name="LEDTop_1"
+                               Canvas.Left="0.992609999999956"
+                               Canvas.Top="0.000159999999993943"
+                               Width="7.399506"
+                               Height="1.649326"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF00FF00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.Animations>
+                          <Animation Condition="_02356789_Contains_DisplayDigit7_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_02356789_Contains_DisplayDigit7_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDLeftTop_1"
+                               Canvas.Left="-0.000310000000013133"
+                               Canvas.Top="7.32087999999999"
+                               Width="6.972466"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="-90" />
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_045689_Contains_DisplayDigit7_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_045689_Contains_DisplayDigit7_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDLeftBottom_1"
+                               Canvas.Left="0.000199999999949796"
+                               Canvas.Top="7.67954999999995"
+                               Width="6.972462"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="-90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_0268_Contains_DisplayDigit7_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_0268_Contains_DisplayDigit7_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightTop_1"
+                               Canvas.Left="9.29232999999999"
+                               Canvas.Top="7.32054999999997"
+                               Width="6.972466"
+                               Height="1.732605"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_01234789_Contains_DisplayDigit7_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_01234789_Contains_DisplayDigit7_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightBottom_1"
+                               Canvas.Left="9.29395"
+                               Canvas.Top="7.67902999999995"
+                               Width="6.972466"
+                               Height="1.732666"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="90" />
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_0133456789_Contains_DisplayDigit7_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_0133456789_Contains_DisplayDigit7_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDBottom_1"
+                               Canvas.Left="8.30124999999998"
+                               Canvas.Top="14.9998"
+                               Width="7.399506"
+                               Height="1.64933"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="180" />
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_0235689_Contains_DisplayDigit7_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_0235689_Contains_DisplayDigit7_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDMiddle_1"
+                               Canvas.Left="0.975299999999947"
+                               Canvas.Top="6.59359999999998"
+                               Width="7.287292"
+                               Height="1.827148"
+                               Data="M0.1465034,0 L0.8539917,0 1,0.5024127 0.8600907,1 0.1465034,1 0,0.5027753 z"
+                               Fill="#FF00FF00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.Animations>
+                          <Animation Condition="_2345689__Contains_DisplayDigit7_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_2345689__Contains_DisplayDigit7_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                    </RSICanvas>
+                  </RSICanvas>
+                  <RSICanvas Name="Ones"
+                             Width="9.292694"
+                             Height="15.00003"
+                             Left="12.6961"
+                             Top="0">
+                    <RSICanvas Name="SgementsOff_1"
+                               Width="9.292694"
+                               Height="15.00003"
+                               Left="0"
+                               Top="-9.99999999748979E-05">
+                      <RSIPath x:Name="LEDTop_2"
+                               Canvas.Left="0.992609999999956"
+                               Canvas.Top="0.000169999999968695"
+                               Width="7.399506"
+                               Height="1.649326"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF001E00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0" />
+                      <RSIPath x:Name="LEDLeftTop_2"
+                               Canvas.Left="-0.000310000000013133"
+                               Canvas.Top="7.32088999999996"
+                               Width="6.972466"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="-90" />
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDLeftBottom_2"
+                               Canvas.Left="9.99999999748979E-05"
+                               Canvas.Top="7.67955999999998"
+                               Width="6.972462"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="-90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightTop_2"
+                               Canvas.Left="9.29222999999996"
+                               Canvas.Top="7.32053999999999"
+                               Width="6.972466"
+                               Height="1.732605"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightBottom_2"
+                               Canvas.Left="9.29385000000002"
+                               Canvas.Top="7.67901999999998"
+                               Width="6.972466"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="90" />
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDBottom_2"
+                               Canvas.Left="8.30115000000001"
+                               Canvas.Top="14.9998"
+                               Width="7.399506"
+                               Height="1.64933"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="180" />
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDMiddle_2"
+                               Canvas.Left="0.975199999999973"
+                               Canvas.Top="6.59359999999998"
+                               Width="7.287292"
+                               Height="1.827148"
+                               Data="M0.1465034,0 L0.8539917,0 1,0.5024127 0.8600907,1 0.1465034,1 0,0.5027753 z"
+                               Fill="#FF001E00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0" />
+                    </RSICanvas>
+                    <RSICanvas Name="SegmentsOn_1"
+                               Width="9.292694"
+                               Height="15.00003"
+                               Left="0"
+                               Top="-9.99999999748979E-05">
+                      <RSIPath x:Name="LEDTop_3"
+                               Canvas.Left="0.992609999999956"
+                               Canvas.Top="0.000169999999968695"
+                               Width="7.399506"
+                               Height="1.649326"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF00FF00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.Animations>
+                          <Animation Condition="_02356789_Contains_DisplayDigit6_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_02356789_Contains_DisplayDigit6_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDLeftTop_3"
+                               Canvas.Left="-0.000310000000013133"
+                               Canvas.Top="7.32088999999996"
+                               Width="6.972466"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="-90" />
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_045689_Contains_DisplayDigit6_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_045689_Contains_DisplayDigit6_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDLeftBottom_3"
+                               Canvas.Left="9.99999999748979E-05"
+                               Canvas.Top="7.67955999999998"
+                               Width="6.972462"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="-90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_0268_Contains_DisplayDigit6_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_0268_Contains_DisplayDigit6_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightTop_3"
+                               Canvas.Left="9.29222999999996"
+                               Canvas.Top="7.32053999999999"
+                               Width="6.972466"
+                               Height="1.732605"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_01234789_Contains_DisplayDigit6_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_01234789_Contains_DisplayDigit6_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightBottom_3"
+                               Canvas.Left="9.29385000000002"
+                               Canvas.Top="7.67901999999998"
+                               Width="6.972466"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="90" />
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_0133456789_Contains_DisplayDigit6_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_0133456789_Contains_DisplayDigit6_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDBottom_3"
+                               Canvas.Left="8.30115000000001"
+                               Canvas.Top="14.9998"
+                               Width="7.399506"
+                               Height="1.64933"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="180" />
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_0235689_Contains_DisplayDigit6_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_0235689_Contains_DisplayDigit6_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDMiddle_3"
+                               Canvas.Left="0.975199999999973"
+                               Canvas.Top="6.59359999999998"
+                               Width="7.287292"
+                               Height="1.827148"
+                               Data="M0.1465034,0 L0.8539917,0 1,0.5024127 0.8600907,1 0.1465034,1 0,0.5027753 z"
+                               Fill="#FF00FF00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.Animations>
+                          <Animation Condition="_2345689__Contains_DisplayDigit6_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_2345689__Contains_DisplayDigit6_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                    </RSICanvas>
+                  </RSICanvas>
+                </RSICanvas>
+                <RSICanvas Name="SecondsSep"
+                           Width="1.594299"
+                           Height="8.090668"
+                           Left="23.4081"
+                           Top="4.40410000000003">
+                  <RSICanvas Name="Group1"
+                             Width="1.594299"
+                             Height="8.090668"
+                             Left="-0.000100000000031741"
+                             Top="-0.000100000000031741">
+                    <RSIPath x:Name="Lower"
+                             Canvas.Top="6.31720000000001"
+                             Width="1.594299"
+                             Height="1.773499"
+                             Data="M0,0 L1,0.008315884 1,1 0.0408099,0.9781255 z"
+                             Fill="#FF000000"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="0" />
+                    <RSIPath x:Name="Upper"
+                             Width="1.594299"
+                             Height="1.773468"
+                             Data="M0,0 L1,0.008315884 1,1 0.0408099,0.9781255 z"
+                             Fill="#FF000000"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="0" />
+                  </RSICanvas>
+                  <RSICanvas Name="DotsOff"
+                             Width="1.594299"
+                             Height="8.090668"
+                             Left="-0.000100000000031741"
+                             Top="-0.000100000000031741">
+                    <RSIPath x:Name="Lower_1"
+                             Canvas.Top="6.31720000000001"
+                             Width="1.594299"
+                             Height="1.773499"
+                             Data="M0,0 L1,0.008315884 1,1 0.0408099,0.9781255 z"
+                             Fill="#FF001E00"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="0" />
+                    <RSIPath x:Name="Upper_1"
+                             Width="1.594299"
+                             Height="1.773468"
+                             Data="M0,0 L1,0.008315884 1,1 0.0408099,0.9781255 z"
+                             Fill="#FF001E00"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="0" />
+                  </RSICanvas>
+                  <RSICanvas Name="DotsOn"
+                             Width="1.594269"
+                             Height="8.090637"
+                             Left="0"
+                             Top="0">
+                    <RSIPath x:Name="Lower_2"
+                             Canvas.Left="-0.000100000000031741"
+                             Canvas.Top="6.31709999999998"
+                             Width="1.594269"
+                             Height="1.773468"
+                             Data="M0,0 L1,0.008315884 1,1 0.0408099,0.9781255 z"
+                             Fill="#FF00FF00"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="0" />
+                    <RSIPath x:Name="Upper_2"
+                             Canvas.Left="-0.000100000000031741"
+                             Width="1.594269"
+                             Height="1.773468"
+                             Data="M0,0 L1,0.008315884 1,1 0.0408099,0.9781255 z"
+                             Fill="#FF00FF00"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="0" />
+                  </RSICanvas>
+                </RSICanvas>
+                <RSICanvas Name="SecondDisplay"
+                           Width="21.98877"
+                           Height="15.00003"
+                           Left="26.0114"
+                           Top="0">
+                  <RSICanvas Name="Tens_1"
+                             Width="9.292725"
+                             Height="15.00003"
+                             Left="0"
+                             Top="0">
+                    <RSICanvas Name="SgementsOff_2"
+                               Width="9.292725"
+                               Height="15.00003"
+                               Left="0"
+                               Top="-9.99999999748979E-05">
+                      <RSIPath x:Name="LEDTop_4"
+                               Canvas.Left="0.992610000000013"
+                               Canvas.Top="0.000169999999968695"
+                               Width="7.399475"
+                               Height="1.649323"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF001E00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0" />
+                      <RSIPath x:Name="LEDLeftTop_4"
+                               Canvas.Left="-0.000310000000013133"
+                               Canvas.Top="7.32089999999999"
+                               Width="6.972473"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="-90" />
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDLeftBottom_4"
+                               Canvas.Left="9.99999999748979E-05"
+                               Canvas.Top="7.67956999999996"
+                               Width="6.972462"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="-90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightTop_4"
+                               Canvas.Left="9.29232999999999"
+                               Canvas.Top="7.32053999999999"
+                               Width="6.972466"
+                               Height="1.732666"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightBottom_4"
+                               Canvas.Left="9.29395"
+                               Canvas.Top="7.67900999999995"
+                               Width="6.972462"
+                               Height="1.732605"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="90" />
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDBottom_4"
+                               Canvas.Left="8.30124999999998"
+                               Canvas.Top="14.9998"
+                               Width="7.399506"
+                               Height="1.649338"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="180" />
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDMiddle_4"
+                               Canvas.Left="0.975199999999973"
+                               Canvas.Top="6.59359999999998"
+                               Width="7.287354"
+                               Height="1.827148"
+                               Data="M0.1465034,0 L0.8539917,0 1,0.5024127 0.8600907,1 0.1465034,1 0,0.5027753 z"
+                               Fill="#FF001E00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0" />
+                    </RSICanvas>
+                    <RSICanvas Name="SegmentsOn_2"
+                               Width="9.292725"
+                               Height="15.00003"
+                               Left="0"
+                               Top="-9.99999999748979E-05">
+                      <RSIPath x:Name="LEDTop_5"
+                               Canvas.Left="0.992610000000013"
+                               Canvas.Top="0.000169999999968695"
+                               Width="7.399475"
+                               Height="1.649323"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF00FF00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.Animations>
+                          <Animation Condition="_02356789_Contains_DisplayDigit5_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_02356789_Contains_DisplayDigit5_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDLeftTop_5"
+                               Canvas.Left="-0.000310000000013133"
+                               Canvas.Top="7.32089999999999"
+                               Width="6.972473"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="-90" />
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_045689_Contains_DisplayDigit5_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_045689_Contains_DisplayDigit5_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDLeftBottom_5"
+                               Canvas.Left="9.99999999748979E-05"
+                               Canvas.Top="7.67956999999996"
+                               Width="6.972462"
+                               Height="1.732635"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="-90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_0268_Contains_DisplayDigit5_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_0268_Contains_DisplayDigit5_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightTop_5"
+                               Canvas.Left="9.29232999999999"
+                               Canvas.Top="7.32053999999999"
+                               Width="6.972466"
+                               Height="1.732666"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_01234789_Contains_DisplayDigit5_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_01234789_Contains_DisplayDigit5_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightBottom_5"
+                               Canvas.Left="9.29395"
+                               Canvas.Top="7.67900999999995"
+                               Width="6.972462"
+                               Height="1.732605"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="90" />
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_0133456789_Contains_DisplayDigit5_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_0133456789_Contains_DisplayDigit5_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDBottom_5"
+                               Canvas.Left="8.30124999999998"
+                               Canvas.Top="14.9998"
+                               Width="7.399506"
+                               Height="1.649338"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="180" />
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_0235689_Contains_DisplayDigit5_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_0235689_Contains_DisplayDigit5_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDMiddle_5"
+                               Canvas.Left="0.975199999999973"
+                               Canvas.Top="6.59359999999998"
+                               Width="7.287354"
+                               Height="1.827148"
+                               Data="M0.1465034,0 L0.8539917,0 1,0.5024127 0.8600907,1 0.1465034,1 0,0.5027753 z"
+                               Fill="#FF00FF00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.Animations>
+                          <Animation Condition="_2345689__Contains_DisplayDigit5_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_2345689__Contains_DisplayDigit5_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                    </RSICanvas>
+                  </RSICanvas>
+                  <RSICanvas Name="Ones_1"
+                             Width="9.292725"
+                             Height="15.00003"
+                             Left="12.696"
+                             Top="0">
+                    <RSICanvas Name="SgementsOff_3"
+                               Width="9.292725"
+                               Height="15.00003"
+                               Left="0"
+                               Top="-9.99999999748979E-05">
+                      <RSIPath x:Name="LEDTop_6"
+                               Canvas.Left="0.992610000000013"
+                               Canvas.Top="0.000169999999968695"
+                               Width="7.399536"
+                               Height="1.649323"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF001E00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0" />
+                      <RSIPath x:Name="LEDLeftTop_6"
+                               Canvas.Left="-0.000310000000013133"
+                               Canvas.Top="7.32089999999999"
+                               Width="6.972466"
+                               Height="1.732605"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="-90" />
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDLeftBottom_6"
+                               Canvas.Left="9.99999999748979E-05"
+                               Canvas.Top="7.67956999999996"
+                               Width="6.972466"
+                               Height="1.732697"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="-90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightTop_6"
+                               Canvas.Left="9.29232999999999"
+                               Canvas.Top="7.32053999999999"
+                               Width="6.972466"
+                               Height="1.732605"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightBottom_6"
+                               Canvas.Left="9.29404999999997"
+                               Canvas.Top="7.67899999999997"
+                               Width="6.972462"
+                               Height="1.732697"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="90" />
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDBottom_6"
+                               Canvas.Left="8.30134999999996"
+                               Canvas.Top="14.9998"
+                               Width="7.399506"
+                               Height="1.64933"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF001E00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="180" />
+                        </RSIPath.RenderTransform>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDMiddle_6"
+                               Canvas.Left="0.975299999999947"
+                               Canvas.Top="6.59359999999998"
+                               Width="7.287292"
+                               Height="1.827148"
+                               Data="M0.1465034,0 L0.8539917,0 1,0.5024127 0.8600907,1 0.1465034,1 0,0.5027753 z"
+                               Fill="#FF001E00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0" />
+                    </RSICanvas>
+                    <RSICanvas Name="SegmentsOn_3"
+                               Width="9.292725"
+                               Height="15.00003"
+                               Left="0"
+                               Top="-9.99999999748979E-05">
+                      <RSIPath x:Name="LEDTop_7"
+                               Canvas.Left="0.992610000000013"
+                               Canvas.Top="0.000169999999968695"
+                               Width="7.399536"
+                               Height="1.649323"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF00FF00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.Animations>
+                          <Animation Condition="_02356789_Contains_DisplayDigit4_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_02356789_Contains_DisplayDigit4_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDLeftTop_7"
+                               Canvas.Left="-0.000310000000013133"
+                               Canvas.Top="7.32089999999999"
+                               Width="6.972466"
+                               Height="1.732605"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="-90" />
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_045689_Contains_DisplayDigit4_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_045689_Contains_DisplayDigit4_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDLeftBottom_7"
+                               Canvas.Left="9.99999999748979E-05"
+                               Canvas.Top="7.67956999999996"
+                               Width="6.972466"
+                               Height="1.732697"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="-90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_0268_Contains_DisplayDigit4_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_0268_Contains_DisplayDigit4_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightTop_7"
+                               Canvas.Left="9.29232999999999"
+                               Canvas.Top="7.32053999999999"
+                               Width="6.972466"
+                               Height="1.732605"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_01234789_Contains_DisplayDigit4_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_01234789_Contains_DisplayDigit4_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDRightBottom_7"
+                               Canvas.Left="9.29404999999997"
+                               Canvas.Top="7.67899999999997"
+                               Width="6.972462"
+                               Height="1.732697"
+                               Data="M0.9999999,0 L0.7689157,0.9964792 0.2162607,1 0,9.186835E-07 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="90" />
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_0133456789_Contains_DisplayDigit4_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_0133456789_Contains_DisplayDigit4_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDBottom_7"
+                               Canvas.Left="8.30134999999996"
+                               Canvas.Top="14.9998"
+                               Width="7.399506"
+                               Height="1.64933"
+                               Data="M1,0 L0.7611338,0.996479 0.2406015,1 0,1.224911E-06 z"
+                               Fill="#FF00FF00"
+                               RenderTransformOrigin="0,0"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.RenderTransform>
+                          <RotateTransform Angle="180" />
+                        </RSIPath.RenderTransform>
+                        <RSIPath.Animations>
+                          <Animation Condition="_0235689_Contains_DisplayDigit4_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_0235689_Contains_DisplayDigit4_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                      <RSIPath x:Name="LEDMiddle_7"
+                               Canvas.Left="0.975299999999947"
+                               Canvas.Top="6.59359999999998"
+                               Width="7.287292"
+                               Height="1.827148"
+                               Data="M0.1465034,0 L0.8539917,0 1,0.5024127 0.8600907,1 0.1465034,1 0,0.5027753 z"
+                               Fill="#FF00FF00"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="0">
+                        <RSIPath.Animations>
+                          <Animation Condition="_2345689__Contains_DisplayDigit4_==true">
+                            <SetVisible />
+                          </Animation>
+                          <Animation Condition="_2345689__Contains_DisplayDigit4_==false">
+                            <Invisible />
+                          </Animation>
+                        </RSIPath.Animations>
+                      </RSIPath>
+                    </RSICanvas>
+                  </RSICanvas>
+                </RSICanvas>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

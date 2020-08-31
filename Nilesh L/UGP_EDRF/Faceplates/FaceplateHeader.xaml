@@ -1,0 +1,93 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="UGP_EDRF.Faceplates.FaceplateHeader">
+    <Grid Background="Blue">
+    <RSICanvas
+                Name="Header"
+                Width="255.219"
+                Height="126.737"
+                Left="0"
+                Top="0">
+
+
+        <RSIRectangle
+                    x:Name="Element24"
+                    Width="255.219"
+                    Height="126.737"
+                    Fill="#FF717171"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1" />
+        <RSIText
+                    x:Name="DESCRIPTION1"
+                    Canvas.Left="10.494"
+                    Canvas.Top="5.563"
+                    Width="234.725"
+                    VerticalContentAlignment="Center"
+                    BorderBrush="Transparent"
+                    Foreground="#FFFFFFFF"
+                    IsHitTestVisible="False"
+                    Text="\$TAGNAME.DESCRP\"
+                    TextElement.FontSize="12"
+                    TextWrapping="Wrap" />
+        <RSIText
+                    x:Name="DESCRIPTION1_Copy"
+                    Canvas.Left="10.494"
+                    Canvas.Top="30.063"
+                    Width="234.725"
+                    VerticalContentAlignment="Center"
+                    BorderBrush="Transparent"
+                    Foreground="#FFFFFFFF"
+                    IsHitTestVisible="False"
+                    Text="\$TAGNAME.TagComment1\"
+                    TextElement.FontSize="12"
+                    TextWrapping="Wrap" />
+        <RSIText
+                    x:Name="DESCRIPTION1_Copy1"
+                    Canvas.Left="10.494"
+                    Canvas.Top="54.563"
+                    Width="234.725"
+                    VerticalContentAlignment="Center"
+                    BorderBrush="Transparent"
+                    Foreground="#FFFFFFFF"
+                    IsHitTestVisible="False"
+                    Text="\$TAGNAME.TagComment2\"
+                    TextElement.FontSize="12"
+                    TextWrapping="Wrap" />
+        <RSIText
+                    x:Name="DESCRIPTION1_Copy2"
+                    Canvas.Left="10"
+                    Canvas.Top="102.937"
+                    Width="198.781"
+                    VerticalContentAlignment="Center"
+                    BorderBrush="Transparent"
+                    Foreground="#FFFFFFFF"
+                    IsHitTestVisible="False"
+                    Text="$TAGNAME"
+                    TextElement.FontSize="12"
+                    TextWrapping="Wrap" />
+    </RSICanvas>
+        <RSIBorder
+                    Background="#FF717171"
+                    BorderBrush="#FFFFFFFF"
+                    BorderThickness="1" >
+            <Grid Margin="10,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="27"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+                <RSIText Text="$TAGNAME.DESCRP" Grid.Row="0" VerticalAlignment="Center"/>
+                <RSIText Text="$TAGNAME.TagComment1" Grid.Row="1" VerticalAlignment="Center"/>
+                <RSIText Text="$TAGNAME.TagComment2" Grid.Row="2" VerticalAlignment="Center"/>
+                <RSIText Text="$TAGNAME" Grid.Row="4" VerticalAlignment="Center"/>
+            </Grid>
+        </RSIBorder>
+
+    </Grid>
+</RSIControl>

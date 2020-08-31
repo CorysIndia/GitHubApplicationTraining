@@ -1,0 +1,166 @@
+﻿<RSIFacePlate
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:HMI="clr-namespace:UGP_STG.HMI"
+	xmlns:Faceplate_Mimics="clr-namespace:UGP_STG.STG_Faceplate.Faceplate_Mimics"
+	mc:Ignorable="d"
+	x:Class="UGP_STG.STG_Faceplate.TransitionFaceplate.SD_S62"
+	Width="977" 
+	Height="755.75"
+	Background="#FFB6B6BE">
+    <RSICanvas Margin="0,-0.5,0,0.5"  >
+        <HMI:Button Canvas.Left="756.402" Canvas.Top="175.822" BLKName="SD_S62_L1_AND1" BLKText="&amp;" INPUT_01="True" INPUT_02="True" INPUT_03="True" INPUT_04="True" INPUT_05="True" INPUT_06="True" OUTPUTArrowVisible="True"/>
+        <RSI_And Canvas.Left="-853.598" Canvas.Top="516.55"  ModelName="SD_S62_L1_AND1" InputNumber="6" IsPermissive="True"/>
+        <RSI_And Canvas.Left="-750.301" Canvas.Top="518.6" ModelName="ST_S1_AND02" InputNumber="2" />
+        <RSI_And Canvas.Left="-734.598" Canvas.Top="435.1" ModelName="ST_S1_AND03" InputNumber="2" />
+        <RSIRectangle Fill="DarkGray" Height="100" Canvas.Left="-513" Stroke="Black" Canvas.Top="478.6" Width="45">
+            <RSIRectangle.Animations>
+                <Animation Condition="$TAGNAME_L1AND01"/>
+            </RSIRectangle.Animations>
+        </RSIRectangle>
+        <RSIText x:Name="rSIText" Height="100" Canvas.Left="-447.5" TextWrapping="Wrap" Text="RSIText" Canvas.Top="463.63" Width="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontWeight="Bold"/>
+        <RSILine Fill="DarkGray" Height="2" Canvas.Left="-568" Stroke="Black" Canvas.Top="484.848" Width="55" StrokeThickness="2"/>
+        <RSILine Fill="DarkGray" Height="2" Canvas.Left="-568" Stroke="Black" Canvas.Top="534.1" Width="55" StrokeThickness="2"/>
+        <RSILine Fill="DarkGray" Height="2" Canvas.Left="-568" Stroke="Black" Canvas.Top="500.1" Width="55" StrokeThickness="2"/>
+        <RSILine Fill="DarkGray" Height="2" Canvas.Left="-568" Stroke="Black" Canvas.Top="516.1" Width="55" StrokeThickness="2"/>
+        <RSILine Fill="DarkGray" Height="2" Canvas.Left="-568" Stroke="Black" Canvas.Top="567.85" Width="55" StrokeThickness="2"/>
+        <RSILine Fill="DarkGray" Height="2" Canvas.Left="-568" Stroke="Black" Canvas.Top="551.6" Width="55" StrokeThickness="2"/>
+        <HMI:Button Canvas.Left="372.73" Canvas.Top="21.156" BLKName="SD_S62_L2_OR1" BLKText="&gt;=1" INPUT_01="True" INPUT_02="True" INPUT_01_TEXTVisible="True" INPUT_01_TEXT01="EM1611D_MP_DRVON" INPUT_01_TEXT02="LUBE OIL RESERVOIR MIST FANA" INPUT_02_TEXT01="EM1612D_MPDRVON" INPUT_02_TEXT02="LUBE OIL RESERVOIR MIST FANB" INPUT_02_TEXTVisible="True"/>
+        <HMI:Button Canvas.Left="372.73" Canvas.Top="170.326" BLKName="SD_S62_L2_OR2" BLKText="&gt;=1" INPUT_01="True" INPUT_02="True" INPUT_01_TEXTVisible="True" INPUT_02_TEXTVisible="True" INPUT_02_TEXT01="GM1616D_MP_DRVON" INPUT_02_TEXT02="LUBE OIL PUMP B" INPUT_01_TEXT01="GM1615D_MP_DRVON" INPUT_01_TEXT02="LUBE OIL PUMP A"/>
+        <RSICanvas x:Name="Description01" Height="16.5" Canvas.Left="-686.083"  Canvas.Top="493.225" Width="117.708" >
+            <RSIText x:Name="rSIText01" Height="8.168" TextWrapping="Wrap" Text="RSIText" Width="117.708" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="8" Background="White" Canvas.Top="0.124"/>
+            <RSIText x:Name="rSIText01_Copy" Height="8.167" TextWrapping="Wrap" Text="LUBE OIL RESERVOIR MIST FANA" Width="117.708" VerticalContentAlignment="Center" Foreground="Black" FontSize="8" Canvas.Top="8.292" Background="White"/>
+        </RSICanvas>
+        <RSICanvas x:Name="Description_Copy" Height="16.5" Canvas.Left="-686.083"  Canvas.Top="476.725" Width="117.708" >
+            <RSIText x:Name="rSIText1" Height="8.168" TextWrapping="Wrap" Text="RSIText" Width="117.708" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="8" Background="White" Canvas.Top="0.124"/>
+            <RSIText x:Name="rSIText01_Copy1" Height="8.167" TextWrapping="Wrap" Text="LUBE OIL RESERVOIR MIST FANA" Width="117.708" VerticalContentAlignment="Center" Foreground="Black" FontSize="8" Canvas.Top="8.292" Background="White"/>
+            <RSIText x:Name="rSIText1_Copy" Height="14.497" TextWrapping="Wrap" Text="PALL2786_PP_ALM" Width="186.375" VerticalContentAlignment="Center" FontWeight="Bold" Background="White" Canvas.Top="229.656" Canvas.Left="816.115"/>
+            <RSIText x:Name="rSIText01_Copy2" Height="12.25" TextWrapping="Wrap" Text="ST JACKING OIL PUMP DISCHARGE" Width="186.375" VerticalContentAlignment="Center" Foreground="Black" Canvas.Top="244.153" Background="White" Canvas.Left="816.115"/>
+        </RSICanvas>
+        <RSICircle x:Name="Input01NOT_Copy" Fill="White" Height="10.166" Stroke="Black" Width="10.166" StrokeThickness="0.5" Canvas.Left="318.316" Canvas.Top="311.81"/>
+        <RSICircle x:Name="Input01NOT_Copy1" Fill="White" Height="10.166" Stroke="Black" Width="10.166" StrokeThickness="0.5" Canvas.Left="317.481" Canvas.Top="340.08"/>
+        <RSIRectangle Fill="#FF6A6A6F" Height="73.5" Stroke="Black" Width="192" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="756.402" Canvas.Top="653.579">
+            <RSIRectangle.Animations>
+                <Animation Condition="$TAGNAME_L1AND01"/>
+            </RSIRectangle.Animations>
+        </RSIRectangle>
+        <RSIText x:Name="rSIText01_Copy9" Height="17.667" TextWrapping="Wrap" Width="103.208" VerticalContentAlignment="Center" Foreground="Black" Canvas.Top="667.459" Background="White" Text="INVERTED SIGNAL" Canvas.Left="834.902" BorderBrush="Black" HorizontalContentAlignment="Center"/>
+        <RSIText x:Name="rSIText01_Copy10" Height="17.667" TextWrapping="Wrap" Width="103.208" VerticalContentAlignment="Center" Foreground="Black" Canvas.Top="692.459" Background="White" Text="RELEASE PATH" Canvas.Left="834.902" BorderBrush="Black" HorizontalContentAlignment="Center"/>
+        <RSICircle x:Name="Input01NOT_Copy4" Fill="White" Height="10.166" Stroke="Black" Width="10.166" StrokeThickness="0.5" Canvas.Left="791.234" Canvas.Top="671.581"/>
+        <RSILine x:Name="OutputResult" Fill="DarkGray" Height="2" Stroke="Lime" Width="55" StrokeThickness="2" VerticalAlignment="Stretch" Canvas.Left="773.666" Canvas.Top="702.241">
+            <RSILine.Animations>
+                <Animation Condition="$BLKName.result == 1">
+                    <ChangePropertyValue PropertyName="Stroke" Value="Green"/>
+                </Animation>
+            </RSILine.Animations>
+        </RSILine>
+        <RSIText x:Name="rSIText01_Copy11" Height="25" TextWrapping="Wrap" Width="204.083" VerticalContentAlignment="Center" Foreground="White" Canvas.Top="25.959" Background="#FF010081" Text="SHUTDOWN SEQUENCE T62" Canvas.Left="744.319" BorderBrush="Black" HorizontalContentAlignment="Center" FontSize="16"/>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="483.5" Canvas.Top="85.409" Width="219.808" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="1"/>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="651.987" Canvas.Top="133.553" Width="98.484" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="1" RenderTransformOrigin="0.5,0.5">
+            <HMI:ButtonBackPanel_HT.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </HMI:ButtonBackPanel_HT.RenderTransform>
+        </HMI:ButtonBackPanel_HT>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="482.646" Canvas.Top="234.68" Width="80.084" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="2"/>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="543.874" Canvas.Top="217.684" Width="33.772" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="2" RenderTransformOrigin="0.5,0.5">
+            <HMI:ButtonBackPanel_HT.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </HMI:ButtonBackPanel_HT.RenderTransform>
+        </HMI:ButtonBackPanel_HT>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="561.903" Canvas.Top="201.908" Width="148.868" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="2"/>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="329.326" Canvas.Top="316.13" Width="285.183" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="3"/>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="613.539" Canvas.Top="227.914" Width="123.53" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="3"/>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="567.865" Canvas.Top="271.428" Width="89.176" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="3" RenderTransformOrigin="0.5,0.5">
+            <HMI:ButtonBackPanel_HT.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </HMI:ButtonBackPanel_HT.RenderTransform>
+        </HMI:ButtonBackPanel_HT>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="328.482" Canvas.Top="344.13" Width="307.011" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="4"/>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="634.528" Canvas.Top="251.297" Width="107.099" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="4"/>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="586.481" Canvas.Top="297.091" Width="93.826" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="4" RenderTransformOrigin="0.5,0.5">
+            <HMI:ButtonBackPanel_HT.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </HMI:ButtonBackPanel_HT.RenderTransform>
+        </HMI:ButtonBackPanel_HT>
+        <HMI:ButtonBackPanel_HT Height="5" Canvas.Left="483.5" Canvas.Top="442.97" Width="172.321" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="5"/>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="569.606" Canvas.Top="358.724" Width="168.242" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="5" RenderTransformOrigin="0.5,0.5">
+            <HMI:ButtonBackPanel_HT.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </HMI:ButtonBackPanel_HT.RenderTransform>
+        </HMI:ButtonBackPanel_HT>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="654.862" Canvas.Top="275.761" Width="68.875" GateBlockName="SD_S62_L1_AND1" GateBlockInputNumber="5"/>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="514.766" Canvas.Top="458.3" Width="318.65" GateBlockName="SD_S62_L2_AND1" GateBlockInputNumber="1" RenderTransformOrigin="0.5,0.5">
+            <HMI:ButtonBackPanel_HT.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </HMI:ButtonBackPanel_HT.RenderTransform>
+        </HMI:ButtonBackPanel_HT>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="675.341" Canvas.Top="300.078" Width="61.187" GateBlockName="SD_S62_L2_AND1" GateBlockInputNumber="1"/>
+        <RSICanvas x:Name="Input01Description_Copy1" Height="23.5" Width="189" Canvas.Left="129.331" Canvas.Top="249.665" >
+            <RSIText x:Name="rSIText4" Height="11.335" TextWrapping="Wrap" Width="188.874" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="12" Background="White" Canvas.Top="55.874" Text="PALL2783_PP_WRN"/>
+            <RSIText x:Name="rSIText01_Copy4" Height="12.168" TextWrapping="Wrap" Width="188.874" VerticalContentAlignment="Center" Foreground="Black" FontSize="12" Canvas.Top="67.209" Background="White" Text="LUBE OIL SIMULATION LINE"/>
+        </RSICanvas>
+        <RSICanvas x:Name="Input01Description_Copy2" Height="23.5" Width="189" Canvas.Left="129.566" Canvas.Top="280.207" >
+            <RSIText x:Name="rSIText5" Height="11.335" TextWrapping="Wrap" Width="188.874" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="12" Background="White" Canvas.Top="53.452" Text="PALL2843_PP_ALM" Canvas.Left="-0.835"/>
+            <RSIText x:Name="rSIText01_Copy5" Height="12.168" TextWrapping="Wrap" Width="188.874" VerticalContentAlignment="Center" Foreground="Black" FontSize="12" Canvas.Top="64.787" Background="White" Text="ST LUBE OIL HEADER" Canvas.Left="-0.835"/>
+        </RSICanvas>
+        <HMI:Button Canvas.Left="372.73" Canvas.Top="553.359" BLKName="SD_S62_L2_OR4" BLKText="&gt;=1" INPUT_01="True" INPUT_02="True" INPUT_01_TEXTVisible="True" INPUT_02_TEXTVisible="True" INPUT_02_TEXT01="GM1614D_MP_DRVON" INPUT_02_TEXT02="ST JACKING OIL PUMP B" INPUT_01_TEXT01="GM1613D_MP_DRVON" INPUT_01_TEXT02="ST JACKING OIL PUMP A"/>
+        <HMI:Button Canvas.Left="372.73" Canvas.Top="378.588" BLKName="SD_S62_L2_OR3" BLKText="&gt;=1" INPUT_01="True" INPUT_02="True" INPUT_02_TEXT01="EM1608D_MP_DRVON" INPUT_02_TEXT02="LUBE OIL COOLER FAN B" INPUT_01_TEXT01="EM1607D_MP_DRVON" INPUT_01_TEXT02="LUBE OIL COOLER FAN A" Height="100.063" INPUT_03="True" INPUT_03_TEXTVisible="True" INPUT_01_TEXTVisible="True" INPUT_02_TEXTVisible="True" INPUT_03_TEXT01="EM1609D_MP_DRVON" INPUT_03_TEXT02="LUBE OIL COOLER FAN C"/>
+        <RSICircle x:Name="Input01NOT_Copy2" Fill="White" Height="4.166" Canvas.Left="-279.931" Stroke="Black" Canvas.Top="476.682" Width="10.166" StrokeThickness="0.5"/>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="482.646" Canvas.Top="617.707" Width="193.445" GateBlockName="SD_S62_L2_AND1" GateBlockInputNumber="1"/>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="317.481" Canvas.Top="720.959" Width="393.29" GateBlockName="SD_S62_L2_AND1" GateBlockInputNumber="2"/>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="500.218" Canvas.Top="512.3" Width="417.124" GateBlockName="SD_S62_L2_AND1" GateBlockInputNumber="2" RenderTransformOrigin="0.5,0.5">
+            <HMI:ButtonBackPanel_HT.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </HMI:ButtonBackPanel_HT.RenderTransform>
+        </HMI:ButtonBackPanel_HT>
+        <HMI:ButtonBackPanel_HT Height="4" Canvas.Left="709.924" Canvas.Top="304.828" Width="46.458" GateBlockName="SD_S62_L2_AND1" GateBlockInputNumber="2"/>
+        <RSICircle x:Name="Input01NOT_Copy3" Fill="White" Height="4.166" Stroke="Black" Canvas.Top="81.325" Width="10.166" StrokeThickness="0.5" Canvas.Left="472.48"/>
+        <RSICircle x:Name="Input01NOT_Copy5" Fill="White" Height="4.166" Stroke="Black" Canvas.Top="230.535" Width="10.166" StrokeThickness="0.5" Canvas.Left="472.48"/>
+        <RSICircle x:Name="Input01NOT_Copy6" Fill="White" Height="4.166" Stroke="Black" Canvas.Top="438.606" Width="10.166" StrokeThickness="0.5" Canvas.Left="472.48"/>
+        <RSICircle x:Name="Input01NOT_Copy7" Fill="White" Height="4.166" Stroke="Black" Canvas.Top="613.468" Width="10.166" StrokeThickness="0.5" Canvas.Left="472.48"/>
+
+
+
+
+
+
+
+    </RSICanvas>
+</RSIFacePlate>

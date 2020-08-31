@@ -1,0 +1,72 @@
+﻿<RSIFacePlate
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:HMI="clr-namespace:UGP_EDRF.HMI"
+	mc:Ignorable="d"
+	x:Class="UGP_EDRF.Faceplates.HEATING_NOT_COMPLETED01"
+	Width="290" 
+	Height="274"
+	Background="#FFBCBCBC">
+    <RSICanvas  >
+        <HMI:NEXT_SEQ x:Name="NEXT_SEQ1"
+        Canvas.Left="53.373"
+        Canvas.Top="65.204"
+        Width="170"
+        Height="68.97"
+        BLK="GO_NEXT_STEP"
+        CMP="3D0007_CF03"
+        PAR="IN" />
+        <HMI:STOP_SEQ x:Name="STOP_SEQ1"
+        Canvas.Left="53.373"
+        Canvas.Top="132.293"
+        Width="170"
+        Height="70.904"
+        ALARM_CONN="3D0007_CF03.MONITOR_2.BO0002"
+        BLK="STOP_SEQ"
+        CMP="3D0007_CF03"
+        PAR="IN" />
+        <RSIText x:Name="TextBox1"
+            Canvas.Left="31"
+            Canvas.Top="11"
+            Width="222"
+            Height="32"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Background="#FFBCBCBC"
+            BorderBrush="Transparent"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="HEATING NOT COMPLETED"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12"
+            TextWrapping="Wrap" >
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME_HEATING_NOT_COMPLETED.CIN == 1">
+                    <ChangeColor Color="red"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIButton x:Name="NEXT" Content="GO NEXT STEP" Canvas.Left="53.373" Canvas.Top="85.832" Width="170" Background="Gray" BorderBrush="White" Height="48.342" Cursor="Hand">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <FlipFlop Expression2="False" Expression1="True" Variable="$TAGNAME_HEAT_NEXT.IN"/>
+                </ClickAnimation>
+                <Animation Condition="$TAGNAME_HEAT_NEXT.IN == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                </Animation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton x:Name="STOP" Content="STOP SEQ" Canvas.Left="53.373" Canvas.Top="154.503" Width="170" Background="Gray" BorderBrush="White" Height="48.342" Cursor="Hand">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <FlipFlop Expression2="False" Expression1="True" Variable="$TAGNAME_HEAT_STOP.IN"/>
+                </ClickAnimation>
+                <Animation Condition="$TAGNAME_HEAT_STOP.IN == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                </Animation>
+            </RSIButton.Animations>
+        </RSIButton>
+    </RSICanvas>
+</RSIFacePlate>

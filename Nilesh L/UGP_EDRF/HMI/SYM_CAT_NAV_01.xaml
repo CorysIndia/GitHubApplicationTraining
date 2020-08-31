@@ -1,0 +1,28 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+
+    <Style TargetType="{x:Type hmi:SYM_CAT_NAV_01}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:SYM_CAT_NAV_01}">
+                    <Border Background="#FFE0E0E0"
+                  BorderBrush="Black"
+                  BorderThickness="1">
+                        <RSIText x:Name="rSIText" TextWrapping="Wrap" Text="{TemplateBinding Tag}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold">
+                            <RSIText.Animations>
+                                <ClickAnimation>
+                                    <Link WindowName="$TAGNAME"/>
+                                </ClickAnimation>
+                            </RSIText.Animations>
+                        </RSIText>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+</ResourceDictionary>

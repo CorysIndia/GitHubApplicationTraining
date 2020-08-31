@@ -1,0 +1,116 @@
+<RSIFacePlate x:Class="UGP_EDRF.HMI.SIC_0950_LIMITER"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+    <RSICanvas Width="315"
+             Height="397"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+        <hmi:ContFpSpeedNoDCS x:Name="ContFpSpeedNoDCS1"
+                          Width="315"
+                          Height="397" />
+        <RSIText x:Name="Label"
+        Width="315"
+        Height="28"
+        Foreground="#FF000000"
+        IsHitTestVisible="False"
+        TextElement.FontFamily="Arial"
+        TextElement.FontSize="10"
+        TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="SPEED LIMIT CONTROL SIC-0950-L" />
+        <RSIText x:Name="SP_VAL"
+            Canvas.Left="205.657"
+            Canvas.Top="42.537"
+            Width="73.575"
+            Height="14.057"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Stretch"
+            Foreground="#FF00FF00"
+            Text="345.5 "
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center">
+            <RSIText.Animations>
+                <Animation>
+                    <ChangeText Text="\$TAGNAME.SPT:#.#\ "/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="PV_VAL_Copy"
+            Canvas.Left="203.782"
+            Canvas.Top="75"
+            Width="75.45"
+            Height="14.057"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Stretch"
+            Foreground="#FF00FF00"
+            Text="345.5 "
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center">
+            <RSIText.Animations>
+                <Animation>
+                    <ChangeText Text="\$TAGNAME.MEAS:#.#\ "/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="SP_UNIT_Copy1"
+            Canvas.Left="232.54"
+            Canvas.Top="59.094"
+            Width="46.692"
+            Height="12.406"
+            HorizontalAlignment="Right"
+            Foreground="#FFFFFFFF"
+            IsHitTestVisible="False"
+            Text="RPM"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF343434" />
+        <RSIText x:Name="SP_UNIT_Copy"
+            Canvas.Left="232.54"
+            Canvas.Top="89.057"
+            Width="46.692"
+            Height="12.406"
+            HorizontalAlignment="Right"
+            Foreground="#FFFFFFFF"
+            IsHitTestVisible="False"
+            Text="RPM"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF343434" />
+        <RSIText
+            x:Name="OP_CMD"
+            Canvas.Left="203.032"
+            Canvas.Top="106.463"
+            Width="76.2"
+            Height="14.148"
+            HorizontalAlignment="Right"
+            Foreground="#FF0000FF"
+            Text="345.5 "
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" IsInput="True">
+            <!--RSIText.Animations>
+                                        <Animation>
+                                            <ChangeText Text="{Value Value, Converter={FormatConverter F1}}" />
+                                        </Animation>
+                                        <Animation Condition="Value_Fail">
+                                            <ChangeColor Color="#FF0000FF" />
+                                        </Animation>
+                                    </-->
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.MODE == 0">
+                    <ChangePropertyValue PropertyName="IsInput" Value="True"/>
+                </Animation>
+                <Animation Condition="$TAGNAME.MODE == 1">
+                    <ChangePropertyValue PropertyName="IsInput" Value="False"/>
+                </Animation>
+                <Animation>
+                    <ChangeText Text="\$TAGNAME.OUT:#.#\"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+</RSIFacePlate>

@@ -1,0 +1,720 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Style TargetType="{x:Type hmi:PbMomFbConf_01_M}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:PbMomFbConf_01_M}">
+                    <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+                        <RSIGrid Background="Transparent">
+                            <RSIGrid.Parameters>
+                                <Param Name="$LeftName" Value="OK"/>
+                                <Param Name="$RightName" Value="CANCEL"/>
+                            </RSIGrid.Parameters>
+                            <RSICanvas Width="104"
+                         Height="141.9375"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                                <RSICanvas.Animations>
+                                    <ClickAnimation>
+                                        <Open WindowName="$NameStore" Title="$TAGNAME"/>
+                                    </ClickAnimation>
+                                </RSICanvas.Animations>
+                                <RSIRectangle x:Name="Arc1_3"
+                                    Width="104"
+                                    Height="88.657"
+                               
+                                    Stretch="Fill"
+                                    Stroke="#FF2C2C2C"
+                                    StrokeThickness="1" Panel.ZIndex="-50000" Fill="#FF2C2C2C"/>
+
+                                <RSICanvas Name="Plate"
+                           Width="104"
+                           Height="141.9375"
+                           IsHitTestVisible="false"
+                           Left="0"
+                           Top="0">
+                                    <RSIBorder x:Name="Line1"
+                             Canvas.Left="103.24998"
+                             Canvas.Top="-0.750000000000004"
+                             Width="103.7763"
+                             Height="1.5"
+                             RenderTransformOrigin="0.00321203717354862,0.222222222222222">
+                                        <RSIPath Data="M103.25001,-0.75 L-0.52636,-0.74999"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                                            <RSIPath.LayoutTransform>
+                                                <RotateTransform Angle="-180" />
+                                            </RSIPath.LayoutTransform>
+                                        </RSIPath>
+                                        <RSIBorder.RenderTransform>
+                                            <RotateTransform Angle="180" />
+                                        </RSIBorder.RenderTransform>
+                                    </RSIBorder>
+                                    <RSIPath x:Name="Arc2"
+                           Canvas.Top="87.938"
+                           Width="103.776"
+                           Height="51"
+                           Data="M 0,1 A 0.5,0.5 90 0 0 1,1"
+                           Stretch="Fill"
+                           Stroke="#FF2C2C2C"
+                           StrokeThickness="1">
+                                        <RSIPath.Fill>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="0.03" Color="#FF2C2C2C" />
+                                                <GradientStop Offset="0" Color="#FF2C2C2C" />
+                                                <GradientStop Offset="1" Color="#FF2C2C2C" />
+                                            </LinearGradientBrush>
+                                        </RSIPath.Fill>
+                                    </RSIPath>
+                                </RSICanvas>
+                                <RSIText x:Name="Label"
+                         Canvas.Left="0.795"
+                         Canvas.Top="2.516"
+                         Width="103.205"
+                         Height="14.523"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Top"
+                         Foreground="#FFFFFFFF"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding ZDescription01}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                                <RSICanvas Name="Button"
+                           Width="93.375"
+                           Height="92.99986"
+                           Left="4.87501"
+                           Top="42.00001">
+                                    <RSICanvas Name="Bezel"
+                             Width="93.37498"
+                             Height="93.00014"
+                             Left="24.62501"
+                             Top="61.99998">
+                                        <RSIEllipse x:Name="BackgroundCircle"
+                                Canvas.Left="-24.6640690003"
+                                Canvas.Top="-62.01414301511"
+                                Width="93.41362"
+                                Height="92.3311"
+                                StrokeThickness="1">
+                                            <RSIEllipse.Stroke>
+                                                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                    <GradientStop Offset="1" Color="#FE000000" />
+                                                    <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                                </LinearGradientBrush>
+                                            </RSIEllipse.Stroke>
+                                            <RSIEllipse.Fill>
+                                                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                    <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                                    <GradientStop Offset="0" Color="#FF1C1C1C" />
+                                                    <GradientStop Offset="1" Color="#FF1C1C1C" />
+                                                </LinearGradientBrush>
+                                            </RSIEllipse.Fill>
+                                        </RSIEllipse>
+                                        <RSICanvas Name="TopReflection"
+                               Width="89.59003"
+                               Height="46.33775"
+                               IsHitTestVisible="false"
+                               Left="26.44311"
+                               Top="61.96717">
+                                            <RSIPath x:Name="Arc1"
+                               Canvas.Left="-49.2501690003"
+                               Canvas.Top="-123.99999301511"
+                               Width="89.59002"
+                               Height="33.06915"
+                               Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="1" Visibility="Hidden">
+                                                <RSIPath.Fill>
+                                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                        <GradientStop Offset="0" Color="#FEFFFFFF" />
+                                                        <GradientStop Offset="0" Color="#004D4D4D" />
+                                                        <GradientStop Offset="1" Color="#004D4D4D" />
+                                                    </LinearGradientBrush>
+                                                </RSIPath.Fill>
+                                            </RSIPath>
+                                            <RSIPath x:Name="PolyLine1"
+                               Canvas.Left="-12.7236690003"
+                               Canvas.Top="-79.97763301511"
+                               Width="13.62799"
+                               Height="2.815346"
+                               Data="M1,0.2222231 L0.5806436,1 0,0 "
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="1">
+                                                <RSIPath.Fill>
+                                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                        <GradientStop Offset="0" Color="#FEFFFFFF" />
+                                                        <GradientStop Offset="0" Color="#004D4D4D" />
+                                                        <GradientStop Offset="1" Color="#004D4D4D" />
+                                                    </LinearGradientBrush>
+                                                </RSIPath.Fill>
+                                            </RSIPath>
+                                        </RSICanvas>
+                                        <RSICanvas Name="_8oClockChrome"
+                               Width="44.6507"
+                               Height="27.73904"
+                               IsHitTestVisible="false"
+                               Left="26.48309"
+                               Top="108.1974">
+                                            <RSIPath x:Name="PolyLine1_1"
+                               Canvas.Left="-12.913695195272"
+                               Canvas.Top="-121.68744072648"
+                               Width="8.249146"
+                               Height="5.05196"
+                               Data="M0.145424,0 L1,1 0,0.5417022 "
+                               RenderTransformOrigin="1.05188023490109,0.991152788293652"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="1">
+                                                <RSIPath.RenderTransform>
+                                                    <RotateTransform Angle="-49" />
+                                                </RSIPath.RenderTransform>
+                                                <RSIPath.Fill>
+                                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                        <GradientStop Offset="0.46" Color="#FFFFFFFF" />
+                                                        <GradientStop Offset="0" Color="#FF000000" />
+                                                        <GradientStop Offset="1" Color="#FF000000" />
+                                                    </LinearGradientBrush>
+                                                </RSIPath.Fill>
+                                            </RSIPath>
+                                            <CanonicalSpline x:Name="Curve1"
+                                       Canvas.Left="-49.2502090003"
+                                       Canvas.Top="-110.48816301511"
+                                       Width="7.431934"
+                                       Height="14.22726"
+                                       Points="-0.01564026 -0.007903209 4.23439 5.430826 9.98436 9.984193 "
+                                       Stretch="Fill"
+                                       Stroke="#FF000000"
+                                       StrokeThickness="1"
+                                       Tension="0.5" Visibility="Hidden">
+                                                <CanonicalSpline.Fill>
+                                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                        <GradientStop Offset="0.46" Color="#FFFFFFFF" />
+                                                        <GradientStop Offset="0" Color="#FF000000" />
+                                                        <GradientStop Offset="1" Color="#FF000000" />
+                                                    </LinearGradientBrush>
+                                                </CanonicalSpline.Fill>
+                                            </CanonicalSpline>
+                                        </RSICanvas>
+                                        <RSICanvas Name="_4oClockChrome"
+                               Width="43.98816"
+                               Height="27.80968"
+                               IsHitTestVisible="false"
+                               Left="505.9625"
+                               Top="109.0285">
+                                            <RSIPath x:Name="PolyLine1_2"
+                               Canvas.Left="-475.75902973592"
+                               Canvas.Top="-121.93145681256"
+                               Width="8.335876"
+                               Height="5.523315"
+                               Data="M0.09537129,0 L1,1 0,0.5915141 "
+                               RenderTransformOrigin="1.05124959838419,0.982706645738927"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="1">
+                                                <RSIPath.RenderTransform>
+                                                    <TransformGroup>
+                                                        <RotateTransform Angle="131" />
+                                                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                                    </TransformGroup>
+                                                </RSIPath.RenderTransform>
+                                                <RSIPath.Fill>
+                                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                        <GradientStop Offset="0.46" Color="#FFFFFFFF" />
+                                                        <GradientStop Offset="0" Color="#FF000000" />
+                                                        <GradientStop Offset="1" Color="#FF000000" />
+                                                    </LinearGradientBrush>
+                                                </RSIPath.Fill>
+                                            </RSIPath>
+                                            <CanonicalSpline x:Name="Curve1_1"
+                                       Canvas.Left="-447.1311290003"
+                                       Canvas.Top="-110.93926301511"
+                                       Width="7.648239"
+                                       Height="14.7731"
+                                       Points="-0.01528208 9.984379 6.335878 4.734373 10 -0.01562119 "
+                                       Stretch="Fill"
+                                       Stroke="#FF000000"
+                                       StrokeThickness="1"
+                                       Tension="0.5" Visibility="Hidden">
+                                                <CanonicalSpline.Fill>
+                                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                        <GradientStop Offset="0.46" Color="#FFFFFFFF" />
+                                                        <GradientStop Offset="0" Color="#FF000000" />
+                                                        <GradientStop Offset="1" Color="#FF000000" />
+                                                    </LinearGradientBrush>
+                                                </CanonicalSpline.Fill>
+                                            </CanonicalSpline>
+                                        </RSICanvas>
+                                        <RSICanvas Name="_6oClockChrome"
+                               Width="39.75922"
+                               Height="46.58751"
+                               IsHitTestVisible="false"
+                               Left="529.3605"
+                               Top="108.3685">
+                                            <RSIPath x:Name="PolyLine1_3"
+                               Canvas.Left="-505.30367410312"
+                               Canvas.Top="-114.32858228089"
+                               Width="8.567017"
+                               Height="8.068542"
+                               Data="M0.4596063,0 L1,1 0,0.7850258 "
+                               RenderTransformOrigin="1.04963127198817,0.954150364547225"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="1">
+                                                <RSIPath.RenderTransform>
+                                                    <TransformGroup>
+                                                        <RotateTransform Angle="56" />
+                                                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                                    </TransformGroup>
+                                                </RSIPath.RenderTransform>
+                                                <RSIPath.Fill>
+                                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                        <GradientStop Offset="0.5" Color="#524D4D4D" />
+                                                        <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                                        <GradientStop Offset="1" Color="#FFFFFFFF" />
+                                                    </LinearGradientBrush>
+                                                </RSIPath.Fill>
+                                            </RSIPath>
+                                            <CanonicalSpline x:Name="Curve1_2"
+                                       Canvas.Left="-526.0437890003"
+                                       Canvas.Top="-82.43286301511"
+                                       Width="39.81761"
+                                       Height="5.020508"
+                                       Points="0 2.206891 2.627569 8.459781 4.785922 9.931023 7.788859 6.988511 9.994136 0 "
+                                       Stretch="Fill"
+                                       Stroke="#FF000000"
+                                       StrokeThickness="1"
+                                       Tension="0.5" Visibility="Hidden">
+                                                <CanonicalSpline.Fill>
+                                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                        <GradientStop Offset="0.5" Color="#524D4D4D" />
+                                                        <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                                        <GradientStop Offset="1" Color="#FFFFFFFF" />
+                                                    </LinearGradientBrush>
+                                                </CanonicalSpline.Fill>
+                                            </CanonicalSpline>
+                                        </RSICanvas>
+                                        <RSIEllipse x:Name="InnerRing"
+                                Canvas.Left="-24.664"
+                                Canvas.Top="-62.014"
+                                Width="93.414"
+                                Height="92.331"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                                            <RSIEllipse.Fill>
+                                                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                    <GradientStop Offset="1" Color="#FECCCCCC" />
+                                                    <GradientStop Offset="0" Color="#FE343434" />
+                                                </LinearGradientBrush>
+                                            </RSIEllipse.Fill>
+                                        </RSIEllipse>
+                                    </RSICanvas>
+                                    <RSIEllipse x:Name="FlatColorPushed"
+                              Canvas.Left="15.24578"
+                              Canvas.Top="15.25756"
+                              Width="63.49501"
+                              Height="62.73035"
+                              Fill="#FF00BA00"
+                              StrokeThickness="1">
+                                        <RSIEllipse.Stroke>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="1" Color="#FE000000" />
+                                                <GradientStop Offset="0" Color="#FE9A9A9A" />
+                                            </LinearGradientBrush>
+                                        </RSIEllipse.Stroke>
+                                        <RSIEllipse.Animations>
+                                            <Animation Condition="Colour, Converter={IsEqualTo 1}">
+                                                <ChangeColor Color="#FFBA0000" />
+                                            </Animation>
+                                            <Animation Condition="Colour, Converter={IsEqualTo 2}">
+                                                <ChangeColor Color="#FF00BA00" />
+                                            </Animation>
+                                            <Animation Condition="Colour, Converter={IsEqualTo 3}">
+                                                <ChangeColor Color="#FF0000BA" />
+                                            </Animation>
+                                            <Animation Condition="Colour, Converter={IsEqualTo 4}">
+                                                <ChangeColor Color="#FFBABA00" />
+                                            </Animation>
+                                            <Animation Condition="Colour, Converter={IsEqualTo 5}">
+                                                <ChangeColor Color="#FFBA7600" />
+                                            </Animation>
+                                            <Animation Condition="Colour, Converter={IsEqualTo 6}">
+                                                <ChangeColor Color="#FF00BABA" />
+                                            </Animation>
+                                            <Animation Condition="Colour, Converter={IsEqualTo 7}">
+                                                <ChangeColor Color="#FFBA00BA" />
+                                            </Animation>
+                                            <Animation Condition="Colour, Converter={IsEqualTo 8}">
+                                                <ChangeColor Color="#FF9A9A9A" />
+                                            </Animation>
+                                        </RSIEllipse.Animations>
+                                    </RSIEllipse>
+                                    <RSIEllipse x:Name="Down"
+                              Canvas.Left="14.16661"
+                              Canvas.Top="14.5862"
+                              Width="65.36246"
+                              Height="64.57541"
+                              StrokeThickness="1">
+                                        <!--<RSIEllipse.Animations>
+                                            <ClickAnimation>
+                                                <Assignment Expression="0" Maximum="1" Minimum="0" Variable="$TAGNAME.IN"/>
+                                            </ClickAnimation>
+                                        </RSIEllipse.Animations>-->
+                                        <RSIEllipse.Stroke>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="1" Color="#FE000000" />
+                                                <GradientStop Offset="0" Color="#FE9A9A9A" />
+                                            </LinearGradientBrush>
+                                        </RSIEllipse.Stroke>
+                                        <RSIEllipse.Fill>
+                                            <RadialGradientBrush>
+                                                <GradientStop Offset="0" Color="#00A40000" />
+                                                <GradientStop Offset="1" Color="#FF161616" />
+                                            </RadialGradientBrush>
+                                        </RSIEllipse.Fill>
+                                    </RSIEllipse>
+                                    <RSICanvas Name="Up"
+                             Width="65.39355"
+                             Height="64.81245"
+                             Left="14.35644"
+                             Top="14">
+                                        <RSICanvas Name="Up_1"
+                               Width="65.3625"
+                               Height="64.57536"
+                               Left="-9.99999999606871E-06"
+                               Top="0.183530000000005">
+                                            <RSIEllipse x:Name="FlatColor"
+                                  Canvas.Left="-2.00000000063483E-05"
+                                  Canvas.Top="0.107419999999991"
+                                  Width="65.21759"
+                                  Height="64.43212"
+                                  StrokeThickness="0" Fill="#FFBA0000" Visibility="{TemplateBinding Colour, Converter={EqualConverter 1}}">
+                                                <RSIEllipse.Animations>
+                                                    <!--<ClickAnimation>
+                                                        <Assignment Expression="1" Maximum="1" Minimum="0" Variable="$TAGNAME.IN"/>
+                                                    </ClickAnimation>-->
+                                                    <Animation Condition="$TAGNAME.IN == 1">
+                                                        <Invisible/>
+                                                    </Animation>
+                                                </RSIEllipse.Animations>
+                                                <RSIEllipse.Stroke>
+                                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                        <GradientStop Offset="1" Color="#FE000000" />
+                                                        <GradientStop Offset="0" Color="#FE9A9A9A" />
+                                                    </LinearGradientBrush>
+                                                </RSIEllipse.Stroke>
+                                            </RSIEllipse>
+                                            <RSIEllipse x:Name="FlatColor_Copy"
+                                                Canvas.Top="0.107"
+                                                Width="65.218"
+                                                Height="64.433"
+                                                StrokeThickness="0" Fill="#FF00BA00" Visibility="{TemplateBinding Colour, Converter={EqualConverter 2}}">
+                                                <RSIEllipse.Animations>
+                                                    <!--<ClickAnimation>
+                                                        <Assignment Expression="1" Maximum="1" Minimum="0" Variable="$TAGNAME.IN"/>
+                                                    </ClickAnimation>-->
+                                                    <Animation Condition="$TAGNAME.IN == 1">
+                                                        <Invisible/>
+                                                    </Animation>
+                                                </RSIEllipse.Animations>
+                                                <RSIEllipse.Stroke>
+                                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                        <GradientStop Offset="1" Color="#FE000000" />
+                                                        <GradientStop Offset="0" Color="#FE9A9A9A" />
+                                                    </LinearGradientBrush>
+                                                </RSIEllipse.Stroke>
+                                            </RSIEllipse>
+                                            <RSIEllipse x:Name="FlatColor_Copy1"
+                                                Canvas.Top="0.107"
+                                                Width="65.218"
+                                                Height="64.433"
+                                                StrokeThickness="0" Fill="#FF0000BA" Visibility="{TemplateBinding Colour, Converter={EqualConverter 3}}">
+                                                <RSIEllipse.Animations>
+                                                    <!--<ClickAnimation>
+                                                        <Assignment Expression="1" Maximum="1" Minimum="0" Variable="$TAGNAME.IN"/>
+                                                    </ClickAnimation>-->
+                                                    <Animation Condition="$TAGNAME.IN == 1">
+                                                        <Invisible/>
+                                                    </Animation>
+                                                </RSIEllipse.Animations>
+                                                <RSIEllipse.Stroke>
+                                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                        <GradientStop Offset="1" Color="#FE000000" />
+                                                        <GradientStop Offset="0" Color="#FE9A9A9A" />
+                                                    </LinearGradientBrush>
+                                                </RSIEllipse.Stroke>
+                                            </RSIEllipse>
+                                            <RSIEllipse x:Name="FlatColor_Copy2"
+                                                Canvas.Top="0.107"
+                                                Width="65.218"
+                                                Height="64.433"
+                                                StrokeThickness="0" Fill="#FFBABA00" Visibility="{TemplateBinding Colour, Converter={EqualConverter 4}}">
+                                                <RSIEllipse.Animations>
+                                                    <!--<ClickAnimation>
+                                                        <Assignment Expression="1" Maximum="1" Minimum="0" Variable="$TAGNAME.IN"/>
+                                                    </ClickAnimation>-->
+                                                    <Animation Condition="$TAGNAME.IN == 1">
+                                                        <Invisible/>
+                                                    </Animation>
+                                                </RSIEllipse.Animations>
+                                                <RSIEllipse.Stroke>
+                                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                        <GradientStop Offset="1" Color="#FE000000" />
+                                                        <GradientStop Offset="0" Color="#FE9A9A9A" />
+                                                    </LinearGradientBrush>
+                                                </RSIEllipse.Stroke>
+                                            </RSIEllipse>
+                                            <RSIEllipse x:Name="FlatColor_Copy3"
+                                                Canvas.Top="0.107"
+                                                Width="65.218"
+                                                Height="64.433"
+                                                StrokeThickness="0" Fill="#FFBA7600" Visibility="{TemplateBinding Colour, Converter={EqualConverter 5}}">
+                                                <RSIEllipse.Animations>
+                                                    <!--<ClickAnimation>
+                                                        <Assignment Expression="1" Maximum="1" Minimum="0" Variable="$TAGNAME.IN"/>
+                                                    </ClickAnimation>-->
+                                                    <Animation Condition="$TAGNAME.IN == 1">
+                                                        <Invisible/>
+                                                    </Animation>
+                                                </RSIEllipse.Animations>
+                                                <RSIEllipse.Stroke>
+                                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                        <GradientStop Offset="1" Color="#FE000000" />
+                                                        <GradientStop Offset="0" Color="#FE9A9A9A" />
+                                                    </LinearGradientBrush>
+                                                </RSIEllipse.Stroke>
+                                            </RSIEllipse>
+                                            <RSIEllipse x:Name="FlatColor_Copy4"
+                                                Canvas.Top="0.107"
+                                                Width="65.218"
+                                                Height="64.433"
+                                                StrokeThickness="0" Fill="Cyan" Visibility="{TemplateBinding Colour, Converter={EqualConverter 6}}">
+                                                <RSIEllipse.Animations>
+                                                    <!--<ClickAnimation>
+                                                        <Assignment Expression="1" Maximum="1" Minimum="0" Variable="$TAGNAME.IN"/>
+                                                    </ClickAnimation>-->
+                                                    <Animation Condition="$TAGNAME.IN == 1">
+                                                        <Invisible/>
+                                                    </Animation>
+                                                </RSIEllipse.Animations>
+                                                <RSIEllipse.Stroke>
+                                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                        <GradientStop Offset="1" Color="#FE000000" />
+                                                        <GradientStop Offset="0" Color="#FE9A9A9A" />
+                                                    </LinearGradientBrush>
+                                                </RSIEllipse.Stroke>
+                                            </RSIEllipse>
+                                            <RSIEllipse x:Name="FlatColor_Copy5"
+                                                Canvas.Top="0.107"
+                                                Width="65.218"
+                                                Height="64.433"
+                                                StrokeThickness="0" Fill="Purple" Visibility="{TemplateBinding Colour, Converter={EqualConverter 7}}">
+                                                <RSIEllipse.Animations>
+                                                    <!--<ClickAnimation>
+                                                        <Assignment Expression="1" Maximum="1" Minimum="0" Variable="$TAGNAME.IN"/>
+                                                    </ClickAnimation>-->
+                                                    <Animation Condition="$TAGNAME.IN == 1">
+                                                        <Invisible/>
+                                                    </Animation>
+                                                </RSIEllipse.Animations>
+                                                <RSIEllipse.Stroke>
+                                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                        <GradientStop Offset="1" Color="#FE000000" />
+                                                        <GradientStop Offset="0" Color="#FE9A9A9A" />
+                                                    </LinearGradientBrush>
+                                                </RSIEllipse.Stroke>
+                                            </RSIEllipse>
+                                            <RSIEllipse x:Name="FlatColor_Copy6"
+                                                Canvas.Top="0.107"
+                                                Width="65.218"
+                                                Height="64.433"
+                                                StrokeThickness="0" Fill="Gray" Visibility="{TemplateBinding Colour, Converter={EqualConverter 8}}">
+                                                <RSIEllipse.Animations>
+                                                    <!--<ClickAnimation>
+                                                        <Assignment Expression="1" Maximum="1" Minimum="0" Variable="$TAGNAME.IN"/>
+                                                    </ClickAnimation>-->
+                                                    <Animation Condition="$TAGNAME.IN == 1">
+                                                        <Invisible/>
+                                                    </Animation>
+                                                </RSIEllipse.Animations>
+                                                <RSIEllipse.Stroke>
+                                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                        <GradientStop Offset="1" Color="#FE000000" />
+                                                        <GradientStop Offset="0" Color="#FE9A9A9A" />
+                                                    </LinearGradientBrush>
+                                                </RSIEllipse.Stroke>
+                                            </RSIEllipse>
+                                            <RSICanvas Name="EmbossLevel"
+                                 Width="65.3625"
+                                 Height="64.57536"
+                                 IsHitTestVisible="false"
+                                 Left="-2.00000000063483E-05"
+                                 Top="-1.00000000031741E-05" Visibility="Hidden">
+                                                <RSIPath x:Name="Arc1_1"
+                                 Canvas.Left="-9.99999999606871E-06"
+                                 Canvas.Top="-1.00000000031741E-05"
+                                 Width="65.36249"
+                                 Height="64.57537"
+                                 Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                                 Stretch="Fill"
+                                 Stroke="#FF000000"
+                                 StrokeThickness="1">
+                                                    <RSIPath.Fill>
+                                                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                            <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                                            <GradientStop Offset="0" Color="#FF000000" />
+                                                            <GradientStop Offset="1" Color="#FF000000" />
+                                                        </LinearGradientBrush>
+                                                    </RSIPath.Fill>
+                                                </RSIPath>
+                                                <RSIPath x:Name="Arc2_1"
+                                 Canvas.Left="2.3913"
+                                 Canvas.Top="2.36251"
+                                 Width="60.57987"
+                                 Height="59.85033"
+                                 Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                                 Stretch="Fill"
+                                 Stroke="#FF000000"
+                                 StrokeThickness="1" Visibility="Hidden">
+                                                    <RSIPath.Fill>
+                                                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                            <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                                            <GradientStop Offset="0" Color="#FF000000" />
+                                                            <GradientStop Offset="1" Color="#FF000000" />
+                                                        </LinearGradientBrush>
+                                                    </RSIPath.Fill>
+                                                </RSIPath>
+                                            </RSICanvas>
+                                        </RSICanvas>
+                                        <RSIEllipse x:Name="Indication"
+                                Canvas.Left="2.01856"
+                                Canvas.Top="3"
+                                Width="61.00001"
+                                Height="59.99995"
+                                Fill="#FF00BA00"
+                                Stroke="Transparent"
+                                StrokeThickness="0" Visibility="Hidden">
+                                            <RSIEllipse.Animations>
+                                                <Animation Condition="FEEDBACK==true">
+                                                    <SetVisible />
+                                                </Animation>
+                                                <Animation Condition="FEEDBACK==false">
+                                                    <Invisible />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==1_AND_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==2_AND_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==3_AND_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==4_AND_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==5_AND_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==6_AND_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==7_AND_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==8_AND_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==1_AND_NOT_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==2_AND_NOT_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==3_AND_NOT_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==4_AND_NOT_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==5_AND_NOT_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==6_AND_NOT_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==7_AND_NOT_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                                <Animation Condition="TRUE, Converter={IsEqualTo Colour==8_AND_NOT_Feedback==TRUE}">
+                                                    <ChangeColor Color="" />
+                                                </Animation>
+                                            </RSIEllipse.Animations>
+                                        </RSIEllipse>
+                                    </RSICanvas>
+                                </RSICanvas>
+                                <RSIText x:Name="Text1"
+                         Canvas.Top="17.039"
+                         Width="104"
+                         Height="14.523"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Top"
+                         Foreground="#FFFFFFFF"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding ZDescription02}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                                <RSIEllipse x:Name="ShowConfirmation"
+                            Canvas.Left="21.25001"
+                            Canvas.Top="57.00001"
+                            Width="61.97966"
+                            Height="62.00148"
+                            Stroke="#FFFFFFFF"
+                            StrokeThickness="0" Visibility="Hidden">
+                                    <RSIEllipse.Animations>
+                                        <Animation />
+                                        <!--
+                      'LogMessage("Confirm");
+                      ButtonPressed = True;     ' button down
+                      Intouch:tconf_string = ConfirmationMessage;
+                    -->
+                                        <!--
+                      ButtonPressed = False; ' button up
+                      dim cpValues[2] as aaGraphic.CustomPropertyValuePair;
+                      dim graphicInfo0 as aaGraphic.GraphicInfo;
+                      cpValues[1] = new aaGraphic.CustomPropertyValuePair("Command", ConfirmIndirect, true);
+                      cpValues[2] = new aaGraphic.CustomPropertyValuePair("Feedback", ConfirmIndirect , true);
+                      graphicInfo0.CustomProperties = cpValues;
+                      graphicInfo0.GraphicName = Namestore;
+                      ShowGraphic(graphicInfo0);
+                    -->
+                                    </RSIEllipse.Animations>
+                                </RSIEllipse>
+                                <RSIPath x:Name="Polygon1"
+                         Canvas.Left="0.795449999999999"
+                         Canvas.Top="0.636369999999999"
+                         Width="12.9091"
+                         Height="12.9091"
+                         Data="M1,0 L0,1 0,0 z"
+                         Fill="#FFFFFFFF"
+                         Stretch="Fill"
+                         Stroke="#FF000000"
+                         StrokeThickness="1" />
+                            </RSICanvas>
+                        </RSIGrid>
+                    </RSIViewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+</ResourceDictionary>

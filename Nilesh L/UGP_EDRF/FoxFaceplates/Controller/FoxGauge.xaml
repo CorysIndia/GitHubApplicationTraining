@@ -1,0 +1,136 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="UGP_EDRF.FoxFaceplates.Controller.FoxGauge"
+	Width="29" 
+	Height="160">
+	<RSICanvas>
+        <!--  SLiders  -->
+        <RSICanvas x:Name="Sliders"
+                Width="14"
+                Canvas.Top="1"
+                Height="158">
+
+            <!--  HH Slider  -->
+            <RSIRectangle x:Name="HHSlider"
+                          Width="14"
+                          Height="2"
+                          Stroke="Red"
+                          StrokeThickness="2">
+                <RSIRectangle.Animations>
+                    <Animation Condition="$HHSliderVISIBILITY">
+                        <Invisible />
+                    </Animation>
+                    <Animation>
+                        <ChangePropertyValue PropertyName="Stroke" Value="$HHLLSliderCOLOR"/>
+                        <Translate Expression="$HHSliderVALUE"
+                                   FinalValue="$GAUGEMAX"
+                                   InitialValue="$GAUGEMIN"
+                                   Orientation="Vertical" />
+                    </Animation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+
+            <!--  H Slider  -->
+            <RSIPolygon x:Name="HSlider"
+                        Canvas.Left="8"
+                        Canvas.Top="20"
+                        Width="6"
+                        Height="10"
+                        Fill="#0000FF"
+                        IsClosed="True"
+                        Points=" 0,0 0,10 6,5 0,0"
+                        Stroke="#0000FF"
+                        StrokeThickness="1">
+                <RSIPolygon.Animations>
+                    <Animation Condition="$HSliderVISIBILITY">
+                        <Invisible />
+                    </Animation>
+                    <Animation>
+                        <ChangePropertyValue PropertyName="Fill" Value="$HLSliderCOLOR"/>
+                        <ChangePropertyValue PropertyName="Stroke" Value="$HLSliderCOLOR"/>
+                        <Translate Expression="$HSliderVALUE"
+                                   FinalValue="$GAUGEMAX"
+                                   InitialValue="$GAUGEMIN"
+                                   Orientation="Vertical" />
+                    </Animation>
+                </RSIPolygon.Animations>
+            </RSIPolygon>
+
+            <!--  Low Slider  -->
+            <RSIPolygon x:Name="LSlider"
+                        Canvas.Left="8"
+                        Canvas.Top="140"
+                        Width="6"
+                        Height="10"
+                        Fill="#0000FF"
+                        IsClosed="True"
+                        Points=" 0,0 0,10 6,5 0,0"
+                        Stroke="#0000FF"
+                        StrokeThickness="1">
+                <RSIPolygon.Animations>
+                    <Animation Condition="$LSliderVISIBILITY">
+                        <Invisible />
+                    </Animation>
+                    <Animation>
+                        <ChangePropertyValue PropertyName="Fill" Value="$HLSliderCOLOR"/>
+                        <ChangePropertyValue PropertyName="Stroke" Value="$HLSliderCOLOR"/>
+                        <Translate Expression="$LSliderVALUE"
+                                   FinalValue="$GAUGEMAX"
+                                   InitialValue="$GAUGEMIN"
+                                   Orientation="Vertical" />
+                    </Animation>
+                </RSIPolygon.Animations>
+            </RSIPolygon>
+
+            <!--  LL Slider  -->
+            <RSIRectangle x:Name="LLSlider"
+                          Canvas.Top="156"
+                          Width="14"
+                          Height="2"
+                          Stroke="Red"
+                          StrokeThickness="2">
+                <RSIRectangle.Animations>
+                    <Animation Condition="$LLSliderVISIBILITY">
+                        <Invisible />
+                    </Animation>
+                    <Animation>
+                        <ChangePropertyValue PropertyName="Stroke" Value="$HHLLSliderCOLOR"/>
+                        <Translate Expression="$LLSliderVALUE"
+                                   FinalValue="$GAUGEMAX"
+                                   InitialValue="$GAUGEMIN"
+                                   Orientation="Vertical" />
+                    </Animation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+
+        </RSICanvas>
+
+        <!--  Gauge  -->
+        <RSIBorder x:Name="MEAS_GaugeArea"
+                Canvas.Left="14"
+                Width="15"
+                Height="160"
+                BorderBrush="#B5B5B5"
+                BorderThickness="1">
+            <RSIRectangle x:Name="MEAS_Gauge"
+                          Width="13"
+                          VerticalAlignment="Bottom"
+                          Fill="#FF00FF">
+                <RSIRectangle.Animations>
+                    <Animation>
+                        <ChangePropertyValue PropertyName="Fill" Value="$GAUGECOLOR"></ChangePropertyValue>
+                        <Resize Expression="$GAUGEVALUE"
+                                FinalValue="$GAUGEMAX"
+                                GrowthDirection="Up"
+                                InitialValue="$GAUGEMIN" />
+                    </Animation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+        </RSIBorder>
+
+    </RSICanvas>
+</RSIControl>

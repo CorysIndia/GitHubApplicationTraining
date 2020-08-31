@@ -1,0 +1,475 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:UGP_STG" xmlns:System="clr-namespace:System;assembly=mscorlib">
+
+    <Style x:Key="UGP_GlobeValve" TargetType="{x:Type RSI_GlobeValve}">
+        <Setter Property="Width" Value="30"/>
+        <Setter Property="Height" Value="15"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RSI_GlobeValve}">
+                    <Grid Background="{TemplateBinding Background}">
+                        <Path x:Name="path" Data="M0,0L1,1 1,0 0,1z" Fill="{TemplateBinding CurrentColor}" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}"/>
+                        <Ellipse x:Name="ellipse" Fill="{TemplateBinding CurrentColor}" Stroke="{TemplateBinding BorderBrush}" VerticalAlignment="Stretch" Width="{Binding ActualHeight, ElementName=ellipse}">
+                            <Ellipse.Height>
+                                <Binding ElementName="path" Path="ActualHeight">
+                                    <Binding.Converter>
+                                        <MultiplyConverter AreOperandsReversed="False" RightOperand="0.5">
+                                            <MultiplyConverter.FallbackValue>
+                                                <System:Double>NaN</System:Double>
+                                            </MultiplyConverter.FallbackValue>
+                                        </MultiplyConverter>
+                                    </Binding.Converter>
+                                </Binding>
+                            </Ellipse.Height>
+                        </Ellipse>
+                        <Flash x:Name="Flash" HorizontalAlignment="Right" Margin="-10" Visibility="Visible" VerticalAlignment="Top" Visitor="{Binding RelativeSource={RelativeSource TemplatedParent}}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Orientation" Value="West">
+                            <Setter Property="RenderTransform" TargetName="path">
+                                <Setter.Value>
+                                    <RotateTransform Angle="-90"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="Orientation" Value="East">
+                            <Setter Property="RenderTransform" TargetName="path">
+                                <Setter.Value>
+                                    <RotateTransform Angle="90"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ColorClose" Value="Black"/>
+        <Setter Property="ColorTravel" Value="Gray"/>
+        <Setter Property="ColorOpen" Value="Gray"/>
+    </Style>
+    <Style x:Key="UGP_GateValve" TargetType="{x:Type RSI_GateValve}">
+        <Setter Property="Width" Value="30"/>
+        <Setter Property="Height" Value="15"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RSI_GateValve}">
+                    <Grid Background="{TemplateBinding Background}">
+                        <Path x:Name="path" Data="M0,0L1,1 1,0 0,1z" Fill="{TemplateBinding CurrentColor}" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}"/>
+                        <Flash x:Name="Flash" HorizontalAlignment="Right" Margin="-10" Visibility="Visible" VerticalAlignment="Top" Visitor="{Binding RelativeSource={RelativeSource TemplatedParent}}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Orientation" Value="East">
+                            <Setter Property="RenderTransform" TargetName="path">
+                                <Setter.Value>
+                                    <RotateTransform Angle="90"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="Orientation" Value="West">
+                            <Setter Property="RenderTransform" TargetName="path">
+                                <Setter.Value>
+                                    <RotateTransform Angle="-90"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ColorClose" Value="Black"/>
+        <Setter Property="ColorOpen" Value="Gray"/>
+        <Setter Property="ColorTravel" Value="Gray"/>
+    </Style>
+    <Style x:Key="UGP_PVIStyle01" TargetType="{x:Type RSI_PVI}">
+        <Setter Property="Width" Value="Auto"/>
+        <Setter Property="MinWidth" Value="100"/>
+        <Setter Property="Height" Value="Auto"/>
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="FontSize" Value="14.667"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HighAlarmColor" Value="Yellow"/>
+        <Setter Property="LowLowAlarmColor" Value="Red"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RSI_PVI}">
+                    <Grid>
+                        <Grid x:Name="Shape">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid x:Name="Header">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="15"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock x:Name="Tagname" Grid.Column="1" FontSize="12" HorizontalAlignment="Left" Text="{TemplateBinding TagName}">
+                                    <TextBlock.Visibility>
+                                        <TAGNAMESBinding Converter="{BoolToHiddenConverter}" Path="ModelValue">
+                                            <TAGNAMESBinding.FallbackValue>
+                                                <System:Boolean>True</System:Boolean>
+                                            </TAGNAMESBinding.FallbackValue>
+                                        </TAGNAMESBinding>
+                                    </TextBlock.Visibility>
+                                </TextBlock>
+                            </Grid>
+                            <Grid x:Name="Content" Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="15"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock x:Name="HH_H_Part" Foreground="{TemplateBinding HighAlarmTextColor}" FontSize="10" HorizontalAlignment="Center" Text="{TemplateBinding HighAlarmText}" VerticalAlignment="Top"/>
+                                <TextBlock x:Name="LL_L_Part" Foreground="{TemplateBinding LowAlarmTextColor}" FontSize="10" HorizontalAlignment="Center" Text="{TemplateBinding LowAlarmText}" VerticalAlignment="Bottom"/>
+                                <RSIBorder x:Name="NumberPart" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Grid.Column="1">
+                                    <RSIBorder.Animations>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[HH].Status == 3 OR $TAGNAME.PVAlarms.Alarms[HH].Status == 1">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="BorderBrush" To="{TemplateBinding HighHighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[H].Status == 3 OR $TAGNAME.PVAlarms.Alarms[H].Status == 1" Index="1">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="BorderBrush" To="{TemplateBinding HighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[LL].Status == 3 OR $TAGNAME.PVAlarms.Alarms[LL].Status == 1" Index="2">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="BorderBrush" To="{TemplateBinding LowLowAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[L].Status == 3  OR $TAGNAME.PVAlarms.Alarms[L].Status == 1" Index="3">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="BorderBrush" To="{TemplateBinding LowAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[HH].Status == 2" Index="4">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="BorderBrush" Value="{TemplateBinding HighHighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[H].Status == 2" Index="5">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="BorderBrush" Value="{TemplateBinding HighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[LL].Status == 2" Index="6">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="BorderBrush" Value="{TemplateBinding LowLowAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[L].Status == 2" Index="7">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="BorderBrush" Value="{TemplateBinding LowAlarmColor}"/>
+                                        </Animation>
+                                    </RSIBorder.Animations>
+                                    <TextBlock Foreground="{TemplateBinding Foreground}" FontWeight="{TemplateBinding FontWeight}" FontStyle="{TemplateBinding FontStyle}" FontStretch="{TemplateBinding FontStretch}" FontSize="{TemplateBinding FontSize}" FontFamily="{TemplateBinding FontFamily}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Text="{TemplateBinding Text}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </RSIBorder>
+                            </Grid>
+                        </Grid>
+                        <Flash x:Name="Failure" FailureSource="{TemplateBinding Transmitter}" HorizontalAlignment="Right" Margin="-10,0,-10,-10" Visibility="Visible" VerticalAlignment="Top" Visitor="{Binding RelativeSource={RelativeSource TemplatedParent}}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="UGP_StdTransmitterPVI01" TargetType="{x:Type RSI_PVI}">
+        <Setter Property="Width" Value="Auto"/>
+        <Setter Property="Height" Value="Auto"/>
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="FontSize" Value="14.667"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RSI_PVI}">
+                    <Grid>
+                        <Grid x:Name="Shape" Margin="0,0,0,7.5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid x:Name="Header" Grid.Row="0" Visibility="Hidden">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="15"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="2"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="2"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="1" FontSize="9.333" HorizontalAlignment="Left" Text="{TemplateBinding ModelName}" Visibility="Visible"/>
+                            </Grid>
+                            <Grid x:Name="Content" Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="15"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock x:Name="HH_H_Part" FontSize="16" HorizontalAlignment="Center" Text="{TemplateBinding HighAlarmText}" Panel.ZIndex="5" Margin="-2.598,5.432,-5.265,6.538" VerticalAlignment="Center"/>
+                                <TextBlock x:Name="LL_L_Part" Grid.Column="0" FontSize="16" HorizontalAlignment="Center" Text="{TemplateBinding LowAlarmText}" VerticalAlignment="Center" Panel.ZIndex="5" Margin="-6.14,5.432,-12,4.655"/>
+                                <RSIBorder x:Name="NumberPart" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Grid.Column="1" Width="73.5" Height="28.5" Margin="12,0,0,0">
+                                    <RSIBorder.Animations>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[HH].Status == 3 OR $TAGNAME.PVAlarms.Alarms[HH].Status == 1">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="BorderBrush" To="{TemplateBinding HighHighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[H].Status == 3 OR $TAGNAME.PVAlarms.Alarms[H].Status == 1" Index="1">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="BorderBrush" To="{TemplateBinding HighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[LL].Status == 3 OR $TAGNAME.PVAlarms.Alarms[LL].Status == 1" Index="2">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="BorderBrush" To="{TemplateBinding LowLowAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[L].Status == 3  OR $TAGNAME.PVAlarms.Alarms[L].Status == 1" Index="3">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="BorderBrush" To="{TemplateBinding LowAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[HH].Status == 2" Index="4">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="BorderBrush" Value="{TemplateBinding HighHighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[H].Status == 2" Index="5">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="BorderBrush" Value="{TemplateBinding HighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[LL].Status == 2" Index="6">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="BorderBrush" Value="{TemplateBinding LowLowAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[L].Status == 2" Index="7">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="BorderBrush" Value="{TemplateBinding LowAlarmColor}"/>
+                                        </Animation>
+                                    </RSIBorder.Animations>
+                                    <TextBlock Foreground="{TemplateBinding Foreground}" FontWeight="{TemplateBinding FontWeight}" FontStyle="{TemplateBinding FontStyle}" FontStretch="{TemplateBinding FontStretch}" FontSize="{TemplateBinding FontSize}" FontFamily="{TemplateBinding FontFamily}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Text="{TemplateBinding Text}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </RSIBorder>
+                                <RSIBorder x:Name="AlarmPart" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Grid.Column="0" Margin="-8.125,2.625,-12.875,2.625" Grid.ColumnSpan="1" Height="28.5" Width="36" Background="{TemplateBinding Background}">
+                                    <RSIBorder.Animations>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[HH].Status == 3 OR $TAGNAME.PVAlarms.Alarms[HH].Status == 1">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="BorderBrush" To="{TemplateBinding HighHighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[H].Status == 3 OR $TAGNAME.PVAlarms.Alarms[H].Status == 1" Index="1">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="BorderBrush" To="{TemplateBinding HighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[LL].Status == 3 OR $TAGNAME.PVAlarms.Alarms[LL].Status == 1" Index="2">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="BorderBrush" To="{TemplateBinding LowLowAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[L].Status == 3  OR $TAGNAME.PVAlarms.Alarms[L].Status == 1" Index="3">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="BorderBrush" To="{TemplateBinding LowAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[HH].Status == 2" Index="4">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="BorderBrush" Value="{TemplateBinding HighHighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[H].Status == 2" Index="5">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="BorderBrush" Value="{TemplateBinding HighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[LL].Status == 2" Index="6">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="BorderBrush" Value="{TemplateBinding LowLowAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[L].Status == 2" Index="7">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="BorderBrush" Value="{TemplateBinding LowAlarmColor}"/>
+                                        </Animation>
+
+                                        <!--ALARM FILLING COLOUR ADDED VAIBHAV-->
+
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[HH].Status == 3 OR $TAGNAME.PVAlarms.Alarms[HH].Status == 1">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="Background" To="{TemplateBinding HighHighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[H].Status == 3 OR $TAGNAME.PVAlarms.Alarms[H].Status == 1" Index="1">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="Background" To="{TemplateBinding HighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[LL].Status == 3 OR $TAGNAME.PVAlarms.Alarms[LL].Status == 1" Index="2">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="Background" To="{TemplateBinding LowLowAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[L].Status == 3  OR $TAGNAME.PVAlarms.Alarms[L].Status == 1" Index="3">
+                                            <Blink CanCreateViewerVariables="True" PropertyName="Background" To="{TemplateBinding LowAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[HH].Status == 2" Index="4">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="Background" Value="{TemplateBinding HighHighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[H].Status == 2" Index="5">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="Background" Value="{TemplateBinding HighAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[LL].Status == 2" Index="6">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="Background" Value="{TemplateBinding LowLowAlarmColor}"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.PVAlarms.Alarms[L].Status == 2" Index="7">
+                                            <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="Background" Value="{TemplateBinding LowAlarmColor}"/>
+                                        </Animation>
+
+
+                                    </RSIBorder.Animations>
+                                    <RSIRectangle Fill="Transparent" Height="26.469" Width="34.062" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="-0.062,0.062,0,-0.031">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.PVAlarms.Alarms[HH].Status == 3 OR $TAGNAME.PVAlarms.Alarms[HH].Status == 1">
+                                                <Blink CanCreateViewerVariables="True" PropertyName="Fill" To="{TemplateBinding HighHighAlarmColor}"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.PVAlarms.Alarms[H].Status == 3 OR $TAGNAME.PVAlarms.Alarms[H].Status == 1" Index="1">
+                                                <Blink CanCreateViewerVariables="True" PropertyName="Fill" To="{TemplateBinding HighAlarmColor}"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.PVAlarms.Alarms[LL].Status == 3 OR $TAGNAME.PVAlarms.Alarms[LL].Status == 1" Index="2">
+                                                <Blink CanCreateViewerVariables="True" PropertyName="Fill" To="{TemplateBinding LowLowAlarmColor}"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.PVAlarms.Alarms[L].Status == 3  OR $TAGNAME.PVAlarms.Alarms[L].Status == 1" Index="3">
+                                                <Blink CanCreateViewerVariables="True" PropertyName="Fill" To="{TemplateBinding LowAlarmColor}"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.PVAlarms.Alarms[HH].Status == 2" Index="4">
+                                                <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="Fill" Value="{TemplateBinding HighHighAlarmColor}"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.PVAlarms.Alarms[H].Status == 2" Index="5">
+                                                <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="Fill" Value="{TemplateBinding HighAlarmColor}"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.PVAlarms.Alarms[LL].Status == 2" Index="6">
+                                                <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="Fill" Value="{TemplateBinding LowLowAlarmColor}"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.PVAlarms.Alarms[L].Status == 2" Index="7">
+                                                <ChangePropertyValue CanCreateViewerVariables="True" PropertyName="Fill" Value="{TemplateBinding LowAlarmColor}"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                </RSIBorder>
+                            </Grid>
+                        </Grid>
+                        <Flash x:Name="Failure" HorizontalAlignment="Right" Margin="0,5.668,-10,0" Visibility="Visible" VerticalAlignment="Top" Visitor="{Binding RelativeSource={RelativeSource TemplatedParent}}" FailureSource="{TemplateBinding Transmitter}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="UGP_ValveActuatorMalfunction" TargetType="{x:Type RSI_HandValve}">
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Height" Value="15"/>
+        <Setter Property="Width" Value="30"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RSI_HandValve}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid x:Name="Body" Background="{TemplateBinding Background}" Grid.Column="1">
+                            <Flash x:Name="Flash" HorizontalAlignment="Right" Margin="0,-10,-10,0" Visibility="Visible" VerticalAlignment="Top" Visitor="{Binding RelativeSource={RelativeSource TemplatedParent}}"/>
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Orientation" Value="West"/>
+                        <Trigger Property="Orientation" Value="East"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+       
+    </Style>
+    <Style x:Key="RSI_StdTransmitterFailure_UGP" TargetType="{x:Type RSI_StdTransmitter}">
+        <Setter Property="Width" Value="10" />
+        <Setter Property="Height" Value="10" />
+        <Setter Property="HorizontalContentAlignment" Value="Right" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RSI_StdTransmitter}">
+                    <Grid>
+                        <Flash
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Top"
+                            Visibility="Visible"
+                            Visitor="{Binding RelativeSource={RelativeSource TemplatedParent}}" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="UGP_MOVValveActuatorMalfunction" TargetType="{x:Type RSI_MovActuator}">
+        <Setter Property="Width" Value="45"/>
+        <Setter Property="Height" Value="45"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RSI_MovActuator}">
+                    <Grid Background="{TemplateBinding Background}">
+                        <Grid x:Name="grid" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="0.25*"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="13.75*"/>
+                                <RowDefinition Height="6.744*"/>
+                                <RowDefinition Height="7.427*"/>
+                                <RowDefinition Height="13.079*"/>
+                            </Grid.RowDefinitions>
+                            <Path x:Name="BodyCercle" Grid.Column="1" Data="M10.289165,-3.1124366C4.1995283,-3.1695356 4.216629,-7.9580713 10.523663,-7.9035734 17.062105,-7.8470758 16.85156,-3.1269695 10.184611,-3.1127092" Fill="{Binding CurrentColor, RelativeSource={RelativeSource TemplatedParent}}" HorizontalAlignment="Stretch" Margin="-5.361,0.167,-5.8,-0.076" Stretch="Fill" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" VerticalAlignment="Stretch"/>
+                            <RSIPath x:Name="PathUpArrow" Grid.ColumnSpan="3" Grid.Column="0" Data="M0,1L2,1 1,0z" Fill="{TemplateBinding BorderBrush}" HorizontalAlignment="Center" Height="7" Grid.Row="1" Stretch="Fill" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" VerticalAlignment="Top" Width="7"/>
+                            <Path x:Name="Verticale" Grid.Column="1" Data="M0,0L0,1" Fill="{TemplateBinding BorderBrush}" HorizontalAlignment="Center" Grid.Row="1" Grid.RowSpan="2" StrokeStartLineCap="Square" Stretch="Fill" StrokeEndLineCap="Square" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}"/>
+                            <RSIPath x:Name="PathDownArrow" Grid.ColumnSpan="3" Grid.Column="0" Data="M0,0L2,0 1,2z" Fill="{TemplateBinding BorderBrush}" HorizontalAlignment="Center" Height="7" Grid.Row="2" Stretch="Fill" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" VerticalAlignment="Bottom" Width="7"/>
+                            <Path x:Name="BodyValveLeft" Grid.ColumnSpan="2" Data="M0.5,15.78017L10.142096,20.577996 0.53553596,25.323781z" Fill="{Binding CurrentColor, RelativeSource={RelativeSource TemplatedParent}}" HorizontalAlignment="Stretch" Margin="5.5,-2,2,3" Grid.Row="2" Grid.RowSpan="2" Stretch="Fill" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" VerticalAlignment="Stretch"/>
+                            <Path x:Name="BodyValveRight" Grid.ColumnSpan="2" Grid.Column="1" Data="M15,15L5,20.218309 15.036471,25.363411z" Fill="{Binding CurrentColor, RelativeSource={RelativeSource TemplatedParent}}" HorizontalAlignment="Stretch" Margin="2.5,-2,5.5,3" Grid.Row="2" Grid.RowSpan="2" Stretch="Fill" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" VerticalAlignment="Stretch"/>
+                            <Path x:Name="BodyValveBottom" Grid.Column="0" Data="M5.4995695,27.451205L10.249186,20.57497 14.927947,27.451477z" Fill="{Binding CurrentColor, RelativeSource={RelativeSource TemplatedParent}}" HorizontalAlignment="Stretch" Margin="12,1,-13,0" Grid.Row="3" Stretch="Fill" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" Visibility="Hidden" VerticalAlignment="Stretch"/>
+                        </Grid>
+                        <Flash HorizontalAlignment="Right" Margin="0,-10.375,-10.542,0" Visibility="Visible" VerticalAlignment="Top" Visitor="{Binding RelativeSource={RelativeSource TemplatedParent}}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Orientation" Value="West">
+                            <Setter Property="RenderTransform" TargetName="grid">
+                                <Setter.Value>
+                                    <RotateTransform Angle="-90"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="Orientation" Value="East">
+                            <Setter Property="RenderTransform" TargetName="grid">
+                                <Setter.Value>
+                                    <RotateTransform Angle="90"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="Orientation" Value="South">
+                            <Setter Property="RenderTransform" TargetName="grid">
+                                <Setter.Value>
+                                    <RotateTransform Angle="180"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="Direction" Value="Left">
+                            <Setter Property="Visibility" TargetName="BodyValveRight" Value="Hidden"/>
+                            <Setter Property="Visibility" TargetName="BodyValveBottom" Value="Visible"/>
+                        </Trigger>
+                        <Trigger Property="Direction" Value="Right">
+                            <Setter Property="Visibility" TargetName="BodyValveLeft" Value="Hidden"/>
+                            <Setter Property="Visibility" TargetName="BodyValveBottom" Value="Visible"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="UGP_PressureSafetyValveStyle" TargetType="{x:Type RSI_PressureSafetyValve}">
+        <Setter Property="DecimalFormat" Value="F1"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RSI_PressureSafetyValve}">
+                    <Grid Background="Transparent">
+                        <Grid x:Name="draw">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock><Run Text="@"/><Run Text="{TemplateBinding Text}"/></TextBlock>
+                            <TextBlock Grid.Row="1" Text="{TemplateBinding ConversionUnit}"/>
+                            <Path x:Name="path" Data="M0,20L15,20 7.5,7.5 20,15 20,0 7.5,7.5z" Fill="{TemplateBinding ComputedColor}" HorizontalAlignment="Left" Margin="5,0,0,0" Grid.Row="2" RenderTransformOrigin="0.385,0.383" StrokeStartLineCap="Triangle" Stretch="Fill" StrokeEndLineCap="Triangle" Stroke="{TemplateBinding BorderBrush}" StrokeMiterLimit="0" StrokeLineJoin="Bevel" Width="{Binding ActualHeight, ElementName=path}">
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="{Binding Angle, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                </Path.RenderTransform>
+                            </Path>
+                        </Grid>
+                        <Flash HorizontalAlignment="Right" Margin="0,-10,-10,0" Visibility="Visible" VerticalAlignment="Top" Visitor="{Binding RelativeSource={RelativeSource TemplatedParent}}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ConversionUnit" Value="psig"/>
+        <Setter Property="ColorOpen" Value="Gray"/>
+        <Setter Property="ColorClose" Value="Black"/>
+        <Setter Property="ColorCloseBlockValve" Value="Black"/>
+        <Setter Property="ColorCloseBypassValve" Value="Black"/>
+        <Setter Property="ColorOpenBlockValve" Value="Gray"/>
+        <Setter Property="ColorOpenBypassValve" Value="Gray"/>
+    </Style>
+    
+</ResourceDictionary>

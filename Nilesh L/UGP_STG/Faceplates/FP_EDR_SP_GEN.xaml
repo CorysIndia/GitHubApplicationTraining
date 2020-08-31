@@ -1,0 +1,474 @@
+<RSIFacePlate x:Class="UGP_STG.HMI.FP_EDR_SP_GEN"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_STG.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+  <RSICanvas Width="500"
+             Height="748"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:SYM_FP_BACKGROUND_01 x:Name="Background_1"
+                              Width="500"
+                              Height="748"
+                              TYPE="STANDARD" />
+    <hmi:SYM_FP_CLOSE_01 x:Name="Button_Close1"
+                         Canvas.Left="401.0001"
+                         Canvas.Top="674.0001"
+                         Width="60.17438"
+                         Height="51.578" />
+    <RSICanvas Name="EXECUTE"
+               Width="116.125"
+               Height="57.07495"
+               Left="191.875"
+               Top="674">
+      <RSIRectangle x:Name="Element14"
+                    Width="116"
+                    Height="57.07495"
+                    Fill="#FF000000"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+      <RSIText x:Name="Element15"
+               Canvas.Left="14.625"
+               Canvas.Top="18.842"
+               Width="88"
+               Height="19.99994"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="EXECUTE"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+      <hmi:SYM_ACTION_01 x:Name="EmbeddedSymbol1"
+                         Canvas.Left="0.125"
+                         Canvas.Top="9.99999999748979E-05"
+                         Width="116"
+                         Height="57.07495"
+                         LOC="0"
+                         OVL="FP_CONFIRMATION_SP_GEN"
+                         PRT="1" />
+    </RSICanvas>
+    <RSIText x:Name="DESCRIPTION5"
+             Canvas.Left="200"
+             Canvas.Top="590"
+             Width="290"
+             Height="26"
+             VerticalContentAlignment="Center"
+             BorderBrush="Transparent"
+             Foreground="#FFFFFFFF"
+             IsHitTestVisible="False"
+             Text="Operator Set Point Manual Entry"
+             TextElement.FontFamily="Courier New"
+             TextElement.FontSize="12"
+             TextElement.FontWeight="Bold" />
+    <RSIText x:Name="DESCRIPTION4"
+             Canvas.Left="200"
+             Canvas.Top="471"
+             Width="290"
+             Height="26"
+             VerticalContentAlignment="Center"
+             BorderBrush="Transparent"
+             Foreground="#FFFFFFFF"
+             IsHitTestVisible="False"
+             Text="Selection (Hawiyah Zero Flow)"
+             TextElement.FontFamily="Courier New"
+             TextElement.FontSize="12"
+             TextElement.FontWeight="Bold" />
+    <RSIText x:Name="DESCRIPTION3"
+             Canvas.Left="200"
+             Canvas.Top="353"
+             Width="290"
+             Height="26"
+             VerticalContentAlignment="Center"
+             BorderBrush="Transparent"
+             Foreground="#FFFFFFFF"
+             IsHitTestVisible="False"
+             Text=" Rich Gas Blend Flow Rate (MMSCFD)"
+             TextElement.FontFamily="Courier New"
+             TextElement.FontSize="12"
+             TextElement.FontWeight="Bold" />
+    <RSIText x:Name="DESCRIPTION2"
+             Canvas.Left="200"
+             Canvas.Top="235"
+             Width="290"
+             Height="26"
+             VerticalContentAlignment="Center"
+             BorderBrush="Transparent"
+             Foreground="#FFFFFFFF"
+             IsHitTestVisible="False"
+             Text="Lean Gas Blend Flow Rate (MMSCFD)"
+             TextElement.FontFamily="Courier New"
+             TextElement.FontSize="12"
+             TextElement.FontWeight="Bold" />
+    <RSIText x:Name="DESCRIPTION1"
+             Canvas.Left="200"
+             Canvas.Top="117"
+             Width="290"
+             Height="26"
+             VerticalContentAlignment="Center"
+             BorderBrush="Transparent"
+             Foreground="#FFFFFFFF"
+             IsHitTestVisible="False"
+             Text="50:50 UGP Gas Blend (MMSCFD)"
+             TextElement.FontFamily="Courier New"
+             TextElement.FontSize="12"
+             TextElement.FontWeight="Bold" />
+    <RSICanvas Name="CASE5"
+               Width="116"
+               Height="57.07501"
+               Left="50"
+               Top="574.0001">
+      <RSIRectangle x:Name="Element5"
+                    Width="116"
+                    Height="57.07501"
+                    Fill="#FF000000"
+                    Stroke="#FF000000"
+                    StrokeThickness="1">
+        <RSIRectangle.Animations>
+          <Animation />
+          <!--
+            if SELECTED == 5 then
+            SELECTED = 0;
+            else
+            SELECTED = 5;
+            endif;
+          -->
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==1}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==2}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==3}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==4}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==5}">
+            <ChangeColor Color="#FF00BA00" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo true}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+        </RSIRectangle.Animations>
+      </RSIRectangle>
+      <RSIText x:Name="Element7"
+               Canvas.Left="23.438"
+               Canvas.Top="5.73590000000002"
+               Width="69.99199"
+               Height="20"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="CASE 5"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+      <RSIText x:Name="Element13"
+               Canvas.Left="23.438"
+               Canvas.Top="31.5609000000001"
+               Width="69.99199"
+               Height="20"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="SELECT"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+    </RSICanvas>
+    <RSICanvas Name="CASE4"
+               Width="116"
+               Height="57.07501"
+               Left="50"
+               Top="455.7518">
+      <RSIRectangle x:Name="Element3"
+                    Width="116"
+                    Height="57.07501"
+                    Fill="#FF000000"
+                    Stroke="#FF000000"
+                    StrokeThickness="1">
+        <RSIRectangle.Animations>
+          <Animation />
+          <!--
+            if SELECTED == 4 then
+            SELECTED = 0;
+            else
+            SELECTED = 4;
+            endif;
+          -->
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==1}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==2}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==3}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==4}">
+            <ChangeColor Color="#FF00BA00" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==5}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo true}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+        </RSIRectangle.Animations>
+      </RSIRectangle>
+      <RSIText x:Name="Element12"
+               Canvas.Left="21.33704"
+               Canvas.Top="34.033"
+               Width="73.42081"
+               Height="20"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="SELECT"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+      <RSIText x:Name="Element7_1"
+               Canvas.Left="23.234"
+               Canvas.Top="4.993"
+               Width="69.99201"
+               Height="20"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="CASE 4"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+    </RSICanvas>
+    <RSICanvas Name="CASE3"
+               Width="116"
+               Height="57.07501"
+               Left="50"
+               Top="337.5036">
+      <RSIRectangle x:Name="Element3_1"
+                    Width="116"
+                    Height="57.07501"
+                    Fill="#FF000000"
+                    Stroke="#FF000000"
+                    StrokeThickness="1">
+        <RSIRectangle.Animations>
+          <Animation />
+          <!--
+            if SELECTED == 3 then
+            SELECTED = 0;
+            else
+            SELECTED = 3;
+            endif;
+          -->
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==1}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==2}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==3}">
+            <ChangeColor Color="#FF00BA00" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==4}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==5}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo true}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+        </RSIRectangle.Animations>
+      </RSIRectangle>
+      <RSIText x:Name="Element12_1"
+               Canvas.Left="21.33704"
+               Canvas.Top="34.033"
+               Width="73.42081"
+               Height="20"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="SELECT"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+      <RSIText x:Name="Element7_2"
+               Canvas.Left="23.234"
+               Canvas.Top="4.993"
+               Width="69.99201"
+               Height="20"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="CASE 3"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+    </RSICanvas>
+    <RSICanvas Name="CASE2"
+               Width="116"
+               Height="57.07501"
+               Left="50"
+               Top="219.2553">
+      <RSIRectangle x:Name="Element5_1"
+                    Width="116"
+                    Height="57.07503"
+                    Fill="#FF000000"
+                    Stroke="#FF000000"
+                    StrokeThickness="1">
+        <RSIRectangle.Animations>
+          <Animation />
+          <!--
+            if SELECTED == 2 then
+            SELECTED = 0;
+            else
+            SELECTED = 2;
+            endif;
+          -->
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==1}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==2}">
+            <ChangeColor Color="#FF00BA00" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==3}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==4}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==5}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo true}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+        </RSIRectangle.Animations>
+      </RSIRectangle>
+      <RSIText x:Name="Element7_3"
+               Canvas.Left="23.438"
+               Canvas.Top="5.73599999999999"
+               Width="69.99199"
+               Height="20.00002"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="CASE 2"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+      <RSIText x:Name="Element13_1"
+               Canvas.Left="23.438"
+               Canvas.Top="31.561"
+               Width="69.99199"
+               Height="20"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="SELECT"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+    </RSICanvas>
+    <RSICanvas Name="CASE1"
+               Width="116"
+               Height="57.07501"
+               Left="50"
+               Top="101.007">
+      <RSIRectangle x:Name="Element4"
+                    Width="116"
+                    Height="57.075"
+                    Fill="#FF000000"
+                    Stroke="#FF000000"
+                    StrokeThickness="1">
+        <RSIRectangle.Animations>
+          <Animation />
+          <!--
+            if SELECTED == 1 then
+            SELECTED = 0;
+            else
+            SELECTED = 1;
+            endif;
+          -->
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==1}">
+            <ChangeColor Color="#FF00BA00" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==2}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==3}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==4}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo IADAS_1CMP_H_CF01_SP_GENERATOR_II0001==5}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+          <Animation Condition="true, Converter={IsEqualTo true}">
+            <ChangeColor Color="#FF000000" />
+          </Animation>
+        </RSIRectangle.Animations>
+      </RSIRectangle>
+      <RSIText x:Name="Element6"
+               Canvas.Left="23.438"
+               Canvas.Top="5.217"
+               Width="68.99199"
+               Height="20.00001"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="CASE 1"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+      <RSIText x:Name="Element11"
+               Canvas.Left="23.438"
+               Canvas.Top="31.042"
+               Width="68.99199"
+               Height="20"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="SELECT"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+    </RSICanvas>
+    <hmi:SYM_ACTION_01 x:Name="SYM_ACTION_011"
+                       Canvas.Left="50"
+                       Canvas.Top="455"
+                       Width="116"
+                       Height="57.07501"
+                       LOC="0"
+                       OVL="FP_EDR_SP_GEN_CASE4"
+                       PRT="1" />
+  </RSICanvas>
+</RSIFacePlate>

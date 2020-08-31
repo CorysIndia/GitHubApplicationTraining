@@ -1,0 +1,113 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:QuickLink22Tabs_N2_s_19inch_III}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:QuickLink22Tabs_N2_s_19inch_III}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="1263.41181"
+                         Height="47.0625"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <hmi:QuickLinkTab_N2_III x:Name="Button15"
+                                         Canvas.Left="1180.41181"
+                                         Canvas.Top="0.0625"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button14"
+                                         Canvas.Left="1096.28681"
+                                         Canvas.Top="0.0625"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button13"
+                                         Canvas.Left="1012.10681"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button12"
+                                         Canvas.Left="927.92741"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button11"
+                                         Canvas.Left="843.80241"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button10"
+                                         Canvas.Left="759.68551"
+                                         Canvas.Top="0.0625"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button9"
+                                         Canvas.Left="675.56851"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button8"
+                                         Canvas.Left="591.45161"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button7"
+                                         Canvas.Left="507.33461"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button6"
+                                         Canvas.Left="423.21771"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button5"
+                                         Canvas.Left="339.10081"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button4"
+                                         Canvas.Left="254.92131"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button3"
+                                         Canvas.Left="170.74191"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button2"
+                                         Canvas.Left="86"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+                <hmi:QuickLinkTab_N2_III x:Name="Button1"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" />
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

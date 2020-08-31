@@ -1,0 +1,240 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_CAB_01}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_CAB_01}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="220"
+                         Height="222.7429"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIRectangle x:Name="Element14"
+                              Width="220"
+                              Height="222.7429"
+                              Fill="#FF838383"
+                              Stroke="#FFFFFFFF"
+                              StrokeThickness="1" />
+                <RSIText x:Name="Element17"
+                         Canvas.Top="182.7429"
+                         Width="220"
+                         Height="19.938"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FFFFFFFF"
+                         IsHitTestVisible="False"
+                         Text="CAB 1"
+                         TextElement.FontFamily="Courier New"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold" />
+                <RSICanvas Name="ALARM1"
+                           Width="190.8217"
+                           Height="36.6465"
+                           Left="15.5148"
+                           Top="5.5746">
+                  <RSIText x:Name="TAG_VISIBLE"
+                           Canvas.Top="0.514399999999995"
+                           Width="190.663"
+                           Height="36.13199"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Transparent"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="ALRAM1"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="11"
+                           TextElement.FontWeight="Bold"
+                           TextWrapping="Wrap" />
+                  <hmi:SYM_ALARMBORDER_07 x:Name="ALARMBORDER"
+                                          Canvas.Left="0.00909999999998945"
+                                          Canvas.Top="0.0989999999999895"
+                                          Width="190.663"
+                                          Height="36.13202" />
+                  <hmi:SYM_CALL_OVERLAY_01 x:Name="CallOverlay"
+                                           Canvas.Left="0.158900000000017"
+                                           Canvas.Top="-0.00010000000000332"
+                                           Width="190.663"
+                                           Height="36.13199"
+                                           BLKOVL="{TemplateBinding BLK_ALM_1}"
+                                           CMPOVL="{TemplateBinding CMP}"
+                                           LOC="{TemplateBinding LOC}"
+                                           OverlayName="FP_CIN"
+                                           PRT="{TemplateBinding PRT}" />
+                  <hmi:SYM_PAGE_ACK_01 x:Name="ACK_SYMBOL"
+                                       Canvas.Left="0.00909999999998945"
+                                       Canvas.Top="0.0989999999999895"
+                                       Width="190.663"
+                                       Height="36.13202" />
+                </RSICanvas>
+                <RSICanvas Name="ALARM2"
+                           Width="190.8219"
+                           Height="36.64648"
+                           Left="15.4403"
+                           Top="52.7429"
+                           Visibility="{TemplateBinding ALARMS,
+                                                        Converter={EqualConverter A_2}}">
+                  <RSIText x:Name="TAG_VISIBLE_1"
+                           Canvas.Left="-9.99999999748979E-05"
+                           Canvas.Top="0.514400000000023"
+                           Width="190.6632"
+                           Height="36.13199"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Transparent"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="ALARM2"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="11"
+                           TextElement.FontWeight="Bold"
+                           TextWrapping="Wrap" />
+                  <hmi:SYM_ALARMBORDER_07 x:Name="ALARMBORDER_1"
+                                          Canvas.Left="0.00900000000001455"
+                                          Canvas.Top="0.0991000000000213"
+                                          Width="190.6631"
+                                          Height="36.13199" />
+                  <hmi:SYM_CALL_OVERLAY_01 x:Name="CallOverlay_1"
+                                           Canvas.Left="0.158800000000042"
+                                           Canvas.Top="-9.99999999748979E-05"
+                                           Width="190.6631"
+                                           Height="36.13202"
+                                           BLKOVL="{TemplateBinding BLK_ALM_2}"
+                                           CMPOVL="{TemplateBinding CMP}"
+                                           LOC="{TemplateBinding LOC}"
+                                           OverlayName="FP_CIN"
+                                           PRT="{TemplateBinding PRT}" />
+                </RSICanvas>
+                <RSICanvas Name="ALARM3"
+                           Width="190.8219"
+                           Height="36.64651"
+                           Left="15.4403"
+                           Top="102.7429"
+                           Visibility="{TemplateBinding ALARMS,
+                                                        Converter={EqualConverter A_3}}">
+                  <RSIText x:Name="TAG_VISIBLE_2"
+                           Canvas.Left="-9.99999999748979E-05"
+                           Canvas.Top="0.514499999999998"
+                           Width="190.6632"
+                           Height="36.13202"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Transparent"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="ALARM3"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="11"
+                           TextElement.FontWeight="Bold"
+                           TextWrapping="Wrap" />
+                  <hmi:SYM_ALARMBORDER_07 x:Name="ALARMBORDER_2"
+                                          Canvas.Left="0.00900000000001455"
+                                          Canvas.Top="0.0991000000000213"
+                                          Width="190.6631"
+                                          Height="36.13205" />
+                  <hmi:SYM_CALL_OVERLAY_01 x:Name="CallOverlay_2"
+                                           Canvas.Left="0.158800000000042"
+                                           Width="190.6631"
+                                           Height="36.13202"
+                                           BLKOVL="{TemplateBinding BLK_ALM_3}"
+                                           CMPOVL="{TemplateBinding CMP}"
+                                           LOC="{TemplateBinding LOC}"
+                                           OverlayName="FP_CIN"
+                                           PRT="{TemplateBinding PRT}" />
+                </RSICanvas>
+                <RSICanvas Name="TEMPERATURE"
+                           Width="100.6137"
+                           Height="20.89117"
+                           Left="59.6727"
+                           Top="152.7429">
+                  <RSIText x:Name="EU"
+                           Canvas.Left="65.4446"
+                           Width="35.16901"
+                           Height="20.83301"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           Background="#00EFEFEF"
+                           BorderBrush="Transparent"
+                           Foreground="#FF000000"
+                           IsHitTestVisible="False"
+                           Text="\{XXTAGXX\}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="12">
+                    <RSIText.Animations>
+                      <Animation>
+                        <ChangeText Text="_UNIT" />
+                      </Animation>
+                      <Animation Condition="InTouch_SGUG_EU==true">
+                        <SetVisible />
+                      </Animation>
+                      <Animation Condition="InTouch_SGUG_EU==false">
+                        <Invisible />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                  <RSIText x:Name="READING"
+                           Canvas.Left="0.665900000000079"
+                           Width="61.30969"
+                           Height="20.83301"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           Background="#FFE0E0E0"
+                           BorderBrush="Transparent"
+                           Foreground="#FF000000"
+                           IsHitTestVisible="False"
+                           Text="{Value MEAS,
+                                        Converter={FormatConverter {}{0:####}}}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="11"
+                           TextElement.FontWeight="Bold">
+                    <RSIText.Animations>
+                      <Animation>
+                        <ChangeText Text="{Value $MEAS}" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                  <hmi:SYM_ALARMBORDER_01 x:Name="ALARMBORDER_3"
+                                          Canvas.Left="-9.99999999748979E-05"
+                                          Canvas.Top="0.0581999999999994"
+                                          Width="61.30963"
+                                          Height="20.83301" />
+                  <hmi:SYM_CALL_OVERLAY_01 x:Name="CallOverlay_3"
+                                           Canvas.Left="0.334299999999985"
+                                           Canvas.Top="0.0581999999999994"
+                                           Width="99.94769"
+                                           Height="20.83301"
+                                           BLKOVL="{TemplateBinding BLK}"
+                                           CMPOVL="{TemplateBinding CMP}"
+                                           LOC="{TemplateBinding LOC}"
+                                           OverlayName="FP_RIN"
+                                           PRT="{TemplateBinding PRT}" />
+                </RSICanvas>
+                <RSIText x:Name="TextBox1"
+                         Canvas.Top="202.7429"
+                         Width="220"
+                         Height="19.938"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FFFFFFFF"
+                         IsHitTestVisible="False"
+                         Text="CAB2"
+                         TextElement.FontFamily="Courier New"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold" />
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

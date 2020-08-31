@@ -1,0 +1,494 @@
+<UserControl 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+             xmlns:local="clr-namespace:UGP_EDRF" 
+             xmlns:HMI="clr-namespace:UGP_EDRF.HMI" x:Class="UGP_EDRF._02Disp01" 
+             mc:Ignorable="d">
+    <Grid>
+        <!--  Graphic Part  -->
+        <local:_02Disp01_Translation x:Name="GRAPHIC" d:IsLocked="True"  />
+
+        <!-- Normal Graphic Layer Path -->
+        <Canvas x:Name="GRAPHIC_OVERLAY" d:IsLocked="True"/>
+
+        <!-- FOD Part -->
+        <Canvas x:Name='FOD' Visibility="{FODBinding}">
+            <HMI:Pipeline x:Name="Pipeline1"
+		        Canvas.Left="40"
+		        Canvas.Top="190"
+		        Width="20"
+		        Height="3"
+		        Line="Main" RenderTransformOrigin="0.5,0.5" >
+                <HMI:Pipeline.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Pipeline.RenderTransform>
+            </HMI:Pipeline>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy"
+            Height="3"
+            Line="Main"
+            RenderTransformOrigin="0,0" Width="113.104" Canvas.Left="140.083" Canvas.Top="580.166"/>
+            <RSI_GlobeValve Style="{DynamicResource UGP_GlobeValve}" ModelName="A_M39BA038362001MV10" Height="17" Width="31" Canvas.Left="177.387" Canvas.Top="573.166"/>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy1"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Width="113.104" Canvas.Left="487.95" Canvas.Top="587.166"/>
+            <RSI_GlobeValve Style="{DynamicResource UGP_GlobeValve}" ModelName="A_M39BA038362001MV11" Height="17" Width="31" Canvas.Left="532.637" Canvas.Top="580.166"/>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy2"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Width="67.354" Canvas.Left="254.97" Canvas.Top="612.416"/>
+            <RSI_GlobeValve Style="{DynamicResource UGP_GlobeValve}" ModelName="A_M39BA038362001MV01" Height="17" Width="31" Canvas.Left="266.22" Canvas.Top="604.833"/>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy3"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Width="67.354" Canvas.Left="602.691" Canvas.Top="594.549"/>
+            <RSI_GlobeValve Style="{DynamicResource UGP_GlobeValve}" ModelName="A_M39BA038362001MV02" Height="17" Width="31" Canvas.Left="613.941" Canvas.Top="586.966"/>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy4"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Width="110.937" Canvas.Left="826.22" Canvas.Top="580.166"/>
+            <RSI_GlobeValve Style="{DynamicResource UGP_GlobeValve}" ModelName="A_M39BA038362002MV07" Height="17" Width="31" Canvas.Left="867.524" Canvas.Top="573.166"/>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy5"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Width="112.77" Canvas.Left="1125.22" Canvas.Top="580.166"/>
+            <RSI_GlobeValve Style="{DynamicResource UGP_GlobeValve}" ModelName="A_M39BA038362002MV09" Height="17" Width="31" Canvas.Left="1166.524" Canvas.Top="573.166"/>
+            <RSIText x:Name="TextBox1"
+                Canvas.Left="124.833"
+                Canvas.Top="555.666"
+                Width="54.167"
+                Height="11.834"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="NITROGEN"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" FontSize="10" />
+            <RSIText x:Name="TextBox1_Copy"
+                Canvas.Left="272.657"
+                Canvas.Top="621.833"
+                Width="64.676"
+                Height="11.834"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="BLOWDOWN"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" FontSize="10" />
+            <RSIText x:Name="TextBox1_Copy1"
+                Canvas.Left="471.533"
+                Canvas.Top="563.782"
+                Width="54.167"
+                Height="11.834"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="NITROGEN"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" FontSize="10" />
+            <RSIText x:Name="TextBox1_Copy2"
+                Canvas.Left="812.803"
+                Canvas.Top="560.282"
+                Width="54.167"
+                Height="11.834"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="NITROGEN"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"  FontSize="10" RenderTransformOrigin="0.5,0.5" />
+            <RSIText x:Name="TextBox1_Copy3"
+                Canvas.Left="1112.803"
+                Canvas.Top="556.332"
+                Width="54.167"
+                Height="11.834"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="NITROGEN"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" FontSize="10" RenderTransformOrigin="0.5,0.5" />
+            <RSIText x:Name="TextBox1_Copy4"
+                Canvas.Left="688.053"
+                Canvas.Top="588.949"
+                Width="64.676"
+                Height="11.834"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="BLOWDOWN"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" FontSize="10" />
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy6"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Width="67.354" Canvas.Left="938.686" Canvas.Top="595.558"/>
+            <RSI_GlobeValve Style="{DynamicResource UGP_GlobeValve}" ModelName="A_M39BA038362002MV05" Height="17" Width="31" Canvas.Left="949.936" Canvas.Top="587.975"/>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy7"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Width="67.354" Canvas.Left="1239.607" Canvas.Top="596.532"/>
+            <RSI_GlobeValve Style="{DynamicResource UGP_GlobeValve}" ModelName="A_M39BA038362002MV06" Height="17" Width="31" Canvas.Left="1250.857" Canvas.Top="588.949"/>
+            <RSIText x:Name="TextBox1_Copy5"
+                Canvas.Left="1020.549"
+                Canvas.Top="590.148"
+                Width="64.676"
+                Height="11.834"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="BLOWDOWN"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" FontSize="10" />
+            <RSIText x:Name="TextBox1_Copy6"
+                Canvas.Left="1318.636"
+                Canvas.Top="592.265"
+                Width="64.676"
+                Height="11.834"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="BLOWDOWN"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" FontSize="10" />
+            <RSI_PressureSafetyValve Canvas.Left="334.5" Style="{DynamicResource UGP_PressureSafetyValveStyle}" Canvas.Top="252" ModelName="M39_002PZV0001A" d:LayoutOverrides="Height"/>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy8"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Canvas.Left="345.36" Canvas.Top="324.724" Width="23.188">
+                <HMI:Pipeline.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Pipeline.RenderTransform>
+            </HMI:Pipeline>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy9"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Canvas.Left="357.194" Canvas.Top="289.641" Width="36.105"/>
+            <RSIText x:Name="TextBox3_Copy2"
+                Canvas.Left="416.727"
+                Canvas.Top="281.365"
+                Width="51.25"
+                Height="16.75"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="TO FLARE"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" />
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy10"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Canvas.Left="254.97" Canvas.Top="322.641" Width="92.355"/>
+            <RSI_PressureSafetyValve Canvas.Left="682.221" Style="{DynamicResource UGP_PressureSafetyValveStyle}" Canvas.Top="247.833" ModelName="M39_002PZV0002A"/>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy11"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Canvas.Left="693.081" Canvas.Top="320.557" Width="23.188">
+                <HMI:Pipeline.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Pipeline.RenderTransform>
+            </HMI:Pipeline>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy12"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Canvas.Left="704.915" Canvas.Top="285.474" Width="36.105"/>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy13"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Canvas.Left="602.691" Canvas.Top="318.474" Width="92.355"/>
+            <RSI_PressureSafetyValve Canvas.Left="1012.715" Style="{DynamicResource UGP_PressureSafetyValveStyle}" Canvas.Top="247.833" ModelName="M39_002PZV0005A" d:LayoutOverrides="Height"/>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy14"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Canvas.Left="1023.575" Canvas.Top="320.557" Width="23.188">
+                <HMI:Pipeline.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Pipeline.RenderTransform>
+            </HMI:Pipeline>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy15"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Canvas.Left="1035.409" Canvas.Top="285.474" Width="36.105"/>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy16"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Canvas.Left="938.686" Canvas.Top="318.474" Width="86.854"/>
+            <RSI_PressureSafetyValve Canvas.Left="1319.137" Style="{DynamicResource UGP_PressureSafetyValveStyle}" Canvas.Top="247.833" ModelName="M39_002PZV0006A" d:LayoutOverrides="Height"/>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy17"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Canvas.Left="1329.997" Canvas.Top="320.557" Width="23.188">
+                <HMI:Pipeline.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Pipeline.RenderTransform>
+            </HMI:Pipeline>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy18"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Canvas.Left="1341.831" Canvas.Top="285.474" Width="36.105"/>
+            <HMI:Arrow x:Name="EmbeddedSymbol13_Copy2"
+            Width="18.5"
+            Height="24"
+            RenderTransformOrigin="0,0"
+            Type="Main" Background="#FFDED9D9" Canvas.Left="147.979" Canvas.Top="571.879">
+                <HMI:Arrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Arrow.RenderTransform>
+            </HMI:Arrow>
+            <HMI:Pipeline x:Name="EmbeddedSymbol11_Copy19"
+                Height="3"
+                Line="Main"
+                RenderTransformOrigin="0,0" Canvas.Left="1239.607" Canvas.Top="318.474" Width="92.355"/>
+            <RSIText x:Name="TextBox3_Copy"
+                Canvas.Left="763.448"
+                Canvas.Top="276.891"
+                Width="51.25"
+                Height="16.75"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="TO FLARE"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" />
+            <RSIText x:Name="TextBox3_Copy1"
+                Canvas.Left="1089.942"
+                Canvas.Top="277.799"
+                Width="51.25"
+                Height="16.75"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="TO FLARE"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" />
+            <RSIText x:Name="TextBox3_Copy3"
+                Canvas.Left="1396.364"
+                Canvas.Top="276.457"
+                Width="51.25"
+                Height="16.75"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="TO FLARE"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" />
+            <HMI:Arrow x:Name="EmbeddedSymbol13_Copy"
+                Width="18.5"
+                Height="24"
+                RenderTransformOrigin="0,0"
+                Type="Main" Background="#FFDED9D9" Canvas.Left="334.979" Canvas.Top="603.879">
+                <HMI:Arrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Arrow.RenderTransform>
+            </HMI:Arrow>
+            <HMI:Arrow x:Name="EmbeddedSymbol13_Copy3"
+            Width="18.5"
+            Height="24"
+            RenderTransformOrigin="0,0"
+            Type="Main" Background="#FFDED9D9" Canvas.Left="679.979" Canvas.Top="586.379">
+                <HMI:Arrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Arrow.RenderTransform>
+            </HMI:Arrow>
+            <HMI:Arrow x:Name="EmbeddedSymbol13_Copy1"
+                Width="18.5"
+                Height="24"
+                RenderTransformOrigin="0,0"
+                Type="Main" Background="#FFDED9D9" Canvas.Left="495.146" Canvas.Top="579.046">
+                <HMI:Arrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Arrow.RenderTransform>
+            </HMI:Arrow>
+            <HMI:Arrow x:Name="EmbeddedSymbol13_Copy4"
+                Width="18.5"
+                Height="24"
+                RenderTransformOrigin="0,0"
+                Type="Main" Background="#FFDED9D9" Canvas.Left="838.979" Canvas.Top="571.879">
+                <HMI:Arrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Arrow.RenderTransform>
+            </HMI:Arrow>
+            <HMI:Arrow x:Name="EmbeddedSymbol13_Copy5"
+                Width="18.5"
+                Height="24"
+                RenderTransformOrigin="0,0"
+                Type="Main" Background="#FFDED9D9" Canvas.Left="1017.729" Canvas.Top="586.879">
+                <HMI:Arrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Arrow.RenderTransform>
+            </HMI:Arrow>
+            <HMI:Arrow x:Name="EmbeddedSymbol13_Copy6"
+                Width="18.5"
+                Height="24"
+                RenderTransformOrigin="0,0"
+                Type="Main" Background="#FFDED9D9" Canvas.Left="1136.229" Canvas.Top="571.546">
+                <HMI:Arrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Arrow.RenderTransform>
+            </HMI:Arrow>
+            <HMI:Arrow x:Name="EmbeddedSymbol13_Copy7"
+                Width="18.5"
+                Height="24"
+                RenderTransformOrigin="0,0"
+                Type="Main" Background="#FFDED9D9" Canvas.Left="1317.563" Canvas.Top="588.879">
+                <HMI:Arrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Arrow.RenderTransform>
+            </HMI:Arrow>
+            <HMI:Arrow x:Name="EmbeddedSymbol13_Copy8"
+                Width="18.5"
+                Height="24"
+                RenderTransformOrigin="0,0"
+                Type="Main" Background="#FFDED9D9" Canvas.Left="409.479" Canvas.Top="281.712">
+                <HMI:Arrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Arrow.RenderTransform>
+            </HMI:Arrow>
+            <HMI:Arrow x:Name="EmbeddedSymbol13_Copy9"
+                Width="18.5"
+                Height="24"
+                RenderTransformOrigin="0,0"
+                Type="Main" Background="#FFDED9D9" Canvas.Left="753.979" Canvas.Top="277.712">
+                <HMI:Arrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Arrow.RenderTransform>
+            </HMI:Arrow>
+            <HMI:Arrow x:Name="EmbeddedSymbol13_Copy10"
+                Width="18.5"
+                Height="24"
+                RenderTransformOrigin="0,0"
+                Type="Main" Background="#FFDED9D9" Canvas.Left="1080.646" Canvas.Top="277.045">
+                <HMI:Arrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Arrow.RenderTransform>
+            </HMI:Arrow>
+            <HMI:Arrow x:Name="EmbeddedSymbol13_Copy11"
+                Width="18.5"
+                Height="24"
+                RenderTransformOrigin="0,0"
+                Type="Main" Background="#FFDED9D9" Canvas.Left="1386.146" Canvas.Top="277.545">
+                <HMI:Arrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Arrow.RenderTransform>
+            </HMI:Arrow>
+            <!-- Start FOD -->
+            <!-- Stop FOD -->
+        </Canvas>
+
+        <!-- BL Part -->
+        <Canvas x:Name='BL' Visibility='{BLBinding}' d:IsLocked="True" >
+            <RSI_StdBatteryLimit Canvas.Left="92.998" Canvas.Top="569.331" ModelName="M39BA038362001N201"/>
+            <RSI_StdBatteryLimit Canvas.Left="438.997" Canvas.Top="578.997" ModelName="M39BA038362001N202"/>
+            <RSI_StdBatteryLimit Canvas.Left="785.997" Canvas.Top="569.331" ModelName="M39BA038362002N201"/>
+            <RSI_StdBatteryLimit Canvas.Left="1084.497" Canvas.Top="569.331" ModelName="M39BA038362002N202"/>
+            <!-- Start BL -->
+            <!-- Stop BL -->
+        </Canvas>
+
+        <!-- FAILURE Part -->
+        <Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' d:IsLocked="True" >
+            <!-- Start FAILURE -->
+            <!-- Stop FAILURE -->
+        </Canvas>
+
+    </Grid>
+</UserControl>

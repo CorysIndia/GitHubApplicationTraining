@@ -1,0 +1,357 @@
+﻿<RSIFacePlate x:Class="UGP_STG.FoxFaceplates.Indicator.FoxboroAIFaceplate"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              Width="220"
+              Height="300"
+              Background="#858585"
+              mc:Ignorable="d">
+    <RSICanvas>
+        <Rectangle x:Name="Left_Rectangle"
+                   Canvas.Top="90"
+                   Width="120"
+                   Height="175"
+                   Fill="#ADADAD"
+                   Stroke="#FFFFFF"
+                   StrokeThickness="1" />
+
+        <Rectangle x:Name="Bottom_Rectangle"
+                   Canvas.Top="265"
+                   Width="220"
+                   Height="35"
+                   Fill="#ADADAD"
+                   Stroke="#FFFFFF"
+                   StrokeThickness="1" />
+
+        <!--
+            Width="210"
+            Height="45">
+        -->
+        <RSICanvas x:Name="Top"
+                   Width="220"
+                   Height="115">
+            <!--  Description : White Text on 2 lines  -->
+            <RSIText x:Name="Descr"
+                     Canvas.Left="5"
+                     Canvas.Top="5"
+                     FontFamily="Fixedsys"
+                     FontSize="10.667"
+                     Foreground="#FFFFFF"
+                     Text="\$TAGNAME.DESCRP\" />
+
+            <!--  Tag Name  -->
+            <RSIText x:Name="Tagname"
+                     Canvas.Left="5"
+                     Canvas.Top="50"
+                     Width="145"
+                     Height="40"
+                     HorizontalContentAlignment="Left"
+                     FontFamily="Fixedsys"
+                     FontSize="10.667"
+                     Foreground="#FFFFFF"
+                     Text="$GRAPHICTAGNAME">
+                <RSIText.Animations>
+                    <Animation Condition="$GRAPHICTAGNAME = Viewer.$GRAPHICTAGNAME">
+                        <ChangeText Text="$TAGNAME" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+
+
+            <!--  Alarm Name  -->
+            <RSIText Canvas.Left="150"
+                     Canvas.Top="50"
+                     Width="70"
+                     Height="40"
+                     HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     Background="#555555"
+                     BorderBrush="#FFFFFF"
+                     BorderThickness="1"
+                     FontFamily="Arial"
+                     FontSize="9.333"
+                     FontWeight="Bold"
+                     Foreground="#FFFFFF"
+                     Text="\$TAGNAME.block_alm_word\">
+                <RSIText.Animations>
+                    <!--  UnAck  -->
+                    <Animation Condition="$TAGNAME.alm_state == 1">
+                        <Blink From="Red"
+                               PropertyName="Foreground"
+                               To="White" />
+                    </Animation>
+
+                    <!--  Ack  -->
+                    <Animation Condition="$TAGNAME.alm_state == 2">
+                        <ChangePropertyValue PropertyName="Foreground" Value="#FF0000" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+
+        </RSICanvas>
+
+        <!--  Graph  -->
+        <Border x:Name="Gauge_Area"
+                Canvas.Left="55"
+                Canvas.Top="94"
+                Width="15"
+                Height="168"
+                BorderBrush="#B5B5B5"
+                BorderThickness="1">
+            <RSIRectangle x:Name="Gauge"
+                          Width="13"
+                          VerticalAlignment="Bottom"
+                          Fill="#000080">
+                <RSIRectangle.Animations>
+                    <Animation>
+                        <Resize Expression="$TAGNAME.PNT"
+                                FinalValue="$TAGNAME.HSCO1"
+                                GrowthDirection="Up"
+                                InitialValue="$TAGNAME.LSCO1" />
+                    </Animation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+        </Border>
+
+        <!--  Sliders Part  -->
+        <Canvas x:Name="Sliders_Part"
+                Canvas.Left="40"
+                Canvas.Top="95"
+                Width="15"
+                Height="166">
+
+            <!--  HH Slider  -->
+            <RSIRectangle x:Name="HH_Slider"
+                          Canvas.Left="1"
+                          Canvas.Top="0"
+                          Width="14"
+                          Height="2"
+                          Stroke="#008000"
+                          StrokeThickness="2">
+                <RSIRectangle.Animations>
+                    <Animation Condition="$TAGNAME.HHAOPT = 3 OR $TAGNAME.HHAOPT = 0">
+                        <Invisible />
+                    </Animation>
+                    <Animation>
+                        <Translate Expression="$TAGNAME.HHALIM"
+                                   FinalValue="$TAGNAME.HSCO1"
+                                   InitialValue="$TAGNAME.LSCO1"
+                                   Orientation="Vertical" />
+                    </Animation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+
+            <!--  LL Slider  -->
+            <RSIRectangle x:Name="LL_Slider"
+                          Canvas.Left="1"
+                          Canvas.Top="164"
+                          Width="14"
+                          Height="2"
+                          Stroke="#008000"
+                          StrokeThickness="2">
+                <RSIRectangle.Animations>
+                    <Animation Condition="$TAGNAME.HHAOPT = 2 OR $TAGNAME.HHAOPT = 0">
+                        <Invisible />
+                    </Animation>
+                    <Animation>
+                        <Translate Expression="$TAGNAME.LLALIM"
+                                   FinalValue="$TAGNAME.HSCO1"
+                                   InitialValue="$TAGNAME.LSCO1"
+                                   Orientation="Vertical" />
+                    </Animation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+
+            <!--  H Slider  -->
+            <RSIPolygon x:Name="H_Slider"
+                        Canvas.Left="9"
+                        Canvas.Top="20"
+                        Width="6.5"
+                        Height="10"
+                        Fill="#0000FF"
+                        IsClosed="True"
+                        Points=" 0,0 0,10 6,5 0,0"
+                        Stroke="#0000FF"
+                        StrokeThickness="1">
+                <RSIPolygon.Animations>
+                    <Animation Condition="$TAGNAME.HLOP = 3 OR $TAGNAME.HLOP = 0">
+                        <Invisible />
+                    </Animation>
+                    <Animation>
+                        <Translate Expression="$TAGNAME.HAL"
+                                   FinalValue="$TAGNAME.HSCO1"
+                                   InitialValue="$TAGNAME.LSCO1"
+                                   Orientation="Vertical" />
+                    </Animation>
+                </RSIPolygon.Animations>
+            </RSIPolygon>
+
+            <!--  Low Slider  -->
+            <RSIPolygon x:Name="L_Slider"
+                        Canvas.Left="9"
+                        Canvas.Top="140"
+                        Width="6.5"
+                        Height="10"
+                        Fill="#0000FF"
+                        IsClosed="True"
+                        Points=" 0,0 0,10 6,5 0,0"
+                        Stroke="#0000FF"
+                        StrokeThickness="1">
+                <RSIPolygon.Animations>
+                    <Animation Condition="$TAGNAME.HLOP = 2 OR $TAGNAME.HLOP = 0">
+                        <Invisible />
+                    </Animation>
+                    <Animation>
+                        <Translate Expression="$TAGNAME.LAL"
+                                   FinalValue="$TAGNAME.HSCO1"
+                                   InitialValue="$TAGNAME.LSCO1"
+                                   Orientation="Vertical" />
+                    </Animation>
+                </RSIPolygon.Animations>
+            </RSIPolygon>
+
+        </Canvas>
+
+        <!--  Detail Button  -->
+        <RSIBorder x:Name="Detail_Button"
+                   Canvas.Left="75"
+                   Canvas.Top="270"
+                   Width="40"
+                   Height="25"
+                   Background="#858585"
+                   BorderBrush="#FFFFFF"
+                   BorderThickness="1">
+            <RSIBorder.Animations>
+                <ClickAnimation>
+                    <Open WindowName="FoxboroAIDetailFaceplate" />
+                </ClickAnimation>
+            </RSIBorder.Animations>
+
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontFamily="Arial"
+                       FontSize="9.333"
+                       FontWeight="Bold"
+                       Foreground="#FFFFFF"
+                       IsHitTestVisible="False"
+                       Text="det" />
+
+        </RSIBorder>
+
+        <!--  Current Mode  -->
+        <RSIText x:Name="Mode_Button"
+                 Canvas.Left="100"
+                 Canvas.Top="100"
+                 Width="20"
+                 Height="15"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 FontFamily="Fixedsys"
+                 FontSize="10.667"
+                 Text="M">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.MA = 1">
+                    <ChangeText Text="A" />
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+
+
+        <Rectangle x:Name="Right_Rectangle"
+                   Canvas.Left="120"
+                   Canvas.Top="90"
+                   Width="100"
+                   Height="175"
+                   Fill="#ADADAD"
+                   Stroke="#FFFFFF"
+                   StrokeThickness="1" />
+
+        <!--  A/M Button  -->
+        <RSIBorder x:Name="AutoManu_Button"
+                   Canvas.Left="125"
+                   Canvas.Top="270"
+                   Width="35"
+                   Height="25"
+                   Background="#858585"
+                   BorderBrush="#FFFFFF"
+                   BorderThickness="1">
+            <RSIBorder.Animations>
+                <ClickAnimation>
+                    <FlipFlop Expression1="0"
+                              Expression2="1"
+                              Variable="$TAGNAME.MA" />
+                </ClickAnimation>
+            </RSIBorder.Animations>
+
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontFamily="Arial"
+                       FontSize="9.333"
+                       FontWeight="Bold"
+                       Foreground="#FFFFFF"
+                       IsHitTestVisible="False"
+                       Text="A / M" />
+
+        </RSIBorder>
+
+        <!--  MEAS Text  -->
+        <TextBlock x:Name="MEAS_Text"
+                   Canvas.Left="130"
+                   Canvas.Top="100"
+                   Width="45"
+                   Height="15"
+                   FontFamily="Fixedsys"
+                   FontSize="10.667"
+                   Text="MEAS" />
+
+        <!--  PNT Text  -->
+        <TextBlock x:Name="PNT_Text"
+                   Canvas.Left="130"
+                   Canvas.Top="175"
+                   Width="30"
+                   Height="15"
+                   FontFamily="Fixedsys"
+                   FontSize="10.667"
+                   Text="PNT" />
+
+        <!--  MEAS Value  -->
+        <RSIText x:Name="MEAS_Value"
+                 Canvas.Left="145"
+                 Canvas.Top="130"
+                 Width="70"
+                 Height="15"
+                 HorizontalContentAlignment="Right"
+                 VerticalContentAlignment="Center"
+                 FontFamily="Fixedsys"
+                 FontSize="10.667"
+                 Text="\$TAGNAME.MEAS:#.##\" />
+
+        <!--  PNT Value  -->
+        <RSIText x:Name="PNT_Value"
+                 Canvas.Left="145"
+                 Canvas.Top="200"
+                 Width="70"
+                 Height="15"
+                 HorizontalContentAlignment="Right"
+                 VerticalContentAlignment="Center"
+                 FontFamily="Fixedsys"
+                 FontSize="10.667"
+                 Text="\$TAGNAME.PNT:#.##\" />
+
+        <!--  PNT Unit  -->
+        <RSIText x:Name="PNT_Unit"
+                 Canvas.Left="145"
+                 Canvas.Top="225"
+                 Width="70"
+                 Height="15"
+                 HorizontalContentAlignment="Right"
+                 VerticalContentAlignment="Center"
+                 FontFamily="Fixedsys"
+                 FontSize="10.667"
+                 Text="\$TAGNAME.EO1\" />
+
+
+    </RSICanvas>
+
+</RSIFacePlate>

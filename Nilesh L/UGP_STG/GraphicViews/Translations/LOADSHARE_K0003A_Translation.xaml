@@ -1,0 +1,99 @@
+<UserControl x:Class="UGP_EDRF.LOADSHARE_K0003A_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+  <RSICanvas Width="613.00012"
+             Height="121.000021"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:LowerBannerArrow x:Name="LowerBannerArrow1"
+                          Canvas.Left="317.0002"
+                          Canvas.Top="23.500011"
+                          Width="84.00001" />
+    <RSIBorder x:Name="Line1"
+               Canvas.Left="83.25"
+               Canvas.Top="24.250011"
+               Width="53"
+               Height="1.5">
+      <RSIPath Data="M83.25,24.250011 L136.25,24.250011"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+    </RSIBorder>
+    <hmi:LowerBannerArrow x:Name="LowerBannerArrow2"
+                          Canvas.Left="140"
+                          Canvas.Top="25.500011"
+                          Width="134" />
+    <hmi:ConQl_03 x:Name="ConQl_031"
+                  Canvas.Left="272.5988"
+                  Canvas.Top="3.000014"
+                  Width="88.47675"
+                  Height="37.00001"
+                  NameStore="LOADSHARE_K0003AB" />
+    <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M1"
+                         Width="92.00001"
+                         Height="52.00003"
+                         GraphicTagName="PI-0195"
+                         TAG="PI-0195"
+                         UNIT="PSIG" />
+    <hmi:ConQl_03 x:Name="ConQl_032"
+                  Canvas.Left="131.5987"
+                  Canvas.Top="7.000011"
+                  Width="88.47675"
+                  Height="37.00001"
+                  NameStore="PIC_0195CA" />
+    <hmi:LowerBannerArrow x:Name="LowerBannerArrow3"
+                          Canvas.Left="488.0001"
+                          Canvas.Top="77.500011"
+                          Width="34.00001" />
+    <hmi:LowerBannerArrow x:Name="LowerBannerArrow4"
+                          Canvas.Left="402.0002"
+                          Canvas.Top="46.500011"
+                          Width="66.00001" />
+    <hmi:LowerBannerArrow x:Name="LowerBannerArrow5"
+                          Canvas.Left="317.0002"
+                          Canvas.Top="63.500011"
+                          Width="84.00001" />
+    <hmi:Type1_AO_Display_9Letter x:Name="Type1_AO_Display_9Letter1"
+                                  Canvas.Left="522.0001"
+                                  Canvas.Top="56.000011"
+                                  Width="91.00002"
+                                  Height="38" />
+    <hmi:ConQl_03 x:Name="ConQl_033"
+                  Canvas.Left="272.5988"
+                  Canvas.Top="44.000011"
+                  Width="88.47675"
+                  Height="37.00001"
+                  NameStore="SIC_0950" />
+    <hmi:HighSelector_a_III x:Name="HighSelector_a_III1"
+                            Canvas.Left="401.0004882813"
+                            Canvas.Top="6.000031"
+                            Width="26.99999"
+                            Height="73.99996" />
+    <hmi:HighSelector_a_III x:Name="HighSelector_a_III2"
+                            Canvas.Left="496"
+                            Canvas.Top="38.000031"
+                            Width="26.99999"
+                            Height="73.99996"
+                            RenderTransformOrigin="0,0">
+      <hmi:HighSelector_a_III.RenderTransform>
+        <TransformGroup>
+          <RotateTransform Angle="180" />
+          <ScaleTransform ScaleX="1" ScaleY="-1" />
+        </TransformGroup>
+      </hmi:HighSelector_a_III.RenderTransform>
+    </hmi:HighSelector_a_III>
+    <hmi:LowerBannerArrow x:Name="LowerBannerArrow6"
+                          Canvas.Left="358.0001"
+                          Canvas.Top="104.500011"
+                          Width="112" />
+    <hmi:ConQl_03 x:Name="ConQl_034"
+                  Canvas.Left="272.5988"
+                  Canvas.Top="84.000011"
+                  Width="88.47675"
+                  Height="37.00001"
+                  NameStore="SIC_0950_LIMITER" />
+  </RSICanvas>
+</UserControl>

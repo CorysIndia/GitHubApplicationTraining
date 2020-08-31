@@ -1,0 +1,38 @@
+<UserControl x:Class="UGP_EDRF._02oview01" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+             xmlns:local="clr-namespace:UGP_EDRF" 
+             mc:Ignorable="d">
+    <Grid>
+        <!--  Graphic Part  -->
+        <local:_02oview01_Translation x:Name="GRAPHIC" d:IsLocked="True"  />
+
+        <!-- Normal Graphic Layer Path -->
+        <Canvas x:Name="GRAPHIC_OVERLAY" d:IsLocked="True">
+        </Canvas>
+
+        <!-- FOD Part -->
+        <Canvas x:Name='FOD' Visibility="{FODBinding}" d:IsLocked="True">
+            <!-- Start FOD -->
+            <!-- Stop FOD -->
+        </Canvas>
+
+        <!-- BL Part -->
+        <Canvas x:Name='BL' Visibility='{BLBinding}' d:IsLocked="True" >
+            <!-- Start BL -->
+            <!-- Stop BL -->
+        </Canvas>
+
+        <!-- FAILURE Part -->
+        <Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' >
+            <RSI_StdTransmitter Canvas.Left="800.085" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="337.006" ModelName="M39_001FIT0080A" FailureFaceplateName=""/>
+            <RSI_StdTransmitter Canvas.Left="800.085" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="282.339" ModelName="M39_001FIT0080B" FailureFaceplateName=""/>
+            <RSI_StdTransmitter Canvas.Left="800.085" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="228.006" ModelName="M39_001FIT0080C" FailureFaceplateName=""/>
+            <!-- Start FAILURE -->
+            <!-- Stop FAILURE -->
+        </Canvas>
+
+    </Grid>
+</UserControl>

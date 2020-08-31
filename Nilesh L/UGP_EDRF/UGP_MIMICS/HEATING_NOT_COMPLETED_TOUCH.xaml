@@ -1,0 +1,25 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="UGP_EDRF.UGP_MIMICS.HEATING_NOT_COMPLETED_TOUCH"
+	Width="120" 
+	Height="40"
+	Background="LightGray">
+    <RSICanvas  >
+        <RSICanvas.Animations>
+            <ClickAnimation>
+                <Open TagName="$TAGNAME" Title="$TAGNAME" WindowName="HEATING_NOT_COMPLETED01"/>
+            </ClickAnimation>
+        </RSICanvas.Animations>
+        <RSIText x:Name="rSIButton" Width="120" Background="#FFE0E0E0" Height="40" Text="HEATING NOT COMPLETED" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" FontWeight="Bold">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME_HEATING_NOT_COMPLETED.CIN == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="red"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+</RSIControl>

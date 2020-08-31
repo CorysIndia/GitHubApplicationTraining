@@ -1,0 +1,116 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Style TargetType="{x:Type hmi:IndicatorAnalogV_Small_New}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:IndicatorAnalogV_Small_New}">
+                    <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+                        <RSIGrid Background="Transparent">
+                            <RSICanvas Width="163.9302"
+                         Height="20"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                                <RSICanvas Name="Group2"
+                           Width="163.9302"
+                           Height="20"
+                           Left="0"
+                           Top="0">
+                                    <RSIRectangle x:Name="Rectangle2"
+                                Canvas.Left="5.00000000016598E-05"
+                                Width="163.9302"
+                                Height="20"
+                                Stroke="#FF000000"
+                                StrokeThickness="1">
+                                        <RSIRectangle.Fill>
+                                            <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                                <GradientStop Offset="0.5" Color="#FFB3B3B3" />
+                                                <GradientStop Offset="0" Color="#FFFEFFFF" />
+                                                <GradientStop Offset="1" Color="#FFFEFFFF" />
+                                            </LinearGradientBrush>
+                                        </RSIRectangle.Fill>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle1"
+                                Canvas.Left="2.00005"
+                                Canvas.Top="2.2"
+                                Width="159.7301"
+                                Height="16"
+                                Fill="#FF343434"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" />
+                                </RSICanvas>
+                                <RSIText x:Name="Text3"
+                         Canvas.Left="4.067"
+                         Canvas.Top="3.076"
+                         Width="92.643"
+                         Height="14.523"
+                         VerticalAlignment="Center"
+                         Foreground="#FFFFFFFF"
+                         Text="{TemplateBinding ZTAG}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center">
+                                    <!--RSIText.Animations>
+                                        <Animation>
+                                            <ChangeText Text="\$TAGNAME.DESCRP\"/>
+                                        </Animation>
+                                    </-->
+                                </RSIText>
+                                <RSIText x:Name="Text2"
+                         Canvas.Left="129.8713"
+                         Canvas.Top="3"
+                         Width="30.3291"
+                         Height="14.52344"
+                         VerticalAlignment="Center"
+                         Foreground="#FFFFFFFF"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding ZUNIT}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" >
+                                    <!--RSIText.Animations>
+                                        <Animation>
+                                            <ChangeText Text="\$TAGNAME.EO1\"/>
+                                        </Animation>
+                                    </RSIText.Animations-->
+                                </RSIText>
+                                <RSIText x:Name="ValueTxt"
+                         Canvas.Left="98.877"
+                         Canvas.Top="3.191"
+                         Width="29.405"
+                         Height="14.524"
+                         HorizontalAlignment="Right"
+                         VerticalAlignment="Center"
+                         Foreground="#FF00FF00"
+                         Text="2.5"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                                    <RSIText.Animations>
+                                        <Animation>
+                                            <ChangeText Text="\$Tagname.MEAS:#.#\"/>
+                                        </Animation>
+                                        <!--Animation>
+                      <ChangeText Text="{Value Value, Converter={FormatConverter F1}}" />
+                    </>
+                    <Animation Condition="Alarm">
+                      <ChangeColor Color="#FF00FF00" />
+                    </Animation-->
+                                        <Animation Condition="$Tagname.HAI==True OR $Tagname.LAI == True OR $Tagname.HHAIND == True OR $Tagname.LLAIND == True" IsContinuous="True">
+                                            <ChangeColor Color="red" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                            </RSICanvas>
+                        </RSIGrid>
+                    </RSIViewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+</ResourceDictionary>

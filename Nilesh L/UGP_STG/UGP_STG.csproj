@@ -1,0 +1,4578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9969FC34-276B-4464-B4E0-5ECF3E9091E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UGP_STG</RootNamespace>
+    <AssemblyName>UGP_STG</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ExpressionBlendVersion>12.0.51020.0</ExpressionBlendVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Icons\application.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BootStrap\Framework\Alarms\alarmView.xaml.cs">
+      <DependentUpon>alarmView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrap\Framework\Alarms\PropertyGridExtension.cs" />
+    <Compile Include="BootStrap\Framework\Toolbars\MainToolBar.xaml.cs">
+      <DependentUpon>MainToolBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrap\Framework\Toolbars\NavigationBar.xaml.cs">
+      <DependentUpon>NavigationBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrap\Framework\Toolbars\Test.xaml.cs">
+      <DependentUpon>Test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrap\TestFaceplatesToDo.xaml.cs">
+      <DependentUpon>TestFaceplatesToDo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FIC_0001.xaml.cs">
+      <DependentUpon>FIC_0001.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FIC_0003.xaml.cs">
+      <DependentUpon>FIC_0003.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FIC_0022.xaml.cs">
+      <DependentUpon>FIC_0022.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FIC_0043.xaml.cs">
+      <DependentUpon>FIC_0043.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FIC_0062.xaml.cs">
+      <DependentUpon>FIC_0062.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FIC_0083.xaml.cs">
+      <DependentUpon>FIC_0083.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FIC_0102.xaml.cs">
+      <DependentUpon>FIC_0102.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FIC_0106.xaml.cs">
+      <DependentUpon>FIC_0106.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FIC_0127.xaml.cs">
+      <DependentUpon>FIC_0127.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FIC_0181.xaml.cs">
+      <DependentUpon>FIC_0181.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FIC_0225.xaml.cs">
+      <DependentUpon>FIC_0225.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FIC_0230.xaml.cs">
+      <DependentUpon>FIC_0230.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_AIN.xaml.cs">
+      <DependentUpon>FP_AIN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_AOUT.xaml.cs">
+      <DependentUpon>FP_AOUT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_AOUTMA.xaml.cs">
+      <DependentUpon>FP_AOUTMA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_CB.xaml.cs">
+      <DependentUpon>FP_CB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_CONFIRMATION_SP_GEN.xaml.cs">
+      <DependentUpon>FP_CONFIRMATION_SP_GEN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_DGAP.xaml.cs">
+      <DependentUpon>FP_DGAP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_EDR_SP_GEN.xaml.cs">
+      <DependentUpon>FP_EDR_SP_GEN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_EDR_SP_GEN_CASE4.xaml.cs">
+      <DependentUpon>FP_EDR_SP_GEN_CASE4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_FV.xaml.cs">
+      <DependentUpon>FP_FV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_HIC.xaml.cs">
+      <DependentUpon>FP_HIC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_HS_ABC.xaml.cs">
+      <DependentUpon>FP_HS_ABC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_HS_ABCD.xaml.cs">
+      <DependentUpon>FP_HS_ABCD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_HS_ABCD_TBD.xaml.cs">
+      <DependentUpon>FP_HS_ABCD_TBD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_HS_ABC_02.xaml.cs">
+      <DependentUpon>FP_HS_ABC_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_HS_AB_2.xaml.cs">
+      <DependentUpon>FP_HS_AB_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_HS_AB_3.xaml.cs">
+      <DependentUpon>FP_HS_AB_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_HS_CTRL_01.xaml.cs">
+      <DependentUpon>FP_HS_CTRL_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_OUTSEL.xaml.cs">
+      <DependentUpon>FP_OUTSEL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_REALM_HHHH.xaml.cs">
+      <DependentUpon>FP_REALM_HHHH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_RIN_HHHH.xaml.cs">
+      <DependentUpon>FP_RIN_HHHH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_ROUTMA.xaml.cs">
+      <DependentUpon>FP_ROUTMA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_SEQ_MA.xaml.cs">
+      <DependentUpon>FP_SEQ_MA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_SEQ_NOR_BR.xaml.cs">
+      <DependentUpon>FP_SEQ_NOR_BR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\FP_SWCH.xaml.cs">
+      <DependentUpon>FP_SWCH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\IIC_0860.xaml.cs">
+      <DependentUpon>IIC_0860.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\IIC_1070.xaml.cs">
+      <DependentUpon>IIC_1070.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\IIC_1078.xaml.cs">
+      <DependentUpon>IIC_1078.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\IIC_1086.xaml.cs">
+      <DependentUpon>IIC_1086.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0001.xaml.cs">
+      <DependentUpon>PIC_0001.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0051.xaml.cs">
+      <DependentUpon>PIC_0051.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0061.xaml.cs">
+      <DependentUpon>PIC_0061.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0111.xaml.cs">
+      <DependentUpon>PIC_0111.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0121.xaml.cs">
+      <DependentUpon>PIC_0121.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0125.xaml.cs">
+      <DependentUpon>PIC_0125.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0189.xaml.cs">
+      <DependentUpon>PIC_0189.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0191S.xaml.cs">
+      <DependentUpon>PIC_0191S.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0191S1.xaml.cs">
+      <DependentUpon>PIC_0191S1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0195A.xaml.cs">
+      <DependentUpon>PIC_0195A.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0195B.xaml.cs">
+      <DependentUpon>PIC_0195B.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0195CA.xaml.cs">
+      <DependentUpon>PIC_0195CA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0195CA_PD.xaml.cs">
+      <DependentUpon>PIC_0195CA_PD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0195CB.xaml.cs">
+      <DependentUpon>PIC_0195CB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0195CB_PD.xaml.cs">
+      <DependentUpon>PIC_0195CB_PD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0413.xaml.cs">
+      <DependentUpon>PIC_0413.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\PIC_0484.xaml.cs">
+      <DependentUpon>PIC_0484.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\SIC_0950.xaml.cs">
+      <DependentUpon>SIC_0950.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\SIC_0950_LIMITER.xaml.cs">
+      <DependentUpon>SIC_0950_LIMITER.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\SIC_0956.xaml.cs">
+      <DependentUpon>SIC_0956.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplates\SIC_0956_LIMITER.xaml.cs">
+      <DependentUpon>SIC_0956_LIMITER.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controls\Almst.xaml.cs">
+      <DependentUpon>Almst.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controls\DiscAlmst.xaml.cs">
+      <DependentUpon>DiscAlmst.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\OtherFaceplates\FoxboroAITrendFaceplate.xaml.cs">
+      <DependentUpon>FoxboroAITrendFaceplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\OtherFaceplates\FoxboroPIDTrendFaceplate.xaml.cs">
+      <DependentUpon>FoxboroPIDTrendFaceplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_ACCUM.xaml.cs">
+      <DependentUpon>FP_ACCUM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_ASV.xaml.cs">
+      <DependentUpon>FP_ASV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_CALCA.xaml.cs">
+      <DependentUpon>FP_CALCA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_CIN.xaml.cs">
+      <DependentUpon>FP_CIN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_GM9601.xaml.cs">
+      <DependentUpon>FP_GM9601.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_HS0125.xaml.cs">
+      <DependentUpon>FP_HS0125.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_HS0468.xaml.cs">
+      <DependentUpon>FP_HS0468.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_HS2051.xaml.cs">
+      <DependentUpon>FP_HS2051.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_HS_AB_1.xaml.cs">
+      <DependentUpon>FP_HS_AB_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_HS_MA.xaml.cs">
+      <DependentUpon>FP_HS_MA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_KV.xaml.cs">
+      <DependentUpon>FP_KV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_MOV.xaml.cs">
+      <DependentUpon>FP_MOV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_MTR_DT01.xaml.cs">
+      <DependentUpon>FP_MTR_DT01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_MTR_DT01AB.xaml.cs">
+      <DependentUpon>FP_MTR_DT01AB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_MTR_DT09.xaml.cs">
+      <DependentUpon>FP_MTR_DT09.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_MTR_DT09B.xaml.cs">
+      <DependentUpon>FP_MTR_DT09B.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_ONOFFVLV.xaml.cs">
+      <DependentUpon>FP_ONOFFVLV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_PID.xaml.cs">
+      <DependentUpon>FP_PID.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_PMPSEL.xaml.cs">
+      <DependentUpon>FP_PMPSEL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_PUMP_01.xaml.cs">
+      <DependentUpon>FP_PUMP_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_PUMP_02.xaml.cs">
+      <DependentUpon>FP_PUMP_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_PUMP_03.xaml.cs">
+      <DependentUpon>FP_PUMP_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_PV.xaml.cs">
+      <DependentUpon>FP_PV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_RATIO.xaml.cs">
+      <DependentUpon>FP_RATIO.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_RIN.xaml.cs">
+      <DependentUpon>FP_RIN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_ROUT.xaml.cs">
+      <DependentUpon>FP_ROUT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_SIGSEL.xaml.cs">
+      <DependentUpon>FP_SIGSEL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_SOV.xaml.cs">
+      <DependentUpon>FP_SOV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_SPARE_VLV.xaml.cs">
+      <DependentUpon>FP_SPARE_VLV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_XV.xaml.cs">
+      <DependentUpon>FP_XV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\FP_ZV.xaml.cs">
+      <DependentUpon>FP_ZV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\ToDo\RUN_OFFFaceplate.xaml.cs">
+      <DependentUpon>RUN_OFFFaceplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_01STG_DIAG_Translation.xaml.cs">
+      <DependentUpon>_01STG_DIAG_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_01STG_Translation.xaml.cs">
+      <DependentUpon>_01STG_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_02STG_Translation.xaml.cs">
+      <DependentUpon>_02STG_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_04STG_Translation.xaml.cs">
+      <DependentUpon>_04STG_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_05STG_Translation.xaml.cs">
+      <DependentUpon>_05STG_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_06STG_Translation.xaml.cs">
+      <DependentUpon>_06STG_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_08STG_DIAG_Translation.xaml.cs">
+      <DependentUpon>_08STG_DIAG_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_08STG_Translation.xaml.cs">
+      <DependentUpon>_08STG_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_09STG_Translation.xaml.cs">
+      <DependentUpon>_09STG_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_10STG_Translation.xaml.cs">
+      <DependentUpon>_10STG_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_11STG_DIAG_Translation.xaml.cs">
+      <DependentUpon>_11STG_DIAG_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_11STG_Translation.xaml.cs">
+      <DependentUpon>_11STG_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_93STG07_Translation.xaml.cs">
+      <DependentUpon>_93STG07_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\Translations\_93STG_D_06_Translation.xaml.cs">
+      <DependentUpon>_93STG_D_06_Translation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\_01STG.xaml.cs">
+      <DependentUpon>_01STG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\_01STG_DIAG.xaml.cs">
+      <DependentUpon>_01STG_DIAG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\_02STG.xaml.cs">
+      <DependentUpon>_02STG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\_04STG.xaml.cs">
+      <DependentUpon>_04STG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\_05STG.xaml.cs">
+      <DependentUpon>_05STG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\_06STG.xaml.cs">
+      <DependentUpon>_06STG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\_08STG.xaml.cs">
+      <DependentUpon>_08STG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\_08STG_DIAG.xaml.cs">
+      <DependentUpon>_08STG_DIAG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\_09STG.xaml.cs">
+      <DependentUpon>_09STG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\_10STG.xaml.cs">
+      <DependentUpon>_10STG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\_11STG.xaml.cs">
+      <DependentUpon>_11STG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicViews\_11STG_DIAG.xaml.cs">
+      <DependentUpon>_11STG_DIAG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\A.xaml.cs">
+      <DependentUpon>A.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ACK_SYMBOL.xaml.cs">
+      <DependentUpon>ACK_SYMBOL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\AclRead.xaml.cs">
+      <DependentUpon>AclRead.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ACTION_CE.xaml.cs">
+      <DependentUpon>ACTION_CE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\aIndDesLab_01_2Unit_L.xaml.cs">
+      <DependentUpon>aIndDesLab_01_2Unit_L.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\aIndDesLab_01_8Prop_L.xaml.cs">
+      <DependentUpon>aIndDesLab_01_8Prop_L.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\aIndDesLab_01_L.xaml.cs">
+      <DependentUpon>aIndDesLab_01_L.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\aIndDesLab_01_M.xaml.cs">
+      <DependentUpon>aIndDesLab_01_M.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\aIndDesLab_03_1Prop_S.xaml.cs">
+      <DependentUpon>aIndDesLab_03_1Prop_S.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\aIndDesLab_04_L.xaml.cs">
+      <DependentUpon>aIndDesLab_04_L.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\aIndDesLab_04_S.xaml.cs">
+      <DependentUpon>aIndDesLab_04_S.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\aIndTranIn_01_M.xaml.cs">
+      <DependentUpon>aIndTranIn_01_M.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ALARM.xaml.cs">
+      <DependentUpon>ALARM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\alarm_indicat.xaml.cs">
+      <DependentUpon>alarm_indicat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Analyzer_Nav.xaml.cs">
+      <DependentUpon>Analyzer_Nav.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Arrow.xaml.cs">
+      <DependentUpon>Arrow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Arrow_III.xaml.cs">
+      <DependentUpon>Arrow_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ASC_IN_CNTL_III.xaml.cs">
+      <DependentUpon>ASC_IN_CNTL_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\AUTO_MANU.xaml.cs">
+      <DependentUpon>AUTO_MANU.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Background_Disp.xaml.cs">
+      <DependentUpon>Background_Disp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\BLOCK_DIAG.xaml.cs">
+      <DependentUpon>BLOCK_DIAG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Button.xaml.cs">
+      <DependentUpon>Button.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ButtonBackPanel_HT.xaml.cs">
+      <DependentUpon>ButtonBackPanel_HT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ButtonBackPanel_HT_III.xaml.cs">
+      <DependentUpon>ButtonBackPanel_HT_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ButtonBackPanel_III.xaml.cs">
+      <DependentUpon>ButtonBackPanel_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ButtonIndicative_Conf_N1.xaml.cs">
+      <DependentUpon>ButtonIndicative_Conf_N1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Buttons_INC_DEC2.xaml.cs">
+      <DependentUpon>Buttons_INC_DEC2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Button_Close.xaml.cs">
+      <DependentUpon>Button_Close.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Button_Context_NFP.xaml.cs">
+      <DependentUpon>Button_Context_NFP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\button_cout.xaml.cs">
+      <DependentUpon>button_cout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\BUT_SEC_LONG_2_III.xaml.cs">
+      <DependentUpon>BUT_SEC_LONG_2_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\BUT_SEC_LONG_III.xaml.cs">
+      <DependentUpon>BUT_SEC_LONG_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\BYPASS_SEQ.xaml.cs">
+      <DependentUpon>BYPASS_SEQ.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\C.xaml.cs">
+      <DependentUpon>C.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\CE_ESD_MESH.xaml.cs">
+      <DependentUpon>CE_ESD_MESH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\CE_FGS_MESH.xaml.cs">
+      <DependentUpon>CE_FGS_MESH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\CHART_1.xaml.cs">
+      <DependentUpon>CHART_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\CHART_2.xaml.cs">
+      <DependentUpon>CHART_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\CL.xaml.cs">
+      <DependentUpon>CL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Coil.xaml.cs">
+      <DependentUpon>Coil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\CompressorBasic.xaml.cs">
+      <DependentUpon>CompressorBasic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Condenser_III.xaml.cs">
+      <DependentUpon>Condenser_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ConQl_03.xaml.cs">
+      <DependentUpon>ConQl_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ContFpNoDCSTGT.xaml.cs">
+      <DependentUpon>ContFpNoDCSTGT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ContFpSpeedNoDCS.xaml.cs">
+      <DependentUpon>ContFpSpeedNoDCS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ContFpSpeed_01.xaml.cs">
+      <DependentUpon>ContFpSpeed_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ContFpSrg_01.xaml.cs">
+      <DependentUpon>ContFpSrg_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ContFpVPID_01.xaml.cs">
+      <DependentUpon>ContFpVPID_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\COSwitchConf_01.xaml.cs">
+      <DependentUpon>COSwitchConf_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\COSwitchConf_02.xaml.cs">
+      <DependentUpon>COSwitchConf_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\D.xaml.cs">
+      <DependentUpon>D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\DecoupleBlock.xaml.cs">
+      <DependentUpon>DecoupleBlock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\DECOUP_DIS_III.xaml.cs">
+      <DependentUpon>DECOUP_DIS_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Digital_indication.xaml.cs">
+      <DependentUpon>Digital_indication.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\dIndDesLab_01.xaml.cs">
+      <DependentUpon>dIndDesLab_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\dIndDesLab_01_5Prop_L.xaml.cs">
+      <DependentUpon>dIndDesLab_01_5Prop_L.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\dIndDesLab_01_8Prop1_L.xaml.cs">
+      <DependentUpon>dIndDesLab_01_8Prop1_L.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\dIndDesLab_01_8Prop_L.xaml.cs">
+      <DependentUpon>dIndDesLab_01_8Prop_L.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\dIndDesLab_01_M.xaml.cs">
+      <DependentUpon>dIndDesLab_01_M.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\dIndDesLab_03.xaml.cs">
+      <DependentUpon>dIndDesLab_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\dIndLED_02_L.xaml.cs">
+      <DependentUpon>dIndLED_02_L.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\dIndTxt_01.xaml.cs">
+      <DependentUpon>dIndTxt_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\dIndTxt_01_L.xaml.cs">
+      <DependentUpon>dIndTxt_01_L.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\dIndTxt_02.xaml.cs">
+      <DependentUpon>dIndTxt_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Display_Name.xaml.cs">
+      <DependentUpon>Display_Name.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\DI_ESD_01_CE.xaml.cs">
+      <DependentUpon>DI_ESD_01_CE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\DI_FGS_01_CE.xaml.cs">
+      <DependentUpon>DI_FGS_01_CE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\DO_ESD_01_CE.xaml.cs">
+      <DependentUpon>DO_ESD_01_CE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\DO_FGS_01_CE.xaml.cs">
+      <DependentUpon>DO_FGS_01_CE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\DO_FGS_02_CE.xaml.cs">
+      <DependentUpon>DO_FGS_02_CE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\DO_FGS_03_CE.xaml.cs">
+      <DependentUpon>DO_FGS_03_CE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\DO_FGS_04_CE.xaml.cs">
+      <DependentUpon>DO_FGS_04_CE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\DRAIN_RESET.xaml.cs">
+      <DependentUpon>DRAIN_RESET.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\entry.xaml.cs">
+      <DependentUpon>entry.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Fan_HE.xaml.cs">
+      <DependentUpon>Fan_HE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\fIND_D_01_M_S_III.xaml.cs">
+      <DependentUpon>fIND_D_01_M_S_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\fIND_D_01_S1_M_III.xaml.cs">
+      <DependentUpon>fIND_D_01_S1_M_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\FP_Alarm2.xaml.cs">
+      <DependentUpon>FP_Alarm2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\FP_Alarm2_Copy1.xaml.cs">
+      <DependentUpon>FP_Alarm2_Copy1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\FP_Alarm_Flag.xaml.cs">
+      <DependentUpon>FP_Alarm_Flag.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\FP_Background.xaml.cs">
+      <DependentUpon>FP_Background.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\FP_CallOverlay.xaml.cs">
+      <DependentUpon>FP_CallOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\FP_Value_Display.xaml.cs">
+      <DependentUpon>FP_Value_Display.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Function.xaml.cs">
+      <DependentUpon>Function.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\H2S_LEL_SILENCE.xaml.cs">
+      <DependentUpon>H2S_LEL_SILENCE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\HighSelector_a.xaml.cs">
+      <DependentUpon>HighSelector_a.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\HighSelector_a_III.xaml.cs">
+      <DependentUpon>HighSelector_a_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\IndicatorAnalogMedium_LED_New.xaml.cs">
+      <DependentUpon>IndicatorAnalogMedium_LED_New.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\IndicatorAnalogMedium_New.xaml.cs">
+      <DependentUpon>IndicatorAnalogMedium_New.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\IndicatorAnalogV_Small_New.xaml.cs">
+      <DependentUpon>IndicatorAnalogV_Small_New.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Intersection.xaml.cs">
+      <DependentUpon>Intersection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Lamp_Indicator.xaml.cs">
+      <DependentUpon>Lamp_Indicator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LEGEND.xaml.cs">
+      <DependentUpon>LEGEND.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LEGEND_ESD.xaml.cs">
+      <DependentUpon>LEGEND_ESD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LEGEND_FGS.xaml.cs">
+      <DependentUpon>LEGEND_FGS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Level_Indicator.xaml.cs">
+      <DependentUpon>Level_Indicator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOADSHARE_K0003A.xaml.cs">
+      <DependentUpon>LOADSHARE_K0003A.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOADSHARE_K0003B.xaml.cs">
+      <DependentUpon>LOADSHARE_K0003B.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOADSHARE_K0007A.xaml.cs">
+      <DependentUpon>LOADSHARE_K0007A.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOADSHARE_K0007B.xaml.cs">
+      <DependentUpon>LOADSHARE_K0007B.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOADSHARE_K0007C.xaml.cs">
+      <DependentUpon>LOADSHARE_K0007C.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOADSHARE_K0007D.xaml.cs">
+      <DependentUpon>LOADSHARE_K0007D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOGO.xaml.cs">
+      <DependentUpon>LOGO.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LowerBannerArrow.xaml.cs">
+      <DependentUpon>LowerBannerArrow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOWER_DATA_BAR_M39_K_0001.xaml.cs">
+      <DependentUpon>LOWER_DATA_BAR_M39_K_0001.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOWER_DATA_BAR_M39_K_0003A.xaml.cs">
+      <DependentUpon>LOWER_DATA_BAR_M39_K_0003A.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOWER_DATA_BAR_M39_K_0003B.xaml.cs">
+      <DependentUpon>LOWER_DATA_BAR_M39_K_0003B.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOWER_DATA_BAR_M39_K_0007A.xaml.cs">
+      <DependentUpon>LOWER_DATA_BAR_M39_K_0007A.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOWER_DATA_BAR_M39_K_0007B.xaml.cs">
+      <DependentUpon>LOWER_DATA_BAR_M39_K_0007B.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOWER_DATA_BAR_M39_K_0007C.xaml.cs">
+      <DependentUpon>LOWER_DATA_BAR_M39_K_0007C.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\LOWER_DATA_BAR_M39_K_0007D.xaml.cs">
+      <DependentUpon>LOWER_DATA_BAR_M39_K_0007D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\NameplateResetPanel_III.xaml.cs">
+      <DependentUpon>NameplateResetPanel_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\NameplateResetPanel_III_2.xaml.cs">
+      <DependentUpon>NameplateResetPanel_III_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\NameplateResetPanel_SRG_III.xaml.cs">
+      <DependentUpon>NameplateResetPanel_SRG_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Nameplate_PID_STD_III.xaml.cs">
+      <DependentUpon>Nameplate_PID_STD_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Nameplate_XS_III.xaml.cs">
+      <DependentUpon>Nameplate_XS_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\NAV.xaml.cs">
+      <DependentUpon>NAV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Navigaton.xaml.cs">
+      <DependentUpon>Navigaton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\NAV_RECENT.xaml.cs">
+      <DependentUpon>NAV_RECENT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\NEXT_SEQ.xaml.cs">
+      <DependentUpon>NEXT_SEQ.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\NOT_RST.xaml.cs">
+      <DependentUpon>NOT_RST.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\O.xaml.cs">
+      <DependentUpon>O.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\OL.xaml.cs">
+      <DependentUpon>OL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Overlay_bac1.xaml.cs">
+      <DependentUpon>Overlay_bac1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\P.xaml.cs">
+      <DependentUpon>P.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PanelBrushed.xaml.cs">
+      <DependentUpon>PanelBrushed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbIndFb2L_01_M.xaml.cs">
+      <DependentUpon>PbIndFb2L_01_M.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbIndFbConf2L_01.xaml.cs">
+      <DependentUpon>PbIndFbConf2L_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbIndFbConf_01.xaml.cs">
+      <DependentUpon>PbIndFbConf_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbIndFbConf_01_M.xaml.cs">
+      <DependentUpon>PbIndFbConf_01_M.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbMomConf_02_M.xaml.cs">
+      <DependentUpon>PbMomConf_02_M.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbMomConf_02_S.xaml.cs">
+      <DependentUpon>PbMomConf_02_S.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbMomFbConf_01_M.xaml.cs">
+      <DependentUpon>PbMomFbConf_01_M.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbMomFbNd_03.xaml.cs">
+      <DependentUpon>PbMomFbNd_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbMomFb_01_Dn_M.xaml.cs">
+      <DependentUpon>PbMomFb_01_Dn_M.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbMomFb_01_Up_M.xaml.cs">
+      <DependentUpon>PbMomFb_01_Up_M.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbMom_02.xaml.cs">
+      <DependentUpon>PbMom_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbMom_03_ACK.xaml.cs">
+      <DependentUpon>PbMom_03_ACK.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbMom_03_M.xaml.cs">
+      <DependentUpon>PbMom_03_M.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PbMom_03_SEL.xaml.cs">
+      <DependentUpon>PbMom_03_SEL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PID1_Bar_III.xaml.cs">
+      <DependentUpon>PID1_Bar_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PID_DCS_SP_III.xaml.cs">
+      <DependentUpon>PID_DCS_SP_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PID_Display2_9Letter.xaml.cs">
+      <DependentUpon>PID_Display2_9Letter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PID_VALUE_DISPLAY2_III.xaml.cs">
+      <DependentUpon>PID_VALUE_DISPLAY2_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PID_VALUE_DISPLAY_III.xaml.cs">
+      <DependentUpon>PID_VALUE_DISPLAY_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Pipeline.xaml.cs">
+      <DependentUpon>Pipeline.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\PUSH_BUTTOM.xaml.cs">
+      <DependentUpon>PUSH_BUTTOM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\P_ID.xaml.cs">
+      <DependentUpon>P_ID.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\QuickLink10Tabs_N1_short.xaml.cs">
+      <DependentUpon>QuickLink10Tabs_N1_short.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\QuickLink10Tabs_N1_s_19inch_III.xaml.cs">
+      <DependentUpon>QuickLink10Tabs_N1_s_19inch_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\QuickLink22Tabs_N2_s_19inch_III.xaml.cs">
+      <DependentUpon>QuickLink22Tabs_N2_s_19inch_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\QuickLinkButton.xaml.cs">
+      <DependentUpon>QuickLinkButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\QuickLinkButton_MainMenu_III.xaml.cs">
+      <DependentUpon>QuickLinkButton_MainMenu_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\QuickLinkTab_N1_short.xaml.cs">
+      <DependentUpon>QuickLinkTab_N1_short.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\QuickLinkTab_N1_short_III.xaml.cs">
+      <DependentUpon>QuickLinkTab_N1_short_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\QuickLinkTab_N2_III.xaml.cs">
+      <DependentUpon>QuickLinkTab_N2_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\RE_START_Seq.xaml.cs">
+      <DependentUpon>RE_START_Seq.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\RPT.xaml.cs">
+      <DependentUpon>RPT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\S.xaml.cs">
+      <DependentUpon>S.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SD.xaml.cs">
+      <DependentUpon>SD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SGUG_CallTrendOvl.xaml.cs">
+      <DependentUpon>SGUG_CallTrendOvl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SILICA_SELECT.xaml.cs">
+      <DependentUpon>SILICA_SELECT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SP.xaml.cs">
+      <DependentUpon>SP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\ST.xaml.cs">
+      <DependentUpon>ST.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\STATE_INDI.xaml.cs">
+      <DependentUpon>STATE_INDI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Static_3way_vlv.xaml.cs">
+      <DependentUpon>Static_3way_vlv.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\STATIC_CTRL_VLV.xaml.cs">
+      <DependentUpon>STATIC_CTRL_VLV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\STATIC_VALVE.xaml.cs">
+      <DependentUpon>STATIC_VALVE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\STOP_SEQ.xaml.cs">
+      <DependentUpon>STOP_SEQ.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SurgeMap_Med_III.xaml.cs">
+      <DependentUpon>SurgeMap_Med_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SurgeMap_Small.xaml.cs">
+      <DependentUpon>SurgeMap_Small.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_001.xaml.cs">
+      <DependentUpon>Symbol_001.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_002.xaml.cs">
+      <DependentUpon>Symbol_002.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_003.xaml.cs">
+      <DependentUpon>Symbol_003.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_004.xaml.cs">
+      <DependentUpon>Symbol_004.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_005.xaml.cs">
+      <DependentUpon>Symbol_005.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_007.xaml.cs">
+      <DependentUpon>Symbol_007.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_008.xaml.cs">
+      <DependentUpon>Symbol_008.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_009.xaml.cs">
+      <DependentUpon>Symbol_009.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_010.xaml.cs">
+      <DependentUpon>Symbol_010.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_011.xaml.cs">
+      <DependentUpon>Symbol_011.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_012.xaml.cs">
+      <DependentUpon>Symbol_012.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_013.xaml.cs">
+      <DependentUpon>Symbol_013.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_014.xaml.cs">
+      <DependentUpon>Symbol_014.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_014_2.xaml.cs">
+      <DependentUpon>Symbol_014_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_015.xaml.cs">
+      <DependentUpon>Symbol_015.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_017.xaml.cs">
+      <DependentUpon>Symbol_017.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Symbol_018.xaml.cs">
+      <DependentUpon>Symbol_018.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ACCUM_01.xaml.cs">
+      <DependentUpon>SYM_ACCUM_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ACL_READ_01.xaml.cs">
+      <DependentUpon>SYM_ACL_READ_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ACTION_01.xaml.cs">
+      <DependentUpon>SYM_ACTION_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ALARMBORDER_01.xaml.cs">
+      <DependentUpon>SYM_ALARMBORDER_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ALARMBORDER_01_1.xaml.cs">
+      <DependentUpon>SYM_ALARMBORDER_01_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ALARMBORDER_02.xaml.cs">
+      <DependentUpon>SYM_ALARMBORDER_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ALARMBORDER_03.xaml.cs">
+      <DependentUpon>SYM_ALARMBORDER_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ALARMBORDER_04.xaml.cs">
+      <DependentUpon>SYM_ALARMBORDER_04.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ALARMBORDER_05.xaml.cs">
+      <DependentUpon>SYM_ALARMBORDER_05.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ALARMBORDER_06.xaml.cs">
+      <DependentUpon>SYM_ALARMBORDER_06.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ALARMBORDER_07.xaml.cs">
+      <DependentUpon>SYM_ALARMBORDER_07.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ALARMBORDER_08.xaml.cs">
+      <DependentUpon>SYM_ALARMBORDER_08.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ALMIND_01.xaml.cs">
+      <DependentUpon>SYM_ALMIND_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ALMIND_02.xaml.cs">
+      <DependentUpon>SYM_ALMIND_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ALMIND_03.xaml.cs">
+      <DependentUpon>SYM_ALMIND_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ALMIND_STG.xaml.cs">
+      <DependentUpon>SYM_ALMIND_STG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ARROW_RIGHT_01.xaml.cs">
+      <DependentUpon>SYM_ARROW_RIGHT_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ASV.xaml.cs">
+      <DependentUpon>SYM_ASV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_BYPASS_03.xaml.cs">
+      <DependentUpon>SYM_BYPASS_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_CAB_01.xaml.cs">
+      <DependentUpon>SYM_CAB_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_CAB_02.xaml.cs">
+      <DependentUpon>SYM_CAB_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_CAB_ANALYZER.xaml.cs">
+      <DependentUpon>SYM_CAB_ANALYZER.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_CALL_OVERLAY_01.xaml.cs">
+      <DependentUpon>SYM_CALL_OVERLAY_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_CAT_NAV.xaml.cs">
+      <DependentUpon>SYM_CAT_NAV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_CAT_NAV_OVE.xaml.cs">
+      <DependentUpon>SYM_CAT_NAV_OVE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_CTRVLV_01.xaml.cs">
+      <DependentUpon>SYM_CTRVLV_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_CTRVLV_02.xaml.cs">
+      <DependentUpon>SYM_CTRVLV_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_CTRVLV_03.xaml.cs">
+      <DependentUpon>SYM_CTRVLV_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_CTRVLV_04.xaml.cs">
+      <DependentUpon>SYM_CTRVLV_04.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_DATA_ENTRY.xaml.cs">
+      <DependentUpon>SYM_DATA_ENTRY.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_DGAP_01.xaml.cs">
+      <DependentUpon>SYM_DGAP_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ESD_BYPASS.xaml.cs">
+      <DependentUpon>SYM_ESD_BYPASS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_FP_ACK_01.xaml.cs">
+      <DependentUpon>SYM_FP_ACK_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_FP_ACTION_01.xaml.cs">
+      <DependentUpon>SYM_FP_ACTION_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_FP_BACKGROUND_01.xaml.cs">
+      <DependentUpon>SYM_FP_BACKGROUND_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_FP_CALL_TREND_01.xaml.cs">
+      <DependentUpon>SYM_FP_CALL_TREND_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_FP_CLOSE_01.xaml.cs">
+      <DependentUpon>SYM_FP_CLOSE_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_FP_FLAG_01.xaml.cs">
+      <DependentUpon>SYM_FP_FLAG_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_FP_LEVEL_IND_01.xaml.cs">
+      <DependentUpon>SYM_FP_LEVEL_IND_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_FP_PULSE_01.xaml.cs">
+      <DependentUpon>SYM_FP_PULSE_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_FP_RAMP_01.xaml.cs">
+      <DependentUpon>SYM_FP_RAMP_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_FP_VALUE_DISPLAY_01.xaml.cs">
+      <DependentUpon>SYM_FP_VALUE_DISPLAY_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_FV.xaml.cs">
+      <DependentUpon>SYM_FV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_GM9601.xaml.cs">
+      <DependentUpon>SYM_GM9601.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_HS.xaml.cs">
+      <DependentUpon>SYM_HS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_INDVLV_01.xaml.cs">
+      <DependentUpon>SYM_INDVLV_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_IND_01.xaml.cs">
+      <DependentUpon>SYM_IND_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_IND_02.xaml.cs">
+      <DependentUpon>SYM_IND_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_IND_WR.xaml.cs">
+      <DependentUpon>SYM_IND_WR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_IOBADBORDER_01.xaml.cs">
+      <DependentUpon>SYM_IOBADBORDER_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_KV.xaml.cs">
+      <DependentUpon>SYM_KV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_LEVELBAR_01.xaml.cs">
+      <DependentUpon>SYM_LEVELBAR_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_MOV.xaml.cs">
+      <DependentUpon>SYM_MOV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_MTR_DT01AB.xaml.cs">
+      <DependentUpon>SYM_MTR_DT01AB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_MTR_DT09.xaml.cs">
+      <DependentUpon>SYM_MTR_DT09.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_MTR_DT09B.xaml.cs">
+      <DependentUpon>SYM_MTR_DT09B.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_MTR_STG.xaml.cs">
+      <DependentUpon>SYM_MTR_STG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_NORMAL.xaml.cs">
+      <DependentUpon>SYM_NORMAL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ONOFFVLV.xaml.cs">
+      <DependentUpon>SYM_ONOFFVLV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ONOFFVLV_DTA.xaml.cs">
+      <DependentUpon>SYM_ONOFFVLV_DTA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_OPR.xaml.cs">
+      <DependentUpon>SYM_OPR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_OUTSEL_01.xaml.cs">
+      <DependentUpon>SYM_OUTSEL_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_OUT_01.xaml.cs">
+      <DependentUpon>SYM_OUT_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_PAGE_ACK_01.xaml.cs">
+      <DependentUpon>SYM_PAGE_ACK_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_PID_01.xaml.cs">
+      <DependentUpon>SYM_PID_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_PUMP_01.xaml.cs">
+      <DependentUpon>SYM_PUMP_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_PUMP_02.xaml.cs">
+      <DependentUpon>SYM_PUMP_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_PV.xaml.cs">
+      <DependentUpon>SYM_PV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_RATIO_01.xaml.cs">
+      <DependentUpon>SYM_RATIO_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_READ_01.xaml.cs">
+      <DependentUpon>SYM_READ_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_SELECT_01.xaml.cs">
+      <DependentUpon>SYM_SELECT_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_SEQ_TMR_HMS.xaml.cs">
+      <DependentUpon>SYM_SEQ_TMR_HMS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_SEQ_TMR_M.xaml.cs">
+      <DependentUpon>SYM_SEQ_TMR_M.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ShowDisp.xaml.cs">
+      <DependentUpon>SYM_ShowDisp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_SIGSEL_01.xaml.cs">
+      <DependentUpon>SYM_SIGSEL_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_SOV.xaml.cs">
+      <DependentUpon>SYM_SOV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_STATIND_01.xaml.cs">
+      <DependentUpon>SYM_STATIND_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_STATIND_02.xaml.cs">
+      <DependentUpon>SYM_STATIND_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_STATIND_COM.xaml.cs">
+      <DependentUpon>SYM_STATIND_COM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_STVLV_01.xaml.cs">
+      <DependentUpon>SYM_STVLV_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_SUPER.xaml.cs">
+      <DependentUpon>SYM_SUPER.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_SWTCH_01.xaml.cs">
+      <DependentUpon>SYM_SWTCH_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_SWTCH_02.xaml.cs">
+      <DependentUpon>SYM_SWTCH_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_SWTCH_03.xaml.cs">
+      <DependentUpon>SYM_SWTCH_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_TITLE_1.xaml.cs">
+      <DependentUpon>SYM_TITLE_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_TREND_01.xaml.cs">
+      <DependentUpon>SYM_TREND_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VLV_COMM.xaml.cs">
+      <DependentUpon>SYM_VLV_COMM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VLV_STG.xaml.cs">
+      <DependentUpon>SYM_VLV_STG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VMS_BYPASS.xaml.cs">
+      <DependentUpon>SYM_VMS_BYPASS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VMS_COM_MOD.xaml.cs">
+      <DependentUpon>SYM_VMS_COM_MOD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VMS_EXP_MOD.xaml.cs">
+      <DependentUpon>SYM_VMS_EXP_MOD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VMS_IND.xaml.cs">
+      <DependentUpon>SYM_VMS_IND.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VMS_KPH_MOD.xaml.cs">
+      <DependentUpon>SYM_VMS_KPH_MOD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VMS_LEGEND.xaml.cs">
+      <DependentUpon>SYM_VMS_LEGEND.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VMS_RACK.xaml.cs">
+      <DependentUpon>SYM_VMS_RACK.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VMS_RELAY_MOD.xaml.cs">
+      <DependentUpon>SYM_VMS_RELAY_MOD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VMS_TDI_MOD.xaml.cs">
+      <DependentUpon>SYM_VMS_TDI_MOD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VMS_TEMP_MOD.xaml.cs">
+      <DependentUpon>SYM_VMS_TEMP_MOD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VMS_TIME.xaml.cs">
+      <DependentUpon>SYM_VMS_TIME.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VMS_VGA_MOD.xaml.cs">
+      <DependentUpon>SYM_VMS_VGA_MOD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_VMS_VIB_MOD.xaml.cs">
+      <DependentUpon>SYM_VMS_VIB_MOD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_XV.xaml.cs">
+      <DependentUpon>SYM_XV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\SYM_ZV.xaml.cs">
+      <DependentUpon>SYM_ZV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Tank.xaml.cs">
+      <DependentUpon>Tank.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Timer1_CCS.xaml.cs">
+      <DependentUpon>Timer1_CCS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Timer2_CCS.xaml.cs">
+      <DependentUpon>Timer2_CCS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\TITLEBAR.xaml.cs">
+      <DependentUpon>TITLEBAR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\TOP_BANNER.xaml.cs">
+      <DependentUpon>TOP_BANNER.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\TOP_BANNER_M39_K_0001.xaml.cs">
+      <DependentUpon>TOP_BANNER_M39_K_0001.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\TOP_BANNER_M39_K_0003A.xaml.cs">
+      <DependentUpon>TOP_BANNER_M39_K_0003A.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\TOP_BANNER_M39_K_0003B.xaml.cs">
+      <DependentUpon>TOP_BANNER_M39_K_0003B.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\TOP_BANNER_M39_K_0007A.xaml.cs">
+      <DependentUpon>TOP_BANNER_M39_K_0007A.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\TOP_BANNER_M39_K_0007B.xaml.cs">
+      <DependentUpon>TOP_BANNER_M39_K_0007B.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\TOP_BANNER_M39_K_0007C.xaml.cs">
+      <DependentUpon>TOP_BANNER_M39_K_0007C.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\TOP_BANNER_M39_K_0007D.xaml.cs">
+      <DependentUpon>TOP_BANNER_M39_K_0007D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\TriconexNamePlate_III.xaml.cs">
+      <DependentUpon>TriconexNamePlate_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Type1_AlarmIndicator_Big_Red.xaml.cs">
+      <DependentUpon>Type1_AlarmIndicator_Big_Red.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Type1_AO_Display_9Letter.xaml.cs">
+      <DependentUpon>Type1_AO_Display_9Letter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Type1_Display_10Letter_III.xaml.cs">
+      <DependentUpon>Type1_Display_10Letter_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Type1_Display_3Letter_III.xaml.cs">
+      <DependentUpon>Type1_Display_3Letter_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Type1_Display_3Letter_III_3.xaml.cs">
+      <DependentUpon>Type1_Display_3Letter_III_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Type1_StatusIndicator_Small.xaml.cs">
+      <DependentUpon>Type1_StatusIndicator_Small.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Type2_AlarmIndicator_bypas_III.xaml.cs">
+      <DependentUpon>Type2_AlarmIndicator_bypas_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Type2_AlarmIndicator_III.xaml.cs">
+      <DependentUpon>Type2_AlarmIndicator_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Type2_BaseplatePIDDisplay_III.xaml.cs">
+      <DependentUpon>Type2_BaseplatePIDDisplay_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Type2_BaseplatePIDDisplay_III_3.xaml.cs">
+      <DependentUpon>Type2_BaseplatePIDDisplay_III_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\VALUE_SEQ.xaml.cs">
+      <DependentUpon>VALUE_SEQ.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI\Valve_a.xaml.cs">
+      <DependentUpon>Valve_a.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LOCAL_PANEL\InstructorParameter.xaml.cs">
+      <DependentUpon>InstructorParameter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LOCAL_PANEL\InstructorVariables.xaml.cs">
+      <DependentUpon>InstructorVariables.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LOCAL_PANEL\LOCAL_PANEL1.xaml.cs">
+      <DependentUpon>LOCAL_PANEL1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LOCAL_PANEL\LOCAL_PANEL2.xaml.cs">
+      <DependentUpon>LOCAL_PANEL2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LOCAL_PANEL\LOCAL_PANEL3.xaml.cs">
+      <DependentUpon>LOCAL_PANEL3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LOCAL_PANEL\MFC_PANEL.xaml.cs">
+      <DependentUpon>MFC_PANEL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\Condensate_Shutdown_Seq.xaml.cs">
+      <DependentUpon>Condensate_Shutdown_Seq.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\Condensate_Startup_Seq.xaml.cs">
+      <DependentUpon>Condensate_Startup_Seq.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\Control_Oil_Shutdown_Seq.xaml.cs">
+      <DependentUpon>Control_Oil_Shutdown_Seq.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\Control_Oil_Startup_Seq.xaml.cs">
+      <DependentUpon>Control_Oil_Startup_Seq.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\Faceplate-Mimics\Intermediate_Step.xaml.cs">
+      <DependentUpon>Intermediate_Step.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\Faceplate-Mimics\Transition_Step.xaml.cs">
+      <DependentUpon>Transition_Step.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\Lube_Oil_Shutdown_Seq.xaml.cs">
+      <DependentUpon>Lube_Oil_Shutdown_Seq.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\Lube_Oil_Startup_Seq.xaml.cs">
+      <DependentUpon>Lube_Oil_Startup_Seq.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\CONDENSATE_S1.xaml.cs">
+      <DependentUpon>CONDENSATE_S1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\CONDENSATE_S2.xaml.cs">
+      <DependentUpon>CONDENSATE_S2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\CONDENSATE_S3.xaml.cs">
+      <DependentUpon>CONDENSATE_S3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\CONDENSATE_S51.xaml.cs">
+      <DependentUpon>CONDENSATE_S51.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\CONDENSATE_S52.xaml.cs">
+      <DependentUpon>CONDENSATE_S52.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\CONDENSATE_S53.xaml.cs">
+      <DependentUpon>CONDENSATE_S53.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S1.xaml.cs">
+      <DependentUpon>CONTROLOIL_S1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S2.xaml.cs">
+      <DependentUpon>CONTROLOIL_S2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S3.xaml.cs">
+      <DependentUpon>CONTROLOIL_S3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S4.xaml.cs">
+      <DependentUpon>CONTROLOIL_S4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S51.xaml.cs">
+      <DependentUpon>CONTROLOIL_S51.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S52.xaml.cs">
+      <DependentUpon>CONTROLOIL_S52.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S53.xaml.cs">
+      <DependentUpon>CONTROLOIL_S53.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S1.xaml.cs">
+      <DependentUpon>LUBEOIL_S1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S7.xaml.cs">
+      <DependentUpon>LUBEOIL_S7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S2.xaml.cs">
+      <DependentUpon>LUBEOIL_S2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S3.xaml.cs">
+      <DependentUpon>LUBEOIL_S3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S4.xaml.cs">
+      <DependentUpon>LUBEOIL_S4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S5.xaml.cs">
+      <DependentUpon>LUBEOIL_S5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S51.xaml.cs">
+      <DependentUpon>LUBEOIL_S51.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S52.xaml.cs">
+      <DependentUpon>LUBEOIL_S52.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S53.xaml.cs">
+      <DependentUpon>LUBEOIL_S53.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S54.xaml.cs">
+      <DependentUpon>LUBEOIL_S54.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S6.xaml.cs">
+      <DependentUpon>LUBEOIL_S6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\SD_S51.xaml.cs">
+      <DependentUpon>SD_S51.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\SD_S52.xaml.cs">
+      <DependentUpon>SD_S52.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\SD_S53.xaml.cs">
+      <DependentUpon>SD_S53.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\SD_S54.xaml.cs">
+      <DependentUpon>SD_S54.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\SD_S55.xaml.cs">
+      <DependentUpon>SD_S55.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\SD_S56.xaml.cs">
+      <DependentUpon>SD_S56.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\SD_S57.xaml.cs">
+      <DependentUpon>SD_S57.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\SD_S58.xaml.cs">
+      <DependentUpon>SD_S58.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\SD_S59.xaml.cs">
+      <DependentUpon>SD_S59.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\SD_S60.xaml.cs">
+      <DependentUpon>SD_S60.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\SD_S61.xaml.cs">
+      <DependentUpon>SD_S61.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\SD_S62.xaml.cs">
+      <DependentUpon>SD_S62.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\ST_S1.xaml.cs">
+      <DependentUpon>ST_S1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\ST_S10.xaml.cs">
+      <DependentUpon>ST_S10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\ST_S11.xaml.cs">
+      <DependentUpon>ST_S11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\ST_S12.xaml.cs">
+      <DependentUpon>ST_S12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\ST_S3.xaml.cs">
+      <DependentUpon>ST_S3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\ST_S5.xaml.cs">
+      <DependentUpon>ST_S5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\ST_S0.xaml.cs">
+      <DependentUpon>ST_S0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\ST_S4.xaml.cs">
+      <DependentUpon>ST_S4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\ST_S2.xaml.cs">
+      <DependentUpon>ST_S2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\ST_S6.xaml.cs">
+      <DependentUpon>ST_S6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\ST_S7.xaml.cs">
+      <DependentUpon>ST_S7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\ST_S8.xaml.cs">
+      <DependentUpon>ST_S8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="STG_Faceplate\TransitionFaceplate\ST_S9.xaml.cs">
+      <DependentUpon>ST_S9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbars\TopBar.xaml.cs">
+      <DependentUpon>TopBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UGP_MIMICS\STG_TEST_PAD01.xaml.cs">
+      <DependentUpon>STG_TEST_PAD01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UGP_MIMICS\TEST.xaml.cs">
+      <DependentUpon>TEST.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UGP_MIMICS\UGP_TEST_PAD.xaml.cs">
+      <DependentUpon>UGP_TEST_PAD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UGP_MIMICS\UGP_TEST_PAD01.xaml.cs">
+      <DependentUpon>UGP_TEST_PAD01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="BootStrap\Framework\Alarms\alarmView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BootStrap\Framework\Toolbars\MainToolBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BootStrap\Framework\Toolbars\NavigationBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BootStrap\Framework\Toolbars\Test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BootStrap\TestFaceplatesToDo.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Faceplates\FIC_0001.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FIC_0003.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FIC_0022.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FIC_0043.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FIC_0062.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FIC_0083.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FIC_0102.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FIC_0106.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FIC_0127.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FIC_0181.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FIC_0225.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FIC_0230.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_AIN.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_AOUT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_AOUTMA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_CB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_CONFIRMATION_SP_GEN.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_DGAP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_EDR_SP_GEN.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_EDR_SP_GEN_CASE4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_FV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_HIC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_HS_ABC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_HS_ABCD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_HS_ABCD_TBD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_HS_ABC_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_HS_AB_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_HS_AB_3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_HS_CTRL_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_OUTSEL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_REALM_HHHH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_RIN_HHHH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_ROUTMA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_SEQ_MA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_SEQ_NOR_BR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\FP_SWCH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\IIC_0860.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\IIC_1070.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\IIC_1078.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\IIC_1086.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0001.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0051.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0061.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0111.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0121.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0125.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0189.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0191S.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0191S1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0195A.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0195B.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0195CA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0195CA_PD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0195CB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0195CB_PD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0413.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\PIC_0484.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\SIC_0950.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\SIC_0950_LIMITER.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\SIC_0956.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Faceplates\SIC_0956_LIMITER.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\Controls\Almst.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controls\DiscAlmst.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\OtherFaceplates\FoxboroAITrendFaceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\OtherFaceplates\FoxboroPIDTrendFaceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_ACCUM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_ASV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_CALCA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_CIN.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_GM9601.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_HS0125.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_HS0468.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_HS2051.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_HS_AB_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_HS_MA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_KV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_MOV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_MTR_DT01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_MTR_DT01AB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_MTR_DT09.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_MTR_DT09B.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_ONOFFVLV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_PID.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_PMPSEL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_PUMP_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_PUMP_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_PUMP_03.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_PV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_RATIO.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_RIN.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_ROUT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_SIGSEL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_SOV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_SPARE_VLV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_XV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\FP_ZV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="FoxFaceplates\ToDo\RUN_OFFFaceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\_01STG_DIAG_Translation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\Translations\_01STG_Translation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\Translations\_02STG_Translation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\Translations\_04STG_Translation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\Translations\_05STG_Translation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\Translations\_06STG_Translation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\Translations\_08STG_DIAG_Translation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\Translations\_08STG_Translation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\Translations\_09STG_Translation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\Translations\_10STG_Translation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\Translations\_11STG_DIAG_Translation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\Translations\_11STG_Translation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\Translations\_93STG07_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\_93STG_D_06_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\_01STG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\_01STG_DIAG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\_02STG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\_04STG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\_05STG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\_06STG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\_08STG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\_08STG_DIAG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\_09STG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\_10STG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\_11STG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicViews\_11STG_DIAG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HMI\A.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ACK_SYMBOL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\AclRead.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ACTION_CE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\aIndDesLab_01_2Unit_L.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\aIndDesLab_01_8Prop_L.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\aIndDesLab_01_L.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\aIndDesLab_01_M.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\aIndDesLab_03_1Prop_S.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\aIndDesLab_04_L.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\aIndDesLab_04_S.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\aIndTranIn_01_M.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ALARM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\alarm_indicat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Analyzer_Nav.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Arrow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Arrow_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ASC_IN_CNTL_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\AUTO_MANU.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Background_Disp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\BLOCK_DIAG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ButtonBackPanel_HT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ButtonBackPanel_HT_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ButtonBackPanel_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ButtonIndicative_Conf_N1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Buttons_INC_DEC2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Button_Close.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Button_Context_NFP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\button_cout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\BUT_SEC_LONG_2_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\BUT_SEC_LONG_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\BYPASS_SEQ.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\C.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\CE_ESD_MESH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\CE_FGS_MESH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\CHART_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\CHART_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\CL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Coil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\CompressorBasic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Condenser_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ConQl_03.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ContFpNoDCSTGT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ContFpSpeedNoDCS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ContFpSpeed_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ContFpSrg_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ContFpVPID_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\COSwitchConf_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\COSwitchConf_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\DecoupleBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\DECOUP_DIS_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Digital_indication.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\dIndDesLab_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\dIndDesLab_01_5Prop_L.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\dIndDesLab_01_8Prop1_L.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\dIndDesLab_01_8Prop_L.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\dIndDesLab_01_M.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\dIndDesLab_03.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\dIndLED_02_L.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\dIndTxt_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\dIndTxt_01_L.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\dIndTxt_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Display_Name.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\DI_ESD_01_CE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\DI_FGS_01_CE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\DO_ESD_01_CE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\DO_FGS_01_CE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\DO_FGS_02_CE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\DO_FGS_03_CE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\DO_FGS_04_CE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\DRAIN_RESET.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\entry.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Fan_HE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\fIND_D_01_M_S_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\fIND_D_01_S1_M_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\FP_Alarm2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\FP_Alarm2_Copy1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\FP_Alarm_Flag.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\FP_Background.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\FP_CallOverlay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\FP_Value_Display.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Function.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\H2S_LEL_SILENCE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\HighSelector_a.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\HighSelector_a_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\IndicatorAnalogMedium_LED_New.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\IndicatorAnalogMedium_New.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\IndicatorAnalogV_Small_New.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Intersection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Lamp_Indicator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LEGEND.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LEGEND_ESD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LEGEND_FGS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Level_Indicator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOADSHARE_K0003A.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOADSHARE_K0003B.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOADSHARE_K0007A.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOADSHARE_K0007B.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOADSHARE_K0007C.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOADSHARE_K0007D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOGO.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LowerBannerArrow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOWER_DATA_BAR_M39_K_0001.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOWER_DATA_BAR_M39_K_0003A.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOWER_DATA_BAR_M39_K_0003B.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOWER_DATA_BAR_M39_K_0007A.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOWER_DATA_BAR_M39_K_0007B.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOWER_DATA_BAR_M39_K_0007C.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\LOWER_DATA_BAR_M39_K_0007D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\NameplateResetPanel_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\NameplateResetPanel_III_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\NameplateResetPanel_SRG_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Nameplate_PID_STD_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Nameplate_XS_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\NAV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Navigaton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\NAV_RECENT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\NEXT_SEQ.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\NOT_RST.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\O.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\OL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Overlay_bac1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\P.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PanelBrushed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbIndFb2L_01_M.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbIndFbConf2L_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbIndFbConf_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbIndFbConf_01_M.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbMomConf_02_M.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbMomConf_02_S.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbMomFbConf_01_M.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbMomFbNd_03.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbMomFb_01_Dn_M.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbMomFb_01_Up_M.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbMom_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbMom_03_ACK.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbMom_03_M.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PbMom_03_SEL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PID1_Bar_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PID_DCS_SP_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PID_Display2_9Letter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PID_VALUE_DISPLAY2_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PID_VALUE_DISPLAY_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Pipeline.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\PUSH_BUTTOM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\P_ID.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\QuickLink10Tabs_N1_short.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\QuickLink10Tabs_N1_s_19inch_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\QuickLink22Tabs_N2_s_19inch_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\QuickLinkButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\QuickLinkButton_MainMenu_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\QuickLinkTab_N1_short.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\QuickLinkTab_N1_short_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\QuickLinkTab_N2_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\RE_START_Seq.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\RPT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\S.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SGUG_CallTrendOvl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SILICA_SELECT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\ST.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\STATE_INDI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Static_3way_vlv.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\STATIC_CTRL_VLV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\STATIC_VALVE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\STOP_SEQ.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SurgeMap_Med_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SurgeMap_Small.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_001.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_002.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_003.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_004.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_005.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_007.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_008.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_009.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_010.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_011.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_012.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_013.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_014.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_014_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_015.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_017.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Symbol_018.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ACCUM_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ACL_READ_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ACTION_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ALARMBORDER_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ALARMBORDER_01_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ALARMBORDER_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ALARMBORDER_03.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ALARMBORDER_04.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ALARMBORDER_05.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ALARMBORDER_06.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ALARMBORDER_07.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ALARMBORDER_08.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ALMIND_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ALMIND_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ALMIND_03.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ALMIND_STG.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HMI\SYM_ARROW_RIGHT_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ASV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_BYPASS_03.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_CAB_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_CAB_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_CAB_ANALYZER.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_CALL_OVERLAY_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_CAT_NAV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_CAT_NAV_OVE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_CTRVLV_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_CTRVLV_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_CTRVLV_03.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_CTRVLV_04.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_DATA_ENTRY.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_DGAP_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ESD_BYPASS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_FP_ACK_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_FP_ACTION_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_FP_BACKGROUND_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_FP_CALL_TREND_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_FP_CLOSE_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_FP_FLAG_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_FP_LEVEL_IND_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_FP_PULSE_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_FP_RAMP_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_FP_VALUE_DISPLAY_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_FV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_GM9601.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_HS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_INDVLV_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_IND_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_IND_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_IND_WR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_IOBADBORDER_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_KV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_LEVELBAR_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_MOV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_MTR_DT01AB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_MTR_DT09.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_MTR_DT09B.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_MTR_STG.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HMI\SYM_NORMAL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ONOFFVLV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ONOFFVLV_DTA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_OPR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_OUTSEL_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_OUT_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_PAGE_ACK_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_PID_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_PUMP_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_PUMP_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_PV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_RATIO_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_READ_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_SELECT_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_SEQ_TMR_HMS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_SEQ_TMR_M.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ShowDisp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_SIGSEL_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_SOV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_STATIND_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_STATIND_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_STATIND_COM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_STVLV_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_SUPER.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_SWTCH_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_SWTCH_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_SWTCH_03.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_TITLE_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_TREND_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VLV_COMM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VLV_STG.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HMI\SYM_VMS_BYPASS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VMS_COM_MOD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VMS_EXP_MOD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VMS_IND.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VMS_KPH_MOD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VMS_LEGEND.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VMS_RACK.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VMS_RELAY_MOD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VMS_TDI_MOD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VMS_TEMP_MOD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VMS_TIME.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VMS_VGA_MOD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_VMS_VIB_MOD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_XV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\SYM_ZV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Tank.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Timer1_CCS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Timer2_CCS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\TITLEBAR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\TOP_BANNER.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\TOP_BANNER_M39_K_0001.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\TOP_BANNER_M39_K_0003A.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\TOP_BANNER_M39_K_0003B.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\TOP_BANNER_M39_K_0007A.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\TOP_BANNER_M39_K_0007B.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\TOP_BANNER_M39_K_0007C.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\TOP_BANNER_M39_K_0007D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\TriconexNamePlate_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Type1_AlarmIndicator_Big_Red.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Type1_AO_Display_9Letter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Type1_Display_10Letter_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Type1_Display_3Letter_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Type1_Display_3Letter_III_3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Type1_StatusIndicator_Small.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Type2_AlarmIndicator_bypas_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Type2_AlarmIndicator_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Type2_BaseplatePIDDisplay_III.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Type2_BaseplatePIDDisplay_III_3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\VALUE_SEQ.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="HMI\Valve_a.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="LOCAL_PANEL\InstructorParameter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LOCAL_PANEL\InstructorVariables.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LOCAL_PANEL\LOCAL_PANEL1.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LOCAL_PANEL\LOCAL_PANEL2.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LOCAL_PANEL\LOCAL_PANEL3.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LOCAL_PANEL\MFC_PANEL.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\Condensate_Shutdown_Seq.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\Condensate_Startup_Seq.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\Control_Oil_Shutdown_Seq.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\Control_Oil_Startup_Seq.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\Faceplate-Mimics\Intermediate_Step.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\Faceplate-Mimics\Transition_Step.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\Lube_Oil_Shutdown_Seq.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\Lube_Oil_Startup_Seq.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\CONDENSATE_S1.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\CONDENSATE_S2.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\CONDENSATE_S3.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\CONDENSATE_S51.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\CONDENSATE_S52.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\CONDENSATE_S53.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S1.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S2.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S3.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S4.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S51.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S52.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\CONTROLOIL_S53.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S1.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S2.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S3.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S4.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S51.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S52.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S53.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S54.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\LUBEOIL_S6.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\SD_S51.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\SD_S52.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\SD_S53.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\SD_S54.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\SD_S55.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\SD_S56.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\SD_S57.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\SD_S58.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\SD_S59.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\SD_S60.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\SD_S61.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\SD_S62.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\ST_S1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\ST_S10.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\ST_S11.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\ST_S12.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\ST_S3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\ST_S5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\ST_S0.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\ST_S4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\ST_S2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\ST_S6.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\ST_S7.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\ST_S8.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="STG_Faceplate\TransitionFaceplate\ST_S9.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Toolbars\TopBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UGP_MIMICS\STG_TEST_PAD01.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UGP_MIMICS\TEST.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UGP_MIMICS\UGP_TEST_PAD.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UGP_MIMICS\UGP_TEST_PAD01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UGP_Stencils.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Reference Include="ActiproSoftware.Docking.Wpf351">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\ActiproSoftware.Docking.Wpf351.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiproSoftware.Editors.Wpf351">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\ActiproSoftware.Editors.Wpf351.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiproSoftware.Gauge.Wpf351">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\ActiproSoftware.Gauge.Wpf351.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Drawing">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\Microsoft.Expression.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Ribbon.Wpf351">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\ActiproSoftware.Ribbon.Wpf351.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RSI.FoxboroEVO.Core, Version=3.6.2.1000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\V3\EmulationAssemblies\FoxboroEVO\RSI.FoxboroEVO.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.IndissLike.Controls, Version=3.7.0.905, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\V3\EmulationAssemblies\RSI\RSI.IndissLike.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Instructor.Engine">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Instructor.Engine.Extension.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Shared.Wpf351">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\ActiproSoftware.Shared.Wpf351.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iocomp.Common">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\Iocomp.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Services.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Services.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.IndissPlus.Extensibility.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.IndissPlus.Extensibility.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Kernel.Serialization">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Kernel.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Localization.Resources">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\EmulationAssemblies\RSI\RSI.Localization.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Shapes">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Shapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Ciloci.Flee">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\Ciloci.Flee.dll</HintPath>
+    </Reference>
+    <Reference Include="FleeConverter">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\FleeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="ManagedInterfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\ManagedInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="PlotComponent.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\PlotComponent.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Converters">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Converters.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Core">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\EmulationAssemblies\RSI\RSI.Common.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Localization.WpfExtensions">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Localization.WpfExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Locator">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Logger">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Mvvm">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Mvvm.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Mvvm.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Mvvm.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Tools">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.Tools.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.Tools.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.WPFTools">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.WPFTools.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Common.WPFTools.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Common.WPFTools.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.DataSheet.Resources">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.DataSheet.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Emulation.Controls">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\EmulationAssemblies\RSI\RSI.Emulation.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.IndissPlus.Interactions">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.IndissPlus.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.IndissPlus.Plots">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.IndissPlus.Plots.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.IndissPlus.Solution">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.IndissPlus.Solution.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Kernel.Model">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Kernel.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Kernel.Model.Enums">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Kernel.Model.Enums.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Kernel.Model.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Kernel.Model.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.OTS.HMI">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.OTS.HMI.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.OTS.HMI.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.OTS.HMI.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Alarm.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Alarm.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Kernel.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Kernel.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.MarkupExtensions">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.MarkupExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Model">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Model.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Model.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Parameter.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Parameter.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Persistence">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Plot">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Plot.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Plot.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Plot.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Proxies">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Proxies.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Recorder.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Recorder.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Simulator.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Simulator.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Snapshot.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Snapshot.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.Time.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.Time.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.UnitConverter">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.UnitConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.UnitConverter.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.UnitConverter.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.XamlLoader">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.XamlLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.Services.XamlLoader.Interfaces">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.Services.XamlLoader.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.WPFApplication.Core">
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\v3\SdkRSI\RSI.WPFApplication.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Compile Include="BootStrap\ApplicationViewModel.cs" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\V3\SdkRSI\WPFToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LOCALAPPDATA)\RSI\Assemblies\V3\SdkRSI\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+    <Compile Include="BootStrap\TestFaceplates.xaml.cs">
+      <DependentUpon>TestFaceplates.xaml</DependentUpon>
+    </Compile>
+    <Page Include="BootStrap\TestFaceplates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\CONFIRMATION_SCREEN.xaml.cs">
+      <DependentUpon>CONFIRMATION_SCREEN.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\CONFIRMATION_SCREEN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\CONFIRMATION_SCREEN_PLS.xaml.cs">
+      <DependentUpon>CONFIRMATION_SCREEN_PLS.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\CONFIRMATION_SCREEN_PLS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\DECOUPLE_0001.xaml.cs">
+      <DependentUpon>DECOUPLE_0001.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\DECOUPLE_0001.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\DECOUPLE_0003A.xaml.cs">
+      <DependentUpon>DECOUPLE_0003A.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\DECOUPLE_0003A.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\DECOUPLE_0003B.xaml.cs">
+      <DependentUpon>DECOUPLE_0003B.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\DECOUPLE_0003B.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\DECOUPLE_0007D.xaml.cs">
+      <DependentUpon>DECOUPLE_0007D.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\DECOUPLE_0007D.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\HMI_COMM_FAIL.xaml.cs">
+      <DependentUpon>HMI_COMM_FAIL.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\HMI_COMM_FAIL.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\IGV_K0001.xaml.cs">
+      <DependentUpon>IGV_K0001.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\IGV_K0001.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\IGV_K0003A.xaml.cs">
+      <DependentUpon>IGV_K0003A.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\IGV_K0003A.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\IGV_K0003B.xaml.cs">
+      <DependentUpon>IGV_K0003B.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\IGV_K0003B.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\PD_K0003A.xaml.cs">
+      <DependentUpon>PD_K0003A.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\PD_K0003A.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\PD_K0003B.xaml.cs">
+      <DependentUpon>PD_K0003B.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\PD_K0003B.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\PERMISSIVE_M39_K_0007D.xaml.cs">
+      <DependentUpon>PERMISSIVE_M39_K_0007D.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\PERMISSIVE_M39_K_0007D.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\PI_0195_VOTED.xaml.cs">
+      <DependentUpon>PI_0195_VOTED.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\PI_0195_VOTED.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\QUIT.xaml.cs">
+      <DependentUpon>QUIT.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\QUIT.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\SECURITY_ACCOUNT.xaml.cs">
+      <DependentUpon>SECURITY_ACCOUNT.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\SECURITY_ACCOUNT.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\SECURITY_NAMES.xaml.cs">
+      <DependentUpon>SECURITY_NAMES.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\SECURITY_NAMES.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\SELECTION_SCREEN.xaml.cs">
+      <DependentUpon>SELECTION_SCREEN.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\SELECTION_SCREEN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\SELECTION_SCREEN_PLS.xaml.cs">
+      <DependentUpon>SELECTION_SCREEN_PLS.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\SELECTION_SCREEN_PLS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\SELECTION_SCREEN_TOGGLE.xaml.cs">
+      <DependentUpon>SELECTION_SCREEN_TOGGLE.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\SELECTION_SCREEN_TOGGLE.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\SUC_VLV_K0007A.xaml.cs">
+      <DependentUpon>SUC_VLV_K0007A.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\SUC_VLV_K0007A.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\SUC_VLV_K0007B.xaml.cs">
+      <DependentUpon>SUC_VLV_K0007B.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\SUC_VLV_K0007B.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\SUC_VLV_K0007C.xaml.cs">
+      <DependentUpon>SUC_VLV_K0007C.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\SUC_VLV_K0007C.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\SW_VLV_K0001.xaml.cs">
+      <DependentUpon>SW_VLV_K0001.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\SW_VLV_K0001.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\SY_3600.xaml.cs">
+      <DependentUpon>SY_3600.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\SY_3600.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\TRIPS_M39_K_0001.xaml.cs">
+      <DependentUpon>TRIPS_M39_K_0001.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\TRIPS_M39_K_0001.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\TRIPS_M39_K_0003A.xaml.cs">
+      <DependentUpon>TRIPS_M39_K_0003A.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\TRIPS_M39_K_0003A.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\TRIPS_M39_K_0003B.xaml.cs">
+      <DependentUpon>TRIPS_M39_K_0003B.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\TRIPS_M39_K_0003B.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\TRIPS_M39_K_0007A.xaml.cs">
+      <DependentUpon>TRIPS_M39_K_0007A.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\TRIPS_M39_K_0007A.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\TRIPS_M39_K_0007B.xaml.cs">
+      <DependentUpon>TRIPS_M39_K_0007B.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\TRIPS_M39_K_0007B.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\TRIPS_M39_K_0007C.xaml.cs">
+      <DependentUpon>TRIPS_M39_K_0007C.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\TRIPS_M39_K_0007C.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\TRIPS_M39_K_0007D.xaml.cs">
+      <DependentUpon>TRIPS_M39_K_0007D.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\TRIPS_M39_K_0007D.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Faceplates\V1_LIM_SPD_RR.xaml.cs">
+      <DependentUpon>V1_LIM_SPD_RR.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Faceplates\V1_LIM_SPD_RR.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="GraphicViews\_93STG_D_06.xaml.cs">
+      <DependentUpon>_93STG_D_06.xaml</DependentUpon>
+    </Compile>
+    <Page Include="GraphicViews\_93STG_D_06.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="GraphicViews\Translations\_93STG03_Translation.xaml.cs">
+      <DependentUpon>_93STG03_Translation.xaml</DependentUpon>
+    </Compile>
+    <Page Include="GraphicViews\Translations\_93STG03_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="GraphicViews\_93STG03.xaml.cs">
+      <DependentUpon>_93STG03.xaml</DependentUpon>
+    </Compile>
+    <Page Include="GraphicViews\_93STG03.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="GraphicViews\_93STG07.xaml.cs">
+      <DependentUpon>_93STG07.xaml</DependentUpon>
+    </Compile>
+    <Page Include="GraphicViews\_93STG07.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_CE_ESD_MESH_01.xaml.cs">
+      <DependentUpon>SYM_CE_ESD_MESH_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_CE_ESD_MESH_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_CE_ESD_DI_01.xaml.cs">
+      <DependentUpon>SYM_CE_ESD_DI_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_CE_ESD_DI_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_CE_P_MARK_01.xaml.cs">
+      <DependentUpon>SYM_CE_P_MARK_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_CE_P_MARK_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_CE_ESD_DO_01.xaml.cs">
+      <DependentUpon>SYM_CE_ESD_DO_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_CE_ESD_DO_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_CE_ESD_LEGEND_01.xaml.cs">
+      <DependentUpon>SYM_CE_ESD_LEGEND_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_CE_ESD_LEGEND_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_TITLE_BAR_CE_01.xaml.cs">
+      <DependentUpon>SYM_TITLE_BAR_CE_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_TITLE_BAR_CE_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_TITLE_BAR_01.xaml.cs">
+      <DependentUpon>SYM_TITLE_BAR_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_TITLE_BAR_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_CAT_NAV_01.xaml.cs">
+      <DependentUpon>SYM_CAT_NAV_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_CAT_NAV_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_ESD_PICK_BYP_01.xaml.cs">
+      <DependentUpon>SYM_ESD_PICK_BYP_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_ESD_PICK_BYP_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_ESD_PICK_NORM_01.xaml.cs">
+      <DependentUpon>SYM_ESD_PICK_NORM_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_ESD_PICK_NORM_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_ESD_OPR_01.xaml.cs">
+      <DependentUpon>SYM_ESD_OPR_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_ESD_OPR_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_ESD_SUPER_01.xaml.cs">
+      <DependentUpon>SYM_ESD_SUPER_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_ESD_SUPER_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_ESD_BYPASS_01.xaml.cs">
+      <DependentUpon>SYM_ESD_BYPASS_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_ESD_BYPASS_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_ASV_01.xaml.cs">
+      <DependentUpon>SYM_ASV_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_ASV_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_ZV_01.xaml.cs">
+      <DependentUpon>SYM_ZV_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_ZV_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="HMI\SYM_SHOW_DISP_01.xaml.cs">
+      <DependentUpon>SYM_SHOW_DISP_01.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMI\SYM_SHOW_DISP_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="BootStrap\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AlarmSummary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootStrap\ApplicationScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\Detail\BIASCntrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailAlarms.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailAlarmTxt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailCntrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailCntrlBias.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailConfig.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailFaceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailOverride.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailTune.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\Detail\MEAS_SETPOINTCntrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\Detail\OUTPUTCntrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\FoxboroPIDFaceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\FoxGauge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\MEASGauge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\OUTGauge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Controller\SPTGauge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Indicator\Detail\FoxboroAIDetailAlarms.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Indicator\Detail\FoxboroAIDetailAlarmTxt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Indicator\Detail\FoxboroAIDetailCntrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Indicator\Detail\FoxboroAIDetailConfig.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Indicator\Detail\FoxboroAIDetailFaceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FoxFaceplates\Indicator\FoxboroAIFaceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Overview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Shape\Level_Bar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootStrap\ProjectStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootStrap\ConnectedScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootStrap\DisconnectedScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="StartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TOC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Toolbars\BottomBarInstructor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmSummary.xaml.cs">
+      <DependentUpon>AlarmSummary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrap\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrap\ApplicationScreen.xaml.cs">
+      <DependentUpon>ApplicationScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrap\ConnectedScreen.xaml.cs">
+      <DependentUpon>ConnectedScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrap\DisconnectedScreen.xaml.cs">
+      <DependentUpon>DisconnectedScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\Detail\BIASCntrl.xaml.cs">
+      <DependentUpon>BIASCntrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailAlarms.xaml.cs">
+      <DependentUpon>FoxboroPIDDetailAlarms.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailAlarmTxt.xaml.cs">
+      <DependentUpon>FoxboroPIDDetailAlarmTxt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailCntrl.xaml.cs">
+      <DependentUpon>FoxboroPIDDetailCntrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailCntrlBias.xaml.cs">
+      <DependentUpon>FoxboroPIDDetailCntrlBias.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailConfig.xaml.cs">
+      <DependentUpon>FoxboroPIDDetailConfig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailFaceplate.xaml.cs">
+      <DependentUpon>FoxboroPIDDetailFaceplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailOverride.xaml.cs">
+      <DependentUpon>FoxboroPIDDetailOverride.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\Detail\FoxboroPIDDetailTune.xaml.cs">
+      <DependentUpon>FoxboroPIDDetailTune.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\Detail\MEAS_SETPOINTCntrl.xaml.cs">
+      <DependentUpon>MEAS_SETPOINTCntrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\Detail\OUTPUTCntrl.xaml.cs">
+      <DependentUpon>OUTPUTCntrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\FoxboroPIDFaceplate.xaml.cs">
+      <DependentUpon>FoxboroPIDFaceplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\FoxGauge.xaml.cs">
+      <DependentUpon>FoxGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\MEASGauge.xaml.cs">
+      <DependentUpon>MEASGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\OUTGauge.xaml.cs">
+      <DependentUpon>OUTGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Controller\SPTGauge.xaml.cs">
+      <DependentUpon>SPTGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Indicator\Detail\FoxboroAIDetailAlarms.xaml.cs">
+      <DependentUpon>FoxboroAIDetailAlarms.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Indicator\Detail\FoxboroAIDetailAlarmTxt.xaml.cs">
+      <DependentUpon>FoxboroAIDetailAlarmTxt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Indicator\Detail\FoxboroAIDetailCntrl.xaml.cs">
+      <DependentUpon>FoxboroAIDetailCntrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Indicator\Detail\FoxboroAIDetailConfig.xaml.cs">
+      <DependentUpon>FoxboroAIDetailConfig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Indicator\Detail\FoxboroAIDetailFaceplate.xaml.cs">
+      <DependentUpon>FoxboroAIDetailFaceplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoxFaceplates\Indicator\FoxboroAIFaceplate.xaml.cs">
+      <DependentUpon>FoxboroAIFaceplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Overview.xaml.cs">
+      <DependentUpon>Overview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Shape\Level_Bar.xaml.cs">
+      <DependentUpon>Level_Bar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Themes\StatusToTextConverter.cs" />
+    <Compile Include="Toolbars\BottomBarInstructor.xaml.cs">
+      <DependentUpon>BottomBarInstructor.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clean.bat" />
+    <None Include="ConfigurationFiles\Database.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Setup\FileAssociation.nsh" />
+    <None Include="Setup\Script.nsi" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\application.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Home32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\StartPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Bell.png" />
+    <Resource Include="Resources\BellCheck.png" />
+    <Resource Include="Resources\BellClock.png" />
+    <Resource Include="Resources\BellPage.png" />
+    <Resource Include="Resources\BellRingLeft.png" />
+    <Resource Include="Resources\BellRingRight.png" />
+    <Resource Include="Resources\BellTick.png" />
+    <Resource Include="Resources\BellWindow.png" />
+    <Resource Include="Resources\DownArrow.png" />
+    <Resource Include="Resources\Filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Pause.png" />
+    <Resource Include="Resources\Play.png" />
+    <Resource Include="Resources\Sort.png" />
+    <Resource Include="Resources\Sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\BellRecycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AlarmLed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Bitmaps\PageBack.png" />
+    <Resource Include="Resources\Bitmaps\PageForward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\blitz.png" />
+    <Resource Include="Resources\cloche.png" />
+    <Resource Include="Resources\Control Room.png" />
+    <Resource Include="Resources\Corys logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Operator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BootStrap\Corys logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Resource Include="GraphicViews\Translations\Images\UGP_STG_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GraphicViews\Translations\Images\UGP_STG_Image_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GraphicViews\Translations\Images\UGP_STG_Image_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Simulator\Application_exe\UGP_STG_1.0_06082019_130917.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="STG_Faceplate\Condensate_Shutdown_Seq.png" />
+    <Resource Include="STG_Faceplate\Condensate_Startup_Seq.png" />
+    <Resource Include="STG_Faceplate\Control_Oil_Shutdown_Seq.png" />
+    <Resource Include="STG_Faceplate\Control_Oil_Startup_Seq.png" />
+    <Resource Include="STG_Faceplate\Lube_Oil_Shutdown_Seq.png" />
+    <Resource Include="STG_Faceplate\Lube_Oil_Startup_Seq.png" />
+  </ItemGroup>
+  <ItemGroup />
+</Project>

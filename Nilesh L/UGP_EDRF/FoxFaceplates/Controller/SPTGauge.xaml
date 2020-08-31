@@ -1,0 +1,25 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:controller="clr-namespace:UGP_EDRF.FoxFaceplates.Controller"
+	mc:Ignorable="d"
+	x:Class="UGP_EDRF.FoxFaceplates.Controller.SPTGauge">
+    <controller:FoxGauge>
+        <controller:FoxGauge.Parameters>
+            <Param Name="$GAUGECOLOR" Value="Blue" />
+            <Param Name="$GAUGEVALUE" Value="$TAGNAME.SPT" />
+            <Param Name="$GAUGEMIN" Value="$TAGNAME.LSCI1" />
+            <Param Name="$GAUGEMAX" Value="$TAGNAME.HSCI1" />
+
+            <!-- HH and LL Sliders -->
+            <Param Name="$HHLLSliderCOLOR" Value="Red" />
+            <Param Name="$HHSliderVALUE" Value="$TAGNAME.RSP" />
+            <Param Name="$HHSliderVISIBILITY" Value="0"/>
+            <Param Name="$LLSliderVISIBILITY" Value="1"/>
+            <Param Name="$HSliderVISIBILITY" Value="1"/>
+            <Param Name="$LSliderVISIBILITY" Value="1"/>
+        </controller:FoxGauge.Parameters>
+    </controller:FoxGauge>
+</RSIControl>

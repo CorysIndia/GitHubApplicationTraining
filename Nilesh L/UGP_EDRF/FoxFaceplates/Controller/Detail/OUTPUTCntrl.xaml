@@ -1,0 +1,306 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:controller="clr-namespace:UGP_EDRF.FoxFaceplates.Controller"
+	mc:Ignorable="d"
+	x:Class="UGP_EDRF.FoxFaceplates.Controller.Detail.OUTPUTCntrl"
+	Width="280" 
+	Height="250"
+	Background="#ADADAD">
+    <RSICanvas >
+        <Rectangle Canvas.Left="36"
+			Canvas.Top="35"
+			Width="105"
+			Height="215"
+			Fill="#858585"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <Rectangle
+			Width="280"
+			Height="35"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+
+
+        <!-- OUT-->
+        <RSICanvas x:Name="OUTLIM"
+                   Canvas.Top="35"
+                   Width="36"
+                   Height="215">
+
+            <Rectangle Width="35"
+				Height="215"
+				Stroke="#FFFFFF"
+				StrokeThickness="1" />
+
+            <!-- SPTGauge -->
+            <controller:OUTGauge  x:Name="OUTGauge" Canvas.Left="4" Canvas.Top="30">
+                <controller:OUTGauge.Parameters>
+                    <Param Name="$LIMITVISIBLE" Value="1" />
+                </controller:OUTGauge.Parameters>
+            </controller:OUTGauge>
+
+            <!--  HOLIM Slider  -->
+
+            <!--  LOALIM Slider  -->
+
+            <!--  LOLIM Slider  -->
+
+            <!--  HOALIM Slider  -->
+        </RSICanvas>
+
+        <!--  OUT Gauge  -->
+
+        <!-- SPTGauge -->
+
+        <RSIText Canvas.Left="150"
+			Canvas.Top="160"
+			Width="20"
+			Height="15"
+			HorizontalContentAlignment="Center"
+			VerticalContentAlignment="Center"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#000000">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.ext_out_state == 1">
+                    <ChangeText Text="T" />
+                </Animation>
+                <Animation Condition="$TAGNAME.ext_out_state == 2">
+                    <ChangeText Text="H" />
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <Rectangle Canvas.Left="140"
+			Canvas.Top="70"
+			Width="140"
+			Height="140"
+			Fill="#858585"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <Rectangle Canvas.Left="140"
+			Canvas.Top="35"
+			Width="140"
+			Height="35"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+
+        <!-- MEAS-->
+        <TextBlock Canvas.Left="10"
+			Canvas.Top="9"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#000000"
+			Text="OUTPUT" />
+        <TextBlock Canvas.Left="150"
+			Canvas.Top="44"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#000000"
+			Text="LIMITS" />
+        <TextBlock Canvas.Left="45"
+			Canvas.Top="99"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="H" />
+        <RSIText Canvas.Left="50"
+			Canvas.Top="44"
+			Width="85"
+			Height="15"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="\$TAGNAME.EO1\" />
+        <TextBlock Canvas.Left="45"
+			Canvas.Top="149"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="L" />
+        <RSIText Canvas.Left="45"
+			Canvas.Top="115"
+			Width="85"
+			Height="15"
+			HorizontalContentAlignment="Right"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="\$TAGNAME.HSCO1:#.##\" />
+        <RSIText Canvas.Left="45"
+			Canvas.Top="165"
+			Width="85"
+			Height="15"
+			HorizontalContentAlignment="Right"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="\$TAGNAME.LSCO1:#.####\" />
+        <RSIText Canvas.Left="45"
+			Canvas.Top="65"
+			Width="85"
+			Height="15"
+			HorizontalContentAlignment="Right"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#FFFFFF"
+			Text="\$TAGNAME.OUT:#.##\">
+            <RSIText.Animations>
+                <Animation Condition="#input == 4">
+                    <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                    <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                </Animation>
+                <ClickAnimation>
+                    <Assignment Expression="4" Variable="#input" />
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <TextBlock Canvas.Left="45"
+			Canvas.Top="204"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="OSV" />
+        <RSIText Canvas.Left="45"
+			Canvas.Top="220"
+			Width="85"
+			Height="15"
+			HorizontalContentAlignment="Right"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="\$TAGNAME.OSV:#.##\" />
+        <RSIText Canvas.Left="260"
+			Canvas.Top="160"
+			Width="15"
+			Height="15"
+			HorizontalContentAlignment="Center"
+			VerticalContentAlignment="Center"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#000000">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.ext_out_state == 1">
+                    <ChangeText Text="T" />
+                </Animation>
+                <Animation Condition="$TAGNAME.ext_out_state == 2">
+                    <ChangeText Text="H" />
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <TextBlock Canvas.Left="155"
+			Canvas.Top="99"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="H" />
+        <TextBlock Canvas.Left="155"
+			Canvas.Top="149"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="L" />
+        <RSIText Canvas.Left="155"
+			Canvas.Top="115"
+			Width="85"
+			Height="15"
+			HorizontalContentAlignment="Right"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#FFFFFF"
+			Text="\$TAGNAME.HOLIM:#.##\">
+            <RSIText.Animations>
+                <Animation Condition="#input == 5">
+                    <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                    <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                </Animation>
+                <ClickAnimation>
+                    <Assignment Expression="5" Variable="#input" />
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText Canvas.Left="155"
+			Canvas.Top="165"
+			Width="85"
+			Height="15"
+			HorizontalContentAlignment="Right"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#FFFFFF"
+			Text="\$TAGNAME.LOLIM:#.####\">
+            <RSIText.Animations>
+                <Animation Condition="#input == 6">
+                    <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                    <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                </Animation>
+                <ClickAnimation>
+                    <Assignment Expression="6" Variable="#input" />
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <Rectangle Canvas.Left="140"
+			Canvas.Top="210"
+			Width="140"
+			Height="40"
+			Fill="#858585"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <RSIText Canvas.Left="175"
+			Canvas.Top="145"
+			Width="70"
+			Height="15"
+			HorizontalContentAlignment="Right"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.LOLIND == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="#FFFFFF" />
+                    <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                    <ChangeText Text="CLAMP" />
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText Canvas.Left="175"
+			Canvas.Top="95"
+			Width="70"
+			Height="15"
+			HorizontalContentAlignment="Right"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.HOLIND == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="#FFFFFF" />
+                    <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                    <ChangeText Text="CLAMP" />
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+</RSIControl>

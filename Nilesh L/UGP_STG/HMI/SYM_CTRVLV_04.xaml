@@ -1,0 +1,605 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_CTRVLV_04}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_CTRVLV_04}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+                        <RSIViewbox.Parameters>
+                            <Param Name="$CLOSE_COLOUR" Value="#FF343434"/>
+                        </RSIViewbox.Parameters>
+                        <RSIGrid Background="Transparent">
+              <RSICanvas Width="209"
+                         Height="81"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSICanvas Name="VALVE_BODY_HORZ"
+                           Width="72"
+                           Height="45.062"
+                           Left="71.8339999999999"
+                           Top="16"
+                           Visibility="{TemplateBinding VLV_POS,
+                                                        Converter={EqualConverter HORZ}}">
+                  <RSIRectangle x:Name="Element45"
+                                Width="72"
+                                Height="45.06201"
+                                Stroke="Transparent"
+                                StrokeThickness="1" />
+                  <RSIRectangle x:Name="Right"
+                                Canvas.Left="44.4993000000001"
+                                Canvas.Top="16"
+                                Width="3.333374"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" >
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIPath x:Name="RightReduce"
+                           Canvas.Left="44.6993000000001"
+                           Canvas.Top="16"
+                           Width="6.866638"
+                           Height="11.25"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="0">
+                                        <RSIPath.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIPath.Animations>
+                                        <RSIPath.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIPath.RenderTransform>
+                  </RSIPath>
+                  <RSIRectangle x:Name="RightFlange"
+                                Canvas.Left="47.8327"
+                                Canvas.Top="12.25"
+                                Width="3.333313"
+                                Height="18.75"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" >
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Left"
+                                Canvas.Left="24.4993000000001"
+                                Canvas.Top="16"
+                                Width="3.333374"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" >
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIPath x:Name="LeftReduce"
+                           Canvas.Left="27.6327"
+                           Canvas.Top="16"
+                           Width="6.866638"
+                           Height="11.25"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="0" >
+                                        <RSIPath.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIPath.Animations>
+                                    </RSIPath>
+                                    <RSIRectangle x:Name="LeftFlange"
+                                Canvas.Left="21.1660000000001"
+                                Canvas.Top="12.25"
+                                Width="3.333313"
+                                Height="18.75"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" >
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="ValveBody"
+                                Canvas.Left="34.4993000000001"
+                                Canvas.Top="19.75"
+                                Width="3.333374"
+                                Height="3.75"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" >
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="ValveStem"
+                                Canvas.Left="34.4993000000001"
+                                Canvas.Top="8.5"
+                                Width="3.333374"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" >
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSICanvas Name="Top"
+                             Width="16.66663"
+                             Height="7.6875"
+                             IsHitTestVisible="false"
+                             Left="27.8327"
+                             Top="1">
+                    <RSIPath x:Name="Arc1"
+                             Width="16.66663"
+                             Height="7.6875"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FFE0E0E0"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1" >
+                                            <RSIPath.Animations>
+                                                <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                    <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                                </Animation>
+                                            </RSIPath.Animations>
+                                        </RSIPath>
+                                    </RSICanvas>
+                </RSICanvas>
+                <RSICanvas Name="VALVE_BODY_VERT"
+                           Width="72"
+                           Height="45.062"
+                           Left="692.5309"
+                           Top="136.5312"
+                           Visibility="{TemplateBinding VLV_POS,
+                                                        Converter={EqualConverter VERT}}">
+                  <RSIRectangle x:Name="Element45_1"
+                                Canvas.Left="-604.5308"
+                                Canvas.Top="-64.5311"
+                                Width="72.00006"
+                                Height="45.06201"
+                                RenderTransformOrigin="0,0"
+                                Stroke="Transparent"
+                                StrokeThickness="1">
+                    <RSIRectangle.RenderTransform>
+                      <RotateTransform Angle="-90" />
+                    </RSIRectangle.RenderTransform>
+                  </RSIRectangle>
+                  <RSIRectangle x:Name="Right_1"
+                                Canvas.Left="-588.5308"
+                                Canvas.Top="-109.0305"
+                                Width="3.333313"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                        <RSIRectangle.RenderTransform>
+                      <RotateTransform Angle="-90" />
+                    </RSIRectangle.RenderTransform>
+                  </RSIRectangle>
+                  <RSIPath x:Name="RightReduce_1"
+                           Canvas.Left="-588.5308"
+                           Canvas.Top="-109.2305"
+                           Width="6.866638"
+                           Height="11.25"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="0">
+                                        <RSIPath.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIPath.Animations>
+                                        <RSIPath.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="-90" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIPath.RenderTransform>
+                  </RSIPath>
+                  <RSIRectangle x:Name="RightFlange_1"
+                                Canvas.Left="-592.2808"
+                                Canvas.Top="-112.3638"
+                                Width="3.333374"
+                                Height="18.75"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                        <RSIRectangle.RenderTransform>
+                      <RotateTransform Angle="-90" />
+                    </RSIRectangle.RenderTransform>
+                  </RSIRectangle>
+                  <RSIRectangle x:Name="Left_1"
+                                Canvas.Left="-588.5308"
+                                Canvas.Top="-89.0305000000001"
+                                Width="3.333374"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                        <RSIRectangle.RenderTransform>
+                      <RotateTransform Angle="-90" />
+                    </RSIRectangle.RenderTransform>
+                  </RSIRectangle>
+                  <RSIPath x:Name="LeftReduce_1"
+                           Canvas.Left="-588.5308"
+                           Canvas.Top="-92.1638"
+                           Width="6.866699"
+                           Height="11.25"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="0">
+                                        <RSIPath.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIPath.Animations>
+                                        <RSIPath.RenderTransform>
+                      <RotateTransform Angle="-90" />
+                    </RSIPath.RenderTransform>
+                  </RSIPath>
+                  <RSIRectangle x:Name="LeftFlange_1"
+                                Canvas.Left="-592.2808"
+                                Canvas.Top="-85.6971000000001"
+                                Width="3.333374"
+                                Height="18.75"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                        <RSIRectangle.RenderTransform>
+                      <RotateTransform Angle="-90" />
+                    </RSIRectangle.RenderTransform>
+                  </RSIRectangle>
+                  <RSIRectangle x:Name="ValveBody_1"
+                                Canvas.Left="-584.7808"
+                                Canvas.Top="-99.0305000000001"
+                                Width="3.333374"
+                                Height="3.75"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                        <RSIRectangle.RenderTransform>
+                      <RotateTransform Angle="-90" />
+                    </RSIRectangle.RenderTransform>
+                  </RSIRectangle>
+                  <RSIRectangle x:Name="ValveStem_1"
+                                Canvas.Left="-596.0308"
+                                Canvas.Top="-99.0305000000001"
+                                Width="3.333374"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                        <RSIRectangle.RenderTransform>
+                      <RotateTransform Angle="-90" />
+                    </RSIRectangle.RenderTransform>
+                  </RSIRectangle>
+                  <RSICanvas Name="Top_1"
+                             Width="16.66663"
+                             Height="7.6875"
+                             IsHitTestVisible="false"
+                             Left="720.3636"
+                             Top="137.5311">
+                    <RSIPath x:Name="Arc1_1"
+                             Canvas.Left="-1323.8944"
+                             Canvas.Top="-229.8949"
+                             Width="16.66663"
+                             Height="7.6875"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FFE0E0E0"
+                             RenderTransformOrigin="0.0300000660001452,0.0650406504065041"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                                            <RSIPath.Animations>
+                                                <Animation Condition="$TAGNAME.Opening == 0 ">
+                                                    <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                                </Animation>
+                                            </RSIPath.Animations>
+                                            <RSIPath.RenderTransform>
+                        <RotateTransform Angle="-90" />
+                      </RSIPath.RenderTransform>
+                    </RSIPath>
+                  </RSICanvas>
+                </RSICanvas>
+                                <RSIText x:Name="TAG_HORZ_DOWN"
+                         Canvas.Left="65"
+                         Canvas.Top="61"
+                         Width="89"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#00EFEFEF"
+                         BorderBrush="#00000000"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding TAGNAME}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextWrapping="Wrap"
+                         Visibility="{TemplateBinding VLV_POS, Converter={EqualConverter HORZ}}"/>
+                                <RSIText x:Name="TAG_VERT_LEFT"
+                         Canvas.Top="30"
+                         Width="89"
+                         Height="20"
+                         HorizontalContentAlignment="Right"
+                         VerticalContentAlignment="Center"
+                         Background="#00EFEFEF"
+                         BorderBrush="#00000000"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding TAGNAME}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextWrapping="Wrap"
+                         Visibility="{TemplateBinding TAG_VERT, Converter={EqualConverter LEFT}}"/>
+
+                                <RSIGrid Canvas.Left="120"
+                         Canvas.Top="30"
+                         Width="89"
+                         Height="20"
+                        Visibility="{TemplateBinding VLV_POS,
+                                                      Converter={EqualConverter VERT}}">
+
+                                    <RSIText x:Name="TAG_VER_RIGHT"
+                         Canvas.Left="120"
+                         Canvas.Top="30"
+                         Width="89"
+                         Height="20"
+                         VerticalContentAlignment="Center"
+                         Background="#00EFEFEF"
+                         BorderBrush="#00000000"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding TAGNAME}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextWrapping="Wrap"
+                         Visibility="{TemplateBinding TAG_VERT, Converter={EqualConverter RIGHT}}"/>
+                                </RSIGrid>
+                <RSICanvas Name="VALUE_HORZ"
+                           Width="46.75232"
+                           Height="14.52344"
+                           Left="85.3174"
+                           Top="48.4832"
+                           Visibility="{TemplateBinding HORZ_OUTVALUE,
+                                                        Converter={EqualConverter true}}">
+                  <RSIRectangle x:Name="Rectangle1"
+                                Canvas.Top="0.0369999999999777"
+                                Width="46.75232"
+                                Height="14"
+                                Fill="#FFFFFFFF"
+                                Stroke="#FF000000"
+                                StrokeThickness="1" />
+                                    <RSIText x:Name="Text1"
+                           Canvas.Left="5.01069999999993"
+                           Width="36.86084"
+                           Height="14.52344"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Foreground="#FF000000"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10"
+                           TextElement.FontWeight="Bold"  
+                           Text="\$TAGNAME.OPENING:#.#\%" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                                </RSICanvas>
+                <RSICanvas Name="VALUE_VERT_LEFT"
+                           Width="48.08807"
+                           Height="14.59473"
+                           Left="45.578"
+                           Top="45.8833"
+                           Visibility="{TemplateBinding VERT_L_OUTVALUE,
+                                                        Converter={EqualConverter true}}">
+                  <RSIRectangle x:Name="Rectangle1_1"
+                                Canvas.Top="0.916699999999992"
+                                Width="48.08807"
+                                Height="13.67801"
+                                Fill="#FFFFFFFF"
+                                Stroke="#FF000000"
+                                StrokeThickness="1" />
+                                    <RSIText x:Name="Text1_1"
+                           Canvas.Left="5.95010000000002"
+                           Width="36.86081"
+                           Height="14.52344"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Foreground="#FF000000"
+                           Text="\$TAGNAME.OPENING:#.#\%" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10"
+                           TextElement.FontWeight="Bold"/>
+                                </RSICanvas>
+                <RSICanvas Name="VALUE_VERT_RIGHT"
+                           Width="47.42017"
+                           Height="15.03693"
+                           Left="121.0422"
+                           Top="47.6833"
+                           Visibility="{TemplateBinding VERT_R_OUTVALUE,
+                                                        Converter={EqualConverter true}}">
+                  <RSIRectangle x:Name="Rectangle1_2"
+                                Canvas.Top="1.0369"
+                                Width="47.42017"
+                                Height="14"
+                                Fill="#FFFFFFFF"
+                                Stroke="#FF000000"
+                                StrokeThickness="1" />
+                                    <RSIText x:Name="Text1_2"
+                           Canvas.Left="5.48590000000002"
+                           Width="36.86084"
+                           Height="14.52344"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Foreground="#FF000000"
+                           Text="\$TAGNAME.OPENING:#.#\%" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10"
+                           TextElement.FontWeight="Bold"/>
+                                </RSICanvas>
+                                <RSIText x:Name="EU"
+                         Canvas.Left="116"
+                         Canvas.Top="17.3908"
+                         Width="27"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#00EFEFEF"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="MA"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12" Visibility="Hidden"/>
+                                <RSIText x:Name="FO"
+                         Canvas.Left="113"
+                         Canvas.Top="2"
+                         Width="32"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#00EFEFEF"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="FO"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         Visibility="{TemplateBinding FAIL,
+                                                      Converter={EqualConverter FO}}" />
+                <RSIText x:Name="FC"
+                         Canvas.Left="113"
+                         Canvas.Top="2"
+                         Width="32"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#00EFEFEF"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="FC"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         Visibility="{TemplateBinding FAIL,
+                                                      Converter={EqualConverter FC}}" />
+                <RSIText x:Name="FS"
+                         Canvas.Left="113"
+                         Canvas.Top="2"
+                         Width="32"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#00EFEFEF"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="FS"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         Visibility="{TemplateBinding FAIL,
+                                                      Converter={EqualConverter FS}}" />
+                <hmi:SYM_CALL_OVERLAY_01 x:Name="Overlay_Vertical"
+                                         Canvas.Left="88.0001"
+                                         Width="45.06201"
+                                         Height="72.00006"
+                                         BLKOVL="{TemplateBinding BLK_CMD}"
+                                         CMPOVL="{TemplateBinding CMP}"
+                                         LOC="{TemplateBinding LOC}"
+                                         OverlayName="FP_ROUTMA"
+                                         PRT="{TemplateBinding PRT}"
+                                         Visibility="{TemplateBinding VLV_POS,
+                                                                      Converter={EqualConverter VERT}}" />
+                <hmi:SYM_CALL_OVERLAY_01 x:Name="Overlay_Horizontal"
+                                         Canvas.Left="72.0001"
+                                         Canvas.Top="16"
+                                         Width="72"
+                                         Height="45.06201"
+                                         BLKOVL="{TemplateBinding BLK_CMD}"
+                                         CMPOVL="{TemplateBinding CMP}"
+                                         LOC="{TemplateBinding LOC}"
+                                         OverlayName="FP_ROUTMA"
+                                         PRT="{TemplateBinding PRT}"
+                                         Visibility="{TemplateBinding VLV_POS,
+                                                                      Converter={EqualConverter HORZ}}" />
+              </RSICanvas>
+       <RSI_HandValve ModelName="{TemplateBinding FailureFaceplateName}" Style="{DynamicResource UGP_ValveActuatorMalfunction}" Height="1.52" Width="2.292" HorizontalAlignment="Right" Margin="0,5.83,69.941,0" VerticalAlignment="Top"/>
+
+                        </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+        <Setter Property="FODFaceplateName" Value="Std_FODControlValve_FacePlate"/>
+        <Setter Property="StandardFaceplateName" Value="FP_FV"/>
+    </Style>
+</ResourceDictionary>

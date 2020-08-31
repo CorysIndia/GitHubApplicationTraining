@@ -1,0 +1,525 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Style TargetType="{x:Type hmi:QuickLink22Tabs_N2_s_19inch_III}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:QuickLink22Tabs_N2_s_19inch_III}">
+                    <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+                        <RSIGrid Background="Transparent">
+                            <RSICanvas Width="1263.41181"
+                         Height="47.0625"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                                <hmi:QuickLinkTab_N2_III x:Name="Button15"
+                                         Canvas.Left="1180.41181"
+                                         Canvas.Top="0.0625"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" Visibility="{TemplateBinding Button15_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button14"
+                                         Canvas.Left="1096.28681"
+                                         Canvas.Top="0.0625"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" Visibility="{TemplateBinding Button14_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button13"
+                                         Canvas.Left="1012.10681"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" Visibility="{TemplateBinding Button13_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button12"
+                                         Canvas.Left="927.92741"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" Visibility="{TemplateBinding Button12_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button11"
+                                         Canvas.Left="843.80241"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" Visibility="{TemplateBinding Button11_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button10"
+                                         Canvas.Left="759.68551"
+                                         Canvas.Top="0.0625"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" Visibility="{TemplateBinding Button10_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button9"
+                                         Canvas.Left="675.56851"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" Visibility="{TemplateBinding Button9_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button8"
+                                         Canvas.Left="591.45161"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" Visibility="{TemplateBinding Button8_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button7"
+                                         Canvas.Left="507.33461"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" Visibility="{TemplateBinding Button7_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button6"
+                                         Canvas.Left="423.21771"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" Visibility="{TemplateBinding Button6_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button5"
+                                         Canvas.Left="339.10081"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47"
+                                         NameStore="Main Menu" Visibility="{TemplateBinding Button5_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button4"
+                                         Canvas.Left="254.92131"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47" Visibility="{TemplateBinding Button4_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button3"
+                                         Canvas.Left="170.74191"
+                                         Canvas.Top="0.03125"
+                                         Width="83"
+                                         Height="47" Visibility="{TemplateBinding Button3_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button2"
+                                         Canvas.Left="86"
+                                         Width="83"
+                                         Height="47" Visibility="{TemplateBinding Button2_TabVisible, Converter={EqualConverter true}}" />
+                                <hmi:QuickLinkTab_N2_III x:Name="Button1"
+                                         Width="83"
+                                         Height="47" Visibility="{TemplateBinding Button1_TabVisible, Converter={EqualConverter true}}" />
+                                <RSIText x:Name="Button1Tabname"
+                                    Canvas.Left="1.5"
+                                    Canvas.Top="1"
+                                    Width="81.5"
+                                    Height="45"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{TemplateBinding Button1_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button2Tabname"
+                                    Canvas.Left="87.332"
+                                    Width="81.5"
+                                    Height="45"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="0.333" Text="{TemplateBinding Button2_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button3Tabname"
+                                    Canvas.Left="171.834"
+                                    Width="81.5"
+                                    Height="45"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{TemplateBinding Button3_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button4Tabname"
+                                    Canvas.Left="255.845"
+                                    Canvas.Top="1"
+                                    Width="81.5"
+                                    Height="45"
+                                    VerticalAlignment="Center"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{TemplateBinding Button4_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button5Tabname"
+                                    Canvas.Left="340.351"
+                                    Width="81.5"
+                                    Height="45"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="0.333" Text="{TemplateBinding Button5_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button6Tabname"
+                                    Canvas.Left="424.718"
+                                    Width="81.5"
+                                    Height="45"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{TemplateBinding Button6_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button7Tabname"
+                                    Canvas.Left="508.416"
+                                    Canvas.Top="0.499"
+                                    Width="81.5"
+                                    Height="45"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{TemplateBinding Button7_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button8Tabname"
+                                    Canvas.Left="595.836"
+                                    Width="81.5"
+                                    Height="45"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="-0.169" Text="{TemplateBinding Button8_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button9Tabname"
+                                    Canvas.Left="678.997"
+                                    Width="81.5"
+                                    Height="45"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="0.333" Text="{TemplateBinding Button9_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button10Tabname"
+                                    Canvas.Left="764.069"
+                                    Canvas.Top="1"
+                                    Width="81.5"
+                                    Height="45"
+                                    VerticalAlignment="Center"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{TemplateBinding Button10_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button11Tabname"
+                                    Canvas.Left="849.022"
+                                    Width="77.78"
+                                    Height="45"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="0.333" Text="{TemplateBinding Button11_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button12Tabname"
+                                    Canvas.Left="930.094"
+                                    Width="81.5"
+                                    Height="45"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="-0.169" Text="{TemplateBinding Button12_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button13Tabname"
+                                    Canvas.Left="1013.441"
+                                    Canvas.Top="1"
+                                    Width="81.5"
+                                    Height="45"
+                                    VerticalAlignment="Center"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{TemplateBinding Button13_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button14Tabname"
+                                    Canvas.Left="1097.672"
+                                    Width="81.5"
+                                    Height="45"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="0.333" Text="{TemplateBinding Button14_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Button15Tabname"
+                                    Canvas.Left="1181.912"
+                                    Width="81.5"
+                                    Height="45"
+                                    Foreground="#FF000000"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{TemplateBinding Button15_TabName}" Panel.ZIndex="10">
+                                    <RSIText.Animations>
+                                        <Animation Condition="TabVisible==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="TabVisible==false">
+                                            <Invisible />
+                                        </Animation>
+                                        <Animation Condition="Selected">
+                                            <ChangeColor Color="#FFFFFFFF" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIRectangle x:Name="Button1Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button1_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button2Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="86.658" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button2_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button3Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="171.328" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button3_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button4Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="255.998" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button4_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button5Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="340.001" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button5_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button6Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="424.671" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button6_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button7Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="508.671" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button7_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button8Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="595.329" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button8_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button9Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="679.999" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button9_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button10Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="764.669" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button10_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button11Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="848.672" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button11_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button12Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="931.592" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button12_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button13Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="1012.169" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button13_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button14Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="1096.172" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button14_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="Button15Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.001" Cursor="Hand" Canvas.Left="1180.592" Panel.ZIndex="500">
+                                    <RSIRectangle.Animations>
+                                        <ClickAnimation>
+                                            <Link WindowName="$Button15_NameStore"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                            </RSICanvas>
+                        </RSIGrid>
+
+                    </RSIViewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+</ResourceDictionary>

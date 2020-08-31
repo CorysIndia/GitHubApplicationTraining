@@ -1,0 +1,196 @@
+<UserControl x:Class="UGP_EDRF._03FO01_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+  <RSICanvas Width="1500"
+             Height="750.000001907349"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:Background_Disp x:Name="Background_Disp1"
+                         Canvas.Top="1.907349E-06"
+                         Width="1500"
+                         Height="750" />
+    <hmi:SYM_TITLE_BAR_01 x:Name="SYM_TITLE_BAR_011"
+                          Width="1500"
+                          Height="32.986"
+                          
+                          PREV_RECENT="PREV"
+                          TRAIN_CLR="GREY" />
+    <hmi:NameplateResetPanel_III x:Name="Panel"
+                                 Canvas.Left="596"
+                                 Canvas.Top="60.000001907349"
+                                 Width="308"
+                                 Height="28" LABELDescription01="K-0001 TRIPS" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO22"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="140.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="06ZCX1351 - ESD P2P UNIT 6 TO UNIT 3 S.G COMP. UNIT SD" ModelName="06ZCX1351_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO21"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="110.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZCX1033 - ESD P2P UNIT 5 TO UNIT 3 NGL RECOVERY UNIT SD" ModelName="05ZCX1033_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO19"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="649.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03ZAD0590 - K0001 REGEN GAS COMP. MOTOR START FAILURE" ModelName="03ZAD0590_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO18"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="619.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03XS0881 - K-0001 CCS SHUTDOWN TO ESD" ModelName="03XS0881_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO17"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="589.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03XA0854 - K-0001 MAIN MOTOR LOSS OF RUNNING" ModelName="03XA0854_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO16"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="559.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03VSHH1203 - 2002 HH VIBRATION TRIP FR VMS K-0001" ModelName="03VSHH1203_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO15"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="529.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03VSHH1202 - 2002 HH VIBRATION TRIP FR VMS K-0001" ModelName="03VSHH1202_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO14"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="499.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="TUV_SD - LOSS OF CONTROL SIGNAL (ESD) K-0001" ModelName="03TUV_SD_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO13"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="469.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03TSHH3151 - GEARBOX LUB OIL SPLY TEMP - HH" ModelName="03TSHH3151_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO12"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="439.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03TSHH0343 - 2002 HH TEMPERATURE TRIP FR VMS K-0001" ModelName="03TSHH0343_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO11"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="409.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03TSHH0342 - 2002 HH TEMPERATURE TRIP FR VMS K-0001" ModelName="03TSHH0342_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO10"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="379.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03TSHH0194 - FR K-0001 REGEN GAS COMP TO D-0003 A/B - HH" ModelName="03TSHH0194_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO09"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="350.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03TSHH0181 - REGEN GAS FR E-0003 OUTLET TO D-0010 - HH" ModelName="03TSHH0181_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO08"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="320.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03PSLL3149 - LUB OIL SPLY PRESS BEFORE GEARBOX - LL" ModelName="03PSLL3149_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO07"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="290.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03PSLL0235 - REGEN GAS FR K-001 TO D-0003 - LL" ModelName="03PSLL0235_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO06"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="260.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03PSHH3071 - PRIMARY SEAL VENT GAS PRESS. - HH" ModelName="03PSHH3071_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO05"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="230.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03PSHH0194 - FROM K-0001 REGEN GAS COMP TO D-0003 - HH" ModelName="03PSHH0194_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO04"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="200.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03LSHH0080 - D-0020 REGEN GAS RECYC. KO DRUM LVL - HH" ModelName="03LSHH0080_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO03"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="170.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03LSHH0070 - LUB OIL SPLY PRES BEFORE GEARBOX - HH" ModelName="03LSHH0070_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO02"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="140.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03KMX0590F - K-0001 REGEN GAS COMP. MOTOR FAULT" ModelName="03KMX0590F_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO01"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="110.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03KHS0590B" ModelName="XXX" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO36"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="529.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03ZXIL0162 - 003-ZV-0162 - CLOSE LS IND" ModelName="03ZXIL0162_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO35"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="499.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03ZXIL0161 - 003-ZV-0161 - CLOSE LS IND" ModelName="03ZXIL0161_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO34"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="469.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03ZXIL0152 - 003-ZV-0152 - CLOSE LS IND" ModelName="03ZXIL0152_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO33"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="439.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03ZX0590" ModelName="XXX" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO32"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="409.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03ZX0162 - 003-ZV-0162 - LCP CLOSE COMMAND" ModelName="03ZX0162_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO31"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="379.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03ZX0161 - 003-ZV-0161 - LCP CLOSE COMMAND" ModelName="03ZX0161_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO30"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="350.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03ZX0152 - 003-ZV-0152 - LCP CLOSE COMMAND" ModelName="03ZX0152_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO29"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="320.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03ZHS0300C - K-0001 COMP.SURGE CONTROL ESD ACT. BUTTON" ModelName="03ZHS0300C_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO28"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="290.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03ZHS0300B - 2003 SAFE LOCATION ESD ACT. BUTTON" ModelName="03ZHS0300B_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO27"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="260.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03ZHS0300A - 2003 REMOTE ESD ACT. BUTTON" ModelName="03ZHS0300A_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO26"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="230.000001907349"
+                           Width="450.3998"
+                           Height="29.99998" DESCR="11ZCX 0140 - ESD P2P UNIT 1 TO UNIT 3 LOCAL ACT.BUTTON OVERALL PLANT" ModelName="11ZC0010C_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO25"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="200.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="09ZCX0111 - ESD P2P UNIT 1 TO UNIT 3 LOSS OF INST.AIR TO UNIT 3" ModelName="09ZCX0111_1_FO" />
+    <hmi:SYM_ESD_FO_IND_01 x:Name="FO24"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="170.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="11ZC0100C" ModelName="11ZC0010C_1_FO" />
+  </RSICanvas>
+</UserControl>

@@ -1,0 +1,181 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:aIndDesLab_01_8Prop_L}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:aIndDesLab_01_8Prop_L}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="579.19061"
+                         Height="360.0416"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSICanvas Name="Path2"
+                           Width="28.96991"
+                           Height="360.0416"
+                           IsHitTestVisible="false"
+                           Left="550.2207"
+                           Top="-99.32294">
+                  <RSIPath x:Name="Arc2"
+                           Canvas.Left="-543.48942384186"
+                           Canvas.Top="124.57317856"
+                           Width="3.745544"
+                           Height="6.745605"
+                           Data="M 0,1 A 1,1 0 0 0 1,0"
+                           Fill="#FF9A9A9A"
+                           RenderTransformOrigin="0.133491957376552,0.074122335950593"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1">
+                    <RSIPath.RenderTransform>
+                      <RotateTransform Angle="90" />
+                    </RSIPath.RenderTransform>
+                  </RSIPath>
+                  <RSIPath x:Name="Arc3"
+                           Canvas.Left="-541.24162384186"
+                           Canvas.Top="102.12697856"
+                           Width="8.994019"
+                           Height="2.809143"
+                           Data="M 0,1 A 1,1 0 0 0 1,0"
+                           Fill="#FF9A9A9A"
+                           RenderTransformOrigin="0.0555924998601849,0.177990226912621"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1">
+                    <RSIPath.RenderTransform>
+                      <RotateTransform Angle="180" />
+                    </RSIPath.RenderTransform>
+                  </RSIPath>
+                  <RSIPath x:Name="Arc8"
+                           Canvas.Left="-199.31307384186"
+                           Canvas.Top="102.14257856"
+                           Width="8.994057"
+                           Height="2.824585"
+                           Data="M 0,1 A 1,1 0 0 0 1,0"
+                           Fill="#FF9A9A9A"
+                           RenderTransformOrigin="0.0555922649811981,0.177017154732465"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1">
+                    <RSIPath.RenderTransform>
+                      <ScaleTransform ScaleX="1" ScaleY="-1" />
+                    </RSIPath.RenderTransform>
+                  </RSIPath>
+                  <RSIPath x:Name="Arc6"
+                           Canvas.Left="-199.31298384186"
+                           Canvas.Top="124.12139856"
+                           Width="8.993958"
+                           Height="2.824646"
+                           Data="M 0,1 A 1,1 0 0 0 1,0"
+                           Fill="#FF9A9A9A"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1" />
+                </RSICanvas>
+                <RSIRectangle x:Name="Rectangle3"
+                              Width="360"
+                              Height="30"
+                              Stroke="#FF343434"
+                              StrokeThickness="1">
+                  <RSIRectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                      <GradientStop Offset="0.5" Color="#FF000000" />
+                      <GradientStop Offset="0" Color="#FFBFBFBF" />
+                      <GradientStop Offset="1" Color="#FFBFBFBF" />
+                    </LinearGradientBrush>
+                  </RSIRectangle.Fill>
+                </RSIRectangle>
+                <RSICanvas Name="Group7"
+                           Width="353"
+                           Height="23.99995"
+                           Left="2.99990715814"
+                           Top="2.99994256">
+                  <RSIRectangle x:Name="Rectangle4"
+                                Canvas.Left="-3.10000000003363E-05"
+                                Canvas.Top="-0.000106999999999857"
+                                Width="353"
+                                Height="24.00002"
+                                Stroke="#FF000000"
+                                StrokeThickness="1">
+                    <RSIRectangle.Fill>
+                      <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="1" Color="#FF666666" />
+                        <GradientStop Offset="0" Color="#FF343434" />
+                      </LinearGradientBrush>
+                    </RSIRectangle.Fill>
+                  </RSIRectangle>
+                  <RSIText x:Name="Text3"
+                           Canvas.Left="4.720025"
+                           Canvas.Top="5.075806"
+                           Width="87.05242"
+                           Height="14.52344"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           Text="DESCRIPTION"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10"
+                           TextElement.FontWeight="Bold">
+                    <RSIText.Animations>
+                      <Animation Condition="Selected">
+                        <ChangeColor Color="#FF00FF00" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                </RSICanvas>
+                <RSIText x:Name="Unit"
+                         Canvas.Left="322.32701615814"
+                         Canvas.Top="6.99999956"
+                         Width="30.32671"
+                         Height="14.89583"
+                         HorizontalAlignment="Right"
+                         VerticalAlignment="Center"
+                         Foreground="#FFFFFFFF"
+                         IsHitTestVisible="False"
+                         RenderTransformOrigin="0,0"
+                         Text="UNIT"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold">
+                  <RSIText.RenderTransform>
+                    <TransformGroup>
+                      <RotateTransform Angle="180" />
+                      <ScaleTransform ScaleX="1" ScaleY="-1" />
+                    </TransformGroup>
+                  </RSIText.RenderTransform>
+                </RSIText>
+                <RSIText x:Name="Text1"
+                         Canvas.Left="265.99997615814"
+                         Canvas.Top="6.96873856"
+                         Width="18.07178"
+                         Height="14.52344"
+                         HorizontalAlignment="Right"
+                         VerticalAlignment="Center"
+                         Foreground="#FF00FF00"
+                         Text="{Value Value,
+                                      Converter={FormatConverter {}{0:0.#}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value Value, Converter={FormatConverter F1}}" />
+                    </Animation>
+                    <Animation Condition="Alarm">
+                      <ChangeColor Color="#FF00FF00" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

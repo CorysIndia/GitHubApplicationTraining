@@ -1,0 +1,144 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_OUTSEL_01}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_OUTSEL_01}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="154.0001"
+                         Height="70.99996"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <hmi:FP_CallOverlay x:Name="FP_CallOverlay1"
+                                    Canvas.Left="39.1069"
+                                    Canvas.Top="27.687"
+                                    Width="84.89301"
+                                    Height="43.31296"
+                                    BLKOVL="{TemplateBinding BLK}"
+                                    BLKOVL2="{TemplateBinding BLK}"
+                                    CMPOVL="{TemplateBinding CMP}"
+                                    CMPOVL2="{TemplateBinding CMP}"
+                                    LOC="{TemplateBinding LOC}"
+                                    OverlayName="FP_OUTSEL"
+                                    PRT="{TemplateBinding PRT}" />
+                <hmi:SYM_PAGE_ACK_01 x:Name="ACK_SYMBOL"
+                                     Canvas.Left="39.107"
+                                     Canvas.Top="27.687"
+                                     Width="84.89301"
+                                     Height="43.31296" />
+                <RSIRectangle x:Name="BACKGROUND"
+                              Canvas.Left="39.107"
+                              Canvas.Top="27.687"
+                              Width="84.89301"
+                              Height="43.31296"
+                              Stroke="#FF000000"
+                              StrokeThickness="1" />
+                <RSIText x:Name="OUT"
+                         Canvas.Left="57"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="18"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#FFE0E0E0"
+                         BorderBrush="#FFE0E0E0"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{Value OUT,
+                                      Converter={FormatConverter {}{0:0.##}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value OP, Converter={FormatConverter F2}}" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="EU"
+                         Canvas.Left="88.0001"
+                         Width="66"
+                         Height="28.00003"
+                         HorizontalContentAlignment="Left"
+                         VerticalContentAlignment="Bottom"
+                         Background="#00EFEFEF"
+                         BorderBrush="#00000000"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="EU"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextWrapping="Wrap">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="_UNIT" />
+                    </Animation>
+                    <Animation Condition="InTouch_SGUG_EU==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="InTouch_SGUG_EU==false">
+                      <Invisible />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="LABEL"
+                         Width="80"
+                         Height="28.00003"
+                         HorizontalContentAlignment="Right"
+                         VerticalContentAlignment="Bottom"
+                         Background="#00EFEFEF"
+                         BorderBrush="#00000000"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="LABEL"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextWrapping="Wrap">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="StringMid_BLK_3_StringLen_BLK__2_" />
+                    </Animation>
+                    <Animation Condition="InTouch_SGUG_LABEL==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="InTouch_SGUG_LABEL==false">
+                      <Invisible />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="Element15"
+                         Canvas.Left="42"
+                         Canvas.Top="27"
+                         Width="79"
+                         Height="23"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FFFFFFFF"
+                         IsHitTestVisible="False"
+                         Text="XXXXXXX"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="DTEXT_SELOPT==0___________DTEXT_SELOPT==1__HIGH___DTEXT_SELOPT==2___LOW_____DTEXT_SELOPT==3_AVERAGE____MEDIAN_______" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

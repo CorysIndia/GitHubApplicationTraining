@@ -1,0 +1,1032 @@
+﻿<RSIFacePlate
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="UGP_STG.FoxFaceplates.Controller.Detail.FoxboroPIDDetailAlarms">
+    <RSICanvas  >
+        <Rectangle Width="430"
+			Height="30"
+			Fill="#ADADAD"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <Rectangle Canvas.Top="30"
+			Width="215"
+			Height="240"
+			Fill="#858585"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <TextBlock Canvas.Left="175"
+			Canvas.Top="9"
+			Background="#ADADAD"
+			FontFamily="Arial"
+			FontSize="10.667"
+			FontWeight="Bold"
+			Foreground="#000000"
+			Text="MEASUREMENT" />
+        <Rectangle Canvas.Left="215"
+			Canvas.Top="30"
+			Width="215"
+			Height="240"
+			Fill="#858585"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <RSIRectangle Canvas.Left="430"
+			Canvas.Top="30"
+			Width="210"
+			Height="240"
+			Fill="#858585"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <Rectangle Canvas.Left="640"
+			Canvas.Top="30"
+			Width="215"
+			Height="240"
+			Fill="#858585"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <Rectangle Canvas.Left="430"
+			Width="210"
+			Height="30"
+			Fill="#ADADAD"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <TextBlock Canvas.Left="506"
+			Canvas.Top="9"
+			Background="#ADADAD"
+			FontFamily="Arial"
+			FontSize="10.667"
+			FontWeight="Bold"
+			Foreground="#000000"
+			Text="DEVIATION" />
+        <Rectangle Canvas.Left="640"
+			Width="215"
+			Height="30"
+			Fill="#ADADAD"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <TextBlock Canvas.Left="727"
+			Canvas.Top="9"
+			Background="#ADADAD"
+			FontFamily="Arial"
+			FontSize="10.667"
+			FontWeight="Bold"
+			Foreground="#000000"
+			Text="OUTPUT" />
+        <RSICanvas Canvas.Left="20"
+			Canvas.Top="50"
+			Width="170"
+			Height="185">
+            <RSICanvas.Animations>
+                <Animation Condition="$TAGNAME.HHAOPT == 0">
+                    <Invisible />
+                </Animation>
+            </RSICanvas.Animations>
+            <TextBlock Canvas.Top="170"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#C8C8C8"
+				Text="PRI" />
+            <RSIText Canvas.Left="35"
+				Canvas.Top="166"
+				Width="30"
+				Height="19"
+				VerticalContentAlignment="Center"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#FFFFFF"
+				Text="\$TAGNAME.HHAPRI\" />
+            <TextBlock Canvas.Left="100"
+				Canvas.Top="170"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#C8C8C8"
+				Text="GRP" />
+            <RSIText Canvas.Left="135"
+				Canvas.Top="166"
+				Width="35"
+				Height="19"
+				HorizontalContentAlignment="Right"
+				VerticalContentAlignment="Center"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#C8C8C8"
+				Text="\$TAGNAME.HHAGRP\" />
+            <RSICanvas Canvas.Top="133" Height="19">
+                <RSICanvas.Animations>
+                    <Animation Condition="$TAGNAME.HHAOPT == 0">
+                        <Invisible />
+                    </Animation>
+                </RSICanvas.Animations>
+                <TextBlock Canvas.Top="4"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="MEASDB" />
+                <RSIText Canvas.Left="75"
+					Width="95"
+					Height="19"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="\$TAGNAME.MEASDB:#.####\" />
+            </RSICanvas>
+            <RSICanvas Height="52">
+                <RSICanvas.Animations>
+                    <Animation Condition="$TAGNAME.HHAOPT == 3">
+                        <Invisible />
+                    </Animation>
+                </RSICanvas.Animations>
+                <TextBlock Canvas.Top="37"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="HHALIM" />
+                <RSIText Canvas.Left="75"
+					Canvas.Top="33"
+					Width="95"
+					Height="19"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="\$TAGNAME.HHALIM:#.##\">
+                    <RSIText.Animations>
+                        <Animation Condition="#input == 8">
+                            <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                            <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                        </Animation>
+                        <ClickAnimation>
+                            <Assignment Expression="8" Variable="#input" />
+                        </ClickAnimation>
+                    </RSIText.Animations>
+                </RSIText>
+                <TextBlock Canvas.Top="4"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="HHABS" />
+                <RSIText Canvas.Left="75"
+					Width="95"
+					Height="19"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="INHIBITED">
+                    <RSIText.Animations>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[3] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[3] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[3] == 0)">
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[3] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[3] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[3] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[3] == 0)">
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[3] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                    </RSIText.Animations>
+                </RSIText>
+            </RSICanvas>
+            <RSICanvas Canvas.Top="66" Height="53">
+                <RSICanvas.Animations>
+                    <Animation Condition="$TAGNAME.HHAOPT == 2">
+                        <Invisible />
+                    </Animation>
+                </RSICanvas.Animations>
+                <TextBlock Canvas.Top="4"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="LLABS" />
+                <RSIText Canvas.Left="75"
+					Width="95"
+					Height="19"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="INHIBITED">
+                    <RSIText.Animations>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[2] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[2] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[2] == 0)">
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[2] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[2] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[2] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[2] == 0)">
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[2] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                    </RSIText.Animations>
+                </RSIText>
+                <TextBlock Canvas.Top="38"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="LLALIM" />
+                <RSIText Canvas.Left="75"
+					Canvas.Top="34"
+					Width="95"
+					Height="19"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="\$TAGNAME.LLALIM:#.####\">
+                    <RSIText.Animations>
+                        <Animation Condition="#input == 9">
+                            <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                            <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                        </Animation>
+                        <ClickAnimation>
+                            <Assignment Expression="9" Variable="#input" />
+                        </ClickAnimation>
+                    </RSIText.Animations>
+                </RSIText>
+            </RSICanvas>
+        </RSICanvas>
+        <RSICanvas Canvas.Left="230"
+			Canvas.Top="50"
+			Width="165"
+			Height="195">
+            <RSICanvas.Animations>
+                <Animation Condition="$TAGNAME.MALOPT == 0">
+                    <Invisible />
+                </Animation>
+            </RSICanvas.Animations>
+            <TextBlock Canvas.Top="179"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#C8C8C8"
+				Text="PRI" />
+            <RSIText Canvas.Left="35"
+				Canvas.Top="175"
+				Width="30"
+				Height="20"
+				VerticalContentAlignment="Center"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#FFFFFF"
+				Text="\$TAGNAME.MEASPR\" />
+            <TextBlock Canvas.Left="95"
+				Canvas.Top="179"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#C8C8C8"
+				Text="GRP" />
+            <RSIText Canvas.Left="130"
+				Canvas.Top="175"
+				Width="35"
+				Height="20"
+				HorizontalContentAlignment="Right"
+				VerticalContentAlignment="Center"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#C8C8C8"
+				Text="\$TAGNAME.MEASGR\" />
+            <RSICanvas Height="55">
+                <RSICanvas.Animations>
+                    <Animation Condition="$TAGNAME.MALOPT == 3">
+                        <Invisible />
+                    </Animation>
+                </RSICanvas.Animations>
+                <TextBlock Canvas.Top="4"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="HIABS" />
+                <TextBlock Canvas.Top="39"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="MEASHL" />
+                <RSIText Canvas.Left="70"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="INHIBITED">
+                    <RSIText.Animations>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[1] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[1] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[1] == 0)">
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[1] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[1] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[1] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[1] == 0)">
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[1] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                    </RSIText.Animations>
+                </RSIText>
+                <RSIText Canvas.Left="70"
+					Canvas.Top="35"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="\$TAGNAME.MEASHL:#.##\">
+                    <RSIText.Animations>
+                        <Animation Condition="#input == 10">
+                            <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                            <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                        </Animation>
+                        <ClickAnimation>
+                            <Assignment Expression="10" Variable="#input" />
+                        </ClickAnimation>
+                    </RSIText.Animations>
+                </RSIText>
+            </RSICanvas>
+            <RSICanvas Canvas.Top="70" Height="55">
+                <RSICanvas.Animations>
+                    <Animation Condition="$TAGNAME.MALOPT == 2">
+                        <Invisible />
+                    </Animation>
+                </RSICanvas.Animations>
+                <TextBlock Canvas.Top="4"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="LOABS" />
+                <TextBlock Canvas.Top="39"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="MEASLL" />
+                <RSIText Canvas.Left="70"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="INHIBITED">
+                    <RSIText.Animations>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[0] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[0] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[0] == 0)">
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[0] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[0] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[0] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[0] == 0)">
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[0] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                    </RSIText.Animations>
+                </RSIText>
+                <RSIText Canvas.Left="70"
+					Canvas.Top="35"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="\$TAGNAME.MEASLL:#.##\">
+                    <RSIText.Animations>
+                        <Animation Condition="#input == 11">
+                            <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                            <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                        </Animation>
+                        <ClickAnimation>
+                            <Assignment Expression="11" Variable="#input" />
+                        </ClickAnimation>
+                    </RSIText.Animations>
+                </RSIText>
+            </RSICanvas>
+            <RSICanvas Canvas.Top="140" Height="20">
+                <RSICanvas.Animations>
+                    <Animation Condition="$TAGNAME.MALOPT == 0">
+                        <Invisible />
+                    </Animation>
+                </RSICanvas.Animations>
+                <TextBlock Canvas.Top="4"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="MEASDB" />
+                <RSIText Canvas.Left="70"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="\$TAGNAME.MEASDB:#.####\" />
+            </RSICanvas>
+        </RSICanvas>
+        <RSICanvas Canvas.Left="445"
+			Canvas.Top="50"
+			Width="160"
+			Height="195">
+            <RSICanvas.Animations>
+                <Animation Condition="$TAGNAME.DALOPT == 0">
+                    <Invisible />
+                </Animation>
+            </RSICanvas.Animations>
+            <TextBlock Canvas.Top="179"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#C8C8C8"
+				Text="PRI" />
+            <RSIText Canvas.Left="35"
+				Canvas.Top="175"
+				Width="30"
+				Height="20"
+				VerticalContentAlignment="Center"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#FFFFFF"
+				Text="\$TAGNAME.DEVPRI\" />
+            <TextBlock Canvas.Left="90"
+				Canvas.Top="179"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#C8C8C8"
+				Text="GRP" />
+            <RSIText Canvas.Left="125"
+				Canvas.Top="175"
+				Width="35"
+				Height="20"
+				HorizontalContentAlignment="Right"
+				VerticalContentAlignment="Center"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#C8C8C8"
+				Text="\$TAGNAME.DEVGRP\" />
+            <RSICanvas Height="55">
+                <RSICanvas.Animations>
+                    <Animation Condition="$TAGNAME.DALOPT == 3">
+                        <Invisible />
+                    </Animation>
+                </RSICanvas.Animations>
+                <TextBlock Canvas.Top="4"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="HIDEV" />
+                <TextBlock Canvas.Top="39"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="HDALIM" />
+                <RSIText Canvas.Left="65"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="INHIBITED">
+                    <RSIText.Animations>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[5] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[5] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[5] == 0)">
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[5] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[5] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[5] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[5] == 0)">
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[5] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                    </RSIText.Animations>
+                </RSIText>
+                <RSIText Canvas.Left="65"
+					Canvas.Top="35"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="\$TAGNAME.HDALIM:#.##\">
+                    <RSIText.Animations>
+                        <Animation Condition="#input == 12">
+                            <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                            <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                            <ChangePropertyValue PropertyName="Foreground" Value="#C8C8C8" />
+                        </Animation>
+                        <ClickAnimation>
+                            <Assignment Expression="12" Variable="#input" />
+                        </ClickAnimation>
+                    </RSIText.Animations>
+                </RSIText>
+            </RSICanvas>
+            <RSICanvas Canvas.Top="70" Height="55">
+                <RSICanvas.Animations>
+                    <Animation Condition="$TAGNAME.DALOPT == 2">
+                        <Invisible />
+                    </Animation>
+                </RSICanvas.Animations>
+                <TextBlock Canvas.Top="4"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="LODEV" />
+                <TextBlock Canvas.Top="39"
+					Background="#858585"
+					FontFamily="Arial"
+					FontSize="10.667"
+					FontWeight="Bold"
+					Foreground="#C8C8C8"
+					Text="LDALIM" />
+                <RSIText Canvas.Left="65"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Arial"
+					FontSize="10.667"
+					FontWeight="Bold"
+					Foreground="#FFFFFF"
+					Text="INHIBITED">
+                    <RSIText.Animations>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[4] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[4] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[4] == 0)">
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[4] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[4] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[4] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[4] == 0)">
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[4] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                    </RSIText.Animations>
+                </RSIText>
+                <RSIText Canvas.Left="65"
+					Canvas.Top="35"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="\$TAGNAME.LDALIM:#.##\">
+                    <RSIText.Animations>
+                        <Animation Condition="#input == 13">
+                            <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                            <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                        </Animation>
+                        <ClickAnimation>
+                            <Assignment Expression="13" Variable="#input" />
+                        </ClickAnimation>
+                    </RSIText.Animations>
+                </RSIText>
+            </RSICanvas>
+            <RSICanvas Canvas.Top="140" Height="20">
+                <RSICanvas.Animations>
+                    <Animation Condition="$TAGNAME.DALOPT == 0">
+                        <Invisible />
+                    </Animation>
+                </RSICanvas.Animations>
+                <TextBlock Canvas.Top="4"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="DEVADB" />
+                <RSIText Canvas.Left="65"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="\$TAGNAME.DEVADB:#.####\" />
+            </RSICanvas>
+        </RSICanvas>
+        <RSICanvas Canvas.Left="665"
+			Canvas.Top="50"
+			Width="155"
+			Height="195">
+            <TextBlock Canvas.Top="179"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#C8C8C8"
+				Text="PRI" />
+            <RSIText Canvas.Left="35"
+				Canvas.Top="175"
+				Width="30"
+				Height="20"
+				VerticalContentAlignment="Center"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#FFFFFF"
+				Text="\$TAGNAME.OUTPRI\" />
+            <TextBlock Canvas.Left="85"
+				Canvas.Top="179"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#C8C8C8"
+				Text="GRP" />
+            <RSIText Canvas.Left="120"
+				Canvas.Top="175"
+				Width="35"
+				Height="20"
+				HorizontalContentAlignment="Right"
+				VerticalContentAlignment="Center"
+				Background="#858585"
+				FontFamily="Fixedsys"
+				FontSize="10.667"
+				Foreground="#C8C8C8"
+				Text="\$TAGNAME.OUTGRP\" />
+            <RSICanvas Height="55">
+                <RSICanvas.Animations>
+                    <Animation Condition="$TAGNAME.OALOPT == 3">
+                        <Invisible />
+                    </Animation>
+                </RSICanvas.Animations>
+                <RSIText Width="60"
+					Height="20"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="HIOUT" />
+                <TextBlock Canvas.Top="39"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="HOALIM" />
+                <RSIText Canvas.Left="60"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="INHIBITED">
+                    <RSIText.Animations>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[7] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[7] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[7] == 0)">
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[7] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[7] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[7] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[7] == 0)">
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[7] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                    </RSIText.Animations>
+                </RSIText>
+                <RSIText Canvas.Left="60"
+					Canvas.Top="35"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="\$TAGNAME.HOALIM:#.##\">
+                    <RSIText.Animations>
+                        <Animation Condition="#input == 14">
+                            <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                            <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                        </Animation>
+                        <ClickAnimation>
+                            <Assignment Expression="14" Variable="#input" />
+                        </ClickAnimation>
+                    </RSIText.Animations>
+                </RSIText>
+            </RSICanvas>
+            <RSICanvas Canvas.Top="70" Height="55">
+                <RSICanvas.Animations>
+                    <Animation Condition="$TAGNAME.OALOPT == 2">
+                        <Invisible />
+                    </Animation>
+                </RSICanvas.Animations>
+                <TextBlock Canvas.Top="4"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="LOOUT" />
+                <TextBlock Canvas.Top="39"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="LOALIM" />
+                <RSIText Canvas.Left="60"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="INHIBITED">
+                    <RSIText.Animations>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[6] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[6] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[6] == 0)">
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)) AND ($TAGNAME.INHALM[6] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="INHIBITED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[6] == 0)">
+                            <Invisible />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = false) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[6] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[6] == 0)">
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                        <Animation Condition="(($TAGNAME.INHIB = true) AND (($TAGNAME.INHOPT == 1) OR ($TAGNAME.INHOPT == 2) OR ($TAGNAME.INHOPT == 3))) AND ($TAGNAME.INHALM[6] == 1)">
+                            <ChangePropertyValue PropertyName="Foreground" Value="#000000" />
+                            <ChangeText Text="DISABLED" />
+                        </Animation>
+                    </RSIText.Animations>
+                </RSIText>
+                <RSIText Canvas.Left="60"
+					Canvas.Top="35"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#FFFFFF"
+					Text="\$TAGNAME.LOALIM:#.##\">
+                    <RSIText.Animations>
+                        <Animation Condition="#input == 15">
+                            <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                            <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                        </Animation>
+                        <ClickAnimation>
+                            <Assignment Expression="15" Variable="#input" />
+                        </ClickAnimation>
+                    </RSIText.Animations>
+                </RSIText>
+            </RSICanvas>
+            <RSICanvas Canvas.Top="140" Height="20">
+                <RSICanvas.Animations>
+                    <Animation Condition="$TAGNAME.OALOPT == 0">
+                        <Invisible />
+                    </Animation>
+                </RSICanvas.Animations>
+                <TextBlock Canvas.Top="4"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="OUTADB" />
+                <RSIText Canvas.Left="60"
+					Width="95"
+					Height="20"
+					HorizontalContentAlignment="Right"
+					VerticalContentAlignment="Center"
+					Background="#858585"
+					FontFamily="Fixedsys"
+					FontSize="10.667"
+					Foreground="#C8C8C8"
+					Text="\$TAGNAME.OUTADB:#.####\" />
+            </RSICanvas>
+        </RSICanvas>
+        <RSIText Canvas.Left="385"
+			Canvas.Top="275"
+			Width="105"
+			Height="20"
+			HorizontalContentAlignment="Center"
+			VerticalContentAlignment="Center"
+			Background="#555555"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#000000">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.INHIB = false AND $TAGNAME.INHOPT = 0">
+                    <ChangePropertyValue PropertyName="Background" Value="#ADADAD" />
+                    <ChangePropertyValue PropertyName="Foreground" Value="#FFFFFF" />
+                    <ChangeText Text="INHIB_ALL" />
+                </Animation>
+                <Animation Condition="($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT == 0)">
+                    <ChangePropertyValue PropertyName="Background" Value="#ADADAD" />
+                    <ChangePropertyValue PropertyName="Foreground" Value="#FFFFFF" />
+                    <ChangeText Text="UNINH_ALL" />
+                </Animation>
+                <Animation Condition="($TAGNAME.INHIB = false) AND ($TAGNAME.INHOPT  &lt;&gt;  0)">
+                    <ChangePropertyValue PropertyName="Background" Value="#ADADAD" />
+                    <ChangePropertyValue PropertyName="Foreground" Value="#FFFFFF" />
+                    <ChangeText Text="DISABL_ALL" />
+                </Animation>
+                <Animation Condition="($TAGNAME.INHIB = true) AND ($TAGNAME.INHOPT  &lt;&gt;  0)">
+                    <ChangePropertyValue PropertyName="Background" Value="#ADADAD" />
+                    <ChangePropertyValue PropertyName="Foreground" Value="#FFFFFF" />
+                    <ChangeText Text="ENABLE_ALL" />
+                </Animation>
+                <ClickAnimation>
+                    <FlipFlop Expression1="False"
+						Expression2="True"
+						Variable="$TAGNAME.INHIB" />
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+</RSIFacePlate>

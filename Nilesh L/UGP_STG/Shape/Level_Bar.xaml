@@ -1,0 +1,21 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="UGP_STG.Shape.Level_Bar"
+	Width="10" 
+	Height="55"
+	Background="#FFC8C8C8">
+    <RSICanvas  >
+        <RSIRectangle Height="55" Width="10" Fill="#FFC8C8C8" Stroke="Black" StrokeThickness="0.5"/>
+        <RSIRectangle Height="55" Width="10" Fill="#FF93EB21" Stroke="Black" StrokeThickness="0.5">
+            <RSIRectangle.Animations>
+                <Animation>
+                    <Resize Expression="$Tagname.ProcessValue"/>
+                </Animation>
+            </RSIRectangle.Animations>
+        </RSIRectangle>
+    </RSICanvas>
+</RSIControl>

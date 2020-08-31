@@ -1,0 +1,273 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Style TargetType="{x:Type hmi:PID_Display2_9Letter}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:PID_Display2_9Letter}">
+                    <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+                        <RSIGrid Background="Transparent">
+                            <RSICanvas Width="88.4"
+                         Height="36.8"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                                <RSIRectangle x:Name="Rectangle3"
+                              Canvas.Left="0.400000000000006"
+                              Width="88"
+                              Height="36.8"
+                              Fill="#FF666666"
+                              Stroke="#FF666666"
+                              StrokeThickness="2" />
+                                <RSIRectangle x:Name="DirectAction"
+                              Canvas.Left="3"
+                              Canvas.Top="2.59999999999999"
+                              Width="85"
+                              Height="31.6"
+                              Stroke="#FF000000"
+                              StrokeThickness="0">
+                                    <RSIRectangle.Animations>
+                                        <Animation />
+                                        <!--
+                      'LogMessage("Direct");
+                      Pushed = True; ' Button down
+                    -->
+                                        <!--
+                      Pushed = False; ' Button up
+                      dim graphicInfo0 as aaGraphic.GraphicInfo;
+                      graphicInfo0.GraphicName = Namestore;
+                      ShowGraphic(graphicInfo0);
+                    -->
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <RSICanvas Name="Group1"
+                           Width="80"
+                           Height="14.71896"
+                           Left="5.1157"
+                           Top="3.19992999999999">
+                                    <RSIRectangle x:Name="Rectangle1"
+                                Canvas.Top="-2.99999999953116E-05"
+                                Width="80.00003"
+                                Height="14.71899"
+                                StrokeThickness="1">
+                                        <RSIRectangle.Stroke>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="0" Color="#FF343434" />
+                                                <GradientStop Offset="0" Color="#FF9A9A9A" />
+                                                <GradientStop Offset="1" Color="#FF9A9A9A" />
+                                            </LinearGradientBrush>
+                                        </RSIRectangle.Stroke>
+                                        <RSIRectangle.Fill>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="0" Color="#FFB3B3B3" />
+                                                <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                                <GradientStop Offset="1" Color="#FFFFFFFF" />
+                                            </LinearGradientBrush>
+                                        </RSIRectangle.Fill>
+                                    </RSIRectangle>
+                                    <RSIText x:Name="Text1"
+                           Canvas.Left="1.119"
+                           Canvas.Top="0.806"
+                           Width="47.73"
+                           Height="13.351"
+                           HorizontalAlignment="Left"
+                           Foreground="#FF000000"
+                           IsHitTestVisible="False"
+                           Text="{TemplateBinding NameStore}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="8"
+                           TextElement.FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" />
+                                </RSICanvas>
+                                <RSIRectangle x:Name="Rectangle1_1"
+                              Canvas.Left="5.2"
+                              Canvas.Top="19.41044"
+                              Width="80"
+                              Height="14"
+                              Stroke="#FF666666"
+                              StrokeThickness="1">
+                                    <RSIRectangle.Fill>
+                                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                            <GradientStop Offset="1" Color="#FFB3B3B3" />
+                                            <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                        </LinearGradientBrush>
+                                    </RSIRectangle.Fill>
+                                </RSIRectangle>
+                                <RSIText x:Name="Text2"
+                         Canvas.Left="8.281"
+                         Canvas.Top="20.316"
+                         Width="46.167"
+                         Height="12.083"
+                         HorizontalAlignment="Left"
+                         Foreground="#FF0000FF"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold" Text="55.5">
+                                    <RSIText.Animations>
+                                        <Animation>
+                                            <ChangeText Text="\$TAGNAME.CV:#.#\"/>
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSICanvas Name="ModeBox"
+                           Width="19.53336"
+                           Height="12.6"
+                           Left="64.4"
+                           Top="3.8"/>
+                                <RSIText x:Name="Text1_1"
+                         Canvas.Left="73.4"
+                         Canvas.Top="20.316"
+                         Width="9.781"
+                         Height="12.083"
+                         HorizontalAlignment="Left"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="%"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                                <RSIBorder x:Name="Line1"
+                           Canvas.Left="0.650000000000006"
+                           Canvas.Top="0.25"
+                           Width="1.5"
+                           Height="33.2">
+                                    <RSIPath Data="M0.650000000000006,0.25 L0.650000000000006,33.45"
+                           Stretch="Fill"
+                           Stroke="#FFFFFFFF"
+                           StrokeThickness="3">
+                                        <RSIPath.Animations />
+                                    </RSIPath>
+                                </RSIBorder>
+                                <RSIBorder x:Name="Line2"
+                           Canvas.Left="-0.75"
+                           Canvas.Top="0.0499999999999972"
+                           Width="88"
+                           Height="1.5">
+                                    <RSIPath Data="M-0.75,0.0499999999999972 L87.25,0.0499999999999972"
+                           Stretch="Fill"
+                           Stroke="#FFFFFFFF"
+                           StrokeThickness="3">
+                                        <RSIPath.Animations />
+                                    </RSIPath>
+                                </RSIBorder>
+                                <RSIBorder x:Name="Line3"
+                           Canvas.Left="2.25"
+                           Canvas.Top="35.05"
+                           Width="84"
+                           Height="1.5">
+                                    <RSIPath Data="M2.25,35.05 L86.25,35.05"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="3">
+                                        <RSIPath.Animations />
+                                    </RSIPath>
+                                </RSIBorder>
+                                <RSIBorder x:Name="Line4"
+                           Canvas.Left="86.65"
+                           Canvas.Top="1.65"
+                           Width="1.5"
+                           Height="33.8">
+                                    <RSIPath Data="M86.65,1.65 L86.65,35.45"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="3">
+                                        <RSIPath.Animations />
+                                    </RSIPath>
+                                </RSIBorder>
+                                <RSIRectangle x:Name="RoundRectangle3"
+                                    Canvas.Left="70.683"
+                                    Width="14"
+                                    Height="11.623"
+                                    StrokeThickness="1" Canvas.Top="4.777">
+                                    <RSIRectangle.Animations>
+                                        <Animation Condition="$TAGNAME.Auto == 0">
+                                            <Invisible/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.Auto == 1">
+                                            <SetVisible/>
+                                        </Animation>
+                                    </RSIRectangle.Animations>
+                                    <RSIRectangle.Stroke>
+                                        <RadialGradientBrush>
+                                            <GradientStop Offset="0" Color="#FF000000" />
+                                            <GradientStop Offset="1" Color="#FFFFFFFF" />
+                                        </RadialGradientBrush>
+                                    </RSIRectangle.Stroke>
+                                    <RSIRectangle.Fill>
+                                        <RadialGradientBrush>
+                                            <GradientStop Offset="0" Color="#FF004200" />
+                                            <GradientStop Offset="0" Color="#FF498C5D" />
+                                            <GradientStop Offset="1" Color="#FF00FF4C" />
+                                        </RadialGradientBrush>
+                                    </RSIRectangle.Fill>
+                                </RSIRectangle>
+                                <RSIRectangle x:Name="RoundRectangle2"
+                                Width="14"
+                                Height="11.623"
+                                StrokeThickness="1" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="70.128" Canvas.Top="4.852">
+                                    <RSIRectangle.Animations>
+                                        <Animation Condition="$TAGNAME.Auto == 0">
+                                            <SetVisible/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.Auto == 1">
+                                            <Invisible/>
+                                        </Animation>
+                                    </RSIRectangle.Animations>
+                                    <RSIRectangle.Stroke>
+                                        <RadialGradientBrush>
+                                            <GradientStop Offset="0" Color="#FF000000" />
+                                            <GradientStop Offset="1" Color="#FFFFFFFF" />
+                                        </RadialGradientBrush>
+                                    </RSIRectangle.Stroke>
+                                    <RSIRectangle.Fill>
+                                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                            <GradientStop Color="#FFB3B3B3" Offset="0"/>
+                                            <GradientStop Color="#FFB3B3B3" Offset="0"/>
+                                            <GradientStop Color="#FF7E7E7E" Offset="0"/>
+                                            <GradientStop Color="#FFB3B3B3" Offset="0"/>
+                                            <GradientStop Color="#FFB3B3B3" Offset="1"/>
+                                            <GradientStop Color="#FFE89600" Offset="0.52"/>
+                                        </LinearGradientBrush>
+                                    </RSIRectangle.Fill>
+                                </RSIRectangle>
+                                <RSIText x:Name="Text4"
+                                Width="11.986"
+                                Height="9.623"
+                                Foreground="#FF000000"
+                                Text="M"
+                                TextElement.FontFamily="Arial"
+                                TextElement.FontSize="8"
+                                TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" RenderTransformOrigin="0.622,0.362" Canvas.Left="71.295" Canvas.Top="6.019">
+                                    <RSIText.Animations>
+                                        <Animation Condition="$TAGNAME.Auto == 1">
+                                            <ChangeText Text="A"/>
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="Text2_Copy"
+                                    Canvas.Left="8.281"
+                                    Canvas.Top="20.316"
+                                    Width="46.167"
+                                    Height="12.083"
+                                    HorizontalAlignment="Left"
+                                    Foreground="#FF0000FF"
+                                    TextElement.FontFamily="Arial"
+                                    TextElement.FontSize="10"
+                                    TextElement.FontWeight="Bold" Text="55.5" Background="#FFF1F1F1" Visibility="{TemplateBinding Pushed, Converter={EqualConverter true}}">
+                                    <RSIText.Animations>
+                                        <Animation>
+                                            <ChangeText Text="\$TAGNAME.PID_Output_Out:#.#\"/>
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                            </RSICanvas>
+                        </RSIGrid>
+                    </RSIViewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+</ResourceDictionary>

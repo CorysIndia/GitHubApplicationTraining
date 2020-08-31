@@ -1,0 +1,120 @@
+﻿<RSIFacePlate
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:HMI="clr-namespace:UGP_STG.HMI"
+	mc:Ignorable="d"
+	x:Class="UGP_STG.LOCAL_PANEL.MFC_PANEL"
+	Width="882" 
+	Height="200"
+	Background="LightGray">
+    <RSICanvas  >
+        <HMI:SYM_PID_01 x:Name="Cont01"
+            Canvas.Top="33.644"
+            Width="154"
+            Height="80.6"
+            GraphicTagName="PIC2745"
+            TAGNAME="PIC2745" StandardFaceplateName="FP_PID" ModelName="R35_093PIC2745" Canvas.Left="-6.012" />
+        <HMI:SYM_PID_01 x:Name="Cont02"
+            Canvas.Top="33.644"
+            Width="154"
+            Height="80.6"
+            GraphicTagName="SIC2759"
+            TAGNAME="SIC2759" StandardFaceplateName="FP_PID" ModelName="R35_093SIC2759" Canvas.Left="125.318" />
+        <HMI:SYM_PID_01 x:Name="Cont03"
+            Canvas.Top="33.644"
+            Width="154"
+            Height="80.6"
+            GraphicTagName="SIC2761"
+            TAGNAME="SIC2761" StandardFaceplateName="FP_PID" ModelName="R35_093SIC2761" Canvas.Left="272.653" />
+        <HMI:SYM_PID_01 x:Name="Cont05"
+            Canvas.Top="33.644"
+            Width="154"
+            Height="80.6"
+            GraphicTagName="UIC2786"
+            TAGNAME="UIC2786" StandardFaceplateName="FP_PID" ModelName="R35_093UIC2786" Canvas.Left="416.327" />
+        <RSIText x:Name="rSIText" Height="23" TextWrapping="Wrap" Text="MFC PANEL" Width="882" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="16" Background="#FF8A8484"/>
+        <RSIText x:Name="rSIText1" Height="30.756" Canvas.Left="37" TextWrapping="Wrap" Text="MFC Live Steam Inlet Pressure Controller" Canvas.Top="134.244" Width="114.664"/>
+        <RSIText x:Name="rSIText1_Copy" Height="30.756" Canvas.Left="168.5" TextWrapping="Wrap" Canvas.Top="134.244" Width="101" Text="MFC Start-Up Ramp Controller"/>
+        <RSIText x:Name="rSIText1_Copy1" Height="30.756" Canvas.Left="318" TextWrapping="Wrap" Canvas.Top="134.244" Width="101" Text="MFC Speed Controller"/>
+        <RSIText x:Name="rSIText1_Copy2" Height="30.756" Canvas.Left="462" TextWrapping="Wrap" Canvas.Top="134.244" Width="101" Text="MFC Load Controller"/>
+        <HMI:SYM_PID_01 x:Name="Cont06"
+            Canvas.Top="33.644"
+            Width="154"
+            Height="80.6"
+            GraphicTagName="FREQCNTRL"
+            TAGNAME="FREQCNTRL" StandardFaceplateName="FP_PID" ModelName="R35_093FREQCNTRL" Canvas.Left="546.327" />
+        <RSIText x:Name="rSIText1_Copy3" Height="30.756" Canvas.Left="592" TextWrapping="Wrap" Canvas.Top="134.244" Width="101" Text="MFC FREQUENCY Controller"/>
+        <RSIText x:Name="rSIText2" Height="23" Canvas.Left="160.341" TextWrapping="Wrap" Text="INACTIVE" Canvas.Top="170" Width="120" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF8A8484">
+            <RSIText.Animations>
+                <Animation Condition="MFC_STARTUPRAMP.CIN == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                    <ChangeText Text="ACTIVE"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText2_Copy" Height="23" Canvas.Left="297.013" TextWrapping="Wrap" Text="INACTIVE" Canvas.Top="170" Width="120" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF8A8484">
+            <RSIText.Animations>
+                <Animation Condition="MFC_STSPEED.CIN == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                    <ChangeText Text="ACTIVE"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText2_Copy1" Height="23" Canvas.Left="443.687" TextWrapping="Wrap" Text="INACTIVE" Canvas.Top="170" Width="120" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF8A8484">
+            <RSIText.Animations>
+                <Animation Condition="MFC_LOAD.CIN == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                    <ChangeText Text="ACTIVE"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText2_Copy2" Height="23" Canvas.Left="589.694" TextWrapping="Wrap" Text="INACTIVE" Canvas.Top="170" Width="120" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF8A8484">
+            <RSIText.Animations>
+                <Animation Condition="MFC_FREQUENCY.CIN == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                    <ChangeText Text="ACTIVE"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText2_Copy3" Height="23" Canvas.Left="31.664" TextWrapping="Wrap" Text="INACTIVE" Canvas.Top="170" Width="120" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF8A8484">
+            <RSIText.Animations>
+                <Animation Condition="MFC_LIVEINP.CIN == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                    <ChangeText Text="ACTIVE"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSICanvas x:Name="SELECTOR"
+            Width="132.6"
+            Height="55.249"
+            Canvas.Left="712.694"
+            Canvas.Top="58.995">
+            <RSICanvas.Parameters>
+                <Param Name="$SEL" Value="LOAD_POWER"/>
+            </RSICanvas.Parameters>
+            <RSIButton x:Name="Button1"
+                Canvas.Top="10"
+                Width="114"
+                Height="40"
+                Background="#FFD3D3D3" Content="SEL" Cursor="Hand" Canvas.Left="8.6" >
+                <RSIButton.Animations>
+                    <ClickAnimation Condition="$SEL.SW == 2">
+                        <Assignment Expression="1" Maximum="1" Minimum="0" Variable="$SEL.SW"/>
+                    </ClickAnimation>
+                    <ClickAnimation Condition="$SEL.SW == 1">
+                        <Assignment Expression="2" Maximum="2" Minimum="0" Variable="$SEL.SW"/>
+                    </ClickAnimation>
+                    <Animation Condition="$SEL.SW == 1">
+                        <ChangePropertyValue PropertyName="Content" Value="LOAD"/>
+                    </Animation>
+                    <Animation Condition="$SEL.SW == 2">
+                        <ChangePropertyValue PropertyName="Content" Value="POWER"/>
+                    </Animation>
+                </RSIButton.Animations>
+            </RSIButton>
+        </RSICanvas>
+        <RSIText x:Name="rSIText1_Copy4" Height="30.756" Canvas.Left="722" TextWrapping="Wrap" Canvas.Top="134.244" Width="101" Text="PRESSURE OR LOAD SELECTION"/>
+    </RSICanvas>
+</RSIFacePlate>

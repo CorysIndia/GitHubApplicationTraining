@@ -1,0 +1,142 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Style TargetType="{x:Type hmi:NameplateResetPanel_III_2}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:NameplateResetPanel_III_2}">
+                    <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+                        <RSIGrid Background="Transparent">
+                            <RSICanvas Width="308"
+                         Height="28"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                                <hmi:PanelBrushed x:Name="PanelBrushed1"
+                                  Width="308"
+                                  Height="28" />
+                                <RSICanvas Name="RivetLeft"
+                           Width="13.88889"
+                           Height="13.33334"
+                           Left="231.1191"
+                           Top="6.969452">
+                                    <RSIEllipse x:Name="Ellipse1"
+                              Canvas.Left="-212.2382333786"
+                              Canvas.Top="-2.83446500048967E-06"
+                              Width="13.88889"
+                              Height="13.33334"
+                              RenderTransformOrigin="0,0"
+                              Stroke="#FF000000"
+                              StrokeThickness="0">
+                                        <RSIEllipse.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="180" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIEllipse.RenderTransform>
+                                        <RSIEllipse.Fill>
+                                            <RadialGradientBrush>
+                                                <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                                <GradientStop Offset="1" Color="#FF000000" />
+                                            </RadialGradientBrush>
+                                        </RSIEllipse.Fill>
+                                    </RSIEllipse>
+                                    <RSIPath x:Name="Polygon1"
+                           Canvas.Left="-217.3308333786"
+                           Canvas.Top="4.888887165535"
+                           Width="3.703705"
+                           Height="3.555557"
+                           Data="M0.2857143,0 L0,0.2857143 0,0.7142857 0.2857143,1 0.7142857,1 1,0.7142857 1,0.2857143 0.7142857,0 z"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="0">
+                                        <RSIPath.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="180" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIPath.RenderTransform>
+                                        <RSIPath.Fill>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="1" Color="#FF666666" />
+                                                <GradientStop Offset="0" Color="#FF000000" />
+                                            </LinearGradientBrush>
+                                        </RSIPath.Fill>
+                                    </RSIPath>
+                                </RSICanvas>
+                                <RSICanvas Name="RivetRight"
+                           Width="13.88892"
+                           Height="13.33337"
+                           Left="-51.83923"
+                           Top="6.969482">
+                                    <RSIEllipse x:Name="Ellipse1_1"
+                              Canvas.Left="353.6784266214"
+                              Canvas.Top="-1.83446500034989E-06"
+                              Width="13.88892"
+                              Height="13.33337"
+                              RenderTransformOrigin="0,0"
+                              Stroke="#FF000000"
+                              StrokeThickness="0">
+                                        <RSIEllipse.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="180" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIEllipse.RenderTransform>
+                                        <RSIEllipse.Fill>
+                                            <RadialGradientBrush>
+                                                <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                                <GradientStop Offset="1" Color="#FF000000" />
+                                            </RadialGradientBrush>
+                                        </RSIEllipse.Fill>
+                                    </RSIEllipse>
+                                    <RSIPath x:Name="Polygon1_1"
+                           Canvas.Left="348.5858366214"
+                           Canvas.Top="4.888897165535"
+                           Width="3.703735"
+                           Height="3.555565"
+                           Data="M0.2857143,0 L0,0.2857143 0,0.7142857 0.2857143,1 0.7142857,1 1,0.7142857 1,0.2857143 0.7142857,0 z"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="0">
+                                        <RSIPath.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="180" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIPath.RenderTransform>
+                                        <RSIPath.Fill>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="1" Color="#FF666666" />
+                                                <GradientStop Offset="0" Color="#FF000000" />
+                                            </LinearGradientBrush>
+                                        </RSIPath.Fill>
+                                    </RSIPath>
+                                </RSICanvas>
+                            </RSICanvas>
+                            <RSIText x:Name="Label"
+                         Canvas.Left="132.9999666214"
+                         Canvas.Top="6.052093165535"
+                         Width="Auto"
+                         Height="Auto"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding LABEL}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold" />
+                        </RSIGrid>
+                    </RSIViewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+</ResourceDictionary>

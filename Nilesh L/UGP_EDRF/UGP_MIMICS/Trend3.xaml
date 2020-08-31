@@ -1,0 +1,58 @@
+﻿<RSISynoptic
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:trends="clr-namespace:RSI.Emulation.Controls.Control.Trends;assembly=RSI.Emulation.Controls"
+	mc:Ignorable="d"
+	x:Class="UGP_EDRF.UGP_MIMICS.Trend3"
+	Background="LightGray"
+	Height="1048"
+	Width="1920">
+
+    <!-- 8 channels max, from 1 to 8:		 -->
+    <!-- 	$TAGNAME  : tag name		 -->
+    <!-- 	$TAGLABEL : label /Optional	 --> 
+    <!-- 	$MIN      : borned min		 -->
+    <!-- 	$MAX      : borned max		 -->
+    <!-- 	$VALUE    : value to trend	 -->
+    <!-- 	$UNIT     : unit /Optional	 -->
+    <trends:RSITrend_H8 >
+        <trends:RSITrend_H8.Parameters>
+
+            <Param Name="$TAGNAME1" Value="r005B_SPD_TGT_T"/>
+            <Param Name="$TAGLABEL1" Value="TURBINE TARGET SP"/>
+            <Param Name="$MIN1" Value="r005B_SPD_TGT_T.LowerRange"/>
+            <Param Name="$MAX1" Value="r005B_SPD_TGT_T.UpperRange"/>
+            <Param Name="$VALUE1" Value="r005B_SPD_TGT_T.Value"/>
+            <Param Name="$UNIT1" Value="r005B_SPD_TGT_T.Value.Unit"/>
+
+            <Param Name="$TAGNAME2" Value="r005B_SIC956_SP_T"/>
+            <Param Name="$TAGLABEL2" Value="TURBINE ACTUAL SP"/>
+            <Param Name="$MIN2" Value="r005B_SIC956_SP_T.LowerRange"/>
+            <Param Name="$MAX2" Value="r005B_SIC956_SP_T.UpperRange"/>
+            <Param Name="$VALUE2" Value="r005B_SIC956_SP_T.Value"/>
+            <Param Name="$UNIT2" Value="r005B_SIC956_SP_T.Value.Unit"/>
+
+
+            <Param Name="$TAGNAME3" Value="M39_005SIT0956"/>
+            <Param Name="$TAGLABEL3" Value="TURBINE ACTUAL SPEED"/>
+            <Param Name="$MIN3" Value="M39_005SIT0956.LowerRange"/>
+            <Param Name="$MAX3" Value="M39_005SIT0956.UpperRange"/>
+            <Param Name="$VALUE3" Value="M39_005SIT0956.Value"/>
+            <Param Name="$UNIT3" Value="M39_005SIT0956.Value.Unit"/>
+
+
+            <Param Name="$TAGNAME4" Value="r005B_PV_0232_T"/>
+            <Param Name="$TAGLABEL4" Value="GV"/>
+            <Param Name="$MIN4" Value="r005B_PV_0232_T.LowerRange"/>
+            <Param Name="$MAX4" Value="r005B_PV_0232_T.UpperRange"/>
+            <Param Name="$VALUE4" Value="r005B_PV_0232_T.Value"/>
+            <Param Name="$UNIT4" Value="r005B_PV_0232_T.Value.Unit"/>
+
+
+
+        </trends:RSITrend_H8.Parameters>
+    </trends:RSITrend_H8>
+
+</RSISynoptic>

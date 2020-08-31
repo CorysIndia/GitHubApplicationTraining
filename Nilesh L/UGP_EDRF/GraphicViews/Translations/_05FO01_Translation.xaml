@@ -1,0 +1,211 @@
+<UserControl x:Class="UGP_EDRF._05FO01_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+    <RSICanvas Width="1500"
+             Height="750.000001907349"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+        <hmi:Background_Disp x:Name="Background_Disp1"
+                         Canvas.Top="1.907349E-06"
+                         Width="1500"
+                         Height="750" />
+        <hmi:SYM_TITLE_BAR_01 x:Name="SYM_TITLE_BAR_011"
+                          Width="1500"
+                          Height="32.986"
+                          
+                          PREV_RECENT="PREV"
+                          TRAIN_CLR="GREY" />
+        <hmi:NameplateResetPanel_III x:Name="Panel"
+                                 Canvas.Left="596"
+                                 Canvas.Top="60.000001907349"
+                                 Width="308"
+                                 Height="28" LABELDescription01="K-0003A TRIPS" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO21"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="649.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05XS0951 - HI-HI SPEED ALARM (ESD)" ModelName="05XS0951_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO20"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="619.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05XS0084 - K-0003A CCS S/D TO ESD" ModelName="05XS0084_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO19"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="589.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="TUV_SD - LOSS OF CONTROL SIGNAL (ESD)" ModelName="05TUV_SD_1_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO18"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="559.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05TSLL0220 - C-0001 DEMETHANIZER COLUMN - 2003 LL" ModelName="05TSLL0220_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO17"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="529.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05TSLL0014 - LL TEMPERATURE AT RESIDUE GAS FR E-0004A/B" ModelName="05TSLL0014_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO16"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="499.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05TSHH0154 - RESIDUE GAS FR K-0003A TO E-0004A - HH" ModelName="05TSHH0154_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO15"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="469.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05TSHH0017 - DRY FEED GAS FRM D-0009A/B TO E-0004A - HH" ModelName="05TSHH0017_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO14"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="439.999801907349"
+                           Width="450.3998"
+                           Height="30.00003" DESCR="05TSLL0220 - C-0001 DEMETHANIZER COLUMN - 2003 LL" ModelName="05TSLL0220_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO13"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="409.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05PSLL3006 - K-0003A/B INLET PRESSURE - LL" ModelName="05PSLL3006_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO12"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="379.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05PSLL0174 - RSIDUE GAS FR E-0004A/B TP K-0003 - LL" ModelName="05PSLL0174_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO11"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="349.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05PSHH3006 - K-0003A/B INLET PRESSURE - HH" ModelName="05PSHH3006_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO10"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="319.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05PSHH0269 - SALES GAS TO K-007A/B/C/D FR. K-0003B - HH" ModelName="05PSHH0269_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO09"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="290.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05PDLL3003 - K-0003A/B INLET PRESSURE - LL" ModelName="05PDSLL3003_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO08"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="260.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05PDHH3008 - RESIDUE GAS TO K-0003A - HH" ModelName="05PDSHH3008_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO07"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="230.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05PDHH0176 - FEED GAS FR D-0011 TO K-0003A - HH" ModelName="05PDSHH0176_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO06"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="200.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05LSHH0073 - C-0001 DEMETHANIZER COLUMN - HH TRIP" ModelName="05LSHH0073_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO05"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="170.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05LSHH0023 - D-0011 EXPANDER FEED SEPERATOR - HH TRIP" ModelName="05LSHH0023_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO04"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="140.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="03ZCX0203 - ESD P2P UNIT 3 TO UNIT 5 003-ZV-0148 - CLOSE LS IND" ModelName="03ZCX0203_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO03"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="110.000001907349"
+                           Width="450.3998"
+                           Height="29.99999" DESCR="03ZCX0204 - ESD P2P UNIT 3 TO UNIT 5 M39-003-ZV-0148 - LCP TEST/SD ALARM" ModelName="03ZCX0204_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO36"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="529.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZX0205" ModelName="05ZX0205_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO35"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="499.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZX0204" ModelName="05ZX0204_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO34"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="469.999801907349"
+                           Width="450.3998"
+                           Height="30.00003" DESCR="05ZX0202" ModelName="05ZX0202_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO33"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="439.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZX0201" ModelName="05ZX0201_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO32"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="409.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZX0122" ModelName="05ZX0122_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO31"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="379.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZX0121" ModelName="05ZX0121_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO30"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="350.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZX0101" ModelName="05ZX0101_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO29"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="320.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZX0092" ModelName="XXX" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO28"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="290.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZHS0700C" ModelName="05ZHS0700C_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO27"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="260.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZHS0700B" ModelName="05ZHS0700B_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO26"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="230.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZHS0700A" ModelName="05ZHS0700A_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO25"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="200.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05XXIL0506" ModelName="05XXIL0506_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO24"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="170.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05XX0506" ModelName="05XX0506_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO23"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="140.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05XS3050" ModelName="05XS3050_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO22"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="110.000001907349"
+                           Width="450.3998"
+                           Height="30.00001" DESCR="05XS3049" ModelName="05XS3049_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO40"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="619.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZXIL0121" ModelName="05ZXIL0121_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO39"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="589.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZXIL0101" ModelName="05ZXIL0101_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO38"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="559.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="05ZX0227" ModelName="05ZX0227_FO" />
+    </RSICanvas>
+</UserControl>

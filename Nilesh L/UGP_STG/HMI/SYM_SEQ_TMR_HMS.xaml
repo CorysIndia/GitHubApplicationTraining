@@ -1,0 +1,161 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_SEQ_TMR_HMS}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_SEQ_TMR_HMS}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="100"
+                         Height="43"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIText x:Name="TextBox7"
+                         Canvas.Left="20"
+                         Width="60"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text=""
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextWrapping="Wrap"
+                         Visibility="Hidden">
+                  <RSIText.BorderBrush>Transparent</RSIText.BorderBrush>
+                  <RSIText.Animations>
+                    <!--  User Input  -->
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="TextBox6"
+                         Canvas.Left="63"
+                         Canvas.Top="23"
+                         Width="20"
+                         Height="20"
+                         VerticalContentAlignment="Center"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text=":"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.BorderBrush>Transparent</RSIText.BorderBrush>
+                </RSIText>
+                <RSIText x:Name="TextBox5"
+                         Canvas.Left="28"
+                         Canvas.Top="23"
+                         Width="20"
+                         Height="20"
+                         VerticalContentAlignment="Center"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text=":"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.BorderBrush>Transparent</RSIText.BorderBrush>
+                </RSIText>
+                <RSIText x:Name="TextBox2"
+                         Canvas.Left="35"
+                         Canvas.Top="23"
+                         Width="30"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{Value 0,
+                                      Converter={FormatConverter {}{0:##}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.BorderBrush>Transparent</RSIText.BorderBrush>
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value MM}" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="TextBox4"
+                         Canvas.Left="20"
+                         Width="60"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{Value -1*(VALUE / 3600),
+                                      Converter={FormatConverter {}{0:0.##}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.BorderBrush>Transparent</RSIText.BorderBrush>
+                  <RSIText.Animations>
+                    <Animation>
+                      <!--  Value Calculation ="-1*(VALUE / 3600)"  -->
+                      <ChangeText Text="ValueCalculation" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="TextBox1"
+                         Canvas.Top="23"
+                         Width="30"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{Value 0,
+                                      Converter={FormatConverter {}{0:##}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.BorderBrush>Transparent</RSIText.BorderBrush>
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value HH}" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="TextBox3"
+                         Canvas.Left="70"
+                         Canvas.Top="23"
+                         Width="30"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{Value 0,
+                                      Converter={FormatConverter {}{0:##}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.BorderBrush>Transparent</RSIText.BorderBrush>
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value SS}" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

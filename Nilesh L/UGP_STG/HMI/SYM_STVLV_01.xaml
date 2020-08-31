@@ -1,0 +1,816 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_STVLV_01}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_STVLV_01}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+                            <RSICanvas Width="126"
+                         Height="62"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                                <RSIText x:Name="LABEL_HORZ"
+                         Canvas.Top="43"
+                         Width="87"
+                         Height="19"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding TAGNAME}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         Visibility="{TemplateBinding Orientation, Converter={EqualConverter HORZ}}"/>
+                                <RSIText x:Name="LABEL_VERT"
+                         Canvas.Left="55"
+                         Canvas.Top="19"
+                         Width="71"
+                         Height="18"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding TAGNAME}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         Visibility="{TemplateBinding Orientation, Converter={EqualConverter VERT}}"/>
+                                <RSICanvas x:Name="CLOSE_VERT"
+                           Width="30"
+                           Height="18.75003"
+                           Canvas.Left="649.9998"
+                           Canvas.Top="131.9999"
+                           Visibility="{TemplateBinding Orientation, Converter={EqualConverter VERT}}">
+                                    <RSIRectangle x:Name="ValveBody"
+                                Canvas.Left="-608.6409"
+                                Canvas.Top="-102.6961"
+                                Width="3.392944"
+                                Height="4.255432"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="LeftFlange"
+                                Canvas.Left="-615.8749"
+                                Canvas.Top="-89.1247000000001"
+                                Width="3.392944"
+                                Height="18.75006"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle1"
+                                Canvas.Left="-613.1089"
+                                Canvas.Top="-92.5176"
+                                Width="3.392822"
+                                Height="12.97882"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIPath x:Name="Polygon1"
+                           Canvas.Left="-613.1089"
+                           Canvas.Top="-95.7068"
+                           Width="6.98938"
+                           Height="12.97882"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FFE0E0E0"
+                           StrokeThickness="0">
+                                        <RSIPath.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIPath.RenderTransform>
+                                    </RSIPath>
+                                    <RSIRectangle x:Name="Left"
+                                Canvas.Left="-612.8963"
+                                Canvas.Top="-116.1246"
+                                Width="3.392822"
+                                Height="12.97894"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="-90" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIPath x:Name="LeftReduce"
+                           Canvas.Left="-612.8962"
+                           Canvas.Top="-112.9354"
+                           Width="6.98938"
+                           Height="12.97882"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FFE0E0E0"
+                           StrokeThickness="0">
+                                        <RSIPath.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="-90" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIPath.RenderTransform>
+                                    </RSIPath>
+                                    <RSIRectangle x:Name="RightFlange"
+                                Canvas.Left="-615.8749"
+                                Canvas.Top="-115.7318"
+                                Width="3.392822"
+                                Height="18.75006"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                </RSICanvas>
+                                <RSICanvas x:Name="OPEN_VERT"
+                           Width="30"
+                           Height="18.75003"
+                           Canvas.Left="649.9998"
+                           Canvas.Top="131.9999"
+                           Visibility="{TemplateBinding Orientation, Converter={EqualConverter VERT}}">
+                                    <RSIRectangle x:Name="ValveBody_1"
+                                Canvas.Left="-608.641"
+                                Canvas.Top="-102.6961"
+                                Width="3.392944"
+                                Height="4.255432"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="LeftFlange_1"
+                                Canvas.Left="-615.875"
+                                Canvas.Top="-89.1247000000001"
+                                Width="3.392944"
+                                Height="18.75006"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle1_1"
+                                Canvas.Left="-613.109"
+                                Canvas.Top="-92.5176"
+                                Width="3.392822"
+                                Height="12.97882"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIPath x:Name="Polygon1_1"
+                           Canvas.Left="-613.109"
+                           Canvas.Top="-95.7068"
+                           Width="6.98938"
+                           Height="12.97882"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FFE0E0E0"
+                           StrokeThickness="0">
+                                        <RSIPath.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIPath.RenderTransform>
+                                    </RSIPath>
+                                    <RSIRectangle x:Name="Left_1"
+                                Canvas.Left="-612.8964"
+                                Canvas.Top="-116.1246"
+                                Width="3.392822"
+                                Height="12.97894"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="-90" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIPath x:Name="LeftReduce_1"
+                           Canvas.Left="-612.8962"
+                           Canvas.Top="-112.9354"
+                           Width="6.98938"
+                           Height="12.97882"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FFE0E0E0"
+                           StrokeThickness="0">
+                                        <RSIPath.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="-90" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIPath.RenderTransform>
+                                    </RSIPath>
+                                    <RSIRectangle x:Name="RightFlange_1"
+                                Canvas.Left="-615.875"
+                                Canvas.Top="-115.7318"
+                                Width="3.392822"
+                                Height="18.75006"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                </RSICanvas>
+                                <RSICanvas x:Name="CLOSE_HORZ"
+                           Width="30"
+                           Height="18.75"
+                           Canvas.Left="28"
+                           Canvas.Top="17"
+                           Visibility="{TemplateBinding Orientation, Converter={EqualConverter HORZ}}">
+                                    <RSIRectangle x:Name="ValveBody_2"
+                                Canvas.Left="13.5714"
+                                Canvas.Top="7.23399999999998"
+                                Width="3.392822"
+                                Height="4.25531"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" />
+                                    <RSIRectangle x:Name="LeftFlange_2"
+                                Width="3.392822"
+                                Height="18.75"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" />
+                                    <RSIRectangle x:Name="Rectangle1_2"
+                                Canvas.Left="3.39279999999997"
+                                Canvas.Top="2.76589999999999"
+                                Width="3.392883"
+                                Height="12.97876"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" />
+                                    <RSIPath x:Name="Polygon1_2"
+                           Canvas.Left="6.58219999999994"
+                           Canvas.Top="2.76589999999999"
+                           Width="6.989258"
+                           Height="12.97876"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           Stretch="Fill"
+                           Stroke="#FFE0E0E0"
+                           StrokeThickness="0" />
+                                    <RSIRectangle x:Name="Left_2"
+                                Canvas.Left="27"
+                                Canvas.Top="2.9787"
+                                Width="3.392822"
+                                Height="12.97876"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="180" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIPath x:Name="LeftReduce_2"
+                           Canvas.Left="23.8107"
+                           Canvas.Top="2.9787"
+                           Width="6.989258"
+                           Height="12.97876"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FFE0E0E0"
+                           StrokeThickness="0">
+                                        <RSIPath.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="180" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIPath.RenderTransform>
+                                    </RSIPath>
+                                    <RSIRectangle x:Name="RightFlange_2"
+                                Canvas.Left="26.6072"
+                                Width="3.392822"
+                                Height="18.75"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" />
+                                </RSICanvas>
+                                <RSICanvas x:Name="OPEN_HORZ"
+                           Width="30"
+                           Height="18.75"
+                           Canvas.Left="28"
+                           Canvas.Top="17"
+                           Visibility="{TemplateBinding Orientation, Converter={EqualConverter HORZ}}">
+                                    <RSIRectangle x:Name="ValveBody_3"
+                                Canvas.Left="13.5714"
+                                Canvas.Top="7.23399999999998"
+                                Width="3.392822"
+                                Height="4.25531"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" />
+                                    <RSIRectangle x:Name="LeftFlange_3"
+                                Width="3.392822"
+                                Height="18.75"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" />
+                                    <RSIRectangle x:Name="Rectangle1_3"
+                                Canvas.Left="3.39279999999997"
+                                Canvas.Top="2.76589999999999"
+                                Width="3.392883"
+                                Height="12.97876"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" />
+                                    <RSIPath x:Name="Polygon1_3"
+                           Canvas.Left="6.58219999999994"
+                           Canvas.Top="2.76589999999999"
+                           Width="6.989258"
+                           Height="12.97876"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           Stretch="Fill"
+                           Stroke="#FFE0E0E0"
+                           StrokeThickness="0" />
+                                    <RSIRectangle x:Name="Left_3"
+                                Canvas.Left="27"
+                                Canvas.Top="2.9787"
+                                Width="3.392822"
+                                Height="12.97876"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="180" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIPath x:Name="LeftReduce_3"
+                           Canvas.Left="23.8107"
+                           Canvas.Top="2.9787"
+                           Width="6.989258"
+                           Height="12.97876"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FFE0E0E0"
+                           StrokeThickness="0">
+                                        <RSIPath.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="180" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIPath.RenderTransform>
+                                    </RSIPath>
+                                    <RSIRectangle x:Name="RightFlange_3"
+                                Canvas.Left="26.6072"
+                                Width="3.392822"
+                                Height="18.75"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" />
+                                </RSICanvas>
+                                <RSICanvas x:Name="CONTROL_HORZ_CLOSED"
+                           Width="16.6875"
+                           Height="22.5"
+                           Canvas.Left="35"
+                           Canvas.Top="6" Visibility="{TemplateBinding Orientation, Converter={EqualConverter HORZ}}">
+                                    <RSIRectangle x:Name="ValveBody_4"
+                                Canvas.Left="6.64580000000001"
+                                Canvas.Top="18.75"
+                                Width="3.333313"
+                                Height="3.75"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter CONTROL}}" />
+                                    <RSIRectangle x:Name="ValveStem"
+                                Canvas.Left="6.64580000000001"
+                                Canvas.Top="7.5"
+                                Width="3.333313"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter CONTROL}}" />
+                                    <RSICanvas x:Name="Top"
+                             Width="16.66669"
+                             Height="7.6875"
+                             IsHitTestVisible="false"
+                             Canvas.Left="-0.0208000000000084"
+                             Canvas.Top="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter CONTROL}}">
+                                        <RSIPath x:Name="Arc1"
+                             Width="16.66669"
+                             Height="7.6875"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FFE0E0E0"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1" />
+                                    </RSICanvas>
+                                </RSICanvas>
+                                <RSICanvas x:Name="CONTROL_HORZ_OPEN"
+                           Width="16.6875"
+                           Height="22.5"
+                           Canvas.Left="35"
+                           Canvas.Top="6" Visibility="{TemplateBinding Orientation, Converter={EqualConverter HORZ}}">
+                                    <RSIRectangle x:Name="ValveBody_5"
+                                Canvas.Left="6.64580000000001"
+                                Canvas.Top="18.75"
+                                Width="3.333313"
+                                Height="3.75"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter CONTROL}}" />
+                                    <RSIRectangle x:Name="ValveStem_1"
+                                Canvas.Left="6.64580000000001"
+                                Canvas.Top="7.5"
+                                Width="3.333313"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter CONTROL}}" />
+                                    <RSICanvas x:Name="Top_1"
+                             Width="16.66669"
+                             Height="7.6875"
+                             IsHitTestVisible="false"
+                             Canvas.Left="-0.0208000000000084"
+                             Canvas.Top="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter CONTROL}}">
+                                        <RSIPath x:Name="Arc1_1"
+                             Width="16.66669"
+                             Height="7.6875"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FFE0E0E0"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1" />
+                                    </RSICanvas>
+                                </RSICanvas>
+                                <RSICanvas x:Name="ONOFF_HORZ_CLOSED"
+                           Width="16.6875"
+                           Height="18.75"
+                           Canvas.Left="35"
+                           Canvas.Top="6" Visibility="{TemplateBinding Orientation, Converter={EqualConverter HORZ}}">
+                                    <RSIRectangle x:Name="Rectangle5"
+                                Canvas.Left="6.33330000000001"
+                                Canvas.Top="7.5"
+                                Width="3.333313"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter ONOFF}}" />
+                                    <RSIRectangle x:Name="Rectangle8"
+                                Width="16.6875"
+                                Height="7.6875"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter ONOFF}}" />
+                                </RSICanvas>
+                                <RSICanvas x:Name="ONOFF_HORZ_OPEN"
+                           Width="16.6875"
+                           Height="18.75"
+                           Canvas.Left="35"
+                           Canvas.Top="6" Visibility="{TemplateBinding Orientation, Converter={EqualConverter HORZ}}">
+                                    <RSIRectangle x:Name="Rectangle5_1"
+                                Canvas.Left="6.33330000000001"
+                                Canvas.Top="7.5"
+                                Width="3.333313"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter ONOFF}}" />
+                                    <RSIRectangle x:Name="Rectangle8_1"
+                                Width="16.6875"
+                                Height="7.6875"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter ONOFF}}" />
+                                </RSICanvas>
+                                <RSICanvas x:Name="CONTROL_VERT_CLOSED"
+                           Width="16.6875"
+                           Height="22.49998"
+                           Canvas.Left="657.0001"
+                           Canvas.Top="121" Visibility="{TemplateBinding Orientation, Converter={EqualConverter VERT}}">
+                                    <RSIRectangle x:Name="ValveBody_6"
+                                Canvas.Left="-615.1251"
+                                Canvas.Top="-91.7709"
+                                Width="3.333313"
+                                Height="3.749939"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter CONTROL}}">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="ValveStem_2"
+                                Canvas.Left="-626.3751"
+                                Canvas.Top="-91.7709"
+                                Width="3.333313"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter CONTROL}}">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSICanvas x:Name="Top_2"
+                             Width="16.66669"
+                             Height="7.6875"
+                             IsHitTestVisible="false"
+                             Canvas.Left="656.9792"
+                             Canvas.Top="121" Visibility="{TemplateBinding HEAD, Converter={EqualConverter CONTROL}}">
+                                        <RSIPath x:Name="Arc1_2"
+                             Canvas.Left="-1290.8543"
+                             Canvas.Top="-206.1042"
+                             Width="16.66669"
+                             Height="7.6875"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FFE0E0E0"
+                             RenderTransformOrigin="0.0299999580000588,0.0650406504065041"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                                            <RSIPath.RenderTransform>
+                                                <RotateTransform Angle="-90" />
+                                            </RSIPath.RenderTransform>
+                                        </RSIPath>
+                                    </RSICanvas>
+                                </RSICanvas>
+                                <RSICanvas x:Name="CONTROL_VERT_OPEN"
+                           Width="16.6875"
+                           Height="22.49998"
+                           Canvas.Left="656.1876"
+                           Canvas.Top="120.875" Visibility="{TemplateBinding Orientation, Converter={EqualConverter VERT}}">
+                                    <RSIRectangle x:Name="ValveBody_7"
+                                Canvas.Left="-614.4376"
+                                Canvas.Top="-90.8334"
+                                Width="3.333313"
+                                Height="3.749939"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter CONTROL}}">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="ValveStem_3"
+                                Canvas.Left="-625.6876"
+                                Canvas.Top="-90.8334"
+                                Width="3.333313"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FF000000"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter CONTROL}}">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSICanvas x:Name="Top_3"
+                             Width="16.66669"
+                             Height="7.6875"
+                             IsHitTestVisible="false"
+                             Canvas.Left="656.1667"
+                             Canvas.Top="120.875" Visibility="{TemplateBinding HEAD, Converter={EqualConverter CONTROL}}">
+                                        <RSIPath x:Name="Arc1_3"
+                             Canvas.Left="-1289.3543"
+                             Canvas.Top="-205.0416"
+                             Width="16.66669"
+                             Height="7.6875"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FFE0E0E0"
+                             RenderTransformOrigin="0.0299999580000588,0.0650406504065041"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                                            <RSIPath.RenderTransform>
+                                                <RotateTransform Angle="-90" />
+                                            </RSIPath.RenderTransform>
+                                        </RSIPath>
+                                    </RSICanvas>
+                                </RSICanvas>
+                                <RSICanvas x:Name="ONOFF_VERT_CLOSED"
+                           Width="16.6875"
+                           Height="18.74998"
+                           Canvas.Left="656.9999"
+                           Canvas.Top="120.9999" Visibility="{TemplateBinding Orientation, Converter={EqualConverter VERT}}">
+                                    <RSIRectangle x:Name="Rectangle5_2"
+                                Canvas.Left="-626.3751"
+                                Canvas.Top="-91.458"
+                                Width="3.333374"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter ONOFF}}">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle8_2"
+                                Canvas.Left="-633.8751"
+                                Canvas.Top="-85.1247000000001"
+                                Width="16.6875"
+                                Height="7.6875"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter ONOFF}}">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                </RSICanvas>
+                                <RSICanvas x:Name="ONOFF_VERT_OPEN"
+                           Width="16.6875"
+                           Height="18.74998"
+                           Canvas.Left="656.1876"
+                           Canvas.Top="120.8751" Visibility="{TemplateBinding Orientation, Converter={EqualConverter VERT}}">
+                                    <RSIRectangle x:Name="Rectangle5_3"
+                                Canvas.Left="-625.6876"
+                                Canvas.Top="-90.5209"
+                                Width="3.333374"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter ONOFF}}">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle8_3"
+                                Canvas.Left="-633.1876"
+                                Canvas.Top="-84.1876"
+                                Width="16.6875"
+                                Height="7.6875"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" Visibility="{TemplateBinding HEAD, Converter={EqualConverter ONOFF}}">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                </RSICanvas>
+                                <RSIText x:Name="FO"
+                         Canvas.Left="58"
+                         Width="32"
+                         Height="20"
+                         VerticalContentAlignment="Center"
+                         Background="#00EFEFEF"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="FO"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         Visibility="{TemplateBinding FAIL, Converter={EqualConverter OPEN}}" />
+                                <RSIText x:Name="FC"
+                         Canvas.Left="58"
+                         Width="32"
+                         Height="20"
+                         VerticalContentAlignment="Center"
+                         Background="#00EFEFEF"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="FC"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         Visibility="{TemplateBinding FAIL, Converter={EqualConverter CLOSE}}" />
+                                <RSIText x:Name="FS"
+                         Canvas.Left="58"
+                         Width="32"
+                         Height="20"
+                         VerticalContentAlignment="Center"
+                         Background="#00EFEFEF"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="FS"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         Visibility="{TemplateBinding FAIL, Converter={EqualConverter STEADY}}" />
+                                <RSICanvas x:Name="ThreeWay"
+                           Width="16.96436"
+                           Height="18.75"
+                           Canvas.Left="650.275"
+                           Canvas.Top="132.275"
+                           Visibility="{TemplateBinding ThreeWay, Converter={EqualConverter true}}">
+                                    <RSIRectangle x:Name="ValveBody_8"
+                                Canvas.Left="-608.641"
+                                Canvas.Top="-103.2464"
+                                Width="3.392822"
+                                Height="4.255371"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="LeftFlange_4"
+                                Canvas.Left="-615.875"
+                                Canvas.Top="-89.675"
+                                Width="3.392822"
+                                Height="18.75"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle1_4"
+                                Canvas.Left="-613.109"
+                                Canvas.Top="-93.0678"
+                                Width="3.392822"
+                                Height="12.97876"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIPath x:Name="Polygon1_4"
+                           Canvas.Left="-613.109"
+                           Canvas.Top="-96.2572"
+                           Width="6.989258"
+                           Height="12.97876"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FFE0E0E0"
+                           StrokeThickness="0">
+                                        <RSIPath.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIPath.RenderTransform>
+                                    </RSIPath>
+                                </RSICanvas>
+                            </RSICanvas>
+                            <RSI_HandValve ModelName="{TemplateBinding FailureFaceplateName}" Style="{DynamicResource UGP_ValveActuatorMalfunction}" Height="1.52" Width="2.292" HorizontalAlignment="Left" Margin="34.828,-1.52,0,0" VerticalAlignment="Top" FODFaceplateName="" MaintenanceFaceplateName="" BorderBrush="Transparent" Foreground="Transparent" ColorOpen="Transparent" ColorTravel="Transparent" ColorClose="Transparent"/>
+
+                        </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

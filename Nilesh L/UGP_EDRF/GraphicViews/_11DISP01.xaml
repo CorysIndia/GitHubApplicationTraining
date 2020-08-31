@@ -1,0 +1,76 @@
+<UserControl 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+             xmlns:local="clr-namespace:UGP_EDRF" 
+             xmlns:HMI="clr-namespace:UGP_EDRF.HMI" x:Class="UGP_EDRF._11DISP01" 
+             mc:Ignorable="d">
+    <Grid>
+        <!--  Graphic Part  -->
+        <local:_11DISP01_Translation x:Name="GRAPHIC" d:IsLocked="True"  />
+
+        <!-- Normal Graphic Layer Path -->
+        <Canvas x:Name="GRAPHIC_OVERLAY" d:IsLocked="True"/>
+
+        <!-- FOD Part -->
+        <Canvas x:Name='FOD' Visibility="{FODBinding}" d:IsLocked="True">
+            <RSIText x:Name="TextBox1_Copy"
+                Canvas.Left="596.699"
+                Canvas.Top="638.24"
+                Width="66.801"
+                Height="20"
+                VerticalContentAlignment="Center"
+                BorderBrush="Transparent"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="NGL FILL LINE"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" />
+            <HMI:Arrow x:Name="EmbeddedSymbol7"
+        Canvas.Left="767.167"
+        Canvas.Top="642.136"
+        Width="15"
+        Height="14.12"
+        RenderTransformOrigin="0,0"
+        Type="Main">
+                <HMI:Arrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Arrow.RenderTransform>
+            </HMI:Arrow>
+            <HMI:Pipeline x:Name="EmbeddedSymbol45_Copy"
+        Canvas.Left="668.5"
+        Canvas.Top="648.44"
+        Width="85.987"
+        Height="3"
+        Line="Main"
+        RenderTransformOrigin="0,0"/>
+            <RSI_GlobeValve Style="{DynamicResource UGP_GlobeValve}" Height="17" Width="31.666" Canvas.Left="692.054" Canvas.Top="641.24" RenderTransformOrigin="0.5,0.5" ModelName="A_R37BA059949001MV01"/>
+            <!-- Start FOD -->
+            <!-- Stop FOD -->
+        </Canvas>
+
+        <!-- BL Part -->
+        <Canvas x:Name='BL' Visibility='{BLBinding}' >
+            <RSI_StdBatteryLimit Canvas.Left="353" Canvas.Top="715.5" ModelName="BLI_UGPETHANERECOVERY_01"/>
+            <RSI_StdBatteryLimit Canvas.Left="24" Canvas.Top="278.833" ModelName="BLI_UGPETHANERECOVERY_04"/>
+            <RSI_StdBatteryLimit Canvas.Left="1132" Canvas.Top="720" ModelName="BLO_UGPETHANERECOVERY_02"/>
+            <RSI_StdBatteryLimit Canvas.Left="788" Canvas.Top="715.5" ModelName="BLO_UGPETHANERECOVERY_01"/>
+            <RSI_StdBatteryLimit Canvas.Left="668" Canvas.Top="621.5" ModelName="BLI_UGPETHANERECOVERY_02"/>
+            <!-- Start BL -->
+            <!-- Stop BL -->
+        </Canvas>
+
+        <!-- FAILURE Part -->
+        <Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' d:IsLocked="True" >
+            <!-- Start FAILURE -->
+            <!-- Stop FAILURE -->
+        </Canvas>
+
+    </Grid>
+</UserControl>

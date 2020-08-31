@@ -1,0 +1,224 @@
+﻿<RSIFacePlate
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="UGP_EDRF.FoxFaceplates.Controller.Detail.FoxboroPIDDetailTune">
+	<RSICanvas  >
+        <Rectangle Canvas.Top="30"
+			Width="855"
+			Height="240"
+			Fill="#555555"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <Rectangle Width="855"
+			Height="30"
+			Fill="#555555"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <TextBlock Canvas.Left="10"
+			Canvas.Top="9"
+			Background="#555555"
+			FontFamily="Arial"
+			FontSize="10.667"
+			FontWeight="Bold"
+			Foreground="#FFFFFF"
+			Text="TUNE" />
+        <Rectangle Canvas.Top="30"
+			Width="210"
+			Height="240"
+			Fill="#858585"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <TextBlock Canvas.Left="10"
+			Canvas.Top="74"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="INCOPT" />
+        <TextBlock Canvas.Left="10"
+			Canvas.Top="44"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="MODOPT" />
+        <RSIText Canvas.Left="85"
+			Canvas.Top="40"
+			Width="65"
+			Height="20"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="PO">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.MODOPT == 1">
+                    <ChangeText Text="IO" />
+                </Animation>
+                <Animation Condition="$TAGNAME.MODOPT == 2">
+                    <ChangeText Text="PD" />
+                </Animation>
+                <Animation Condition="$TAGNAME.MODOPT == 3">
+                    <ChangeText Text="PI" />
+                </Animation>
+                <Animation Condition="$TAGNAME.MODOPT == 4">
+                    <ChangeText Text="PID" />
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText Canvas.Left="85"
+			Canvas.Top="70"
+			Width="65"
+			Height="20"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="N">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.INCOPT == 1">
+                    <ChangeText Text="Y" />
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <Rectangle Canvas.Left="215"
+			Canvas.Top="30"
+			Width="210"
+			Height="240"
+			Fill="#858585"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <Rectangle Canvas.Left="430"
+			Canvas.Top="30"
+			Width="210"
+			Height="240"
+			Fill="#858585"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <Rectangle Canvas.Left="645"
+			Canvas.Top="30"
+			Width="210"
+			Height="240"
+			Fill="#858585"
+			Stroke="#FFFFFF"
+			StrokeThickness="1" />
+        <TextBlock Canvas.Left="230"
+			Canvas.Top="44"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="PBAND" />
+        <RSIText Canvas.Left="305"
+			Canvas.Top="40"
+			Width="95"
+			Height="20"
+			HorizontalContentAlignment="Right"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#FFFFFF"
+			Text="\$TAGNAME.PBAND:#.##\">
+            <RSIText.Animations>
+                <Animation Condition="#input == 16">
+                    <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                    <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                </Animation>
+                <ClickAnimation>
+                    <Assignment Expression="16" Variable="#input" />
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <TextBlock Canvas.Left="445"
+			Canvas.Top="44"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="INT" />
+        <RSIText Canvas.Left="520"
+			Canvas.Top="40"
+			Width="95"
+			Height="20"
+			HorizontalContentAlignment="Right"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#FFFFFF"
+			Text="\$TAGNAME.INT:#.####\">
+            <RSIText.Animations>
+                <Animation Condition="#input == 17">
+                    <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                    <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                </Animation>
+                <ClickAnimation>
+                    <Assignment Expression="17" Variable="#input" />
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <TextBlock Canvas.Left="660"
+			Canvas.Top="44"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="DERIV" />
+        <RSIText Canvas.Left="735"
+			Canvas.Top="40"
+			Width="95"
+			Height="20"
+			HorizontalContentAlignment="Right"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#FFFFFF"
+			Text="\$TAGNAME.DERIV:#.####\">
+            <RSIText.Animations>
+                <Animation Condition="#input == 18">
+                    <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                    <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                </Animation>
+                <ClickAnimation>
+                    <Assignment Expression="18" Variable="#input" />
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <TextBlock Canvas.Left="660"
+			Canvas.Top="129"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#C8C8C8"
+			Text="KD" />
+        <RSIText Canvas.Left="735"
+			Canvas.Top="125"
+			Width="95"
+			Height="20"
+			HorizontalContentAlignment="Right"
+			VerticalContentAlignment="Center"
+			Background="#858585"
+			FontFamily="Fixedsys"
+			FontSize="10.667"
+			Foreground="#FFFFFF"
+			Text="\$TAGNAME.KD:#.##\">
+            <RSIText.Animations>
+                <Animation Condition="#input == 19">
+                    <ChangePropertyValue PropertyName="BorderBrush" Value="Yellow"/>
+                    <ChangePropertyValue PropertyName="BorderThickness" Value="2"/>
+                </Animation>
+                <ClickAnimation>
+                    <Assignment Expression="19" Variable="#input" />
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+
+</RSIFacePlate>

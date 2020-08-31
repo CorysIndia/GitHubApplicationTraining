@@ -1,0 +1,26 @@
+<RSIFacePlate x:Class="UGP_STG.HMI.PIC_0191S"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_STG.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+  <RSICanvas Width="315"
+             Height="397"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:ContFpSpeedNoDCS x:Name="ContFpSpeedNoDCS1"
+                          Width="315"
+                          Height="397" />
+    <hmi:COSwitchConf_01 x:Name="COSwitchConf_011"
+                         Canvas.Left="171.990102"
+                         Canvas.Top="236.015601"
+                         Width="97"
+                         Height="125"
+                         ConfirmIndirect="IADAS.3CCS_D_CS01.03SW_AUT_DCS.IN"
+                         FeedbackIndirect="IADAS.3CCS_D_CS01.03SW_AUTO.CIN"
+                         LeftMessage="DO YOU WANT TO ENABLE STONEWALL CONTROL?"
+                         NameStore="CONFIRMATION_SCREEN"
+                         RightMessage="DO YOU WANT TO DISABLE STONEWALL CONTROL?" />
+  </RSICanvas>
+</RSIFacePlate>

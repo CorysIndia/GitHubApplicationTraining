@@ -1,0 +1,65 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_NORMAL}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_NORMAL}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="200.4851"
+                         Height="50.4742"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIRectangle x:Name="DirectAction"
+                              Width="200"
+                              Height="50"
+                              Stroke="Black"
+                              StrokeThickness="1" Fill="#FF9A9A9A">
+                                    <RSIRectangle.Animations>
+                                        <!--
+                      SetCustomPropertyValue("BP", "IADAS." + PICK1 +".IN",0);
+                      SetCustomPropertyValue("FB", "IADAS." + PICK2 +".CIN",0);
+                      
+                      BP=false;
+                    -->
+                                        <ClickAnimation Condition="ESD_NORMAL.IN == false">
+                                            <Open WindowName="ESD_CONFIRMATION_SCREEN" Title="CONFIRMATION SCREEN"/>
+                                        </ClickAnimation>
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                <!--<RSIRectangle x:Name="Rectangle1"
+                              Canvas.Left="0.485099999999989"
+                              Canvas.Top="0.474199999999996"
+                              Width="200"
+                              Height="50"
+                              Fill="#FF000099"
+                              Stroke="#FFFFFFFF"
+                              StrokeThickness="1" />-->
+                <RSIText x:Name="TextBox7"
+                         Canvas.Left="44.4851"
+                         Canvas.Top="15.4742"
+                         Width="112"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="Black"
+                         IsHitTestVisible="False"
+                         Text="NORMAL"
+                         TextElement.FontFamily="Courier New"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold" />
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

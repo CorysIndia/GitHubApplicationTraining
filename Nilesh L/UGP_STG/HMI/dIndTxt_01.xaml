@@ -1,0 +1,120 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:dIndTxt_01}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:dIndTxt_01}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="305"
+                         Height="30"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSICanvas Name="Group1"
+                           Width="305"
+                           Height="30"
+                           Left="0"
+                           Top="0">
+                  <RSIRectangle x:Name="Rectangle3"
+                                Width="305"
+                                Height="30"
+                                Stroke="#FF343434"
+                                StrokeThickness="1">
+                    <RSIRectangle.Fill>
+                      <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                        <GradientStop Offset="0.5" Color="#FF000000" />
+                        <GradientStop Offset="0" Color="#FFBFBFBF" />
+                        <GradientStop Offset="1" Color="#FFBFBFBF" />
+                      </LinearGradientBrush>
+                    </RSIRectangle.Fill>
+                  </RSIRectangle>
+                  <RSIRectangle x:Name="Rectangle4"
+                                Canvas.Left="3"
+                                Canvas.Top="3"
+                                Width="299"
+                                Height="24"
+                                Stroke="#FF000000"
+                                StrokeThickness="1">
+                    <RSIRectangle.Fill>
+                      <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="1" Color="#FF666666" />
+                        <GradientStop Offset="0" Color="#FF343434" />
+                      </LinearGradientBrush>
+                    </RSIRectangle.Fill>
+                  </RSIRectangle>
+                  <RSIText x:Name="Description"
+                           Canvas.Left="257.8071"
+                           Canvas.Top="7.5206"
+                           Width="88.8418"
+                           Height="14.5235"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Foreground="#FF00FFFF"
+                           RenderTransformOrigin="0,0"
+                           Text="DESCRIPTION"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10"
+                           TextElement.FontWeight="Bold">
+                    <RSIText.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIText.RenderTransform>
+                    <RSIText.Animations>
+                      <Animation>
+                        <ChangeText Text="ModeTxt" />
+                      </Animation>
+                      <Animation Condition="Blink">
+                        <Blink PropertyName="Foreground" To="#FFFFFFFF" />
+                      </Animation>
+                      <Animation Condition="TxtCol, Converter={IsEqualTo }">
+                        <ChangeColor Color="#FF00FF00" />
+                      </Animation>
+                      <Animation Condition="TxtCol, Converter={IsEqualTo }">
+                        <ChangeColor Color="#FFFF0000" />
+                      </Animation>
+                      <Animation Condition="TxtCol, Converter={IsEqualTo }">
+                        <ChangeColor Color="#FFFFFF00" />
+                      </Animation>
+                      <Animation Condition="TxtCol, Converter={IsEqualTo }">
+                        <ChangeColor Color="#FF00FFFF" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                </RSICanvas>
+                <RSIText x:Name="Description_1"
+                         Canvas.Left="132.5327"
+                         Canvas.Top="8"
+                         Width="124.2236"
+                         Height="14.52344"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FFFFFFFF"
+                         IsHitTestVisible="False"
+                         RenderTransformOrigin="0,0"
+                         Text="OPERATING MODE:"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold">
+                  <RSIText.RenderTransform>
+                    <TransformGroup>
+                      <RotateTransform Angle="180" />
+                      <ScaleTransform ScaleX="1" ScaleY="-1" />
+                    </TransformGroup>
+                  </RSIText.RenderTransform>
+                </RSIText>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

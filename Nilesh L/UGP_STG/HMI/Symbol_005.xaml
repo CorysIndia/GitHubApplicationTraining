@@ -1,0 +1,48 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:Symbol_005}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:Symbol_005}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="310.4"
+                         Height="80"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIRectangle x:Name="Rectangle2"
+                              Width="310"
+                              Height="80"
+                              Stroke="#FF000000"
+                              StrokeThickness="1">
+                  <RSIRectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                      <GradientStop Offset="0.5" Color="#FFFFFFFF" />
+                      <GradientStop Offset="0" Color="#FF9A9A9A" />
+                      <GradientStop Offset="1" Color="#FF9A9A9A" />
+                    </LinearGradientBrush>
+                  </RSIRectangle.Fill>
+                </RSIRectangle>
+                <RSIPath x:Name="PolyLine2"
+                         Canvas.Left="-0.399999999999977"
+                         Canvas.Top="34"
+                         Width="310.8"
+                         Height="12"
+                         Data="M0,0 L0.03125,0 0.0625,1 0.09375,0 0.125,1 0.15625,0 0.1875,1 0.21875,0 0.25,1 0.28125,0 0.3125,1 0.34375,0 0.375,1 0.40625,0 0.4375,1 0.46875,0 0.5,1 0.53125,0 0.5625,1 0.59375,0 0.625,1 0.65625,0 0.6875,1 0.71875,0 0.75,1 0.78125,0 0.8125,1 0.84375,0 0.875,1 0.90625,0 0.9375,1 0.96875,0 1,0 "
+                         Stretch="Fill"
+                         Stroke="#FFFFFFFF"
+                         StrokeThickness="2" />
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

@@ -1,0 +1,296 @@
+<UserControl x:Class="UGP_EDRF._07CAT01_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+    <RSICanvas Width="1500"
+             Height="750"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+        <hmi:Background_Disp x:Name="Background_Disp1"
+                         Width="1500"
+                         Height="750" />
+        <hmi:SYM_TITLE_1 x:Name="SYM_TITLE_11"
+                     Width="1500"
+                     Height="32.986"
+                     BP_NAV="false"
+                     BYPASS="ACT_1"
+                     DisplayTitle="UNIT 7 : NGL STORAGE FACILITY"
+                     DispName="07CAT01"
+                     ESD_NAV="false"
+                     H_H2S_NAV="true"
+                     H_LEL_NAV="true"
+                     H2S="ACT"
+                     H2S_LEL_4="NO_ACT"
+                     HH_H2S_NAV="true"
+                     HH_LEL_NAV="true"
+                     LEL="ACT"
+                     NAV_H2S2="true"
+                     NAV_LEL2="true"
+                     NEXT_ALM="False"
+                     NextDisplay="09CAT01"
+                     OverviewDisplay="M39_CAT"
+                     PREV_RECENT="PREV"
+                     PreviousDisplay="06CAT01"
+                     TRAIN_CLR="GREY" />
+        <hmi:SYM_CAT_NAV x:Name="SYM_CAT_NAV1"
+                     Canvas.Left="450"
+                     Canvas.Top="152"
+                     Width="290"
+                     Height="60"
+                     DISP="07DISP01"
+                     PRT="7" />
+        <hmi:SYM_CAT_NAV x:Name="SYM_CAT_NAV2"
+                     Canvas.Left="450"
+                     Canvas.Top="235"
+                     Width="290"
+                     Height="60"
+                     DISP="07DISP02"
+                     PRT="7" />
+        <hmi:SYM_CAT_NAV x:Name="SYM_CAT_NAV3"
+                     Canvas.Left="450"
+                     Canvas.Top="318"
+                     Width="290"
+                     Height="60"
+                     DISP="07DISP03"
+                     PRT="7" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol1"
+                     Canvas.Left="450"
+                     Canvas.Top="401"
+                     Width="290"
+                     Height="60"
+                     DISP="07DISP04"
+                     PRT="7" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol2"
+                     Canvas.Left="450"
+                     Canvas.Top="484"
+                     Width="290"
+                     Height="60"
+                     DISP="07DISP05"
+                     PRT="7" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol5"
+                     Canvas.Left="860"
+                     Canvas.Top="69"
+                     Width="290"
+                     Height="60"
+                     DISP="07ESD01"
+                     PRT="7" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol6"
+                     Canvas.Left="860"
+                     Canvas.Top="152"
+                     Width="290"
+                     Height="60"
+                     DISP="07ESD02"
+                     PRT="7" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol3"
+                     Canvas.Left="860"
+                     Canvas.Top="235"
+                     Width="290"
+                     Height="60"
+                     DISP="07ESD03"
+                     PRT="7" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol4"
+                     Canvas.Left="860"
+                     Canvas.Top="318"
+                     Width="290"
+                     Height="60"
+                     DISP="07ESD04"
+                     PRT="7" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol8"
+                     Canvas.Left="450"
+                     Canvas.Top="69"
+                     Width="290"
+                     Height="60"
+                     DISP="07OVIEW01"
+                     PRT="7" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol7"
+                     Canvas.Left="450"
+                     Canvas.Top="567"
+                     Width="290"
+                     Height="60"
+                     DISP="07DISP06"
+                     PRT="7" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol9"
+                     Canvas.Left="450"
+                     Canvas.Top="650"
+                     Width="290"
+                     Height="60"
+                     DISP="07DISP07"
+                     PRT="7" />
+        <RSIText x:Name="rSIText_Copy" Height="19" Canvas.Left="450" Text="NGL STORAGE FACILITY OVERVIEW" Canvas.Top="77.327" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07OVIEW01"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy1" Height="19" Canvas.Left="450" Text="M39-D-0014A/B" Canvas.Top="101.667" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07OVIEW01"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy2" Height="19" Canvas.Left="450" Text="NGL PRODUCT SURGE SPHERES" Canvas.Top="159.827" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07DISP01"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy3" Height="19" Canvas.Left="450" Text="M39-D-0014A" Canvas.Top="184.167" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07DISP01"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy4" Height="19" Canvas.Left="450" Text="NGL PRODUCT SURGE SPHERES" Canvas.Top="243.66" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07DISP02"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy5" Height="19" Canvas.Left="450" Text="M39-D-0014B" Canvas.Top="268" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07DISP02"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy6" Height="19" Canvas.Left="450" Text="NGL PRODUCT BOOSTER PUMPS" Canvas.Top="327.66" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07DISP03"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy7" Height="19" Canvas.Left="450" Text="M39-G-0002 A/B" Canvas.Top="352" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07DISP03"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy8" Height="19" Canvas.Left="450" Text="NGL PRODUCT PIPELINE PUMPS" Canvas.Top="411.16" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07DISP04"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy9" Height="19" Canvas.Left="450" Text="M39-G-0003 A/B" Canvas.Top="435.5" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07DISP04"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy10" Height="19" Canvas.Left="450" Text="NGL PRODUCT TO PIPELINE" Canvas.Top="504.16" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07DISP05"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy11" Height="19" Canvas.Left="450" Text="VMS FOR M39-G-0002 A/B" Canvas.Top="586.827" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07DISP06"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy12" Height="19" Canvas.Left="450" Text="VMS FOR M39-G-0003 A/B" Canvas.Top="671.827" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07DISP07"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy13" Height="19" Canvas.Left="870" Text="UNIT 07 ESD BYPASS" Canvas.Top="88.007" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07ESD01"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy14" Height="19" Canvas.Left="870" Text="UNIT 07 ESD BYPASS" Canvas.Top="170.507" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07ESD02"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy15" Height="19" Canvas.Left="860" Text="UNIT 07 ESD BYPASS" Canvas.Top="254.34" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07ESD03"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy16" Height="19" Canvas.Left="860" Text="UNIT 07 ESD BYPASS" Canvas.Top="338.34" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07ESD04"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol4_Copy"
+            Canvas.Left="860"
+            Canvas.Top="401"
+            Width="290"
+            Height="60"
+            DISP="07ESD04"
+            PRT="7" />
+        <RSIText x:Name="rSIText_Copy17" Height="19" Canvas.Left="860" Text="UNIT 07 ESD BYPASS" Canvas.Top="421.84" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07ESD05"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol4_Copy1"
+            Canvas.Left="860"
+            Canvas.Top="484"
+            Width="290"
+            Height="60"
+            DISP="07ESD04"
+            PRT="7" />
+        <RSIText x:Name="rSIText_Copy18" Height="19" Canvas.Left="860" Text="UNIT 07 ESD BYPASS" Canvas.Top="504.16" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07ESD06"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol4_Copy2"
+            Canvas.Left="860"
+            Canvas.Top="567"
+            Width="290"
+            Height="60"
+            DISP="07ESD04"
+            PRT="7" />
+        <RSIText x:Name="rSIText_Copy19" Height="19" Canvas.Left="860" Text="UNIT 07 ESD BYPASS" Canvas.Top="586.827" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07ESD07"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol4_Copy3"
+            Canvas.Left="860"
+            Canvas.Top="650"
+            Width="290"
+            Height="60"
+            DISP="07ESD04"
+            PRT="7" />
+        <RSIText x:Name="rSIText_Copy20" Height="19" Canvas.Left="860" Text="UNIT 07 ESD BYPASS" Canvas.Top="671.827" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="07ESD08"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+</UserControl>

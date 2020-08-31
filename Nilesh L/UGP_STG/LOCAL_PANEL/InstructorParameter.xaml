@@ -1,0 +1,61 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="PetroRabigh_CDU.LocalPanel.InstructorParameter"
+	Width="450" 
+	Height="25"
+	Background="LightGray">
+    <RSICanvas  >
+        <RSIText x:Name="Description1" Canvas.Left="0"  Text="\$PROG.TC01[0]\" Canvas.Top="0.4" Width="160" Height="25" VerticalContentAlignment="Center"/>
+        <RSIText x:Name="T0Param" Canvas.Left="165"  Text="\$PROG.Xd02:#.##\ \$PROG.UserData\" Width="90" Height="25" VerticalContentAlignment="Center" Canvas.Top="0" TextAlignment="Center">
+            <RSIText.Animations>
+                <Animation Condition="$Prog.Xi32==1">
+                    <ChangePropertyValue PropertyName="Visibility" Value="Hidden"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="Tparam" Canvas.Left="165"  Text="\$PROG.Yd02:#.##\ \$PROG.UserData\" Width="90" Height="25" VerticalContentAlignment="Center" Canvas.Top="0" TextAlignment="Center">
+            <RSIText.Animations>
+                <Animation Condition="$Prog.Xi32==0">
+                    <ChangePropertyValue PropertyName="Visibility" Value="Hidden"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="Target" Canvas.Left="240"  Text="\$PROG.X02:#.##\" Width="70" Height="25" VerticalContentAlignment="Center" Canvas.Top="0" IsInput="True" Background="White" TextAlignment="Center">
+            <RSIText.Animations>
+                <Animation Condition="$PROG.Xi32==1">
+                    <ChangePropertyValue PropertyName="IsEnabled" Value="False"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="Ramp" Canvas.Left="315.582"  Text="\$PROG.X01:#\" Width="30" Height="25" VerticalContentAlignment="Center" Canvas.Top="0" VerticalAlignment="Center" IsInput="True" Background="White" TextAlignment="Center" HorizontalAlignment="Center">
+            <RSIText.Animations>
+                <Animation Condition="$PROG.Xi32==1">
+                    <ChangePropertyValue PropertyName="Visibility" Value="Hidden"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="Timer" Canvas.Left="315.582"  Text="\$PROG.Y01:#\" Width="30" Height="25" VerticalContentAlignment="Center" Canvas.Top="0" TextAlignment="Center" HorizontalContentAlignment="Center">
+            <RSIText.Animations>
+                <Animation Condition="$PROG.Xi32==0">
+                    <ChangePropertyValue PropertyName="Visibility" Value="Hidden"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="Time_unit" Canvas.Left="348" Text="s" Width="10" Height="25" VerticalContentAlignment="Center" Canvas.Top="0" TextAlignment="Center"/>
+        <RSIButton x:Name="StartButton" Content="Start" Canvas.Left="367.5" Canvas.Top="2.5" Width="80" Height="23" Focusable="False" VerticalAlignment="Center" Padding="0" FontSize="11">
+            <RSIButton.Animations>
+                <Animation Condition="$PROG.Xi32==1">
+                    <ChangePropertyValue PropertyName="Content " Value="In Progress"/>
+                    <ChangePropertyValue PropertyName="IsEnabled" Value="False"/>
+                </Animation>
+                <ClickAnimation>
+                    <Assignment Expression="1" Variable="$PROG.Xi32"/>
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+    </RSICanvas>
+</RSIControl>

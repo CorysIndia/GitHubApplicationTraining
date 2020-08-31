@@ -1,0 +1,1594 @@
+<UserControl x:Class="UGP_EDRF.OVERVIEW_M39_K0007A_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+    <RSICanvas Width="1917.00000476837"
+             Height="959.90049062"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+        <hmi:LOWER_DATA_BAR_M39_K_0007A x:Name="LOWER_DATA_BAR_M39_K_0007A1"
+                                    Canvas.Left="0.315129668372"
+                                    Canvas.Top="821.90049062"
+                                    Width="1909"
+                                    Height="138" />
+        <RSIBorder x:Name="Line1"
+               Canvas.Left="121.250004768372"
+               Canvas.Top="421.67219062"
+               Width="1.5"
+               Height="33.88641">
+            <RSIPath Data="M121.250004768372,455.55859062 L121.250004768372,421.67219062"
+               Stretch="Fill"
+               Stroke="#FF420000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line2"
+               Canvas.Left="123.250004768372"
+               Canvas.Top="676.27809062"
+               Width="1.5"
+               Height="33.88629">
+            <RSIPath Data="M123.250004768372,710.16439062 L123.250004768372,676.27809062"
+               Stretch="Fill"
+               Stroke="#FF420000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSICanvas Name="Group1"
+               Width="21"
+               Height="10.07434"
+               Left="502.000004768372"
+               Top="635.81489062">
+            <RSIBorder x:Name="Line3"
+                 Canvas.Left="-0.750099999999975"
+                 Canvas.Top="-0.750099999999975"
+                 Width="11.99997"
+                 Height="10.07434">
+                <RSIPath Data="M-0.750099999999975,-0.750099999999975 L11.2499,9.32420000000002"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line4"
+                 Canvas.Left="11.2498000000001"
+                 Canvas.Top="-0.750099999999975"
+                 Width="9"
+                 Height="10.07428">
+                <RSIPath Data="M11.2498000000001,9.32410000000004 L20.2498000000001,-0.750099999999975"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+        </RSICanvas>
+        <RSICanvas Name="Group2"
+               Width="20"
+               Height="10.07434"
+               Left="522.000004768372"
+               Top="635.81489062">
+            <RSIBorder x:Name="Line3_1"
+                 Canvas.Left="-0.750099999999975"
+                 Canvas.Top="-0.750099999999975"
+                 Width="11"
+                 Height="10.07434">
+                <RSIPath Data="M-0.750099999999975,-0.750099999999975 L10.2499,9.32420000000002"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line4_1"
+                 Canvas.Left="10.2498000000001"
+                 Canvas.Top="-0.750099999999975"
+                 Width="9"
+                 Height="10.07428">
+                <RSIPath Data="M10.2498000000001,9.32410000000004 L19.2498000000001,-0.750099999999975"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+        </RSICanvas>
+        <RSICanvas Name="Group3"
+               Width="20"
+               Height="10.07434"
+               Left="542.000004768372"
+               Top="635.81489062">
+            <RSIBorder x:Name="Line3_2"
+                 Canvas.Left="-0.750099999999975"
+                 Canvas.Top="-0.750099999999975"
+                 Width="11"
+                 Height="10.07434">
+                <RSIPath Data="M-0.750099999999975,-0.750099999999975 L10.2499,9.32420000000002"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line4_2"
+                 Canvas.Left="10.2498000000001"
+                 Canvas.Top="-0.750099999999975"
+                 Width="9"
+                 Height="10.07428">
+                <RSIPath Data="M10.2498000000001,9.32410000000004 L19.2498000000001,-0.750099999999975"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+        </RSICanvas>
+        <RSICanvas Name="Group4"
+               Width="20"
+               Height="10.07434"
+               Left="572.000004768372"
+               Top="635.81489062">
+            <RSIBorder x:Name="Line3_3"
+                 Canvas.Left="-0.750099999999975"
+                 Canvas.Top="-0.750099999999975"
+                 Width="11"
+                 Height="10.07434">
+                <RSIPath Data="M-0.750099999999975,-0.750099999999975 L10.2499,9.32420000000002"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line4_3"
+                 Canvas.Left="10.2498000000001"
+                 Canvas.Top="-0.750099999999975"
+                 Width="9"
+                 Height="10.07428">
+                <RSIPath Data="M10.2498000000001,9.32410000000004 L19.2498000000001,-0.750099999999975"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+        </RSICanvas>
+        <RSIBorder x:Name="Line3_4"
+               Canvas.Left="581.250004768372"
+               Canvas.Top="543.48009062"
+               Width="1.5"
+               Height="100.7432">
+            <RSIPath Data="M581.250004768372,644.22329062 L581.250004768372,543.48009062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line4_4"
+               Canvas.Left="721.250004768372"
+               Canvas.Top="541.64829062"
+               Width="59"
+               Height="1.5">
+            <RSIPath Data="M721.250004768372,541.64829062 L780.250004768372,541.64829062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line5"
+               Canvas.Left="721.250004768372"
+               Canvas.Top="479.37059062"
+               Width="60"
+               Height="1.5">
+            <RSIPath Data="M721.250004768372,479.37059062 L781.250004768372,479.37059062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line6"
+               Canvas.Left="464.250004768372"
+               Canvas.Top="616.74789062"
+               Width="47"
+               Height="1.5">
+            <RSIPath Data="M464.250004768372,616.74789062 L511.250004768372,616.74789062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line7"
+               Canvas.Left="511.250004768372"
+               Canvas.Top="616.74789062"
+               Width="1.5"
+               Height="27.4754">
+            <RSIPath Data="M511.250004768372,616.74789062 L511.250004768372,644.22329062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line8"
+               Canvas.Left="321.250004768372"
+               Canvas.Top="616.74789062"
+               Width="49"
+               Height="1.5">
+            <RSIPath Data="M321.250004768372,616.74789062 L370.250004768372,616.74789062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line9"
+               Canvas.Left="321.250004768372"
+               Canvas.Top="555.38609062"
+               Width="54"
+               Height="1.5">
+            <RSIPath Data="M321.250004768372,555.38609062 L375.250004768372,555.38609062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line10"
+               Canvas.Left="317.250004768372"
+               Canvas.Top="478.45479062"
+               Width="59"
+               Height="1.5">
+            <RSIPath Data="M317.250004768372,478.45479062 L376.250004768372,478.45479062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line11"
+               Canvas.Left="779.250004768372"
+               Canvas.Top="402.43929062"
+               Width="1.5"
+               Height="311.2708">
+            <RSIPath Data="M779.250004768372,713.71019062 L779.250004768372,402.43929062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line12"
+               Canvas.Left="319.250004768372"
+               Canvas.Top="414.34539062"
+               Width="1.5"
+               Height="366.3394">
+            <RSIPath Data="M319.250004768372,414.34539062 L319.250004768372,780.68479062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <hmi:BLOCK_DIAG x:Name="BLOCK_DIAG1"
+                    Canvas.Left="227.000204768372"
+                    Canvas.Top="367.47129062"
+                    Width="1179"
+                    Height="21.06451" />
+        <hmi:CompressorBasic x:Name="CompressorBasic1"
+                         Canvas.Left="802.925"
+                         Canvas.Top="329.945"
+                         Width="336.325"
+                         Height="127.429" />
+        <RSIBorder x:Name="Line13"
+               Canvas.Left="318.250004768372"
+               Canvas.Top="781.60069062"
+               Width="589.4"
+               Height="1.5">
+            <RSIPath Data="M318.250004768372,781.60069062 L907.650004768372,781.60069062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line14"
+               Canvas.Left="546.250004768372"
+               Canvas.Top="670.78299062"
+               Width="1.5"
+               Height="87.92139">
+            <RSIPath Data="M546.250004768372,758.70439062 L546.250004768372,670.78299062"
+               Stretch="Fill"
+               Stroke="#FF420000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:BLOCK_DIAG x:Name="BLOCK_DIAG2"
+                    Canvas.Left="14.999984768372"
+                    Canvas.Top="348.83119062"
+                    Width="239.0001"
+                    Height="74.50684" />
+        <hmi:Valve_a x:Name="Valve_a1"
+                 Canvas.Left="526.000104768372"
+                 Canvas.Top="753.95939062"
+                 Width="42"
+                 Height="36.63391"
+                 FillColor="Red" ModelName="M39_006FCV0003" />
+        <hmi:ButtonBackPanel_HT x:Name="ButtonBackPanel_HT1"
+                            Canvas.Left="31.415"
+                            Canvas.Top="367.471"
+                            Width="204.335"
+                            Height="38.466" ZFullSpeedStatus="f006A_NSTOP" ZRunningStatus="f006A_RUN" ZStoppedStatus="f006A_SHUTDN" ZAccel="f006A_STARTUP" />
+        <RSIText x:Name="Text2"
+             Canvas.Left="520.000004768372"
+             Canvas.Top="797.92009062"
+             Width="65"
+             Height="15.34766"
+             HorizontalAlignment="Left"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="FCV-0003"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="10"
+             TextElement.FontWeight="Bold" />
+        <hmi:fIND_D_01_S1_M_III x:Name="fIND_D_01_S1_M_III1"
+                            Canvas.Left="2.000023768372"
+                            Canvas.Top="195.70259062"
+                            Width="306"
+                            Height="27.47545"
+                            GraphicTagName="MODE"
+                            TagName="MODE"
+                            Tooltip="False" TagDescrp="MODE 0: SHUTDOWN" ModelName="f006A_SHUTDN" />
+        <hmi:NameplateResetPanel_III x:Name="NameplateResetPanel_III1"
+                                 Canvas.Top="166.90039062"
+                                 Width="308"
+                                 Height="25.64377" LABELDescription01="OPERATING MODE" />
+        <hmi:fIND_D_01_S1_M_III x:Name="fIND_D_01_S1_M_III2"
+                            Canvas.Left="2.000021768372"
+                            Canvas.Top="223.17799062"
+                            Width="306"
+                            Height="27.47545"
+                            GraphicTagName="MODE"
+                            TagName="MODE"
+                            Tooltip="False" TagDescrp="MODE 1: STARTUP" ModelName="f006A_STARTUP" />
+        <hmi:fIND_D_01_S1_M_III x:Name="fIND_D_01_S1_M_III3"
+                            Canvas.Left="2.000021768372"
+                            Canvas.Top="250.65349062"
+                            Width="306"
+                            Height="27.47546"
+                            GraphicTagName="MODE"
+                            TagName="MODE"
+                            Tooltip="False" TagDescrp="MODE 2: RUN" ModelName="f006A_RUN" />
+        <hmi:fIND_D_01_S1_M_III x:Name="fIND_D_01_S1_M_III4"
+                            Canvas.Left="2.000021768372"
+                            Canvas.Top="278.12899062"
+                            Width="306"
+                            Height="27.47546"
+                            GraphicTagName="MODE"
+                            TagName="MODE"
+                            Tooltip="False" TagDescrp="MODE 3: NORMAL STOP" ModelName="f006A_NSTOP" />
+        <hmi:PID_Display2_9Letter x:Name="PID_Display2_9Letter1"
+                              Canvas.Left="499.600004768372"
+                              Canvas.Top="645.88919062"
+                              Width="88.39999"
+                              Height="33.88635"
+                              NameStore="FIC-0003" ModelName="M39_006FIC0003" />
+        <RSIPath x:Name="Polygon1"
+             Canvas.Left="770.000004768372"
+             Canvas.Top="543.31419062"
+             Width="21"
+             Height="13.73773"
+             Data="M0,0 L1,0 0.5714286,1 z"
+             Fill="#FF848484"
+             Stretch="Fill"
+             Stroke="#FFC0C0C0"
+             StrokeThickness="1" />
+        <RSIPath x:Name="Polygon2"
+             Canvas.Left="643.000004768372"
+             Canvas.Top="774.10799062"
+             Width="21"
+             Height="13.73773"
+             Data="M1,0 L1,1 0,0.3333333 z"
+             Fill="#FF848484"
+             Stretch="Fill"
+             Stroke="#FFC0C0C0"
+             StrokeThickness="1" />
+        <RSIBorder x:Name="Line15"
+               Canvas.Left="581.250004768372"
+               Canvas.Top="543.48009062"
+               Width="73"
+               Height="1.5">
+            <RSIPath Data="M581.250004768372,543.48009062 L654.250004768372,543.48009062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line16"
+               Canvas.Left="461.250004768372"
+               Canvas.Top="555.38609062"
+               Width="70"
+               Height="1.5">
+            <RSIPath Data="M461.250004768372,555.38609062 L531.250004768372,555.38609062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line17"
+               Canvas.Left="531.250004768372"
+               Canvas.Top="555.38609062"
+               Width="1.5"
+               Height="88.83716">
+            <RSIPath Data="M531.250004768372,555.38609062 L531.250004768372,644.22329062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line18"
+               Canvas.Left="462.250004768372"
+               Canvas.Top="479.37059062"
+               Width="89"
+               Height="1.5">
+            <RSIPath Data="M462.250004768372,479.37059062 L551.250004768372,479.37059062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line19"
+               Canvas.Left="551.250004768372"
+               Canvas.Top="479.37059062"
+               Width="1.5"
+               Height="164.8527">
+            <RSIPath Data="M551.250004768372,479.37059062 L551.250004768372,644.22329062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIText x:Name="Text4"
+             Canvas.Left="472.000004768372"
+             Canvas.Top="345.49089062"
+             Width="141.2046"
+             Height="24.55618"
+             HorizontalAlignment="Left"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="M39-K0007A"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="16"
+             TextElement.FontWeight="Bold" />
+        <RSIPath x:Name="Polygon3"
+             Canvas.Left="282.000004768372"
+             Canvas.Top="676.11219062"
+             Width="15"
+             Height="19.23285"
+             Data="M0,1 L0,0 1,0.4285714 z"
+             Fill="#FF848484"
+             Stretch="Fill"
+             Stroke="#FFC0C0C0"
+             StrokeThickness="1" />
+        <RSIText x:Name="Text5"
+             Canvas.Left="11.000004768372"
+             Canvas.Top="759.45439062"
+             Width="219"
+             Height="13.30127"
+             HorizontalAlignment="Left"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="FROM Compressor Suction Header"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="9"
+             TextElement.FontWeight="Bold" />
+        <RSIPath x:Name="Polygon4"
+             Canvas.Left="309.000004768372"
+             Canvas.Top="549.72509062"
+             Width="21"
+             Height="13.73773"
+             Data="M1,1 L0,1 0.5238096,0 z"
+             Fill="#FF848484"
+             Stretch="Fill"
+             Stroke="#FFC0C0C0"
+             StrokeThickness="1" />
+        <RSIBorder x:Name="Line20"
+               Canvas.Left="569.250004768372"
+               Canvas.Top="482.11819062"
+               Width="81"
+               Height="1.5">
+            <RSIPath Data="M569.250004768372,482.11819062 L650.250004768372,482.11819062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line21"
+               Canvas.Left="567.250004768372"
+               Canvas.Top="482.11819062"
+               Width="1.5"
+               Height="153.8625">
+            <RSIPath Data="M567.250004768372,635.98069062 L567.250004768372,482.11819062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSICanvas Name="Group6"
+               Width="20"
+               Height="10.07434"
+               Left="558.000004768372"
+               Top="632.15149062">
+            <RSIBorder x:Name="Line22"
+                 Canvas.Left="-0.75019999999995"
+                 Canvas.Top="-0.75019999999995"
+                 Width="11"
+                 Height="10.07434">
+                <RSIPath Data="M-0.75019999999995,-0.75019999999995 L10.2498000000001,9.32420000000002"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line23"
+                 Canvas.Left="10.2498000000001"
+                 Canvas.Top="-0.75019999999995"
+                 Width="9"
+                 Height="10.07434">
+                <RSIPath Data="M10.2498000000001,9.32420000000002 L19.2498000000001,-0.75019999999995"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+        </RSICanvas>
+        <RSIBorder x:Name="Line22_1"
+               Canvas.Left="228.250004768372"
+               Canvas.Top="685.43649062"
+               Width="88"
+               Height="1.5">
+            <RSIPath Data="M228.250004768372,685.43649062 L316.250004768372,685.43649062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line23_1"
+               Canvas.Left="226.250004768372"
+               Canvas.Top="632.31729062"
+               Width="1.5"
+               Height="105.3226">
+            <RSIPath Data="M226.250004768372,632.31729062 L226.250004768372,737.63989062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line24"
+               Canvas.Left="141.250004768372"
+               Canvas.Top="632.31729062"
+               Width="82"
+               Height="1.5">
+            <RSIPath Data="M141.250004768372,632.31729062 L223.250004768372,632.31729062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <hmi:Valve_a x:Name="Valve_a3"
+                 Canvas.Left="103.000004768372"
+                 Canvas.Top="604.67599062"
+                 Width="42"
+                 Height="36.63391"
+                 FillColor="Green" ModelName="M39_006FCV0005A" />
+        <RSIBorder x:Name="Line25"
+               Canvas.Left="143.250004768372"
+               Canvas.Top="737.63989062"
+               Width="82"
+               Height="1.5">
+            <RSIPath Data="M143.250004768372,737.63989062 L225.250004768372,737.63989062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <hmi:Valve_a x:Name="Valve_a4"
+                 Canvas.Left="103.000004768372"
+                 Canvas.Top="709.08279062"
+                 Width="42"
+                 Height="36.63391"
+                 FillColor="Green" ModelName="M39_006FCV0005B" />
+        <RSIBorder x:Name="Line26"
+               Canvas.Left="20.250004768372"
+               Canvas.Top="631.40149062"
+               Width="82"
+               Height="1.5">
+            <RSIPath Data="M20.250004768372,631.40149062 L102.250004768372,631.40149062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line27"
+               Canvas.Left="17.250004768372"
+               Canvas.Top="735.80819062"
+               Width="82"
+               Height="1.5">
+            <RSIPath Data="M17.250004768372,735.80819062 L99.250004768372,735.80819062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <RSIPath x:Name="Polygon6"
+             Canvas.Left="56.000004768372"
+             Canvas.Top="622.99299062"
+             Width="15"
+             Height="19.23285"
+             Data="M0,1 L0,0 1,0.4285714 z"
+             Fill="#FF848484"
+             Stretch="Fill"
+             Stroke="#FFC0C0C0"
+             StrokeThickness="1" />
+        <RSIPath x:Name="Polygon7"
+             Canvas.Left="57.000004768372"
+             Canvas.Top="727.39969062"
+             Width="15"
+             Height="19.23285"
+             Data="M0,1 L0,0 1,0.4285714 z"
+             Fill="#FF848484"
+             Stretch="Fill"
+             Stroke="#FFC0C0C0"
+             StrokeThickness="1" />
+        <RSIBorder x:Name="Line28"
+               Canvas.Left="123.250004768372"
+               Canvas.Top="569.12379062"
+               Width="1.5"
+               Height="33.88641">
+            <RSIPath Data="M123.250004768372,603.01019062 L123.250004768372,569.12379062"
+               Stretch="Fill"
+               Stroke="#FF420000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:Type1_AO_Display_9Letter x:Name="Type1_AO_Display_9Letter3"
+                                  Canvas.Left="79.000004768372"
+                                  Canvas.Top="655.04769062"
+                                  Width="91.00002"
+                                  Height="34.80225" ZTAG="FCV-0005B" ModelName="r006A_FCV_0005B" />
+        <RSIText x:Name="Text8"
+             Canvas.Left="481.000004768372"
+             Canvas.Top="372.13639062"
+             Width="124"
+             Height="24.55621"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="1st STAGE"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="16"
+             TextElement.FontWeight="Bold" />
+        <RSICanvas Name="Group7"
+               Width="21"
+               Height="10.07434"
+               Left="1130.00000476837"
+               Top="639.47829062">
+            <RSIBorder x:Name="Line29"
+                 Canvas.Left="-0.75"
+                 Canvas.Top="-0.75"
+                 Width="12"
+                 Height="10.07434">
+                <RSIPath Data="M-0.75,-0.75 L11.25,9.32429999999999"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line30"
+                 Canvas.Left="11.25"
+                 Canvas.Top="-0.750099999999975"
+                 Width="9"
+                 Height="10.0744">
+                <RSIPath Data="M11.25,9.32429999999999 L20.25,-0.750099999999975"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+        </RSICanvas>
+        <RSICanvas Name="Group8"
+               Width="20"
+               Height="10.07434"
+               Left="1150.00000476837"
+               Top="639.47829062">
+            <RSIBorder x:Name="Line29_1"
+                 Canvas.Left="-0.75"
+                 Canvas.Top="-0.75"
+                 Width="11"
+                 Height="10.07434">
+                <RSIPath Data="M-0.75,-0.75 L10.25,9.32429999999999"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line30_1"
+                 Canvas.Left="10.25"
+                 Canvas.Top="-0.750099999999975"
+                 Width="9"
+                 Height="10.0744">
+                <RSIPath Data="M10.25,9.32429999999999 L19.25,-0.750099999999975"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+        </RSICanvas>
+        <RSICanvas Name="Group9"
+               Width="20"
+               Height="10.07434"
+               Left="1170.00000476837"
+               Top="639.47829062">
+            <RSIBorder x:Name="Line29_2"
+                 Canvas.Left="-0.75"
+                 Canvas.Top="-0.75"
+                 Width="11"
+                 Height="10.07434">
+                <RSIPath Data="M-0.75,-0.75 L10.25,9.32429999999999"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line30_2"
+                 Canvas.Left="10.25"
+                 Canvas.Top="-0.750099999999975"
+                 Width="9"
+                 Height="10.0744">
+                <RSIPath Data="M10.25,9.32429999999999 L19.25,-0.750099999999975"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+        </RSICanvas>
+        <RSICanvas Name="Group10"
+               Width="20"
+               Height="10.07434"
+               Left="1200.00000476837"
+               Top="639.47829062">
+            <RSIBorder x:Name="Line29_3"
+                 Canvas.Left="-0.75"
+                 Canvas.Top="-0.75"
+                 Width="11"
+                 Height="10.07434">
+                <RSIPath Data="M-0.75,-0.75 L10.25,9.32429999999999"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line30_3"
+                 Canvas.Left="10.25"
+                 Canvas.Top="-0.750099999999975"
+                 Width="9"
+                 Height="10.0744">
+                <RSIPath Data="M10.25,9.32429999999999 L19.25,-0.750099999999975"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+        </RSICanvas>
+        <RSIBorder x:Name="Line29_4"
+               Canvas.Left="1209.25000476837"
+               Canvas.Top="542.56419062"
+               Width="1.5"
+               Height="105.3226">
+            <RSIPath Data="M1209.25000476837,647.88679062 L1209.25000476837,542.56419062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line30_4"
+               Canvas.Left="1349.25000476837"
+               Canvas.Top="542.56419062"
+               Width="59"
+               Height="1.5">
+            <RSIPath Data="M1349.25000476837,542.56419062 L1408.25000476837,542.56419062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line31"
+               Canvas.Left="1349.25000476837"
+               Canvas.Top="485.78159062"
+               Width="60"
+               Height="1.5">
+            <RSIPath Data="M1349.25000476837,485.78159062 L1409.25000476837,485.78159062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line32"
+               Canvas.Left="1087.25000476837"
+               Canvas.Top="620.41129062"
+               Width="52"
+               Height="1.5">
+            <RSIPath Data="M1087.25000476837,620.41129062 L1139.25000476837,620.41129062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line33"
+               Canvas.Left="1139.25000476837"
+               Canvas.Top="620.41129062"
+               Width="1.5"
+               Height="27.47546">
+            <RSIPath Data="M1139.25000476837,620.41129062 L1139.25000476837,647.88679062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line34"
+               Canvas.Left="949.250004768372"
+               Canvas.Top="623.15879062"
+               Width="49"
+               Height="1.5">
+            <RSIPath Data="M949.250004768372,623.15879062 L998.250004768372,623.15879062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line35"
+               Canvas.Left="949.250004768372"
+               Canvas.Top="556.30189062"
+               Width="51"
+               Height="1.5">
+            <RSIPath Data="M949.250004768372,556.30189062 L1000.25000476837,556.30189062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line36"
+               Canvas.Left="945.250004768372"
+               Canvas.Top="482.11819062"
+               Width="53"
+               Height="1.5">
+            <RSIPath Data="M945.250004768372,482.11819062 L998.250004768372,482.11819062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line37"
+               Canvas.Left="1407.25000476837"
+               Canvas.Top="406.10269062"
+               Width="1.5"
+               Height="312.4477">
+            <RSIPath Data="M1407.25000476837,718.55039062 L1407.25000476837,406.10269062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line38"
+               Canvas.Left="947.250004768372"
+               Canvas.Top="364.60999062"
+               Width="1.5"
+               Height="349.5404">
+            <RSIPath Data="M947.250004768372,364.60999062 L947.250004768372,714.15039062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <hmi:CompressorBasic x:Name="CompressorBasic2"
+                         Canvas.Left="1408.75"
+                         Canvas.Top="329.945"
+                         Width="323.499"
+                         Height="114.818" />
+        <RSIBorder x:Name="Line39"
+               Canvas.Left="940.050004768372"
+               Canvas.Top="785.26399062"
+               Width="640.8"
+               Height="1.5">
+            <RSIPath Data="M940.050004768372,785.26399062 L1580.85000476837,785.26399062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line40"
+               Canvas.Left="1174.25000476837"
+               Canvas.Top="657.04519062"
+               Width="1.5"
+               Height="105.3226">
+            <RSIPath Data="M1174.25000476837,762.36779062 L1174.25000476837,657.04519062"
+               Stretch="Fill"
+               Stroke="#FF420000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:Valve_a x:Name="Valve_a5"
+                 Canvas.Left="1154.00000476837"
+                 Canvas.Top="757.62259062"
+                 Width="42"
+                 Height="36.63391"
+                 FillColor="Red" ModelName="M39_006FCV0022" />
+        <hmi:Type1_AO_Display_9Letter x:Name="Type1_AO_Display_9Letter4"
+                                  Canvas.Left="1128.00000476837"
+                                  Canvas.Top="699.00859062"
+                                  Width="91.00002"
+                                  Height="34.80225" ZTAG="FCV-0022" ModelName="F_M39_006FCV0022_AOUT" />
+        <RSIText x:Name="Text9"
+             Canvas.Left="1143.00000476837"
+             Canvas.Top="801.58339062"
+             Width="65"
+             Height="15.34766"
+             HorizontalAlignment="Left"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="FCV-0022"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="10"
+             TextElement.FontWeight="Bold" />
+        <hmi:PID_Display2_9Letter x:Name="PID_Display2_9Letter2"
+                              Canvas.Left="1128.60000476837"
+                              Canvas.Top="649.55259062"
+                              Width="88.4"
+                              Height="33.88635"
+                              NameStore="FIC-0022" ModelName="M39_006FIC0022" />
+        <RSIPath x:Name="Polygon8"
+             Canvas.Left="1398.00000476837"
+             Canvas.Top="546.97749062"
+             Width="21"
+             Height="13.73773"
+             Data="M0,0 L1,0 0.5714286,1 z"
+             Fill="#FF848484"
+             Stretch="Fill"
+             Stroke="#FFC0C0C0"
+             StrokeThickness="1" />
+        <RSIPath x:Name="Polygon9"
+             Canvas.Left="1271.00000476837"
+             Canvas.Top="777.77139062"
+             Width="21"
+             Height="13.73767"
+             Data="M1,0 L1,1 0,0.3333333 z"
+             Fill="#FF848484"
+             Stretch="Fill"
+             Stroke="#FFC0C0C0"
+             StrokeThickness="1" />
+        <RSIBorder x:Name="Line41"
+               Canvas.Left="1209.25000476837"
+               Canvas.Top="542.56419062"
+               Width="74"
+               Height="1.5">
+            <RSIPath Data="M1209.25000476837,542.56419062 L1283.25000476837,542.56419062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line42"
+               Canvas.Left="1090.25000476837"
+               Canvas.Top="556.30189062"
+               Width="69"
+               Height="1.5">
+            <RSIPath Data="M1090.25000476837,556.30189062 L1159.25000476837,556.30189062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line43"
+               Canvas.Left="1159.25000476837"
+               Canvas.Top="556.30189062"
+               Width="1.5"
+               Height="91.5849">
+            <RSIPath Data="M1159.25000476837,556.30189062 L1159.25000476837,647.88679062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line44"
+               Canvas.Left="1089.25000476837"
+               Canvas.Top="483.03399062"
+               Width="90"
+               Height="1.5">
+            <RSIPath Data="M1089.25000476837,483.03399062 L1179.25000476837,483.03399062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line45"
+               Canvas.Left="1179.25000476837"
+               Canvas.Top="483.03399062"
+               Width="1.5"
+               Height="164.8528">
+            <RSIPath Data="M1179.25000476837,483.03399062 L1179.25000476837,647.88679062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIText x:Name="Text10"
+             Canvas.Left="1104.00000476837"
+             Canvas.Top="349.15429062"
+             Width="141.2046"
+             Height="24.55618"
+             HorizontalAlignment="Left"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="M39-K0007A"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="16"
+             TextElement.FontWeight="Bold" />
+        <RSIPath x:Name="Polygon10"
+             Canvas.Left="937.000004768372"
+             Canvas.Top="553.38849062"
+             Width="21"
+             Height="13.73773"
+             Data="M1,1 L0,1 0.5238096,0 z"
+             Fill="#FF848484"
+             Stretch="Fill"
+             Stroke="#FFC0C0C0"
+             StrokeThickness="1" />
+        <RSIBorder x:Name="Line46"
+               Canvas.Left="1197.25000476837"
+               Canvas.Top="485.78159062"
+               Width="87"
+               Height="1.5">
+            <RSIPath Data="M1197.25000476837,485.78159062 L1284.25000476837,485.78159062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line47"
+               Canvas.Left="1195.25000476837"
+               Canvas.Top="485.78159062"
+               Width="1.5"
+               Height="162.5688">
+            <RSIPath Data="M1195.25000476837,648.35039062 L1195.25000476837,485.78159062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSICanvas Name="Group11"
+               Width="20"
+               Height="10.07434"
+               Left="1185.00000476837"
+               Top="638.81489062">
+            <RSIBorder x:Name="Line48"
+                 Canvas.Left="-0.75"
+                 Canvas.Top="-0.750099999999975"
+                 Width="11"
+                 Height="10.07434">
+                <RSIPath Data="M-0.75,-0.750099999999975 L10.25,9.32420000000002"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line49"
+                 Canvas.Left="10.25"
+                 Canvas.Top="-0.750099999999975"
+                 Width="9"
+                 Height="10.07428">
+                <RSIPath Data="M10.25,9.32410000000004 L19.25,-0.750099999999975"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeDashArray="1"
+                 StrokeThickness="1" />
+            </RSIBorder>
+        </RSICanvas>
+        <RSIText x:Name="Text11"
+             Canvas.Left="1109.00000476837"
+             Canvas.Top="375.79979062"
+             Width="133"
+             Height="24.55621"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="2nd STAGE"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="16"
+             TextElement.FontWeight="Bold" />
+        <RSIText x:Name="Text12"
+             Canvas.Left="90.000004768372"
+             Canvas.Top="349.16769062"
+             Width="88"
+             Height="17.39398"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="M39-KM-0007A"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12"
+             TextElement.FontWeight="Bold" />
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M3"
+                         Canvas.Left="372"
+                         Canvas.Top="594.602"
+                         Width="92"
+                         Height="47.624"
+                         GraphicTagName="TI-0001"
+                         TAG="TI-0001"
+                         UNIT="°F" ModelName="M39_006TI0001" />
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M4"
+                         Canvas.Left="653.000104768372"
+                         Canvas.Top="459.97199062"
+                         Width="92.00001"
+                         Height="47.62414"
+                         GraphicTagName="PI-0002"
+                         TAG="PI-0002"
+                         UNIT="psi" ModelName="M39_006PI0002" />
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M5"
+                         Canvas.Left="653.999904768372"
+                         Canvas.Top="518.58629062"
+                         Width="92.00001"
+                         Height="47.62414"
+                         GraphicTagName="TI-0002"
+                         TAG="TI-0002"
+                         UNIT="°F" ModelName="M39_006TI0002" />
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M6"
+                         Canvas.Left="999.000104768372"
+                         Canvas.Top="534.15569062"
+                         Width="92.00006"
+                         Height="47.62414"
+                         GraphicTagName="FI-0021B"
+                         TAG="FI-0021B"
+                         UNIT="MMSCFD" ModelName="M39_006FI0021B" />
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M7"
+                         Canvas.Left="999.000104768372"
+                         Canvas.Top="598.26509062"
+                         Width="92.00006"
+                         Height="47.62414"
+                         GraphicTagName="TI-0057"
+                         TAG="TI-0057"
+                         UNIT="°F" ModelName="M39_006TI0057" />
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M8"
+                         Canvas.Left="1282.00000476837"
+                         Canvas.Top="459.97199062"
+                         Width="92.00001"
+                         Height="47.62414"
+                         GraphicTagName="PI-0022"
+                         TAG="PI-0022"
+                         UNIT="psi" ModelName="M39_006PI0022" />
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M9"
+                         Canvas.Left="1282.00000476837"
+                         Canvas.Top="519.50209062"
+                         Width="92.00001"
+                         Height="47.6242"
+                         GraphicTagName="TI-0058"
+                         TAG="TI-0058"
+                         UNIT="°F" ModelName="M39_006TI0058" />
+        <RSICanvas Name="Group12"
+               Width="205"
+               Height="32.74878"
+               Left="1712.00000476837"
+               Top="469.50209062">
+            <RSIText x:Name="Text13"
+               Width="205"
+               Height="15.34763"
+               HorizontalAlignment="Left"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="TO SALES GAS COMPRESSOR"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="10"
+               TextElement.FontWeight="Bold" />
+            <RSIText x:Name="Text14"
+               Canvas.Left="45"
+               Canvas.Top="17.4011"
+               Width="115"
+               Height="15.34766"
+               HorizontalAlignment="Left"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="OUTLET HEADER"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="10"
+               TextElement.FontWeight="Bold" />
+        </RSICanvas>
+        <RSIBorder x:Name="Line51"
+               Canvas.Left="1606.25000476837"
+               Canvas.Top="425.87909062"
+               Width="1.5"
+               Height="293.158">
+            <RSIPath Data="M1606.25000476837,719.03709062 L1606.25000476837,425.87909062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line52"
+               Canvas.Left="1554.25000476837"
+               Canvas.Top="571.29769062"
+               Width="53"
+               Height="1.5">
+            <RSIPath Data="M1554.25000476837,571.29769062 L1607.25000476837,571.29769062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line53"
+               Canvas.Left="1551.25000476837"
+               Canvas.Top="625.57539062"
+               Width="51"
+               Height="1.5">
+            <RSIPath Data="M1551.25000476837,625.57539062 L1602.25000476837,625.57539062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M10"
+                         Canvas.Left="1462.00000476837"
+                         Canvas.Top="602.51339062"
+                         Width="92.00001"
+                         Height="47.6242"
+                         GraphicTagName="FI-0005"
+                         TAG="FI-0005"
+                         UNIT="MMSCFD" ModelName="M39_006FI0005" />
+        <RSIBorder x:Name="Line54"
+               Canvas.Left="1553.25000476837"
+               Canvas.Top="519.85169062"
+               Width="53"
+               Height="1.5">
+            <RSIPath Data="M1553.25000476837,519.85169062 L1606.25000476837,519.85169062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M11"
+                         Canvas.Left="1462.00000476837"
+                         Canvas.Top="497.70549062"
+                         Width="92.00001"
+                         Height="47.62414"
+                         GraphicTagName="TI-0005"
+                         TAG="TI-0005"
+                         UNIT="°F" ModelName="M39_006TI0005" />
+        <RSIBorder x:Name="Line55"
+               Canvas.Left="1554.25000476837"
+               Canvas.Top="466.32149062"
+               Width="53"
+               Height="1.5">
+            <RSIPath Data="M1554.25000476837,466.32149062 L1607.25000476837,466.32149062"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M12"
+                         Canvas.Left="1462.00000476837"
+                         Canvas.Top="445.09119062"
+                         Width="92.00001"
+                         Height="47.62414"
+                         GraphicTagName="PI-0051"
+                         TAG="PI-0051"
+                         UNIT="psi" ModelName="M39_006PI0051" />
+        <RSIBorder x:Name="Line56"
+               Canvas.Left="1607.25000476837"
+               Canvas.Top="426.62309062"
+               Width="309"
+               Height="1.5">
+            <RSIPath Data="M1607.25000476837,426.62309062 L1916.25000476837,426.62309062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line57"
+               Canvas.Left="1687.25000476837"
+               Canvas.Top="368.92459062"
+               Width="1.5"
+               Height="33.88641">
+            <RSIPath Data="M1687.25000476837,402.81099062 L1687.25000476837,368.92459062"
+               Stretch="Fill"
+               Stroke="#FF420000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:Valve_a x:Name="Valve_a6"
+                 Canvas.Left="1667.00000476837"
+                 Canvas.Top="398.06599062"
+                 Width="42"
+                 Height="36.63394"
+                 FillColor="Green" ModelName="M39_006PCV0051" />
+        <hmi:Type1_AO_Display_9Letter x:Name="Type1_AO_Display_9Letter5"
+                                  Canvas.Left="1641.249"
+                                  Canvas.Top="338.908"
+                                  Width="91"
+                                  Height="34.802" ZTAG="PCV-0051" ModelName="F_M39_006PCV0051_AOUT" />
+        <RSIText x:Name="Text13_1"
+             Canvas.Left="1661.00000476837"
+             Canvas.Top="442.02669062"
+             Width="65"
+             Height="15.34763"
+             HorizontalAlignment="Left"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="PCV-0051"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="10"
+             TextElement.FontWeight="Bold" />
+        <RSIBorder x:Name="Line58"
+               Canvas.Left="1807.25000476837"
+               Canvas.Top="370.75629062"
+               Width="1.5"
+               Height="54.9509">
+            <RSIPath Data="M1807.25000476837,425.70719062 L1807.25000476837,370.75629062"
+               Stretch="Fill"
+               Stroke="#FF420000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M13"
+                         Canvas.Left="1765.00000476837"
+                         Canvas.Top="335.78829062"
+                         Width="92.00001"
+                         Height="47.62414"
+                         GraphicTagName="PI-0005"
+                         TAG="PI-0005"
+                         UNIT="psi" ModelName="M39_006PI0005B" />
+        <RSIPath x:Name="Polygon14"
+             Canvas.Left="1858.00000476837"
+             Canvas.Top="416.38289062"
+             Width="15"
+             Height="19.23282"
+             Data="M0,1 L0,0 1,0.4285714 z"
+             Fill="#FF848484"
+             Stretch="Fill"
+             Stroke="#FFC0C0C0"
+             StrokeThickness="1" />
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M14"
+                         Canvas.Left="1462.00000476837"
+                         Canvas.Top="550.06749062"
+                         Width="92.00001"
+                         Height="47.62414"
+                         GraphicTagName="PI-0038"
+                         TAG="PI-0038"
+                         UNIT="psi" ModelName="M39_006PI0038" />
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M15"
+                         Canvas.Left="998.000004768372"
+                         Canvas.Top="461.80369062"
+                         Width="92.00001"
+                         Height="47.62414"
+                         GraphicTagName="PI-0016"
+                         TAG="PI-0016"
+                         UNIT="psi" ModelName="M39_006PI0016" />
+        <hmi:ButtonIndicative_Conf_N1 x:Name="ButtonIndicative_Conf_N1_S1"
+                                  Canvas.Left="263.000004768372"
+                                  Canvas.Top="198.87099062"
+                                  Width="42"
+                                  Height="21.06452"
+                                  ConfirmationMessage="---"
+                                  fTagName="---"
+                                  gTagName="---"
+                                  NameStore="TRIPS_M39_K_0007A"
+                                  Overlay="Confirmation" ModelName="TRIPS_M39_K_0007A" />
+        <hmi:TOP_BANNER_M39_K_0007A x:Name="TOP_BANNER_M39_K_0007A1"
+                                Canvas.Left="4.768372E-06"
+                                Width="1880"
+                                Height="158.0625" />
+        <hmi:fIND_D_01_S1_M_III x:Name="EmbeddedSymbol2"
+                            Canvas.Left="2.000022768372"
+                            Canvas.Top="305.60449062"
+                            Width="306"
+                            Height="28.13467"
+                            GraphicTagName="MODE"
+                            TagName="MODE"
+                            Tooltip="False" TagDescrp="MODE 4: COOLDOWN TIMER" ModelName="r006A_COOLDOWN_T" />
+        <hmi:Type1_AO_Display_9Letter x:Name="Type1_AO_Display_9Letter2"
+                                  Canvas.Left="79.000004768372"
+                                  Canvas.Top="545.14579062"
+                                  Width="91.00002"
+                                  Height="34.80225" ZTAG="FCV-0005A" ModelName="r006A_FCV_0005A" />
+        <RSIBorder x:Name="Line59"
+               Canvas.Left="780.187604768372"
+               Canvas.Top="714.39089062"
+               Width="166.2624"
+               Height="1.5">
+            <RSIPath Data="M780.187604768372,714.39089062 L946.450004768372,714.39089062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <hmi:Fan_HE x:Name="Fan_HE1"
+                Canvas.Left="797.468804768372"
+                Canvas.Top="666.57469062"
+                Width="93.13129"
+                Height="60.5257" />
+        <RSIBorder x:Name="Line60"
+               Canvas.Left="1406.85000476837"
+               Canvas.Top="718.71019062"
+               Width="198.8"
+               Height="1.5">
+            <RSIPath Data="M1406.85000476837,718.71019062 L1605.65000476837,718.71019062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <hmi:Fan_HE x:Name="EmbeddedSymbol1"
+                Canvas.Left="1456.37300476837"
+                Canvas.Top="675.89389062"
+                Width="93.13129"
+                Height="60.5257" />
+        <RSIBorder x:Name="Line50"
+               Canvas.Left="1580.90200476837"
+               Canvas.Top="718.71019062"
+               Width="1.5"
+               Height="66.44025">
+            <RSIPath Data="M1580.90200476837,718.71019062 L1580.90200476837,785.15039062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line61"
+               Canvas.Left="907.511204768372"
+               Canvas.Top="713.95039062"
+               Width="1.5"
+               Height="65.96271">
+            <RSIPath Data="M907.511204768372,713.95039062 L907.511204768372,779.91309062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line62"
+               Canvas.Left="940.650004768372"
+               Canvas.Top="715.95039062"
+               Width="1.5"
+               Height="68.36273">
+            <RSIPath Data="M940.650004768372,715.95039062 L940.650004768372,784.31309062"
+               Stretch="Fill"
+               Stroke="#FF848484"
+               StrokeThickness="6" />
+        </RSIBorder>
+        <RSIText x:Name="Text7"
+             Canvas.Left="802.924704768372"
+             Canvas.Top="736.16779062"
+             Width="81.51202"
+             Height="13.30127"
+             HorizontalAlignment="Left"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="M39-E-0010A"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="9"
+             TextElement.FontWeight="Bold" />
+        <RSIText x:Name="Text17"
+             Canvas.Left="1462.63800476837"
+             Canvas.Top="741.73319062"
+             Width="81.51202"
+             Height="13.30127"
+             HorizontalAlignment="Left"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="M39-E-0011A"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="9"
+             TextElement.FontWeight="Bold" />
+        <hmi:aIndTranIn_01_M x:Name="EmbeddedSymbol3"
+                         Canvas.Left="372.000004768372"
+                         Canvas.Top="689.25889062"
+                         Width="92.00001"
+                         Height="47.62414"
+                         GraphicTagName="FXI-0003"
+                         TAG="FXI-0003"
+                         UNIT="%" ModelName="M39_006AFXI0003" />
+        <hmi:aIndTranIn_01_M x:Name="EmbeddedSymbol5"
+                         Canvas.Left="999.000004768372"
+                         Canvas.Top="693.25889062"
+                         Width="92.00001"
+                         Height="47.62414"
+                         GraphicTagName="FXI-0022"
+                         TAG="FXI-0022"
+                         UNIT="%" ModelName="M39_006FXI0022" />
+        <hmi:PbMomFbConf_01_M x:Name="EmbeddedSymbol4"
+                          Canvas.Left="1188.98000476837"
+                          Canvas.Top="834.26859062"
+                          Width="104"
+                          Height="119.265"
+                          ConfirmationMessage="CONFIRM TO NORMAL STOP?"
+                          ConfirmIndirect="IADAS.6K0007A_CF06.06KM0495.IN_4"
+                          NameStore="SELECTION_SCREEN_PLS" ZDescription01="NORMAL" ZDescription02="STOP" ModelName="06ZX0495" Colour="2" />
+        <hmi:Timer2_CCS x:Name="Timer2_CCS1"
+                    Canvas.Left="266.579"
+                    Canvas.Top="312.662"
+                    Width="26"
+                    Height="15" ModelName="r006A_COOLDOWN_T_SEC" />
+        <hmi:Timer2_CCS x:Name="EmbeddedSymbol6"
+                    Canvas.Left="266.579"
+                    Canvas.Top="229.662"
+                    Width="26"
+                    Height="15" ModelName="r006A_FULL_LOAD_T2_SEC" />
+        <RSIText x:Name="rSIText_Copy13" Canvas.Left="1128" TextWrapping="Wrap" Text="FIC_0022" Canvas.Top="649.553" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="89" Height="33.887" Opacity="0.0001">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Open Title="FIC-0022" WindowName="FIC_0022" TagName="M39_006FIC0022"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M2"
+                         Canvas.Left="372.000004768372"
+                         Canvas.Top="458.14029062"
+                         Width="92.00001"
+                         Height="47.62414"
+                         GraphicTagName="PI-0001"
+                         TAG="PI-0001"
+                         UNIT="psi" ModelName="M39_006PI0001" />
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M1"
+                         Canvas.Left="372.000004768372"
+                         Canvas.Top="532.32399062"
+                         Width="92.00001"
+                         Height="47.62414"
+                         GraphicTagName="FI-0001B"
+                         TAG="FI-0001B"
+                         UNIT="MMSCFD" ModelName="M39_006FI0001B" />
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M16"
+                         Canvas.Left="78.000004768372"
+                         Canvas.Top="451.72929062"
+                         Width="92.00001"
+                         Height="47.62414"
+                         GraphicTagName="II-1070"
+                         TAG="II-1070"
+                         UNIT="amp" ModelName="M39_006II1070" />
+        <RSIText x:Name="rSIText_Copy2" Canvas.Left="78" TextWrapping="Wrap" Text="SUC_VLV_K0007A" Canvas.Top="542.564" FontSize="18.667" FontWeight="Bold" Height="37.384" Width="92" Opacity="0.01">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Open Title="SUC-VLV-K0007A" WindowName="SUC_VLV_K0007A"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy" Canvas.Left="78" TextWrapping="Wrap" Text="SUC_VLV_K0007A" Canvas.Top="653.58" FontSize="18.667" FontWeight="Bold" Height="37.384" Width="92" Opacity="0.01">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Open Title="SUC-VLV-K0007A" WindowName="SUC_VLV_K0007A"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy1" Canvas.Left="500.763" TextWrapping="Wrap" Text="FIC_0003" Canvas.Top="644.223" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="87.237" Height="35.285" Opacity="0.001">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Open Title="FIC-0003" WindowName="FIC_0003" TagName="M39_006FIC0003"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <hmi:Timer2_CCS x:Name="EmbeddedSymbol6_Copy"
+            Canvas.Left="244.579"
+            Canvas.Top="229.716"
+            Width="26"
+            Height="15" ModelName="r006A_FULL_LOAD_T2_MIN" />
+        <hmi:Timer2_CCS x:Name="Timer2_CCS1_Copy"
+            Canvas.Left="244.579"
+            Canvas.Top="312.662"
+            Width="26"
+            Height="15" ModelName="r006A_COOLDOWN_T_MIN" />
+        <RSIText x:Name="rSIText" Height="15.991" Canvas.Left="267.704" TextWrapping="Wrap" Text=":" Canvas.Top="228.671" Width="6.579" FontWeight="Bold" Foreground="#FF00F11E"/>
+        <RSIText x:Name="rSIText_Copy3" Height="15.991" Canvas.Left="267.704" TextWrapping="Wrap" Text=":" Canvas.Top="312.316" Width="6.579" FontWeight="Bold" Foreground="#FF00F11E"/>
+        <hmi:ConQl_03 x:Name="ConQl_031_Copy"
+            Canvas.Left="1643.88"
+            Canvas.Top="290.717"
+            Width="88.369"
+            Height="34.228"
+            NameStore="PIC-0051" ModelName="M39_006PIC0051" />
+        <hmi:Type1_AO_Display_9Letter x:Name="Type1_AO_Display_9Letter4_Copy"
+            Canvas.Left="501"
+            Canvas.Top="694.543"
+            Width="91"
+            Height="34.802" ZTAG="FCV-0003" ModelName="F_M39_006FCV0003_AOUT" />
+        <RSIText x:Name="rSIText_Copy28" Canvas.Left="1643.88" TextWrapping="Wrap" Text="PIC_0051" Canvas.Top="289.021" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="88.477" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="33.65" Opacity="0.01">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Open Title="PIC-0051" WindowName="PIC_0051" TagName="M39_006PIC0051"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="TextBox1"
+            Width="34.213"
+            Height="13.466"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            BorderBrush="Transparent"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="TRIPS"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold"
+            TextWrapping="Wrap" Canvas.Left="267.954" Canvas.Top="202.178" RenderTransformOrigin="0.5,0.5" >
+            <RSIText.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.617"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.073"/>
+                </TransformGroup>
+            </RSIText.RenderTransform>
+        </RSIText>
+    </RSICanvas>
+</UserControl>

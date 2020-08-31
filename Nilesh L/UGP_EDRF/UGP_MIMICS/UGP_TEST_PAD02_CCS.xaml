@@ -1,0 +1,1332 @@
+﻿<RSISynoptic
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:HMI="clr-namespace:UGP_EDRF.HMI" xmlns:EDRF_Stencils="clr-namespace:UGP_EDRF.EDRF_Stencils" x:Class="UGP_EDRF.UGP_MIMICS.UGP_TEST_PAD02_CCS"
+     xmlns:sys="clr-namespace:System;assembly=mscorlib"
+          Background="LightGray"
+          Height="1048"
+          Width="1920"
+          mc:Ignorable="d">
+    <Grid>
+        <!--  GRAPHIC Part  -->
+        <Canvas x:Name="GRAPHIC">
+            <RSIText x:Name="rSIText" Canvas.Left="73.111" TextWrapping="Wrap" Text="IGV_K0001" Canvas.Top="789.166" FontSize="18.667" FontWeight="Bold">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open TagName="" Title="IGV-K0001" WindowName="IGV_K0001"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy" Canvas.Left="193.111" TextWrapping="Wrap" Text="IGV_K0003A" Canvas.Top="789.166" FontSize="18.667" FontWeight="Bold">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open TagName="" Title="IGV-K0003A" WindowName="IGV_K0003A"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy1" Canvas.Left="313.111" TextWrapping="Wrap" Text="IGV_K0003B" Canvas.Top="789.166" FontSize="18.667" FontWeight="Bold">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="IGV-K0003B" WindowName="IGV_K0003B"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy2" Canvas.Left="73.111" TextWrapping="Wrap" Text="SUC_VLV_K0007A" Canvas.Top="849.166" FontSize="18.667" FontWeight="Bold">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="SUC-VLV-K0007A" WindowName="SUC_VLV_K0007A"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy3" Canvas.Left="283.111" TextWrapping="Wrap" Text="SUC_VLV_K0007B" Canvas.Top="849.166" FontSize="18.667" FontWeight="Bold">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="SUC-VLV-K0007B" WindowName="SUC_VLV_K0007B"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy4" Canvas.Left="463.111" TextWrapping="Wrap" Text="SUC_VLV_K0007C" Canvas.Top="849.166" FontSize="18.667" FontWeight="Bold">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="SUC-VLV-K0007C" WindowName="SUC_VLV_K0007C"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy5" Canvas.Left="658.111" TextWrapping="Wrap" Text="SW_VLV_K0001" Canvas.Top="849.166" FontSize="18.667" FontWeight="Bold">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="SW-VLV-K0001" WindowName="SW_VLV_K0001"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy6" Canvas.Left="54.333" TextWrapping="Wrap" Text="V1_LIM_SPD_RR" Canvas.Top="165.166" FontSize="18.667" FontWeight="Bold">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="V1_LIM_SPD_RR" WindowName="V1_LIM_SPD_RR"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <HMI:QuickLinkTab_N2_III x:Name="Button6"
+        Canvas.Left="423.218"
+        Canvas.Top="0.031"
+        Width="83"
+        Height="47"
+        NameStore="Main Menu" TabName="DCS OVERVIEW" />
+            <HMI:QuickLinkTab_N2_III x:Name="Button5"
+        Canvas.Left="339.101"
+        Canvas.Top="0.031"
+        Width="83"
+        Height="47"
+        NameStore="Main Menu" TabName="REGEN PERMISSIVE" />
+            <HMI:QuickLinkTab_N2_III x:Name="Button4"
+        Canvas.Left="254.921"
+        Canvas.Top="0.031"
+        Width="83"
+        Height="47" TabName="SURGE CONTROL" />
+            <HMI:QuickLinkTab_N2_III x:Name="Button3"
+        Canvas.Left="170.742"
+        Canvas.Top="0.031"
+        Width="83"
+        Height="47" TabName="COMPR   OVERVIEW" />
+            <HMI:QuickLinkTab_N2_III x:Name="Button2"
+        Canvas.Left="86"
+        Width="83"
+        Height="47" TabName="CCS             STATUS" />
+            <HMI:QuickLinkTab_N2_III x:Name="Button1"
+        Width="83"
+        Height="47" TabName="MAIN                MENU" />
+            <RSIRectangle x:Name="Button1Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button1_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle x:Name="Button2Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="86.658">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button2_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle x:Name="Button3Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="171.328">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button3_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle x:Name="Button4Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="255.998">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button4_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle x:Name="Button5Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="340.001">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button5_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle x:Name="Button6Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="424.671">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button6_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <HMI:QuickLinkTab_N2_III x:Name="Button15"
+                Canvas.Left="1180.412"
+                Canvas.Top="0.062"
+                Width="83"
+                Height="47"
+                NameStore="Main Menu" />
+            <HMI:QuickLinkTab_N2_III x:Name="Button14"
+                Canvas.Left="1096.287"
+                Canvas.Top="0.062"
+                Width="83"
+                Height="47"
+                NameStore="Main Menu" />
+            <HMI:QuickLinkTab_N2_III x:Name="Button13"
+                Canvas.Left="1012.107"
+                Canvas.Top="0.031"
+                Width="83"
+                Height="47"
+                NameStore="Main Menu" />
+            <HMI:QuickLinkTab_N2_III x:Name="Button12"
+                Canvas.Left="927.594"
+                Canvas.Top="0.031"
+                Width="83"
+                Height="47"
+                NameStore="Main Menu" />
+            <HMI:QuickLinkTab_N2_III x:Name="Button11"
+                Canvas.Left="843.802"
+                Canvas.Top="0.031"
+                Width="83"
+                Height="47"
+                NameStore="Main Menu" />
+            <HMI:QuickLinkTab_N2_III x:Name="Button10"
+                Canvas.Left="759.686"
+                Canvas.Top="0.062"
+                Width="83"
+                Height="47"
+                NameStore="Main Menu" />
+            <HMI:QuickLinkTab_N2_III x:Name="Button9"
+                Canvas.Left="675.569"
+                Canvas.Top="0.031"
+                Width="83"
+                Height="47"
+                NameStore="Main Menu" />
+            <HMI:QuickLinkTab_N2_III x:Name="Button8"
+                Canvas.Left="591.452"
+                Canvas.Top="0.031"
+                Width="83"
+                Height="47"
+                NameStore="Main Menu" />
+            <HMI:QuickLinkTab_N2_III x:Name="Button7"
+                Canvas.Left="507.335"
+                Canvas.Top="0.031"
+                Width="83"
+                Height="47"
+                NameStore="Main Menu" />
+            <RSIRectangle x:Name="Button7Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="508.671">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button7_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle x:Name="Button8Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="595.329">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button8_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle x:Name="Button9Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="679.999">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button9_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle x:Name="Button10Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="764.669">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button10_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle x:Name="Button11Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="848.672">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button11_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle x:Name="Button12Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="931.592">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button12_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle x:Name="Button13Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="1012.169">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button13_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle x:Name="Button14Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="1096.172">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button14_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle x:Name="Button15Link" Fill="Red" Height="45.166" Stroke="Black" Width="83" Opacity="0.1" Cursor="Hand" Canvas.Left="1180.592">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="$Button15_NameStore"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIText x:Name="Button1Tabname"
+                Canvas.Left="1.5"
+                Canvas.Top="1"
+                Width="81.5"
+                Height="45"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button2Tabname"
+                Canvas.Left="87.332"
+                Width="81.5"
+                Height="45"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="0.333">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button3Tabname"
+                Canvas.Left="171.834"
+                Width="81.5"
+                Height="45"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button4Tabname"
+                Canvas.Left="255.845"
+                Canvas.Top="1"
+                Width="81.5"
+                Height="45"
+                VerticalAlignment="Center"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button5Tabname"
+                Canvas.Left="340.351"
+                Width="81.5"
+                Height="45"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="0.333">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button6Tabname"
+                Canvas.Left="424.718"
+                Width="81.5"
+                Height="45"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button7Tabname"
+                Canvas.Left="508.416"
+                Canvas.Top="0.499"
+                Width="81.5"
+                Height="45"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button8Tabname"
+                Canvas.Left="595.836"
+                Width="81.5"
+                Height="45"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="-0.169">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button9Tabname"
+                Canvas.Left="678.997"
+                Width="81.5"
+                Height="45"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="0.333">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button10Tabname"
+                Canvas.Left="764.069"
+                Canvas.Top="1"
+                Width="81.5"
+                Height="45"
+                VerticalAlignment="Center"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button11Tabname"
+                Canvas.Left="849.022"
+                Width="77.78"
+                Height="45"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="0.333">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button12Tabname"
+                Canvas.Left="930.094"
+                Width="81.5"
+                Height="45"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="-0.169">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button13Tabname"
+                Canvas.Left="1013.441"
+                Canvas.Top="1"
+                Width="81.5"
+                Height="45"
+                VerticalAlignment="Center"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button14Tabname"
+                Canvas.Left="1097.672"
+                Width="81.5"
+                Height="45"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="0.333">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="Button15Tabname"
+                Canvas.Left="1181.912"
+                Width="81.5"
+                Height="45"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                        <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIRectangle Fill="Orange" Height="100" Canvas.Left="322" StrokeThickness="0" Canvas.Top="272" Width="100">
+                <RSIRectangle.Stroke>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="1" Color="#FE000000" />
+                        <GradientStop Offset="0" Color="#FE9A9A9A" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Stroke>
+            </RSIRectangle>
+            <RSIRectangle x:Name="LSCommand" Fill="Orange" Height="92" Canvas.Left="48.1111" StrokeThickness="0" Canvas.Top="53.00001" Width="15">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Assignment Expression="1" Maximum="1" Minimum="0" Variable="$ZLSCammandUO.IN"/>
+                        <Assignment Expression="0" Maximum="1" Minimum="0" Variable="$ZPDCammandUO.IN"/>
+                        <Assignment Expression="0" Maximum="1" Minimum="0" Variable="$SACommand"/>
+                    </ClickAnimation>
+                    <Animation Condition="$ZLSCammandUO.IN == 1">
+                        <Invisible/>
+                    </Animation>
+                </RSIRectangle.Animations>
+                <RSIRectangle.Stroke>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="1" Color="#FE000000" />
+                        <GradientStop Offset="0" Color="#FE9A9A9A" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Stroke>
+            </RSIRectangle>
+            <RSIRectangle x:Name="SACommand" Fill="Orange" Height="92" Canvas.Left="48.1111" StrokeThickness="0" Canvas.Top="53.00001" Width="15">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Assignment Expression="1" Maximum="1" Minimum="0" Variable="$SACommand"/>
+                        <Assignment Expression="0" Maximum="1" Minimum="0" Variable="$ZLSCammandUO.IN"/>
+                        <Assignment Expression="0" Maximum="1" Minimum="0" Variable="$ZPDCammandUO.IN"/>
+                    </ClickAnimation>
+                    <Animation Condition="$SACommand == 1">
+                        <Invisible/>
+                    </Animation>
+                </RSIRectangle.Animations>
+                <RSIRectangle.Stroke>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="1" Color="#FE000000" />
+                        <GradientStop Offset="0" Color="#FE9A9A9A" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Stroke>
+            </RSIRectangle>
+            <RSIRectangle x:Name="PDCommand" Fill="Orange" Height="92" Canvas.Left="48.1111" StrokeThickness="0" Canvas.Top="53.00001" Width="15">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Assignment Expression="1" Maximum="1" Minimum="0" Variable="$ZPDCammandUO.IN"/>
+                        <Assignment Expression="0" Maximum="1" Minimum="0" Variable="$ZLSCammandUO.IN"/>
+                        <Assignment Expression="0" Maximum="1" Minimum="0" Variable="$SACommand"/>
+
+                    </ClickAnimation>
+                    <Animation Condition="$ZPDCammandUO.IN == 1">
+                        <Invisible/>
+                    </Animation>
+                </RSIRectangle.Animations>
+                <RSIRectangle.Stroke>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="1" Color="#FE000000" />
+                        <GradientStop Offset="0" Color="#FE9A9A9A" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Stroke>
+            </RSIRectangle>
+            <RSIText x:Name="rSIText_Copy7" Canvas.Left="54.333" TextWrapping="Wrap" Text="FP_RATIO" Canvas.Top="225.166" FontSize="18.667" FontWeight="Bold">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FP_RATIO" WindowName="FP_RATIO"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIButton x:Name="rSIButton" Content="RSIButton" Canvas.Left="238" Canvas.Top="197" Width="75"/>
+            <RSIText x:Name="rSIText_Copy8" Canvas.Left="54.333" TextWrapping="Wrap" Text="FP_PID" Canvas.Top="271.828" FontSize="18.667" FontWeight="Bold">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FP_PID" WindowName="FP_PID" TagName="M39_005FFC0026"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy9" Canvas.Left="54.333" TextWrapping="Wrap" Text="FP_EDR_SP_GEN" Canvas.Top="331.828" FontSize="18.667" FontWeight="Bold" Cursor="Hand">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="M39_001HS0874" WindowName="FP_EDR_SP_GEN" TagName="M39_001HS0874"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy10" Canvas.Left="48.111" TextWrapping="Wrap" Text="SY_3600" Canvas.Top="526.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="M39_006SIC3600" WindowName="SY_3600" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <EDRF_Stencils:FP_EDR_SP_GEN_TOUCH_TARGET Height="34.883" Canvas.Left="54.333" Canvas.Top="398.454" Width="80" TagName="M39_001HS0874"/>
+            <RSIText x:Name="rSIText1" Height="41" Canvas.Left="52.111" TextWrapping="Wrap" Text="CCS FACEPLATE" Canvas.Top="459" Width="1861.889" Background="Yellow" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="21.333" FontWeight="Bold" BorderBrush="Black" BorderThickness="4"/>
+            <RSIText x:Name="rSIText_Copy11" Canvas.Left="153.111" TextWrapping="Wrap" Text="FIC_0001" Canvas.Top="526.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FIC-0001" WindowName="FIC_0001" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy12" Canvas.Left="258.111" TextWrapping="Wrap" Text="FIC_0003" Canvas.Top="526.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FIC-0003" WindowName="FIC_0003" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy13" Canvas.Left="364.767" TextWrapping="Wrap" Text="FIC_0022" Canvas.Top="526.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FIC-0022" WindowName="FIC_0022" TagName="M39_006FIC0022"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy14" Canvas.Left="464.757" TextWrapping="Wrap" Text="FIC_0043" Canvas.Top="526.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FIC-0043" WindowName="FIC_0043" TagName="M39_006FIC0043"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy15" Canvas.Left="558.081" TextWrapping="Wrap" Text="FIC_0062" Canvas.Top="526.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FIC-0062" WindowName="FIC_0062" TagName="M39_006FIC0062"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy16" Canvas.Left="651.405" TextWrapping="Wrap" Text="FIC_0083" Canvas.Top="526.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FIC-0083" WindowName="FIC_0083" TagName="M39_006FIC0083"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy17" Canvas.Left="751.405" TextWrapping="Wrap" Text="FIC_0102" Canvas.Top="526.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FIC-0102" WindowName="FIC_0102" TagName="M39_006FIC0102"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy18" Canvas.Left="841.405" TextWrapping="Wrap" Text="FIC_0106" Canvas.Top="526.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FIC-0106" WindowName="FIC_0106" TagName="M39_005FIC0106"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy19" Canvas.Left="941.405" TextWrapping="Wrap" Text="FIC_0127" Canvas.Top="526.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FIC-0127" WindowName="FIC_0127" TagName="M39_005FIC0127"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy20" Canvas.Left="1051.405" TextWrapping="Wrap" Text="FIC_0181" Canvas.Top="526.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FIC-0181" WindowName="FIC_0181" TagName="M39_003FIC01181"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy21" Canvas.Left="1151.405" TextWrapping="Wrap" Text="FIC_0225" Canvas.Top="526.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FIC-0225" WindowName="FIC_0225" TagName="M39_006FIC0225"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy22" Canvas.Left="1271.405" TextWrapping="Wrap" Text="FIC_0230" Canvas.Top="526.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="FIC-0230" WindowName="FIC_0230" TagName="M39_006FIC0230"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIRectangle x:Name="Rectangle4"
+                Canvas.Left="65.889"
+                Canvas.Top="508.04"
+                Width="78.314"
+                Height="15"
+                Stroke="#FF666666"
+                StrokeThickness="1">
+                <RSIRectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="1" Color="#FF000000" />
+                        <GradientStop Offset="0" Color="#FFB3B3B3" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Fill>
+            </RSIRectangle>
+            <RSIText x:Name="SP_Copy"
+                Canvas.Left="70.611"
+                Canvas.Top="508.317"
+                Width="72.95"
+                Height="14.057"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Stretch"
+                Foreground="#FF00FF00"
+                Text="345.5 "
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <Animation>
+                        <ChangeText Text="\$TAGNAME.MEAS:#.#\ "/>
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIRectangle x:Name="Rectangle6"
+                Canvas.Left="45.444"
+                Canvas.Top="508.088"
+                Width="22.667"
+                Height="14.286"
+                Stroke="#FF666666"
+                StrokeThickness="1">
+                <RSIRectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="0" Color="#FFE0E0E0" />
+                        <GradientStop Offset="0" Color="#FFD7D3D3" />
+                        <GradientStop Offset="1" Color="#FF595959" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Fill>
+            </RSIRectangle>
+            <RSIText x:Name="Text7"
+                Canvas.Left="47.103"
+                Canvas.Top="508.088"
+                Width="16.008"
+                Height="13.406"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="PV"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9"
+                TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Lime" />
+            <RSIText x:Name="Label"
+                Width="315"
+                Height="28"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Left="218.734" Canvas.Top="417" Text="LABEL" />
+            <RSIText x:Name="rSIText_Copy23" Canvas.Left="153.111" TextWrapping="Wrap" Text="IIC_0860" Canvas.Top="577.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="IIC-0860" WindowName="IIC_0860" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy24" Canvas.Left="258.111" TextWrapping="Wrap" Text="IIC_1070" Canvas.Top="577.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="IIC-1070" WindowName="IIC_1070" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy25" Canvas.Left="378.111" TextWrapping="Wrap" Text="IIC_1078" Canvas.Top="577.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="IIC-1078" WindowName="IIC_1078" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy26" Canvas.Left="471.111" TextWrapping="Wrap" Text="IIC_1086" Canvas.Top="577.494" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="82.623" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="IIC-1086" WindowName="IIC_1086" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy27" Canvas.Left="153.111" TextWrapping="Wrap" Text="PIC_0001" Canvas.Top="629.994" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="82.623" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0001" WindowName="PIC_0001" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy28" Canvas.Left="258.111" TextWrapping="Wrap" Text="PIC_0051" Canvas.Top="629.994" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="82.623" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0051" WindowName="PIC_0051" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy29" Canvas.Left="368.111" TextWrapping="Wrap" Text="PIC_0061" Canvas.Top="629.994" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="82.623" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0061" WindowName="PIC_0061" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy30" Canvas.Left="478.111" TextWrapping="Wrap" Text="PIC_0111" Canvas.Top="629.994" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="82.623" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0111" WindowName="PIC_0111" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy31" Canvas.Left="578.111" TextWrapping="Wrap" Text="PIC_0121" Canvas.Top="629.994" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="82.623" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0121" WindowName="PIC_0121" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy32" Canvas.Left="678.111" TextWrapping="Wrap" Text="PIC_0125" Canvas.Top="629.994" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="82.623" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0125" WindowName="PIC_0125" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy33" Canvas.Left="778.111" TextWrapping="Wrap" Text="PIC_0189" Canvas.Top="629.994" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="82.623" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0189" WindowName="PIC_0189" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy34" Canvas.Left="888.111" TextWrapping="Wrap" Text="PIC_0191S" Canvas.Top="629.994" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="96.623" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0191S" WindowName="PIC_0191S" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy35" Canvas.Left="1018.111" TextWrapping="Wrap" Text="PIC_0191S1" Canvas.Top="629.994" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="111.261" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0191S1" WindowName="PIC_0191S1" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy36" Canvas.Left="1148.111" TextWrapping="Wrap" Text="PIC_0195A" Canvas.Top="629.994" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="111.261" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0195A" WindowName="PIC_0195A" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy37" Canvas.Left="1278.111" TextWrapping="Wrap" Text="PIC_0195B" Canvas.Top="629.994" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="111.261" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0195B" WindowName="PIC_0195B" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy38" Canvas.Left="153.111" TextWrapping="Wrap" Text="PIC_0195CA_PD" Canvas.Top="681.327" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="159.889" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0195CA-PD" WindowName="PIC_0195CA_PD" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy39" Canvas.Left="333.111" TextWrapping="Wrap" Text="PIC_0195CA" Canvas.Top="681.327" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="109.177" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0195CA" WindowName="PIC_0195CA" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy40" Canvas.Left="483.111" TextWrapping="Wrap" Text="PIC_0195CB_PD" Canvas.Top="681.327" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="142.937" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0195CB-PD" WindowName="PIC_0195CB_PD" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy41" Canvas.Left="658.111" TextWrapping="Wrap" Text="PIC_0195CB" Canvas.Top="681.327" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="114.372" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0195CB-PD" WindowName="PIC_0195CB" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy42" Canvas.Left="788.111" TextWrapping="Wrap" Text="PIC_0413" Canvas.Top="681.327" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="98.372" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0413" WindowName="PIC_0413" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy43" Canvas.Left="898.111" TextWrapping="Wrap" Text="PIC_0484" Canvas.Top="681.327" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="98.372" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="PIC-0484" WindowName="PIC_0484" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText1_Copy" Height="41" Canvas.Left="52.111" TextWrapping="Wrap" Text="CCS FACEPLATE" Canvas.Top="729" Width="1861.889" Background="Yellow" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="21.333" FontWeight="Bold" BorderBrush="Black" BorderThickness="4"/>
+            <RSIRectangle x:Name="Rectangle4_Copy"
+                Canvas.Left="172.436"
+                Canvas.Top="506.096"
+                Width="78.314"
+                Height="15"
+                Stroke="#FF666666"
+                StrokeThickness="1">
+                <RSIRectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="1" Color="#FF000000" />
+                        <GradientStop Offset="0" Color="#FFB3B3B3" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Fill>
+            </RSIRectangle>
+            <RSIText x:Name="SP_Copy1"
+                Canvas.Left="176.325"
+                Canvas.Top="506.373"
+                Width="73.783"
+                Height="14.057"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Stretch"
+                Foreground="#FF00FF00"
+                Text="345.5 "
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <Animation>
+                        <ChangeText Text="\$TAGNAME.MEAS:#.#\ "/>
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIRectangle x:Name="Rectangle6_Copy"
+                Canvas.Left="151.991"
+                Canvas.Top="506.144"
+                Width="22.667"
+                Height="14.286"
+                Stroke="#FF666666"
+                StrokeThickness="1">
+                <RSIRectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="0" Color="#FFE0E0E0" />
+                        <GradientStop Offset="0" Color="#FFD7D3D3" />
+                        <GradientStop Offset="1" Color="#FF595959" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Fill>
+            </RSIRectangle>
+            <RSIText x:Name="Text7_Copy"
+                Canvas.Left="153.65"
+                Canvas.Top="506.144"
+                Width="16.008"
+                Height="13.406"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Foreground="#FF000000"
+                IsHitTestVisible="False"
+                Text="PV"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9"
+                TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <RSIRectangle x:Name="Rectangle4_Copy1"
+                Canvas.Left="333.111"
+                Canvas.Top="506.373"
+                Width="47.2"
+                Height="14.448"
+                Stroke="#FF666666"
+                StrokeThickness="1">
+                <RSIRectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="1" Color="#FF000000" />
+                        <GradientStop Offset="0" Color="#FFB3B3B3" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Fill>
+            </RSIRectangle>
+            <RSIText x:Name="rSIText_Copy44" Canvas.Left="1063.111" TextWrapping="Wrap" Text="SIC_0950" Canvas.Top="681.327" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="98.372" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="SIC-0950" WindowName="SIC_0950" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy45" Canvas.Left="1193.111" TextWrapping="Wrap" Text="SIC_0950_LIMITER" Canvas.Top="681.327" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="176.372" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="SIC-0950-LIMITER" WindowName="SIC_0950_LIMITER" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy46" Canvas.Left="1383.111" TextWrapping="Wrap" Text="SIC_0956" Canvas.Top="681.327" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="98.372" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="SIC-0956" WindowName="SIC_0956" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy47" Canvas.Left="1513.111" TextWrapping="Wrap" Text="SIC_0956_LIMITER" Canvas.Top="681.327" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Width="176.372" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="SIC-0956-LIMITER" WindowName="SIC_0956_LIMITER" TagName="M39_006SIC3600"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSICanvas x:Name="Group1"
+                Width="47"
+                Height="14"
+                Canvas.Left="169.075"
+                Canvas.Top="772.485">
+                <RSIRectangle x:Name="Rectangle1"
+                    Width="47"
+                    Height="14"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="2">
+                    <RSIRectangle.Fill>
+                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                            <GradientStop Offset="1" Color="#FFEFEFEF" />
+                            <GradientStop Offset="0" Color="#FFFFFFFF" />
+                        </LinearGradientBrush>
+                    </RSIRectangle.Fill>
+                    <RSIRectangle.Animations>
+                        <Animation Condition="EnterType==false">
+                            <SetVisible />
+                        </Animation>
+                        <Animation Condition="EnterType==true">
+                            <Invisible />
+                        </Animation>
+                        <!--  User Input  -->
+                    </RSIRectangle.Animations>
+                </RSIRectangle>
+                <RSIRectangle x:Name="Rectangle2_2"
+                    Width="47"
+                    Height="14"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="2">
+                    <RSIRectangle.Fill>
+                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                            <GradientStop Offset="1" Color="#FFEFEFEF" />
+                            <GradientStop Offset="0" Color="#FFFFFFFF" />
+                        </LinearGradientBrush>
+                    </RSIRectangle.Fill>
+                    <RSIRectangle.Animations>
+                        <Animation Condition="EnterType==true">
+                            <SetVisible />
+                        </Animation>
+                        <Animation Condition="EnterType==false">
+                            <Invisible />
+                        </Animation>
+                        <!--  User Input  -->
+                    </RSIRectangle.Animations>
+                </RSIRectangle>
+                <RSIBorder x:Name="Line1"
+                    Canvas.Left="0.233200000000011"
+                    Canvas.Top="-0.00329999999999586"
+                    Width="1.5"
+                    Height="11.75999">
+                    <RSIPath Data="M0.233200000000011,-0.00329999999999586 L0.233200000000011,11.7567"
+                        Stretch="Fill"
+                        Stroke="#FF000000"
+                        StrokeThickness="1" />
+                </RSIBorder>
+                <RSIBorder x:Name="Line2"
+                    Canvas.Left="-0.1601"
+                    Canvas.Top="-0.00329999999999586"
+                    Width="45.8201"
+                    Height="1.5">
+                    <RSIPath Data="M-0.1601,-0.00329999999999586 L45.66,-0.00329999999999586"
+                        Stretch="Fill"
+                        Stroke="#FF000000"
+                        StrokeThickness="1" />
+                </RSIBorder>
+                <RSIBorder x:Name="Line3"
+                    Canvas.Left="-0.1601"
+                    Canvas.Top="12.3167"
+                    Width="45.8201"
+                    Height="1.5">
+                    <RSIPath Data="M-0.1601,12.3167 L45.66,12.3167"
+                        Stretch="Fill"
+                        Stroke="#FFFFFFFF"
+                        StrokeThickness="1" />
+                </RSIBorder>
+                <RSIBorder x:Name="Line4"
+                    Canvas.Left="45.2667"
+                    Canvas.Top="0.370000000000005"
+                    Width="1.5"
+                    Height="11.75999">
+                    <RSIPath Data="M45.2667,0.370000000000005 L45.2667,12.13"
+                        Stretch="Fill"
+                        Stroke="#FFFFFFFF"
+                        StrokeThickness="1" />
+                </RSIBorder>
+            </RSICanvas>
+            <RSIText x:Name="Val"
+                Canvas.Left="170.742"
+                Canvas.Top="772.485"
+                Width="45.333"
+                Height="14"
+                HorizontalAlignment="Right"
+                Foreground="#FFFF00FF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" Maximum="100" Minimum="0" IsInput="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="345.7">
+                <RSIText.Animations>
+                    <Animation>
+                        <ChangeText Text="\$ModelName.MEAS:#.##\"/>
+                    </Animation>
+                    <Animation Condition="Alarm">
+                        <ChangeColor Color="#FFFF00FF" />
+                    </Animation>
+                    <Animation Condition="$ModelName.MA == 1">
+                        <ChangePropertyValue PropertyName="IsInput" Value="False"/>
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy48" Canvas.Left="848.672" TextWrapping="Wrap" Text="V1_LIM_SPD_RR" Canvas.Top="849.166" FontSize="18.667" FontWeight="Bold">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="V1-LIM-SPD-RR" WindowName="V1_LIM_SPD_RR"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy49" Canvas.Left="463.111" TextWrapping="Wrap" Text="FIC0164_PIC0196_SEL" Canvas.Top="124.856" FontSize="18.667" FontWeight="Bold">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open Title="V1_LIM_SPD_RR" WindowName="V1_LIM_SPD_RR"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText2" Height="11" Canvas.Left="78" TextWrapping="Wrap" Text="00 : 00" Canvas.Top="55" Width="48" Background="Gray" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <RSI_ControlValve Canvas.Left="1.5" ModelName="F_$TAGNAME" ValveActuatorName="$TAGNAME" FailureFaceplateName="" MaintenanceFaceplateName="" Width="126" Height="70" Opacity="0.001"/>
+            <TextBlock x:Name="rSIText3" Height="23" Canvas.Left="723" TextWrapping="Wrap" Canvas.Top="117" Width="120" Text="{Binding Source={x:Static sys:DateTime.Now}, StringFormat='{}{0: MM/dd/yy, hh:mm:ss}'}"/>
+            <RSIButton Cursor="Hand" Command="{PrintServiceBinding PrintScreenAndPrintCommand}" Content="Print" Canvas.Left="751.405" Canvas.Top="150.216" />
+
+            <RSIButton Content="Compressor Profile" Canvas.Left="882.609" Canvas.Top="119.396" Width="212.332" Height="83.344" FontSize="22">
+                <RSIButton.Animations>
+                    <ClickAnimation>
+                        <Open TagName="M39_006K0007A_1" WindowName="CompressorProfile"/>
+                    </ClickAnimation>
+                </RSIButton.Animations>
+            </RSIButton>
+            <RSIText x:Name="rSIText4" Height="122" Canvas.Left="1218" TextWrapping="Wrap" Canvas.Top="157.986" Width="120" BorderThickness="0,0,5,0" BorderBrush="Yellow">
+                <RSIText.Animations>
+                    <Animation>
+                        <Resize Expression="r006C_HC1.MEAS" GrowthDirection="Right"/>
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIRectangle Height="122" Canvas.Left="1409.333" Stroke="Yellow" Canvas.Top="157.986" Width="100">
+                <RSIRectangle.Animations>
+                    <Animation>
+                        <Resize Expression="r006C_HC1.MEAS" GrowthDirection="Right"/>
+                    </Animation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+        </Canvas>
+
+        <!--  FOD Part  -->
+        <Canvas x:Name="FOD"
+                Visibility="{FODBinding}" d:IsLocked="True"/>
+
+        <!--  Battery Limit Part  -->
+        <Canvas x:Name="BL"
+                Visibility="{BLBinding}" d:IsLocked="True"/>
+
+        <!--  FAILURE Part  -->
+        <Canvas x:Name="FAILURE"
+                Visibility="{FAILUREBinding}" d:IsLocked="True"/>
+        <RSIRectangle x:Name="Rectangle2_1"
+            Width="46.8"
+            Height="15"
+            Stroke="#FFFFFF00"
+            StrokeThickness="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="273,503.5,0,0">
+            <RSIRectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="1" Color="#FFEFEFEF" />
+                    <GradientStop Offset="0" Color="#FFFFFFFF" />
+                </LinearGradientBrush>
+            </RSIRectangle.Fill>
+        </RSIRectangle>
+        <RSICanvas x:Name="Group4"
+            Width="40"
+            Height="23.853"
+    HorizontalAlignment="Left" Margin="491.078,157.986,0,0" VerticalAlignment="Top">
+            <RSICanvas.Parameters>
+                <Param Name="$SELECTOR_TEXT_01" Value="PIC0196"/>
+                <Param Name="$SELECTOR_TEXT_02" Value="FIC0164"/>
+            </RSICanvas.Parameters>
+            <RSIRectangle x:Name="Rectangle1_2"
+                Canvas.Top="24.041"
+                Width="40"
+                Height="23.853"
+                Fill="#FFE0E0E0"
+                RenderTransformOrigin="0,0"
+                Stroke="#FF000000"
+                StrokeThickness="1" Canvas.Left="0.167">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Open TagName="FIC0164_PIC0196_SEL" Title="SELECTOR SWITCH" WindowName="FP_HS_CTRL_01"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+                <RSIRectangle.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="-1" />
+                </RSIRectangle.RenderTransform>
+            </RSIRectangle>
+            <RSIBorder x:Name="Line1_2"
+                Canvas.Left="19.52"
+                Canvas.Top="12.038"
+                Width="1.5"
+                Height="10.4">
+                <RSIPath Data="M19.3530000000001,-885.128898092651 L19.3530000000001,-874.728798092651"
+                    Stretch="Fill"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line4_2"
+                Canvas.Left="19.52"
+                Canvas.Top="-0.269"
+                Width="1.5"
+                Height="12.2">
+                <RSIBorder.Animations>
+                    <Animation Condition="$TAGNAME.IN == 0">
+                        <Invisible/>
+                    </Animation>
+                </RSIBorder.Animations>
+                <RSIPath Data="M19.3530000000001,-897.435998092651 L19.3530000000001,-885.235898092651"
+                    Stretch="Fill"
+                    Stroke="#FF000000"
+                    StrokeThickness="1">
+                    <RSIPath.Animations>
+                        <Animation Condition="IADAS_1CMP_F_CF01_01FCV0164_S_TOGGLE==true">
+                            <SetVisible />
+                        </Animation>
+                        <Animation Condition="IADAS_1CMP_F_CF01_01FCV0164_S_TOGGLE==false">
+                            <Invisible />
+                        </Animation>
+                    </RSIPath.Animations>
+                </RSIPath>
+            </RSIBorder>
+            <RSIBorder x:Name="Line5_2"
+                Canvas.Left="19.839"
+                Canvas.Top="12.038"
+                Width="20.4"
+                Height="1.5"
+                RenderTransformOrigin="0.0163398532615818,0.222222222222222">
+                <RSIBorder.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                    </TransformGroup>
+                </RSIBorder.RenderTransform>
+                <RSIPath Data="M-0.728000000000065,-885.128898092651 L19.672,-885.128898092651"
+                    RenderTransformOrigin="0.5,0.5"
+                    Stretch="Fill"
+                    Stroke="#FF000000"
+                    StrokeThickness="1">
+                    <RSIPath.Animations>
+                        <Animation Condition="$TAGNAME.IN == 1">
+                            <Invisible/>
+                        </Animation>
+                    </RSIPath.Animations>
+                    <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="-180" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                    </RSIPath.LayoutTransform>
+                </RSIPath>
+            </RSIBorder>
+        </RSICanvas>
+
+    </Grid>
+</RSISynoptic>

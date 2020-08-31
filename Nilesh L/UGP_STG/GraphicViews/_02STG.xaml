@@ -1,0 +1,76 @@
+<UserControl 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+             xmlns:local="clr-namespace:UGP_STG" 
+             xmlns:HMI="clr-namespace:UGP_STG.HMI" x:Class="UGP_STG._02STG" 
+             mc:Ignorable="d">
+    <Grid>
+        <!--  Graphic Part  -->
+        <local:_02STG_Translation x:Name="GRAPHIC" d:IsLocked="True"  />
+
+        <!-- Normal Graphic Layer Path -->
+        <Canvas x:Name="GRAPHIC_OVERLAY">
+            <HMI:Navigaton x:Name="EmbeddedSymbol37_Copy1"
+                Canvas.Left="1458.258"
+                Canvas.Top="244.49"
+                Width="29"
+                Height="38.778"
+                Type="Utility" DISP="93STG07" RenderTransformOrigin="0.5,0.5" >
+                <HMI:Navigaton.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Navigaton.RenderTransform>
+            </HMI:Navigaton>
+            <HMI:Navigaton x:Name="EmbeddedSymbol37_Copy2"
+                Canvas.Left="1465.443"
+                Canvas.Top="707.981"
+                Width="29"
+                Height="38.783"
+                Type="Utility" DISP="06STG" />
+        </Canvas>
+
+        <!-- FOD Part -->
+        <Canvas x:Name='FOD' Visibility="{FODBinding}">
+            <!-- Start FOD -->
+            <!-- Stop FOD -->
+        </Canvas>
+
+        <!-- BL Part -->
+        <Canvas x:Name='BL' Visibility='{BLBinding}' >
+            <!-- Start BL -->
+            <!-- Stop BL -->
+        </Canvas>
+
+        <!-- FAILURE Part -->
+        <Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' >
+            <RSI_StdTransmitter Canvas.Left="131.048" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="87.292" FailureFaceplateName="" ModelName="R35_093PIT2714"/>
+            <RSI_StdTransmitter Canvas.Left="86.798" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="214.214" FailureFaceplateName=""/>
+            <RSI_StdTransmitter Canvas.Left="577.965" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="563.131" FailureFaceplateName="" ModelName="R35_093SIT2760A"/>
+            <RSI_StdTransmitter Canvas.Left="577.965" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="607.797" FailureFaceplateName="" ModelName="R35_093JIT2790"/>
+            <RSI_StdTransmitter Canvas.Left="802.215" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="577.797" FailureFaceplateName="" ModelName="R35_093PIT2733"/>
+            <RSI_StdTransmitter Canvas.Left="981.048" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="579.797" FailureFaceplateName="" ModelName="R35_093PIT2734A"/>
+            <RSI_StdTransmitter Canvas.Left="1161.298" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="358.547" FailureFaceplateName="" ModelName="R35_093TIT2735"/>
+            <RSI_StdTransmitter Canvas.Left="1242.32" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="417.714" FailureFaceplateName="" ModelName="R35_093PIT2735"/>
+            <RSI_StdTransmitter Canvas.Left="1242.32" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="652.192" FailureFaceplateName="" ModelName="R35_093TIT2737A"/>
+            <RSI_StdTransmitter Canvas.Left="587.965" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="563.131" FailureFaceplateName="" ModelName="R35_093SIT2760B"/>
+            <RSI_StdTransmitter Canvas.Left="1242.32" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="578.866" FailureFaceplateName="" ModelName="R35_093PIT2737A"/>
+            <RSI_StdTransmitter Canvas.Left="1255.652" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="578.866" FailureFaceplateName="" ModelName="R35_093PIT2737B"/>
+            <RSI_StdTransmitter Canvas.Left="1268.984" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="578.866" FailureFaceplateName="" ModelName="R35_093PIT2737C"/>
+            <RSI_StdTransmitter Canvas.Left="1252.319" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="652.192" FailureFaceplateName="" ModelName="R35_093TIT2737B"/>
+            <RSI_StdTransmitter Canvas.Left="1262.318" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="652.192" FailureFaceplateName="" ModelName="R35_093TIT2737C"/>
+            <RSI_StdTransmitter Canvas.Left="996.548" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="579.797" FailureFaceplateName="" ModelName="R35_093PIT2734B"/>
+            <RSI_StdTransmitter Canvas.Left="1011.548" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="579.797" FailureFaceplateName="" ModelName="R35_093PIT2734C"/>
+            <RSI_StdTransmitter Canvas.Left="621.714" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="344.547" FailureFaceplateName="" ModelName="R35_093SI2826B"/>
+            <RSI_StdTransmitter Canvas.Left="633.131" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="344.547" FailureFaceplateName="" ModelName="R35_093SI2826C"/>
+            <!-- Start FAILURE -->
+            <!-- Stop FAILURE -->
+        </Canvas>
+
+    </Grid>
+</UserControl>

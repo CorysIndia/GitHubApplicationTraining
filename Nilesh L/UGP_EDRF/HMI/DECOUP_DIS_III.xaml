@@ -1,0 +1,2656 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:DECOUP_DIS_III}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:DECOUP_DIS_III}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="659"
+                         Height="643"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIRectangle x:Name="Rectangle1"
+                              Width="659"
+                              Height="643"
+                              Fill="#FF343434"
+                              Stroke="#FFCCCCCC"
+                              StrokeThickness="1" />
+                <RSIText x:Name="LfSideLab"
+                         Canvas.Left="9.1862"
+                         Canvas.Top="332.71091"
+                         Width="97.55078"
+                         Height="14.52344"
+                         VerticalAlignment="Center"
+                         Foreground="#FFFFFFFF"
+                         IsHitTestVisible="False"
+                         RenderTransformOrigin="0,0"
+                         Text="Anti-Surge Valve"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10">
+                  <RSIText.RenderTransform>
+                    <RotateTransform Angle="-90" />
+                  </RSIText.RenderTransform>
+                </RSIText>
+                <RSIText x:Name="BotLabel"
+                         Canvas.Left="256"
+                         Canvas.Top="568.5521"
+                         Width="98.29202"
+                         Height="14.89581"
+                         VerticalAlignment="Center"
+                         Foreground="#FFFFFFFF"
+                         IsHitTestVisible="False"
+                         Text="Process Demand"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10" />
+                <RSIText x:Name="ModeLabel"
+                         Canvas.Left="232.0725"
+                         Canvas.Top="8.06901"
+                         Width="144.2065"
+                         Height="16.75781"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FFFFFFFF"
+                         IsHitTestVisible="False"
+                         Text="Process Decoupling"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold" />
+                <RSIText x:Name="RtVertLabel"
+                         Canvas.Left="626.8838"
+                         Canvas.Top="360.1435"
+                         Width="153.8519"
+                         Height="14.52344"
+                         VerticalAlignment="Center"
+                         Foreground="#FFFFFFFF"
+                         IsHitTestVisible="False"
+                         RenderTransformOrigin="0,0"
+                         Text="Performance Control Scale"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10">
+                  <RSIText.RenderTransform>
+                    <RotateTransform Angle="-90" />
+                  </RSIText.RenderTransform>
+                </RSIText>
+                <RSICanvas Name="RtVertScaleNum"
+                           Width="7.143738"
+                           Height="516.8959"
+                           Left="575"
+                           Top="25.55209">
+                  <RSIText x:Name="Text13"
+                           Canvas.Top="-9.99999999962142E-06"
+                           Width="7.143738"
+                           Height="14.89583"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           Text="{Value (PerfMax - PerfMin),
+                                        Converter={FormatConverter {}{0:0}}}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10">
+                    <RSIText.Animations>
+                      <Animation>
+                        <!--  Value Calculation ="(Round(((PerfMax - PerfMin) + 0.5), 0.5) - 1)*10/10 + PerfMin"  -->
+                        <ChangeText Text="ValueCalculation" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                  <RSIText x:Name="Text3"
+                           Canvas.Top="49"
+                           Width="7.143738"
+                           Height="14.89584"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           Text="{Value (PerfMax - PerfMin),
+                                        Converter={FormatConverter {}{0:0}}}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10">
+                    <RSIText.Animations>
+                      <Animation>
+                        <!--  Value Calculation ="(Round(((PerfMax - PerfMin) + 0.5), 0.5) - 1)*9/10 + PerfMin"  -->
+                        <ChangeText Text="ValueCalculation" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                  <RSIText x:Name="Text4"
+                           Canvas.Top="99.00001"
+                           Width="7.143738"
+                           Height="14.89584"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           Text="{Value (PerfMax - PerfMin),
+                                        Converter={FormatConverter {}{0:0}}}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10">
+                    <RSIText.Animations>
+                      <Animation>
+                        <!--  Value Calculation ="(Round(((PerfMax - PerfMin) + 0.5), 0.5) - 1)*8/10 + PerfMin"  -->
+                        <ChangeText Text="ValueCalculation" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                  <RSIText x:Name="Text5"
+                           Canvas.Top="149.00001"
+                           Width="7.143738"
+                           Height="14.89583"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           Text="{Value (PerfMax - PerfMin),
+                                        Converter={FormatConverter {}{0:0}}}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10">
+                    <RSIText.Animations>
+                      <Animation>
+                        <!--  Value Calculation ="(Round(((PerfMax - PerfMin) + 0.5), 0.5) - 1)*7/10 + PerfMin"  -->
+                        <ChangeText Text="ValueCalculation" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                  <RSIText x:Name="Text6"
+                           Canvas.Top="200.00001"
+                           Width="7.143738"
+                           Height="14.89583"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           Text="{Value (PerfMax - PerfMin),
+                                        Converter={FormatConverter {}{0:0}}}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10">
+                    <RSIText.Animations>
+                      <Animation>
+                        <!--  Value Calculation ="(Round(((PerfMax - PerfMin) + 0.5), 0.5) - 1)*6/10 + PerfMin"  -->
+                        <ChangeText Text="ValueCalculation" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                  <RSIText x:Name="Text7"
+                           Canvas.Top="250.00001"
+                           Width="7.143738"
+                           Height="14.89584"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           Text="{Value (PerfMax - PerfMin),
+                                        Converter={FormatConverter {}{0:0}}}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10">
+                    <RSIText.Animations>
+                      <Animation>
+                        <!--  Value Calculation ="(Round(((PerfMax - PerfMin) + 0.5), 0.5) - 1)*5/10 + PerfMin"  -->
+                        <ChangeText Text="ValueCalculation" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                  <RSIText x:Name="Text8"
+                           Canvas.Top="300.00001"
+                           Width="7.143738"
+                           Height="14.89584"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           Text="{Value (PerfMax - PerfMin),
+                                        Converter={FormatConverter {}{0:0}}}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10">
+                    <RSIText.Animations>
+                      <Animation>
+                        <!--  Value Calculation ="(Round(((PerfMax - PerfMin) + 0.5), 0.5) - 1)*4/10 + PerfMin"  -->
+                        <ChangeText Text="ValueCalculation" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                  <RSIText x:Name="Text9"
+                           Canvas.Top="351.00001"
+                           Width="7.143738"
+                           Height="14.89584"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           Text="{Value (PerfMax - PerfMin),
+                                        Converter={FormatConverter {}{0:0}}}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10">
+                    <RSIText.Animations>
+                      <Animation>
+                        <!--  Value Calculation ="(Round(((PerfMax - PerfMin) + 0.5), 0.5) - 1)*3/10 + PerfMin"  -->
+                        <ChangeText Text="ValueCalculation" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                  <RSIText x:Name="Text10"
+                           Canvas.Top="401.00001"
+                           Width="7.143738"
+                           Height="14.89584"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           Text="{Value (PerfMax - PerfMin),
+                                        Converter={FormatConverter {}{0:0}}}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10">
+                    <RSIText.Animations>
+                      <Animation>
+                        <!--  Value Calculation ="(Round(((PerfMax - PerfMin) + 0.5), 0.5) - 1)*2/10 + PerfMin"  -->
+                        <ChangeText Text="ValueCalculation" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                  <RSIText x:Name="Text11"
+                           Canvas.Top="451.00001"
+                           Width="7.143738"
+                           Height="14.89584"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           Text="{Value (PerfMax - PerfMin),
+                                        Converter={FormatConverter {}{0:0}}}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10">
+                    <RSIText.Animations>
+                      <Animation>
+                        <!--  Value Calculation ="(Round(((PerfMax - PerfMin) + 0.5), 0.5) - 1)*1/10 + PerfMin"  -->
+                        <ChangeText Text="ValueCalculation" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                  <RSIText x:Name="Text12"
+                           Canvas.Top="502.00001"
+                           Width="7.143738"
+                           Height="14.89581"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           Text="{Value (PerfMax - PerfMin),
+                                        Converter={FormatConverter {}{0:0}}}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10">
+                    <RSIText.Animations>
+                      <Animation>
+                        <!--  Value Calculation ="(Round(((PerfMax - PerfMin) + 0.5), 0.5) - 1)*0/10 + PerfMin"  -->
+                        <ChangeText Text="ValueCalculation" />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                </RSICanvas>
+                <RSICanvas Name="LfVertScaleNum"
+                           Width="21.43126"
+                           Height="516.8959"
+                           Left="22.56874"
+                           Top="25.55208">
+                  <RSIText x:Name="Num11"
+                           Width="21.43126"
+                           Height="14.89583"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="100"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Num10"
+                           Canvas.Left="7.14375"
+                           Canvas.Top="49.00001"
+                           Width="14.28751"
+                           Height="14.89584"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="90"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Num09"
+                           Canvas.Left="7.14375"
+                           Canvas.Top="99.00002"
+                           Width="14.28751"
+                           Height="14.89584"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="80"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Num08"
+                           Canvas.Left="7.14375"
+                           Canvas.Top="149.00002"
+                           Width="14.28751"
+                           Height="14.89583"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="70"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Num07"
+                           Canvas.Left="7.14375"
+                           Canvas.Top="200.00002"
+                           Width="14.28751"
+                           Height="14.89583"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="60"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Num06"
+                           Canvas.Left="7.14375"
+                           Canvas.Top="250.00002"
+                           Width="14.28751"
+                           Height="14.89584"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="50"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Num05"
+                           Canvas.Left="7.14375"
+                           Canvas.Top="300.00002"
+                           Width="14.28751"
+                           Height="14.89584"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="40"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Num04"
+                           Canvas.Left="7.14375"
+                           Canvas.Top="351.00002"
+                           Width="14.28751"
+                           Height="14.89584"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="30"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Num03"
+                           Canvas.Left="7.14375"
+                           Canvas.Top="401.00002"
+                           Width="14.28751"
+                           Height="14.89584"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="20"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Num02"
+                           Canvas.Left="7.14375"
+                           Canvas.Top="451.00002"
+                           Width="14.28751"
+                           Height="14.89584"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="10"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Num01"
+                           Canvas.Left="14.28751"
+                           Canvas.Top="502.00002"
+                           Width="7.143753"
+                           Height="14.89581"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="0"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                </RSICanvas>
+                <RSICanvas Name="Grid"
+                           Width="517"
+                           Height="507"
+                           Left="47"
+                           Top="34">
+                  <RSICanvas Name="Group1"
+                             Width="517"
+                             Height="507"
+                             Left="0"
+                             Top="0">
+                    <RSIBorder x:Name="Line1"
+                               Canvas.Left="7.25"
+                               Canvas.Top="-0.75"
+                               Width="500"
+                               Height="1.5">
+                      <RSIPath Data="M7.25,-0.75 L507.25,-0.75"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line2"
+                               Canvas.Left="7.25"
+                               Canvas.Top="49.25"
+                               Width="500"
+                               Height="1.5">
+                      <RSIPath Data="M7.25,49.25 L507.25,49.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line3"
+                               Canvas.Left="7.25"
+                               Canvas.Top="99.25"
+                               Width="500"
+                               Height="1.5">
+                      <RSIPath Data="M7.25,99.25 L507.25,99.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line4"
+                               Canvas.Left="7.25"
+                               Canvas.Top="149.25"
+                               Width="500"
+                               Height="1.5">
+                      <RSIPath Data="M7.25,149.25 L507.25,149.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line5"
+                               Canvas.Left="7.25"
+                               Canvas.Top="199.25"
+                               Width="500"
+                               Height="1.5">
+                      <RSIPath Data="M7.25,199.25 L507.25,199.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line6"
+                               Canvas.Left="7.25"
+                               Canvas.Top="249.25"
+                               Width="500"
+                               Height="1.5">
+                      <RSIPath Data="M7.25,249.25 L507.25,249.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line7"
+                               Canvas.Left="7.25"
+                               Canvas.Top="299.25"
+                               Width="500"
+                               Height="1.5">
+                      <RSIPath Data="M7.25,299.25 L507.25,299.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line8"
+                               Canvas.Left="7.25"
+                               Canvas.Top="349.25"
+                               Width="500"
+                               Height="1.5">
+                      <RSIPath Data="M7.25,349.25 L507.25,349.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line9"
+                               Canvas.Left="7.25"
+                               Canvas.Top="399.25"
+                               Width="500"
+                               Height="1.5">
+                      <RSIPath Data="M7.25,399.25 L507.25,399.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line10"
+                               Canvas.Left="57.25"
+                               Canvas.Top="-0.75"
+                               Width="1.5"
+                               Height="500">
+                      <RSIPath Data="M57.25,-0.75 L57.25,499.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line11"
+                               Canvas.Left="107.25"
+                               Canvas.Top="-0.75"
+                               Width="1.5"
+                               Height="500">
+                      <RSIPath Data="M107.25,-0.75 L107.25,499.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line12"
+                               Canvas.Left="157.25"
+                               Canvas.Top="-0.75"
+                               Width="1.5"
+                               Height="500">
+                      <RSIPath Data="M157.25,-0.75 L157.25,499.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line13"
+                               Canvas.Left="207.25"
+                               Canvas.Top="-0.75"
+                               Width="1.5"
+                               Height="500">
+                      <RSIPath Data="M207.25,-0.75 L207.25,499.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line14"
+                               Canvas.Left="257.25"
+                               Canvas.Top="-0.75"
+                               Width="1.5"
+                               Height="500">
+                      <RSIPath Data="M257.25,-0.75 L257.25,499.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line15"
+                               Canvas.Left="307.25"
+                               Canvas.Top="-0.75"
+                               Width="1.5"
+                               Height="500">
+                      <RSIPath Data="M307.25,-0.75 L307.25,499.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line16"
+                               Canvas.Left="357.25"
+                               Canvas.Top="-0.75"
+                               Width="1.5"
+                               Height="500">
+                      <RSIPath Data="M357.25,-0.75 L357.25,499.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line17"
+                               Canvas.Left="407.25"
+                               Canvas.Top="-0.75"
+                               Width="1.5"
+                               Height="500">
+                      <RSIPath Data="M407.25,-0.75 L407.25,499.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line18"
+                               Canvas.Left="457.25"
+                               Canvas.Top="-0.75"
+                               Width="1.5"
+                               Height="500">
+                      <RSIPath Data="M457.25,-0.75 L457.25,499.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line19"
+                               Canvas.Left="507.25"
+                               Canvas.Top="0.25"
+                               Width="1.5"
+                               Height="500">
+                      <RSIPath Data="M507.25,0.25 L507.25,500.25"
+                               Stretch="Fill"
+                               Stroke="#FFFFFFFF"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line20"
+                               Canvas.Left="7.25"
+                               Canvas.Top="449.25"
+                               Width="500"
+                               Height="1.5">
+                      <RSIPath Data="M7.25,449.25 L507.25,449.25"
+                               Stretch="Fill"
+                               Stroke="#FF666666"
+                               StrokeThickness="1" />
+                    </RSIBorder>
+                    <RSICanvas Name="Group1_1"
+                               Width="16"
+                               Height="500"
+                               Left="0"
+                               Top="0">
+                      <RSIBorder x:Name="Line21"
+                                 Canvas.Left="0.25"
+                                 Canvas.Top="499.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M0.25,499.25 L8.25,499.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line22"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="500">
+                        <RSIPath Data="M7.25,-0.75 L7.25,499.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line23"
+                                 Canvas.Left="0.25"
+                                 Canvas.Top="-0.75"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M0.25,-0.75 L8.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line24"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="9.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,9.25 L15.25,9.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line25"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="29.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,29.25 L15.25,29.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line26"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="19.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,19.25 L15.25,19.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line27"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="39.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,39.25 L15.25,39.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line28"
+                                 Canvas.Left="-0.75"
+                                 Canvas.Top="49.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M-0.75,49.25 L7.25,49.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line29"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="59.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,59.25 L15.25,59.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line30"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="79.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,79.25 L15.25,79.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line31"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="69.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,69.25 L15.25,69.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line32"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="89.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,89.25 L15.25,89.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line33"
+                                 Canvas.Left="0.25"
+                                 Canvas.Top="99.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M0.25,99.25 L8.25,99.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line34"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="109.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,109.25 L15.25,109.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line35"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="129.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,129.25 L15.25,129.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line36"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="119.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,119.25 L15.25,119.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line37"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="139.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,139.25 L15.25,139.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line38"
+                                 Canvas.Left="0.25"
+                                 Canvas.Top="149.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M0.25,149.25 L8.25,149.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line39"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="159.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,159.25 L15.25,159.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line40"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="179.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,179.25 L15.25,179.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line41"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="169.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,169.25 L15.25,169.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line42"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="189.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,189.25 L15.25,189.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line43"
+                                 Canvas.Left="-0.75"
+                                 Canvas.Top="199.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M-0.75,199.25 L7.25,199.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line44"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="209.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,209.25 L15.25,209.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line45"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="229.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,229.25 L15.25,229.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line46"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="219.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,219.25 L15.25,219.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line47"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="239.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,239.25 L15.25,239.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line48"
+                                 Canvas.Left="0.25"
+                                 Canvas.Top="249.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M0.25,249.25 L8.25,249.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line49"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="259.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,259.25 L15.25,259.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line50"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="279.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,279.25 L15.25,279.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line51"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="269.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,269.25 L15.25,269.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line52"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="289.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,289.25 L15.25,289.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line53"
+                                 Canvas.Left="0.25"
+                                 Canvas.Top="299.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M0.25,299.25 L8.25,299.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line54"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="309.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,309.25 L15.25,309.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line55"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="329.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,329.25 L15.25,329.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line56"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="319.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,319.25 L15.25,319.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line57"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="339.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,339.25 L15.25,339.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line58"
+                                 Canvas.Left="-0.75"
+                                 Canvas.Top="349.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M-0.75,349.25 L7.25,349.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line59"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="359.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,359.25 L15.25,359.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line60"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="379.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,379.25 L15.25,379.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line61"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="369.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,369.25 L15.25,369.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line62"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="389.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,389.25 L15.25,389.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line63"
+                                 Canvas.Left="0.25"
+                                 Canvas.Top="399.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M0.25,399.25 L8.25,399.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line64"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="409.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,409.25 L15.25,409.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line65"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="429.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,429.25 L15.25,429.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line66"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="419.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,419.25 L15.25,419.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line67"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="439.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,439.25 L15.25,439.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line68"
+                                 Canvas.Left="0.25"
+                                 Canvas.Top="449.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M0.25,449.25 L8.25,449.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line69"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="459.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,459.25 L15.25,459.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line70"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="479.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,479.25 L15.25,479.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line71"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="469.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,469.25 L15.25,469.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line72"
+                                 Canvas.Left="7.25"
+                                 Canvas.Top="489.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M7.25,489.25 L15.25,489.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                    </RSICanvas>
+                    <RSICanvas Name="Group2"
+                               Width="500"
+                               Height="15"
+                               Left="8"
+                               Top="492">
+                      <RSIBorder x:Name="Line21_1"
+                                 Canvas.Left="-0.75"
+                                 Canvas.Top="7.25"
+                                 Width="500"
+                                 Height="1.5">
+                        <RSIPath Data="M-0.75,7.25 L499.25,7.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line22_1"
+                                 Canvas.Left="499.25"
+                                 Canvas.Top="6.25"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M499.25,14.25 L499.25,6.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line23_1"
+                                 Canvas.Left="489.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M489.25,7.25 L489.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line24_1"
+                                 Canvas.Left="469.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M469.25,7.25 L469.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line25_1"
+                                 Canvas.Left="479.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M479.25,7.25 L479.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line26_1"
+                                 Canvas.Left="459.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M459.25,7.25 L459.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line27_1"
+                                 Canvas.Left="449.25"
+                                 Canvas.Top="6.25"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M449.25,14.25 L449.25,6.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line28_1"
+                                 Canvas.Left="439.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M439.25,7.25 L439.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line29_1"
+                                 Canvas.Left="419.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M419.25,7.25 L419.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line30_1"
+                                 Canvas.Left="429.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M429.25,7.25 L429.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line31_1"
+                                 Canvas.Left="409.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M409.25,7.25 L409.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line32_1"
+                                 Canvas.Left="399.25"
+                                 Canvas.Top="6.25"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M399.25,14.25 L399.25,6.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line33_1"
+                                 Canvas.Left="389.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M389.25,7.25 L389.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line34_1"
+                                 Canvas.Left="369.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M369.25,7.25 L369.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line35_1"
+                                 Canvas.Left="379.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M379.25,7.25 L379.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line36_1"
+                                 Canvas.Left="359.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M359.25,7.25 L359.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line37_1"
+                                 Canvas.Left="349.25"
+                                 Canvas.Top="6.25"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M349.25,14.25 L349.25,6.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line38_1"
+                                 Canvas.Left="339.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M339.25,7.25 L339.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line39_1"
+                                 Canvas.Left="319.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M319.25,7.25 L319.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line40_1"
+                                 Canvas.Left="329.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M329.25,7.25 L329.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line41_1"
+                                 Canvas.Left="309.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M309.25,7.25 L309.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line42_1"
+                                 Canvas.Left="299.25"
+                                 Canvas.Top="6.25"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M299.25,14.25 L299.25,6.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line43_1"
+                                 Canvas.Left="289.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M289.25,7.25 L289.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line44_1"
+                                 Canvas.Left="269.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M269.25,7.25 L269.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line45_1"
+                                 Canvas.Left="279.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M279.25,7.25 L279.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line46_1"
+                                 Canvas.Left="259.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M259.25,7.25 L259.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line47_1"
+                                 Canvas.Left="249.25"
+                                 Canvas.Top="6.25"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M249.25,14.25 L249.25,6.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line48_1"
+                                 Canvas.Left="239.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M239.25,7.25 L239.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line49_1"
+                                 Canvas.Left="219.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M219.25,7.25 L219.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line50_1"
+                                 Canvas.Left="229.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M229.25,7.25 L229.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line51_1"
+                                 Canvas.Left="209.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M209.25,7.25 L209.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line52_1"
+                                 Canvas.Left="199.25"
+                                 Canvas.Top="6.25"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M199.25,14.25 L199.25,6.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line53_1"
+                                 Canvas.Left="189.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M189.25,7.25 L189.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line54_1"
+                                 Canvas.Left="169.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M169.25,7.25 L169.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line55_1"
+                                 Canvas.Left="179.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M179.25,7.25 L179.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line56_1"
+                                 Canvas.Left="159.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M159.25,7.25 L159.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line57_1"
+                                 Canvas.Left="149.25"
+                                 Canvas.Top="6.25"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M149.25,14.25 L149.25,6.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line58_1"
+                                 Canvas.Left="139.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M139.25,7.25 L139.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line59_1"
+                                 Canvas.Left="119.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M119.25,7.25 L119.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line60_1"
+                                 Canvas.Left="129.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M129.25,7.25 L129.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line61_1"
+                                 Canvas.Left="109.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M109.25,7.25 L109.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line62_1"
+                                 Canvas.Left="99.25"
+                                 Canvas.Top="6.25"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M99.25,14.25 L99.25,6.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line63_1"
+                                 Canvas.Left="89.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M89.25,7.25 L89.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line64_1"
+                                 Canvas.Left="69.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M69.25,7.25 L69.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line65_1"
+                                 Canvas.Left="79.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M79.25,7.25 L79.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line66_1"
+                                 Canvas.Left="59.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M59.25,7.25 L59.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line67_1"
+                                 Canvas.Left="49.25"
+                                 Canvas.Top="6.25"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M49.25,14.25 L49.25,6.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line68_1"
+                                 Canvas.Left="39.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M39.25,7.25 L39.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line69_1"
+                                 Canvas.Left="19.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M19.25,7.25 L19.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line70_1"
+                                 Canvas.Left="29.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M29.25,7.25 L29.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line71_1"
+                                 Canvas.Left="9.25"
+                                 Canvas.Top="-0.75"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M9.25,7.25 L9.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line72_1"
+                                 Canvas.Left="-0.75"
+                                 Canvas.Top="6.25"
+                                 Width="1.5"
+                                 Height="8">
+                        <RSIPath Data="M-0.75,14.25 L-0.75,6.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                    </RSICanvas>
+                    <RSICanvas Name="Group3"
+                               Width="24"
+                               Height="500"
+                               Left="493"
+                               Top="0">
+                      <RSIBorder x:Name="Line21_2"
+                                 Canvas.Left="-0.75"
+                                 Canvas.Top="499.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M-0.75,499.25 L7.25,499.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line23_2"
+                                 Canvas.Left="15.25"
+                                 Canvas.Top="-0.75"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M15.25,-0.75 L23.25,-0.75"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line24_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="9.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,9.25 L14.25,9.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line25_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="29.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,29.25 L14.25,29.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line26_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="19.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,19.25 L14.25,19.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line27_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="39.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,39.25 L14.25,39.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line28_2"
+                                 Canvas.Left="14.25"
+                                 Canvas.Top="49.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M14.25,49.25 L22.25,49.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line29_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="59.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,59.25 L14.25,59.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line30_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="79.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,79.25 L14.25,79.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line31_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="69.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,69.25 L14.25,69.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line32_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="89.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,89.25 L14.25,89.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line33_2"
+                                 Canvas.Left="15.25"
+                                 Canvas.Top="99.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M15.25,99.25 L23.25,99.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line34_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="109.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,109.25 L14.25,109.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line35_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="129.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,129.25 L14.25,129.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line36_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="119.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,119.25 L14.25,119.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line37_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="139.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,139.25 L14.25,139.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line38_2"
+                                 Canvas.Left="15.25"
+                                 Canvas.Top="149.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M15.25,149.25 L23.25,149.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line39_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="159.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,159.25 L14.25,159.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line40_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="179.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,179.25 L14.25,179.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line41_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="169.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,169.25 L14.25,169.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line42_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="189.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,189.25 L14.25,189.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line43_2"
+                                 Canvas.Left="14.25"
+                                 Canvas.Top="199.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M14.25,199.25 L22.25,199.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line44_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="209.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,209.25 L14.25,209.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line45_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="229.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,229.25 L14.25,229.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line46_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="219.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,219.25 L14.25,219.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line47_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="239.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,239.25 L14.25,239.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line48_2"
+                                 Canvas.Left="15.25"
+                                 Canvas.Top="249.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M15.25,249.25 L23.25,249.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line49_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="259.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,259.25 L14.25,259.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line50_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="279.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,279.25 L14.25,279.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line51_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="269.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,269.25 L14.25,269.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line52_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="289.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,289.25 L14.25,289.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line53_2"
+                                 Canvas.Left="15.25"
+                                 Canvas.Top="299.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M15.25,299.25 L23.25,299.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line54_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="309.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,309.25 L14.25,309.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line55_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="329.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,329.25 L14.25,329.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line56_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="319.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,319.25 L14.25,319.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line57_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="339.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,339.25 L14.25,339.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line58_2"
+                                 Canvas.Left="14.25"
+                                 Canvas.Top="349.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M14.25,349.25 L22.25,349.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line59_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="359.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,359.25 L14.25,359.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line60_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="379.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,379.25 L14.25,379.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line61_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="369.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,369.25 L14.25,369.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line62_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="389.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,389.25 L14.25,389.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line63_2"
+                                 Canvas.Left="15.25"
+                                 Canvas.Top="399.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M15.25,399.25 L23.25,399.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line64_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="409.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,409.25 L14.25,409.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line65_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="429.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,429.25 L14.25,429.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line66_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="419.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,419.25 L14.25,419.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line67_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="439.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,439.25 L14.25,439.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line68_2"
+                                 Canvas.Left="15.25"
+                                 Canvas.Top="449.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M15.25,449.25 L23.25,449.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line69_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="459.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,459.25 L14.25,459.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line70_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="479.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,479.25 L14.25,479.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line71_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="469.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,469.25 L14.25,469.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                      <RSIBorder x:Name="Line72_2"
+                                 Canvas.Left="6.25"
+                                 Canvas.Top="489.25"
+                                 Width="8"
+                                 Height="1.5">
+                        <RSIPath Data="M6.25,489.25 L14.25,489.25"
+                                 Stretch="Fill"
+                                 Stroke="#FFFFFFFF"
+                                 StrokeThickness="1" />
+                      </RSIBorder>
+                    </RSICanvas>
+                  </RSICanvas>
+                </RSICanvas>
+                <RSICanvas Name="BotScaleNum"
+                           Width="514"
+                           Height="14.89581"
+                           Left="52"
+                           Top="544.5521">
+                  <RSIText x:Name="Text2"
+                           Canvas.Left="46"
+                           Width="14"
+                           Height="14.89581"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="10"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text3_1"
+                           Canvas.Left="96"
+                           Width="14"
+                           Height="14.89581"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="20"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text4_1"
+                           Canvas.Left="146"
+                           Width="14"
+                           Height="14.89581"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="30"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text5_1"
+                           Canvas.Left="196"
+                           Width="14"
+                           Height="14.89581"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="40"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text6_1"
+                           Canvas.Left="246"
+                           Width="14"
+                           Height="14.89581"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="50"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text7_1"
+                           Canvas.Left="296"
+                           Width="14"
+                           Height="14.89581"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="60"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text8_1"
+                           Canvas.Left="346"
+                           Width="14"
+                           Height="14.89581"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="70"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text9_1"
+                           Canvas.Left="396"
+                           Width="14"
+                           Height="14.89581"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="80"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text10_1"
+                           Canvas.Left="446"
+                           Width="14"
+                           Height="14.89581"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="90"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text11_1"
+                           Canvas.Left="493"
+                           Width="21"
+                           Height="14.89581"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="100"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text12_1"
+                           Width="7"
+                           Height="14.89581"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="0"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                </RSICanvas>
+                <RSIBorder x:Name="SrgLine"
+                           Canvas.Left="555.2498"
+                           Canvas.Top="33.25"
+                           Width="501"
+                           Height="500"
+                           RenderTransformOrigin="0.00133067198935462,0.00133333333333333">
+                  <RSIPath Data="M54.24982,33.25 L555.2498,533.25"
+                           RenderTransformOrigin="0.5,0.5"
+                           Stretch="Fill"
+                           Stroke="#FFFE6C01"
+                           StrokeThickness="2">
+                    <RSIPath.Animations />
+                    <RSIPath.LayoutTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="-180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIPath.LayoutTransform>
+                  </RSIPath>
+                  <RSIBorder.RenderTransform>
+                    <TransformGroup>
+                      <RotateTransform Angle="180" />
+                      <ScaleTransform ScaleX="1" ScaleY="-1" />
+                    </TransformGroup>
+                  </RSIBorder.RenderTransform>
+                </RSIBorder>
+                <RSIBorder x:Name="ProcessLine"
+                           Canvas.Left="53.25"
+                           Canvas.Top="33.25"
+                           Width="501"
+                           Height="500">
+                  <RSIPath Data="M554.25,33.25 L53.25,533.25"
+                           Stretch="Fill"
+                           Stroke="#FF8383FF"
+                           StrokeThickness="2">
+                    <RSIPath.Animations />
+                  </RSIPath>
+                </RSIBorder>
+                <RSIBorder x:Name="DynBPnt"
+                           Canvas.Left="54.25"
+                           Canvas.Top="31.25"
+                           Width="1.5"
+                           Height="505">
+                  <RSIPath Data="M54.25,31.25 L55.25,536.25"
+                           Stretch="Fill"
+                           Stroke="#FF83FF83"
+                           StrokeDashArray="1"
+                           StrokeThickness="2">
+                    <RSIPath.Animations />
+                  </RSIPath>
+                </RSIBorder>
+                <RSIBorder x:Name="PrcDmdLine"
+                           Canvas.Left="57.25"
+                           Canvas.Top="531.25"
+                           Width="496.5"
+                           Height="1.5">
+                  <RSIPath Data="M57.25,531.25 L553.75,531.25"
+                           Stretch="Fill"
+                           Stroke="#FFCAC900"
+                           StrokeThickness="4">
+                    <RSIPath.Animations />
+                  </RSIPath>
+                </RSIBorder>
+                <RSIEllipse x:Name="ActSpdSP"
+                            Canvas.Left="49.58823"
+                            Canvas.Top="528.7059"
+                            Width="11.76471"
+                            Height="11.76471"
+                            Fill="#FF00FFFF"
+                            Stroke="#FF000000"
+                            StrokeThickness="0">
+                  <RSIEllipse.Animations />
+                </RSIEllipse>
+                <RSICanvas Name="TgtSpdSP"
+                           Width="15"
+                           Height="15"
+                           Left="48"
+                           Top="527">
+                  <RSIBorder x:Name="Line2_1"
+                             Canvas.Left="6.25"
+                             Canvas.Top="-0.75"
+                             Width="1.5"
+                             Height="15">
+                    <RSIPath Data="M6.25,-0.75 L6.25,14.25"
+                             Stretch="Fill"
+                             Stroke="#FF00FFFF"
+                             StrokeThickness="2" />
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line3_1"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="6.25"
+                             Width="15"
+                             Height="1.5">
+                    <RSIPath Data="M-0.75,6.25 L14.25,6.25"
+                             Stretch="Fill"
+                             Stroke="#FF00FFFF"
+                             StrokeThickness="2" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSIEllipse x:Name="ASVPt"
+                            Canvas.Left="49.58823"
+                            Canvas.Top="528.7059"
+                            Width="11.76471"
+                            Height="11.76471"
+                            Fill="#FFFF00FF"
+                            Stroke="#FF000000"
+                            StrokeThickness="0">
+                  <RSIEllipse.Animations />
+                </RSIEllipse>
+                <RSICanvas Name="TgtASV"
+                           Width="15"
+                           Height="15"
+                           Left="48"
+                           Top="527">
+                  <RSIBorder x:Name="Line2_2"
+                             Canvas.Left="6.25"
+                             Canvas.Top="-0.75"
+                             Width="1.5"
+                             Height="15">
+                    <RSIPath Data="M6.25,-0.75 L6.25,14.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF00FF"
+                             StrokeThickness="2" />
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line3_2"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="6.25"
+                             Width="15"
+                             Height="1.5">
+                    <RSIPath Data="M-0.75,6.25 L14.25,6.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF00FF"
+                             StrokeThickness="2" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="Legend"
+                           Width="648"
+                           Height="44"
+                           Left="6"
+                           Top="593">
+                  <RSIRectangle x:Name="Rectangle2"
+                                Width="648"
+                                Height="44"
+                                Fill="#FF4D4D4D"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="2" />
+                  <RSICanvas Name="TgtASVLend"
+                             Width="15"
+                             Height="15"
+                             Left="13"
+                             Top="5">
+                    <RSIBorder x:Name="Line2_3"
+                               Canvas.Left="6.25"
+                               Canvas.Top="-0.75"
+                               Width="1.5"
+                               Height="15">
+                      <RSIPath Data="M6.25,-0.75 L6.25,14.25"
+                               Stretch="Fill"
+                               Stroke="#FFFF00FF"
+                               StrokeThickness="2" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line3_3"
+                               Canvas.Left="-0.75"
+                               Canvas.Top="6.25"
+                               Width="15"
+                               Height="1.5">
+                      <RSIPath Data="M-0.75,6.25 L14.25,6.25"
+                               Stretch="Fill"
+                               Stroke="#FFFF00FF"
+                               StrokeThickness="2" />
+                    </RSIBorder>
+                  </RSICanvas>
+                  <RSIEllipse x:Name="ASVLend"
+                              Canvas.Left="14.58823"
+                              Canvas.Top="25.7587"
+                              Width="11.76471"
+                              Height="11.76471"
+                              Fill="#FFFF00FF"
+                              Stroke="#FF000000"
+                              StrokeThickness="0" />
+                  <RSIEllipse x:Name="ActProfLend"
+                              Canvas.Left="343.5883"
+                              Canvas.Top="25.7587"
+                              Width="11.76471"
+                              Height="11.76471"
+                              Fill="#FF00FFFF"
+                              Stroke="#FF000000"
+                              StrokeThickness="0" />
+                  <RSICanvas Name="TgtLend"
+                             Width="15"
+                             Height="15"
+                             Left="342"
+                             Top="5">
+                    <RSIBorder x:Name="Line2_4"
+                               Canvas.Left="6.25"
+                               Canvas.Top="-0.75"
+                               Width="1.5"
+                               Height="15">
+                      <RSIPath Data="M6.25,-0.75 L6.25,14.25"
+                               Stretch="Fill"
+                               Stroke="#FF00FFFF"
+                               StrokeThickness="2" />
+                    </RSIBorder>
+                    <RSIBorder x:Name="Line3_4"
+                               Canvas.Left="-0.75"
+                               Canvas.Top="6.25"
+                               Width="15"
+                               Height="1.5">
+                      <RSIPath Data="M-0.75,6.25 L14.25,6.25"
+                               Stretch="Fill"
+                               Stroke="#FF00FFFF"
+                               StrokeThickness="2" />
+                    </RSIBorder>
+                  </RSICanvas>
+                  <RSIBorder x:Name="DynMPLend"
+                             Canvas.Left="170.25"
+                             Canvas.Top="11.25"
+                             Width="25"
+                             Height="1.5">
+                    <RSIPath Data="M170.25,11.25 L195.25,11.25"
+                             Stretch="Fill"
+                             Stroke="#FF83FF83"
+                             StrokeDashArray="1"
+                             StrokeThickness="2" />
+                  </RSIBorder>
+                  <RSIBorder x:Name="ASVLLend"
+                             Canvas.Left="170.25"
+                             Canvas.Top="30.7734"
+                             Width="25"
+                             Height="1.5">
+                    <RSIPath Data="M170.25,30.7734 L195.25,30.7734"
+                             Stretch="Fill"
+                             Stroke="#FFE56608"
+                             StrokeThickness="2" />
+                  </RSIBorder>
+                  <RSIBorder x:Name="ProfLineLend"
+                             Canvas.Left="490.25"
+                             Canvas.Top="11.25"
+                             Width="25"
+                             Height="1.5">
+                    <RSIPath Data="M490.25,11.25 L515.25,11.25"
+                             Stretch="Fill"
+                             Stroke="#FF8383FF"
+                             StrokeThickness="2" />
+                  </RSIBorder>
+                  <RSIBorder x:Name="ProcOPLend"
+                             Canvas.Left="490.25"
+                             Canvas.Top="30.7734"
+                             Width="25"
+                             Height="1.5">
+                    <RSIPath Data="M490.25,30.7734 L515.25,30.7734"
+                             Stretch="Fill"
+                             Stroke="#FFFFFF00"
+                             StrokeThickness="4" />
+                  </RSIBorder>
+                  <RSIText x:Name="Text1"
+                           Canvas.Left="35"
+                           Canvas.Top="4.73829999999998"
+                           Width="112.5215"
+                           Height="14.52344"
+                           VerticalAlignment="Center"
+                           Foreground="#FFCCCCCC"
+                           IsHitTestVisible="False"
+                           Text="Target Srg Vlv Dmd"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text2_1"
+                           Canvas.Left="35"
+                           Canvas.Top="25"
+                           Width="111.101"
+                           Height="14.52344"
+                           VerticalAlignment="Center"
+                           Foreground="#FFCCCCCC"
+                           IsHitTestVisible="False"
+                           Text="Actual Srg Vlv Dmd"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text3_2"
+                           Canvas.Left="203"
+                           Canvas.Top="4.73829999999998"
+                           Width="119.6549"
+                           Height="14.52344"
+                           VerticalAlignment="Center"
+                           Foreground="#FFCCCCCC"
+                           IsHitTestVisible="False"
+                           Text="Dynamic Break Point"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text4_2"
+                           Canvas.Left="203"
+                           Canvas.Top="25"
+                           Width="97.6037"
+                           Height="14.52344"
+                           VerticalAlignment="Center"
+                           Foreground="#FFCCCCCC"
+                           IsHitTestVisible="False"
+                           Text="Surge Valve Line"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text5_2"
+                           Canvas.Left="361"
+                           Canvas.Top="5"
+                           Width="113.9857"
+                           Height="14.52344"
+                           VerticalAlignment="Center"
+                           Foreground="#FFCCCCCC"
+                           IsHitTestVisible="False"
+                           Text="Target Spd Setpoint"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text6_2"
+                           Canvas.Left="361"
+                           Canvas.Top="25"
+                           Width="112.5653"
+                           Height="14.52344"
+                           VerticalAlignment="Center"
+                           Foreground="#FFCCCCCC"
+                           IsHitTestVisible="False"
+                           Text="Actual Spd Setpoint"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text7_2"
+                           Canvas.Left="524"
+                           Canvas.Top="5"
+                           Width="115.4312"
+                           Height="14.52344"
+                           VerticalAlignment="Center"
+                           Foreground="#FFCCCCCC"
+                           IsHitTestVisible="False"
+                           Text="Speed Setpoint Line"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                  <RSIText x:Name="Text8_2"
+                           Canvas.Left="524"
+                           Canvas.Top="25"
+                           Width="113.2473"
+                           Height="14.52344"
+                           VerticalAlignment="Center"
+                           Foreground="#FFCCCCCC"
+                           IsHitTestVisible="False"
+                           Text="Process PID Output"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10" />
+                </RSICanvas>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

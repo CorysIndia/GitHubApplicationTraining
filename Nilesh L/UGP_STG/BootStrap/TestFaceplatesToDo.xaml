@@ -1,0 +1,260 @@
+﻿<RSISynoptic
+    x:Class="UGP_STG.BootStrap.TestFaceplatesToDo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="1920"
+    Height="1048"
+    Background="white"
+    mc:Ignorable="d">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="50"
+            FontWeight="Bold"
+            Text="Analog" />
+        <TextBlock
+            Grid.Column="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="50"
+            FontWeight="Bold"
+            Text="Alarm" />
+        <TextBlock
+            Grid.Column="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="50"
+            FontWeight="Bold"
+            Text="Pumps" />
+        <TextBlock
+            Grid.Column="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="50"
+            FontWeight="Bold"
+            Text="Valves" />
+        <TextBlock
+            Grid.Column="4"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="50"
+            FontWeight="Bold"
+            Text="Switches" />
+        <TextBlock
+            Grid.Column="5"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="50"
+            FontWeight="Bold"
+            Text="Others" />
+        <!--  GRAPHIC Part  -->
+        <RSIButton
+            Grid.Row="4"
+            Content="FP__PID"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_001FIC0164" WindowName="FP_PID" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="1"
+            Content="FP__RIN"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="B001FAH0080SP" WindowName="FP_RIN" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="3"
+            Content="FP__ROUT"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="a005A_PI_0162" WindowName="FP_ROUT" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="1"
+            Grid.Column="2"
+            Content="FP__MTR__DT09"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_003EM0003_1" WindowName="FP_MTR_DT09" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="2"
+            Grid.Column="2"
+            Content="FP__MTR__DT09B"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_003EM0003_1" WindowName="FP_MTR_DT09B" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="9"
+            Grid.Column="2"
+            Content="FP__MTR__DT01AB"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_003EM0003_1" WindowName="FP_MTR_DT01AB" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="1"
+            Grid.Column="1"
+            Content="FP__CIN"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39HS101" WindowName="FP_CIN" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="5"
+            Grid.Column="3"
+            Content="FP__SOV"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_001HOV0872" WindowName="FP_SOV" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="2"
+            Grid.Column="3"
+            Content="FP__ONOFFVLV"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_001ZV0207" WindowName="FP_ONOFFVLV" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="3"
+            Grid.Column="2"
+            Content="FP__MTR__DT01"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_003EM0003_1" WindowName="FP_MTR_DT01" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="3"
+            Grid.Column="3"
+            Content="FP__KV"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_001ZV0207" WindowName="FP_KV" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="5"
+            Grid.Column="2"
+            Content="FP__PUMP__01"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_003EM0003_1" WindowName="FP_PUMP_01" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="6"
+            Grid.Column="2"
+            Content="FP__PUMP__02"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_003EM0003_1" WindowName="FP_PUMP_02" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="1"
+            Grid.Column="3"
+            Content="FP__MOV"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_006MOV0001" WindowName="FP_MOV" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="7"
+            Grid.Column="3"
+            Content="FP__ZV"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_001ZV0154" WindowName="FP_ZV" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="8"
+            Grid.Column="3"
+            Content="FP__XV"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_001ZV0154" WindowName="FP_XV" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            Grid.Row="4"
+            Grid.Column="3"
+            Content="FP__PV"
+            FontSize="30">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="M39_001ZV0154" WindowName="FP_PV" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+
+    </Grid>
+</RSISynoptic>

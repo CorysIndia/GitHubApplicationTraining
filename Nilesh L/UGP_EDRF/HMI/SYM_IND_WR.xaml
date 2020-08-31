@@ -1,0 +1,278 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Style TargetType="{x:Type hmi:SYM_IND_WR}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:SYM_IND_WR}">
+                    <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+                        <RSIGrid Background="Transparent">
+                            <RSICanvas Width="90.80812"
+                         Height="44"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                                <!--<RSIText x:Name="SET_TEXT"
+                         Canvas.Left="8.00009999999997"
+                         Canvas.Top="23.635"
+                         Width="73.39417"
+                         Height="20"
+                         HorizontalContentAlignment="Left"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text=""
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap"
+                         Visibility="Hidden">
+                  <RSIText.BorderBrush>Transparent</RSIText.BorderBrush>
+                  <RSIText.Animations>
+                    -->
+                                <!--  User Input  -->
+                                <!--
+                  </RSIText.Animations>
+                </RSIText>-->
+                                <RSIText x:Name="TAG"
+                         Width="90.80812"
+                         Height="25"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#00EFEFEF"
+                         BorderBrush="#00000000"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding TAGNAME}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextWrapping="Wrap">
+                                    <!--Visibility="{TemplateBinding Label,
+                                                      Converter={EqualConverter true}}">
+                <RSIText.Animations>                    
+                    <Animation>
+                      <ChangeText Text="StringMid_BLK_3_StringLen_BLK__2_" />
+                    </Animation>
+                    <Animation Condition="InTouch_SGUG_LABEL==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="InTouch_SGUG_LABEL==false">
+                      <Invisible />
+                    </Animation>
+                  </RSIText.Animations>-->
+                                </RSIText>
+                                <RSIText x:Name="READING"
+                         Canvas.Left="8.00009999999997"
+                         Canvas.Top="24"
+                         Width="73.39417"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         Background="#FFE0E0E0"
+                         IsHitTestVisible="False"
+                         IsInput="True" 
+                         Text="\$TAGNAME.SPT:#.##\"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold" Focusable="True" >
+
+                                    <!--<RSIText.Animations>                    
+                    <Animation>
+                      <ChangeText Text="{Value $PAR, Converter={FormatConverter F2}}" />
+                    </Animation>
+                  </RSIText.Animations>-->
+                                </RSIText>
+                                <hmi:ACK_SYMBOL x:Name="ACK_SYMBOL1"
+                                Canvas.Left="8.00009999999997"
+                                Canvas.Top="24"
+                                Width="73.39417"
+                                Height="20" Focusable="False" />
+                                <RSIRectangle x:Name="ALARM_RECTANGLE" 
+                                    Height="20" 
+                                    Canvas.Left="7.994" 
+                                    Canvas.Top="24" 
+                                    Stroke="#FFE0E0E0" 
+                                    StrokeThickness="2" 
+                                    Width="73.4">
+                                    <RSIRectangle.Animations>
+                                        <!--<Animation Condition="$TAGNAME.LAIAlarms[0] == 1 OR $TAGNAME.HAIAlarms[0] == 1 OR $TAGNAME.LLAINDAlarms[0] == 1 OR $TAGNAME.HHAINDAlarms[0] == 1" IsContinuous="True">
+                                            <ChangePropertyValue PropertyName="Stroke" Value="#FF5C5C5C" />
+                                            <Blink/>
+                                        </Animation>-->
+                                        <!--<Animation Condition="$TAGNAME.LAIAlarms[0] == 2 OR $TAGNAME.HAIAlarms[0] == 2" IsContinuous="True">
+                                            <ChangePropertyValue PropertyName="Stroke" Value="#FFB97A57" />
+                                        </Animation>-->
+                                        <!--<Animation Condition="$TAGNAME.LAIAlarms[0] == 3 OR $TAGNAME.HAIAlarms[0] == 3" IsContinuous="True">
+                                            <ChangePropertyValue PropertyName="Stroke" Value="#FFB97A57" />
+                                            <Blink/>
+                                        </Animation>-->
+                                        <!--<Animation Condition="$TAGNAME.LLAINDAlarms[0] == 2 OR $TAGNAME.HHAINDAlarms[0] == 2" IsContinuous="True">
+                                            <ChangePropertyValue PropertyName="Stroke" Value="#red" />
+                                        </Animation>-->
+                                        <!--<Animation Condition="$TAGNAME.LLAINDAlarms[0] == 3 OR $TAGNAME.HHAINDAlarms[0] == 3" IsContinuous="True">
+                                            <ChangePropertyValue PropertyName="Stroke" Value="#red" />
+                                            <Blink/>
+                                        </Animation>-->
+
+                                        <!--LOW ALARM-->
+                                        <Animation Condition="(($TAGNAME.LAIAlarms.Alarms[LAI].Status == 3) AND (($TAGNAME.HLPR == 1) OR ($TAGNAME.HLPR == 2) OR ($TAGNAME.HLPR == 3)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Yellow"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.LAIAlarms.Alarms[LAI].Status == 3)  AND ($TAGNAME.HLPR == 4)">
+
+
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="(($TAGNAME.LAIAlarms.Alarms[LAI].Status == 1)  AND (($TAGNAME.HLPR == 1) OR ($TAGNAME.HLPR == 2) OR ($TAGNAME.HLPR == 3)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="yellow"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.LAIAlarms.Alarms[LAI].Status == 1)  AND ($TAGNAME.HLPR == 4)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                            <Blink/>
+                                        </Animation>
+
+
+                                        <Animation Condition="(($TAGNAME.LAIAlarms.Alarms[LAI].Status == 2) AND (($TAGNAME.HLPR == 1) OR ($TAGNAME.HLPR == 2))) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.LAIAlarms.Alarms[LAI].Status == 2) AND ($TAGNAME.HLPR == 4) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.LAIAlarms.Alarms[LAI].Status == 2) AND ($TAGNAME.HLPR == 3) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Yellow"/>
+                                        </Animation>
+
+                                        <!--HIGH ALARM-->
+                                        <Animation Condition="(($TAGNAME.HAIAlarms.Alarms[HAI].Status == 3) AND (($TAGNAME.HLPR == 1) OR ($TAGNAME.HLPR == 2) OR ($TAGNAME.HLPR == 3)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Yellow"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.HAIAlarms.Alarms[HAI].Status == 3)  AND ($TAGNAME.HLPR == 4)">
+
+
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="(($TAGNAME.HAIAlarms.Alarms[HAI].Status == 1)  AND (($TAGNAME.HLPR == 1) OR ($TAGNAME.HLPR == 2) OR ($TAGNAME.HLPR == 3)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="yellow"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.HAIAlarms.Alarms[HAI].Status == 1)  AND ($TAGNAME.HLPR == 4)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                            <Blink/>
+                                        </Animation>
+
+
+                                        <Animation Condition="(($TAGNAME.HAIAlarms.Alarms[HAI].Status == 2) AND (($TAGNAME.HLPR == 1) OR ($TAGNAME.HLPR == 2))) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.HAIAlarms.Alarms[HAI].Status == 2) AND ($TAGNAME.HLPR == 4) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.HAIAlarms.Alarms[HAI].Status == 2) AND ($TAGNAME.HLPR == 3) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Yellow"/>
+                                        </Animation>
+
+
+
+                                        <!--LOW LOW ALARM-->
+
+                                        <Animation Condition="($TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 3 AND (($TAGNAME.HHAPRI == 1) OR ($TAGNAME.HHAPRI == 2)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="red"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 3) AND ($TAGNAME.HHAPRI == 3)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="($TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 1 AND (($TAGNAME.HHAPRI == 1) OR ($TAGNAME.HHAPRI == 2)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 1) AND ($TAGNAME.HHAPRI == 3)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="($TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 2 AND (($TAGNAME.HHAPRI == 1) OR ($TAGNAME.HHAPRI == 2)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 2) AND ($TAGNAME.HHAPRI == 3)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                        </Animation>
+
+                                        <!--HIGH HIGH ALARM-->
+
+                                        <Animation Condition="($TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 3 AND (($TAGNAME.HHAPRI == 1) OR ($TAGNAME.HHAPRI == 2)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="red"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 3) AND ($TAGNAME.HHAPRI == 3)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="($TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 1 AND (($TAGNAME.HHAPRI == 1) OR ($TAGNAME.HHAPRI == 2)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 1) AND ($TAGNAME.HHAPRI == 3)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="($TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 2 AND (($TAGNAME.HHAPRI == 1) OR ($TAGNAME.HHAPRI == 2)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 2) AND ($TAGNAME.HHAPRI == 3)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                        </Animation>
+
+
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                            </RSICanvas>
+                        </RSIGrid>
+                    </RSIViewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="StandardFaceplateName" Value="FP_HS_CTRL_01"/>
+    </Style>
+</ResourceDictionary>

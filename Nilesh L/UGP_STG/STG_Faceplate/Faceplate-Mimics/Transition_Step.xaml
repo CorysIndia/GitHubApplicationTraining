@@ -1,0 +1,26 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="UGP_STG.STG_Faceplate.Faceplate_Mimics.Transition_Step"
+	Width="80.937" 
+	Height="20.333"
+	Background="LightGray">
+    <RSIControl.Parameters>
+        <Param Name="$COLOUR" Value="#FF800000"/>
+    </RSIControl.Parameters>
+    <Grid>
+        <RSIText x:Name="rSIText1" TextWrapping="Wrap" Text="$TEXT" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Background="White" BorderBrush="Black" BorderThickness="1">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.Token == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="$COLOUR"/>
+                </Animation>
+                <ClickAnimation>
+                    <Open WindowName="$TAGNAME" Title="$FACEPLATEDESCRIPTION"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+    </Grid>
+</RSIControl>

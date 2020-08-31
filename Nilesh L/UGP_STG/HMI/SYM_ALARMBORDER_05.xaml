@@ -1,0 +1,77 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_ALARMBORDER_05}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_ALARMBORDER_05}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="33.2"
+                         Height="32.79999"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIRectangle x:Name="MMATCH"
+                              Width="33.2"
+                              Height="32.79999"
+                              Stroke="#FFFF0000"
+                              StrokeThickness="3"
+                              Visibility="{TemplateBinding TYPE,
+                                                           Converter={EqualConverter MISMATCH}}">
+                  <RSIRectangle.Animations>
+                    <Animation Condition="_UNACK" />
+                    <Animation Condition="_ALARM_gt;=_5__or__UNACK==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="_ALARM_gt;=_5__or__UNACK==false">
+                      <Invisible />
+                    </Animation>
+                  </RSIRectangle.Animations>
+                </RSIRectangle>
+                <RSIRectangle x:Name="FAULT"
+                              Width="33.2"
+                              Height="32.79999"
+                              Stroke="#FFFF0000"
+                              StrokeThickness="3"
+                              Visibility="{TemplateBinding TYPE,
+                                                           Converter={EqualConverter FAULT}}">
+                  <RSIRectangle.Animations>
+                    <Animation Condition="_UNACK" />
+                    <Animation Condition="START_F_or_STOP_F_or_MISMATCH_or__UNACK==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="START_F_or_STOP_F_or_MISMATCH_or__UNACK==false">
+                      <Invisible />
+                    </Animation>
+                  </RSIRectangle.Animations>
+                </RSIRectangle>
+                <RSIRectangle x:Name="CIN"
+                              Width="33.2"
+                              Height="32.79999"
+                              Stroke="#FFFF0000"
+                              StrokeThickness="3"
+                              Visibility="{TemplateBinding TYPE,
+                                                           Converter={EqualConverter CIN}}">
+                  <RSIRectangle.Animations>
+                    <Animation Condition="_UNACK" />
+                    <Animation Condition="_CIN_or__UNACK==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="_CIN_or__UNACK==false">
+                      <Invisible />
+                    </Animation>
+                  </RSIRectangle.Animations>
+                </RSIRectangle>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

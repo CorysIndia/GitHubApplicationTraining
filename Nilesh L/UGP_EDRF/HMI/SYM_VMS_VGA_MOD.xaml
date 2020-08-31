@@ -1,0 +1,122 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_VMS_VGA_MOD}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_VMS_VGA_MOD}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="50"
+                         Height="500"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIRectangle x:Name="BACKGROUND"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <hmi:SYM_VMS_IND x:Name="MODULE_STATUS"
+                                 Canvas.Left="10"
+                                 Canvas.Top="460"
+                                 Width="30"
+                                 Height="30"
+                                 Bypass="false"
+                                 OK="{TemplateBinding MODULE}" />
+                <RSIText x:Name="COK"
+                         Canvas.Top="430"
+                         Width="50"
+                         Height="30"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="NOT OK"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.Animations>
+                    <Animation Condition="MODULE=true">
+                      <ChangeText Text="NOT OK" />
+                    </Animation>
+                    <Animation Condition="MODULE=false">
+                      <ChangeText Text="OK" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <hmi:SYM_VMS_IND x:Name="CH1_IND"
+                                 Canvas.Left="10"
+                                 Canvas.Top="80"
+                                 Width="30"
+                                 Height="30"
+                                 Bypass="false"
+                                 OK="{TemplateBinding CHOK}"
+                                 Visibility="{TemplateBinding Channels,
+                                                              Converter={EqualConverter One}}" />
+                <RSIText x:Name="CH1"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="30"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="CH NOK"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap"
+                         Visibility="{TemplateBinding Channels,
+                                                      Converter={EqualConverter One}}">
+                  <RSIText.Animations>
+                    <Animation Condition="CHOK=true">
+                      <ChangeText Text="CH1 NOK" />
+                    </Animation>
+                    <Animation Condition="CHOK=false">
+                      <ChangeText Text="CH1 OK" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="COM"
+                         Canvas.Top="30"
+                         Width="50"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="VGA"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="MODULE_NUMBER"
+                         Width="50"
+                         Height="30"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="3500/94"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

@@ -1,0 +1,2084 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_VMS_RACK}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_VMS_RACK}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="900"
+                         Height="600"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSICanvas Name="S15LMR"
+                           Width="50"
+                           Height="50"
+                           Left="850"
+                           Top="350">
+                  <RSIBorder x:Name="Line2"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50.00003"
+                             Height="50"
+                             RenderTransformOrigin="0.0199999880000072,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S14LMR"
+                           Width="50"
+                           Height="50"
+                           Left="800"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_1"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_1"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S13LMR"
+                           Width="50"
+                           Height="50"
+                           Left="750"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_2"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_2"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S12LMR"
+                           Width="50"
+                           Height="50"
+                           Left="700"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_3"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_3"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S11LMR"
+                           Width="50"
+                           Height="50"
+                           Left="650"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_4"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_4"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S10LMR"
+                           Width="50"
+                           Height="50"
+                           Left="600"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_5"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_5"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S9LMR"
+                           Width="50"
+                           Height="50"
+                           Left="550"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_6"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_6"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S8LMR"
+                           Width="50"
+                           Height="50"
+                           Left="500"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_7"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_7"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S7LMR"
+                           Width="50"
+                           Height="50"
+                           Left="450"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_8"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_8"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S6LMR"
+                           Width="50"
+                           Height="50"
+                           Left="400"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_9"
+                             Canvas.Left="49.24997"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_9"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S5LMR"
+                           Width="50"
+                           Height="50"
+                           Left="350"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_10"
+                             Canvas.Left="49.24997"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_10"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S4LMR"
+                           Width="50"
+                           Height="50"
+                           Left="300"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_11"
+                             Canvas.Left="49.24997"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_11"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S3LMR"
+                           Width="50"
+                           Height="50"
+                           Left="250"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_12"
+                             Canvas.Left="49.24997"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_12"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S2LMR"
+                           Width="50"
+                           Height="50"
+                           Left="200"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_13"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_13"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S15UMR"
+                           Width="50"
+                           Height="50"
+                           Left="850"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_14"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50.00003"
+                             Height="50"
+                             RenderTransformOrigin="0.0199999880000072,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_14"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S14UMR"
+                           Width="50"
+                           Height="50"
+                           Left="800"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_15"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_15"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S13UMR"
+                           Width="50"
+                           Height="50"
+                           Left="750"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_16"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_16"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S12UMR"
+                           Width="50"
+                           Height="50"
+                           Left="700"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_17"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_17"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S11UMR"
+                           Width="50"
+                           Height="50"
+                           Left="650"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_18"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_18"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S10UMR"
+                           Width="50"
+                           Height="50"
+                           Left="600"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_19"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_19"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S9UMR"
+                           Width="50"
+                           Height="50"
+                           Left="550"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_20"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_20"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S8UMR"
+                           Width="50"
+                           Height="50"
+                           Left="500"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_21"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_21"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S7UMR"
+                           Width="50"
+                           Height="50"
+                           Left="450"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_22"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_22"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S6UMR"
+                           Width="50"
+                           Height="50"
+                           Left="400"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_23"
+                             Canvas.Left="49.24997"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_23"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S5UMR"
+                           Width="50"
+                           Height="50"
+                           Left="350"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_24"
+                             Canvas.Left="49.24997"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_24"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S4UMR"
+                           Width="50"
+                           Height="50"
+                           Left="300"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_25"
+                             Canvas.Left="49.24997"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_25"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S3UMR"
+                           Width="49.99998"
+                           Height="50"
+                           Left="250"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_26"
+                             Canvas.Left="49.24997"
+                             Canvas.Top="-0.75"
+                             Width="49.99998"
+                             Height="50"
+                             RenderTransformOrigin="0.0200000080000032,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_26"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="49.99998"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S2UMR"
+                           Width="50"
+                           Height="50"
+                           Left="200"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_27"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_27"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="S1_MR"
+                           Width="50"
+                           Height="50"
+                           Left="150"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_28"
+                             Canvas.Left="49.25"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50"
+                             RenderTransformOrigin="0.02,0.02">
+                    <RSIPath Data="M49.25,-0.75 L-0.75,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_28"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.75"
+                             Width="50"
+                             Height="50">
+                    <RSIPath Data="M-0.75,-0.75 L49.25,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="PSLMR"
+                           Width="150"
+                           Height="50"
+                           Left="1.430511E-05"
+                           Top="350">
+                  <RSIBorder x:Name="Line2_29"
+                             Canvas.Left="149.24998569489"
+                             Canvas.Top="-0.75"
+                             Width="150"
+                             Height="50"
+                             RenderTransformOrigin="0.00666666666666667,0.02">
+                    <RSIPath Data="M149.24998569489,-0.75 L-0.75001430511,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_29"
+                             Canvas.Left="-0.75001430511"
+                             Canvas.Top="-0.75"
+                             Width="150"
+                             Height="50">
+                    <RSIPath Data="M-0.75001430511,-0.75 L149.24998569489,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="PSUMR"
+                           Width="150"
+                           Height="50"
+                           Left="1.430511E-05"
+                           Top="100">
+                  <RSIBorder x:Name="Line2_30"
+                             Canvas.Left="149.24998569489"
+                             Canvas.Top="-0.75"
+                             Width="150"
+                             Height="50"
+                             RenderTransformOrigin="0.00666666666666667,0.02">
+                    <RSIPath Data="M149.24998569489,-0.75 L-0.75001430511,49.25"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_30"
+                             Canvas.Left="-0.75001430511"
+                             Canvas.Top="-0.75"
+                             Width="150"
+                             Height="50">
+                    <RSIPath Data="M-0.75001430511,-0.75 L149.24998569489,49.25"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSIRectangle x:Name="SLOT15"
+                              Canvas.Left="850"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="SLOT14"
+                              Canvas.Left="800"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="SLOT13"
+                              Canvas.Left="750"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="SLOT12"
+                              Canvas.Left="700"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="SLOT11"
+                              Canvas.Left="650"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="SLOT10"
+                              Canvas.Left="600"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="SLOT9"
+                              Canvas.Left="550"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="SLOT8"
+                              Canvas.Left="500"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="SLOT7"
+                              Canvas.Left="450"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="SLOT6"
+                              Canvas.Left="400"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="SLOT5"
+                              Canvas.Left="350"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="SLOT4"
+                              Canvas.Left="300"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="SLOT3"
+                              Canvas.Left="250"
+                              Canvas.Top="100"
+                              Width="49.99998"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="SLOT2"
+                              Canvas.Left="200"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="TDI"
+                              Canvas.Left="150"
+                              Canvas.Top="100"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIText x:Name="S15"
+                         Canvas.Left="850"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S15"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S14"
+                         Canvas.Left="800"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S14"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S13"
+                         Canvas.Left="750"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S13"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S12"
+                         Canvas.Left="700"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S12"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S11"
+                         Canvas.Left="650"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S11"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S10"
+                         Canvas.Left="600"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S10"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S9"
+                         Canvas.Left="550"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S9"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S8"
+                         Canvas.Left="500"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S8"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S7"
+                         Canvas.Left="450"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S7"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S6"
+                         Canvas.Left="400"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S6"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S5"
+                         Canvas.Left="350"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S5"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S4"
+                         Canvas.Left="300"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S4"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S3"
+                         Canvas.Left="250"
+                         Canvas.Top="50"
+                         Width="49.99998"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S3"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S2"
+                         Canvas.Left="200"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S2"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="S1"
+                         Canvas.Left="150"
+                         Canvas.Top="50"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="S1"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <hmi:SYM_VMS_IND x:Name="PSLOK"
+                                 Canvas.Left="50.00004"
+                                 Canvas.Top="500.0001"
+                                 Width="49.99998"
+                                 Height="49.99994"
+                                 Bypass="false"
+                                 OK="{TemplateBinding PSL_OK}" />
+                <hmi:SYM_VMS_IND x:Name="PSUOK"
+                                 Canvas.Left="50.00003"
+                                 Canvas.Top="250.0001"
+                                 Width="49.99998"
+                                 Height="49.99997"
+                                 Bypass="false"
+                                 OK="{TemplateBinding PSU_OK}" />
+                <RSIText x:Name="SOK2"
+                         Canvas.Left="1.430511E-05"
+                         Canvas.Top="550"
+                         Width="150"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="SUPPLY OK"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.Animations>
+                    <Animation Condition="PSL_OK=true">
+                      <ChangeText Text="SUPPLY NOT OK" />
+                    </Animation>
+                    <Animation Condition="PSL_OK=false">
+                      <ChangeText Text="SUPPLY OK" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="SOK1"
+                         Canvas.Left="1.430511E-05"
+                         Canvas.Top="300"
+                         Width="150"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="SUPPLY OK"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.Animations>
+                    <Animation Condition="PSU_OK=true">
+                      <ChangeText Text="SUPPLY NOT OK" />
+                    </Animation>
+                    <Animation Condition="PSU_OK=false">
+                      <ChangeText Text="SUPPLY OK" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="PSU1"
+                         Canvas.Left="50.00002"
+                         Canvas.Top="100"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="PSU"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="PSL1"
+                         Canvas.Left="50.00002"
+                         Canvas.Top="350"
+                         Width="50"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="PSL"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIRectangle x:Name="PSL"
+                              Canvas.Left="1.430511E-05"
+                              Canvas.Top="350"
+                              Width="150"
+                              Height="250"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIRectangle x:Name="PSU"
+                              Canvas.Left="1.430511E-05"
+                              Canvas.Top="100"
+                              Width="150"
+                              Height="250"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <RSIText x:Name="RACK_OK"
+                         Width="900"
+                         Height="50"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="ROR"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.Animations>
+                    <Animation Condition="ROR=true">
+                      <ChangeText Text="RACK NOT OK" />
+                    </Animation>
+                    <Animation Condition="ROR=false">
+                      <ChangeText Text="RACK OK" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSICanvas Name="Group1"
+                           Width="33.83752"
+                           Height="33.15005"
+                           Left="157.6"
+                           Top="173.5999">
+                  <RSIRectangle x:Name="DirectAction"
+                                Width="33.20003"
+                                Height="32.27736"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                    <RSIRectangle.Animations>
+                      <Animation />
+                      <!--  RACK_RST = 255;  -->
+                    </RSIRectangle.Animations>
+                  </RSIRectangle>
+                  <RSICanvas Name="Shadow"
+                             Width="32.02513"
+                             Height="31.02634"
+                             IsHitTestVisible="false"
+                             Left="0.925399999999996"
+                             Top="2.15810000000002">
+                    <RSIPath x:Name="Arc1"
+                             Canvas.Left="30.4271"
+                             Canvas.Top="27.8987"
+                             Width="1.598068"
+                             Height="3.12767"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.Fill>
+                        <RadialGradientBrush>
+                          <GradientStop Offset="0" Color="#00B5B5B5" />
+                          <GradientStop Offset="0.74" Color="#FF000000" />
+                          <GradientStop Offset="1" Color="#00B5B5B5" />
+                        </RadialGradientBrush>
+                      </RSIPath.Fill>
+                    </RSIPath>
+                    <RSIPath x:Name="Arc2"
+                             Canvas.Left="1.59800000000001"
+                             Canvas.Top="27.89867"
+                             Width="3.127655"
+                             Height="1.598053"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             RenderTransformOrigin="0.159864179393188,0.312880736746528"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.RenderTransform>
+                        <RotateTransform Angle="90" />
+                      </RSIPath.RenderTransform>
+                      <RSIPath.Fill>
+                        <RadialGradientBrush>
+                          <GradientStop Offset="0" Color="#00B5B5B5" />
+                          <GradientStop Offset="0.74" Color="#FF000000" />
+                          <GradientStop Offset="1" Color="#00B5B5B5" />
+                        </RadialGradientBrush>
+                      </RSIPath.Fill>
+                    </RSIPath>
+                    <RSIPath x:Name="Arc3"
+                             Canvas.Left="1.59800000000001"
+                             Canvas.Top="3.12760000000003"
+                             Width="1.598053"
+                             Height="3.12764"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             RenderTransformOrigin="0.312880736746528,0.15986494609354"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.RenderTransform>
+                        <RotateTransform Angle="180" />
+                      </RSIPath.RenderTransform>
+                      <RSIPath.Fill>
+                        <RadialGradientBrush>
+                          <GradientStop Offset="0" Color="#00B5B5B5" />
+                          <GradientStop Offset="0.74" Color="#FF000000" />
+                          <GradientStop Offset="1" Color="#00B5B5B5" />
+                        </RadialGradientBrush>
+                      </RSIPath.Fill>
+                    </RSIPath>
+                    <RSIPath x:Name="Arc4"
+                             Canvas.Left="30.42709"
+                             Canvas.Top="3.1276"
+                             Width="3.127655"
+                             Height="1.598068"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             RenderTransformOrigin="0.159864179393188,0.312877799943432"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.RenderTransform>
+                        <RotateTransform Angle="-90" />
+                      </RSIPath.RenderTransform>
+                      <RSIPath.Fill>
+                        <RadialGradientBrush>
+                          <GradientStop Offset="0" Color="#00B5B5B5" />
+                          <GradientStop Offset="0.74" Color="#FF000000" />
+                          <GradientStop Offset="1" Color="#00B5B5B5" />
+                        </RadialGradientBrush>
+                      </RSIPath.Fill>
+                    </RSIPath>
+                  </RSICanvas>
+                  <RSICanvas Name="Outer"
+                             Width="33.97952"
+                             Height="31.02632"
+                             IsHitTestVisible="false"
+                             Left="0.220500000000015"
+                             Top="0.641100000000023">
+                    <RSIPath x:Name="Arc1_1"
+                             Canvas.Left="32.4786"
+                             Canvas.Top="27.8987"
+                             Width="1.500854"
+                             Height="3.127655"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FFE0E0E0"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1" />
+                    <RSIPath x:Name="Arc2_1"
+                             Canvas.Left="1.5008"
+                             Canvas.Top="27.89877"
+                             Width="3.127625"
+                             Height="1.500885"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FFE0E0E0"
+                             RenderTransformOrigin="0.159865712801247,0.333136782631581"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.RenderTransform>
+                        <RotateTransform Angle="90" />
+                      </RSIPath.RenderTransform>
+                    </RSIPath>
+                    <RSIPath x:Name="Arc3_1"
+                             Canvas.Left="1.5008"
+                             Canvas.Top="3.1277"
+                             Width="1.500885"
+                             Height="3.12764"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FFE0E0E0"
+                             RenderTransformOrigin="0.333136782631581,0.15986494609354"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.RenderTransform>
+                        <RotateTransform Angle="180" />
+                      </RSIPath.RenderTransform>
+                    </RSIPath>
+                    <RSIPath x:Name="Arc4_1"
+                             Canvas.Left="32.47862"
+                             Canvas.Top="3.12769999999998"
+                             Width="3.127655"
+                             Height="1.50087"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FFE0E0E0"
+                             RenderTransformOrigin="0.159864179393188,0.333140112068334"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.RenderTransform>
+                        <RotateTransform Angle="-90" />
+                      </RSIPath.RenderTransform>
+                    </RSIPath>
+                  </RSICanvas>
+                  <RSICanvas Name="Middle"
+                             Width="32.37337"
+                             Height="27.25752"
+                             IsHitTestVisible="false"
+                             Left="1.0266"
+                             Top="2.50990000000002">
+                    <RSIPath x:Name="Arc1_2"
+                             Canvas.Left="30.9688"
+                             Canvas.Top="24.5098"
+                             Width="1.404572"
+                             Height="2.747742"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FF9A9A9A"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1" />
+                    <RSIPath x:Name="Arc2_2"
+                             Canvas.Left="1.40460000000002"
+                             Canvas.Top="24.50977"
+                             Width="2.747742"
+                             Height="1.404572"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FF9A9A9A"
+                             RenderTransformOrigin="0.181967593755163,0.355980327103203"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.RenderTransform>
+                        <RotateTransform Angle="90" />
+                      </RSIPath.RenderTransform>
+                    </RSIPath>
+                    <RSIPath x:Name="Arc3_2"
+                             Canvas.Left="1.40460000000002"
+                             Canvas.Top="2.74770000000001"
+                             Width="1.404572"
+                             Height="2.747726"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FF9A9A9A"
+                             RenderTransformOrigin="0.355980327103203,0.181968653351899"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.RenderTransform>
+                        <RotateTransform Angle="180" />
+                      </RSIPath.RenderTransform>
+                    </RSIPath>
+                    <RSIPath x:Name="Arc4_2"
+                             Canvas.Left="30.96883"
+                             Canvas.Top="2.74770000000001"
+                             Width="2.747742"
+                             Height="1.404556"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Fill="#FF9A9A9A"
+                             RenderTransformOrigin="0.181967593755163,0.355984382253182"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.RenderTransform>
+                        <RotateTransform Angle="-90" />
+                      </RSIPath.RenderTransform>
+                    </RSIPath>
+                  </RSICanvas>
+                  <RSICanvas Name="Inner"
+                             Width="29.68628"
+                             Height="24.63803"
+                             IsHitTestVisible="false"
+                             Left="2.5472"
+                             Top="4.01910000000001">
+                    <RSIPath x:Name="Arc1_3"
+                             Canvas.Left="28.4213"
+                             Canvas.Top="22.1544"
+                             Width="1.264893"
+                             Height="2.483673"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.Fill>
+                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                          <GradientStop Offset="0" Color="#FFFFFFFF" />
+                          <GradientStop Offset="0" Color="#FFCECECE" />
+                          <GradientStop Offset="1" Color="#FFCECECE" />
+                        </LinearGradientBrush>
+                      </RSIPath.Fill>
+                    </RSIPath>
+                    <RSIPath x:Name="Arc2_3"
+                             Canvas.Left="1.26479999999998"
+                             Canvas.Top="22.15437"
+                             Width="2.483643"
+                             Height="1.264893"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             RenderTransformOrigin="0.201317178032431,0.395290352622712"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.RenderTransform>
+                        <RotateTransform Angle="90" />
+                      </RSIPath.RenderTransform>
+                      <RSIPath.Fill>
+                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                          <GradientStop Offset="0" Color="#FFFFFFFF" />
+                          <GradientStop Offset="0" Color="#FFCECECE" />
+                          <GradientStop Offset="1" Color="#FFCECECE" />
+                        </LinearGradientBrush>
+                      </RSIPath.Fill>
+                    </RSIPath>
+                    <RSIPath x:Name="Arc3_3"
+                             Canvas.Left="1.26480000000004"
+                             Canvas.Top="2.48360000000002"
+                             Width="1.264893"
+                             Height="2.483673"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             RenderTransformOrigin="0.395290352622712,0.201314746345433"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.RenderTransform>
+                        <RotateTransform Angle="180" />
+                      </RSIPath.RenderTransform>
+                      <RSIPath.Fill>
+                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                          <GradientStop Offset="0" Color="#FFFFFFFF" />
+                          <GradientStop Offset="0" Color="#FFCECECE" />
+                          <GradientStop Offset="1" Color="#FFCECECE" />
+                        </LinearGradientBrush>
+                      </RSIPath.Fill>
+                    </RSIPath>
+                    <RSIPath x:Name="Arc4_3"
+                             Canvas.Left="28.42135"
+                             Canvas.Top="2.4837"
+                             Width="2.483673"
+                             Height="1.264877"
+                             Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                             RenderTransformOrigin="0.201314746345433,0.395295352828773"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1">
+                      <RSIPath.RenderTransform>
+                        <RotateTransform Angle="-90" />
+                      </RSIPath.RenderTransform>
+                      <RSIPath.Fill>
+                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                          <GradientStop Offset="0" Color="#FFFFFFFF" />
+                          <GradientStop Offset="0" Color="#FFCECECE" />
+                          <GradientStop Offset="1" Color="#FFCECECE" />
+                        </LinearGradientBrush>
+                      </RSIPath.Fill>
+                    </RSIPath>
+                  </RSICanvas>
+                </RSICanvas>
+                <RSIText x:Name="R"
+                         Canvas.Left="158"
+                         Canvas.Top="173"
+                         Width="34.21252"
+                         Height="33.15005"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="R"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

@@ -1,0 +1,105 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_STATIND_02}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_STATIND_02}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="98"
+                         Height="47"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIText x:Name="TEXT"
+                         Canvas.Left="1"
+                         Canvas.Top="22"
+                         Width="97"
+                         Height="25"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="##########"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.Animations>
+                    <Animation />
+                   
+                 <Animation Condition="$TAGNAME.CIN == 1">
+                  <ChangeText Text="$TEXT1"/>
+                 </Animation>
+                 <Animation Condition="$TAGNAME.CIN == 0">
+                                            <ChangeText Text="$TEXT0"/>
+                                        </Animation>
+                                    </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="TAG"
+                         Canvas.Left="4"
+                         Width="90.80811"
+                         Height="25"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Bottom"
+                         Background="#00EFEFEF"
+                         BorderBrush="#00000000"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding TAGNAME}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextWrapping="Wrap"
+                         Visibility="{TemplateBinding TAG,
+                                                      Converter={EqualConverter true}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="StringMid_BLK_3_StringLen_BLK__2_" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <hmi:SYM_ALARMBORDER_03 x:Name="Boolean_NoBlink"
+                                        Canvas.Left="1"
+                                        Canvas.Top="22"
+                                        Width="97"
+                                        Height="25" />
+                <hmi:SYM_ALARMBORDER_06 x:Name="Boolean_Blink"
+                                        Canvas.Left="1"
+                                        Canvas.Top="22"
+                                        Width="97"
+                                        Height="25" />
+                <hmi:SYM_ALARMBORDER_01 x:Name="ALMSTA"
+                                        Canvas.Left="1"
+                                        Canvas.Top="22"
+                                        Width="97"
+                                        Height="25" />
+                <hmi:FP_CallOverlay x:Name="CallOverlay"
+                                    Canvas.Left="1"
+                                    Canvas.Top="22"
+                                    Width="97"
+                                    Height="25"
+                                    BLKOVL="{TemplateBinding BLK}"
+                                    CMPOVL="{TemplateBinding CMP}"
+                                    LOC="{TemplateBinding LOC}"
+                                    OverlayName="{TemplateBinding FP_NAME}"
+                                    PRT="{TemplateBinding PRT}"
+                                    Visibility="{TemplateBinding FP,
+                                                                 Converter={EqualConverter true}}" />
+                <hmi:ACK_SYMBOL x:Name="ACK_SYMBOL"
+                                Canvas.Top="22"
+                                Width="97.00003"
+                                Height="25" />
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

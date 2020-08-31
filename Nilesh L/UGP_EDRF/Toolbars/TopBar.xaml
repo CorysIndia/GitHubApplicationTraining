@@ -1,0 +1,114 @@
+﻿<UserControl x:Class="UGP_EDRF.Toolbars.TopBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <!--  ToolBar  -->
+        <Border x:Name="toolBar"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Background="#FFFFFFFF"
+                    BorderBrush="Gray"
+                    BorderThickness="0,1"
+                    Padding="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!--  System Button  -->
+                <Button Background="Lime" IsHitTestVisible="False">
+                    <Button.Content>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="1" Text="System" />
+                            <Image Grid.Column="3"
+                                       Source="..\Resources\Cloche.png"
+                                       Stretch="None" />
+                        </Grid>
+                    </Button.Content>
+                </Button>
+
+                <!--  Process Button  -->
+                <BlinkControl Grid.Column="2"
+                                  DefaultValue="Lime"
+                                  ElementName="targetButton"
+                                  Property="Button.Background">
+                    <BlinkControl.Conditions>
+                        <!--  Red if at least one alarm  -->
+                        <ConditionOfBlink From="Red" To="Red">
+                            <ConditionOfBlink.Conditions>
+                                <Condition Binding="{AlarmServiceBinding IsAnyAlarmAvailable}" Value="True" />
+                            </ConditionOfBlink.Conditions>
+                        </ConditionOfBlink>
+
+                        <!--  Blink if at least One alarm is not acknowledged  -->
+                        <ConditionOfBlink From="Red" To="White">
+                            <ConditionOfBlink.Conditions>
+                                <Condition Binding="{AlarmServiceBinding IsOneAlarmNotAcknowledged}" Value="True" />
+                            </ConditionOfBlink.Conditions>
+                        </ConditionOfBlink>
+
+                    </BlinkControl.Conditions>
+                    <Button x:Name="targetButton"
+                                Command="{NavigationServiceCommonBinding NavigateToWindowCommand}"
+                                CommandParameter="AlarmSummary">
+                        <Button.Content>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="5" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="1" Text="Process" />
+                                <Image Grid.Column="3"
+                                           Source="..\Resources\Cloche.png"
+                                           Stretch="None" />
+                            </Grid>
+                        </Button.Content>
+                    </Button>
+                </BlinkControl>
+
+                <!--  Disabled comboBox  -->
+                <ComboBox Grid.Column="4" IsEnabled="False" />
+
+                <TextBox x:Name="simulationDate"
+                             Grid.Column="6"
+                             Background="{Binding Background,
+                                                  ElementName=toolBar}"
+                             IsHitTestVisible="False"
+                             Text="{TimeServiceBinding SimulationDateTime,
+                                                       Mode=OneWay,
+                                                       Converter={FormatConverter FormatString=dd-MMM-yyyy}}" />
+                <TextBox Grid.Column="8"
+                             Width="{Binding ActualWidth,
+                                             ElementName=simulationDate}"
+                             Background="{Binding Background,
+                                                  ElementName=toolBar}"
+                             IsHitTestVisible="False"
+                             Text="{TimeServiceBinding SimulationDateTime,
+                                                       Mode=OneWay,
+                                                       Converter={FormatConverter FormatString=HH:mm}}" />
+            </Grid>
+        </Border>
+
+    </Grid>
+</UserControl>

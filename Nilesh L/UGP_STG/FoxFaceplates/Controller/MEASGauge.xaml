@@ -1,0 +1,36 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:controller="clr-namespace:UGP_STG.FoxFaceplates.Controller"
+	mc:Ignorable="d"
+	x:Class="UGP_STG.FoxFaceplates.Controller.MEASGauge">
+    <controller:FoxGauge>
+        <controller:FoxGauge.Parameters>
+            <Param Name="$GAUGECOLOR" Value="#FF00FF" />
+            <Param Name="$GAUGEVALUE" Value="$TAGNAME.MEAS" />
+            <Param Name="$GAUGEMIN" Value="$TAGNAME.LSCI1" />
+            <Param Name="$GAUGEMAX" Value="$TAGNAME.HSCI1" />
+
+            <!-- HH and LL Sliders -->
+            <Param Name="$HHLLSliderCOLOR" Value="Red" />
+
+            <Param Name="$HHSliderVALUE" Value="$TAGNAME.HHALIM" />
+            <Param Name="$HHSliderVISIBILITY" Value="$TAGNAME.HHAOPT = 3 OR $TAGNAME.HHAOPT = 0"/>
+
+            <Param Name="$LLSliderVALUE" Value="$TAGNAME.LLALIM"/>
+            <Param Name="$LLSliderVISIBILITY" Value="$TAGNAME.HHAOPT = 2 OR $TAGNAME.HHAOPT = 0"/>
+
+            <!-- H and L Sliders -->
+            <Param Name="$HLSliderCOLOR" Value="Blue" />
+
+            <Param Name="$HSliderVALUE" Value="$TAGNAME.MEASHL" />
+            <Param Name="$HSliderVISIBILITY" Value="$TAGNAME.MALOPT = 3 OR $TAGNAME.MALOPT = 0"/>
+
+            <Param Name="$LSliderVALUE" Value="$TAGNAME.MEASLL"/>
+            <Param Name="$LSliderVISIBILITY" Value="$TAGNAME.MALOPT = 2 OR $TAGNAME.MALOPT = 0"/>
+        </controller:FoxGauge.Parameters>
+    </controller:FoxGauge>
+
+</RSIControl>

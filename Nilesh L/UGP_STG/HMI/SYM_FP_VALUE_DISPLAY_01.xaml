@@ -1,0 +1,278 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_FP_VALUE_DISPLAY_01}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_FP_VALUE_DISPLAY_01}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="100"
+                         Height="48.32425"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIRectangle x:Name="ValueEdit"
+                              Canvas.Top="18.32421"
+                              Width="100"
+                              Height="30.00001"
+                              Fill="#FFBCBCBC"
+                              Stroke="#FFBCBCBC"
+                              StrokeThickness="1"
+                              Visibility="{TemplateBinding ValueEntry,
+                                                           Converter={EqualConverter true}}">
+                  <RSIRectangle.Animations>
+                    <!--  User Input  -->
+                  </RSIRectangle.Animations>
+                </RSIRectangle>
+                <RSIRectangle x:Name="Rectangle2"
+                              Canvas.Top="18.32424"
+                              Width="100"
+                              Height="30.00001"
+                              Fill="#FFBCBCBC"
+                              Stroke="#FFBCBCBC"
+                              StrokeThickness="1"
+                              Visibility="{TemplateBinding TEXT_TYPE,
+                                                           Converter={EqualConverter MEASURE}}">
+                  <RSIRectangle.Animations>
+                    <Animation Condition="CB_P">
+                      <ChangeColor Color="#FFBCBCBC" />
+                    </Animation>
+                  </RSIRectangle.Animations>
+                </RSIRectangle>
+                <RSIRectangle x:Name="BKGND_BCALCI"
+                              Canvas.Top="18.32422"
+                              Width="100"
+                              Height="30.00001"
+                              Fill="#FFBCBCBC"
+                              Stroke="#FFBCBCBC"
+                              StrokeThickness="1"
+                              Visibility="{TemplateBinding TEXT_TYPE,
+                                                           Converter={EqualConverter OUT_BCAI}}">
+                  <RSIRectangle.Animations>
+                    <Animation Condition="CB_BCALCI">
+                      <ChangeColor Color="#FFBCBCBC" />
+                    </Animation>
+                  </RSIRectangle.Animations>
+                </RSIRectangle>
+                <RSIText x:Name="TBIAS"
+                         Canvas.Left="29.77002"
+                         Canvas.Top="26.32422"
+                         Width="39.76172"
+                         Height="14.52344"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FFBA00BA"
+                         Text="{Value CB_P,
+                                      Converter={FormatConverter {}{0:0.####}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold"
+                         Visibility="{TemplateBinding TEXT_TYPE,
+                                                      Converter={EqualConverter BIAS_TEXT}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value CB_P, Converter={FormatConverter F4}}" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="TSPT"
+                         Canvas.Left="29.68945"
+                         Canvas.Top="26.00001"
+                         Width="39.76172"
+                         Height="14.52344"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         Text="{Value CB_P,
+                                      Converter={FormatConverter {}{0:0.####}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold"
+                         Visibility="{TemplateBinding TEXT_TYPE,
+                                                      Converter={EqualConverter SETPOINT}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value CB_P, Converter={FormatConverter F4}}" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="TOUT"
+                         Canvas.Left="29.68945"
+                         Canvas.Top="26.00001"
+                         Width="39.76172"
+                         Height="14.52344"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         Text="{Value CB_P,
+                                      Converter={FormatConverter {}{0:0.####}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold"
+                         Visibility="{TemplateBinding TEXT_TYPE,
+                                                      Converter={EqualConverter OUTPUT}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value CB_P, Converter={FormatConverter F4}}" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="TMEAS"
+                         Canvas.Left="29.68945"
+                         Canvas.Top="26.00001"
+                         Width="39.76172"
+                         Height="14.52344"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         Text="{Value CB_P,
+                                      Converter={FormatConverter {}{0:0.####}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold"
+                         Visibility="{TemplateBinding TEXT_TYPE,
+                                                      Converter={EqualConverter MEASURE}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value CB_P, Converter={FormatConverter F4}}" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="txt_EU"
+                         Canvas.Left="79.2217"
+                         Width="18.05908"
+                         Height="14.52344"
+                         HorizontalAlignment="Right"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         Text="EU"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="StringLeft_CB_EU_6_" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="TRSP"
+                         Canvas.Left="29.77002"
+                         Canvas.Top="26.32422"
+                         Width="39.76172"
+                         Height="14.52344"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         Text="{Value CB_P,
+                                      Converter={FormatConverter {}{0:0.####}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold"
+                         Visibility="{TemplateBinding TEXT_TYPE,
+                                                      Converter={EqualConverter RSETPOINT}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value CB_P, Converter={FormatConverter F4}}" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="TBCALCI"
+                         Canvas.Left="29.77002"
+                         Canvas.Top="26.32422"
+                         Width="39.76172"
+                         Height="14.52344"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         Text="{Value CB_BCALCI,
+                                      Converter={FormatConverter {}{0:0.####}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold"
+                         Visibility="{TemplateBinding TEXT_TYPE,
+                                                      Converter={EqualConverter OUT_BCAI}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value CB_BCALCI, Converter={FormatConverter F4}}" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="GEN"
+                         Canvas.Left="25.10156"
+                         Canvas.Top="29.32422"
+                         Width="48.9375"
+                         Height="17.875"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FF00FF00"
+                         Text="{Value CB_P,
+                                      Converter={FormatConverter {}{0:0.####}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         Visibility="{TemplateBinding TEXT_TYPE,
+                                                      Converter={EqualConverter GENRAL}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value CB_P, Converter={FormatConverter F4}}" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="GEN2"
+                         Canvas.Left="29.68945"
+                         Canvas.Top="26"
+                         Width="39.76172"
+                         Height="14.52344"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FFCCCCCC"
+                         Text="{Value CB_P,
+                                      Converter={FormatConverter {}{0:0.####}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold"
+                         Visibility="{TemplateBinding TEXT_TYPE,
+                                                      Converter={EqualConverter GENRAL2}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value CB_P, Converter={FormatConverter F4}}" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIRectangle x:Name="Rectangle1"
+                              Canvas.Top="28.32422"
+                              Width="100"
+                              Height="20.00003"
+                              Stroke="#FF009F9D"
+                              StrokeThickness="1"
+                              Visibility="{TemplateBinding TEXT_TYPE,
+                                                           Converter={EqualConverter GENRAL0}}" />
+                <RSIText x:Name="TXT_EU_WHITE"
+                         Canvas.Left="80.5566"
+                         Canvas.Top="0.558600000000002"
+                         Width="16.66992"
+                         Height="13.40625"
+                         HorizontalAlignment="Right"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         Text="EU"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="9"
+                         TextElement.FontWeight="Bold">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="StringLeft_CB_EU_6_" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

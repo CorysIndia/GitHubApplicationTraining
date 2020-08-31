@@ -1,0 +1,143 @@
+﻿<RSIFacePlate
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="UGP_ERDF.Faceplate.MOVFaceplate"
+	Width="450" 
+	Height="350"
+	Background="#858585">
+    <RSIFacePlate.Resources>
+        <Style TargetType="{x:Type RSIText}">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Lucida Bright"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+    </RSIFacePlate.Resources>
+    <RSICanvas >
+        <Rectangle Fill="Transparent" Height="297.445" Canvas.Left="188.646" Stroke="White" StrokeThickness="1" Canvas.Top="27.555" Width="242.354"/>
+        <Rectangle Fill="LightGray" Height="170.043" Canvas.Left="188.646" Stroke="White" StrokeThickness="1" Canvas.Top="157.188" Width="242.354"/>
+        <RSIRectangle Fill="LightGray" Height="73.399" Canvas.Left="208.508" Stroke="Black" StrokeThickness="1" Canvas.Top="225.363" Width="132.913" >
+            <RSIRectangle.Animations>
+                <Animation Condition="$VALVEACTUATOR.Zhl == TRUE">
+                    <ChangeColor Color="Green"/>
+                </Animation>
+                <Animation Condition="$VALVEACTUATOR.Zll == TRUE">
+                    <ChangeColor Color="Red"/>
+                </Animation>
+            </RSIRectangle.Animations>
+        </RSIRectangle>
+        <RSIText x:Name="rSIText1"  Height="56.215" Canvas.Left="14.121" Foreground="White"  TextWrapping="Wrap" Text="CLOSE" Canvas.Top="180.013" Width="68.208" BorderThickness="1">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Assignment Expression="2" Variable="#MOVCommand"/>
+                </ClickAnimation>
+                <Animation Condition="#MOVCommand == 2">
+                    <ChangeColor Color="Black"/>
+                    <ChangePropertyValue PropertyName="Background" Value="White"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText2" Height="56.215" Canvas.Left="95.795" TextWrapping="Wrap" Text="OPEN" Canvas.Top="180.013" Width="70.928" BorderThickness="1">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Assignment Expression="1" Variable="#MOVCommand"/>
+                </ClickAnimation>
+                <Animation Condition="#MOVCommand == 1">
+                    <ChangeColor Color="Black"/>
+                    <ChangePropertyValue PropertyName="Background" Value="White"/>
+                </Animation>
+
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText3" Height="39.853" Canvas.Left="16.493" TextWrapping="Wrap" Foreground="White" Text="STOP" Canvas.Top="79.846" Width="147.681" BorderThickness="1">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Assignment Expression="3" Variable="#MOVCommand"/>
+                </ClickAnimation>
+                <Animation Condition="#MOVCommand == 3">
+                    <ChangeColor Color="Black"/>
+                    <ChangePropertyValue PropertyName="Background" Value="White"/>
+                </Animation>
+
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText4" Height="38.356" Canvas.Left="197.919" TextWrapping="Wrap" Foreground="Black" HorizontalContentAlignment="Left" Text="INTERMEDIATE" Canvas.Top="182.007" Width="143.502">
+            <RSIText.Animations>
+                <Animation Condition="$VALVEACTUATOR.Zhl == TRUE">
+                    <ChangeText Text="OPEN"/>
+                </Animation>
+                <Animation Condition="$VALVEACTUATOR.Zll == TRUE">
+                    <ChangeText Text="CLOSED"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText5" Height="44.538" Canvas.Left="14.121" TextWrapping="Wrap" Background="Black" Text="EXECUTE" Canvas.Top="242.536" Width="152.602" >
+            <RSIText.Animations>
+                <ClickAnimation Condition="#MOVCommand == 1">
+                    <Assignment Expression="FALSE" Variable="$VALVEACTUATOR.LocalCloseSwitch"/>
+                    <Assignment Expression="FALSE" Variable="$VALVEACTUATOR.LocalStopSwitch"/>
+                    <Assignment Expression="TRUE" Variable="$VALVEACTUATOR.LocalOpenSwitch"/>
+                </ClickAnimation>
+                <ClickAnimation Condition="#MOVCommand == 2">
+                    <Assignment Expression="FALSE" Variable="$VALVEACTUATOR.LocalOpenSwitch"/>
+                    <Assignment Expression="FALSE" Variable="$VALVEACTUATOR.LocalStopSwitch"/>
+                    <Assignment Expression="TRUE" Variable="$VALVEACTUATOR.LocalCloseSwitch"/>
+                </ClickAnimation>
+                <ClickAnimation Condition="#MOVCommand == 3">
+                    <Assignment Expression="FALSE" Variable="$VALVEACTUATOR.LocalOpenSwitch"/>
+                    <Assignment Expression="FALSE" Variable="$VALVEACTUATOR.LocalCloseSwitch"/>
+                    <Assignment Expression="TRUE" Variable="$VALVEACTUATOR.LocalStopSwitch"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText8" Height="36.154" Canvas.Left="14.121" TextWrapping="Wrap"  Foreground="Black" Background="LightGray" Text="CLOSE  OVERLAY" Canvas.Top="292.074" Width="154.389">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Close/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText4_Copy" Height="24.243" Canvas.Left="404.498" TextWrapping="Wrap" Foreground="Black" Background="white" Text="M" Canvas.Top="158.309" Width="24.425">
+            <RSIText.Animations>
+                <Animation Condition="$VALVEACTUATOR.PositionSwitch == 0">
+                    <ChangeText Text="M"/>
+                </Animation>
+                <Animation Condition="$VALVEACTUATOR.PositionSwitch == 1">
+                    <ChangeText Text="A"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText1_Copy"  Height="50.777" Canvas.Left="16.493" Foreground="DarkGray"  TextWrapping="Wrap" Text="DETAIL&#xD;&#xA;OPEN" Canvas.Top="123.793" Width="66.918" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="White"/>
+        <RSIText x:Name="rSIText1_Copy1"  Height="50.777" Canvas.Left="97.256" Foreground="DarkGray"  TextWrapping="Wrap" Text="DETAIL&#xA;CLOSE" Canvas.Top="122.775" Width="66.918" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="White"/>
+        <RSIText x:Name="rSIText_Copy1" Height="38" Canvas.Left="193" TextWrapping="Wrap" Text="\$VALVEACTUATOR.TagComment1\" Canvas.Top="110.796" Width="184.933"  HorizontalContentAlignment="Left"/>
+        <RSIText x:Name="rSIText7_Copy" Height="50.777" Canvas.Left="56.831" TextWrapping="Wrap" Text="ACK" Canvas.Top="24.128" Width="60.943" BorderThickness="1">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <AckUnitAlarms TagName="$TAGNAME"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy2" Height="76.769" Canvas.Left="193" TextWrapping="Wrap" Text="\$VALVEACTUATOR.PointDescriptor\" Canvas.Top="34.027" Width="188"  VerticalContentAlignment="Top" HorizontalContentAlignment="Left"/>
+        <RSIText x:Name="rSIText_Copy3" Height="28" Canvas.Left="375.933" TextWrapping="Wrap" Text="ALM" Canvas.Top="123.991" Width="52">
+            <RSIText.Animations>
+                <Animation Condition="$TagName.DiscAlarms[0] == 0">
+                    <Invisible/>
+                </Animation>
+                <Animation Condition="$TagName.DiscAlarms[0] == 3">
+                    <Blink/>
+                    <ChangePropertyValue PropertyName="Background" Value="Red"/>
+                </Animation>
+                <Animation Condition="$TagName.DiscAlarms[0] == 2">
+                    <ChangePropertyValue PropertyName="Background" Value="Red"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+
+    </RSICanvas>
+</RSIFacePlate>

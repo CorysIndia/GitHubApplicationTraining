@@ -1,0 +1,127 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Style TargetType="{x:Type hmi:VALUE_SEQ}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:VALUE_SEQ}">
+                    <RSIViewbox Stretch="Fill" Height="24" Width="81">
+                        <RSIGrid Background="Transparent">
+                            <RSICanvas Width="170"
+                         Height="69.48437"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                                <RSIPath x:Name="Element27"
+                         Width="170"
+                         Height="69.484"
+                         Data="M0,0 L1,0 1,1 0,1 0,0 0,0 z"
+                         Stretch="Fill"
+                         StrokeThickness="1">
+                                    <RSIPath.Animations />
+                                </RSIPath>
+                                <RSIText x:Name="VARIABLE"
+                         Canvas.Top="24.4844"
+                         Width="170"
+                         Height="44.99997"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#FF4D4D4D"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="HS"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextWrapping="Wrap"
+                         Visibility="{TemplateBinding Variable_Text,
+                                                      Converter={EqualConverter True}}">
+                                    <RSIText.Animations>
+                                        <Animation Condition="$PAR=true">
+                                            <ChangeText Text="" />
+                                        </Animation>
+                                        <Animation Condition="$PAR=false">
+                                            <ChangeText Text="" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIButton x:Name="OPEN"
+                                    Width="83.549"
+                                    Height="69.484"
+                                    Background="#FFD3D3D3" Content="O" FontSize="28" Visibility="{TemplateBinding ZV_OP, Converter={EqualConverter true}}" Cursor="Hand">
+                                    <RSIButton.Animations>
+                                        <Animation Condition="$TAGNAME_OP.COUT == 1" >
+                                            <ChangePropertyValue PropertyName="Background" Value="#FF00BA00"/>
+                                        </Animation>
+                                        <ClickAnimation>
+                                            <Assignment Expression="1" Variable="$TAGNAME_OP.IN"/>
+                                        </ClickAnimation>
+                                        <!--
+            if IADAS.03D007A_CF3.03KXIH0527.CIN == false then
+            IADAS.03D007A_CF3.03KXIH0527.CIN_P = true;
+            IADAS.03D007A_CF3.03KXIH0527.CIN_S = true;
+            else
+            IADAS.03D007A_CF3.03KXIH0527.CIN_P = false;
+            IADAS.03D007A_CF3.03KXIH0527.CIN_S = false;
+            endif;
+          -->
+                                    </RSIButton.Animations>
+                                </RSIButton>
+                                <RSIButton x:Name="CLOSE"
+                                    Canvas.Left="86.614"
+                                    Width="83.386"
+                                    Height="68"
+                                    Background="#FFD3D3D3" Content="C" FontSize="28" Visibility="{TemplateBinding ZV_CL, Converter={EqualConverter true}}" Cursor="Hand">
+                                    <RSIButton.Animations>
+                                        <Animation Condition="$TAGNAME_CL.COUT == 1" >
+                                            <ChangePropertyValue PropertyName="Background" Value="Red"/>
+                                        </Animation>
+                                        <ClickAnimation>
+                                            <Assignment Expression="1" Variable="$TAGNAME_CL.IN"/>
+                                        </ClickAnimation>
+                                        <!--
+            if IADAS.03D007A_CF3.03KXIL0527.CIN == false then
+            IADAS.03D007A_CF3.03KXIL0527.CIN_P = true;
+            IADAS.03D007A_CF3.03KXIL0527.CIN_S = true;
+            else
+            IADAS.03D007A_CF3.03KXIL0527.CIN_P = false;
+            IADAS.03D007A_CF3.03KXIL0527.CIN_S = false;
+            endif;
+          -->
+                                    </RSIButton.Animations>
+                                </RSIButton>
+                                <RSIButton x:Name="CLOSE01"
+                                    Canvas.Left="0.36"
+                                    Width="82.827"
+                                    Height="68"
+                                    Background="#FFD3D3D3" Content="C" Canvas.Top="70.968" FontSize="28" Visibility="{TemplateBinding ZV_CL01, Converter={EqualConverter true}}" Cursor="Hand">
+                                    <RSIButton.Animations>
+                                        <Animation Condition="$TAGNAME_CL.COUT == 1" >
+                                            <ChangePropertyValue PropertyName="Background" Value="Red"/>
+                                        </Animation>
+                                        <ClickAnimation>
+                                            <Assignment Expression="1" Variable="$TAGNAME_CL.IN"/>
+                                        </ClickAnimation>
+                                        <!--
+            if IADAS.03D007A_CF3.03KXIL0527.CIN == false then
+            IADAS.03D007A_CF3.03KXIL0527.CIN_P = true;
+            IADAS.03D007A_CF3.03KXIL0527.CIN_S = true;
+            else
+            IADAS.03D007A_CF3.03KXIL0527.CIN_P = false;
+            IADAS.03D007A_CF3.03KXIL0527.CIN_S = false;
+            endif;
+          -->
+                                    </RSIButton.Animations>
+                                </RSIButton>
+                            </RSICanvas>
+                        </RSIGrid>
+                    </RSIViewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+</ResourceDictionary>

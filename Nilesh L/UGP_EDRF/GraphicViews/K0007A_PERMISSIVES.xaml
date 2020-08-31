@@ -1,0 +1,83 @@
+<UserControl 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+             xmlns:local="clr-namespace:UGP_EDRF" 
+             xmlns:HMI="clr-namespace:UGP_EDRF.HMI" x:Class="UGP_EDRF.K0007A_PERMISSIVES" 
+             mc:Ignorable="d">
+    <Grid>
+        <!--  Graphic Part  -->
+        <local:K0007A_PERMISSIVES_Translation x:Name="GRAPHIC" d:IsLocked="True"  />
+
+        <!-- Normal Graphic Layer Path -->
+        <Canvas x:Name="GRAPHIC_OVERLAY">
+            <RSICanvas x:Name="Group1"
+                Width="102"
+                Height="53.669"
+                Canvas.Left="1182.032"
+                Canvas.Top="408.436">
+                <HMI:ButtonIndicative_Conf_N1 x:Name="EmbeddedSymbol15"
+                    Width="102"
+                    Height="53.66821"
+                    ConfirmationMessage="K-0007A ESD LOGIC RESET?"
+                    fTagName="IADAS.06_ESD_D.06HS0454.IN"
+                    gTagName="IADAS.06_ESD_D.06HS0454.IN"
+                    NameStore="CONFIRMATION_SCREEN_PLS"
+                    Overlay="Confirmation" LeftName="OK" ModelName="06HS0454" RightName="CANCEL" />
+                <RSICanvas x:Name="Group1_1"
+                    Width="80"
+                    Height="40"
+                    Canvas.Left="11"
+                    Canvas.Top="7.00010000000003">
+                    <RSIText x:Name="TextBox1"
+                        Width="80"
+                        Height="20"
+                        HorizontalContentAlignment="Center"
+                        VerticalContentAlignment="Center"
+                        BorderBrush="Transparent"
+                        Foreground="#FF000000"
+                        IsHitTestVisible="False"
+                        Text="ESD RESET"
+                        TextElement.FontFamily="Arial"
+                        TextElement.FontSize="10"
+                        TextElement.FontWeight="Bold"
+                        TextWrapping="Wrap" />
+                    <RSIText x:Name="TextBox2"
+                        Canvas.Top="20"
+                        Width="80"
+                        Height="20"
+                        HorizontalContentAlignment="Center"
+                        VerticalContentAlignment="Center"
+                        BorderBrush="Transparent"
+                        Foreground="#FF000000"
+                        IsHitTestVisible="False"
+                        Text="(HS-0454)"
+                        TextElement.FontFamily="Arial"
+                        TextElement.FontSize="10"
+                        TextElement.FontWeight="Bold"
+                        TextWrapping="Wrap" />
+                </RSICanvas>
+            </RSICanvas>
+        </Canvas>
+
+        <!-- FOD Part -->
+        <Canvas x:Name='FOD' Visibility="{FODBinding}">
+            <!-- Start FOD -->
+            <!-- Stop FOD -->
+        </Canvas>
+
+        <!-- BL Part -->
+        <Canvas x:Name='BL' Visibility='{BLBinding}' >
+            <!-- Start BL -->
+            <!-- Stop BL -->
+        </Canvas>
+
+        <!-- FAILURE Part -->
+        <Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' >
+            <!-- Start FAILURE -->
+            <!-- Stop FAILURE -->
+        </Canvas>
+
+    </Grid>
+</UserControl>

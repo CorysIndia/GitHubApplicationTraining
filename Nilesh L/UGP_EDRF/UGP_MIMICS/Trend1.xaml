@@ -1,0 +1,91 @@
+﻿<RSISynoptic
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:trends="clr-namespace:RSI.Emulation.Controls.Control.Trends;assembly=RSI.Emulation.Controls"
+	mc:Ignorable="d"
+	x:Class="UGP_EDRF.UGP_MIMICS.Trend1"
+	Background="LightGray"
+	Height="1048"
+	Width="1920">
+
+    <!-- 8 channels max, from 1 to 8:		 -->
+    <!-- 	$TAGNAME  : tag name		 -->
+    <!-- 	$TAGLABEL : label /Optional	 --> 
+    <!-- 	$MIN      : borned min		 -->
+    <!-- 	$MAX      : borned max		 -->
+    <!-- 	$VALUE    : value to trend	 -->
+    <!-- 	$UNIT     : unit /Optional	 -->
+    <trends:RSITrend_H8  >
+        <trends:RSITrend_H8.Parameters>
+
+            <Param Name="$TAGNAME1" Value="r006D_SPD_TGT_T"/>
+            <Param Name="$TAGLABEL1" Value="TURBINE TARGET SP"/>
+            <Param Name="$MIN1" Value="r006D_SPD_TGT_T.LowerRange"/>
+            <Param Name="$MAX1" Value="r006D_SPD_TGT_T.UpperRange"/>
+            <Param Name="$VALUE1" Value="r006D_SPD_TGT_T.Value"/>
+            <Param Name="$UNIT1" Value="r006D_SPD_TGT_T.Value.Unit"/>
+
+            <Param Name="$TAGNAME2" Value="r006D_SIC_3600_SP_T"/>
+            <Param Name="$TAGLABEL2" Value="TURBINE ACTUAL SP"/>
+            <Param Name="$MIN2" Value="r006D_SIC_3600_SP_T.LowerRange"/>
+            <Param Name="$MAX2" Value="r006D_SIC_3600_SP_T.UpperRange"/>
+            <Param Name="$VALUE2" Value="r006D_SIC_3600_SP_T.Value"/>
+            <Param Name="$UNIT2" Value="r006D_SIC_3600_SP_T.Value.Unit"/>
+
+
+            <Param Name="$TAGNAME3" Value="r006D_SI_3600_T"/>
+            <Param Name="$TAGLABEL3" Value="TURBINE ACTUAL SPEED"/>
+            <Param Name="$MIN3" Value="r006D_SI_3600_T.LowerRange"/>
+            <Param Name="$MAX3" Value="r006D_SI_3600_T.UpperRange"/>
+            <Param Name="$VALUE3" Value="r006D_SI_3600_T.Value"/>
+            <Param Name="$UNIT3" Value="r006D_SI_3600_T.Value.Unit"/>
+
+
+            <Param Name="$TAGNAME4" Value="r006D_SY_3604_T"/>
+            <Param Name="$TAGLABEL4" Value="GV"/>
+            <Param Name="$MIN4" Value="r006D_SY_3604_T.LowerRange"/>
+            <Param Name="$MAX4" Value="r006D_SY_3604_T.UpperRange"/>
+            <Param Name="$VALUE4" Value="r006D_SY_3604_T.Value"/>
+            <Param Name="$UNIT4" Value="r006D_SY_3604_T.Value.Unit"/>
+
+
+            <!--<Param Name="$TAGNAME2" Value="PID1"/>
+            <Param Name="$TAGLABEL2" Value="PID PV"/>
+            <Param Name="$MIN2" Value="PID1.PV.Min"/>
+            <Param Name="$MAX2" Value="PID1.PV.Max"/>
+            <Param Name="$VALUE2" Value="PID1.PV"/>
+            <Param Name="$UNIT2" Value="PID1.PVUNIT"/>-->
+
+            <!--<Param Name="$TAGNAME3" Value="PID1"/>
+            <Param Name="$TAGLABEL3" Value="PID OV"/>
+            <Param Name="$MIN3" Value="PID1.OV.Min"/>
+            <Param Name="$MAX3" Value="PID1.OV.Max"/>
+            <Param Name="$VALUE3" Value="PID1.OV"/>
+            <Param Name="$UNIT3" Value="PID1.OV.Unit"/>-->
+
+            <!--<Param Name="$TAGNAME4" Value="IAS_PID"/>
+            <Param Name="$TAGLABEL4" Value="IAS_PID OUT"/>
+            <Param Name="$MIN4" Value="IAS_PID.LSCO1"/>
+            <Param Name="$MAX4" Value="IAS_PID.HSCO1"/>
+            <Param Name="$VALUE4" Value="IAS_PID.OUT"/>
+            <Param Name="$UNIT4" Value="IAS_PID.EO1"/>-->
+
+            <!--<Param Name="$TAGNAME5" Value="FIC100"/>
+            <Param Name="$TAGLABEL5" Value="D01 Temperature"/>-->
+
+            <!--<Param Name="$TAGNAME6" Value="FIC100"/>
+            <Param Name="$TAGLABEL6" Value="D01 Level"/>-->
+
+            <!--<Param Name="$TAGNAME7" Value="FIC100"/>
+            <Param Name="$TAGLABEL7" Value="Reflux Flow"/>-->
+
+            <!--<Param Name="$TAGNAME8" Value="FIC100"/>
+            <Param Name="$TAGLABEL8" Value="Steam Flowrate"/>-->
+
+
+        </trends:RSITrend_H8.Parameters>
+    </trends:RSITrend_H8>
+
+</RSISynoptic>

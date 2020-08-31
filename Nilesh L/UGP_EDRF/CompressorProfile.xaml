@@ -1,0 +1,614 @@
+﻿<RSIFacePlate
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+     xmlns:system="clr-namespace:System;assembly=mscorlib"
+	mc:Ignorable="d"
+	x:Class="CompressorProfileDemo.CompressorProfile"
+	Width="600" 
+	Height="400"
+	Background="Transparent">
+    <RSIFacePlate.Animations>
+        <Animation>
+            <ChangePropertyValue PropertyName="Background" Value="Transparent"/>
+        </Animation>
+    </RSIFacePlate.Animations>
+    <Grid x:Name="MainGrid" Background="Transparent">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="120" />
+        </Grid.ColumnDefinitions>
+
+        <ParameterVariable x:Name="CurrentX" Path="{ConvertedValueBinding CurrentPointIndex, StringFormat=FlowTable[\{0\}][0]}" Visibility="Hidden" />
+        <ParameterVariable x:Name="CurrentY" Path="{ConvertedValueBinding CurrentPointIndex, StringFormat=PolytropicHeadTable[\{0\}][0]}" Visibility="Hidden" />
+
+        <!--  PolytropicHeadTable[\{0\}][0]}" />  -->
+
+        <!--  Left Part : MaxHeadValue / MinHeadValue  -->
+        <Grid x:Name="LeftPart" HorizontalAlignment="Stretch" Visibility="Hidden">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0"
+                                Grid.RowSpan="1"
+                                VerticalAlignment="Center"
+                                Orientation="Vertical"
+                                d:LayoutOverrides="Height">
+                <TextBlock HorizontalAlignment="Center" Text="Max" />
+                <ParameterValue HorizontalAlignment="Right"
+                                        Foreground="Black"
+                                        Format="F1"
+                                        Id="MaxHeadValue" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="1"
+                                Grid.RowSpan="1"
+                                VerticalAlignment="Center"
+                                Orientation="Vertical"
+                                d:LayoutOverrides="Height">
+                <TextBlock HorizontalAlignment="Center" Text="Head" />
+                <ParameterValue HorizontalAlignment="Stretch"
+                                        Foreground="Black"
+                                        Format="F1"
+                                        Id="PolytropicHead" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="2"
+                                Grid.RowSpan="1"
+                                VerticalAlignment="Center"
+                                Orientation="Vertical"
+                                d:LayoutOverrides="Height">
+                <TextBlock HorizontalAlignment="Center" Text="Min" />
+                <ParameterValue HorizontalAlignment="Right"
+                                        Foreground="Black"
+                                        Format="F1"
+                                        Id="MinHeadValue" />
+            </StackPanel>
+
+        </Grid>
+
+        <!--  Center Part : Profile  -->
+        <ProfileControl Grid.Column="1"
+                                BackgoundColor="Transparent"
+                                LinesColor="Transparent"
+                                ShowCursor="False"
+                                ShowLegend="False" AxisColor="Transparent" DataViewColor="Transparent"
+                                
+                                >
+
+            <ProfileControl.Channels>
+                <!--  "PolytropicFlowHeadCharacteristicArray = f(VolumeFlowCharacteristicArray)  -->
+                <ProfileChannel Title="{ModelValueBinding CommandArray[0][0],
+                                                                  StringFormat=\{0:F2\}}"
+                                        LineStroke="Magenta"
+                                        ShowAxis="False"
+                                        ShowMarkers="False" LinesColor="Transparent" Visibility="Hidden" Show="{ModelValueBinding CommandArray[0][0], StringFormat=\{0:F2\}}">
+                    <!--  X Axis definition  -->
+                    <ProfileChannel.XAxis>
+                        <XAxis Max="{ConvertedValueBinding MaxFlowValue}"
+                                       Min="{ConvertedValueBinding MinFlowValue}"
+                                       RangeAuto="False">
+                            <XAxis.Parameters>
+                                <system:String>VolumeFlowCharacteristicArray[0][0..*]</system:String>
+                            </XAxis.Parameters>
+                        </XAxis>
+                    </ProfileChannel.XAxis>
+                    <!--  Y Axis definition  -->
+                    <ProfileChannel.YAxis>
+                        <YAxis Max="{ConvertedValueBinding MaxHeadValue}"
+                                       Min="{ConvertedValueBinding MinHeadValue}"
+                                       RangeAuto="False">
+                            <YAxis.Parameters>
+                                <system:String>PolytropicHeadCharacteristicArray[0][0..*]</system:String>
+                            </YAxis.Parameters>
+                        </YAxis>
+                    </ProfileChannel.YAxis>
+                </ProfileChannel>
+
+
+                <ProfileChannel Title="{ModelValueBinding CommandArray[1][0],
+                                                                  StringFormat=\{0:F2\}}"
+                                        LineStroke="DarkOrange"
+                                        Show="{ComparisonModelValueBinding NumberOfCurves,
+                                                                           ComparisonValue=2,
+                                                                           EqualityType=GreaterThanOrEquals}"
+                                        ShowAxis="False"
+                                        ShowMarkers="False" Visibility="Hidden">
+                    <!--  X Axis definition  -->
+                    <ProfileChannel.XAxis>
+                        <XAxis Max="{ConvertedValueBinding MaxFlowValue}"
+                                       Min="{ConvertedValueBinding MinFlowValue}"
+                                       RangeAuto="False">
+                            <XAxis.Parameters>
+                                <system:String>VolumeFlowCharacteristicArray[1][0..*]</system:String>
+                            </XAxis.Parameters>
+                        </XAxis>
+                    </ProfileChannel.XAxis>
+                    <!--  Y Axis definition  -->
+                    <ProfileChannel.YAxis>
+                        <YAxis Max="{ConvertedValueBinding MaxHeadValue}"
+                                       Min="{ConvertedValueBinding MinHeadValue}"
+                                       RangeAuto="False">
+                            <YAxis.Parameters>
+                                <system:String>PolytropicHeadCharacteristicArray[1][0..*]</system:String>
+                            </YAxis.Parameters>
+                        </YAxis>
+                    </ProfileChannel.YAxis>
+                </ProfileChannel>
+
+                <ProfileChannel Title="{ModelValueBinding CommandArray[2][0],
+                                                                  StringFormat=\{0:F2\}}"
+                                        LineStroke="DarkBlue"
+                                        Show="{ComparisonModelValueBinding NumberOfCurves,
+                                                                           ComparisonValue=3,
+                                                                           EqualityType=GreaterThanOrEquals}"
+                                        ShowAxis="False"
+                                        ShowMarkers="False" Visibility="Hidden">
+                    <!--  X Axis definition  -->
+                    <ProfileChannel.XAxis>
+                        <XAxis Max="{ConvertedValueBinding MaxFlowValue}"
+                                       Min="{ConvertedValueBinding MinFlowValue}"
+                                       RangeAuto="False">
+                            <XAxis.Parameters>
+                                <system:String>VolumeFlowCharacteristicArray[2][0..*]</system:String>
+                            </XAxis.Parameters>
+                        </XAxis>
+                    </ProfileChannel.XAxis>
+                    <!--  Y Axis definition  -->
+                    <ProfileChannel.YAxis>
+                        <YAxis Max="{ConvertedValueBinding MaxHeadValue}"
+                                       Min="{ConvertedValueBinding MinHeadValue}"
+                                       RangeAuto="False">
+                            <YAxis.Parameters>
+                                <system:String>PolytropicHeadCharacteristicArray[2][0..*]</system:String>
+                            </YAxis.Parameters>
+                        </YAxis>
+                    </ProfileChannel.YAxis>
+                </ProfileChannel>
+
+                <ProfileChannel Title="{ModelValueBinding CommandArray[3][0],
+                                                                  StringFormat=\{0:F2\}}"
+                                        LineStroke="DarkRed"
+                                        Show="{ComparisonModelValueBinding NumberOfCurves,
+                                                                           ComparisonValue=4,
+                                                                           EqualityType=GreaterThanOrEquals}"
+                                        ShowAxis="False"
+                                        ShowMarkers="False" Visibility="Hidden">
+                    <!--  X Axis definition  -->
+                    <ProfileChannel.XAxis>
+                        <XAxis Max="{ConvertedValueBinding MaxFlowValue}"
+                                       Min="{ConvertedValueBinding MinFlowValue}"
+                                       RangeAuto="False">
+                            <XAxis.Parameters>
+                                <system:String>VolumeFlowCharacteristicArray[3][0..*]</system:String>
+                            </XAxis.Parameters>
+                        </XAxis>
+                    </ProfileChannel.XAxis>
+                    <!--  Y Axis definition  -->
+                    <ProfileChannel.YAxis>
+                        <YAxis Max="{ConvertedValueBinding MaxHeadValue}"
+                                       Min="{ConvertedValueBinding MinHeadValue}"
+                                       RangeAuto="False">
+                            <YAxis.Parameters>
+                                <system:String>PolytropicHeadCharacteristicArray[3][0..*]</system:String>
+                            </YAxis.Parameters>
+                        </YAxis>
+                    </ProfileChannel.YAxis>
+                </ProfileChannel>
+
+                <ProfileChannel Title="{ModelValueBinding CommandArray[4][0],
+                                                                  StringFormat=\{0:F2\}}"
+                                        LineStroke="Purple"
+                                        Show="{ComparisonModelValueBinding NumberOfCurves,
+                                                                           ComparisonValue=5,
+                                                                           EqualityType=GreaterThanOrEquals}"
+                                        ShowAxis="False"
+                                        ShowMarkers="False" Visibility="Hidden">
+                    <!--  X Axis definition  -->
+                    <ProfileChannel.XAxis>
+                        <XAxis Max="{ConvertedValueBinding MaxFlowValue}"
+                                       Min="{ConvertedValueBinding MinFlowValue}"
+                                       RangeAuto="False">
+                            <XAxis.Parameters>
+                                <system:String>VolumeFlowCharacteristicArray[4][0..*]</system:String>
+                            </XAxis.Parameters>
+                        </XAxis>
+                    </ProfileChannel.XAxis>
+                    <!--  Y Axis definition  -->
+                    <ProfileChannel.YAxis>
+                        <YAxis Max="{ConvertedValueBinding MaxHeadValue}"
+                                       Min="{ConvertedValueBinding MinHeadValue}"
+                                       RangeAuto="False">
+                            <YAxis.Parameters>
+                                <system:String>PolytropicHeadCharacteristicArray[4][0..*]</system:String>
+                            </YAxis.Parameters>
+                        </YAxis>
+                    </ProfileChannel.YAxis>
+                </ProfileChannel>
+
+                <ProfileChannel Title="{ModelValueBinding CommandArray[5][0],
+                                                                  StringFormat=\{0:F2\}}"
+                                        LineStroke="#FF006280"
+                                        Show="{ComparisonModelValueBinding NumberOfCurves,
+                                                                           ComparisonValue=6,
+                                                                           EqualityType=GreaterThanOrEquals}"
+                                        ShowAxis="False"
+                                        ShowMarkers="False" Visibility="Hidden">
+                    <!--  X Axis definition  -->
+                    <ProfileChannel.XAxis>
+                        <XAxis Max="{ConvertedValueBinding MaxFlowValue}"
+                                       Min="{ConvertedValueBinding MinFlowValue}"
+                                       RangeAuto="False">
+                            <XAxis.Parameters>
+                                <system:String>VolumeFlowCharacteristicArray[5][0..11]</system:String>
+                            </XAxis.Parameters>
+                        </XAxis>
+                    </ProfileChannel.XAxis>
+                    <!--  Y Axis definition  -->
+                    <ProfileChannel.YAxis>
+                        <YAxis Max="{ConvertedValueBinding MaxHeadValue}"
+                                       Min="{ConvertedValueBinding MinHeadValue}"
+                                       RangeAuto="False">
+                            <YAxis.Parameters>
+                                <system:String>PolytropicHeadCharacteristicArray[5][0..11]</system:String>
+                            </YAxis.Parameters>
+                        </YAxis>
+                    </ProfileChannel.YAxis>
+                </ProfileChannel>
+
+                <ProfileChannel Title="{ModelValueBinding CommandArray[6][0],
+                                                                  StringFormat=\{0:F2\}}"
+                                        LineStroke="Khaki"
+                                        Show="{ComparisonModelValueBinding NumberOfCurves,
+                                                                           ComparisonValue=7,
+                                                                           EqualityType=GreaterThanOrEquals}"
+                                        ShowAxis="False"
+                                        ShowMarkers="False" Visibility="Hidden">
+                    <!--  X Axis definition  -->
+                    <ProfileChannel.XAxis>
+                        <XAxis Max="{ConvertedValueBinding MaxFlowValue}"
+                                       Min="{ConvertedValueBinding MinFlowValue}"
+                                       RangeAuto="False">
+                            <XAxis.Parameters>
+                                <system:String>VolumeFlowCharacteristicArray[6][0..11]</system:String>
+                            </XAxis.Parameters>
+                        </XAxis>
+                    </ProfileChannel.XAxis>
+                    <!--  Y Axis definition  -->
+                    <ProfileChannel.YAxis>
+                        <YAxis Max="{ConvertedValueBinding MaxHeadValue}"
+                                       Min="{ConvertedValueBinding MinHeadValue}"
+                                       RangeAuto="False">
+                            <YAxis.Parameters>
+                                <system:String>PolytropicHeadCharacteristicArray[6][0..11]</system:String>
+                            </YAxis.Parameters>
+                        </YAxis>
+                    </ProfileChannel.YAxis>
+                </ProfileChannel>
+
+                <ProfileChannel Title="{ModelValueBinding CommandArray[7][0],
+                                                                  StringFormat=\{0:F2\}}"
+                                        LineStroke="Chartreuse"
+                                        Show="{ComparisonModelValueBinding NumberOfCurves,
+                                                                           ComparisonValue=8,
+                                                                           EqualityType=GreaterThanOrEquals}"
+                                        ShowAxis="False"
+                                        ShowMarkers="False" Visibility="Hidden">
+                    <!--  X Axis definition  -->
+                    <ProfileChannel.XAxis>
+                        <XAxis Max="{ConvertedValueBinding MaxFlowValue}"
+                                       Min="{ConvertedValueBinding MinFlowValue}"
+                                       RangeAuto="False">
+                            <XAxis.Parameters>
+                                <system:String>VolumeFlowCharacteristicArray[7][0..11]</system:String>
+                            </XAxis.Parameters>
+                        </XAxis>
+                    </ProfileChannel.XAxis>
+                    <!--  Y Axis definition  -->
+                    <ProfileChannel.YAxis>
+                        <YAxis Max="{ConvertedValueBinding MaxHeadValue}"
+                                       Min="{ConvertedValueBinding MinHeadValue}"
+                                       RangeAuto="False">
+                            <YAxis.Parameters>
+                                <system:String>PolytropicHeadCharacteristicArray[7][0..11]</system:String>
+                            </YAxis.Parameters>
+                        </YAxis>
+                    </ProfileChannel.YAxis>
+                </ProfileChannel>
+
+                <!--     <Variable x:Name="Nhisto" Value="{Value Histo_Points}" /> -->
+
+                <ProfileChannel Title="HistoryCurrent1"
+                                        LineStroke="LightGray"
+                                        Show="{ModelValueBinding DisplayDataOnMap}"
+                                        ShowAxis="False"
+                                        ShowMarkers="True" LinesColor="Transparent" Visibility="Hidden">
+
+                    <!--  X Axis definition  -->
+                    <ProfileChannel.XAxis>
+                        <XAxis Max="{ConvertedValueBinding MaxFlowValue}"
+                                       Min="{ConvertedValueBinding MinFlowValue}"
+                                       RangeAuto="False">
+                            <XAxis.Parameters>
+                                <!--   <VariableValue  Path="path"  ElementName="Qindex_char" /> -->
+                                <!-- <Variable Value="{Binding Parameter.ModelValue, ElementName=HPindex_char}" /> -->
+
+                                <system:String>InletVolumeFlowTabProfile[0..*]</system:String>
+
+                            </XAxis.Parameters>
+                        </XAxis>
+                    </ProfileChannel.XAxis>
+                    <!--  Y Axis definition  -->
+                    <ProfileChannel.YAxis>
+                        <YAxis Max="{ConvertedValueBinding MaxHeadValue}"
+                                       Min="{ConvertedValueBinding MinHeadValue}"
+                                       RangeAuto="False">
+                            <YAxis.Parameters>
+
+                                <!-- <Variable Value="{Binding Parameter.ModelValue, ElementName=HPindex_char}" />-->
+
+                                <system:String>HPTabProfile[0..*]</system:String>
+
+                            </YAxis.Parameters>
+                        </YAxis>
+                    </ProfileChannel.YAxis>
+                </ProfileChannel>
+
+                <ProfileChannel Title="Current"
+                                        LineStroke="White"
+                                        ShowAxis="False"
+                                        ShowMarkers="False" LinesColor="Transparent" Visibility="Hidden">
+                    <!--  X Axis definition  -->
+                    <ProfileChannel.XAxis>
+                        <XAxis Max="{ConvertedValueBinding MaxFlowValue}"
+                                       Min="{ConvertedValueBinding MinFlowValue}"
+                                       RangeAuto="False">
+                            <XAxis.Parameters>
+                                <system:String>VolumeFlowArray[0..*]</system:String>
+                            </XAxis.Parameters>
+                        </XAxis>
+                    </ProfileChannel.XAxis>
+                    <!--  Y Axis definition  -->
+                    <ProfileChannel.YAxis>
+                        <YAxis Max="{ConvertedValueBinding MaxHeadValue}"
+                                       Min="{ConvertedValueBinding MinHeadValue}"
+                                       RangeAuto="False">
+                            <YAxis.Parameters>
+                                <system:String>PolytropicHeadArray[0..*]</system:String>
+                            </YAxis.Parameters>
+                        </YAxis>
+                    </ProfileChannel.YAxis>
+                </ProfileChannel>
+
+                <ProfileChannel Title="CurrentPoint"
+                                        LineStroke="White"
+                                        ShowAxis="False"
+                                        ShowMarkers="True" LinesColor="Transparent">
+                    <!--  X Axis definition  -->
+                    <ProfileChannel.XAxis>
+                        <XAxis Max="{ConvertedValueBinding MaxFlowValue}"
+                                       Min="{ConvertedValueBinding MinFlowValue}"
+                                       RangeAuto="False">
+                            <XAxis.Parameters>
+                                <Variable Value="{VariableConvertedValue ElementName=CurrentX}" />
+
+                            </XAxis.Parameters>
+                        </XAxis>
+                    </ProfileChannel.XAxis>
+                    <!--  Y Axis definition  -->
+                    <ProfileChannel.YAxis>
+                        <YAxis Max="{ConvertedValueBinding MaxHeadValue}"
+                                       Min="{ConvertedValueBinding MinHeadValue}"
+                                       RangeAuto="False">
+                            <YAxis.Parameters>
+
+                                <Variable Value="{VariableConvertedValue ElementName=CurrentY}" />
+
+                                <!--   <Variable Value="{Binding Parameter.ModelValue, ElementName=CurrentY}" />-->
+                            </YAxis.Parameters>
+                        </YAxis>
+                    </ProfileChannel.YAxis>
+                </ProfileChannel>
+
+            </ProfileControl.Channels>
+        </ProfileControl>
+
+        <!--  Right Part  -->
+        <ScrollViewer Grid.Column="2" Grid.RowSpan="3" VerticalScrollBarVisibility="Auto" Visibility="Hidden">
+            <Grid x:Name="RightLabelGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+
+                <!--  Curves label  -->
+                <StackPanel Grid.Row="0" VerticalAlignment="Bottom">
+                    <TextBlock HorizontalAlignment="Center" Text="Command" />
+                    <TextBlock HorizontalAlignment="Center" Text="Speed or Angle:" />
+                </StackPanel>
+
+                <TextBlock Grid.Row="1"
+                               HorizontalAlignment="Center"
+                               Foreground="Green"
+                               Text="{ModelValueBinding CommandArray[0][0],
+                                                        StringFormat=\{0:F2\}}"
+                               Visibility="{ComparisonModelValueBinding NumberOfCurves,
+                                                                        ComparisonValue=1,
+                                                                        EqualityType=GreaterThanOrEquals}" />
+                <TextBlock Grid.Row="2"
+                               HorizontalAlignment="Center"
+                               Foreground="DarkOrange"
+                               Text="{ModelValueBinding CommandArray[1][0],
+                                                        StringFormat=\{0:F2\}}"
+                               Visibility="{ComparisonModelValueBinding NumberOfCurves,
+                                                                        ComparisonValue=2,
+                                                                        EqualityType=GreaterThanOrEquals}" />
+                <TextBlock Grid.Row="3"
+                               HorizontalAlignment="Center"
+                               Foreground="DarkBlue"
+                               Text="{ModelValueBinding CommandArray[2][0],
+                                                        StringFormat=\{0:F2\}}"
+                               Visibility="{ComparisonModelValueBinding NumberOfCurves,
+                                                                        ComparisonValue=3,
+                                                                        EqualityType=GreaterThanOrEquals}" />
+                <TextBlock Grid.Row="4"
+                               HorizontalAlignment="Center"
+                               Foreground="DarkRed"
+                               Text="{ModelValueBinding CommandArray[3][0],
+                                                        StringFormat=\{0:F2\}}"
+                               Visibility="{ComparisonModelValueBinding NumberOfCurves,
+                                                                        ComparisonValue=4,
+                                                                        EqualityType=GreaterThanOrEquals}" />
+                <TextBlock Grid.Row="5"
+                               HorizontalAlignment="Center"
+                               Foreground="Purple"
+                               Text="{ModelValueBinding CommandArray[4][0],
+                                                        StringFormat=\{0:F2\}}"
+                               Visibility="{ComparisonModelValueBinding NumberOfCurves,
+                                                                        ComparisonValue=5,
+                                                                        EqualityType=GreaterThanOrEquals}" />
+                <TextBlock Grid.Row="6"
+                               HorizontalAlignment="Center"
+                               Foreground="#FF006280"
+                               Text="{ModelValueBinding CommandArray[5][0],
+                                                        StringFormat=\{0:F2\}}"
+                               Visibility="{ComparisonModelValueBinding NumberOfCurves,
+                                                                        ComparisonValue=6,
+                                                                        EqualityType=GreaterThanOrEquals}" />
+                <TextBlock Grid.Row="7"
+                               HorizontalAlignment="Center"
+                               Foreground="Khaki"
+                               Text="{ModelValueBinding CommandArray[6][0],
+                                                        StringFormat=\{0:F2\}}"
+                               Visibility="{ComparisonModelValueBinding NumberOfCurves,
+                                                                        ComparisonValue=7,
+                                                                        EqualityType=GreaterThanOrEquals}" />
+                <TextBlock Grid.Row="8"
+                               HorizontalAlignment="Center"
+                               Foreground="Chartreuse"
+                               Text="{ModelValueBinding CommandArray[7][0],
+                                                        StringFormat=\{0:F2\}}"
+                               Visibility="{ComparisonModelValueBinding NumberOfCurves,
+                                                                        ComparisonValue=8,
+                                                                        EqualityType=GreaterThanOrEquals}" />
+
+                <StackPanel Grid.Row="9" VerticalAlignment="Bottom">
+                    <TextBlock HorizontalAlignment="Center" Text="Actual Speed:" />
+                    <ParameterValue x:Name="CompressorSpeed"
+                                        HorizontalAlignment="Right"
+                                        Foreground="Black"
+                                        Format="F1"
+                                        Id="CompressorSpeed" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="10" VerticalAlignment="Bottom">
+                    <TextBlock HorizontalAlignment="Center" Text="Surge Time:" />
+                    <ParameterValue x:Name="SurgeTime"
+                                        HorizontalAlignment="Right"
+                                        Format="F3"
+                                        Id="SurgeTime" />
+                </StackPanel>
+
+
+
+            </Grid>
+        </ScrollViewer>
+
+        <!--  Bottom Part : MinFlowValue / MaxFlowValue  -->
+        <Grid x:Name="BottomPart"
+                      Grid.Row="1"
+                      Grid.Column="1"
+                      Grid.ColumnSpan="1"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Center" Visibility="Hidden">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="100" />
+
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                Orientation="Horizontal"
+                                d:LayoutOverrides="Width">
+                <TextBlock Width="Auto"
+                                   VerticalAlignment="Center"
+                                   Text="Flow = " />
+                <ParameterValue Width="200"
+                                        VerticalAlignment="Center"
+                                        Foreground="Black"
+                                        Format="F1"
+                                        Path="{ModelValueBinding CurrentPointIndex,
+                                                                 StringFormat=FlowTable[\{0\}][0]}" />
+            </StackPanel>
+
+
+            <StackPanel Grid.Row="0"
+                                Grid.RowSpan="1"
+                                Grid.Column="0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Orientation="Vertical"
+                                d:LayoutOverrides="Height">
+                <TextBlock HorizontalAlignment="Center" Text="Min" />
+                <ParameterValue HorizontalAlignment="Right"
+                                        Foreground="Black"
+                                        Format="F1"
+                                        Id="MinFlowValue" />
+            </StackPanel>
+
+
+            <StackPanel Grid.Row="0"
+                                Grid.RowSpan="1"
+                                Grid.Column="2"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Orientation="Vertical"
+                                d:LayoutOverrides="Height">
+                <TextBlock HorizontalAlignment="Center" Text="Max" />
+                <ParameterValue HorizontalAlignment="Right"
+                                        Foreground="Black"
+                                        Format="F1"
+                                        Id="MaxFlowValue" />
+            </StackPanel>
+
+
+        </Grid>
+
+        <Grid x:Name="HistosettingsPart"
+                      Grid.Row="2"
+                      Grid.Column="1"
+                      Grid.ColumnSpan="2"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Center" Visibility="Hidden">
+
+            <HeaderBorder Header="HISTORY DATA ON MAP"
+                                  ParameterIds="PointNumber,ResetMapData,DisplayDataOnMap"
+                                  ParameterLabels="Number of History Points to Store,Reset History Data,Display History Data on Map" />
+
+        </Grid>
+    </Grid>
+</RSIFacePlate>

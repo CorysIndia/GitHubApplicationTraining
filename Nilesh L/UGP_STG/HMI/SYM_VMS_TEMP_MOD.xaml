@@ -1,0 +1,280 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_VMS_TEMP_MOD}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_VMS_TEMP_MOD}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="50"
+                         Height="500"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIRectangle x:Name="BACKGROUND"
+                              Width="50"
+                              Height="500"
+                              Stroke="#FF000000"
+                              StrokeThickness="3" />
+                <hmi:SYM_VMS_IND x:Name="MODULE_IND"
+                                 Canvas.Left="10"
+                                 Canvas.Top="460"
+                                 Width="30"
+                                 Height="30"
+                                 Bypass="false"
+                                 OK="{TemplateBinding VALUE}" />
+                <RSIText x:Name="MODULE"
+                         Canvas.Top="430"
+                         Width="50"
+                         Height="30"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="NOT OK"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.Animations>
+                    <Animation Condition="VALUE=true">
+                      <ChangeText Text="NOT OK" />
+                    </Animation>
+                    <Animation Condition="VALUE=false">
+                      <ChangeText Text="OK" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <hmi:SYM_VMS_IND x:Name="CH6_IND"
+                                 Canvas.Left="10"
+                                 Canvas.Top="380"
+                                 Width="30"
+                                 Height="30"
+                                 BP="{TemplateBinding CH6BP}"
+                                 Bypass="true"
+                                 OK="{TemplateBinding CH6OK}"
+                                 Visibility="{TemplateBinding Channel,
+                                                              Converter={EqualConverter Six}}" />
+                <RSIText x:Name="CH6"
+                         Canvas.Top="350.0001"
+                         Width="50"
+                         Height="30"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="CH6 NOK"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap"
+                         Visibility="{TemplateBinding Channel,
+                                                      Converter={EqualConverter Six}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="DText_CH6OK_==_true_and_CH6BP_==_false_CH6_NOK_DText_CH6OK_==_false_and_CH6BP_==_false__CH6_OK_DText_CH6BP_==_true_CH6_BP____" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <hmi:SYM_VMS_IND x:Name="CH5_IND"
+                                 Canvas.Left="10"
+                                 Canvas.Top="320.0001"
+                                 Width="30"
+                                 Height="30"
+                                 BP="{TemplateBinding CH5BP}"
+                                 Bypass="true"
+                                 OK="{TemplateBinding CH5OK}"
+                                 Visibility="{TemplateBinding Channel,
+                                                              Converter={EqualConverter Five}}" />
+                <RSIText x:Name="CH5"
+                         Canvas.Top="290.0001"
+                         Width="50"
+                         Height="30"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="CH5 NOK"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap"
+                         Visibility="{TemplateBinding Channel,
+                                                      Converter={EqualConverter Five}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="DText_CH5OK_==_true_and_CH5BP_==_false_CH5_NOK_DText_CH5OK_==_false_and_CH5BP_==_false__CH5_OK_DText_CH5BP_==_true_CH5_BP____" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <hmi:SYM_VMS_IND x:Name="CH4_IND"
+                                 Canvas.Left="10"
+                                 Canvas.Top="260"
+                                 Width="30"
+                                 Height="30"
+                                 BP="{TemplateBinding CH4BP}"
+                                 Bypass="true"
+                                 OK="{TemplateBinding CH4OK}"
+                                 Visibility="{TemplateBinding Channel,
+                                                              Converter={EqualConverter Four}}" />
+                <RSIText x:Name="CH4"
+                         Canvas.Top="230.0001"
+                         Width="50"
+                         Height="30"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="CH4 NOK"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap"
+                         Visibility="{TemplateBinding Channel,
+                                                      Converter={EqualConverter Four}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="DText_CH4OK_==_true_and_CH4BP_==_false_CH4_NOK_DText_CH4OK_==_false_and_CH4BP_==_false__CH4_OK_DText_CH4BP_==_true_CH4_BP____" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <hmi:SYM_VMS_IND x:Name="CH3_IND"
+                                 Canvas.Left="10"
+                                 Canvas.Top="200.0001"
+                                 Width="30"
+                                 Height="30"
+                                 BP="{TemplateBinding CH3BP}"
+                                 Bypass="true"
+                                 OK="{TemplateBinding CH3OK}"
+                                 Visibility="{TemplateBinding Channel,
+                                                              Converter={EqualConverter Three}}" />
+                <RSIText x:Name="CH3"
+                         Canvas.Top="170.0001"
+                         Width="50"
+                         Height="30"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="CH3 NOK"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap"
+                         Visibility="{TemplateBinding Channel,
+                                                      Converter={EqualConverter Three}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="DText_CH3OK_==_true_and_CH3BP_==_false_CH3_NOK_DText_CH3OK_==_false_and_CH3BP_==_false__CH3_OK_DText_CH3BP_==_true_CH3_BP____" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <hmi:SYM_VMS_IND x:Name="CH2_IND"
+                                 Canvas.Left="10"
+                                 Canvas.Top="140.0001"
+                                 Width="30"
+                                 Height="30"
+                                 BP="{TemplateBinding CH2BP}"
+                                 Bypass="true"
+                                 OK="{TemplateBinding CH2OK}"
+                                 Visibility="{TemplateBinding Channel,
+                                                              Converter={EqualConverter Two}}" />
+                <RSIText x:Name="CH2"
+                         Canvas.Top="110.0001"
+                         Width="50"
+                         Height="30"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="CH2 NOK"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap"
+                         Visibility="{TemplateBinding Channel,
+                                                      Converter={EqualConverter Two}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="DText_CH2OK_==_true_and_CH2BP_==_false_CH2_NOK_DText_CH2OK_==_false_and_CH2BP_==_false__CH2_OK_DText_CH2BP_==_true_CH2_BP____" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <hmi:SYM_VMS_IND x:Name="CH1_IND"
+                                 Canvas.Left="10"
+                                 Canvas.Top="80.0001"
+                                 Width="30"
+                                 Height="30"
+                                 BP="{TemplateBinding CH1BP}"
+                                 Bypass="true"
+                                 OK="{TemplateBinding CH1OK}"
+                                 Visibility="{TemplateBinding Channel,
+                                                              Converter={EqualConverter One}}" />
+                <RSIText x:Name="CH1"
+                         Canvas.Top="50.0001"
+                         Width="50"
+                         Height="30"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="CH1 NOK"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap"
+                         Visibility="{TemplateBinding Channel,
+                                                      Converter={EqualConverter One}}">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="DText_CH1OK_==_true_and_CH1BP_==_false_CH1_NOK_DText_CH1OK_==_false_and_CH1BP_==_false__CH1_OK_DText_CH1BP_==_true_CH1_BP____" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="TEMP"
+                         Canvas.Top="30"
+                         Width="50"
+                         Height="20"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="TEMP."
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="MODULE_NUMBER"
+                         Width="50"
+                         Height="30"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="3500/60"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="8"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

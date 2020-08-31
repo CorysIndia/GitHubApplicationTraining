@@ -1,0 +1,334 @@
+<RSIFacePlate x:Class="UGP_STG.HMI.FP_HS_AB_2"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_STG.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+  <RSICanvas Width="500"
+             Height="375"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:SYM_FP_BACKGROUND_01 x:Name="FP_Background1"
+                              Width="500"
+                              Height="375"
+                              TYPE="STANDARD" />
+    <hmi:SYM_FP_CLOSE_01 x:Name="Button_Close1"
+                         Canvas.Left="219"
+                         Canvas.Top="316.0002"
+                         Width="60.17435"
+                         Height="51.57801" />
+    <RSIRectangle x:Name="Element9"
+                  Canvas.Left="49.656"
+                  Canvas.Top="3.60399999999999"
+                  Width="401.344"
+                  Height="50.34698"
+                  Fill="#FF000000"
+                  Stroke="#FF000000"
+                  StrokeThickness="1" />
+    <RSIText x:Name="Element10"
+             Canvas.Left="66"
+             Canvas.Top="19.285"
+             Width="368"
+             Height="20"
+             HorizontalContentAlignment="Center"
+             VerticalContentAlignment="Center"
+             BorderBrush="Transparent"
+             Foreground="#FFFFFFFF"
+             IsHitTestVisible="False"
+             Text="DUTY/STANDBY SELECTION FOR  XXXXX A/B"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+      <RSIText.Animations>
+        <Animation>
+          <ChangeText Text="DUTY/STANDBY_SELECTION_FOR__+_BLKOVL2__+_A/B" />
+        </Animation>
+      </RSIText.Animations>
+    </RSIText>
+    <RSIRectangle x:Name="Element24"
+                  Canvas.Left="388.672"
+                  Canvas.Top="163.326"
+                  Stroke="#FF000000"
+                  StrokeThickness="1" />
+    <RSICanvas Name="SELECTION_2"
+               Width="150"
+               Height="112.847"
+               Left="283.594"
+               Top="107.771">
+      <RSICanvas Name="Group2"
+                 Width="150"
+                 Height="112.847"
+                 Left="0"
+                 Top="0">
+        <RSIRectangle x:Name="Element20"
+                      Width="150"
+                      Height="112.847"
+                      Fill="#FFFF0000"
+                      Stroke="#FF000000"
+                      StrokeThickness="1">
+          <RSIRectangle.Animations>
+            <Animation Condition="HS==true">
+              <SetVisible />
+            </Animation>
+            <Animation Condition="HS==false">
+              <Invisible />
+            </Animation>
+          </RSIRectangle.Animations>
+        </RSIRectangle>
+        <RSIText x:Name="Element25"
+                 Canvas.Left="25.828"
+                 Canvas.Top="89.014"
+                 Width="98.578"
+                 Height="23.021"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="SELECTION"
+                 TextElement.FontFamily="Courier New"
+                 TextElement.FontSize="12"
+                 TextElement.FontWeight="Bold">
+          <RSIText.Animations>
+            <Animation Condition="HS==true">
+              <SetVisible />
+            </Animation>
+            <Animation Condition="HS==false">
+              <Invisible />
+            </Animation>
+          </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="Element26"
+                 Canvas.Left="31.89"
+                 Canvas.Top="1.20799999999997"
+                 Width="86.26599"
+                 Height="23.021"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="CURRENT"
+                 TextElement.FontFamily="Courier New"
+                 TextElement.FontSize="12"
+                 TextElement.FontWeight="Bold">
+          <RSIText.Animations>
+            <Animation Condition="HS==true">
+              <SetVisible />
+            </Animation>
+            <Animation Condition="HS==false">
+              <Invisible />
+            </Animation>
+          </RSIText.Animations>
+        </RSIText>
+      </RSICanvas>
+      <RSICanvas Name="Group1"
+                 Width="105"
+                 Height="62.5"
+                 Left="22.633"
+                 Top="24.305">
+        <RSIRectangle x:Name="Element22"
+                      Width="105"
+                      Height="62.5"
+                      Fill="#FF000000"
+                      Stroke="#FFFFFFFF"
+                      StrokeThickness="1">
+          <RSIRectangle.Animations>
+            <Animation />
+            <!--
+              if SELECTED == 2 then
+              SELECTED = 0;
+              else
+              SELECTED = 2;
+              endif;
+            -->
+          </RSIRectangle.Animations>
+        </RSIRectangle>
+        <RSIText x:Name="Element23"
+                 Canvas.Left="3.125"
+                 Canvas.Top="20.7569999999999"
+                 Width="100"
+                 Height="20"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="XXXXXB"
+                 TextElement.FontFamily="Courier New"
+                 TextElement.FontSize="12"
+                 TextElement.FontWeight="Bold">
+          <RSIText.Animations>
+            <Animation>
+              <ChangeText Text="BLKOVL2_+_B" />
+            </Animation>
+          </RSIText.Animations>
+        </RSIText>
+      </RSICanvas>
+    </RSICanvas>
+    <RSICanvas Name="SELECTION_1"
+               Width="150"
+               Height="112.847"
+               Left="64.844"
+               Top="107.771">
+      <RSIRectangle x:Name="Element16"
+                    Canvas.Left="105.078"
+                    Canvas.Top="55.555"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+      <RSICanvas Name="Group4"
+                 Width="150"
+                 Height="112.847"
+                 Left="0"
+                 Top="0">
+        <RSIRectangle x:Name="Element12"
+                      Width="150"
+                      Height="112.847"
+                      Fill="#FFFF0000"
+                      Stroke="#FF000000"
+                      StrokeThickness="1">
+          <RSIRectangle.Animations>
+            <Animation Condition="HS==false">
+              <SetVisible />
+            </Animation>
+            <Animation Condition="HS==true">
+              <Invisible />
+            </Animation>
+          </RSIRectangle.Animations>
+        </RSIRectangle>
+        <RSIText x:Name="Element17"
+                 Canvas.Left="25.703"
+                 Canvas.Top="89.014"
+                 Width="98.578"
+                 Height="23.021"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="SELECTION"
+                 TextElement.FontFamily="Courier New"
+                 TextElement.FontSize="12"
+                 TextElement.FontWeight="Bold">
+          <RSIText.Animations>
+            <Animation Condition="HS==false">
+              <SetVisible />
+            </Animation>
+            <Animation Condition="HS==true">
+              <Invisible />
+            </Animation>
+          </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="Element18"
+                 Canvas.Left="31.89"
+                 Canvas.Top="0.228999999999985"
+                 Width="86.266"
+                 Height="23.021"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="CURRENT"
+                 TextElement.FontFamily="Courier New"
+                 TextElement.FontSize="12"
+                 TextElement.FontWeight="Bold">
+          <RSIText.Animations>
+            <Animation Condition="HS==false">
+              <SetVisible />
+            </Animation>
+            <Animation Condition="HS==true">
+              <Invisible />
+            </Animation>
+          </RSIText.Animations>
+        </RSIText>
+      </RSICanvas>
+      <RSICanvas Name="Group3"
+                 Width="105"
+                 Height="62.5"
+                 Left="22.633"
+                 Top="24.305">
+        <RSIRectangle x:Name="Element14"
+                      Width="105"
+                      Height="62.5"
+                      Fill="#FF000000"
+                      Stroke="#FFFFFFFF"
+                      StrokeThickness="1">
+          <RSIRectangle.Animations>
+            <Animation />
+            <!--
+              if SELECTED == 1 then
+              SELECTED = 0;
+              else
+              SELECTED = 1;
+              endif;
+            -->
+          </RSIRectangle.Animations>
+        </RSIRectangle>
+        <RSIText x:Name="Element15"
+                 Canvas.Left="2.125"
+                 Canvas.Top="20.7569999999999"
+                 Width="99.99999"
+                 Height="20"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="XXXXXA"
+                 TextElement.FontFamily="Courier New"
+                 TextElement.FontSize="12"
+                 TextElement.FontWeight="Bold">
+          <RSIText.Animations>
+            <Animation>
+              <ChangeText Text="BLKOVL2_+_A" />
+            </Animation>
+          </RSIText.Animations>
+        </RSIText>
+      </RSICanvas>
+    </RSICanvas>
+    <RSICanvas Name="EXECUTE"
+               Width="174"
+               Height="48.61102"
+               Left="162.719"
+               Top="246">
+      <RSIRectangle x:Name="Element3"
+                    Width="174"
+                    Height="48.61102"
+                    Fill="#FF000000"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1">
+        <RSIRectangle.Animations>
+          <Animation />
+          <!--
+            if SELECTED == 1 then
+            PICK = false;
+            elseif SELECTED == 2 then
+            PICK = true;
+            endif;
+          -->
+        </RSIRectangle.Animations>
+      </RSIRectangle>
+      <RSIRectangle x:Name="Rectangle1"
+                    Width="174"
+                    Height="48.61102"
+                    Fill="#FF000000"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1" />
+      <RSIText x:Name="Element4"
+               Canvas.Left="43.75"
+               Canvas.Top="14.4160000000001"
+               Width="88"
+               Height="20"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="EXECUTE"
+               TextElement.FontFamily="Courier New"
+               TextElement.FontSize="12"
+               TextElement.FontWeight="Bold" />
+    </RSICanvas>
+  </RSICanvas>
+</RSIFacePlate>

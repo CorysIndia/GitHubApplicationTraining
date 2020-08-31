@@ -1,0 +1,561 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Style TargetType="{x:Type hmi:LOWER_DATA_BAR_M39_K_0007D}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:LOWER_DATA_BAR_M39_K_0007D}">
+                    <Border Background="#FF9A9A9A"
+                  BorderBrush="#FF9A9A9A"
+                  BorderThickness="1">
+                        <StackPanel>
+                            <RSICanvas Width="1905.00045067513"
+             Height="138"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+                                <hmi:BLOCK_DIAG x:Name="BLOCK_DIAG1"
+                    Canvas.Left="952.00005067513"
+                    Width="404.0834"
+                    Height="138" />
+                                <hmi:dIndTxt_01 x:Name="dIndTxt_018965"
+                    Canvas.Left="599.00005067513"
+                    Canvas.Top="104.999992"
+                    Width="305"
+                    Height="30"
+                    Int00Txt="SHUTDOWN"
+                    Int01Txt="READY TO START"
+                    Int02Txt="IDLE"
+                    Int03Txt="ACCELERATION"
+                    Int04Txt="RUN"
+                    Int05Txt="OVERSPEED"
+                    Int06Txt="NORMAL STOP"
+                    Int07Txt="Mode 7"
+                    Int08Txt="Mode 8"
+                    Int09Txt="Mode 9"
+                    Int10Txt="Mode 10"
+                    Int11Txt="Mode 11"
+                    Int12Txt="Mode 12"
+                    Int13Txt="Mode 13"
+                    Int14Txt="Mode 14"
+                    Int15Txt="Mode 15"
+                    Int16Txt="Mode 16"
+                    Int17Txt="Mode 17"
+                    Int18Txt="Mode 18"
+                    Int19Txt="Mode 19" ModelName="i006D_MODE" />
+                                <hmi:dIndLED_02_L x:Name="dIndLED_02_L1"
+                      Canvas.Top="46.000012"
+                      Width="240.0001"
+                      Height="23.99999" ZDESCRP="STANDALONE" ZLeftButtonText="ENB" ZRightButtonText="DIS" ZFeedBackUO="f006D_SA_ENB" />
+                                <hmi:aIndDesLab_01_M x:Name="aIndDesLab_01_M0099"
+                         Canvas.Left="264.00005067513"
+                         Canvas.Top="72.999992"
+                         Width="305"
+                         Height="30" ModelName="r006A_FIC_0001_TGT" DESCR="LOADSHARE FLOW SP" TAG="MMSCFD" />
+                                <hmi:aIndDesLab_01_M x:Name="aIndDesLab_01_M2009"
+                         Canvas.Left="264.00005067513"
+                         Canvas.Top="7.999992"
+                         Width="305"
+                         Height="30" ModelName="r006D_PIC_0413_SP" DESCR="PERF CNTRL PRESS SP" TAG="psi" />
+                                <hmi:aIndDesLab_01_M x:Name="aIndDesLab_01_M300998"
+                         Canvas.Left="264.00005067513"
+                         Canvas.Top="40.999992"
+                         Width="305"
+                         Height="30" ModelName="r006D_PI_0413S" DESCR="PERF CNTRL PRESS PV" TAG="psi" />
+                                <hmi:dIndLED_02_L x:Name="dIndLED_02_L2"
+                      Canvas.Top="24.999982"
+                      Width="240.0001"
+                      Height="23.99999" ZDESCRP="PERF.CNTRL" ZLeftButtonText="ENB" ZRightButtonText="DIS" ZFeedBackUO="f006D_PROC_ENB" />
+                                <hmi:dIndLED_02_L x:Name="dIndLED_02_L3"
+                      Canvas.Left="3.18550000000004E-07"
+                      Canvas.Top="67.000012"
+                      Width="240.0001"
+                      Height="23.99999" ZDESCRP="LOADSHARE" ZLeftButtonText="ENB" ZRightButtonText="DIS" ZFeedBackUO="f006D_LS_ENB" />
+                                <hmi:dIndLED_02_L x:Name="dIndLED_02_L4"
+                      Canvas.Left="5.06810000000001E-07"
+                      Canvas.Top="3.999998"
+                      Width="240.0001"
+                      Height="23.99999" ZDESCRP="DCS/CCS" ZLeftButtonText="DCS" ZRightButtonText="CCS" ZFeedBackUO="g006D_LOCAL_REMOTE" />
+                                <hmi:dIndTxt_01_L x:Name="dIndTxt_01_L14537"
+                      Canvas.Left="4.00655E-05"
+                      Canvas.Top="91.999992"
+                      Width="240"
+                      Height="24"
+                      Int00Txt="AUTO"
+                      Int01Txt="SEMI-AUTO"
+                      Int02Txt="MANUAL"
+                      Int03Txt="Idle 2"
+                      Int04Txt="Idle 3"
+                      Int05Txt="Acceleration"
+                      Int06Txt="Run"
+                      Int07Txt="Overspeed Test"
+                      Int08Txt="Return to Idle"
+                      Int09Txt="Mode 9"
+                      Int10Txt="Mode 10"
+                      Int11Txt="Mode 11"
+                      Int12Txt="Mode 12"
+                      Int13Txt="Mode 13"
+                      Int14Txt="Mode 14"
+                      Int15Txt="Mode 15"
+                      Int16Txt="Mode 16"
+                      Int17Txt="Mode 17"
+                      Int18Txt="Mode 18"
+                      Int19Txt="Mode 19" ModeTxt="STARTUP TYPE" TxtCol="red" ModeInt="AUTO" ModelName="i006D_OP_MODE" />
+                                <hmi:aIndDesLab_01_M x:Name="aIndDesLab_01_M0965"
+                         Canvas.Left="599.00005067513"
+                         Canvas.Top="6.999992"
+                         Width="305"
+                         Height="30" ModelName="r006D_SPD_TGT" DESCR="TURBINE TARGET SP" TAG="RPM" />
+                                <hmi:aIndDesLab_01_M x:Name="aIndDesLab_01_M543322"
+                         Canvas.Left="599.00005067513"
+                         Canvas.Top="38.999992"
+                         Width="305"
+                         Height="30" ModelName="r006D_SIC_3600_SP" DESCR="TURBINE ACTUAL SP" TAG="RPM" />
+                                <hmi:aIndDesLab_01_M x:Name="aIndDesLab_01_M639876"
+                         Canvas.Left="599.00005067513"
+                         Canvas.Top="71.999992"
+                         Width="305"
+                         Height="30" ModelName="r006D_SI_3600" DESCR="TURBINE ACTUAL SPEED" TAG="RPM" />
+                                <hmi:aIndDesLab_01_M x:Name="aIndDesLab_01_M45345"
+                         Canvas.Left="264.00005067513"
+                         Canvas.Top="104.999992"
+                         Width="305"
+                         Height="30" ModelName="r006A_FI_0001" DESCR="SUCTION HEADER FLOW" TAG="MMSCFD" />
+                                <hmi:LOADSHARE_K0007D x:Name="LOADSHARE_K0007D1"
+                          Canvas.Left="1391.00005067513"
+                          Canvas.Top="42.000032"
+                          Width="512"
+                          Height="52.00003" Visibility="Hidden" />
+                                <hmi:COSwitchConf_01 x:Name="EmbeddedSymbol1"
+                         Canvas.Left="973.94045067513"
+                         Canvas.Top="4.99351"
+                         Width="105"
+                         Height="131.9468"
+                         ConfirmIndirect="IADAS.6CCS_D_CS07.06LOC_REM.IN"
+                         FeedbackIndirect="IADAS.6CCS_D_CS07.06LOC_REM.IN"
+                         LeftMessage="CONFIRM DCS?"
+                         NameStore="CONFIRMATION_SCREEN"
+                         RightMessage="CONFIRM CCS?" ZButtonTextLeft="DCS" ZButtonTextRight="CCS" ZHeading01="K-0007D" ZHeading02="DCS/CCS" ZIndissUOName="g006D_LOCAL_REMOTE" ZIndissUOParameterName="IN" Panel.ZIndex="1500000" />
+                                <hmi:COSwitchConf_01 x:Name="EmbeddedSymbol2"
+                         Canvas.Left="1109.95805067513"
+                         Canvas.Top="4.99833"
+                         Width="97"
+                         Height="125"
+                         ConfirmIndirect="IADAS.6CCS_D_CS07.06PROCENBCMD.IN"
+                         FeedbackIndirect="IADAS.6CCS_D_CS07.06PROCENBFBK.CIN"
+                         LeftMessage="DO YOU WANT TO ENABLE PERFORMANCE CONTROL?"
+                         NameStore="CONFIRMATION_SCREEN"
+                         RightMessage="DO YOU WANT TO DISABLE PERFORMANCE CONTROL?" ZHeading01="PERFORMANCE" ZHeading02="CONTROL" ZButtonTextLeft="ENB" ZButtonTextRight="DIS" ZIndissUOName="g006D_PROC_ENB_DCS" ZIndissUOParameterName="IN" Panel.ZIndex="1500000" />
+                                <hmi:COSwitchConf_01 x:Name="EmbeddedSymbol3"
+                         Canvas.Left="1239"
+                         Canvas.Top="5.996762"
+                         Width="97"
+                         Height="125"
+                         ConfirmIndirect="IADAS.6CCS_D_CS04.06LS_E_MSTRC.IN"
+                         FeedbackIndirect="IADAS.6CCS_D_CS04.06LS_ENBMSTR.CIN"
+                         LeftMessage="DO YOU WANT TO ENABLE LOADSHARE CONTROL?"
+                         NameStore="CONFIRMATION_SCREEN"
+                         RightMessage="DO YOU WANT TO DISABLE LOADSHARE CONTROL?" ZButtonTextLeft="ENB" ZButtonTextRight="DIS" ZHeading01="LOADSHARE" ZHeading02="MODE ENABLE" ZIndissUOName="g006A_LS_ENB_MASTER_DCS" ZIndissUOParameterName="IN" Panel.ZIndex="1500000" />
+                                <RSIText x:Name="LeftIndicator_Copy1"
+                                    Canvas.Left="1242.131"
+                                    Canvas.Top="39.438"
+                                    Width="38"
+                                    Height="14.804" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Text="ENB" Panel.ZIndex="150000002"
+                                                  >
+                                    <RSIText.Animations>
+                                        <Animation Condition="g006A_LS_ENB_MASTER.CIN == 1">
+                                            <ChangePropertyValue PropertyName="Background" Value="{DynamicResource Pipe_Dark Green}"/>
+                                        </Animation>
+
+
+                                    </RSIText.Animations>
+                                    <RSIText.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FFF6F6FA" Offset="0"/>
+                                            <GradientStop Color="#FFF4F4F8" Offset="1"/>
+                                            <GradientStop Color="#FF928D89" Offset="0.5"/>
+                                        </LinearGradientBrush>
+                                    </RSIText.Background>
+                                </RSIText>
+                                <RSIText x:Name="RightIndicator_Copy1"
+                                    Canvas.Left="1307.051"
+                                    Canvas.Top="39.438"
+                                    Width="39.208"
+                                    Height="14.804" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Text="DIS" Panel.ZIndex="150000002" >
+                                    <RSIText.Animations>
+                                        <Animation Condition="g006A_LS_ENB_MASTER.CIN == 0">
+                                            <ChangePropertyValue PropertyName="Background" Value="{DynamicResource Pipe_Dark Green}"/>
+                                        </Animation>
+
+                                    </RSIText.Animations>
+                                    <RSIText.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FFF6F6FA" Offset="0"/>
+                                            <GradientStop Color="#FFF4F4F8" Offset="1"/>
+                                            <GradientStop Color="#FF928D89" Offset="0.5"/>
+                                        </LinearGradientBrush>
+                                    </RSIText.Background>
+                                </RSIText>
+                                <RSICanvas x:Name="_2nd_IND"
+                                    Width="38"
+                                    Height="14.803"
+                                    Canvas.Left="197.157"
+                                    Canvas.Top="8.847">
+                                    <RSIRectangle x:Name="RoundRectangle3"
+                                        Canvas.Top="1.99999999939138E-06"
+                                        Width="38"
+                                        Height="14"
+                                        StrokeThickness="1" Visibility="Hidden">
+                                        <RSIRectangle.Stroke>
+                                            <RadialGradientBrush>
+                                                <GradientStop Offset="0" Color="#FF000000" />
+                                                <GradientStop Offset="1" Color="#FFFFFFFF" />
+                                            </RadialGradientBrush>
+                                        </RSIRectangle.Stroke>
+                                        <RSIRectangle.Fill>
+                                            <RadialGradientBrush>
+                                                <GradientStop Offset="0" Color="#FF004200" />
+                                                <GradientStop Offset="0" Color="#FF000000" />
+                                                <GradientStop Offset="1" Color="#FF004200" />
+                                            </RadialGradientBrush>
+                                        </RSIRectangle.Fill>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="RoundRectangle2"
+                                        Canvas.Top="1.99999999939138E-06"
+                                        Width="38"
+                                        Height="14"
+                                        StrokeThickness="1">
+                                        <RSIRectangle.Stroke>
+                                            <RadialGradientBrush>
+                                                <GradientStop Offset="0" Color="#FF000000" />
+                                                <GradientStop Offset="1" Color="#FFFFFFFF" />
+                                            </RadialGradientBrush>
+                                        </RSIRectangle.Stroke>
+                                        <RSIRectangle.Fill>
+                                            <RadialGradientBrush>
+                                                <GradientStop Offset="0" Color="#FFB3B3B3" />
+                                                <GradientStop Offset="0" Color="#FFB3B3B3" />
+                                                <GradientStop Offset="0" Color="#FF7E7E7E" />
+                                                <GradientStop Offset="0" Color="#FFB3B3B3" />
+                                                <GradientStop Offset="1" Color="#FFB3B3B3" />
+                                            </RadialGradientBrush>
+                                        </RSIRectangle.Fill>
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="g006D_LOCAL_REMOTE.COUT == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="{DynamicResource Pipe_Dark Green}"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="RoundRectangle1"
+                                        Canvas.Left="1.5916"
+                                        Canvas.Top="2.637491"
+                                        Width="35.8"
+                                        Height="5"
+                                        StrokeThickness="0" Visibility="Hidden">
+                                        <RSIRectangle.Stroke>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                <GradientStop Offset="0" Color="#FFE0E0E0" />
+                                                <GradientStop Offset="0" Color="#FF4D4D4D" />
+                                                <GradientStop Offset="1" Color="#FF4D4D4D" />
+                                            </LinearGradientBrush>
+                                        </RSIRectangle.Stroke>
+                                        <RSIRectangle.Fill>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                                <GradientStop Offset="0" Color="#00FFFFFF" />
+                                                <GradientStop Offset="1" Color="#00FFFFFF" />
+                                            </LinearGradientBrush>
+                                        </RSIRectangle.Fill>
+                                    </RSIRectangle>
+                                    <RSIText x:Name="Text3"
+                                        Width="37.392"
+                                        Height="14"
+                                        Foreground="#FF000000"
+                                        TextElement.FontFamily="Arial"
+                                        TextElement.FontSize="10"
+                                        TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="CCS"/>
+                                </RSICanvas>
+                                <RSICanvas x:Name="_1st_IND"
+                                    Width="40.286"
+                                    Height="14.725"
+                                    Canvas.Left="145.781"
+                                    Canvas.Top="8.329">
+                                    <RSIRectangle x:Name="RoundRectangle3_1"
+                                        Canvas.Top="-2.00000000027956E-06"
+                                        Width="40.28571"
+                                        Height="13.92628"
+                                        StrokeThickness="1" Visibility="Hidden">
+                                        <RSIRectangle.Stroke>
+                                            <RadialGradientBrush>
+                                                <GradientStop Offset="0" Color="#FF000000" />
+                                                <GradientStop Offset="1" Color="#FFFFFFFF" />
+                                            </RadialGradientBrush>
+                                        </RSIRectangle.Stroke>
+                                        <RSIRectangle.Fill>
+                                            <RadialGradientBrush>
+                                                <GradientStop Offset="0" Color="#FF004200" />
+                                                <GradientStop Offset="0" Color="#FF000000" />
+                                                <GradientStop Offset="1" Color="#FF004200" />
+                                            </RadialGradientBrush>
+                                        </RSIRectangle.Fill>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="RoundRectangle2_1"
+                                        Canvas.Top="1.11"
+                                        Width="40.286"
+                                        Height="13.926"
+                                        StrokeThickness="1">
+                                        <RSIRectangle.Stroke>
+                                            <RadialGradientBrush>
+                                                <GradientStop Offset="0" Color="#FF000000" />
+                                                <GradientStop Offset="1" Color="#FFFFFFFF" />
+                                            </RadialGradientBrush>
+                                        </RSIRectangle.Stroke>
+                                        <RSIRectangle.Fill>
+                                            <RadialGradientBrush>
+                                                <GradientStop Offset="0" Color="#FFB3B3B3" />
+                                                <GradientStop Offset="0" Color="#FFB3B3B3" />
+                                                <GradientStop Offset="0" Color="#FF7E7E7E" />
+                                                <GradientStop Offset="0" Color="#FFB3B3B3" />
+                                                <GradientStop Offset="1" Color="#FFB3B3B3" />
+                                            </RadialGradientBrush>
+                                        </RSIRectangle.Fill>
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="g006D_LOCAL_REMOTE.COUT == 1 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="{DynamicResource Pipe_Dark Green}"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="RoundRectangle1_1"
+                                        Canvas.Left="1.62719999999999"
+                                        Canvas.Top="2.628864"
+                                        Width="38.01353"
+                                        Height="4.968404"
+                                        StrokeThickness="0" Visibility="Hidden">
+                                        <RSIRectangle.Stroke>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                <GradientStop Offset="0" Color="#FFE0E0E0" />
+                                                <GradientStop Offset="0" Color="#FF4D4D4D" />
+                                                <GradientStop Offset="1" Color="#FF4D4D4D" />
+                                            </LinearGradientBrush>
+                                        </RSIRectangle.Stroke>
+                                        <RSIRectangle.Fill>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                                <GradientStop Offset="0" Color="#00FFFFFF" />
+                                                <GradientStop Offset="1" Color="#00FFFFFF" />
+                                            </LinearGradientBrush>
+                                        </RSIRectangle.Fill>
+                                    </RSIRectangle>
+                                    <RSIText x:Name="Text3_1"
+                                        Canvas.Left="1.044"
+                                        Canvas.Top="1.11"
+                                        Width="38.222"
+                                        Height="12.816"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Foreground="#FF000000"
+                                        TextElement.FontFamily="Arial"
+                                        TextElement.FontSize="10"
+                                        TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="DCS"/>
+                                </RSICanvas>
+                                <RSIText x:Name="LeftIndicatorENB7D"
+                                    Canvas.Left="1113.292"
+                                    Canvas.Top="39.522"
+                                    Width="38"
+                                    Height="14.804" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Text="ENB" Panel.ZIndex="150000002"
+                                                  >
+                                    <RSIText.Animations>
+                                        <Animation Condition="f006D_PROC_ENB.CIN == 1">
+                                            <ChangePropertyValue PropertyName="Background" Value="{DynamicResource Pipe_Dark Green}"/>
+                                        </Animation>
+
+
+                                    </RSIText.Animations>
+                                    <RSIText.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FFF6F6FA" Offset="0"/>
+                                            <GradientStop Color="#FFF4F4F8" Offset="1"/>
+                                            <GradientStop Color="#FF928D89" Offset="0.5"/>
+                                        </LinearGradientBrush>
+                                    </RSIText.Background>
+                                </RSIText>
+                                <RSIText x:Name="RightIndicatorDIS7D"
+                                    Canvas.Left="1178.005"
+                                    Canvas.Top="38.905"
+                                    Width="40.625"
+                                    Height="14.804" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Text="DIS" Panel.ZIndex="150000002" >
+                                    <RSIText.Animations>
+                                        <Animation Condition="f006D_PROC_ENB.CIN == 0">
+                                            <ChangePropertyValue PropertyName="Background" Value="{DynamicResource Pipe_Dark Green}"/>
+                                        </Animation>
+
+                                    </RSIText.Animations>
+                                    <RSIText.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FFF6F6FA" Offset="0"/>
+                                            <GradientStop Color="#FFF4F4F8" Offset="1"/>
+                                            <GradientStop Color="#FF928D89" Offset="0.5"/>
+                                        </LinearGradientBrush>
+                                    </RSIText.Background>
+                                </RSIText>
+                                <RSICanvas Height="148.667" Canvas.Left="1409" Width="496" Panel.ZIndex="11500000" Canvas.Top="-10.667">
+                                    <hmi:LowerBannerArrow x:Name="LowerBannerArrow1_Copy"
+                                        Canvas.Left="271.832"
+                                        Canvas.Top="75.259"
+                                        Width="101.167" />
+                                    <RSIBorder x:Name="Line6"
+                                        Canvas.Left="40.516"
+                                        Canvas.Top="76.726"
+                                        Width="47"
+                                        Height="1.5">
+                                        <RSIPath Data="M464.250004768372,616.74789062 L511.250004768372,616.74789062"
+                                            Stretch="Fill"
+                                            Stroke="#FF000000"
+                                            StrokeDashArray="1"
+                                            StrokeThickness="1" />
+                                    </RSIBorder>
+                                    <hmi:LowerBannerArrow x:Name="LowerBannerArrow3_Copy2"
+                                        Canvas.Left="170.29"
+                                        Canvas.Top="77.226"
+                                        Width="51.375" />
+                                    <hmi:LowerBannerArrow x:Name="LowerBannerArrow1"
+                                        Canvas.Left="462.402"
+                                        Canvas.Top="29.5"
+                                        Width="82.624"
+                                        RenderTransformOrigin="0,0">
+                                        <hmi:LowerBannerArrow.RenderTransform>
+                                            <RotateTransform Angle="90" />
+                                        </hmi:LowerBannerArrow.RenderTransform>
+                                    </hmi:LowerBannerArrow>
+                                    <hmi:LowerBannerArrow x:Name="LowerBannerArrow2"
+                                        Canvas.Left="311.403"
+                                        Canvas.Top="32"
+                                        Width="84" />
+                                    <hmi:LowerBannerArrow x:Name="LowerBannerArrow3"
+                                        Canvas.Left="68.402"
+                                        Canvas.Top="33"
+                                        Width="72" />
+                                    <hmi:LowerBannerArrow x:Name="LowerBannerArrow4"
+                                        Canvas.Left="186.402"
+                                        Canvas.Top="33"
+                                        Width="84" />
+                                    <hmi:LowerBannerArrow x:Name="LowerBannerArrow5"
+                                        Canvas.Left="185.401"
+                                        Canvas.Top="28.5"
+                                        Width="81.875"
+                                        RenderTransformOrigin="0,0">
+                                        <hmi:LowerBannerArrow.RenderTransform>
+                                            <RotateTransform Angle="90" />
+                                        </hmi:LowerBannerArrow.RenderTransform>
+                                    </hmi:LowerBannerArrow>
+                                    <hmi:DecoupleBlock x:Name="DecoupleBlock1"
+                                        Canvas.Left="143.404"
+                                        Canvas.Top="12.505"
+                                        Width="79.997"
+                                        Height="36.995"
+                                        NameStore="DECOUPLE_0007D" />
+                                    <hmi:ConQl_03 x:Name="ConQl_03121"
+                                        Canvas.Top="14.5"
+                                        Width="88.477"
+                                        Height="37"
+                                        NameStore="PIC-0413" ModelName="M39_006PIC0413" />
+                                    <hmi:ConQl_03 x:Name="ConQl_03276"
+                                        Canvas.Left="267"
+                                        Canvas.Top="11.5"
+                                        Width="88.477"
+                                        Height="37" NameStore="DCPL-007D" ModelName="r006D_DCPL_PROC_OP" />
+                                    <hmi:ConQl_03 x:Name="ConQl_033"
+                                        Canvas.Left="396"
+                                        Width="88.477"
+                                        Height="37"
+                                        NameStore="SY-3600" ModelName="r006D_SY_3604" Canvas.Top="10.5" />
+                                    <hmi:PID_Display2_9Letter x:Name="PID_Display2_9Letter1"
+                                        Canvas.Left="142.001"
+                                        Canvas.Top="110"
+                                        Width="88.4"
+                                        Height="37"
+                                        NameStore="FIC-0225" ModelName="M39_006FIC0225" />
+                                    <RSIRectangle Height="38.085" Canvas.Left="394.805" Canvas.Top="8.5" Width="94.596">
+                                        <RSIRectangle.Animations>
+                                            <ClickAnimation>
+                                                <Open TagName="M39_006SIC3600" Title="SY-3600" WindowName="SY_3600"/>
+                                            </ClickAnimation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIRectangle Height="40" Canvas.Left="143.404" Canvas.Top="11.5" Width="79.997">
+                                        <RSIRectangle.Animations>
+                                            <ClickAnimation>
+                                                <Open Title="DECOUPLE-K0007D" WindowName="DECOUPLE_0007D"/>
+                                            </ClickAnimation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <hmi:Type1_AO_Display_9Letter x:Name="Type1_AO_Display_9Letter1_Copy"
+                                        Canvas.Left="398.401"
+                                        Canvas.Top="112.167"
+                                        Width="91"
+                                        Height="38" ZTAG="SV-3604" ModelName="r006D_SY_3604" />
+                                    <RSIRectangle Height="38.326" Stroke="Black" Width="86.833" Opacity="0.1" Canvas.Left="1.644" Canvas.Top="14.5">
+                                        <RSIRectangle.Animations>
+                                            <ClickAnimation>
+                                                <Open TagName="M39_006PIC0413" Title="PIC-0413" WindowName="PIC_0413"/>
+                                            </ClickAnimation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIRectangle Height="39" Canvas.Left="142.001" Width="89.997" Canvas.Top="108">
+                                        <RSIRectangle.Animations>
+                                            <ClickAnimation>
+                                                <Open TagName="M39_006FIC0225" Title="FIC-0225" WindowName="FIC_0225"/>
+                                            </ClickAnimation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <hmi:ConQl_03 x:Name="ConQl_031"
+                                        Canvas.Top="57.033"
+                                        Width="88.477"
+                                        Height="37"
+                                        NameStore="LS-0007D" ModelName="r006D_LS_OUT" Canvas.Left="220" />
+                                    <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M1"
+                                        Canvas.Left="-41.667"
+                                        Canvas.Top="56.876"
+                                        Width="92"
+                                        Height="47.624"
+                                        GraphicTagName="FI-0001"
+                                        TAG="FI-0001"
+                                        UNIT="MMSCFD" ModelName="M39_005FI0001" />
+                                    <hmi:ConQl_03 x:Name="ConQl_031_Copy"
+                                        Canvas.Top="59"
+                                        Width="88.477"
+                                        Height="37.001"
+                                        NameStore="FIC-0001" ModelName="M39_006FIC0001" Canvas.Left="82.382" />
+                                    <RSIText x:Name="rSIText_Copy2" Canvas.Left="84.053" TextWrapping="Wrap" Text="FIC_0001" Canvas.Top="59.209" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="87.237" Height="35.286" Opacity="0.01" Panel.ZIndex="1500001111">
+                                        <RSIText.Animations>
+                                            <ClickAnimation>
+                                                <Open Title="FIC-0001" WindowName="FIC_0001" TagName="M39_006FIC0001"/>
+                                            </ClickAnimation>
+                                        </RSIText.Animations>
+                                    </RSIText>
+                                    <hmi:LowerBannerArrow x:Name="LowerBannerArrow1_Copy1"
+                                        Canvas.Left="351.843"
+                                        Canvas.Top="54.715"
+                                        Width="45.312" RenderTransformOrigin="0.5,0.5" >
+                                        <hmi:LowerBannerArrow.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform/>
+                                                <SkewTransform/>
+                                                <RotateTransform Angle="270"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </hmi:LowerBannerArrow.RenderTransform>
+                                    </hmi:LowerBannerArrow>
+                                </RSICanvas>
+                            </RSICanvas>
+                        </StackPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+</ResourceDictionary>

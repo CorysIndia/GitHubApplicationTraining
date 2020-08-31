@@ -1,0 +1,545 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+
+    <Style TargetType="{x:Type hmi:SYM_PID_01}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:SYM_PID_01}">
+                    <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+                        <RSIGrid Background="Transparent">
+                            <RSICanvas Width="154.0001"
+                         Height="80.6"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                                <RSIRectangle x:Name="RectangleInput"
+                              Canvas.Left="44.0001"
+                              Canvas.Top="26.4"
+                              Width="82"
+                              Height="53.37781"
+                              Fill="#FFE0E0E0"
+                              Stroke="#FF000000"
+                              StrokeThickness="0" />
+                                <RSIRectangle x:Name="Rectangle1"
+                              Canvas.Left="43.2"
+                              Canvas.Top="25.6"
+                              Width="83.59998"
+                              Height="55"
+                              Stroke="#FF666666"
+                              StrokeThickness="1" />
+                                <RSIText x:Name="MA"
+                         Canvas.Left="111.3288"
+                         Canvas.Top="27.5"
+                         Width="14.61035"
+                         Height="15.8"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="{x:Null}"
+                         BorderBrush="{x:Null}"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="#"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                                    <RSIText.Animations>
+                                        <Animation Condition="$TAGNAME.MA==1">
+                                            <!--<Animation Condition="($BLKSTA AND 0x00000800) shr 11=true">-->
+                                            <ChangeText Text="A" />
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.MA==0">
+                                            <!--<Animation Condition="($BLKSTA AND 0x00000800) shr 11=false">-->
+                                            <ChangeText Text="M" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="LR"
+                         Canvas.Left="111.3288"
+                         Canvas.Top="45.15"
+                         Width="14.61035"
+                         Height="15.8"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="{x:Null}"
+                         BorderBrush="{x:Null}"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="#"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                                    <RSIText.Animations>
+                                        <!--<Animation Condition="($BLKSTA AND 0x00000400) shr 10=true">-->
+                                        <Animation Condition="$TAGNAME.LR==1">
+                                            <ChangeText Text="R" />
+                                        </Animation>
+                                        <!--<Animation Condition="($BLKSTA AND 0x00000400) shr 10=false">-->
+                                        <Animation Condition="$TAGNAME.LR==0">
+                                            <ChangeText Text="L" />
+                                        </Animation>
+
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="TH"
+                         Canvas.Left="111.3288"
+                         Canvas.Top="62.7"
+                         Width="14.61035"
+                         Height="15.8"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="{x:Null}"
+                         BorderBrush="{x:Null}"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="#"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                                    <RSIText.Animations>
+                                        <Animation Condition="$TAGNAME.HOLD == 0">
+                                            <ChangeText Text="T"/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.HOLD == 1">
+                                            <ChangeText Text="H"/>
+                                        </Animation>
+
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="EU"
+                         Canvas.Left="88"
+                         Width="66"
+                         Height="28"
+                         HorizontalContentAlignment="Left"
+                         VerticalContentAlignment="Bottom"
+                         Background="#00EFEFEF"
+                         BorderBrush="#00000000"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="\$TAGNAME.EI1\"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextWrapping="Wrap" Canvas.Top="-2">
+                                    <!--<RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="_UNIT" />
+                    </Animation>
+                    <Animation Condition="InTouch_SGUG_EU==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="InTouch_SGUG_EU==false">
+                      <Invisible />
+                    </Animation>
+                  </RSIText.Animations>-->
+                                </RSIText>
+                                <RSIText x:Name="LABEL"
+                         Width="80"
+                         Height="28.00003"
+                         HorizontalContentAlignment="Right"
+                         VerticalContentAlignment="Bottom"
+                         Background="#00EFEFEF"
+                         BorderBrush="#00000000"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding TAGNAME}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextWrapping="Wrap" Canvas.Top="-2">
+                                    <!--<RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="StringMid_BLK_3_StringLen_BLK__2_" />
+                    </Animation>
+                    <Animation Condition="InTouch_SGUG_LABEL==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="InTouch_SGUG_LABEL==false">
+                      <Invisible />
+                    </Animation>
+                  </RSIText.Animations>-->
+                                </RSIText>
+                                <RSIText x:Name="SETPOINT"
+                         Canvas.Left="61.4001"
+                         Canvas.Top="45.2667"
+                         Width="50"
+                         Height="16.20001"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#FFE0E0E0"
+                         BorderBrush="#FFE0E0E0"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="\$TAGNAME.SPT:#.##\"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                                    <!--<RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value $SPT, Converter={FormatConverter F2}}" />
+                    </Animation>
+                  </RSIText.Animations>-->
+                                </RSIText>
+                                <RSIText x:Name="MEAS"
+                         Canvas.Left="61.4001"
+                         Canvas.Top="26.2667"
+                         Width="50"
+                         Height="18"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#FFE0E0E0"
+                         BorderBrush="#FFE0E0E0"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="\$TAGNAME.MEAS:#.##\"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                                    <!--<RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value $MEAS, Converter={FormatConverter F2}}" />
+                    </Animation>
+                  </RSIText.Animations>-->
+                                </RSIText>
+                                <RSIText x:Name="OUT"
+                         Canvas.Left="61.4001"
+                         Canvas.Top="61.4667"
+                         Width="50"
+                         Height="18"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#FFE0E0E0"
+                         BorderBrush="#FFE0E0E0"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="\$TAGNAME.OUT:#.##\"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                                    <!--<RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value $OUT, Converter={FormatConverter F2}}" />
+                    </Animation>
+                  </RSIText.Animations>-->
+                                </RSIText>
+                                <hmi:SYM_IOBADBORDER_01 x:Name="BADINPUT1"
+                                        Canvas.Left="61"
+                                        Canvas.Top="28"
+                                        Width="50"
+                                        Height="14.93335" Visibility="Hidden" />
+                                <hmi:SYM_IOBADBORDER_01 x:Name="BADINPUT2"
+                                        Canvas.Left="61"
+                                        Canvas.Top="28"
+                                        Width="50"
+                                        Height="14.93335" Visibility="Hidden" />
+                                <hmi:SYM_IOBADBORDER_01 x:Name="BADOUTPUT1"
+                                        Canvas.Left="61"
+                                        Canvas.Top="63"
+                                        Width="50"
+                                        Height="14.93335" Visibility="Hidden" />
+                                <hmi:SYM_IOBADBORDER_01 x:Name="BADOUTPUT2"
+                                        Canvas.Left="61"
+                                        Canvas.Top="63"
+                                        Width="50"
+                                        Height="14.93335" Visibility="Hidden" />
+                                <hmi:FP_CallOverlay x:Name="FP_CallOverlay1"
+                                    Canvas.Left="43.6001"
+                                    Canvas.Top="25"
+                                    Width="83.59998"
+                                    Height="55"
+                                    BLKOVL="{TemplateBinding BLK}"
+                                    BLKOVL2="{TemplateBinding BLK}"
+                                    CMPOVL="{TemplateBinding CMP}"
+                                    CMPOVL2="{TemplateBinding CMP}"
+                                    LOC="{TemplateBinding LOC}"
+                                    OverlayName="FP_PID"
+                                    PRT="{TemplateBinding PRT}" />
+                                <hmi:ACK_SYMBOL x:Name="ACK_SYMBOL1"
+                                Canvas.Left="43.2001"
+                                Canvas.Top="25"
+                                Width="83.59998"
+                                Height="55" />
+                                <RSIBorder x:Name="Line2"
+                           Canvas.Left="111.25"
+                           Canvas.Top="43.3"
+                           Width="1.5"
+                           Height="36.95">
+                                    <RSIPath Data="M111.25,25.25 L111.25,79.25"
+                           Stretch="Fill"
+                           Stroke="#FF666666"
+                           StrokeThickness="1" />
+                                </RSIBorder>
+                                <RSIBorder x:Name="Line4"
+                           Canvas.Left="43"
+                           Canvas.Top="59.9643"
+                           Width="1.5"
+                           Height="70"
+                           RenderTransformOrigin="0.222222222222222,0.0048896410460722">
+                                    <RSIBorder.RenderTransform>
+                                        <RotateTransform Angle="-90" />
+                                    </RSIBorder.RenderTransform>
+                                    <RSIPath Data="M42.65,59.9643 L110.8214,59.9643"
+                           RenderTransformOrigin="0.5,0.5"
+                           Stretch="Fill"
+                           Stroke="#FF666666"
+                           StrokeThickness="1">
+                                        <RSIPath.LayoutTransform>
+                                            <RotateTransform Angle="90" />
+                                        </RSIPath.LayoutTransform>
+                                    </RSIPath>
+                                </RSIBorder>
+                                <RSIBorder x:Name="Line5"
+                           Canvas.Left="58.85"
+                           Canvas.Top="43.3"
+                           Width="1.5"
+                           Height="37.2">
+                                    <RSIPath Data="M59.45,25.05 L58.85,79.85"
+                           Stretch="Fill"
+                           Stroke="#FF666666"
+                           StrokeThickness="1" />
+                                </RSIBorder>
+                                <RSIBorder x:Name="Line3"
+                           Canvas.Left="43"
+                           Canvas.Top="44.0499"
+                           Width="1.5"
+                           Height="70"
+                           RenderTransformOrigin="0.222222222222222,0.00485908790838326">
+                                    <RSIBorder.RenderTransform>
+                                        <RotateTransform Angle="-90" />
+                                    </RSIBorder.RenderTransform>
+                                    <RSIPath Data="M42.25,43.8499 L110.85,44.0499"
+                           RenderTransformOrigin="0.5,0.5"
+                           Stretch="Fill"
+                           Stroke="#FF666666"
+                           StrokeThickness="1">
+                                        <RSIPath.LayoutTransform>
+                                            <RotateTransform Angle="90" />
+                                        </RSIPath.LayoutTransform>
+                                    </RSIPath>
+                                </RSIBorder>
+                                <RSIText x:Name="TextBox1"
+                         Canvas.Left="40.225"
+                         Canvas.Top="27.5"
+                         Width="23.6"
+                         Height="15.8"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="PV"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="9"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                                <RSIText x:Name="TextBox2"
+                         Canvas.Left="40.225"
+                         Canvas.Top="45.15"
+                         Width="23.6"
+                         Height="15.8"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="SP"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="9"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                                <RSIText x:Name="TextBox3"
+                         Canvas.Left="40.225"
+                         Canvas.Top="62.7"
+                         Width="23.6"
+                         Height="15.8"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="OP"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="9"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                                <RSIRectangle x:Name="Alarm_Rectangle" 
+                                              Height="55" 
+                                              Canvas.Left="43.2" 
+                                              Stroke="#00666666" 
+                                              StrokeThickness="2" 
+                                              Canvas.Top="25.6" 
+                                              Width="83.59998"
+                                              Focusable="False"
+                                              IsHitTestVisible="False"/>
+                                <RSIRectangle x:Name="ALRMBOARDER"
+                                        Canvas.Left="59.183"
+                                        Canvas.Top="25.6"
+                                        Width="53.567"
+                                        Height="18.98" Visibility="Visible" Stroke="#FF666666" >
+                                    <RSIRectangle.Animations>
+                                        <!--LOW ALARM-->
+                                        <Animation Condition="(($TAGNAME.MEASLIAlarms.Alarms[MEASLI].Status == 3) AND (($TAGNAME.MEASPR == 1) OR ($TAGNAME.MEASPR == 2) OR ($TAGNAME.MEASPR == 3)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Yellow"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.MEASLIAlarms.Alarms[MEASLI].Status == 3)  AND ($TAGNAME.MEASPR == 4)">
+
+
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="(($TAGNAME.MEASLIAlarms.Alarms[MEASLI].Status == 1)  AND (($TAGNAME.MEASPR == 1) OR ($TAGNAME.MEASPR == 2) OR ($TAGNAME.MEASPR == 3)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="yellow"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.MEASLIAlarms.Alarms[MEASLI].Status == 1)  AND ($TAGNAME.MEASPR == 4)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                            <Blink/>
+                                        </Animation>
+
+
+                                        <Animation Condition="(($TAGNAME.MEASLIAlarms.Alarms[MEASLI].Status == 2) AND (($TAGNAME.MEASPR == 1) OR ($TAGNAME.MEASPR == 2))) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.MEASLIAlarms.Alarms[MEASLI].Status == 2) AND ($TAGNAME.MEASPR == 4) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.MEASLIAlarms.Alarms[MEASLI].Status == 2) AND ($TAGNAME.MEASPR == 3) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Yellow"/>
+                                        </Animation>
+
+                                        <!--HIGH ALARM-->
+                                        <Animation Condition="(($TAGNAME.MEASHIAlarms.Alarms[MEASHI].Status == 3) AND (($TAGNAME.MEASPR == 1) OR ($TAGNAME.MEASPR == 2) OR ($TAGNAME.MEASPR == 3)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Yellow"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.MEASHIAlarms.Alarms[MEASHI].Status == 3)  AND ($TAGNAME.MEASPR == 4)">
+
+
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="(($TAGNAME.MEASHIAlarms.Alarms[MEASHI].Status == 1)  AND (($TAGNAME.MEASPR == 1) OR ($TAGNAME.MEASPR == 2) OR ($TAGNAME.MEASPR == 3)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="yellow"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.MEASHIAlarms.Alarms[MEASHI].Status == 1)  AND ($TAGNAME.MEASPR == 4)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                            <Blink/>
+                                        </Animation>
+
+
+                                        <Animation Condition="(($TAGNAME.MEASHIAlarms.Alarms[MEASHI].Status == 2) AND (($TAGNAME.MEASPR == 1) OR ($TAGNAME.MEASPR == 2))) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.MEASHIAlarms.Alarms[MEASHI].Status == 2) AND ($TAGNAME.MEASPR == 4) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.MEASHIAlarms.Alarms[MEASHI].Status == 2) AND ($TAGNAME.MEASPR == 3) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Yellow"/>
+                                        </Animation>
+
+
+
+                                        <!--LOW LOW ALARM-->
+
+                                        <Animation Condition="($TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 3 AND (($TAGNAME.HHAPRI == 1) OR ($TAGNAME.HHAPRI == 2)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="red"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 3) AND ($TAGNAME.HHAPRI == 3)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="($TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 1 AND (($TAGNAME.HHAPRI == 1) OR ($TAGNAME.HHAPRI == 2)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 1) AND ($TAGNAME.HHAPRI == 3)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="($TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 2 AND (($TAGNAME.HHAPRI == 1) OR ($TAGNAME.HHAPRI == 2)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 2) AND ($TAGNAME.HHAPRI == 3)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                        </Animation>
+
+                                        <!--HIGH HIGH ALARM-->
+
+                                        <Animation Condition="($TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 3 AND (($TAGNAME.HHAPRI == 1) OR ($TAGNAME.HHAPRI == 2)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="red"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 3) AND ($TAGNAME.HHAPRI == 3)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="($TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 1 AND (($TAGNAME.HHAPRI == 1) OR ($TAGNAME.HHAPRI == 2)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 1) AND ($TAGNAME.HHAPRI == 3)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="($TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 2 AND (($TAGNAME.HHAPRI == 1) OR ($TAGNAME.HHAPRI == 2)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 2) AND ($TAGNAME.HHAPRI == 3)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                        </Animation>
+
+
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                                <!--<RSI_StdTransmitter Canvas.Left="117.2" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="1.5" ModelName="{TemplateBinding FailureFaceplateName}"/>-->
+                            </RSICanvas>
+                        </RSIGrid>
+                    </RSIViewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="StandardFaceplateName" Value="FP_PID"/>
+
+    </Style>
+</ResourceDictionary>

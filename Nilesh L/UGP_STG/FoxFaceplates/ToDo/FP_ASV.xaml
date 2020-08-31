@@ -1,0 +1,381 @@
+<RSIFacePlate x:Class="UGP_STG.HMI.FP_ASV"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_STG.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+  <RSICanvas Width="521"
+             Height="451"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:FP_Background x:Name="FP_Background"
+                       Width="521"
+                       Height="451"
+                       TYPE="STANDARD" />
+    <hmi:Button_Close x:Name="Button_Close"
+                      Canvas.Left="99.99997"
+                      Canvas.Top="375.0002"
+                      Width="60.17435"
+                      Height="51.578" />
+    <RSICanvas Name="Execute"
+               Width="193.6872"
+               Height="48.66705"
+               Left="33"
+               Top="315">
+      <RSIButton x:Name="PULSE"
+                 Canvas.Top="0.331400000000031"
+                 Width="193.6872"
+                 Height="48.33563"
+                 Background="#FF000000">
+        <RSIButton.Animations>
+          <Animation />
+          <!--  InTouch:ZHMI_COMMAND = "Momentary " + PICK + " 5 1";  -->
+        </RSIButton.Animations>
+      </RSIButton>
+      <RSIRectangle x:Name="Rectangle1"
+                    Width="193.6872"
+                    Height="48.33563"
+                    Fill="#FF000000"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1" />
+      <RSIText x:Name="Element23"
+               Canvas.Left="51"
+               Canvas.Top="13"
+               Width="92"
+               Height="22.52454"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="EXECUTE"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+    </RSICanvas>
+    <RSICanvas Name="RESET"
+               Width="85.75264"
+               Height="70.43829"
+               Left="87"
+               Top="224.951">
+      <RSIRectangle x:Name="Rectangle2"
+                    Canvas.Left="-1.00000000031741E-05"
+                    Canvas.Top="0.0489999999999782"
+                    Width="85.72152"
+                    Height="70.38928"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1">
+        <RSIRectangle.Animations>
+          <Animation />
+          <!--
+            if SELECTED == 1 then
+            SELECTED = 0;
+            else
+            SELECTED = 1;
+            endif;
+          -->
+          <Animation Condition="RST_CMD">
+            <ChangeColor Color="#FFB3B3B3" />
+          </Animation>
+        </RSIRectangle.Animations>
+      </RSIRectangle>
+      <RSIText x:Name="Element34"
+               Canvas.Left="8.50776999999999"
+               Canvas.Top="24.0574"
+               Width="68.36022"
+               Height="22.52454"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="RESET"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+    </RSICanvas>
+    <RSICanvas Name="Detail"
+               Width="85.72154"
+               Height="70.38928"
+               Left="87.03111"
+               Top="132.2343">
+      <RSIRectangle x:Name="Element24"
+                    Width="85.72154"
+                    Height="70.38931"
+                    Fill="#FF717171"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1">
+        <RSIRectangle.Animations>
+          <Animation />
+          <!--  InTouch:ZHMI_COMMAND = "stddisp "+ CMPOVL + "." + BLK_RST ;  -->
+        </RSIRectangle.Animations>
+      </RSIRectangle>
+      <RSIText x:Name="Element25"
+               Canvas.Left="2.17927"
+               Canvas.Top="11.5934"
+               Width="81.38119"
+               Height="22.52457"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="DETAIL"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+      <RSIText x:Name="Element26"
+               Canvas.Left="9.17264"
+               Canvas.Top="37.7444"
+               Width="68.36021"
+               Height="22.52457"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="RESET"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+    </RSICanvas>
+    <hmi:FP_Alarm2 x:Name="ACK"
+                   Canvas.Left="87.03113"
+                   Canvas.Top="39.493"
+                   Width="85.72154"
+                   Height="70.38928"
+                   Type="Normal" />
+    <RSICanvas Name="Faceplate_Body"
+               Width="247"
+               Height="336.806"
+               Left="241.656"
+               Top="44.493">
+      <RSIRectangle x:Name="Element32"
+                    Width="247"
+                    Height="336.806"
+                    Fill="#FFBCBCBC"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1" />
+      <RSICanvas Name="HEADER"
+                 Width="247.125"
+                 Height="130.2079"
+                 Left="0"
+                 Top="0">
+        <RSIRectangle x:Name="Element34_1"
+                      Width="247"
+                      Height="130.2079"
+                      Fill="#FF717171"
+                      Stroke="#FFFFFFFF"
+                      StrokeThickness="1" />
+        <RSIText x:Name="CMPNAME"
+                 Canvas.Left="9.3749"
+                 Canvas.Top="67.708"
+                 Width="135.969"
+                 Height="24"
+                 VerticalContentAlignment="Center"
+                 Background="#FF717171"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="&lt;CMPNAME&gt;___"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12">
+          <RSIText.Animations>
+            <Animation>
+              <ChangeText Text="CMPOVL" />
+            </Animation>
+          </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="BLKNAME"
+                 Canvas.Left="9.375"
+                 Canvas.Top="98.958"
+                 Width="150"
+                 Height="24"
+                 VerticalContentAlignment="Center"
+                 Background="#FF717171"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="&lt;BLKNAME&gt;___"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12">
+          <RSIText.Animations>
+            <Animation>
+              <ChangeText Text="BLKOVL3" />
+            </Animation>
+          </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="Element37"
+                 Canvas.Left="167.3439"
+                 Canvas.Top="69.708"
+                 Width="67.65594"
+                 Height="22"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="Unack"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="10"
+                 TextElement.FontWeight="Bold"
+                 TextWrapping="Wrap">
+          <RSIText.Animations>
+            <Animation Condition="UNACK==true">
+              <SetVisible />
+            </Animation>
+            <Animation Condition="UNACK==false">
+              <Invisible />
+            </Animation>
+          </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="DESCRIPTION2"
+                 Canvas.Left="9.3749"
+                 Canvas.Top="35.806"
+                 Width="198.781"
+                 Height="28.29901"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="DESCRIPTION LINE2"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12"
+                 TextWrapping="Wrap" />
+        <RSIText x:Name="DESCRIPTION1"
+                 Canvas.Left="9.3749"
+                 Canvas.Top="8.50700000000001"
+                 Width="198.781"
+                 Height="28.29901"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="DESCRIPTION LINE1"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12"
+                 TextWrapping="Wrap" />
+      </RSICanvas>
+      <RSICanvas Name="Group1"
+                 Width="186"
+                 Height="53"
+                 Left="30.344"
+                 Top="140.507">
+        <RSIRectangle x:Name="Rectangle1_1"
+                      Width="186"
+                      Height="53"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+        <RSIText x:Name="Element29"
+                 Canvas.Left="7"
+                 Canvas.Top="3"
+                 Width="172"
+                 Height="22.52454"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="SOLENOID STATUS"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="10" />
+        <RSIText x:Name="Element30"
+                 Canvas.Left="33"
+                 Canvas.Top="25.5245"
+                 Width="121"
+                 Height="22.52454"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="CLOSE"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="10">
+          <RSIText.Animations>
+            <Animation Condition="CMD_FB=true">
+              <ChangeText Text="ENERGIZED" />
+            </Animation>
+            <Animation Condition="CMD_FB=false">
+              <ChangeText Text="TRIP" />
+            </Animation>
+            <Animation Condition="CMD_FB">
+              <ChangeColor Color="#FFFFFFFF" />
+            </Animation>
+            <Animation Condition="CMD_FB">
+              <ChangeColor Color="#FF008400" />
+            </Animation>
+          </RSIText.Animations>
+        </RSIText>
+      </RSICanvas>
+      <RSICanvas Name="Group2"
+                 Width="186"
+                 Height="53"
+                 Left="30.344"
+                 Top="203.507">
+        <RSIRectangle x:Name="Rectangle1_2"
+                      Width="186"
+                      Height="53"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+        <RSIText x:Name="TextBox1"
+                 Canvas.Left="7"
+                 Canvas.Top="3"
+                 Width="172"
+                 Height="22.52454"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="VALVE OPENING"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="10" />
+        <RSIText x:Name="TextBox2"
+                 Canvas.Left="42"
+                 Canvas.Top="25.5245"
+                 Width="102"
+                 Height="22.52454"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="{Value MEAS,
+                              Converter={FormatConverter {}{0:0.##%}}}"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="11"
+                 TextElement.FontWeight="Bold">
+          <RSIText.Animations>
+            <Animation>
+              <ChangeText Text="{Value MEAS, Converter={FormatConverter F3}}" />
+            </Animation>
+          </RSIText.Animations>
+        </RSIText>
+      </RSICanvas>
+      <RSICanvas Name="MMATCH"
+                 Width="186"
+                 Height="53"
+                 Left="30.344"
+                 Top="266.5071">
+        <RSIRectangle x:Name="Element13"
+                      Canvas.Top="0.146900000000073"
+                      Width="185.9455"
+                      Height="52.85303"
+                      Fill="#FFFF0000"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+        <RSIText x:Name="Element14"
+                 Canvas.Left="0.0545000000000186"
+                 Canvas.Top="-9.99999999748979E-05"
+                 Width="185.9455"
+                 Height="52.85303"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FFFFFFFF"
+                 IsHitTestVisible="False"
+                 Text="MISMATCH"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+      </RSICanvas>
+    </RSICanvas>
+  </RSICanvas>
+</RSIFacePlate>

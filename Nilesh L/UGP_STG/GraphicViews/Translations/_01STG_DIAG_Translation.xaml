@@ -1,0 +1,2508 @@
+<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_STG.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:Faceplate_Mimics="clr-namespace:UGP_STG.STG_Faceplate.Faceplate_Mimics" x:Class="UGP_STG._01STG_DIAG_Translation"
+             >
+    <RSICanvas Width="1500"
+             Height="750"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+        <hmi:Background_Disp x:Name="Background_Disp1"
+                         Width="1500"
+                         Height="750" />
+        <hmi:SYM_TITLE_1 x:Name="SYM_TITLE_11"
+                     Width="1500"
+                     Height="32.986"
+                     BP_NAV="false"
+                     BYPASS="ACT_1"
+                     ESD_NAV="false"
+                     H_H2S_NAV="true"
+                     H_LEL_NAV="true"
+                     H2S="ACT"
+                     H2S_LEL_4="NO_ACT"
+                     HH_H2S_NAV="true"
+                     HH_LEL_NAV="true"
+                     LEL="ACT"
+                     NAV_H2S2="true"
+                     NAV_LEL2="true"
+                     NEXT_ALM="False"
+                     PREV_RECENT="PREV"
+                     TRAIN_CLR="GREY" />
+        <RSICanvas x:Name="Group1"
+               Width="460.1346"
+               Height="699"
+               Canvas.Left="177"
+               Canvas.Top="43">
+            <RSIBorder x:Name="Line12"
+                 Canvas.Left="42.25"
+                 Canvas.Top="628.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,628.25 L161.25,628.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line13"
+                 Canvas.Left="42.25"
+                 Canvas.Top="684.108"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,684.108 L161.25,684.108"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line3"
+                 Canvas.Left="42.25"
+                 Canvas.Top="124.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,124.25 L161.25,124.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line4"
+                 Canvas.Left="42.25"
+                 Canvas.Top="236.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,236.25 L161.25,236.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line5"
+                 Canvas.Left="42.25"
+                 Canvas.Top="180.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,180.25 L161.25,180.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line6"
+                 Canvas.Left="42.25"
+                 Canvas.Top="292.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,292.25 L161.25,292.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line7"
+                 Canvas.Left="42.25"
+                 Canvas.Top="348.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,348.25 L161.25,348.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line8"
+                 Canvas.Left="42.25"
+                 Canvas.Top="404.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,404.25 L161.25,404.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line9"
+                 Canvas.Left="42.25"
+                 Canvas.Top="460.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,460.25 L161.25,460.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line10"
+                 Canvas.Left="42.25"
+                 Canvas.Top="516.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,516.25 L161.25,516.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line11"
+                 Canvas.Left="42.25"
+                 Canvas.Top="572.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,572.25 L161.25,572.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line1"
+                 Canvas.Left="30.25"
+                 Canvas.Top="11.25"
+                 Width="1.5"
+                 Height="640">
+                <RSIPath Data="M30.25,11.25 L30.25,651.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line2"
+                 Canvas.Left="42.25"
+                 Canvas.Top="68.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,68.25 L161.25,68.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSICanvas x:Name="Group1_1"
+                 Width="377.1346"
+                 Height="27"
+                 Canvas.Left="83"
+                 Canvas.Top="4">
+                <RSIRectangle x:Name="Rectangle3"
+                      Width="377.1346"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox2"
+                 Canvas.Left="7.85700000000003"
+                 Canvas.Top="4"
+                 Width="361.4207"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="START SEQUENCE"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group4"
+                 Width="61.20689"
+                 Height="19"
+                 Canvas.Left="0"
+                 Canvas.Top="592">
+                <RSIRectangle x:Name="Rectangle31"
+                      Width="61.20689"
+                      Height="19"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox31"
+                 Canvas.Left="10.6035"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="T11"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group6"
+                 Width="61.20689"
+                 Height="27"
+                 Canvas.Left="0"
+                 Canvas.Top="0">
+                <RSIRectangle x:Name="Rectangle13"
+                      Width="61.20689"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox13"
+                 Canvas.Left="10.6035"
+                 Canvas.Top="4"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="S01"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group7"
+                 Width="61.20689"
+                 Height="19"
+                 Canvas.Left="0"
+                 Canvas.Top="32">
+                <RSIRectangle x:Name="Rectangle12"
+                      Width="61.20689"
+                      Height="19"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox12"
+                 Canvas.Left="10.6035"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="T01"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group8"
+                 Width="61.20689"
+                 Height="27"
+                 Canvas.Left="0"
+                 Canvas.Top="56">
+                <RSIRectangle x:Name="Rectangle35"
+                      Width="61.20689"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox35"
+                 Canvas.Left="10.6035"
+                 Canvas.Top="4"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="S02"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group9"
+                 Width="61.20689"
+                 Height="19"
+                 Canvas.Left="0"
+                 Canvas.Top="88">
+                <RSIRectangle x:Name="Rectangle14"
+                      Width="61.20689"
+                      Height="19"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox14"
+                 Canvas.Left="10.6035"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="T02"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group10"
+                 Width="61.20689"
+                 Height="27"
+                 Canvas.Left="0"
+                 Canvas.Top="112">
+                <RSIRectangle x:Name="Rectangle16"
+                      Width="61.20689"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox16"
+                 Canvas.Left="10.6035"
+                 Canvas.Top="4"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="S03"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group11"
+                 Width="61.20689"
+                 Height="19"
+                 Canvas.Left="0"
+                 Canvas.Top="144">
+                <RSIRectangle x:Name="Rectangle15"
+                      Width="61.20689"
+                      Height="19"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox15"
+                 Canvas.Left="10.6035"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="T03"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group12"
+                 Width="61.20689"
+                 Height="27"
+                 Canvas.Left="0"
+                 Canvas.Top="168">
+                <RSIRectangle x:Name="Rectangle18"
+                      Width="61.20689"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox18"
+                 Canvas.Left="10.6035"
+                 Canvas.Top="4"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="S04"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group13"
+                 Width="61.20689"
+                 Height="19"
+                 Canvas.Left="0"
+                 Canvas.Top="200">
+                <RSIRectangle x:Name="Rectangle17"
+                      Width="61.20689"
+                      Height="19"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox17"
+                 Canvas.Left="10.6035"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="T04"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group14"
+                 Width="61.20689"
+                 Height="27"
+                 Canvas.Left="0"
+                 Canvas.Top="224">
+                <RSIRectangle x:Name="Rectangle20"
+                      Width="61.20689"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox20"
+                 Canvas.Left="10.6035"
+                 Canvas.Top="4"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="S05"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group15"
+                 Width="61.20689"
+                 Height="19"
+                 Canvas.Left="0"
+                 Canvas.Top="256">
+                <RSIRectangle x:Name="Rectangle19"
+                      Width="61.20689"
+                      Height="19"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox19"
+                 Canvas.Left="10.6035"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="T05"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group16"
+                 Width="61.20689"
+                 Height="27"
+                 Canvas.Left="0"
+                 Canvas.Top="280">
+                <RSIRectangle x:Name="Rectangle22"
+                      Width="61.20689"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox22"
+                 Canvas.Left="10.6035"
+                 Canvas.Top="4"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="S06"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group17"
+                 Width="61.20689"
+                 Height="19"
+                 Canvas.Left="0"
+                 Canvas.Top="312">
+                <RSIRectangle x:Name="Rectangle21"
+                      Width="61.20689"
+                      Height="19"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox21"
+                 Canvas.Left="10.6035"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="T06"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group18"
+                 Width="61.20689"
+                 Height="27"
+                 Canvas.Left="0"
+                 Canvas.Top="336">
+                <RSIRectangle x:Name="Rectangle24"
+                      Width="61.20689"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox24"
+                 Canvas.Left="10.6035"
+                 Canvas.Top="4"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="S07"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group19"
+                 Width="61.20689"
+                 Height="19"
+                 Canvas.Left="0"
+                 Canvas.Top="368">
+                <RSIRectangle x:Name="Rectangle23"
+                      Width="61.20689"
+                      Height="19"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox23"
+                 Canvas.Left="10.6035"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="T07"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group20"
+                 Width="61.20689"
+                 Height="27"
+                 Canvas.Left="0"
+                 Canvas.Top="392">
+                <RSIRectangle x:Name="Rectangle26"
+                      Width="61.20689"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox26"
+                 Canvas.Left="10.6035"
+                 Canvas.Top="4"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="S08"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group21"
+                 Width="61.20689"
+                 Height="19"
+                 Canvas.Left="0"
+                 Canvas.Top="424">
+                <RSIRectangle x:Name="Rectangle25"
+                      Width="61.20689"
+                      Height="19"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox25"
+                 Canvas.Left="10.6035"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="T08"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group22"
+                 Width="61.20689"
+                 Height="27"
+                 Canvas.Left="0"
+                 Canvas.Top="448">
+                <RSIRectangle x:Name="Rectangle28"
+                      Width="61.20689"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox28"
+                 Canvas.Left="10.6035"
+                 Canvas.Top="4"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="S09"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group23"
+                 Width="61.20689"
+                 Height="19"
+                 Canvas.Left="0"
+                 Canvas.Top="480">
+                <RSIRectangle x:Name="Rectangle27"
+                      Width="61.20689"
+                      Height="19"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox27"
+                 Canvas.Left="10.6035"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="T09"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group24"
+                 Width="61.20689"
+                 Height="27"
+                 Canvas.Left="0"
+                 Canvas.Top="504">
+                <RSIRectangle x:Name="Rectangle30"
+                      Width="61.20689"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox30"
+                 Canvas.Left="10.6035"
+                 Canvas.Top="4"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="S10"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group25"
+                 Width="61.20689"
+                 Height="19"
+                 Canvas.Left="0"
+                 Canvas.Top="536">
+                <RSIRectangle x:Name="Rectangle29"
+                      Width="61.20689"
+                      Height="19"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox29"
+                 Canvas.Left="10.6035"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="T10"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group26"
+                 Width="61.20689"
+                 Height="27"
+                 Canvas.Left="0"
+                 Canvas.Top="560">
+                <RSIRectangle x:Name="Rectangle32"
+                      Width="61.20689"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox32"
+                 Canvas.Left="10.6035"
+                 Canvas.Top="4"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="S11"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group2"
+                 Width="61.20689"
+                 Height="27"
+                 Canvas.Left="0"
+                 Canvas.Top="672">
+                <RSIRectangle x:Name="Rectangle36"
+                      Width="61.20689"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox36"
+                 Canvas.Left="10.6035"
+                 Canvas.Top="4"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="S13"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group3"
+                 Width="61.20689"
+                 Height="19"
+                 Canvas.Left="0"
+                 Canvas.Top="648">
+                <RSIRectangle x:Name="Rectangle3_1"
+                      Width="61.20689"
+                      Height="19"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox2_1"
+                 Canvas.Left="10.6035"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="T12"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group5"
+                 Width="61.20689"
+                 Height="27"
+                 Canvas.Left="0"
+                 Canvas.Top="616">
+                <RSIRectangle x:Name="Rectangle33"
+                      Width="61.20689"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox33"
+                 Canvas.Left="10.6035"
+                 Canvas.Top="4"
+                 Width="40"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="S12"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group28"
+                 Width="360.6133"
+                 Height="27"
+                 Canvas.Left="87.6934"
+                 Canvas.Top="616">
+                <RSIRectangle x:Name="Rectangle11"
+                      Canvas.Left="0.306600000000003"
+                      Width="360.0001"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox11"
+                 Canvas.Top="4"
+                 Width="360.6133"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="START TURBINE OPERATION CONTROLLER"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group29"
+                 Width="360"
+                 Height="27"
+                 Canvas.Left="88.2646"
+                 Canvas.Top="559.3329">
+                <RSIRectangle x:Name="Rectangle1"
+                      Width="360"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox1"
+                 Canvas.Left="7.5"
+                 Canvas.Top="4"
+                 Width="345"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="START GENERATOR SYNCHRONIZATION"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group30"
+                 Width="360"
+                 Height="27"
+                 Canvas.Left="88.1788"
+                 Canvas.Top="503.0435">
+                <RSIRectangle x:Name="Rectangle2"
+                      Width="360"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox2_2"
+                 Canvas.Left="7.5"
+                 Canvas.Top="4"
+                 Width="345"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="START TURBINE STARTUP CONTROLLER"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group31"
+                 Width="360"
+                 Height="27"
+                 Canvas.Left="88.2163"
+                 Canvas.Top="447.7274">
+                <RSIRectangle x:Name="Rectangle3_2"
+                      Width="360"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox3"
+                 Canvas.Left="7.5"
+                 Canvas.Top="4"
+                 Width="345"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="REST TURBINE TRIP"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group32"
+                 Width="360"
+                 Height="27"
+                 Canvas.Left="88.1842"
+                 Canvas.Top="391.438">
+                <RSIRectangle x:Name="Rectangle4"
+                      Width="360"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox4"
+                 Canvas.Left="7.5"
+                 Canvas.Top="4"
+                 Width="345"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="START CONTROL OIL UNIT"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group33"
+                 Width="360"
+                 Height="27"
+                 Canvas.Left="88.2056"
+                 Canvas.Top="335.1433">
+                <RSIRectangle x:Name="Rectangle5"
+                      Width="360"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox5"
+                 Canvas.Left="7.5"
+                 Canvas.Top="4"
+                 Width="345"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="START LIFESTEAM SYSTEM"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group34"
+                 Width="360"
+                 Height="27"
+                 Canvas.Left="88.1681"
+                 Canvas.Top="279.8165">
+                <RSIRectangle x:Name="Rectangle6"
+                      Width="360"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox6"
+                 Canvas.Left="7.5"
+                 Canvas.Top="4"
+                 Width="345"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="START EVACUATION"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group35"
+                 Width="360"
+                 Height="27"
+                 Canvas.Left="88.2217"
+                 Canvas.Top="223.5003">
+                <RSIRectangle x:Name="Rectangle7"
+                      Width="360"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox7"
+                 Canvas.Left="7.5"
+                 Canvas.Top="4"
+                 Width="345"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="START SEAL TEAM"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group36"
+                 Width="360"
+                 Height="27"
+                 Canvas.Left="88.1735"
+                 Canvas.Top="167.1681">
+                <RSIRectangle x:Name="Rectangle8"
+                      Width="360"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox8"
+                 Canvas.Left="7.5"
+                 Canvas.Top="4"
+                 Width="345"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="START CONDENSATE UNIT"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group37"
+                 Width="360"
+                 Height="27"
+                 Canvas.Left="88.1735"
+                 Canvas.Top="111.8948">
+                <RSIRectangle x:Name="Rectangle9"
+                      Width="360"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox9"
+                 Canvas.Left="7.5"
+                 Canvas.Top="4"
+                 Width="345"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="START ROTOR TURNING GEAR"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group38"
+                 Width="360"
+                 Height="27"
+                 Canvas.Left="88.152"
+                 Canvas.Top="55.56262">
+                <RSIRectangle x:Name="Rectangle10"
+                      Width="360"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox10"
+                 Canvas.Left="7.5"
+                 Canvas.Top="3.99998000000001"
+                 Width="345"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="START lUBE OIL UNIT"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+            <RSICanvas x:Name="Group27"
+                 Width="360"
+                 Height="27"
+                 Canvas.Left="88"
+                 Canvas.Top="671.858">
+                <RSIRectangle x:Name="Rectangle12_1"
+                      Width="360"
+                      Height="27"
+                      Fill="White"
+                      Stroke="#FF000000"
+                      StrokeThickness="1" />
+                <RSIText x:Name="TextBox12_1"
+                 Canvas.Left="7.5"
+                 Canvas.Top="4"
+                 Width="345"
+                 Height="19"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 BorderBrush="Transparent"
+                 Foreground="#FF000000"
+                 IsHitTestVisible="False"
+                 Text="STEAM TURBINE IN OPERATION"
+                 TextElement.FontFamily="Arial"
+                 TextElement.FontSize="12" />
+            </RSICanvas>
+        </RSICanvas>
+        <RSICanvas x:Name="Group2_1"
+               Width="460.1348"
+               Height="699"
+               Canvas.Left="838.0723"
+               Canvas.Top="43">
+            <RSIBorder x:Name="Line14"
+                 Canvas.Left="42.25"
+                 Canvas.Top="628.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,628.25 L161.2497,628.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line15"
+                 Canvas.Left="42.25"
+                 Canvas.Top="684.108"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,684.108 L161.2497,684.108"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line16"
+                 Canvas.Left="42.25"
+                 Canvas.Top="124.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,124.25 L161.2497,124.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line17"
+                 Canvas.Left="42.25"
+                 Canvas.Top="236.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,236.25 L161.2497,236.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line18"
+                 Canvas.Left="42.25"
+                 Canvas.Top="180.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,180.25 L161.2497,180.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line19"
+                 Canvas.Left="42.25"
+                 Canvas.Top="292.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,292.25 L161.2497,292.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line20"
+                 Canvas.Left="42.25"
+                 Canvas.Top="348.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,348.25 L161.2497,348.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line21"
+                 Canvas.Left="42.25"
+                 Canvas.Top="404.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,404.25 L161.2497,404.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line22"
+                 Canvas.Left="42.25"
+                 Canvas.Top="460.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,460.25 L161.2497,460.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line23"
+                 Canvas.Left="42.25"
+                 Canvas.Top="516.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,516.25 L161.2497,516.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line24"
+                 Canvas.Left="42.25"
+                 Canvas.Top="572.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,572.25 L161.2497,572.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line25"
+                 Canvas.Left="30.25"
+                 Canvas.Top="11.25"
+                 Width="1.5"
+                 Height="640">
+                <RSIPath Data="M30.25,11.25 L30.25,651.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line26"
+                 Canvas.Left="42.25"
+                 Canvas.Top="68.25"
+                 Width="119"
+                 Height="1.5">
+                <RSIPath Data="M42.25,68.25 L161.2497,68.25"
+                 Stretch="Fill"
+                 Stroke="#FF000000"
+                 StrokeThickness="2" />
+            </RSIBorder>
+            <RSIRectangle x:Name="Rectangle31_1"
+                    Canvas.Top="592"
+                    Width="61.20685"
+                    Height="19"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox31_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="592"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="T61"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle13_1"
+                    Width="61.20685"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox13_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="4"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="S51"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle12_2"
+                    Canvas.Top="32"
+                    Width="61.20685"
+                    Height="19"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox12_2"
+               Canvas.Left="10.6034"
+               Canvas.Top="32"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="T51"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle35_1"
+                    Canvas.Top="56"
+                    Width="61.20685"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox35_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="60"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="S52"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle14_1"
+                    Canvas.Top="88"
+                    Width="61.20685"
+                    Height="19"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox14_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="88"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="T52"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle16_1"
+                    Canvas.Top="112"
+                    Width="61.20685"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox16_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="116"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="S53"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle15_1"
+                    Canvas.Top="144"
+                    Width="61.20685"
+                    Height="19"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox15_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="144"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="T53"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle18_1"
+                    Canvas.Top="168"
+                    Width="61.20685"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox18_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="172"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="S54"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle17_1"
+                    Canvas.Top="200"
+                    Width="61.20685"
+                    Height="19"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox17_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="200"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="T54"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle20_1"
+                    Canvas.Top="224"
+                    Width="61.20685"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox20_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="228"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="S55"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle19_1"
+                    Canvas.Top="256"
+                    Width="61.20685"
+                    Height="19"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox19_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="256"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="T55"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle22_1"
+                    Canvas.Top="280"
+                    Width="61.20685"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox22_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="284"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="S56"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle21_1"
+                    Canvas.Top="312"
+                    Width="61.20685"
+                    Height="19"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox21_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="312"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="T56"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle24_1"
+                    Canvas.Top="336"
+                    Width="61.20685"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox24_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="340"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="S57"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle23_1"
+                    Canvas.Top="368"
+                    Width="61.20685"
+                    Height="19"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox23_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="368"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="T57"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle26_1"
+                    Canvas.Top="392"
+                    Width="61.20685"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox26_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="396"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="S58"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle25_1"
+                    Canvas.Top="424"
+                    Width="61.20685"
+                    Height="19"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox25_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="424"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="T58"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle28_1"
+                    Canvas.Top="448"
+                    Width="61.20685"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox28_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="452"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="S59"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle27_1"
+                    Canvas.Top="480"
+                    Width="61.20685"
+                    Height="19"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox27_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="480"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="T59"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle30_1"
+                    Canvas.Top="504"
+                    Width="61.20685"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox30_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="508"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="S60"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle29_1"
+                    Canvas.Top="536"
+                    Width="61.20685"
+                    Height="19"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox29_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="536"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="T60"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle32_1"
+                    Canvas.Top="560"
+                    Width="61.20685"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox32_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="564"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="S61"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle36_1"
+                    Canvas.Top="672"
+                    Width="61.20685"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox36_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="676"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="S63"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle3_3"
+                    Canvas.Top="648"
+                    Width="61.20685"
+                    Height="19"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox2_3"
+               Canvas.Left="10.6034"
+               Canvas.Top="648"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="T62"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle33_1"
+                    Canvas.Top="616"
+                    Width="61.20685"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox33_1"
+               Canvas.Left="10.6034"
+               Canvas.Top="620"
+               Width="40"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="S62"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle11_1"
+                    Canvas.Left="88"
+                    Canvas.Top="616"
+                    Width="360"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox11_1"
+               Canvas.Left="87.6934"
+               Canvas.Top="620"
+               Width="360.6132"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="SHUTDOWN LUBE OIL UNIT"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle1_1"
+                    Canvas.Left="88.2646"
+                    Canvas.Top="559.3329"
+                    Width="360"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox1_1"
+               Canvas.Left="95.7646"
+               Canvas.Top="563.3329"
+               Width="345"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="STOP ROTOR TURNIN GEAR "
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle2_1"
+                    Canvas.Left="88.1787999999999"
+                    Canvas.Top="503.0435"
+                    Width="360.0001"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox3_1"
+               Canvas.Left="95.6787999999999"
+               Canvas.Top="507.0435"
+               Width="345.0001"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="SHUTDOWN CONDENSATE UNIT"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle4_1"
+                    Canvas.Left="88.2163999999999"
+                    Canvas.Top="447.7274"
+                    Width="360"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox4_1"
+               Canvas.Left="95.7163999999999"
+               Canvas.Top="451.7274"
+               Width="345"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="SHUTDOWN SEAL STEAM"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle5_1"
+                    Canvas.Left="88.1841999999999"
+                    Canvas.Top="391.438"
+                    Width="360.0001"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox5_1"
+               Canvas.Left="95.6841999999999"
+               Canvas.Top="395.438"
+               Width="345.0001"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="SHUTDOWN EVACUATION"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle6_1"
+                    Canvas.Left="88.2057"
+                    Canvas.Top="335.1433"
+                    Width="360"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox6_1"
+               Canvas.Left="95.7057"
+               Canvas.Top="339.1433"
+               Width="345"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="SHUTDOWN LIFESTEAM"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle7_1"
+                    Canvas.Left="88.1682"
+                    Canvas.Top="279.8165"
+                    Width="360"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox7_1"
+               Canvas.Left="95.6682"
+               Canvas.Top="283.8165"
+               Width="345"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="SHUTDOWN CONTROL OIL UNIT"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle8_1"
+                    Canvas.Left="88.2217999999999"
+                    Canvas.Top="223.5003"
+                    Width="360"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox8_1"
+               Canvas.Left="95.7217999999999"
+               Canvas.Top="227.5003"
+               Width="345"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="RTG OPERATION WITH VACUUM"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle9_1"
+                    Canvas.Left="88.1735"
+                    Canvas.Top="167.1681"
+                    Width="360.0001"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox9_1"
+               Canvas.Left="95.6735"
+               Canvas.Top="171.1681"
+               Width="345.0001"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="START ROTOR TURNING GEAR"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle34"
+                    Canvas.Left="88.1735"
+                    Canvas.Top="111.8948"
+                    Width="360.0001"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox34"
+               Canvas.Left="95.6735"
+               Canvas.Top="115.8948"
+               Width="345.0001"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="TRIP TURBINE"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle10_1"
+                    Canvas.Left="88.1520999999999"
+                    Canvas.Top="55.56262"
+                    Width="360"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox10_1"
+               Canvas.Left="95.6520999999999"
+               Canvas.Top="59.5626"
+               Width="345"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="SHUTDOWN TURBINE CONTROLLER"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle37"
+                    Canvas.Left="87.9997999999999"
+                    Canvas.Top="671.858"
+                    Width="360"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox37"
+               Canvas.Left="95.4997999999999"
+               Canvas.Top="675.858"
+               Width="345"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="SHUTDOWN FINISHED"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+            <RSIRectangle x:Name="Rectangle38"
+                    Canvas.Left="83"
+                    Canvas.Top="4"
+                    Width="377.1348"
+                    Height="27"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox38"
+               Canvas.Left="90.857"
+               Canvas.Top="8"
+               Width="361.4207"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="STOP SEQUENCE"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+        </RSICanvas>
+        <RSICanvas x:Name="Group3_1"
+               Width="128.6859"
+               Height="56.30006"
+               Canvas.Left="691.3516"
+               Canvas.Top="89.90723">
+            <RSIRectangle x:Name="Rectangle39"
+                    Width="128.6859"
+                    Height="56.30007"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox39"
+               Canvas.Left="3.351"
+               Canvas.Top="18.65007"
+               Width="121.9839"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="START/RESET"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+        </RSICanvas>
+        <RSICanvas x:Name="Group4_1"
+               Width="128.6859"
+               Height="56.30006"
+               Canvas.Left="695.7079"
+               Canvas.Top="263.6075">
+            <RSIRectangle x:Name="Rectangle39_1"
+                    Width="128.6859"
+                    Height="56.30008"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox39_1"
+               Canvas.Left="3.35109999999997"
+               Canvas.Top="18.6501"
+               Width="121.9839"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="STOP AUX"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+        </RSICanvas>
+        <RSICanvas x:Name="Group5_1"
+               Width="128.6859"
+               Height="56.30006"
+               Canvas.Left="33.05894"
+               Canvas.Top="89.90723">
+            <RSIRectangle x:Name="Rectangle39_2"
+                    Canvas.Left="1.99999999992428E-05"
+                    Width="128.6859"
+                    Height="56.30007"
+                    Fill="White"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            <RSIText x:Name="TextBox39_2"
+               Canvas.Left="3.35103"
+               Canvas.Top="18.65007"
+               Width="121.9839"
+               Height="19"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FF000000"
+               IsHitTestVisible="False"
+               Text="START/RESET"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+        </RSICanvas>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="177" Canvas.Top="74.997" Width="61.375" TagName="ST_S1">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T01"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="START SEQUENCE"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="177" Canvas.Top="42.401" Width="61.375" TagName="ST_S1">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S01"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="177" Canvas.Top="131.663" Width="61.375" TagName="ST_S2">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T02"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="LUBE OIL UNIT ON"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="177" Canvas.Top="99.067" Width="61.375" TagName="ST_S2">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S02"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="177" Canvas.Top="187.416" Width="61.375" TagName="ST_S3">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T03"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="START ROTOR TURNING GEAR"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="177" Canvas.Top="154.82" Width="61.375" TagName="ST_S3">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S03"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="177" Canvas.Top="243.414" Width="61.375" TagName="ST_S4">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T04"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="START CONDENSATE UNIT"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="177" Canvas.Top="210.818" Width="61.375" TagName="ST_S4">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S04"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="177" Canvas.Top="299.083" Width="61.375" TagName="ST_S5">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T05"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="ST SEAL STEAM ON"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="177" Canvas.Top="266.154" Width="61.375" TagName="ST_S5">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S05"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="177" Canvas.Top="355.087" Width="61.375" TagName="ST_S6">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T06"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="EVACUATION UNIT"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="177" Canvas.Top="322.158" Width="61.375" TagName="ST_S6">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S06"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="177" Canvas.Top="411.079" Width="61.375" TagName="ST_S7">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T07"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="ST LIVE STEAM SUPPLY ON"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="177" Canvas.Top="378.15" Width="61.375" TagName="ST_S7">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S07"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="177" Canvas.Top="467.079" Width="61.375" TagName="ST_S8">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T08"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="CONTROL OIL UNIT ON"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="177" Canvas.Top="434.15" Width="61.375" TagName="ST_S8">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S08"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="177" Canvas.Top="522.832" Width="61.375" TagName="ST_S9">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T09"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="RESET TURBINE TRIP"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="177" Canvas.Top="489.903" Width="61.375" TagName="ST_S9">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S09"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="177" Canvas.Top="579.002" Width="61.375" TagName="ST_S10">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T10"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="TURBINE STARTUP CONTROLLER"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="177" Canvas.Top="546.073" Width="61.375" TagName="ST_S10">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S10"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="177" Canvas.Top="635.006" Width="61.375" TagName="ST_S11">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T11"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="START GENERATOR SYNCHRONISATION"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="177" Canvas.Top="602.077" Width="61.375" TagName="ST_S11">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S11"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="177" Canvas.Top="691.092" Width="61.375" TagName="ST_S12">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T12"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="TURBINE OPERATION CONTROLLER"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="177" Canvas.Top="658.163" Width="61.375" TagName="ST_S12">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S12"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="177" Canvas.Top="714.663" Width="61.375" TagName="ST_S13">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S13"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="837.999" Canvas.Top="74.997" Width="61.375" TagName="SD_S51">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T51"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="STOP SEQUENCE"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="837.999" Canvas.Top="42.401" Width="61.375" TagName="SD_S51">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S51"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="837.999" Canvas.Top="131.663" Width="61.375" TagName="SD_S52">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T52"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="SHUTDOWN TURBINE CONTROLLER"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="837.999" Canvas.Top="99.067" Width="61.375" TagName="SD_S52">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S52"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="837.999" Canvas.Top="187.416" Width="61.375" TagName="SD_S53">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T53"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="TRIP TURBINE"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="837.999" Canvas.Top="154.82" Width="61.375" TagName="SD_S53">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S53"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="837.999" Canvas.Top="243.414" Width="61.375" TagName="SD_S54">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T54"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="START ROTOR TURNING GEAR"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="837.999" Canvas.Top="210.818" Width="61.375" TagName="SD_S54">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S54"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="837.999" Canvas.Top="299.083" Width="61.375" TagName="SD_S55">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T55"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="RTG OPERATION WITH VACUUM"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="837.999" Canvas.Top="266.154" Width="61.375" TagName="SD_S55">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S55"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="837.999" Canvas.Top="355.087" Width="61.375" TagName="SD_S56">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T56"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="CONTROL OIL UNIT OFF"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="837.999" Canvas.Top="322.158" Width="61.375" TagName="SD_S56">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S56"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="837.999" Canvas.Top="411.079" Width="61.375" TagName="SD_S57">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T57"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="ST LIVE STEAM SUPPLY OFF"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="837.999" Canvas.Top="378.15" Width="61.375" TagName="SD_S57">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S57"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="837.999" Canvas.Top="467.079" Width="61.375" TagName="SD_S58">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T58"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="EVACUATION OFF"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="837.999" Canvas.Top="434.15" Width="61.375" TagName="SD_S58">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S58"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="837.999" Canvas.Top="522.832" Width="61.375" TagName="SD_S59">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T59"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="SEAL STEAM OFF"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="837.999" Canvas.Top="489.903" Width="61.375" TagName="SD_S59">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S59"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="837.999" Canvas.Top="579.002" Width="61.375" TagName="SD_S60">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T60"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="CONDENSATE OFF"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="837.999" Canvas.Top="546.073" Width="61.375" TagName="SD_S60">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S60"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="837.999" Canvas.Top="635.006" Width="61.375" TagName="SD_S61">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T61"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="STOP ROTOR TURNING GEAR"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="837.999" Canvas.Top="602.077" Width="61.375" TagName="SD_S61">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S61"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="19.333" Canvas.Left="837.999" Canvas.Top="691.092" Width="61.375" TagName="SD_S62">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T62"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="LUBE OIL UNIT OFF"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="837.999" Canvas.Top="658.163" Width="61.375" TagName="SD_S62">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S62"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="27.667" Canvas.Left="837.999" Canvas.Top="714.663" Width="61.375" TagName="SD_S63">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S63"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <RSIButton x:Name="rSIButton_Copy" Content="STOP AUX" Canvas.Left="695.708" Canvas.Top="263.608" Width="128.686" BorderBrush="Black" Height="60.764" FontWeight="Bold" Background="Gray" Cursor="Hand">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <FlipFlop Expression2="False" Expression1="True" Variable="PB_STOP_AUX.IN"/>
+                </ClickAnimation>
+                <Animation Condition="PB_STOP_AUX.CIN == 0">
+                    <ChangePropertyValue PropertyName="Background" Value="red"/>
+                </Animation>
+                <Animation Condition="PB_STOP_AUX.CIN == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                </Animation>
+                <Animation Condition="PB_STOP_AUX.CIN == 0">
+                    <ChangeColor Color="red"/>
+                </Animation>
+                <Animation Condition="PB_STOP_AUX.CIN == 1">
+                    <ChangeColor Color="Lime"/>
+                </Animation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton x:Name="rSIButton_Copy1" Content="START" Canvas.Left="33.059" Canvas.Top="87.675" Width="128.686" BorderBrush="Black" Height="60.765" FontWeight="Bold" Background="Gray" Cursor="Hand">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Assignment Expression="1" Maximum="1" Minimum="0" Variable="ST_SD_SEQUENCE.RunFreeze"/>
+                    <Assignment Expression="1" Maximum="1" Minimum="0" Variable="SEQ_ST.OP"/>
+                </ClickAnimation>
+                <Animation Condition="ST_SD_SEQUENCE.RunFreeze == 1 AND SEQ_ST.OP ==1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                </Animation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton x:Name="rSIButton_Copy2" Content="STOP" Canvas.Left="33.059" Canvas.Top="166.7" Width="128.686" BorderBrush="Black" Height="60.765" FontWeight="Bold" Background="Gray" Cursor="Hand">
+            <RSIButton.Animations>
+                <ClickAnimation Condition="SEQ_ST.OP == 1">
+                    <Assignment Expression="0" Maximum="1" Minimum="0" Variable="ST_SD_SEQUENCE.RunFreeze"/>
+                    <Assignment Expression="1" Maximum="1" Minimum="0" Variable="SEQ_ST.OP"/>
+                </ClickAnimation>
+                <Animation Condition="ST_SD_SEQUENCE.RunFreeze == 0 AND SEQ_ST.OP == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                </Animation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton x:Name="rSIButton_Copy3" Content="STOP" Canvas.Left="691.351" Canvas.Top="166.7" Width="128.686" BorderBrush="Black" Height="60.765" FontWeight="Bold" Background="Gray" Cursor="Hand">
+            <RSIButton.Animations>
+                <ClickAnimation Condition="SEQ_ST.OP == 0">
+                    <Assignment Expression="0" Maximum="1" Minimum="0" Variable="ST_SD_SEQUENCE.RunFreeze"/>
+                    <Assignment Expression="0" Maximum="1" Minimum="0" Variable="SEQ_ST.OP"/>
+                </ClickAnimation>
+                <Animation Condition="ST_SD_SEQUENCE.RunFreeze == 0 AND SEQ_ST.OP==0">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                </Animation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton x:Name="rSIButton_Copy4" Content="START" Canvas.Left="691.351" Canvas.Top="89.907" Width="128.686" BorderBrush="Black" Height="60.765" FontWeight="Bold" Background="Gray" Cursor="Hand">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Assignment Expression="1" Maximum="1" Minimum="0" Variable="ST_SD_SEQUENCE.RunFreeze"/>
+                    <Assignment Expression="0" Maximum="1" Minimum="0" Variable="SEQ_ST.OP"/>
+                </ClickAnimation>
+                <Animation Condition="ST_SD_SEQUENCE.RunFreeze == 1 AND SEQ_ST.OP == 0">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                </Animation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton x:Name="rSIButton_Copy5" Content="START SYN" Canvas.Top="602.077" Width="172" BorderBrush="Black" Height="27.667" FontWeight="Bold" Background="Gray" Cursor="Hand">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Assignment Expression="True" Maximum="1" Minimum="0" Variable="PB_START_SYNCH.IN"/>
+                </ClickAnimation>
+                <Animation Condition="PB_START_SYNCH.IN == 0">
+                    <ChangePropertyValue PropertyName="Background" Value="red"/>
+                </Animation>
+                <Animation Condition="PB_START_SYNCH.IN == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                </Animation>
+                <Animation Condition="PB_START_SYNCH.IN == 0">
+                    <ChangeColor Color="red"/>
+                </Animation>
+                <Animation Condition="PB_START_SYNCH.IN == 1">
+                    <ChangeColor Color="Lime"/>
+                </Animation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton x:Name="rSIButton_Copy6" Content="RESET TURBINE" Canvas.Top="492.577" Width="172" BorderBrush="Black" Height="27.667" FontWeight="Bold" Background="Gray" Cursor="Hand">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Assignment Expression="True" Maximum="1" Minimum="0" Variable="PB1.IN"/>
+                </ClickAnimation>
+                <Animation Condition="PB1.IN == 0">
+                    <ChangePropertyValue PropertyName="Background" Value="red"/>
+                </Animation>
+                <Animation Condition="PB1.IN == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                </Animation>
+                <Animation Condition="PB1.IN == 0">
+                    <ChangeColor Color="red"/>
+                </Animation>
+                <Animation Condition="PB1.IN == 1">
+                    <ChangeColor Color="Lime"/>
+                </Animation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIText x:Name="rSIText" Height="64.921" TextWrapping="Wrap" Text="OPERATOR CONFIRMATION MANUAL DRAINS OPEN DRAIN SYSTEM CHECKED AND WORKING" Canvas.Top="520.244" Width="172" VerticalContentAlignment="Center"/>
+        <RSIText x:Name="rSIText_Copy" Height="27.095" TextWrapping="Wrap" Text="START SYNCHRONISATION" Canvas.Top="627.244" Width="172" VerticalContentAlignment="Center"/>
+        <RSIButton x:Name="rSIButton_Copy7" Content="START PERMISSIVE" Canvas.Top="412.577" Width="172" BorderBrush="Black" Height="27.667" FontWeight="Bold" Background="Gray" Cursor="Hand">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <FlipFlop Expression2="False" Expression1="True" Variable="US2767_DP_RELEASE.IN"/>
+                </ClickAnimation>
+                <Animation Condition="US2767_DP_RELEASE.IN == 0">
+                    <ChangePropertyValue PropertyName="Background" Value="red"/>
+                </Animation>
+                <Animation Condition="US2767_DP_RELEASE.IN == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                </Animation>
+                <Animation Condition="US2767_DP_RELEASE.IN == 0">
+                    <ChangeColor Color="red"/>
+                </Animation>
+                <Animation Condition="US2767_DP_RELEASE.IN== 1">
+                    <ChangeColor Color="Lime"/>
+                </Animation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIText x:Name="rSIText_Copy1" Height="27.095" TextWrapping="Wrap" Text="STG TRAIN START PERMISSIVE" Canvas.Top="439.244" Width="172" VerticalContentAlignment="Center"/>
+        <RSIButton x:Name="rSIButton_Copy8" Content="STOP TURBINE" Canvas.Top="154.988" Width="172" BorderBrush="Black" Height="27.667" FontWeight="Bold" Background="Gray" Cursor="Hand" Canvas.Left="1293.667">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <FlipFlop Expression2="False" Expression1="True" Variable="PB2.IN"/>
+                </ClickAnimation>
+                <Animation Condition="PB2.IN == 0">
+                    <ChangePropertyValue PropertyName="Background" Value="red"/>
+                </Animation>
+                <Animation Condition="PB2.IN == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                </Animation>
+                <Animation Condition="PB2.IN == 0">
+                    <ChangeColor Color="red"/>
+                </Animation>
+                <Animation Condition="PB2.IN== 1">
+                    <ChangeColor Color="Lime"/>
+                </Animation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIText x:Name="rSIText_Copy2" Height="27.095" TextWrapping="Wrap" Text="STOP TURBINE FROM HMI" Canvas.Top="181.655" Width="172" VerticalContentAlignment="Center" Canvas.Left="1293.667" HorizontalContentAlignment="Center"/>
+    </RSICanvas>
+</UserControl>

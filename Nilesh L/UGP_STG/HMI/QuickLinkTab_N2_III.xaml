@@ -1,0 +1,283 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:QuickLinkTab_N2_III}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:QuickLinkTab_N2_III}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="83"
+                         Height="47"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIRectangle x:Name="TabShade"
+                              Width="79.4375"
+                              Height="46"
+                              Stroke="#FF000000"
+                              StrokeThickness="0">
+                  <RSIRectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                      <GradientStop Offset="0" Color="#FF000000" />
+                      <GradientStop Offset="0" Color="#FF9A9A9A" />
+                      <GradientStop Offset="1" Color="#FF9A9A9A" />
+                    </LinearGradientBrush>
+                  </RSIRectangle.Fill>
+                  <RSIRectangle.Animations>
+                    <Animation Condition="TabVisible==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                      <Invisible />
+                    </Animation>
+                  </RSIRectangle.Animations>
+                </RSIRectangle>
+                <RSIRectangle x:Name="TabMain"
+                              Width="79.4375"
+                              Height="46"
+                              Stroke="#FF000000"
+                              StrokeThickness="0">
+                  <RSIRectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                      <GradientStop Offset="0.5" Color="#FFB3B3B3" />
+                      <GradientStop Offset="0.25" Color="#FFCCCCCC" />
+                      <GradientStop Offset="0" Color="#FFB3B3B3" />
+                      <GradientStop Offset="1" Color="#FFB3B3B3" />
+                      <GradientStop Offset="0.75" Color="#FFCCCCCC" />
+                    </LinearGradientBrush>
+                  </RSIRectangle.Fill>
+                  <RSIRectangle.Animations>
+                    <ClickAnimation>
+                      <Link WindowName="$NameStore" />
+                    </ClickAnimation>
+                    <Animation Condition="TabVisible==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                      <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                      <ChangeColor Color="" />
+                    </Animation>
+                  </RSIRectangle.Animations>
+                </RSIRectangle>
+                <RSICanvas Name="Path1"
+                           Width="79.375"
+                           Height="46"
+                           IsHitTestVisible="false"
+                           Left="0"
+                           Top="1">
+                  <RSIPath x:Name="Arc1"
+                           Canvas.Top="-9.99999999962142E-06"
+                           Width="3.13855"
+                           Height="6.348415"
+                           Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1" />
+                  <RSIPath x:Name="Arc2"
+                           Canvas.Left="79.375"
+                           Canvas.Top="-9.99999999962142E-06"
+                           Width="3.13855"
+                           Height="6.348415"
+                           Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                           RenderTransformOrigin="0.159309235156362,0.0787598164266199"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1">
+                    <RSIPath.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIPath.RenderTransform>
+                  </RSIPath>
+                  <RSIBorder x:Name="Line1"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="45.25"
+                             Width="79.375"
+                             Height="1.5">
+                    <RSIPath Data="M-0.75,45.25 L78.625,45.25"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="Path2"
+                           Width="79.375"
+                           Height="36"
+                           IsHitTestVisible="false"
+                           Left="0"
+                           Top="1">
+                  <RSIPath x:Name="Arc1_1"
+                           Canvas.Top="-3.00000000006406E-05"
+                           Width="3.13855"
+                           Height="4.968325"
+                           Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1" />
+                  <RSIPath x:Name="Arc2_1"
+                           Canvas.Left="79.375"
+                           Canvas.Top="-3.00000000006406E-05"
+                           Width="3.13855"
+                           Height="4.968325"
+                           Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                           RenderTransformOrigin="0.159309235156362,0.100637538808351"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1">
+                    <RSIPath.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIPath.RenderTransform>
+                  </RSIPath>
+                  <RSIBorder x:Name="Line1_1"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="35.24997"
+                             Width="79.375"
+                             Height="1.5">
+                    <RSIPath Data="M-0.75,35.24997 L78.625,35.24997"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSIText x:Name="Caption"
+                         Canvas.Left="26.88582"
+                         Canvas.Top="23.59236"
+                         Width="30.3418"
+                         Height="14.52344"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         Text="Tab2"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold">
+                  <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                      <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                      <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSIText x:Name="Text1"
+                         Canvas.Left="26.88582"
+                         Canvas.Top="7.79102"
+                         Width="30.3418"
+                         Height="14.52344"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         Text="Tab1"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold">
+                  <RSIText.Animations>
+                    <Animation Condition="TabVisible==true">
+                      <SetVisible />
+                    </Animation>
+                    <Animation Condition="TabVisible==false">
+                      <Invisible />
+                    </Animation>
+                    <Animation Condition="Selected">
+                      <ChangeColor Color="#FFFFFFFF" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+                <RSICanvas Name="TabReflection"
+                           Width="82.6875"
+                           Height="3.6875"
+                           IsHitTestVisible="false"
+                           Left="0.3125"
+                           Top="1.3125">
+                  <RSIPath x:Name="Arc1_2"
+                           Canvas.Left="0.341669999999993"
+                           Canvas.Top="-9.99999999962142E-06"
+                           Width="3.242508"
+                           Height="1"
+                           Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1">
+                    <RSIPath.Fill>
+                      <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="1" Color="#EDFFFFFF" />
+                        <GradientStop Offset="0" Color="#DEFFFFFF" />
+                      </LinearGradientBrush>
+                    </RSIPath.Fill>
+                  </RSIPath>
+                  <RSIPath x:Name="Arc2_2"
+                           Canvas.Left="82.3458"
+                           Canvas.Top="-9.99999999962142E-06"
+                           Width="3.242523"
+                           Height="1"
+                           Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                           RenderTransformOrigin="0.15420091083394,0.5"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1">
+                    <RSIPath.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIPath.RenderTransform>
+                    <RSIPath.Fill>
+                      <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="1" Color="#EDFFFFFF" />
+                        <GradientStop Offset="0" Color="#DEFFFFFF" />
+                      </LinearGradientBrush>
+                    </RSIPath.Fill>
+                  </RSIPath>
+                  <RSIBorder x:Name="Line1_2"
+                             Canvas.Left="-0.750010000000003"
+                             Canvas.Top="2.9375"
+                             Width="82.68751"
+                             Height="1.5">
+                    <RSIPath Data="M-0.750010000000003,2.9375 L81.9375,2.9375"
+                             Stretch="Fill"
+                             Stroke="#FF000000"
+                             StrokeThickness="1" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSIBorder x:Name="Line1_3"
+                           Canvas.Left="-0.75"
+                           Canvas.Top="42.25"
+                           Width="79.1895"
+                           Height="1.5">
+                  <RSIPath Data="M-0.75,42.25 L78.4395,42.32601"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1">
+                    <RSIPath.Animations>
+                      <Animation Condition="_Not_Selected__And_TabVisible==true">
+                        <SetVisible />
+                      </Animation>
+                      <Animation Condition="_Not_Selected__And_TabVisible==false">
+                        <Invisible />
+                      </Animation>
+                    </RSIPath.Animations>
+                  </RSIPath>
+                </RSIBorder>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

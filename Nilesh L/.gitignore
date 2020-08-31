@@ -1,0 +1,11 @@
+/bin/
+/.vs/
+/obj/
+*.exe
+*.sln.DotSettings.user
+/_ReSharper.Caches/
+*.xlsx
+*.g.cs
+*.baml
+*.g.i.cs
+*.suo

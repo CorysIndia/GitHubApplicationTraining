@@ -1,0 +1,226 @@
+<UserControl x:Class="UGP_EDRF._06CAT01_A_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+    <RSICanvas Width="1500"
+             Height="750"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+        <hmi:Background_Disp x:Name="Background_Disp1"
+                         Width="1500"
+                         Height="750" />
+        <hmi:SYM_TITLE_1 x:Name="SYM_TITLE_11"
+                     Width="1500"
+                     Height="32.986"
+                     BP_NAV="false"
+                     BYPASS="ACT_1"
+                     DisplayTitle="UNIT 6: K-0007A SALES GAS COMPRESSOR"
+                     DispName="06CAT01_A"
+                     ESD_NAV="false"
+                     H_H2S_NAV="true"
+                     H_LEL_NAV="true"
+                     H2S="ACT"
+                     H2S_LEL_4="NO_ACT"
+                     HH_H2S_NAV="true"
+                     HH_LEL_NAV="true"
+                     LEL="ACT"
+                     NAV_H2S2="true"
+                     NAV_LEL2="true"
+                     NEXT_ALM="False"
+                     NextDisplay="06CAT01_B"
+                     OverviewDisplay="06CAT01"
+                     PREV_RECENT="PREV"
+                     PreviousDisplay="06CAT01_D"
+                     TRAIN_CLR="GREY" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol2"
+                     Canvas.Left="420"
+                     Canvas.Top="72"
+                     Width="290"
+                     Height="60"
+                     DISP="06DISP03"
+                     PRT="6" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol5"
+                     Canvas.Left="419.6666"
+                     Canvas.Top="189"
+                     Width="290"
+                     Height="60"
+                     DISP="06DISP06"
+                     PRT="6" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol27"
+                     Canvas.Left="420"
+                     Canvas.Top="306"
+                     Width="290"
+                     Height="60"
+                     DISP="06DISP28"
+                     PRT="6" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol28"
+                     Canvas.Left="800.3334"
+                     Canvas.Top="306"
+                     Width="290"
+                     Height="60"
+                     DISP="06DISP29"
+                     PRT="6" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol29"
+                     Canvas.Left="420"
+                     Canvas.Top="423"
+                     Width="290"
+                     Height="60"
+                     DISP="06DISP55"
+                     PRT="6" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol30"
+                     Canvas.Left="420"
+                     Canvas.Top="540"
+                     Width="290"
+                     Height="60"
+                     DISP="06DISP31"
+                     PRT="6" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol31"
+                     Canvas.Left="799.6666"
+                     Canvas.Top="72"
+                     Width="290"
+                     Height="60"
+                     DISP="06DISP32"
+                     PRT="6" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol32"
+                     Canvas.Left="799.6666"
+                     Canvas.Top="189"
+                     Width="290"
+                     Height="60"
+                     DISP="06DISP33"
+                     PRT="6" />
+        <hmi:SYM_CAT_NAV x:Name="EmbeddedSymbol7"
+                     Canvas.Left="800.3334"
+                     Canvas.Top="423"
+                     Width="290"
+                     Height="60"
+                     DISP="06DISP30"
+                     PRT="6" />
+        <RSIText x:Name="rSIText_Copy33" Height="19" Canvas.Left="420" Text="1ST STAGE SALES GAS COMPRESSOR" Canvas.Top="81.327" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP03"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy34" Height="19" Canvas.Left="420" Text="M39-K-0007A" Canvas.Top="105.667" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP03"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy" Height="19" Canvas.Left="420" Text="2ND STAGE SALES GAS COMPRESSOR" Canvas.Top="197.327" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP06"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy1" Height="19" Canvas.Left="420" Text="M39-K-0007A" Canvas.Top="221.667" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP06"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy2" Height="19" Canvas.Left="420" Text="LUBE OIL CONSOLE SYSTEM" Canvas.Top="313.333" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP28"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy3" Height="19" Canvas.Left="429.667" Text="M39-K-0007A" Canvas.Top="332.333" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP28"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy4" Height="19" Canvas.Left="420.333" Text="LUBE OIL COMPRESSOR SYSTEM" Canvas.Top="433.833" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP55"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy5" Height="19" Canvas.Left="430" Text="M39-K-0007A" Canvas.Top="452.833" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP55"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy6" Height="19" Canvas.Left="420.333" Text="SEAL GAS TREATMENT SYSTEM" Canvas.Top="552.333" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP31"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy7" Height="19" Canvas.Left="430" Text="M39-K-0007A" Canvas.Top="571.333" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP31"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy8" Height="19" Canvas.Left="809.667" Text="SEAL GAS SYSTEM" Canvas.Top="81.327" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP32"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy9" Height="19" Canvas.Left="809.667" Text="M39-K-0007A" Canvas.Top="105.667" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP32"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy10" Height="19" Canvas.Left="800.333" Text="CASING SEALS MONITORING SYSTEM" Canvas.Top="197.327" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP33"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy11" Height="19" Canvas.Left="800.333" Text="M39-K-0007A" Canvas.Top="221.667" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP33"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy12" Height="19" Canvas.Left="800.666" Text="VMS FOR MOTOR" Canvas.Top="318.673" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP29"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy13" Height="19" Canvas.Left="797.333" Text="M39-KM-0007A" Canvas.Top="337.673" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP29"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy14" Height="19" Canvas.Left="799.667" Text="VMS FOR GEARBOX &amp; COMPRESSOR" Canvas.Top="433.833" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP30"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy15" Height="19" Canvas.Left="809.334" Text="M39-KG-0007A/M39-K-0007A" Canvas.Top="452.833" Width="280" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Link WindowName="06DISP30"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+</UserControl>

@@ -1,0 +1,411 @@
+﻿<RSISynoptic
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:CompressorProfileDemo="clr-namespace:CompressorProfileDemo" x:Class="UGP_EDRF.UGP_MIMICS.UGP_TEST_PAD03_CCS"
+     xmlns:system="clr-namespace:System;assembly=mscorlib"
+	
+	
+          Background="LightGray"
+          Height="1048"
+          Width="1920"
+          mc:Ignorable="d">
+    <Grid>
+        <Canvas x:Name="GRAPHIC">
+            <hmi:SurgeMap_Med_III x:Name="SurgeMap_Med_III1"
+                          Canvas.Top="40"
+                          Width="759"
+                          Height="591" CTRLLINE="1" ModelName="" PR_Max="2.2" PRAT="0.005" ZControlLineUO="r006A_HC1" ZSurgeLineUO="r006A_MARGIN1" ZTAGDESCRP="1 STAGE" ZOperatingPT_XaxisUO="r006A_HC1" ZOperatingPT_YaxisUO="r006A_MARGIN1" ZOperatingPTUO="r006A_HC1" HCA="3.12" HCB="2.54" />
+            <RSISlider
+            x:Name="SPSlider"
+            Grid.Row="3"
+            Width="24.905"
+            Height="336.374"
+            Margin="0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom"
+            Cursor="Hand"
+            Expression="r006A_HC1.MEAS"
+            Foreground="Gray"
+            LargeChange="0.1"
+            Maximum="5"
+            OpacityMask="Black"
+            Orientation="Vertical"
+            SmallChange="0.01" Canvas.Left="865.33" Canvas.Top="293.792" TickPlacement="BottomRight">
+                <RSISlider.LayoutTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.7" />
+                        <SkewTransform />
+                        <RotateTransform />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </RSISlider.LayoutTransform>
+            </RSISlider>
+            <RSISlider
+                x:Name="SPSlider_Copy"
+                Width="24.905"
+                Height="336.374"
+                Margin="0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Cursor="Hand"
+                Expression="r006A_MARGIN1.MEAS"
+                Foreground="Gray"
+                LargeChange="0.1"
+                Maximum="5"
+                OpacityMask="Black"
+                Orientation="Vertical"
+                SmallChange="0.01" Canvas.Left="945.33" Canvas.Top="293.792" TickPlacement="BottomRight">
+                <RSISlider.LayoutTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.7" />
+                        <SkewTransform />
+                        <RotateTransform />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </RSISlider.LayoutTransform>
+            </RSISlider>
+            <RSILine Fill="#FFF4F4F5" Height="9" Canvas.Left="638" Stroke="Black" Canvas.Top="569.594" Width="226.375"/>
+            <RSISlider
+                x:Name="SPSlider_Copy1"
+                Width="24.905"
+                Height="665.874"
+                Margin="0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Cursor="Hand"
+                Expression="r006A_HC1.MEAS"
+                Foreground="Gray"
+                LargeChange="0.1"
+                Maximum="5"
+                OpacityMask="Black"
+                Orientation="Vertical"
+                SmallChange="0.01" Canvas.Left="393.247" Canvas.Top="324.209" TickPlacement="BottomRight" RenderTransformOrigin="0.5,0.5">
+                <RSISlider.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </RSISlider.RenderTransform>
+                <RSISlider.LayoutTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.7" />
+                        <SkewTransform />
+                        <RotateTransform />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </RSISlider.LayoutTransform>
+            </RSISlider>
+            <RSISlider
+                x:Name="SPSlider_Copy2"
+                Width="24.905"
+                Height="665.874"
+                Margin="0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Cursor="Hand"
+                Expression="r006A_MARGIN1.MEAS"
+                Foreground="Gray"
+                LargeChange="0.1"
+                Maximum="5"
+                OpacityMask="Black"
+                Orientation="Vertical"
+                SmallChange="0.01" Canvas.Left="393.247" Canvas.Top="364.209" TickPlacement="BottomRight" RenderTransformOrigin="0.5,0.5">
+                <RSISlider.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </RSISlider.RenderTransform>
+                <RSISlider.LayoutTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.7" />
+                        <SkewTransform />
+                        <RotateTransform />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </RSISlider.LayoutTransform>
+            </RSISlider>
+            <RSIText x:Name="Text13"
+                Canvas.Left="45.5"
+                Canvas.Top="67.802"
+                Width="25"
+                Height="14.896"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" Text="1.16"/>
+            <RSIText x:Name="Text3_1"
+                Canvas.Left="45.5"
+                Canvas.Top="116.802"
+                Width="25"
+                Height="14.896"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" Text="1.14"/>
+            <RSIText x:Name="Text4_1"
+                Canvas.Left="45.5"
+                Canvas.Top="166.802"
+                Width="25"
+                Height="14.896"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" Text="1.13"/>
+            <RSIText x:Name="Text5_1"
+                Canvas.Left="45.5"
+                Canvas.Top="216.802"
+                Width="25"
+                Height="14.896"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" Text="1.11"/>
+            <RSIText x:Name="Text6_1"
+                Canvas.Left="45.5"
+                Canvas.Top="267.802"
+                Width="25"
+                Height="14.896"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" Text="1.10"/>
+            <RSIText x:Name="Text7_1"
+                Canvas.Left="45.5"
+                Canvas.Top="317.802"
+                Width="25"
+                Height="14.896"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" Text="1.06"/>
+            <RSIText x:Name="Text8_1"
+                Canvas.Left="45.5"
+                Canvas.Top="367.802"
+                Width="25"
+                Height="14.896"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" Text="1.06"/>
+            <RSIText x:Name="Text9_1"
+                Canvas.Left="45.5"
+                Canvas.Top="418.802"
+                Width="25"
+                Height="14.896"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" Text="1.05" Margin="0,-1,0,0"/>
+            <RSIText x:Name="Text10_1"
+                Canvas.Left="45.5"
+                Canvas.Top="468.802"
+                Width="25"
+                Height="14.896"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" Text="1.03"/>
+            <RSIText x:Name="Text11_1"
+                Canvas.Left="45.5"
+                Canvas.Top="518.802"
+                Width="25"
+                Height="14.896"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" Text="1.02"/>
+            <RSIText x:Name="Text12_1"
+                Canvas.Left="45.5"
+                Canvas.Top="569.802"
+                Width="25"
+                Height="14.896"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10" Text="1"/>
+            <RSIText x:Name="HC_Display_1"
+                Canvas.Left="40.8"
+                Canvas.Top="349.25"
+                Width="32.529"
+                Height="14.896"
+                VerticalAlignment="Stretch"
+                Foreground="#FF00FF00"
+                RenderTransformOrigin="0,0"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" Text="10.20">
+                <RSIText.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1" ScaleX="1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="-7.0164775638926606E-15"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </RSIText.RenderTransform>
+                <RSIText.Animations>
+                    <Animation>
+                        <ChangeText Text="{Value PRAT, Converter={FormatConverter F2}}" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSICanvas Name="Group7"
+                           Width="86.209"
+                           Height="15.344"
+                           Canvas.Left="328.458"
+                           Canvas.Top="593.552"/>
+            <hmi:SurgeMap_Small x:Name="SurgeMap_Small1"
+                Canvas.Left="1144"
+                Canvas.Top="66.672"
+                Width="380"
+                Height="321" PR_Max="2.8" OP="8" Z01ControlLineUO="r006A_HC1" Z01OperatingPT_XaxisUO="r006A_HC1" Z01OperatingPT_YaxisUO="r006A_MARGIN1" Z01OperatingPTUO="r006A_HC1" Z01SurgeLineUO="r006A_MARGIN1" Z01TAGDESCRP01="1 STAGE" />
+            <RSIText x:Name="Text3_1_Copy"
+                Canvas.Left="1164.99"
+                Canvas.Top="105.637"
+                Width="23.355"
+                Height="13.406"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9" Text="VAL" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <RSIText x:Name="Text4_1_Copy"
+                Canvas.Left="1164.99"
+                Canvas.Top="132.308"
+                Width="23.355"
+                Height="13.406"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9" Text="VAL" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <RSIText x:Name="Text5_1_Copy"
+                Canvas.Left="1164.99"
+                Canvas.Top="159.638"
+                Width="23.355"
+                Height="13.406"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9" Text="VAL" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <RSIText x:Name="Text6_1_Copy"
+                Canvas.Left="1164.99"
+                Canvas.Top="185.97"
+                Width="23.355"
+                Height="13.406"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9" Text="VAL" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <RSIText x:Name="Text7_1_Copy"
+                Canvas.Left="1164.99"
+                Canvas.Top="213.382"
+                Width="23.355"
+                Height="13.406"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9" Text="VAL" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <RSIText x:Name="Text8_1_Copy"
+                Canvas.Left="1164.99"
+                Canvas.Top="240.382"
+                Width="23.355"
+                Height="13.406"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9" Text="VAL" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <RSIText x:Name="Text9_1_Copy"
+                Canvas.Left="1164.99"
+                Canvas.Top="266.382"
+                Width="23.355"
+                Height="13.406"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9" Text="VAL" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <RSIText x:Name="Text10_1_Copy"
+                Canvas.Left="1164.99"
+                Canvas.Top="293.971"
+                Width="23.355"
+                Height="13.406"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9" Text="VAL" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <RSIText x:Name="Text11_1_Copy"
+                Canvas.Left="1164.99"
+                Canvas.Top="320.3"
+                Width="23.355"
+                Height="13.406"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9" Text="VAL" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <RSIText x:Name="Text12_1_Copy"
+                Canvas.Left="1164.99"
+                Canvas.Top="395.632"
+                Width="23.355"
+                Height="13.406"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9" Text="VAL"/>
+            <RSIText x:Name="Text13_Copy"
+                Canvas.Left="1164.99"
+                Canvas.Top="78.632"
+                Width="23.355"
+                Height="13.406"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9" Text="VAL" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <RSICanvas Name="Group77"
+                           Width="83.537"
+                           Height="14.896"
+                           Canvas.Left="1288.541"
+                           Canvas.Top="372.142">
+                <RSIText x:Name="Text14"
+                           Canvas.Left="44.2087"
+                           Canvas.Top="0.296899999999994"
+                           Width="39.32813"
+                           Height="13.40625"
+                           VerticalAlignment="Center"
+                           Foreground="#FFFFFFFF"
+                           IsHitTestVisible="False"
+                           Text="HC (%)"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="9" />
+                <RSIText x:Name="HC_Display1"
+                           Canvas.Left="1.529"
+                           Width="32.529"
+                           Height="14.895"
+                           VerticalAlignment="Stretch"
+                           Foreground="#FF00FF00"
+                           RenderTransformOrigin="0,0"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10"
+                           TextElement.FontWeight="Bold" Canvas.Top="-0.333">
+                    <RSIText.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="1" ScaleX="1"/>
+                            <SkewTransform AngleY="0" AngleX="0"/>
+                            <RotateTransform Angle="-7.0164775638926606E-15"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </RSIText.RenderTransform>
+                    <RSIText.Animations>
+                        <Animation>
+                            <ChangeText Text="{Value OP, Converter={FormatConverter F2}}" />
+                        </Animation>
+                    </RSIText.Animations>
+                </RSIText>
+            </RSICanvas>
+            <RSIText x:Name="Text11_1_Copy1"
+                Canvas.Left="1164.99"
+                Canvas.Top="348.8"
+                Width="23.355"
+                Height="13.406"
+                Foreground="#FFFFFFFF"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="9" Text="VAL" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        </Canvas>
+
+        <!--  FOD Part  -->
+        <Canvas x:Name="FOD"
+                Visibility="{FODBinding}" d:IsLocked="True"/>
+
+        <!--  Battery Limit Part  -->
+        <Canvas x:Name="BL"
+                Visibility="{BLBinding}" d:IsLocked="True"/>
+
+        <!--  FAILURE Part  -->
+        <Canvas x:Name="FAILURE"
+                Visibility="{FAILUREBinding}" d:IsLocked="True"/>
+
+    </Grid>
+</RSISynoptic>

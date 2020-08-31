@@ -1,0 +1,49 @@
+<UserControl x:Class="UGP_EDRF.OVERVIEW_M39_K0001" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+             xmlns:local="clr-namespace:UGP_EDRF" 
+             mc:Ignorable="d">
+    <Grid>
+        <!--  Graphic Part  -->
+        <local:OVERVIEW_M39_K0001_Translation x:Name="GRAPHIC" d:IsLocked="True"  />
+
+        <!-- Normal Graphic Layer Path -->
+        <Canvas x:Name="GRAPHIC_OVERLAY">
+            <RSIRectangle Fill="#FFF4F4F5" Height="40.833" Canvas.Left="1816.667" Stroke="Black" Canvas.Top="867" Width="91.333" Panel.ZIndex="11500000" Opacity="0.001">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Open Title="IGV-K0001" WindowName="IGV_K0001"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIRectangle Fill="#FFF4F4F5" Height="25.5" Canvas.Left="246.5" Stroke="Black" Canvas.Top="194.5" Width="57.5" Opacity="0.001">
+                <RSIRectangle.Animations>
+                    <ClickAnimation>
+                        <Open Title="TRIPS_M39_K_0001" WindowName="TRIPS_M39_K_0001"/>
+                    </ClickAnimation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+        </Canvas>
+
+        <!-- FOD Part -->
+        <Canvas x:Name='FOD' Visibility="{FODBinding}" d:IsLocked="True">
+            <!-- Start FOD -->
+            <!-- Stop FOD -->
+        </Canvas>
+
+        <!-- BL Part -->
+        <Canvas x:Name='BL' Visibility='{BLBinding}' d:IsLocked="True" >
+            <!-- Start BL -->
+            <!-- Stop BL -->
+        </Canvas>
+
+        <!-- FAILURE Part -->
+        <Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' d:IsLocked="True" >
+            <!-- Start FAILURE -->
+            <!-- Stop FAILURE -->
+        </Canvas>
+
+    </Grid>
+</UserControl>

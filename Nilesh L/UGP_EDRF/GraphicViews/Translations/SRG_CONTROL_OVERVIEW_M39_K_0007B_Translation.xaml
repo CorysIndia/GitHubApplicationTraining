@@ -1,0 +1,275 @@
+<UserControl x:Class="UGP_EDRF.SRG_CONTROL_OVERVIEW_M39_K_0007B_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+    <RSICanvas Width="1900.250244"
+             Height="959.9376"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+        <RSIBorder x:Name="Line1"
+               Canvas.Left="1530.25"
+               Canvas.Top="678.2498"
+               Width="49.19995"
+               Height="1.5">
+            <RSIPath Data="M1530.25,678.2498 L1579.45,678.2498"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line2"
+               Canvas.Left="838.25"
+               Canvas.Top="678.2498"
+               Width="49"
+               Height="1.5">
+            <RSIPath Data="M838.25,678.2498 L887.25,678.2498"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:QuickLink10Tabs_N1_short x:Name="QuickLink10Tabs_N1_short1"
+                                  Canvas.Left="1.04718"
+                                  Canvas.Top="160"
+                                  Width="1611.906"
+                                  Height="33.92148"
+                                  Button1_NameStore="SRG_CONTROL_OVERVIEW_M39_K_0007B"
+                                  Button10_NameStore="Main Menu"
+                                  Button2_NameStore="SRG_CONTROL_M39_K_0007B_STG1"
+                                  Button3_NameStore="SRG_CONTROL_M39_K_0007B_STG2"
+                                  Button4_NameStore="---"
+                                  Button5_NameStore="---"
+                                  Button7_NameStore="Main Menu"
+                                  Button8_NameStore="Main Menu"
+                                  Button9_NameStore="Main Menu" Button1_TabVisible="True" Button1_TabName="SURGE OVERVIEW" Button2_TabVisible="True" Button2_TabName="ASC STAGE 1" Button3_TabVisible="True" Button3_TabName="ASC STAGE 2" />
+        <hmi:IndicatorAnalogMedium_New x:Name="IndicatorAnalogMedium_New1"
+                                   Canvas.Left="508"
+                                   Canvas.Top="551.9998"
+                                   Width="286"
+                                   Height="30" ZDECRIPTION="STAGE 1 MARGIN" ZUNIT="%" ModelName="r006B_MARGIN1" />
+        <hmi:IndicatorAnalogMedium_New x:Name="IndicatorAnalogMedium_New2"
+                                   Canvas.Left="508"
+                                   Canvas.Top="585.9998"
+                                   Width="286"
+                                   Height="30" ModelName="r006B_TOT_SAFETY1" ZDECRIPTION="TOTAL SAFETY MARGIN&quot;" ZUNIT="%" />
+        <hmi:IndicatorAnalogMedium_New x:Name="IndicatorAnalogMedium_New3"
+                                   Canvas.Left="1198"
+                                   Canvas.Top="551.9998"
+                                   Width="286"
+                                   Height="30" ZDECRIPTION="STAGE 2 MARGIN" ZUNIT="%" ModelName="r006B_MARGIN2" />
+        <hmi:IndicatorAnalogMedium_New x:Name="IndicatorAnalogMedium_New4"
+                                   Canvas.Left="1198"
+                                   Canvas.Top="585.9998"
+                                   Width="286"
+                                   Height="30" ZDECRIPTION="TOTAL SAFETY MARGIN&quot;" ZUNIT="%" ModelName="r006B_TOT_SAFETY2" />
+        <hmi:Valve_a x:Name="Valve_a1"
+                 Canvas.Left="867.0001"
+                 Canvas.Top="728.9998"
+                 Width="42"
+                 Height="40"
+                 FillColor="Red" ModelName="M39_006FCV0043" />
+        <hmi:Type1_AO_Display_9Letter x:Name="Type1_AO_Display_9Letter1"
+                                  Canvas.Left="843.0001"
+                                  Canvas.Top="772.9999"
+                                  Width="91"
+                                  Height="38" ModelName="M39_006BFXI0043" ZTAG="FCV-0043" />
+        <RSIBorder x:Name="Line7"
+               Canvas.Left="887.25"
+               Canvas.Top="678.2498"
+               Width="1.5"
+               Height="41">
+            <RSIPath Data="M887.25,678.2498 L887.25,719.2498"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIPath x:Name="Polygon1"
+             Canvas.Left="881"
+             Canvas.Top="716.9998"
+             Width="14"
+             Height="14"
+             Data="M0,0 L1,0 0.5,1 z"
+             Fill="#FF848484"
+             Stretch="Fill"
+             Stroke="#FFC0C0C0"
+             StrokeThickness="1" />
+        <!--<hmi:SurgeMap_Small x:Name="SurgeMap_Small1"
+                        Canvas.Left="454"
+                        Canvas.Top="205.9608"
+                        Width="380"
+                        Height="334.0392" />-->
+        <hmi:Valve_a x:Name="Valve_a2"
+                 Canvas.Left="1560.4"
+                 Canvas.Top="737"
+                 Width="42"
+                 Height="40"
+                 FillColor="Red" ModelName="M39_006FCV0062" />
+        <hmi:Type1_AO_Display_9Letter x:Name="Type1_AO_Display_9Letter2"
+                                  Canvas.Left="1537.4"
+                                  Canvas.Top="779.0001"
+                                  Width="91"
+                                  Height="38" ZTAG="FCV-0062" ModelName="M39_006BFXI0062" />
+        <RSIBorder x:Name="Line11"
+               Canvas.Left="1579.25"
+               Canvas.Top="679.2498"
+               Width="1.5"
+               Height="41">
+            <RSIPath Data="M1579.25,679.2498 L1579.25,720.2498"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIPath x:Name="Polygon2"
+             Canvas.Left="1574"
+             Canvas.Top="721.9998"
+             Width="14"
+             Height="14"
+             Data="M0,0 L1,0 0.5,1 z"
+             Fill="#FF848484"
+             Stretch="Fill"
+             Stroke="#FFC0C0C0"
+             StrokeThickness="1" />
+        <!--<hmi:SurgeMap_Small x:Name="SurgeMap_Small2"
+                        Canvas.Left="1151"
+                        Canvas.Top="203.9608"
+                        Width="380"
+                        Height="334.0392" />-->
+        <hmi:PID_Display2_9Letter x:Name="PID_Display2_9Letter1"
+                              Canvas.Left="720.6"
+                              Canvas.Top="772.9999"
+                              Width="88.39996"
+                              Height="37"
+                              NameStore="FIC-0043" ModelName="M39_006FIC0043" />
+        <hmi:PID_Display2_9Letter x:Name="PID_Display2_9Letter2"
+                              Canvas.Left="1410"
+                              Canvas.Top="780.0001"
+                              Width="88.40002"
+                              Height="37"
+                              NameStore="FIC-0062" ModelName="M39_006FIC0062" />
+        <RSIBorder x:Name="Line3"
+               Canvas.Left="696.25"
+               Canvas.Top="647.2498"
+               Width="144"
+               Height="1.5">
+            <RSIPath Data="M696.25,647.2498 L840.25,647.2498"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line4"
+               Canvas.Left="696.25"
+               Canvas.Top="677.2498"
+               Width="144"
+               Height="1.5">
+            <RSIPath Data="M696.25,677.2498 L840.25,677.2498"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line6"
+               Canvas.Left="696.25"
+               Canvas.Top="707.2498"
+               Width="144"
+               Height="1.5">
+            <RSIPath Data="M696.25,707.2498 L840.25,707.2498"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:IndicatorAnalogMedium_LED_New x:Name="IndicatorAnalogMedium_LED_New17645"
+                                       Canvas.Left="508"
+                                       Canvas.Top="632.9998"
+                                       Width="286"
+                                       Height="30" ZDescription01="SURGE PID" ModelName="r006B_SRG_CON1" ZUNIT="%" ZBOX="f006B_SRG_PID1" />
+        <hmi:IndicatorAnalogMedium_LED_New x:Name="IndicatorAnalogMedium_LED_New295347"
+                                       Canvas.Left="508"
+                                       Canvas.Top="662.9998"
+                                       Width="286"
+                                       Height="30" ZDescription01="SURGE OVERRIDE" ZUNIT="%" ModelName="r006B_SRG_OVRD1" ZBOX="f006B_SRG_OVRD1" />
+        <hmi:IndicatorAnalogMedium_LED_New x:Name="IndicatorAnalogMedium_LED_New48445"
+                                       Canvas.Left="508"
+                                       Canvas.Top="692.9998"
+                                       Width="286"
+                                       Height="30" ZDescription01="MANUAL DEMAND" ZUNIT="%" ModelName="r006B_SRG_DMD1" ZBOX="f006B_MAN_OVRD1" />
+        <hmi:HighSelector_a x:Name="HighSelector_a1"
+                        Canvas.Left="812.0002"
+                        Canvas.Top="600.0001"
+                        Width="48"
+                        Height="154.9999" />
+        <RSIBorder x:Name="Line8"
+               Canvas.Left="1418.25"
+               Canvas.Top="707.2498"
+               Width="111"
+               Height="1.5">
+            <RSIPath Data="M1418.25,707.2498 L1529.25,708.2498"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line9"
+               Canvas.Left="1418.25"
+               Canvas.Top="647.2498"
+               Width="114"
+               Height="1.5">
+            <RSIPath Data="M1418.25,647.2498 L1532.25,647.2498"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <RSIBorder x:Name="Line10"
+               Canvas.Left="1418.25"
+               Canvas.Top="677.2498"
+               Width="107"
+               Height="1.5">
+            <RSIPath Data="M1418.25,677.2498 L1525.25,677.2498"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:IndicatorAnalogMedium_LED_New x:Name="IndicatorAnalogMedium_LED_New53456"
+                                       Canvas.Left="1198"
+                                       Canvas.Top="692.9998"
+                                       Width="286"
+                                       Height="30" ZDescription01="MANUAL DEMAND" ZUNIT="%" ModelName="r006B_SRG_DMD2" ZBOX="f006B_MAN_OVRD2" />
+        <hmi:IndicatorAnalogMedium_LED_New x:Name="IndicatorAnalogMedium_LED_New63456"
+                                       Canvas.Left="1198"
+                                       Canvas.Top="662.9998"
+                                       Width="286"
+                                       Height="30" ZDescription01="SURGE OVERRIDE" ZUNIT="%" ModelName="r006B_SRG_OVRD2" ZBOX="f006B_SRG_OVRD2" />
+        <hmi:IndicatorAnalogMedium_LED_New x:Name="IndicatorAnalogMedium_LED_New78879"
+                                       Canvas.Left="1198"
+                                       Canvas.Top="632.9998"
+                                       Width="286"
+                                       Height="30" ZDescription01="SURGE PID" ZUNIT="%" ModelName="r006B_SRG_CON2" ZBOX="f006B_SRG_PID2" />
+        <hmi:HighSelector_a x:Name="HighSelector_a2"
+                        Canvas.Left="1503"
+                        Canvas.Top="600.0001"
+                        Width="48"
+                        Height="154.9999" />
+        <hmi:TOP_BANNER_M39_K_0007B x:Name="TOP_BANNER_M39_K_0007B1"
+                                Width="1880"
+                                Height="158.0625" />
+        <hmi:LOWER_DATA_BAR_M39_K_0007B x:Name="LOWER_DATA_BAR_M39_K_0007B1"
+                                    Canvas.Left="5.750244"
+                                    Canvas.Top="821.0001"
+                                    Width="1894.5"
+                                    Height="138.9375" />
+        <RSIText x:Name="rSIText_Copy14" Canvas.Left="720.6" TextWrapping="Wrap" Text="FIC_0043" Canvas.Top="773" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="88.4" Height="38" Opacity="0.01">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Open Title="FIC-0043" WindowName="FIC_0043" TagName="M39_006FIC0043"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="rSIText_Copy15" Canvas.Left="1410" TextWrapping="Wrap" Text="FIC_0062" Canvas.Top="780" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="88.4" Height="37" Opacity="0.0001">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Open Title="FIC-0062" WindowName="FIC_0062" TagName="M39_006FIC0062"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+</UserControl>

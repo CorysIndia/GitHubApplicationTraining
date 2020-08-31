@@ -1,0 +1,41 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_ACL_READ_01}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_ACL_READ_01}">
+          <RSICanvas Width="0.75"
+                     Height="0.75"
+                     TextElement.FontFamily="Arial"
+                     TextElement.FontSize="12">
+            <RSIBorder x:Name="ACL_READ"
+                       Canvas.Left="-0.75"
+                       Canvas.Top="-0.75"
+                       Width="1.5"
+                       Height="1.5">
+              <RSIPath Data="M-0.75,-0.75 L-0.75,-0.75"
+                       Stretch="Fill"
+                       Stroke="#FF000000"
+                       StrokeThickness="1">
+                <RSIPath.Animations>
+                  <Animation Condition="InTouch__Operator__lt;_gt;_==true">
+                    <SetVisible />
+                  </Animation>
+                  <Animation Condition="InTouch__Operator__lt;_gt;_==false">
+                    <Invisible />
+                  </Animation>
+                </RSIPath.Animations>
+              </RSIPath>
+            </RSIBorder>
+          </RSICanvas>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

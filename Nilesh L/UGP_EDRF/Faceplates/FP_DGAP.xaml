@@ -1,0 +1,572 @@
+<RSIFacePlate x:Class="UGP_EDRF.HMI.FP_DGAP"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+    <RSICanvas Width="520.8333"
+             Height="451"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+        <hmi:SYM_FP_BACKGROUND_01 x:Name="FP_Background1"
+                              Width="520.8333"
+                              Height="451"
+                              TYPE="STANDARD" />
+        <hmi:SYM_FP_CLOSE_01 x:Name="Button_Close"
+                         Canvas.Left="92.99998474121"
+                         Canvas.Top="340.00016948242"
+                         Width="60.17435"
+                         Height="51.578" />
+        <RSICanvas Name="Detail"
+               Width="85.72155"
+               Height="70.38922"
+               Left="29.99998474121"
+               Top="139.99996948242">
+            <RSIButton x:Name="Button_1"
+                 Canvas.Left="0.278479999999998"
+                 Width="85.44307"
+                 Height="70.16193"
+                 Background="#FF717171">
+                <RSIButton.Animations>
+                    <Animation />
+                    <!--  InTouch:ZHMI_COMMAND = "stddisp "+PvCB_1;  -->
+                </RSIButton.Animations>
+            </RSIButton>
+            <RSIRectangle x:Name="Element35"
+                    Canvas.Top="0.227200000000011"
+                    Width="85.44305"
+                    Height="70.16199"
+                    Fill="#FF717171"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1" />
+            <RSIText x:Name="Element36"
+               Canvas.Left="9.03415"
+               Canvas.Top="22.7774"
+               Width="68.46588"
+               Height="23.38728"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="DETAIL"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="12" />
+        </RSICanvas>
+        <RSIText x:Name="DGAP"
+             Canvas.Left="103.46878474121"
+             Canvas.Top="89.87496948242"
+             Width="38.40625"
+             Height="18.125"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Foreground="#FFFFFFFF"
+             IsHitTestVisible="False"
+             Text="DGAP"
+             TextElement.FontFamily="Courier New"
+             TextElement.FontSize="12"
+             TextElement.FontWeight="Bold" />
+        <RSICanvas Name="Faceplate_Body"
+               Width="247"
+               Height="343.75"
+               Left="250.21898474121"
+               Top="25.43697948242">
+            <RSIRectangle x:Name="Element3"
+                    Canvas.Top="126.73699"
+                    Width="247"
+                    Height="217.013"
+                    Fill="#FFBCBCBC"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1" />
+            <RSIRectangle x:Name="Element4"
+                    Width="247"
+                    Height="343.75"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1" />
+            <RSIText x:Name="Element6"
+               Canvas.Left="177.109"
+               Canvas.Top="190.42599"
+               Width="34.672"
+               Height="20"
+               VerticalContentAlignment="Center"
+               Background="#FFBCBCBC"
+               BorderBrush="Transparent"
+               Foreground="#FF000099"
+               IsHitTestVisible="False"
+               Text="M"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="11"
+               TextElement.FontWeight="Bold" />
+            <RSIRectangle x:Name="Element34"
+                    Canvas.Top="126.73699"
+                    Width="139.781"
+                    Height="217.013"
+                    Stroke="#FFFFFFFF"
+                    StrokeThickness="1" />
+            <RSICanvas Name="Label_LLALIM"
+                 Width="66.03906"
+                 Height="17.98242"
+                 Left="134.0374"
+                 Top="305.4134">
+                <RSICanvas Name="LL"
+                   Width="66.03906"
+                   Height="17.98242"
+                   Left="134.0374"
+                   Top="305.4134"/>
+            </RSICanvas>
+            <RSICanvas Name="Label_LAL"
+                 Width="65.9209"
+                 Height="17.98242"
+                 Left="132.9988"
+                 Top="276.7825">
+                <RSICanvas Name="LO_LAL"
+                   Width="65.9209"
+                   Height="17.98242"
+                   Left="132.9988"
+                   Top="276.7825"/>
+            </RSICanvas>
+            <RSICanvas Name="Label_HAL"
+                 Width="66.5791"
+                 Height="17.98242"
+                 Left="135.0598"
+                 Top="221.1516">
+                <RSICanvas Name="HI_HAL"
+                   Width="66.5791"
+                   Height="17.98242"
+                   Left="135.0598"
+                   Top="221.1516"/>
+            </RSICanvas>
+            <RSICanvas Name="Label_HHALIM"
+                 Width="67.35547"
+                 Height="17.98242"
+                 Left="130.6204"
+                 Top="192.5208">
+                <RSICanvas Name="HH"
+                   Width="67.35547"
+                   Height="17.98242"
+                   Left="130.6204"
+                   Top="192.5208"/>
+            </RSICanvas>
+            <RSIBorder x:Name="Line1"
+                 Canvas.Left="160.831"
+                 Canvas.Top="127.81299"
+                 Width="1.5"
+                 Height="214.6">
+                <RSIPath Data="M161.031,127.81299 L160.831,342.41299"
+                 Stretch="Fill"
+                 Stroke="#FFFFFFFF"
+                 StrokeThickness="1" />
+            </RSIBorder>
+            <RSICanvas Name="Header"
+                 Width="247"
+                 Height="126.737"
+                 Left="0"
+                 Top="0">
+                <RSIRectangle x:Name="Element24"
+                      Width="247"
+                      Height="126.737"
+                      Fill="#FF717171"
+                      Stroke="#FFFFFFFF"
+                      StrokeThickness="1" />
+                <RSIRectangle x:Name="Element25"
+                      Canvas.Left="163.476"
+                      Canvas.Top="61.198"
+                      Width="78"
+                      Height="28.022"
+                      Fill="#FF717171"
+                      Stroke="#FF717171"
+                      StrokeThickness="1">
+                    <RSIRectangle.Animations>
+                        <Animation Condition="true, Converter={IsEqualTo ControlHMI_Compare_BitPattern_ALMSTA_00000000_400000E0_ALL_}">
+                            <ChangeColor Color="#FF717171" />
+                        </Animation>
+                        <Animation Condition="true, Converter={IsEqualTo ControlHMI_Compare_BitPattern_ALMSTA_00000000_40000000_ALL_}">
+                            <ChangeColor Color="#FFBCBCBC" />
+                        </Animation>
+                        <Animation Condition="true, Converter={IsEqualTo ControlHMI_Compare_BitPattern_ALMSTA_00000020_000000E0_ALL_}">
+                            <ChangeColor Color="#FFC10000" />
+                        </Animation>
+                        <Animation Condition="true, Converter={IsEqualTo ControlHMI_Compare_BitPattern_ALMSTA_00000040_000000E0_ALL_}">
+                            <ChangeColor Color="#FFB400A7" />
+                        </Animation>
+                        <Animation Condition="true, Converter={IsEqualTo ControlHMI_Compare_BitPattern_ALMSTA_00000060_000000E0_ALL_}">
+                            <ChangeColor Color="#FF9D5400" />
+                        </Animation>
+                        <Animation Condition="true, Converter={IsEqualTo ControlHMI_Compare_BitPattern_ALMSTA_00000080_000000E0_ALL_}">
+                            <ChangeColor Color="#FF009F9D" />
+                        </Animation>
+                        <Animation Condition="true, Converter={IsEqualTo ControlHMI_Compare_BitPattern_ALMSTA_000000A0_000000E0_ALL_}">
+                            <ChangeColor Color="#FFBCBCBC" />
+                        </Animation>
+                        <Animation Condition="true, Converter={IsEqualTo ControlHMI_Compare_BitPattern_ALMSTA_00000000_000000E0_ALL_}">
+                            <ChangeColor Color="#FF717171" />
+                        </Animation>
+                        <Animation Condition="true, Converter={IsEqualTo true}">
+                            <ChangeColor Color="#FF717171" />
+                        </Animation>
+                    </RSIRectangle.Animations>
+                </RSIRectangle>
+            </RSICanvas>
+        </RSICanvas>
+        <hmi:SYM_FP_FLAG_01 x:Name="Flag_AlarmLimits"
+                        Canvas.Left="350.206"
+                        Canvas.Top="327.893"
+                        Width="26.007"
+                        Height="12" />
+        <RSICanvas Name="FP_Value_OUT"
+               Width="83"
+               Height="69.16214"
+               Left="413.00018474121"
+               Top="295.99996948242">
+            <RSIText x:Name="Element5"
+               Canvas.Left="12.0021"
+               Width="35.82574"
+               Height="20"
+               VerticalContentAlignment="Center"
+               Background="#FFBCBCBC"
+               BorderBrush="Transparent"
+               Foreground="#FFFFFFFF"
+               IsHitTestVisible="False"
+               Text="O"
+               TextElement.FontFamily="Arial"
+               TextElement.FontSize="11"
+               TextElement.FontWeight="Bold" />
+        </RSICanvas>
+        <RSIText
+        x:Name="DESCRIPTION1"
+        Canvas.Left="252.714"
+        Canvas.Top="29.227"
+        Width="234.725"
+        VerticalContentAlignment="Center"
+        BorderBrush="Transparent"
+        Foreground="#FFFFFFFF"
+        IsHitTestVisible="False"
+        Text="\$TAGNAME.DESCRP\"
+        TextElement.FontSize="12"
+        TextWrapping="Wrap" />
+        <RSIText
+        x:Name="DESCRIPTION1_Copy"
+        Canvas.Left="252.714"
+        Canvas.Top="53.727"
+        Width="234.725"
+        VerticalContentAlignment="Center"
+        BorderBrush="Transparent"
+        Foreground="#FFFFFFFF"
+        IsHitTestVisible="False"
+        Text="\$TAGNAME.TagComment1\"
+        TextElement.FontSize="12"
+        TextWrapping="Wrap" />
+        <RSIText
+        x:Name="DESCRIPTION1_Copy1"
+        Canvas.Left="252.714"
+        Canvas.Top="78.227"
+        Width="234.725"
+        VerticalContentAlignment="Center"
+        BorderBrush="Transparent"
+        Foreground="#FFFFFFFF"
+        IsHitTestVisible="False"
+        Text="\$TAGNAME.TagComment2\"
+        TextElement.FontSize="12"
+        TextWrapping="Wrap" />
+        <RSIText
+        x:Name="DESCRIPTION1_Copy2"
+        Canvas.Left="252.22"
+        Canvas.Top="126.601"
+        Width="198.781"
+        VerticalContentAlignment="Center"
+        BorderBrush="Transparent"
+        Foreground="#FFFFFFFF"
+        IsHitTestVisible="False"
+        Text="$TAGNAME"
+        TextElement.FontSize="12"
+        TextWrapping="Wrap" />
+        <RSIText
+            x:Name="LLAlarmLabel"
+            Canvas.Left="336.699"
+            Canvas.Top="295.001"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="LL"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <RSIText
+            x:Name="LAlarmLabel"
+            Canvas.Left="334.038"
+            Canvas.Top="281.201"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="LO"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <RSIText
+            x:Name="HAlarmLabel"
+            Canvas.Left="338.045"
+            Canvas.Top="209.485"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="HI"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <RSIText
+            x:Name="HHAlarmLabel"
+            Canvas.Left="332.712"
+            Canvas.Top="195.685"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="HH"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <RSIText
+            x:Name="HHAlarmLabel_Copy5"
+            Canvas.Left="273.333"
+            Canvas.Top="195.685"
+            Width="55"
+            HorizontalContentAlignment="Right"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="\$TAGNAME.HHALIM:#.##\"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <RSIText
+            x:Name="HHAlarmLabel_Copy6"
+            Canvas.Left="290.213"
+            Canvas.Top="171.219"
+            Width="54.833"
+            HorizontalContentAlignment="Right"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="\$TAGNAME.HSCI1:#.##\"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <RSIText
+            x:Name="HHAlarmLabel_Copy7"
+            Canvas.Left="290.213"
+            Canvas.Top="322.582"
+            Width="54.833"
+            HorizontalContentAlignment="Right"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="\$TAGNAME.LSCI1:#.##\"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <RSIText
+            x:Name="HHAlarmLabel_Copy8"
+            Canvas.Left="273.333"
+            Canvas.Top="209.485"
+            Width="55"
+            HorizontalContentAlignment="Right"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="\$TAGNAME.MEASHL:#.##\"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <RSIText
+            x:Name="HHAlarmLabel_Copy9"
+            Canvas.Left="273.333"
+            Canvas.Top="281.201"
+            Width="55"
+            HorizontalContentAlignment="Right"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="\$TAGNAME.MEASLL:#.##\"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <RSIText
+            x:Name="HHAlarmLabel_Copy10"
+            Canvas.Left="273.333"
+            Canvas.Top="295.001"
+            Width="55"
+            HorizontalContentAlignment="Right"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="\$TAGNAME.LLALIM:#.##\"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <Border
+            x:Name="Gauge_Area"
+            Canvas.Left="356.207"
+            Canvas.Top="161.773"
+            Width="15"
+            Height="171.5"
+            BorderBrush="gray"
+            BorderThickness="1">
+            <RSIRectangle
+                x:Name="Gauge_Copy"
+                Width="13"
+                Height="171.5"
+                VerticalAlignment="Bottom"
+                Fill="#000080">
+                <RSIRectangle.Animations>
+                    <Animation>
+                        <Resize
+                            Expression="$TAGNAME.MEAS"
+                            FinalValue="$TAGNAME.HSCI1"
+                            GrowthDirection="Up"
+                            InitialValue="$TAGNAME.LSCI1" />
+                    </Animation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+        </Border>
+        <RSIText
+            x:Name="HHAlarmLabel_Copy1"
+            Canvas.Left="423.5"
+            Canvas.Top="250.151"
+            Width="72.5"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="\$TAGNAME.MEAS:#.##\"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <RSIText
+            x:Name="HHAlarmLabel_Copy2"
+            Canvas.Left="453.167"
+            Canvas.Top="231.351"
+            Width="42.833"
+            HorizontalContentAlignment="Right"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="\$TAGNAME.EI1\"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <RSIText
+            x:Name="HHAlarmLabel_Copy4"
+            Canvas.Left="448.886"
+            Canvas.Top="315.479"
+            Width="42.833"
+            HorizontalContentAlignment="Right"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="\$TAGNAME.EO1\"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" />
+        <RSIText x:Name="rSIText_Copy" Height="15.822" Canvas.Left="420.144" Text="\$TAGNAME.OUT:#.##\" Canvas.Top="335.845" Width="75.333" VerticalContentAlignment="Center" Maximum="$TAGNAME.HSCO1" Minimum="$TAGNAME.LSCO1">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.MA == 0">
+                    <ChangePropertyValue PropertyName="IsInput" Value="True"/>
+                </Animation>
+                <Animation Condition="$TAGNAME.MA == 1">
+                    <ChangePropertyValue PropertyName="IsInput" Value="False"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIButton
+            x:Name="Element36_Copy1"
+            Canvas.Left="130"
+            Canvas.Top="139.323"
+            Width="85.443"
+            Height="70.162"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Background="#FF717171"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            Content="ACK"
+            Foreground="#FFFFFFFF"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <AckUnitAlarms TagName="$TAGNAME" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            x:Name="Element36_Copy"
+            Canvas.Left="130"
+            Canvas.Top="230.227"
+            Width="85.443"
+            Height="70.162"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Background="#FF717171"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            Content="TREND"
+            Foreground="#FFFFFFFF"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Open TagName="$TAGNAME" WindowName="FoxboroPIDTrendFaceplate" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+            x:Name="Element36_Copy2"
+            Canvas.Left="30.279"
+            Canvas.Top="230.227"
+            Width="85.443"
+            Height="70.162"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Background="#FF717171"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            Content="A/M"
+            Foreground="#FFFFFFFF"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <FlipFlop
+                        Expression1="0"
+                        Expression2="1"
+                        Maximum="1"
+                        Minimum="0"
+                        Variable="$TAGNAME.MA" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIText
+            x:Name="Element16"
+            Canvas.Left="393.493"
+            Canvas.Top="160.292"
+            Width="14.466"
+            Height="20"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Background="#FFBCBCBC"
+            BorderBrush="Transparent"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="X"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.MA = 0">
+                    <ChangeText Text="M" />
+                </Animation>
+                <Animation Condition="$TAGNAME.MA = 1">
+                    <ChangeText Text="A" />
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText
+            x:Name="Element17"
+            Canvas.Left="393.493"
+            Canvas.Top="193.278"
+            Width="14.466"
+            Height="20"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Background="#FFBCBCBC"
+            BorderBrush="Transparent"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="X"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.LR = 0">
+                    <ChangeText Text="L" />
+                </Animation>
+                <Animation Condition="$TAGNAME.LR = 1">
+                    <ChangeText Text="R" />
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+</RSIFacePlate>

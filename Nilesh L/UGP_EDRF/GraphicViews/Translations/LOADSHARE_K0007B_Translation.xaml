@@ -1,0 +1,107 @@
+<UserControl x:Class="UGP_EDRF.LOADSHARE_K0007B_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+    <RSICanvas Width="606.00012"
+             Height="105.00002"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+        <RSIBorder x:Name="Line1"
+               Canvas.Left="62.25"
+               Canvas.Top="24.25001"
+               Width="77"
+               Height="1.5">
+            <RSIPath Data="M62.25,24.25001 L139.25,24.25001"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeDashArray="1"
+               StrokeThickness="1" />
+        </RSIBorder>
+        <hmi:LowerBannerArrow x:Name="LowerBannerArrow1"
+                          Canvas.Left="263.0002"
+                          Canvas.Top="24.50001"
+                          Width="134" />
+        <hmi:LowerBannerArrow x:Name="LowerBannerArrow2"
+                          Canvas.Left="328.0001"
+                          Canvas.Top="88.50001"
+                          Width="71.00002" />
+        <hmi:LowerBannerArrow x:Name="LowerBannerArrow3"
+                          Canvas.Left="422.0002"
+                          Canvas.Top="54.50001"
+                          Width="55.00001" />
+        <hmi:LowerBannerArrow x:Name="LowerBannerArrow4"
+                          Canvas.Left="160"
+                          Canvas.Top="24.50001"
+                          Width="93" />
+        <hmi:HighSelector_a x:Name="HighSelector_a1"
+                        Canvas.Left="429.000096"
+                        Canvas.Top="104.000021"
+                        Width="30"
+                        Height="104.9999"
+                        RenderTransformOrigin="0,0">
+            <hmi:HighSelector_a.RenderTransform>
+                <RotateTransform Angle="180" />
+            </hmi:HighSelector_a.RenderTransform>
+        </hmi:HighSelector_a>
+        <hmi:ConQl_03 x:Name="ConQl_031"
+                  Canvas.Left="252.5988"
+                  Canvas.Top="68.00001"
+                  Width="88.47675"
+                  Height="37.00001"
+                  NameStore="IIC_1078" />
+        <hmi:Type1_AO_Display_9Letter x:Name="Type1_AO_Display_9Letter1"
+                                  Canvas.Left="515.0001"
+                                  Canvas.Top="15.00004"
+                                  Width="91.00002"
+                                  Height="38" />
+        <hmi:aIndTranIn_01_M x:Name="aIndTranIn_01_M1"
+                         Width="92.00001"
+                         Height="52.00003"
+                         GraphicTagName="FI-0001"
+                         TAG="FI-0001"
+                         UNIT="MMSCFD" />
+        <hmi:ConQl_03 x:Name="ConQl_032"
+                  Canvas.Left="120"
+                  Canvas.Top="7.00001"
+                  Width="88.47675"
+                  Height="37.00001"
+                  NameStore="FIC_0001" />
+        <hmi:ConQl_03 x:Name="ConQl_033"
+                  Canvas.Left="252.5988"
+                  Canvas.Top="6.00001"
+                  Width="88.47675"
+                  Height="37.00001"
+                  NameStore="LOADSHARE_K0007ABCD" />
+        <hmi:LowerBannerArrow x:Name="LowerBannerArrow5"
+                          Canvas.Left="475.9999"
+                          Canvas.Top="33.50001"
+                          Width="39" />
+        <hmi:LowerBannerArrow x:Name="LowerBannerArrow6"
+                          Canvas.Left="478.0002"
+                          Canvas.Top="76.50001"
+                          Width="35.00001" />
+        <RSIBorder x:Name="Line2"
+               Canvas.Left="476.25"
+               Canvas.Top="33.25001"
+               Width="1.5"
+               Height="43">
+            <RSIPath Data="M476.25,76.25001 L476.25,33.25001"
+               Stretch="Fill"
+               Stroke="#FF000000"
+               StrokeThickness="2" />
+        </RSIBorder>
+        <hmi:Type1_AO_Display_9Letter x:Name="Type1_AO_Display_9Letter2"
+                                  Canvas.Left="515.0001"
+                                  Canvas.Top="58.00003"
+                                  Width="91.00002"
+                                  Height="38" />
+        <RSIText x:Name="rSIText_Copy25" Canvas.Left="252.598" TextWrapping="Wrap" Text="IIC_1078" Canvas.Top="62.237" FontSize="18.667" FontWeight="Bold" Cursor="Hand" Background="Lime" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="42.763" Width="88.478" Opacity="0.01">
+            <RSIText.Animations>
+                <ClickAnimation>
+                    <Open Title="IIC-1078" WindowName="IIC_1078" TagName="M39_006IIC1078"/>
+                </ClickAnimation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+</UserControl>

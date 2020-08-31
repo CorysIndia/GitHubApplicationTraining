@@ -1,0 +1,45 @@
+﻿<RSISynoptic
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:HMI="clr-namespace:UGP_EDRF.HMI" xmlns:FoxBoro="clr-namespace:RSI.Emulation.Controls.Control.FoxBoro;assembly=RSI.Emulation.Controls" x:Class="UGP_EDRF.TESTPAGE"
+          Background="LightGray"
+          Height="1048"
+          Width="1920"
+          mc:Ignorable="d">
+    <Grid>
+        <!--  GRAPHIC Part  -->
+        <Canvas x:Name="GRAPHIC">
+            <TextBlock HorizontalAlignment="Center"
+					   VerticalAlignment="Center"
+					   FontSize="72"
+					   Text="TESTPAGE" />
+
+            <HMI:dIndDesLab_01_8Prop_L Canvas.Left="800" Canvas.Top="196" TagName="PAL3151"/>
+            <HMI:Type1_AlarmIndicator_Big_Red Canvas.Left="800" Canvas.Top="296" GraphicTagName="B003ZHA0300D"/>
+            <HMI:dIndDesLab_01_8Prop1_L Canvas.Left="904.4" Canvas.Top="62.8" TagName="PAL3151"/>
+            <HMI:dIndDesLab_01_5Prop_L Canvas.Left="904.4" Canvas.Top="128.4" TagName="B006KM0496G"/>
+            <HMI:IndicatorAnalogMedium_New Canvas.Left="1218.4" Canvas.Top="373.6" GraphicTagName="r005A_MARGIN"/>
+            <HMI:aIndTranIn_01_M Canvas.Left="1485.6" Canvas.Top="189.6" ModelName="M39_003PI0190"  TAG="PI-0195"/>
+            <HMI:ButtonIndicative_Conf_N1 Canvas.Left="1357.6" Canvas.Top="91.8" GraphicTagName="B003HS0365"  fTagName="B003HS0365 " Overlay="Confirm" ConfirmationMessage="Launch Missle" />
+            <HMI:Type1_StatusIndicator_Small Canvas.Left="649" Canvas.Top="123.4" ModelName="PAL3151"/>
+            <HMI:IndicatorAnalogV_Small_New Canvas.Left="675.2" Canvas.Top="464.4" GraphicTagName="r005A_MARGIN"/>
+            <HMI:aIndDesLab_01_M Canvas.Left="233.6" Canvas.Top="313.783" GraphicTagName="r005A_MARGIN"/>
+            <HMI:dIndDesLab_01_M Canvas.Left="233.6" Canvas.Top="313.783" GraphicTagName="PAL3151"/>
+            <FoxBoro:FoxboroPID Canvas.Left="904.4" Canvas.Top="588" ModelName="M39_006PIC0125A" StandardFaceplateName="SY_3600"/>
+        </Canvas>
+        <!--  FOD Part  -->
+        <Canvas x:Name="FOD"
+                Visibility="{FODBinding}" d:IsLocked="True"/>
+
+        <!--  Battery Limit Part  -->
+        <Canvas x:Name="BL"
+                Visibility="{BLBinding}" d:IsLocked="True"/>
+
+        <!--  FAILURE Part  -->
+        <Canvas x:Name="FAILURE"
+                Visibility="{FAILUREBinding}" d:IsLocked="True"/>
+
+    </Grid>
+</RSISynoptic>

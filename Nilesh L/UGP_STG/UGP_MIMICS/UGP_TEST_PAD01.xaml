@@ -1,0 +1,661 @@
+﻿<RSISynoptic
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:HMI="clr-namespace:UGP_STG.HMI" x:Class="UGP_STG.UGP_MIMICS.UGP_TEST_PAD01"
+          Background="Gray"
+          Height="1048"
+          Width="1920"
+          mc:Ignorable="d">
+    <Grid>
+        <!--  GRAPHIC Part  -->
+        <Canvas x:Name="GRAPHIC">
+            <TextBlock
+                FontSize="24"
+                Text="SYM_ZV" FontWeight="Bold" Canvas.Left="109.5" Canvas.Top="28.5" />
+
+            <TextBlock
+                FontSize="24"
+                Text="SYM_PUMP_01" FontWeight="Bold" Canvas.Left="109.5" Canvas.Top="161.82" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_PUMP_02" FontWeight="Bold" Canvas.Left="309.48" Canvas.Top="161.82" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_INDVLV_01" FontWeight="Bold" Canvas.Left="109.5" Canvas.Top="321.82" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_CTRVLV_01" FontWeight="Bold" Canvas.Left="109.5" Canvas.Top="451.82" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_CTRVLV_02" FontWeight="Bold" Canvas.Left="329.478" Canvas.Top="451.82" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_CTRVLV_03" FontWeight="Bold" Canvas.Left="569.478" Canvas.Top="451.82" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_CTRVLV_04" FontWeight="Bold" Canvas.Left="834.978" Canvas.Top="451.82" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_MOV" FontWeight="Bold" Canvas.Left="109.5" Canvas.Top="605.152" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_XV" FontWeight="Bold" Canvas.Left="299.5" Canvas.Top="605.152" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_PV" FontWeight="Bold" Canvas.Left="509.5" Canvas.Top="605.152" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_KV" FontWeight="Bold" Canvas.Left="712.822" Canvas.Top="605.152" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_ONOFFVLV" FontWeight="Bold" Canvas.Left="922.822" Canvas.Top="605.152" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_SOV" FontWeight="Bold" Canvas.Left="90.822" Canvas.Top="747.152" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_STVLV_01" FontWeight="Bold" Canvas.Left="344.478" Canvas.Top="747.152" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_MTR_DT01AB" FontWeight="Bold" Canvas.Left="762.978" Canvas.Top="54.32" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_MTR_DT9B" FontWeight="Bold" Canvas.Left="1032.978" Canvas.Top="54.32" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_LEVELBAR_01" FontWeight="Bold" Canvas.Left="1226.978" Canvas.Top="54.32" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_IND_01" FontWeight="Bold" Canvas.Left="1176.978" Canvas.Top="294.32" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_IND_02" FontWeight="Bold" Canvas.Left="1376.978" Canvas.Top="294.32" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_IND_WR" FontWeight="Bold" Canvas.Left="1586.978" Canvas.Top="294.32" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_ACCUM_01" FontWeight="Bold" Canvas.Left="1186.978" Canvas.Top="474.32" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_PID_01" FontWeight="Bold" Canvas.Left="1441.978" Canvas.Top="474.32" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_BYPASS_03" FontWeight="Bold" Canvas.Left="1186.978" Canvas.Top="609.32" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_ALMIND_01" FontWeight="Bold" Canvas.Left="1512.978" Canvas.Top="54.32" />
+            <TextBlock
+                FontSize="24"
+                Text="SYM_ALMIND_02" FontWeight="Bold" Canvas.Left="1482.978" Canvas.Top="124.32" />
+            <HMI:SYM_ZV x:Name="EmbeddedSymbol64"
+                Canvas.Left="109.5"
+                Canvas.Top="72.083"
+                Width="87"
+                Height="70"
+                CMP="01_ESD_ZV"
+                FAIL="CLOSE"
+                GraphicTagName="ZV154"
+                LOC="11"
+                LOOP_ID="M39-001-Z-0154"
+                Orientation="HORZ"
+                PRT="1"
+                PRT2="1"
+                TAGNAME="ZV154"
+                VLV_ID="0154" />
+            <HMI:SYM_PUMP_01 x:Name="SYM_PUMP_011"
+                Canvas.Left="137.627"
+                Canvas.Top="211.623"
+                Width="90"
+                Height="84.697"
+                BLK="03GM0937"
+                CMP="3G0013A_CF03"
+                DUTY="false"
+                Label="Down"
+                LOC="4"
+                LOOP_ID="M39-003-G-0937"
+                MA="true"
+                Orientation="Right"
+                PRT="3"
+                RESET="false"
+                TAGNAME="G-0013A"
+                TRIP="true" />
+            <HMI:SYM_PUMP_02 x:Name="SYM_EDR_MTR_DT091"
+                Canvas.Left="353"
+                Canvas.Top="211.623"
+                Width="75"
+                Height="81.375"
+                BLK="07GM0884"
+                CMP="7G0002A_CF05"
+                GraphicTagName="G-0002A"
+                Label="Down"
+                LOC="11"
+                LOOP_ID="M39-007-G-0884"
+                Orientation="Right"
+                PRT="7"
+                TAGNAME="G-0002A" />
+            <HMI:SYM_CTRVLV_01 x:Name="EmbeddedSymbol13"
+                Canvas.Left="138.627"
+                Canvas.Top="492.083"
+                Width="89"
+                Height="79"
+                BLK="01PCV0196B"
+                CMP="1CMP_P_CF01"
+                FAIL="FC"
+                GraphicTagName="PCV196B"
+                HORZ_OUTVALUE="true"
+                LOC="9"
+                LOOP_ID="M39-001-P-0196"
+                PRT="1"
+                SPARE_VLV="false"
+                TAG_VERT="RIGHT"
+                TAGNAME="PCV196B"
+                VERT_L_OUTVALUE="false"
+                VERT_R_OUTVALUE="false"
+                VLV_POS="HORZ" />
+            <HMI:SYM_IND_01 x:Name="EmbeddedSymbol1"
+                Canvas.Left="1146.093"
+                Canvas.Top="353.06"
+                Width="173.665"
+                Height="45.2"
+                BLK="01TI0151"
+                CIN="false"
+                CMP="1CMP_T_CF01"
+                EU="TRUE"
+                GraphicTagName="01TI0151"
+                LOC="9"
+                LOOP_ID="M39-001-T-0151"
+                TAGNAME="TI151"
+                Type="RIN" />
+            <HMI:SYM_ALMIND_01 x:Name="EmbeddedSymbol41"
+                Canvas.Left="1733.575"
+                Canvas.Top="63.243"
+                Width="85"
+                Height="23"
+                BLK="01PXA0151"
+                CMP="1CMP_P_CF01"
+                GraphicTagName="PXA"
+                LOC="9"
+                LOOP_ID="M39-001-P-0151"
+                PRT="1"
+                TAG="false"
+                TAGNAME="PXA" />
+            <HMI:SYM_MOV x:Name="EmbeddedSymbol9"
+                Canvas.Left="117.5"
+                Canvas.Top="648.152"
+                Width="92"
+                Height="72"
+                CMP="1CMP_M_CF01"
+                FAIL="CLOSE"
+                GraphicTagName="MOV005"
+                LOC="4"
+                LOOP_ID="M39-001-M-0005"
+                Orientation="HORZ"
+                PRT="1"
+                TAGNAME="MOV005"
+                VLV_ID="0005" />
+            <HMI:SYM_CTRVLV_02 x:Name="SYM_CTRVLV_021"
+                Canvas.Left="374.143"
+                Canvas.Top="490.083"
+                Width="89"
+                Height="81"
+                BLK="01PCV0166"
+                BLK_LS="01PXA0166"
+                CMP="1CMP_P_CF01"
+                FAIL="FC"
+                GraphicTagName="PCV0166"
+                HORZ_OUTVALUE="true"
+                LOC="2"
+                LOOP_ID="M39-001-P-0166"
+                MISMATCH="false"
+                PRT="1"
+                TAG_VERT="RIGHT"
+                TAGNAME="PCV0166"
+                VERT_L_OUTVALUE="false"
+                VERT_R_OUTVALUE="false"
+                VLV_POS="HORZ" />
+            <HMI:SYM_CTRVLV_03 x:Name="EmbeddedSymbol112"
+                Canvas.Left="634.615"
+                Canvas.Top="499.083"
+                Width="121"
+                Height="72"
+                BLK="03FXI3157"
+                CMP="3CCS_F_CS01"
+                DISP="OVERVIEW_M39_K0001"
+                FAIL="FC"
+                GraphicTagName="FCV3157"
+                HORZ_OUTVALUE="false"
+                LOOP_ID="M39_003_F_3157_CCS"
+                PRT="3"
+                TAG_VERT="RIGHT"
+                TAGNAME="FCV3157"
+                VERT_L_OUTVALUE="false"
+                VERT_R_OUTVALUE="true"
+                VLV_POS="VERT" />
+            <HMI:SYM_CTRVLV_04 x:Name="SYM_CTRVLV_041"
+                Canvas.Left="870.115"
+                Canvas.Top="492.083"
+                Width="89"
+                Height="79"
+                BLK_CMD="05PDCV3041"
+                BLK_FBK="05PDXI3041"
+                CMP="5K0003A_CF04"
+                FAIL="FC"
+                GraphicTagName="PDCV3041"
+                HORZ_OUTVALUE="true"
+                LOC="9"
+                LOOP_ID="M39-005-P-3041"
+                PRT="5"
+                TAG_VERT="RIGHT"
+                TAGNAME="PDCV3041"
+                VERT_L_OUTVALUE="false"
+                VERT_R_OUTVALUE="false"
+                VLV_POS="HORZ" />
+            <HMI:SYM_XV x:Name="SYM_EDR_XV_DT111"
+                Canvas.Left="299.5"
+                Canvas.Top="653.152"
+                Width="84"
+                Height="67"
+                CMP="05_ESD_XV"
+                FAIL="CLOSE"
+                GraphicTagName="XV506"
+                LOC="4"
+                LOOP_ID="M39-005-X-0506"
+                Orientation="HORZ"
+                PRT="5"
+                TAGNAME="XV506"
+                VLV_ID="0506" />
+            <HMI:SYM_PV x:Name="SYM_EDR_PV_DT081"
+                Canvas.Left="514.2"
+                Canvas.Top="650.152"
+                Width="87"
+                Height="70"
+                CMP="03_ESD_PV"
+                FAIL="STEADY"
+                GraphicTagName="PV161"
+                LOC="9"
+                LOOP_ID="M39-003-P-0161"
+                Orientation="HORZ"
+                PRT="3"
+                TAGNAME="PV161"
+                VLV_ID="0161" />
+            <HMI:SYM_KV x:Name="EmbeddedSymbol31"
+                Canvas.Left="718.352"
+                Canvas.Top="648.429"
+                Width="87"
+                Height="67"
+                CMP="3CMP_K_CF03"
+                FAIL="CLOSE"
+                GraphicTagName="KV527"
+                LOC="9"
+                LOOP_ID="M39-003-K-0527"
+                Orientation="HORZ"
+                PRT="3"
+                TAGNAME="KV527"
+                VLV_ID="0527" />
+            <HMI:SYM_ONOFFVLV x:Name="EmbeddedSymbol61"
+                Canvas.Left="973.522"
+                Canvas.Top="653.152"
+                Width="87"
+                Height="67"
+                CMP="3CMP_X_CF03"
+                FAIL="CLOSE"
+                GraphicTagName="XV303"
+                LOC="9"
+                LOOP_ID="M39-003-X-0303"
+                Orientation="HORZ"
+                PRT="3"
+                TAGNAME="XV303"
+                VLV_ID="0303" />
+            <HMI:SYM_SOV x:Name="SYM_EDR_SOV1"
+                Canvas.Left="90.822"
+                Canvas.Top="801.162"
+                Width="117"
+                Height="30"
+                BLK="01AXY0009"
+                CMP="1AH0001_CF01"
+                GraphicTagName="AXS0009"
+                LOC="4"
+                LOOP_ID="M39-001-A-0009"
+                Orientation="VERT"
+                Overlay="true"
+                PRT="1"
+                TAGNAME="AXS0009"
+                VLV_ID="0009" />
+            <RSICanvas x:Name="SYM_STVLV_011"
+                Width="12.416"
+                Height="19.865"
+                Canvas.Left="374.143"
+                Canvas.Top="792.442">
+                <RSIRectangle x:Name="LeftFlange"
+                    Canvas.Left="1.13686837721616E-13"
+                    Canvas.Top="19.8662000000002"
+                    Width="2.246704"
+                    Height="12.41595"
+                    Fill="#FF000000"
+                    RenderTransformOrigin="0,0"
+                    Stroke="#FF000000"
+                    StrokeThickness="0">
+                    <RSIRectangle.RenderTransform>
+                        <RotateTransform Angle="-90" />
+                    </RSIRectangle.RenderTransform>
+                </RSIRectangle>
+                <RSIRectangle x:Name="Rectangle1"
+                    Canvas.Left="1.83150000000012"
+                    Canvas.Top="17.6195000000001"
+                    Width="2.246704"
+                    Height="8.59436"
+                    Fill="#FF000000"
+                    RenderTransformOrigin="0,0"
+                    Stroke="#FF000000"
+                    StrokeThickness="0">
+                    <RSIRectangle.RenderTransform>
+                        <RotateTransform Angle="-90" />
+                    </RSIRectangle.RenderTransform>
+                </RSIRectangle>
+                <RSIRectangle x:Name="Left"
+                    Canvas.Left="1.97230000000002"
+                    Canvas.Top="1.98660000000007"
+                    Width="2.246582"
+                    Height="8.59436"
+                    Fill="#FF000000"
+                    RenderTransformOrigin="0,0"
+                    Stroke="#FF000000"
+                    StrokeThickness="0">
+                    <RSIRectangle.RenderTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="-90" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                    </RSIRectangle.RenderTransform>
+                </RSIRectangle>
+                <RSIRectangle x:Name="RightFlange"
+                    Canvas.Left="1.13686837721616E-13"
+                    Canvas.Top="2.24730000000011"
+                    Width="2.246704"
+                    Height="12.41595"
+                    Fill="#FF000000"
+                    RenderTransformOrigin="0,0"
+                    Stroke="#FF000000"
+                    StrokeThickness="0">
+                    <RSIRectangle.RenderTransform>
+                        <RotateTransform Angle="-90" />
+                    </RSIRectangle.RenderTransform>
+                </RSIRectangle>
+                <RSIRectangle x:Name="Rectangle2"
+                    Canvas.Left="7.35542447775003"
+                    Canvas.Top="5.36774679138"
+                    Width="2.246826"
+                    Height="11.43628"
+                    Fill="#FF000000"
+                    RenderTransformOrigin="0,0"
+                    Stroke="#FF000000"
+                    StrokeThickness="0">
+                    <RSIRectangle.RenderTransform>
+                        <RotateTransform Angle="30" />
+                    </RSIRectangle.RenderTransform>
+                </RSIRectangle>
+                <RSIPath x:Name="Main"
+                    Canvas.Left="7.43898141379998"
+                    Canvas.Top="1.91484901219985"
+                    Width="5.827698"
+                    Height="6.190918"
+                    Data="M0,1 L0.5012779,0 1,0.9994334 z"
+                    Fill="#FF000000"
+                    RenderTransformOrigin="0,0"
+                    Stretch="Fill"
+                    Stroke="#FF000000"
+                    StrokeThickness="0">
+                    <RSIPath.RenderTransform>
+                        <RotateTransform Angle="30" />
+                    </RSIPath.RenderTransform>
+                </RSIPath>
+            </RSICanvas>
+            <HMI:SYM_STVLV_01 x:Name="SYM_STVLV_011_Copy"
+                Canvas.Left="405.282"
+                Canvas.Top="792.442"
+                Width="87"
+                Height="56"
+                FAIL="NONE"
+                GraphicTagName="PDCV3059"
+                HEAD="CONTROL"
+                Orientation="HORZ"
+                TAGNAME="PDCV3059"
+                ThreeWay="false" />
+            <HMI:SYM_STVLV_01 x:Name="SYM_STVLV_011_Copy1"
+                Canvas.Left="495.282"
+                Canvas.Top="792.442"
+                Width="87"
+                Height="56"
+                FAIL="NONE"
+                GraphicTagName="PDCV3059"
+                HEAD="CONTROL"
+                Orientation="HORZ"
+                TAGNAME="PDCV3059"
+                ThreeWay="true" />
+            <HMI:SYM_MTR_DT01AB x:Name="SYM_EDR_MTR_DT01AB1"
+                Canvas.Left="818.333"
+                Canvas.Top="124.32"
+                Width="90"
+                Height="62"
+                BLK="03EM0512"
+                CMP="3E0003_CF03"
+                DUTY="false"
+                GraphicTagName="EM-0003-3"
+                Label="DOWN"
+                LOC="11"
+                LOOP_ID="M39-003-E-0512"
+                Orientation="DOWN"
+                PRT="3"
+                Shape="Motor"
+                TAGNAME="EM-0003-3"
+                Type="A" />
+            <HMI:SYM_MTR_DT09B x:Name="SYM_EDR_MTR_DT09B1"
+                Canvas.Left="1073.333"
+                Canvas.Top="124.32"
+                Width="75"
+                Height="51"
+                BLK="03KM0590"
+                CMP="3K0001_CF03"
+                GraphicTagName="KM-0001"
+                LOC="4"
+                LOOP_ID="M39-003-K-0590"
+                PRT="3"
+                TAGNAME="KM-0001" />
+            <HMI:SYM_INDVLV_01 x:Name="SYM_EDR_INDVLV_011"
+                Canvas.Left="141.627"
+                Canvas.Top="377.555"
+                Width="86"
+                Height="41"
+                BLK="01HXA0872"
+                CMP="1CMP_H_CF01"
+                Energized="CLOSED"
+                FAIL="NONE"
+                GraphicTagName="HOV872"
+                HEAD="NONE"
+                LOC="4"
+                LOOP_ID="M39-001-H-0872"
+                Mismatch="false"
+                Orientation="HORZ"
+                PRT="1"
+                TAGNAME="HOV872" MISMATCH_HORZ_NOHEAD_CB="true" />
+            <HMI:SYM_INDVLV_01 x:Name="EmbeddedSymbol97"
+                Canvas.Left="285.5"
+                Canvas.Top="377.555"
+                Width="98"
+                Height="30"
+                BLK="05HXA0853"
+                CMP="5CMP_H_CF04"
+                Energized="CLOSED"
+                FAIL="NONE"
+                GraphicTagName="HOV853"
+                HEAD="NONE"
+                LOC="11"
+                LOOP_ID="M39-005-H-0853"
+                Mismatch="false"
+                Orientation="VERT"
+                PRT="5"
+                TAGNAME="HOV853" MISMATCH_VERT_NOHEAD_CB="true" />
+            <HMI:SYM_LEVELBAR_01 x:Name="SYM_LEVELBAR_011"
+                Canvas.Left="1330.807"
+                Canvas.Top="91.243"
+                Width="17.188"
+                Height="70.33"
+                BLK="03LI0066"
+                CMP="3D0018_CF03"
+                FillLevelType="Tank"
+                GraphicTagName="LI0066"
+                LOOP_ID="M39-003-L-0066"
+                TAGNAME="LI0066" />
+            <HMI:SYM_ALMIND_02 x:Name="SYM_ALMIND_021"
+                Canvas.Left="1718.093"
+                Canvas.Top="128.586"
+                Width="122"
+                Height="25"
+                BLK="02XA0009C"
+                CMP="2CMP_M_CF02"
+                FP="true"
+                FP_NAME="FP_CIN"
+                GraphicTagName="02XA0009C"
+                LOC="9"
+                LOOP_ID="M39_002_M_0009_10_11_12"
+                PAR="CIN"
+                PRT="1"
+                TAG="false"
+                TAGNAME="02XA0009C" />
+            <HMI:SYM_IND_WR x:Name="SYM_IND_WR1"
+                Canvas.Left="1617.063"
+                Canvas.Top="337.083"
+                Width="90.808"
+                Height="44"
+                BLK="05HIC0022"
+                CMP="5D0011_CF04"
+                GraphicTagName="HIC022"
+                Label="true"
+                LOOP_ID="M39-005-H-0022"
+                PAR="OUT"
+                PRT="5"
+                TAGNAME="HIC022" />
+            <HMI:SYM_IND_02 x:Name="SYM_IND_021"
+                Canvas.Left="1330.807"
+                Canvas.Top="353.06"
+                Width="173.665"
+                Height="45.2"
+                ALARM_HHHH="false"
+                ALMSTAT="false"
+                BAD_CIN="false"
+                BLK="01PY0151"
+                CMP="1CMP_P_CF01"
+                FP="true"
+                FP_NAME="FP_AIN"
+                GraphicTagName="PI0151"
+                LOC="11"
+                LOOP_ID="M39-001-P-0151"
+                PAR="PNT"
+                TAGNAME="PI0151" />
+            <HMI:SYM_ACCUM_01 x:Name="SYM_ACCUM_011"
+                Canvas.Left="1196.995"
+                Canvas.Top="511.243"
+                Width="151"
+                Height="63.378"
+                BLK="11FQI0036"
+                CMP="11CMP_F_CF01"
+                LOC="2"
+                LOOP_ID="M39-011-F-0036"
+                PRT="1"
+                TAGNAME="FQI036" />
+            <HMI:SYM_PID_01 x:Name="SYM_EDR_PID_011"
+                Canvas.Left="1426.541"
+                Canvas.Top="511.243"
+                Width="154"
+                Height="80.6"
+                BLK="11FIC0036"
+                CMP="11CMP_F_CF01"
+                GraphicTagName="FIC0036"
+                LOC="11"
+                LOOP_ID="M39-011-F-0036"
+                PRT="1"
+                TAGNAME="FIC0036" />
+            <HMI:SYM_BYPASS_03 x:Name="E1"
+                Canvas.Left="1215.113"
+                Canvas.Top="653.982"
+                Width="143.518"
+                Height="140.75"
+                background="blue"
+                BLK="01LI0003"
+                CMP="01_ESD_AI"
+                GraphicTagName="01LI0003BY"
+                LOOP_ID="M39_001_L_0003"
+                PRT="1"
+                TAGNAME="01LI0003BY" ModelName="" _BPBLK="" />
+            <RSIText
+                FontSize="24"
+                Text="FP_HS_MA" FontWeight="Bold" Canvas.Left="1441.978" Canvas.Top="820.82" >
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open TagName="M39_007PY0089B" Title="FP_HS_MA" WindowName="FP_HS_MA"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText
+                FontSize="24"
+                Text="FP_HS0125" FontWeight="Bold" Canvas.Left="1441.978" Canvas.Top="880.82" >
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Open TagName="M39_007HS0125" Title="FP_HS0125" WindowName="FP_HS0125"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+        </Canvas>
+
+        <!--  FOD Part  -->
+        <Canvas x:Name="FOD"
+                Visibility="{FODBinding}">
+            <RSI_GateValve Canvas.Left="1504.666" Style="{DynamicResource UGP_GateValve}" Canvas.Top="678" d:LayoutOverrides="Height" ModelName="A_M39BA038462001MV204"/>
+            <RSI_GlobeValve Canvas.Left="1673" Style="{DynamicResource UGP_GlobeValve}" Canvas.Top="678" d:LayoutOverrides="Width, Height" ModelName="A_M39BA038462001MV204"/>
+            <RSI_PressureSafetyValve Canvas.Left="1504.666" Style="{DynamicResource UGP_PressureSafetyValveStyle}" Canvas.Top="745.499" ModelName="M39_007PZV0027"/>
+            <TextBlock
+                FontSize="24"
+                Text="UGP_GateValve" FontWeight="Bold" Canvas.Left="1423.978" Canvas.Top="616.82" />
+            <TextBlock
+                FontSize="24"
+                Text="UGP_GlobeValve" FontWeight="Bold" Canvas.Left="1618.978" Canvas.Top="616.82" />
+            <TextBlock
+                FontSize="24"
+                Text="UGP_PressureSafetyValveStyle" FontWeight="Bold" Canvas.Left="1423.978" Canvas.Top="703.82" />
+        </Canvas>
+
+        <!--  Battery Limit Part  -->
+        <Canvas x:Name="BL"
+                Visibility="{BLBinding}" d:IsLocked="True"/>
+
+        <!--  FAILURE Part  -->
+        <Canvas x:Name="FAILURE"
+                Visibility="{FAILUREBinding}">
+            <RSI_StdFAILUREInvisibleFilter Canvas.Left="1124.333" Canvas.Top="841" ValveActuatorName="M39_001D0002" ModelName="F_M39_001D0002" FODFaceplateName="" MaintenanceFaceplateName="" StandardFaceplateName="" d:LayoutOverrides="Height"/>
+            <TextBlock
+                FontSize="24"
+                Text="Filter Malfunction" FontWeight="Bold" Canvas.Left="1054.978" Canvas.Top="804.076" />
+            <RSI_StdFAILUREExchangerTube Canvas.Left="1124.333" Canvas.Top="896.333" d:LayoutOverrides="Width"/>
+            <TextBlock
+                FontSize="24"
+                Text=" Exhanger Tube Malfunction" FontWeight="Bold" Canvas.Left="1054.978" Canvas.Top="850.738" />
+            <RSI_StdFAILUREInvisibleExchanger Canvas.Left="1124.333" Canvas.Top="943.166" ModelName="M39_003E0001" FODFaceplateName="" FailureFaceplateName=""/>
+            <TextBlock
+                FontSize="24"
+                Text="Heat Exhanger Malfunction" FontWeight="Bold" Canvas.Left="1054.978" Canvas.Top="900.738" />
+            <RSI_StdFAILUREInvisibleAirCooler Canvas.Left="1124.333" Canvas.Top="991.331" ModelName="M39_003E0003" FODFaceplateName="" FailureFaceplateName="" d:LayoutOverrides="Width"/>
+            <TextBlock
+                FontSize="24"
+                Text="Air Cooler Malfunction" FontWeight="Bold" Canvas.Left="1054.978" Canvas.Top="954.395" />
+            <RSI_StdFAILUREInvisibleElectricalHeater Canvas.Left="1124.333" Canvas.Top="1026.665"/>
+            <TextBlock
+                FontSize="24"
+                Text="Electrical Heater Malfunction" FontWeight="Bold" Canvas.Left="1054.978" Canvas.Top="994.055" />
+            <RSI_StdFODInvisibleFilter Canvas.Left="1281.833" Canvas.Top="814.666" ModelName="F_M39_001D0002" ValveActuatorName="M39_001D0002"/>
+        </Canvas>
+
+    </Grid>
+</RSISynoptic>

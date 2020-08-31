@@ -1,0 +1,278 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+
+    <Style TargetType="{x:Type hmi:SYM_ACCUM_01}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:SYM_ACCUM_01}">
+                    <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+                        <RSIGrid Background="Transparent">
+                            <RSIGrid.Parameters>
+                                <Param Name="$LowAlarmColour" Value="Yellow"/>
+                                <Param Name="$HighAlarmColour" Value="Yellow"/>
+                                <Param Name="$LowLowAlarmColour" Value="Red"/>
+                                <Param Name="$HighHighAlarmColour" Value="Red"/>
+                            </RSIGrid.Parameters>
+                            <RSICanvas Width="151.0002"
+                         Height="63.3777"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                                <RSIRectangle x:Name="BACKGROUND"
+                              Canvas.Left="37.0001"
+                              Canvas.Top="25.6667"
+                              Width="84.00009"
+                              Height="37.33331"
+                              Fill="#FFE0E0E0"
+                              Stroke="#FFE0E0E0"
+                              StrokeThickness="1" />
+                                <!--<RSIText x:Name="HOLD"
+                         Canvas.Left="106.0002"
+                         Canvas.Top="46"
+                         Width="14.61035"
+                         Height="16.75781"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#FFE0E0E0"
+                         BorderBrush="#FFE0E0E0"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="#"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                  <RSIText.Animations>
+                    <Animation Condition="(BLKSTA AND 0x0000080) shr 7=true">
+                      <ChangeText Text="H" />
+                    </Animation>
+                    <Animation Condition="(BLKSTA AND 0x0000080) shr 7=false">
+                      <ChangeText Text=" " />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>-->
+                                <RSIText x:Name="MA"
+                         Canvas.Left="105.5726"
+                         Canvas.Top="26"
+                         Width="14.61035"
+                         Height="16"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#FFE0E0E0"
+                         BorderBrush="#FFE0E0E0"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="#"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                                    <RSIText.Animations>
+                                        <!--<Animation Condition="(BLKSTA AND 0x00000800) shr 11=true">-->
+                                        <Animation Condition="$TAGNAME.MA==1">
+                                            <ChangeText Text="A" />
+                                        </Animation>
+                                        <!--<Animation Condition="(BLKSTA AND 0x00000800) shr 11=false">-->
+                                        <Animation Condition="$TAGNAME.MA==0">
+                                            <ChangeText Text="M" />
+                                        </Animation>
+                                    </RSIText.Animations>
+                                </RSIText>
+                                <RSIText x:Name="OUT"
+                         Canvas.Left="37.0002"
+                         Canvas.Top="45"
+                         Width="70"
+                         Height="18"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#FFE0E0E0"
+                         BorderBrush="#FFE0E0E0"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="\$TAGNAME.MEAS:#.##\"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                                    <!--<RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value OUTPUT, Converter={FormatConverter F1}}" />
+                    </Animation>
+                  </RSIText.Animations>-->
+                                </RSIText>
+                                <RSIText x:Name="MEASURMENT"
+                         Canvas.Left="47.4001"
+                         Canvas.Top="26"
+                         Width="50"
+                         Height="18"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Background="#FFE0E0E0"
+                         BorderBrush="#FFE0E0E0"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="\$TAGNAME.PNT:#.##\"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap">
+                                    <!--<RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value MEAS, Converter={FormatConverter F2}}" />
+                    </Animation>
+                  </RSIText.Animations>-->
+                                </RSIText>
+                                <RSIText x:Name="EU"
+                         Canvas.Left="85.0002"
+                         Width="66"
+                         Height="25"
+                         HorizontalContentAlignment="Left"
+                         VerticalContentAlignment="Bottom"
+                         Background="#00EFEFEF"
+                         BorderBrush="#00000000"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="\$TAGNAME.EO1\"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextWrapping="Wrap">
+                                    <!--<RSIText.Animations>
+                                        <Animation>
+                                            <ChangeText Text="EUNIT" />
+                                        </Animation>
+                                        <Animation Condition="InTouch_SGUG_EU==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="InTouch_SGUG_EU==false">
+                                            <Invisible />
+                                        </Animation>
+                                    </RSIText.Animations>-->
+                                </RSIText>
+                                <RSIText x:Name="LABEL"
+                         Width="80"
+                         Height="25"
+                         HorizontalContentAlignment="Right"
+                         VerticalContentAlignment="Bottom"
+                         Background="#00EFEFEF"
+                         BorderBrush="#00000000"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         TextWrapping="Wrap" Text="{TemplateBinding TAGNAME}">
+                                    <!--<RSIText.Animations>
+                                        <Animation>
+                                            <ChangeText Text="StringMid_BLK_3_StringLen_BLK__2_" />
+                                        </Animation>
+                                        <Animation Condition="InTouch_SGUG_LABEL==true">
+                                            <SetVisible />
+                                        </Animation>
+                                        <Animation Condition="InTouch_SGUG_LABEL==false">
+                                            <Invisible />
+                                        </Animation>
+                                    </RSIText.Animations>-->
+                                </RSIText>
+                                <RSIBorder x:Name="ALARMBORDER"
+                                        Canvas.Left="37.0001"
+                                        Canvas.Top="25.6667"
+                                        Width="84.0001"
+                                        Height="37.33331"
+                                        Visibility="Hidden" BorderBrush="Black" BorderThickness="1" >
+                                    <RSIBorder.Animations>
+                                        <!--LOW ALARM-->
+                                        <Animation Condition="$TAGNAME.LAIAlarms.Alarms[LAI].Status == 3">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$LowAlarmColour"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.LAIAlarms.Alarms[LAI].Status == 1">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$LowAlarmColour"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.LAIAlarms.Alarms[LAI].Status == 2">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$LowAlarmColour"/>
+                                        </Animation>
+
+                                        <!--HIGH ALARM-->
+                                        <Animation Condition="$TAGNAME.HAIAlarms.Alarms[HAI].Status == 3">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$HighAlarmColour"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.HAIAlarms.Alarms[HAI].Status == 1">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$HighAlarmColour"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.HAIAlarms.Alarms[HAI].Status == 2">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$HighAlarmColour"/>
+                                        </Animation>
+
+
+                                        <!--LOW LOW ALARM-->
+
+                                        <Animation Condition="$TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 3">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$LowLowAlarmColour"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 1">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$LowLowAlarmColour"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.LLAINDAlarms.Alarms[LLAIND].Status == 2">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$LowLowAlarmColour"/>
+                                        </Animation>
+
+                                        <!--HIGH HIGH ALARM-->
+
+                                        <Animation Condition="$TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 3">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$HighHighAlarmColour"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 1">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$HighHighAlarmColour"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="$TAGNAME.HHAINDAlarms.Alarms[HHAIND].Status == 2">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$HighHighAlarmColour"/>
+                                        </Animation>
+                                    </RSIBorder.Animations>
+                                </RSIBorder>
+                                <hmi:SYM_CALL_OVERLAY_01 x:Name="CallOverlay"
+                                         Canvas.Left="37.0001"
+                                         Canvas.Top="25.6667"
+                                         Width="84.00009"
+                                         Height="37.33331"
+                                         BLKOVL="{TemplateBinding BLK}"
+                                         CMPOVL="{TemplateBinding CMP}"
+                                         LOC="{TemplateBinding LOC}"
+                                         OverlayName="FP_ACCUM"
+                                         PRT="{TemplateBinding PRT}" />
+                                <hmi:SYM_PAGE_ACK_01 x:Name="ACK_SYMBOL"
+                                     Canvas.Left="37.0001"
+                                     Canvas.Top="25"
+                                     Width="84.00009"
+                                     Height="37.33331" />
+                            </RSICanvas>
+                            <RSI_StdTransmitter HorizontalAlignment="Left" Margin="127.563,0,0,0" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" VerticalAlignment="Top" ModelName="{TemplateBinding FailureFaceplateName}" FailureFaceplateName=""/>
+
+                        </RSIGrid>                        
+                    </RSIViewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="StandardFaceplateName" Value="FP_ACCUM"/>
+    </Style>
+</ResourceDictionary>

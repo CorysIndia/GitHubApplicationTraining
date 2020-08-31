@@ -1,0 +1,83 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:RPT}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:RPT}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="55"
+                         Height="30"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSICanvas Name="Group3"
+                           Width="55"
+                           Height="30"
+                           Left="430"
+                           Top="220">
+                  <RSIRectangle x:Name="RoundRectangle3"
+                                Canvas.Left="-0.000200000000006639"
+                                Canvas.Top="-0.00010000000000332"
+                                Width="54.99997"
+                                Height="30"
+                                Stroke="#FF000000"
+                                StrokeThickness="1">
+                    <RSIRectangle.Fill>
+                      <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="0" Color="#FFFFFFFF" />
+                        <GradientStop Offset="0" Color="#FFB3B3B3" />
+                        <GradientStop Offset="1" Color="#FFB3B3B3" />
+                      </LinearGradientBrush>
+                    </RSIRectangle.Fill>
+                  </RSIRectangle>
+                  <RSIRectangle x:Name="RoundRectangle6"
+                                Canvas.Left="2.07409999999999"
+                                Canvas.Top="2.63990000000001"
+                                Width="51.07144"
+                                Height="24.72"
+                                Stroke="#FF7E7E7E"
+                                StrokeThickness="1">
+                    <RSIRectangle.Fill>
+                      <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="0" Color="#FFFFFFFF" />
+                        <GradientStop Offset="0" Color="#FFCECECE" />
+                        <GradientStop Offset="1" Color="#FFCECECE" />
+                      </LinearGradientBrush>
+                    </RSIRectangle.Fill>
+                  </RSIRectangle>
+                  <RSIText x:Name="Text4"
+                           Canvas.Left="49.749"
+                           Canvas.Top="7.29130000000001"
+                           Width="45.18213"
+                           Height="15.41719"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Foreground="#FF000000"
+                           IsHitTestVisible="False"
+                           RenderTransformOrigin="0,0"
+                           Text="REPORT"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10"
+                           TextElement.FontWeight="Bold">
+                    <RSIText.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIText.RenderTransform>
+                  </RSIText>
+                </RSICanvas>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

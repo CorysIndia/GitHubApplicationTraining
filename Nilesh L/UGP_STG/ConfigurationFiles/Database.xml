@@ -1,0 +1,2358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AreaManagement="false">
+  <SynopticCollection>
+    <Synoptic Name="01STG_DIAG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="02STG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol2" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol5" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol6" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol7" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol8" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol15" ControlType="SYM_VLV_COMM">
+          <GraphicTagName>SCV2758</GraphicTagName>
+          <ModelTagName>R35_093SCV2758</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol21" ControlType="SYM_DGAP_01">
+          <GraphicTagName>SXI2758</GraphicTagName>
+          <ModelTagName>R35_093SXI2758</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="Border_AlarmState" ControlType="SYM_ALARMBORDER_01" />
+        <ControlItem Name="CallOverlay_DGAP" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol16" ControlType="SYM_VLV_COMM">
+          <GraphicTagName>SCV2757</GraphicTagName>
+          <ModelTagName>R35_093SCV2757</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol19" ControlType="SYM_DGAP_01">
+          <GraphicTagName>SXI2757</GraphicTagName>
+          <ModelTagName>R35_093SXI2757</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol20" ControlType="SYM_DGAP_01">
+          <GraphicTagName>SY2758</GraphicTagName>
+          <ModelTagName>R35_093SXI2758</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol18" ControlType="SYM_DGAP_01">
+          <GraphicTagName>SY2757</GraphicTagName>
+          <ModelTagName>R35_093SXI2757</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol29" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>SXAHH2757V</GraphicTagName>
+          <ModelTagName>SXAHH2757V_PP_ALM</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="FP_CallOverlay1" ControlType="FP_CallOverlay" />
+        <ControlItem Name="ACK_SYMBOL1" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="EmbeddedSymbol30" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>SXAH2757V</GraphicTagName>
+          <ModelTagName>SXAH2757V_PP_WRN</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_ALMIND_011" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>SXAHH2758V</GraphicTagName>
+          <ModelTagName>SXAHH2758V_PP_ALM</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol28" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>SXAH2758</GraphicTagName>
+          <ModelTagName>SXAH2758V_PP_WRN</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol4" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol10" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol9" ControlType="SYM_DGAP_01">
+          <GraphicTagName>PI2714</GraphicTagName>
+          <ModelTagName>R35_093PI2714</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11" ControlType="SYM_IND_01">
+          <GraphicTagName>SI2760</GraphicTagName>
+          <ModelTagName>R35_093SI2760</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="FP_CallOverlay_RIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Border_BAD_CIN" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay_AIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol12" ControlType="SYM_IND_01">
+          <GraphicTagName>JI2790</GraphicTagName>
+          <ModelTagName>R35_093JI2790</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol13" ControlType="SYM_IND_01">
+          <GraphicTagName>PI2733</GraphicTagName>
+          <ModelTagName>R35_093PI2733</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol17" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol23" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol24" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol14" ControlType="SYM_IND_01">
+          <GraphicTagName>PI2734</GraphicTagName>
+          <ModelTagName>R35_093PI2734</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol22" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol26" ControlType="SYM_IND_01">
+          <GraphicTagName>TI2737</GraphicTagName>
+          <ModelTagName>R35_093TI2737</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol31" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol37" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol25" ControlType="SYM_IND_01">
+          <GraphicTagName>PI2737</GraphicTagName>
+          <ModelTagName>R35_093PI2737</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol34" ControlType="SYM_IND_01">
+          <GraphicTagName>PI2735</GraphicTagName>
+          <ModelTagName>R35_093PI2735</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol27" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol32" ControlType="SYM_VLV_COMM">
+          <GraphicTagName>X2735</GraphicTagName>
+          <ModelTagName>R35_093TXV2735</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol33" ControlType="SYM_IND_01">
+          <GraphicTagName>TI2735</GraphicTagName>
+          <ModelTagName>R35_093TI2735</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol3" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol35" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol36" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol38" ControlType="SYM_VLV_COMM">
+          <GraphicTagName>Z2767</GraphicTagName>
+          <ModelTagName>R35_093ZV2767</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol39" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TXA2735</GraphicTagName>
+          <ModelTagName>R35_093TXA2735</ModelTagName>
+        </ControlItem>
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="03STG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="EmbeddedSymbol34" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol36" ControlType="Pipeline" />
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="EmbeddedSymbol30" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol31" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol2" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol3" ControlType="Pipeline" />
+        <ControlItem Name="Symbol_0081" ControlType="Symbol_008" />
+        <ControlItem Name="EmbeddedSymbol18" ControlType="SYM_PUMP_01">
+          <GraphicTagName>G-1623</GraphicTagName>
+          <ModelTagName>R35_093GM7281A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="Mismatch" ControlType="SYM_ALARMBORDER_05" />
+        <ControlItem Name="MismatchR" ControlType="SYM_ALARMBORDER_05" />
+        <ControlItem Name="CallOverlay_RESET" ControlType="FP_CallOverlay" />
+        <ControlItem Name="CallOverlay_NoDS" ControlType="FP_CallOverlay" />
+        <ControlItem Name="CallOverlay_DS" ControlType="FP_CallOverlay" />
+        <ControlItem Name="MainACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="EmbeddedSymbol4" ControlType="SYM_PUMP_01">
+          <GraphicTagName>G-1624</GraphicTagName>
+          <ModelTagName>R35_093GM7281B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol5" ControlType="SYM_PUMP_01">
+          <GraphicTagName>G-1621</GraphicTagName>
+          <ModelTagName>R35_093GM7293A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol6" ControlType="SYM_PUMP_01">
+          <GraphicTagName>G-1622</GraphicTagName>
+          <ModelTagName>R35_093GM7293B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol7" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol8" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol9" ControlType="Pipeline" />
+        <ControlItem Name="SYM_INDVLV_011" ControlType="SYM_INDVLV_01">
+          <GraphicTagName>X2866</GraphicTagName>
+          <ModelTagName>R35_093XV2866</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK_SYMBOL1" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="CALLOVERLAY" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol10" ControlType="SYM_INDVLV_01">
+          <GraphicTagName>X2867</GraphicTagName>
+          <ModelTagName>R35_093XV2867</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_ALMIND_011" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TAHH2820</GraphicTagName>
+          <ModelTagName>TAHH2820_FP_ALM</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="FP_CallOverlay1" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol11" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TSH2820</GraphicTagName>
+          <ModelTagName>TSH2820_FP_SWP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol12" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol13" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol14" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol15" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol16" ControlType="Pipeline" />
+        <ControlItem Name="SYM_IND_011" ControlType="SYM_IND_01">
+          <GraphicTagName>LI2671</GraphicTagName>
+          <ModelTagName>R35_093LI2671</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="FP_CallOverlay_RIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Border_BAD_CIN" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay_AIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol17" ControlType="SYM_IND_01">
+          <GraphicTagName>TI2801</GraphicTagName>
+          <ModelTagName>R35_093TI2801</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol19" ControlType="SYM_IND_01">
+          <GraphicTagName>PI2811</GraphicTagName>
+          <ModelTagName>R35_093PI2811</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol20" ControlType="SYM_IND_01">
+          <GraphicTagName>PI2815</GraphicTagName>
+          <ModelTagName>R35_093PI2815</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol21" ControlType="Pipeline" />
+        <ControlItem Name="Arrow1" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol22" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol23" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol24" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol23_1" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol24_1" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol23_2" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol24_2" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol25" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol26" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol27" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol28" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol29" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol32" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol33" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol35" ControlType="Pipeline" />
+        <ControlItem Name="Symbol_0051" ControlType="Symbol_005" />
+        <ControlItem Name="EmbeddedSymbol51" ControlType="SYM_HS">
+          <GraphicTagName>H1025</GraphicTagName>
+          <ModelTagName>H1025</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="CallOverlayFB" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Symbol_0052" ControlType="Symbol_005" />
+        <ControlItem Name="EmbeddedSymbol37" ControlType="SYM_IND_01">
+          <GraphicTagName>PI2808</GraphicTagName>
+          <ModelTagName>R35_093PI2808</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="Symbol_0181" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol39" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1620</GraphicTagName>
+          <ModelTagName>R35_093EM6986B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="MISMATCH_FAN_MOTOR" ControlType="SYM_ALARMBORDER_05" />
+        <ControlItem Name="EmbeddedSymbol38" ControlType="Symbol_005" />
+        <ControlItem Name="EmbeddedSymbol40" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol41" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1619</GraphicTagName>
+          <ModelTagName>R35_093EM6986A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol42" ControlType="SYM_IND_01">
+          <GraphicTagName>PI2804</GraphicTagName>
+          <ModelTagName>R35_093PI2804</ModelTagName>
+        </ControlItem>
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="04STG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="EmbeddedSymbol42" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol43" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol35" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol13" ControlType="Pipeline" />
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="EmbeddedSymbol30" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol31" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol2" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol3" ControlType="Pipeline" />
+        <ControlItem Name="Symbol_0081" ControlType="Symbol_008" />
+        <ControlItem Name="EmbeddedSymbol5" ControlType="SYM_PUMP_01">
+          <GraphicTagName>G-1615</GraphicTagName>
+          <ModelTagName>R35_093GM7283A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol5" ControlType="SYM_PUMP_01">
+          <GraphicTagName>G-7280</GraphicTagName>
+          <ModelTagName>R35_093GM7280</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="Mismatch" ControlType="SYM_ALARMBORDER_05" />
+        <ControlItem Name="MismatchR" ControlType="SYM_ALARMBORDER_05" />
+        <ControlItem Name="CallOverlay_RESET" ControlType="FP_CallOverlay" />
+        <ControlItem Name="CallOverlay_NoDS" ControlType="FP_CallOverlay" />
+        <ControlItem Name="CallOverlay_DS" ControlType="FP_CallOverlay" />
+        <ControlItem Name="MainACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="EmbeddedSymbol6" ControlType="SYM_PUMP_01">
+          <GraphicTagName>G-1616</GraphicTagName>
+          <ModelTagName>R35_093GM7283B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol27" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol28" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol29" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol32" ControlType="Pipeline" />
+        <ControlItem Name="Symbol_0051" ControlType="Symbol_005" />
+        <ControlItem Name="EmbeddedSymbol51" ControlType="SYM_HS">
+          <GraphicTagName>H1617</GraphicTagName>
+          <ModelTagName>H1617</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="CallOverlay" ControlType="FP_CallOverlay" />
+        <ControlItem Name="CallOverlayFB" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol37" ControlType="SYM_IND_01">
+          <GraphicTagName>PI2777</GraphicTagName>
+          <ModelTagName>R35_093PI2777</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="FP_CallOverlay_RIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Border_BAD_CIN" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay_AIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol4" ControlType="Symbol_005" />
+        <ControlItem Name="EmbeddedSymbol7" ControlType="SYM_HS">
+          <GraphicTagName>H1618</GraphicTagName>
+          <ModelTagName>H1618</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol10" ControlType="SYM_IND_01">
+          <GraphicTagName>LI2661</GraphicTagName>
+          <ModelTagName>R35_093LI2661</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol12" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>LAL2661</GraphicTagName>
+          <ModelTagName>LAL2661_PP_WRN</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="FP_CallOverlay1" ControlType="FP_CallOverlay" />
+        <ControlItem Name="ACK_SYMBOL1" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="SYM_ALMIND_011" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TSH2794</GraphicTagName>
+          <ModelTagName>TSH2794_FP_SWP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TAHH2794</GraphicTagName>
+          <ModelTagName>TAHH2794_FP_ALM</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol8" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TSH12795</GraphicTagName>
+          <ModelTagName>TSH2795_FP_SWP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol9" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TAHH2795</GraphicTagName>
+          <ModelTagName>TAHH2795_FP_ALM</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="Arrow1" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol14" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol15" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1611</GraphicTagName>
+          <ModelTagName>R35_093KM7001A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="MISMATCH_FAN_MOTOR" ControlType="SYM_ALARMBORDER_05" />
+        <ControlItem Name="EmbeddedSymbol16" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol18" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol19" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol20" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol21" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1612</GraphicTagName>
+          <ModelTagName>R35_093KM7001B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol22" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol23" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol24" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1612</GraphicTagName>
+          <ModelTagName>R35_093GM7284</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol36" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol25" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol26" ControlType="SYM_IND_01">
+          <GraphicTagName>PI2771</GraphicTagName>
+          <ModelTagName>R35_093PI2771</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol34" ControlType="SYM_IND_01">
+          <GraphicTagName>TI2771</GraphicTagName>
+          <ModelTagName>R35_093TI2771</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol39" ControlType="Symbol_005" />
+        <ControlItem Name="EmbeddedSymbol43_1" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol44" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1619</GraphicTagName>
+          <ModelTagName>R35_093EM6980A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol43_2" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol44_1" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1619</GraphicTagName>
+          <ModelTagName>R35_093EM6980B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol43_3" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol44_2" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1619</GraphicTagName>
+          <ModelTagName>R35_093EM6980C</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol44_3" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol47" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol45" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol46" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol45_1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol46_1" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol48" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol23_1" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol24_1" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol23_2" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol24_2" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol49" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol50" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol52" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol53" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol54" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol55" ControlType="SYM_IND_01">
+          <GraphicTagName>TI2780</GraphicTagName>
+          <ModelTagName>R35_093TI2780</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol56" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol57" ControlType="Navigaton" />
+        <ControlItem Name="SYM_PID_011" ControlType="SYM_PID_01">
+          <GraphicTagName>TIC2780</GraphicTagName>
+          <ModelTagName>R35_093TIC2780</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="BADINPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADINPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="ALRMBOARDER" ControlType="SYM_ALARMBORDER_01" />
+        <ControlItem Name="EmbeddedSymbol17" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol33" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol38" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol40" ControlType="SYM_IND_01">
+          <GraphicTagName>TI2780</GraphicTagName>
+          <ModelTagName>R35_093TI2780</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol41" ControlType="SYM_PUMP_01">
+          <GraphicTagName>G-1613</GraphicTagName>
+          <ModelTagName>R35_093GM7285A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol58" ControlType="SYM_PUMP_01">
+          <GraphicTagName>G-1614</GraphicTagName>
+          <ModelTagName>R35_093GM7285B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol59" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol60" ControlType="SYM_IND_01">
+          <GraphicTagName>PI2842</GraphicTagName>
+          <ModelTagName>R35_093PI2842</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol61" ControlType="SYM_IND_01">
+          <GraphicTagName>PI2843</GraphicTagName>
+          <ModelTagName>R35_093PI2843</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol62" ControlType="SYM_IND_01">
+          <GraphicTagName>PI2786</GraphicTagName>
+          <ModelTagName>R35_093PI2786</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol63" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>PSL2786</GraphicTagName>
+          <ModelTagName>PSL2786_PP_SWP</ModelTagName>
+        </ControlItem>
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="05STG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="EmbeddedSymbol39" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol9" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol10" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol15" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol16" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol18" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol4" ControlType="SYM_IND_01">
+          <GraphicTagName>SI-2760R</GraphicTagName>
+          <ModelTagName>R35_093SI2760R</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="FP_CallOverlay_RIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Border_BAD_CIN" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay_AIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol43" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol13" ControlType="Pipeline" />
+        <ControlItem Name="SYM_ARROW_RIGHT_011" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol19" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol20" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol21" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol22" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol23" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol24" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol25" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol26" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol27" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol28" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol29" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol30" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol31" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol32" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="Intersection1" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol33" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol14" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol34" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol35" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol36" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol37" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol38" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol3" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol41" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol45" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol46" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol47" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol48" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol49" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol51" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol52" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol53" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol54" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol55" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol42" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol5" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol56" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol57" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol58" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol59" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol60" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol61" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol63" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol64" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol65" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol62" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol66" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol44" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol40" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol50" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol67" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol68" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol69" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol70" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol17" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol71" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol72" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol7" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol8" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol2" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol6" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol73" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1606</GraphicTagName>
+          <ModelTagName>R35_093KM7004</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="MISMATCH_FAN_MOTOR" ControlType="SYM_ALARMBORDER_05" />
+        <ControlItem Name="SYM_ALMIND_011" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZSL2803</GraphicTagName>
+          <ModelTagName>ZSL2803_PP_ALM</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="FP_CallOverlay1" ControlType="FP_CallOverlay" />
+        <ControlItem Name="ACK_SYMBOL1" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="EmbeddedSymbol74" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>VAH2744</GraphicTagName>
+          <ModelTagName>R35_093VAH2744</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol75" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>UAH1606A</GraphicTagName>
+          <ModelTagName>UAH1606A_PP_WRN</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol76" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>UAHH1606A</GraphicTagName>
+          <ModelTagName>UAHH1606A_PP_ALM</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol77" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>UAH1606B</GraphicTagName>
+          <ModelTagName>UAH1606B_PP_WRN</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol78" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>UAH1606B</GraphicTagName>
+          <ModelTagName>UAH1606B_PP_WRN</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="06STG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="EmbeddedSymbol14" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol10" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol9" ControlType="Pipeline" />
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="EmbeddedSymbol30" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol31" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol7" ControlType="Pipeline" />
+        <ControlItem Name="Symbol_0081" ControlType="Symbol_008" />
+        <ControlItem Name="SYM_IND_011" ControlType="SYM_IND_01">
+          <GraphicTagName>LI-2732</GraphicTagName>
+          <ModelTagName>R35_093LI2732</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="FP_CallOverlay_RIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Border_BAD_CIN" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay_AIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol11" ControlType="SYM_IND_01">
+          <GraphicTagName>LI-2731</GraphicTagName>
+          <ModelTagName>R35_093LI2731</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol13" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol14_1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol15" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol16" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol15_1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol16_1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol17" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol18" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2738</GraphicTagName>
+          <ModelTagName>R35_093TI2738</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol19" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2737</GraphicTagName>
+          <ModelTagName>R35_093TI2737</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol20" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2735</GraphicTagName>
+          <ModelTagName>R35_093TI2735</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol21" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol22" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol23" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol24" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol25" ControlType="SYM_IND_01">
+          <GraphicTagName>PI-2671</GraphicTagName>
+          <ModelTagName>R35_093PI2671</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol26" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol27" ControlType="SYM_VLV_COMM">
+          <GraphicTagName>X-3166</GraphicTagName>
+          <ModelTagName>R35_093XV3166</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol28" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol29" ControlType="SYM_IND_01">
+          <GraphicTagName>PY-2671</GraphicTagName>
+          <ModelTagName>R35_093PY2671</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol45" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol44" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol126" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol127" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol129" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol131" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol133" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol134" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol135" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol136" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol137" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol138" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol139" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol140" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol141" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol142" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol143" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol144" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol145" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol49" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol50" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol146" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol147" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol148" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol149" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol150" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol151" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol156" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-3605</GraphicTagName>
+          <ModelTagName>R35_093VI3605</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol157" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-3606</GraphicTagName>
+          <ModelTagName>R35_093VI3606</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol158" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-3607</GraphicTagName>
+          <ModelTagName>R35_093VI3607</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol159" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-3608</GraphicTagName>
+          <ModelTagName>R35_093VI3608</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol37" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-3609</GraphicTagName>
+          <ModelTagName>R35_093VI3609</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol38" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-3610</GraphicTagName>
+          <ModelTagName>R35_093VI3610</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol39" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-3611</GraphicTagName>
+          <ModelTagName>R35_093VI3611</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol40" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-3612</GraphicTagName>
+          <ModelTagName>R35_093VI3612</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol88" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol89" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol90" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-3605</GraphicTagName>
+          <ModelTagName>R35_093EM6973E</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="MISMATCH_FAN_MOTOR" ControlType="SYM_ALARMBORDER_05" />
+        <ControlItem Name="EmbeddedSymbol91" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol92" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-3606</GraphicTagName>
+          <ModelTagName>R35_093EM6973F</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol93" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol94" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-3607</GraphicTagName>
+          <ModelTagName>R35_093EM6973G</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol95" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol96" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-3608</GraphicTagName>
+          <ModelTagName>R35_093EM6973H</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol97" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol98" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol99" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol100" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol101" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol102" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol103" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol104" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol105" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol106" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol107" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol108" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol109" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol110" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol111" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol112" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol113" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol114" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol115" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol116" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol117" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol118" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol41" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol74" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol75" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-3609</GraphicTagName>
+          <ModelTagName>R35_093EM6973I</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol42" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol43" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-3610</GraphicTagName>
+          <ModelTagName>R35_093EM6973J</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol46" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol47" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-3611</GraphicTagName>
+          <ModelTagName>R35_093EM6973K</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol48" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol49_1" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-3612</GraphicTagName>
+          <ModelTagName>R35_093EM6973L</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol50_1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol51" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol52" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol53" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol54" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol55" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol56" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol58" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol59" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol60" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol61" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol62" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol63" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol76" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol77" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol57" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol69" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol70" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol71" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol72" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol73" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol32" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol2" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol3" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol5" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol4" ControlType="SYM_PUMP_01">
+          <GraphicTagName>G-1624</GraphicTagName>
+          <ModelTagName>R35_093GM7282A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="Mismatch" ControlType="SYM_ALARMBORDER_05" />
+        <ControlItem Name="MismatchR" ControlType="SYM_ALARMBORDER_05" />
+        <ControlItem Name="CallOverlay_RESET" ControlType="FP_CallOverlay" />
+        <ControlItem Name="CallOverlay_NoDS" ControlType="FP_CallOverlay" />
+        <ControlItem Name="CallOverlay_DS" ControlType="FP_CallOverlay" />
+        <ControlItem Name="MainACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="EmbeddedSymbol6" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol8" ControlType="SYM_PUMP_01">
+          <GraphicTagName>G-1624</GraphicTagName>
+          <ModelTagName>R35_093GM7282B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol87" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol119" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol120" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol121" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol122" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol123" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol124" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol125" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol64" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2860</GraphicTagName>
+          <ModelTagName>R35_093TI2860</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol82" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2862</GraphicTagName>
+          <ModelTagName>R35_093TI2862</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol83" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2864</GraphicTagName>
+          <ModelTagName>R35_093TI2864</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol84" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2861</GraphicTagName>
+          <ModelTagName>R35_093TI2861</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol85" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2863</GraphicTagName>
+          <ModelTagName>R35_093TI2863</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol86" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2865</GraphicTagName>
+          <ModelTagName>R35_093TI2865</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol132" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-3604</GraphicTagName>
+          <ModelTagName>R35_093EM6973D</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol33" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-3601</GraphicTagName>
+          <ModelTagName>R35_093VI3601</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol34" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-3602</GraphicTagName>
+          <ModelTagName>R35_093VI3602</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol35" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-3603</GraphicTagName>
+          <ModelTagName>R35_093VI3603</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol36" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-3604</GraphicTagName>
+          <ModelTagName>R35_093VI3604</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol130" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-3603</GraphicTagName>
+          <ModelTagName>R35_093EM6973C</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol128" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-3602</GraphicTagName>
+          <ModelTagName>R35_093EM6973B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol40_1" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol41_1" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-3601</GraphicTagName>
+          <ModelTagName>R35_093EM6973A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol152" ControlType="SYM_IND_01">
+          <GraphicTagName>ESXI-3601</GraphicTagName>
+          <ModelTagName>R35_093ESXI3601</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol153" ControlType="SYM_IND_01">
+          <GraphicTagName>ESXI-3602</GraphicTagName>
+          <ModelTagName>R35_093ESXI3602</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol154" ControlType="SYM_IND_01">
+          <GraphicTagName>ESXI-3603</GraphicTagName>
+          <ModelTagName>R35_093ESXI3603</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol155" ControlType="SYM_IND_01">
+          <GraphicTagName>ESXI-3604</GraphicTagName>
+          <ModelTagName>R35_093ESXI3604</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol65" ControlType="SYM_IND_01">
+          <GraphicTagName>ESXI-3605</GraphicTagName>
+          <ModelTagName>R35_093ESXI3605</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol66" ControlType="SYM_IND_01">
+          <GraphicTagName>ESXI-3606</GraphicTagName>
+          <ModelTagName>R35_093ESXI3606</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol67" ControlType="SYM_IND_01">
+          <GraphicTagName>ESXI-3607</GraphicTagName>
+          <ModelTagName>R35_093ESXI3607</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol68" ControlType="SYM_IND_01">
+          <GraphicTagName>ESXI-3608</GraphicTagName>
+          <ModelTagName>R35_093ESXI3608</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol78" ControlType="SYM_IND_01">
+          <GraphicTagName>ESXI-3609</GraphicTagName>
+          <ModelTagName>R35_093ESXI3609</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol79" ControlType="SYM_IND_01">
+          <GraphicTagName>ESXI-3610</GraphicTagName>
+          <ModelTagName>R35_093ESXI3610</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol80" ControlType="SYM_IND_01">
+          <GraphicTagName>ESXI-3611</GraphicTagName>
+          <ModelTagName>R35_093ESXI3611</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol81" ControlType="SYM_IND_01">
+          <GraphicTagName>ESXI-3612</GraphicTagName>
+          <ModelTagName>R35_093ESXI3612</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_PID_011" ControlType="SYM_PID_01">
+          <GraphicTagName>PIC-2671</GraphicTagName>
+          <ModelTagName>R35_093PIC2671</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="BADINPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADINPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay1" ControlType="FP_CallOverlay" />
+        <ControlItem Name="ACK_SYMBOL1" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="ALRMBOARDER" ControlType="SYM_ALARMBORDER_01" />
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="07STG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="EmbeddedSymbol63" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol37" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol15" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol17" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol3" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol7" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2895</GraphicTagName>
+          <ModelTagName>R35_093TI2895</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="FP_CallOverlay_RIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Border_BAD_CIN" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay_AIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="SYM_PID_011" ControlType="SYM_PID_01">
+          <GraphicTagName>FIC-2851</GraphicTagName>
+          <ModelTagName>R35_093FIC2851</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="BADINPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADINPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay1" ControlType="FP_CallOverlay" />
+        <ControlItem Name="ACK_SYMBOL1" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="ALRMBOARDER" ControlType="SYM_ALARMBORDER_01" />
+        <ControlItem Name="Symbol_0151" ControlType="Symbol_015" />
+        <ControlItem Name="Tank1" ControlType="Tank" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol2" ControlType="SYM_IND_01">
+          <GraphicTagName>PI-2895</GraphicTagName>
+          <ModelTagName>R35_093PI2895</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol5" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol6" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol8" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol10" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol14" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol16" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol18" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol19" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol20" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol21" ControlType="Navigaton" />
+        <ControlItem Name="SYM_VLV_COMM1" ControlType="SYM_VLV_COMM">
+          <GraphicTagName>FXV-2851</GraphicTagName>
+          <ModelTagName>R35_093FCV2851</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol22" ControlType="SYM_VLV_COMM">
+          <GraphicTagName>LXV-2742</GraphicTagName>
+          <ModelTagName>R35_093LCV2741</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol23" ControlType="SYM_IND_01">
+          <GraphicTagName>LI-2742</GraphicTagName>
+          <ModelTagName>R35_093LI2742</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol24" ControlType="SYM_IND_01">
+          <GraphicTagName>LI-2741</GraphicTagName>
+          <ModelTagName>R35_093LI2741</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol25" ControlType="SYM_IND_01">
+          <GraphicTagName>FXI-2851</GraphicTagName>
+          <ModelTagName>R35_093FXI2851</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol26" ControlType="SYM_IND_01">
+          <GraphicTagName>LXI-2742</GraphicTagName>
+          <ModelTagName>R35_093LXI2742</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol27" ControlType="SYM_PID_01">
+          <GraphicTagName>LIC-2742</GraphicTagName>
+          <ModelTagName>R35_093LIC2742</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol28" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol29" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol30" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol31" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol33" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol35" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol34" ControlType="Navigaton" />
+        <ControlItem Name="Intersection1" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol32" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol36" ControlType="SYM_IND_01">
+          <GraphicTagName>PI-2905</GraphicTagName>
+          <ModelTagName>R35_093PI2905</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol39" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol40" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol42" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol43" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol44" ControlType="SYM_IND_01">
+          <GraphicTagName>PI-2870</GraphicTagName>
+          <ModelTagName>R35_093PI2870</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol45" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2870</GraphicTagName>
+          <ModelTagName>R35_093TI2870</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol46" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol47" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol48" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol49" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol50" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol51" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol52" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol53" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol54" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol55" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol56" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol41" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol57" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol58" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol59" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol60" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol61" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol62" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol64" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol65" ControlType="Pipeline" />
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="EmbeddedSymbol4" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol9" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol11" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol13" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol38" ControlType="Navigaton" />
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="08STG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol10" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol2" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol8" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol3" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol4" ControlType="Navigaton" />
+        <ControlItem Name="SYM_VLV_COMM1" ControlType="SYM_VLV_COMM">
+          <GraphicTagName>PXV-2766</GraphicTagName>
+          <ModelTagName>R35_093PCV2766</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_ALMIND_011" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>XAL-2766</GraphicTagName>
+          <ModelTagName>XAL2766_PP_WRN</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="FP_CallOverlay1" ControlType="FP_CallOverlay" />
+        <ControlItem Name="ACK_SYMBOL1" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="EmbeddedSymbol9" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>XALL-2766</GraphicTagName>
+          <ModelTagName>XALL_2766</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>XAL-2766</GraphicTagName>
+          <ModelTagName>XAL_2766</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol6" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2766</GraphicTagName>
+          <ModelTagName>R35_093TI2766</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="FP_CallOverlay_RIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Border_BAD_CIN" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay_AIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol7" ControlType="SYM_IND_01">
+          <GraphicTagName>PI-2766</GraphicTagName>
+          <ModelTagName>R35_093PI2766</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_PID_011" ControlType="SYM_PID_01">
+          <GraphicTagName>PIC-2766</GraphicTagName>
+          <ModelTagName>R35_093PIC2766</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="BADINPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADINPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="ALRMBOARDER" ControlType="SYM_ALARMBORDER_01" />
+        <ControlItem Name="EmbeddedSymbol5" ControlType="SYM_IND_01">
+          <GraphicTagName>PXY-2766</GraphicTagName>
+          <ModelTagName>R35_093PI2766</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol17" ControlType="SYM_IND_01">
+          <GraphicTagName>PXI-2766</GraphicTagName>
+          <ModelTagName>R35_093PXI2766</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="EmbeddedSymbol12" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>PXDAH-2766</GraphicTagName>
+          <ModelTagName>PXDAH2766_PP_WRN</ModelTagName>
+        </ControlItem>
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="08STG_DIAG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="EmbeddedSymbol8" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZS-2900</GraphicTagName>
+          <ModelTagName>ZS2900_PP_TRIP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="FP_CallOverlay1" ControlType="FP_CallOverlay" />
+        <ControlItem Name="ACK_SYMBOL1" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="EmbeddedSymbol9" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZA-2900</GraphicTagName>
+          <ModelTagName>R35_093ZA2900</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol8_1" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZS-2901</GraphicTagName>
+          <ModelTagName>ZS2901_PP_TRIP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol9_1" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZA-2901</GraphicTagName>
+          <ModelTagName>R35_093ZA2901</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol8_2" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZS-2902</GraphicTagName>
+          <ModelTagName>ZS2902_PP_TRIP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol9_2" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZA-2902</GraphicTagName>
+          <ModelTagName>R35_093ZA2902</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol10" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZS-2903</GraphicTagName>
+          <ModelTagName>ZS2903_PP_TRIP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZA-2903</GraphicTagName>
+          <ModelTagName>R35_093ZA2903</ModelTagName>
+        </ControlItem>
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="09STG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="EmbeddedSymbol20" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2700</GraphicTagName>
+          <ModelTagName>R35_093TI2700</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="FP_CallOverlay_RIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Border_BAD_CIN" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay_AIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2701</GraphicTagName>
+          <ModelTagName>R35_093TI2701</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol3" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2739</GraphicTagName>
+          <ModelTagName>R35_093VI2739</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol4" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2738</GraphicTagName>
+          <ModelTagName>R35_093VI2738</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol2" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2698</GraphicTagName>
+          <ModelTagName>R35_093TI2698</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol5" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2697</GraphicTagName>
+          <ModelTagName>R35_093TI2697</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol6" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2695</GraphicTagName>
+          <ModelTagName>R35_093TI2695</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol7" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2694</GraphicTagName>
+          <ModelTagName>R35_093TI2694</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol8" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2692</GraphicTagName>
+          <ModelTagName>R35_093TI2692</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol9" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2691</GraphicTagName>
+          <ModelTagName>R35_093TI2691</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2736</GraphicTagName>
+          <ModelTagName>R35_093VI2736</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol12" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2735</GraphicTagName>
+          <ModelTagName>R35_093VI2735</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol13" ControlType="SYM_IND_01">
+          <GraphicTagName>KI-2747</GraphicTagName>
+          <ModelTagName>R35_093KI2747</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol14" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2746B</GraphicTagName>
+          <ModelTagName>R35_093VI2746B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol15" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2746A</GraphicTagName>
+          <ModelTagName>R35_093VI2746A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="10STG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="Symbol_0011" ControlType="Symbol_001" />
+        <ControlItem Name="EmbeddedSymbol2" ControlType="Symbol_001" />
+        <ControlItem Name="EmbeddedSymbol5" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2836</GraphicTagName>
+          <ModelTagName>R35_093TI2836A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="FP_CallOverlay_RIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Border_BAD_CIN" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay_AIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol6" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2837</GraphicTagName>
+          <ModelTagName>R35_093TI2837A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol7" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2835</GraphicTagName>
+          <ModelTagName>R35_093TI2835A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol3" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2872</GraphicTagName>
+          <ModelTagName>R35_093VI2872</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol20" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2832</GraphicTagName>
+          <ModelTagName>R35_093TI2832</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol1" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2833</GraphicTagName>
+          <ModelTagName>R35_093TI2833</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol4" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2871</GraphicTagName>
+          <ModelTagName>R35_093VI2871</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol8" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2838</GraphicTagName>
+          <ModelTagName>R35_093TI2838</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol9" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2839</GraphicTagName>
+          <ModelTagName>R35_093TI2839</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol10" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2875</GraphicTagName>
+          <ModelTagName>R35_093VI2875</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2874</GraphicTagName>
+          <ModelTagName>R35_093VI2874</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="EmbeddedSymbol39" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1631</GraphicTagName>
+          <ModelTagName>R35_093EM6977</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="MISMATCH_FAN_MOTOR" ControlType="SYM_ALARMBORDER_05" />
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="11STG_DIAG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="SYM_ALMIND_011" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TAHH-2702</GraphicTagName>
+          <ModelTagName>TAHH2702_SS_TRIP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="FP_CallOverlay1" ControlType="FP_CallOverlay" />
+        <ControlItem Name="ACK_SYMBOL1" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TAHH-2702D</GraphicTagName>
+          <ModelTagName>TAHH_2702D</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_ALMIND_011_1" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>VAHH-2744</GraphicTagName>
+          <ModelTagName>VAHH2744_SS_TRIP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol1_1" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>VAHH-27440</GraphicTagName>
+          <ModelTagName>VAHH_27440</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol2" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>VAHHLL-2745</GraphicTagName>
+          <ModelTagName>VAHHLL2745_SS_TRIP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol3" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>VAHHLL-2745D</GraphicTagName>
+          <ModelTagName>VAHHLL_2745D</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol4" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TAHH-2841</GraphicTagName>
+          <ModelTagName>TAHH2841_SS_TRIP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol5" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TAHH-2841D</GraphicTagName>
+          <ModelTagName>TAHH_2841D</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol6" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>VAHH-2842</GraphicTagName>
+          <ModelTagName>VAHH2842_SS_TRIP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol7" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>VAHH-2842D</GraphicTagName>
+          <ModelTagName>VAHH_2842D</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol6_1" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZS-2885</GraphicTagName>
+          <ModelTagName>ZS2885_SS_TRIP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol7_1" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>VAHH-2842D</GraphicTagName>
+          <ModelTagName>VAHH_2842D</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol8" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZS-2886</GraphicTagName>
+          <ModelTagName>ZS2886_SP_TRIP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol9" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZA-2886</GraphicTagName>
+          <ModelTagName>ZA_2886</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol8_1" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZS-2887</GraphicTagName>
+          <ModelTagName>ZS2887_SP_TRIP</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol9_1" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>ZA-2887</GraphicTagName>
+          <ModelTagName>ZA_2887</ModelTagName>
+        </ControlItem>
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="11STG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="EmbeddedSymbol12" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol10" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol6" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol13" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol3" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="Navigaton" />
+        <ControlItem Name="Symbol_0011" ControlType="Symbol_001" />
+        <ControlItem Name="EmbeddedSymbol2" ControlType="Symbol_001" />
+        <ControlItem Name="Intersection1" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol7" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol4" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol8" ControlType="Navigaton" />
+        <ControlItem Name="Intersection2" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol14" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol5" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol15" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol9" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol16" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2837</GraphicTagName>
+          <ModelTagName>R35_093TI2837A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="FP_CallOverlay_RIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Border_BAD_CIN" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay_AIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol17" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2835</GraphicTagName>
+          <ModelTagName>R35_093TI2835A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol18" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2842</GraphicTagName>
+          <ModelTagName>R35_093TI2842</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_IND_011" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2836</GraphicTagName>
+          <ModelTagName>R35_093TI2836A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol19" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2830</GraphicTagName>
+          <ModelTagName>R35_093TI2830</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol20" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2826</GraphicTagName>
+          <ModelTagName>R35_093TI2826</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol23" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2705</GraphicTagName>
+          <ModelTagName>R35_093TI2705</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol28" ControlType="SYM_IND_01">
+          <GraphicTagName>PI-2842</GraphicTagName>
+          <ModelTagName>R35_093PI2842</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol29" ControlType="SYM_IND_01">
+          <GraphicTagName>PI-2843</GraphicTagName>
+          <ModelTagName>R35_093PI2843</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="EmbeddedSymbol24" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2881</GraphicTagName>
+          <ModelTagName>R35_093VI2881</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol25" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2880</GraphicTagName>
+          <ModelTagName>R35_093VI2880</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol26" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2879</GraphicTagName>
+          <ModelTagName>R35_093VI2879</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol27" ControlType="SYM_IND_01">
+          <GraphicTagName>VI-2878</GraphicTagName>
+          <ModelTagName>R35_093VI2878</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol21" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2828A</GraphicTagName>
+          <ModelTagName>R35_093TI2828A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol22" ControlType="SYM_IND_01">
+          <GraphicTagName>TI-2828B</GraphicTagName>
+          <ModelTagName>R35_093TI2828B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol48" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol49" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1629</GraphicTagName>
+          <ModelTagName>R35_093EM6984D</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="MISMATCH_FAN_MOTOR" ControlType="SYM_ALARMBORDER_05" />
+        <ControlItem Name="EmbeddedSymbol74" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol75" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1626</GraphicTagName>
+          <ModelTagName>R35_093EM6984A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol42" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol43" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1627</GraphicTagName>
+          <ModelTagName>R35_093EM6984B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol46" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol47" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1628</GraphicTagName>
+          <ModelTagName>R35_093EM6984C</ModelTagName>
+        </ControlItem>
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="01STG">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="EmbeddedSymbol2" ControlType="Pipeline" />
+        <ControlItem Name="Navigaton1" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol3" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol4" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol5" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol6" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol7" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol8" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol9" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol10" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol13" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol14" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="SYM_DGAP_011" ControlType="SYM_DGAP_01">
+          <GraphicTagName>FI2651</GraphicTagName>
+          <ModelTagName>R35_093FI2651</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="Border_AlarmState" ControlType="SYM_ALARMBORDER_01" />
+        <ControlItem Name="CallOverlay_DGAP" ControlType="FP_CallOverlay" />
+        <ControlItem Name="SYM_INDVLV_011" ControlType="SYM_INDVLV_01">
+          <GraphicTagName>X2755</GraphicTagName>
+          <ModelTagName>R35_093XV2755</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK_SYMBOL1" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="CALLOVERLAY" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol15" ControlType="SYM_VLV_COMM">
+          <GraphicTagName>TCV2712</GraphicTagName>
+          <ModelTagName>R35_093TCV2712</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol21" ControlType="SYM_DGAP_01">
+          <GraphicTagName>TXI2712</GraphicTagName>
+          <ModelTagName>R35_093TXI2712</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol16" ControlType="SYM_VLV_COMM">
+          <GraphicTagName>TCV2711</GraphicTagName>
+          <ModelTagName>R35_093TCV2711</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol19" ControlType="SYM_DGAP_01">
+          <GraphicTagName>TXI2711</GraphicTagName>
+          <ModelTagName>R35_093TXI2711</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_PID_011" ControlType="SYM_PID_01">
+          <GraphicTagName>UIC2753</GraphicTagName>
+          <ModelTagName>R35_093UIC2753</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_PID_012" ControlType="SYM_PID_01">
+          <GraphicTagName>PIC01</GraphicTagName>
+          <ModelTagName>R35_093PIC01</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_PID_013" ControlType="SYM_PID_01">
+          <GraphicTagName>FIC01</GraphicTagName>
+          <ModelTagName>R35_093FIC01</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="BADINPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADINPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay1" ControlType="FP_CallOverlay" />
+        <ControlItem Name="ALRMBOARDER" ControlType="SYM_ALARMBORDER_01" />
+        <ControlItem Name="EmbeddedSymbol20" ControlType="SYM_DGAP_01">
+          <GraphicTagName>TXY2712</GraphicTagName>
+          <ModelTagName>R35_093TXI2712</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol18" ControlType="SYM_DGAP_01">
+          <GraphicTagName>TXY2711</GraphicTagName>
+          <ModelTagName>R35_093TXI2711</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol25" ControlType="SYM_DGAP_01">
+          <GraphicTagName>TI2713</GraphicTagName>
+          <ModelTagName>R35_093TI2713</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol24" ControlType="SYM_DGAP_01">
+          <GraphicTagName>PI2713</GraphicTagName>
+          <ModelTagName>R35_093PI2713</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol26" ControlType="SYM_DGAP_01">
+          <GraphicTagName>TI2714</GraphicTagName>
+          <ModelTagName>R35_093TI2714</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol23" ControlType="SYM_DGAP_01">
+          <GraphicTagName>PI2714</GraphicTagName>
+          <ModelTagName>R35_093PI2714</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol27" ControlType="SYM_DGAP_01">
+          <GraphicTagName>UI2753</GraphicTagName>
+          <ModelTagName>R35_093UI2753</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol17" ControlType="SYM_DGAP_01">
+          <GraphicTagName>LI2631</GraphicTagName>
+          <ModelTagName>R35_093LI2631</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol22" ControlType="SYM_DGAP_01">
+          <GraphicTagName>LI2632</GraphicTagName>
+          <ModelTagName>R35_093LI2632</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol29" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TXAHH2711V</GraphicTagName>
+          <ModelTagName>TXAHH2711V_PP_ALM</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol30" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TXAH2711V</GraphicTagName>
+          <ModelTagName>TXAH2711V_PP_WRN</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_ALMIND_011" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TXAHH2712V</GraphicTagName>
+          <ModelTagName>TXAHH2712V_PP_ALM</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol28" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TXAH2712V</GraphicTagName>
+          <ModelTagName>TXAH2712V_PP_WRN</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="EmbeddedSymbol37" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol37_Copy" ControlType="Navigaton" />
+        <ControlItem Name="SYM_PID_015" ControlType="SYM_PID_01">
+          <GraphicTagName>PIC01</GraphicTagName>
+          <ModelTagName>R35_093PIC01</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_VLV_COMM1" ControlType="SYM_VLV_COMM">
+          <GraphicTagName>PXV-2766</GraphicTagName>
+          <ModelTagName>PXV_2766</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_PID_012789" ControlType="SYM_PID_01">
+          <GraphicTagName>FIC01</GraphicTagName>
+          <ModelTagName>R35_093FIC01</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_VLV_COMM1_Copy" ControlType="SYM_VLV_COMM">
+          <GraphicTagName>PXV-2766</GraphicTagName>
+          <ModelTagName>PXV_2766</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200002002MV06" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200002002MV06</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200002002MV03" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200002002MV03</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200002002MV05" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200002002MV05</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093PZV2631" ControlType="RSI_PressureSafetyValve">
+          <ModelTagName>R35_093PZV2631</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35BA200002002LS02" ControlType="RSI_StdBatteryLimit">
+          <ModelTagName>R35BA200002002LS02</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35BA200002002LS03" ControlType="RSI_StdBatteryLimit">
+          <ModelTagName>R35BA200002002LS03</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35BA200002002MS01" ControlType="RSI_StdBatteryLimit">
+          <ModelTagName>R35BA200002002MS01</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093LIT2631" ControlType="RSI_StdTransmitter">
+          <ModelTagName>R35_093LIT2631</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093LIT2632" ControlType="RSI_StdTransmitter">
+          <ModelTagName>R35_093LIT2632</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093TIT2713" ControlType="RSI_StdTransmitter">
+          <ModelTagName>R35_093TIT2713</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093TIT2714" ControlType="RSI_StdTransmitter">
+          <ModelTagName>R35_093TIT2714</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093UIC2753" ControlType="RSI_StdTransmitter">
+          <ModelTagName>R35_093UIC2753</ModelTagName>
+        </ControlItem>
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="93STG_D_06">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="EmbeddedSymbol16" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol40" ControlType="Intersection" />
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="EmbeddedSymbol5" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol6" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol7" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol8" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol30" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>PXAH-2746</GraphicTagName>
+          <ModelTagName>PXAH2746_PP_WRN</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="FP_CallOverlay1" ControlType="FP_CallOverlay" />
+        <ControlItem Name="ACK_SYMBOL1" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="EmbeddedSymbol28" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>PXAH-2747</GraphicTagName>
+          <ModelTagName>PXAH2747_PP_WRN</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol4" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol9" ControlType="SYM_IND_01">
+          <GraphicTagName>93PI2714</GraphicTagName>
+          <ModelTagName>R35_093PI2714</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="FP_CallOverlay_RIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Border_BAD_CIN" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay_AIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol10" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol11" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol13" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol14" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol24" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol23" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>PXAH-2748</GraphicTagName>
+          <ModelTagName>PXAH2748_PP_WRN</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol26" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol27" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol29" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol31" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol32" ControlType="SYM_ARROW_RIGHT_01" />
+        <ControlItem Name="EmbeddedSymbol35" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol22" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>PXAH-2749</GraphicTagName>
+          <ModelTagName>PXAH2749_PP_WRN</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol38" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol2" ControlType="Navigaton" />
+        <ControlItem Name="Pipeline1" ControlType="Pipeline" />
+        <ControlItem Name="Navigaton1" ControlType="Navigaton" />
+        <ControlItem Name="Pipeline2" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol39" ControlType="Pipeline" />
+        <ControlItem Name="Arrow1" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol41" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol42" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol43" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol44" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol37" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol46" ControlType="SYM_CTRVLV_03">
+          <GraphicTagName>XC-2752</GraphicTagName>
+          <ModelTagName>F_R35_093TCV2752</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="Disp_Vertical" ControlType="SYM_ShowDisp" />
+        <ControlItem Name="Disp_Horizontal" ControlType="SYM_ShowDisp" />
+        <ControlItem Name="EmbeddedSymbol47" ControlType="SYM_CTRVLV_03">
+          <GraphicTagName>XC-2753</GraphicTagName>
+          <ModelTagName>F_R35_093TCV2753</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol48" ControlType="SYM_CTRVLV_03">
+          <GraphicTagName>XC-2754</GraphicTagName>
+          <ModelTagName>F_R35_093TCV2754</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol50" ControlType="SYM_IND_01">
+          <GraphicTagName>93PI2750</GraphicTagName>
+          <ModelTagName>R35_093PI2750</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol51" ControlType="SYM_IND_01">
+          <GraphicTagName>93TI2750</GraphicTagName>
+          <ModelTagName>R35_093TI2750</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol52" ControlType="SYM_IND_01">
+          <GraphicTagName>93TI2751</GraphicTagName>
+          <ModelTagName>R35_093TI2751</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol56" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol58" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol59" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol49" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol53" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol54" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol55" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol57" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol60" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol61" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol62" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol63" ControlType="SYM_XV">
+          <GraphicTagName>XV-2791</GraphicTagName>
+          <ModelTagName>R35_093XV2791</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="MISMATCH" ControlType="SYM_ALARMBORDER_04" />
+        <ControlItem Name="FP_CallOverlay" ControlType="FP_CallOverlay" />
+        <ControlItem Name="SYM_CTRVLV_031" ControlType="SYM_CTRVLV_03">
+          <GraphicTagName>PCV-2746</GraphicTagName>
+          <ModelTagName>F_R35_093PCV2746</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol19" ControlType="SYM_IND_01">
+          <GraphicTagName>93PXY2746</GraphicTagName>
+          <ModelTagName>R35_093PXI2746</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol18" ControlType="SYM_IND_01">
+          <GraphicTagName>93PXI2746</GraphicTagName>
+          <ModelTagName>R35_093PXI2746</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol21" ControlType="SYM_IND_01">
+          <GraphicTagName>93PXY2747</GraphicTagName>
+          <ModelTagName>R35_093PXI2747</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol20" ControlType="SYM_IND_01">
+          <GraphicTagName>93PXI2747</GraphicTagName>
+          <ModelTagName>R35_093PXI2747</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol45" ControlType="SYM_CTRVLV_03">
+          <GraphicTagName>PCV-2747</GraphicTagName>
+          <ModelTagName>F_R35_093PCV2747</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol15" ControlType="SYM_IND_01">
+          <GraphicTagName>93PXY2748</GraphicTagName>
+          <ModelTagName>R35_093PXI2748</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol17" ControlType="SYM_IND_01">
+          <GraphicTagName>93PXI2748</GraphicTagName>
+          <ModelTagName>R35_093PXI2748</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol25" ControlType="SYM_CTRVLV_03">
+          <GraphicTagName>PCV-2748</GraphicTagName>
+          <ModelTagName>F_R35_093PCV2748</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol33" ControlType="SYM_IND_01">
+          <GraphicTagName>93PXY2749</GraphicTagName>
+          <ModelTagName>R35_093PXI2749</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol34" ControlType="SYM_IND_01">
+          <GraphicTagName>93PXI2749</GraphicTagName>
+          <ModelTagName>R35_093PXI2749</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol36" ControlType="SYM_CTRVLV_03">
+          <GraphicTagName>PCV-2749</GraphicTagName>
+          <ModelTagName>F_R35_093PCV2749</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_PID_011" ControlType="SYM_PID_01">
+          <GraphicTagName>FIC-2851</GraphicTagName>
+          <ModelTagName>R35_093PIC2714</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="BADINPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADINPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="ALRMBOARDER" ControlType="SYM_ALARMBORDER_01" />
+        <ControlItem Name="SYM_PID_011_Copy" ControlType="SYM_PID_01">
+          <GraphicTagName>FIC-2851</GraphicTagName>
+          <ModelTagName>R35_093TIC2750</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="Pipeline1_Copy" ControlType="Pipeline" />
+        <ControlItem Name="Pipeline1_Copy1" ControlType="Pipeline" />
+        <ControlItem Name="A_R35BA200003001MV01" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200003001MV01</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35BA200003001UW01" ControlType="RSI_StdBatteryLimit">
+          <ModelTagName>R35BA200003001UW01</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093PIT2714" ControlType="RSI_StdTransmitter">
+          <ModelTagName>R35_093PIT2714</ModelTagName>
+        </ControlItem>
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="93STG03">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="EmbeddedSymbol34" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol36" ControlType="Pipeline" />
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="EmbeddedSymbol30" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol31" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol2" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol3" ControlType="Pipeline" />
+        <ControlItem Name="Symbol_0081" ControlType="Symbol_008" />
+        <ControlItem Name="EmbeddedSymbol7" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol8" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol9" ControlType="Pipeline" />
+        <ControlItem Name="SYM_ALMIND_011" ControlType="SYM_ALMIND_01">
+          <GraphicTagName>TAHH2820</GraphicTagName>
+          <ModelTagName>TAHH2820</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="FP_CallOverlay1" ControlType="FP_CallOverlay" />
+        <ControlItem Name="ACK_SYMBOL1" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="EmbeddedSymbol11" ControlType="Pipeline">
+          <ModelTagName>TSH2820</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol12" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol13" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol14" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol15" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol16" ControlType="Pipeline" />
+        <ControlItem Name="SYM_IND_011" ControlType="SYM_IND_01">
+          <GraphicTagName>93LI2671</GraphicTagName>
+          <ModelTagName>R35_093LI2671</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="FP_CallOverlay_RIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Border_BAD_CIN" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay_AIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol17" ControlType="SYM_IND_01">
+          <GraphicTagName>93TI2801</GraphicTagName>
+          <ModelTagName>R35_093TI2801</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol19" ControlType="SYM_IND_01">
+          <GraphicTagName>93PI2811</GraphicTagName>
+          <ModelTagName>R35_093PI2811</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol20" ControlType="SYM_IND_01">
+          <GraphicTagName>93PI2815</GraphicTagName>
+          <ModelTagName>R35_093PI2815</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol21" ControlType="Pipeline" />
+        <ControlItem Name="Arrow1" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol22" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol23" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol24" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol23_1" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol24_1" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol23_2" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol24_2" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol25" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol26" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol27" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol28" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol29" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol32" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol33" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol35" ControlType="Pipeline" />
+        <ControlItem Name="Symbol_0051" ControlType="Symbol_005" />
+        <ControlItem Name="Symbol_0052" ControlType="Symbol_005" />
+        <ControlItem Name="EmbeddedSymbol37" ControlType="Navigaton">
+          <ModelTagName>R35_093PI2808</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol38" ControlType="Symbol_005" />
+        <ControlItem Name="EmbeddedSymbol40" ControlType="Symbol_018" />
+        <ControlItem Name="EmbeddedSymbol42" ControlType="SYM_IND_01">
+          <GraphicTagName>93PI2804</GraphicTagName>
+          <ModelTagName>R35_093PI2804</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_MTR_DT01AB1" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1619</GraphicTagName>
+          <ModelTagName>R35_093EM6986A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="MISMATCH_FAN_MOTOR" ControlType="SYM_ALARMBORDER_05" />
+        <ControlItem Name="EmbeddedSymbol4" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1620</GraphicTagName>
+          <ModelTagName>R35_093EM6986B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol5" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1621</GraphicTagName>
+          <ModelTagName>R35_093GM7293A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol6" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1622</GraphicTagName>
+          <ModelTagName>R35_093GM7293B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol10" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1623</GraphicTagName>
+          <ModelTagName>R35_093GM7281A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol18" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>E-1624</GraphicTagName>
+          <ModelTagName>R35_093GM7281B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol39" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>H-1625</GraphicTagName>
+          <ModelTagName>R35_093E6978</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="Symbol_0181" ControlType="Symbol_018" />
+        <ControlItem Name="SYM_INDVLV_011" ControlType="SYM_INDVLV_01">
+          <GraphicTagName>X2866</GraphicTagName>
+          <ModelTagName>R35_093XV2866</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="CALLOVERLAY" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol10_Copy" ControlType="SYM_INDVLV_01">
+          <GraphicTagName>X2867</GraphicTagName>
+          <ModelTagName>R35_093XV2867</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol37_Copy" ControlType="Navigaton" />
+        <ControlItem Name="A_R35BA267301006MV11" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA267301006MV11</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy" ControlType="Navigaton" />
+        <ControlItem Name="A_R35BA267301006MV13" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA267301006MV13</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy1" ControlType="Navigaton" />
+        <ControlItem Name="A_R35BA267301006MV01" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA267301006MV01</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy2" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy2" ControlType="Navigaton" />
+        <ControlItem Name="A_R35BA267301006MV12" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA267301006MV12</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy3" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy4" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy3" ControlType="Navigaton" />
+        <ControlItem Name="A_R35BA267301006MV02" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA267301006MV02</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy5" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy4" ControlType="Navigaton" />
+        <ControlItem Name="A_R35BA267301006MV03" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA267301006MV03</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA267301006MV14" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA267301006MV14</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA267301006MV04" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA267301006MV04</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093PZV2672" ControlType="RSI_PressureSafetyValve">
+          <ModelTagName>R35_093PZV2672</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093PZV2671" ControlType="RSI_PressureSafetyValve">
+          <ModelTagName>R35_093PZV2671</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy10" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy5" ControlType="Navigaton" />
+        <ControlItem Name="A_R35BA267301006MV06" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA267301006MV06</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy11" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy6" ControlType="Navigaton" />
+        <ControlItem Name="A_R35BA267301006MV07" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA267301006MV07</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA267301006MV05" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA267301006MV05</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA267301006MV08" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA267301006MV08</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy13" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy12" ControlType="Pipeline" />
+        <ControlItem Name="R35_093PZV2673" ControlType="RSI_PressureSafetyValve">
+          <ModelTagName>R35_093PZV2673</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy15" ControlType="Pipeline" />
+        <ControlItem Name="R35_093PZV2674" ControlType="RSI_PressureSafetyValve">
+          <ModelTagName>R35_093PZV2674</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy16" ControlType="Pipeline" />
+        <ControlItem Name="A_R35BA267301006MV10" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA267301006MV10</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy18" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy19" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy20" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy14" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy21" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy17" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy24" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy26" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy27" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy28" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy29" ControlType="Pipeline" />
+        <ControlItem Name="Arrow1_Copy3" ControlType="Arrow" />
+        <ControlItem Name="Arrow1_Copy7" ControlType="Arrow" />
+        <ControlItem Name="Arrow1_Copy" ControlType="Arrow" />
+        <ControlItem Name="Arrow1_Copy1" ControlType="Arrow" />
+        <ControlItem Name="EmbeddedSymbol11_Copy6" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy7" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy8" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy9" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy31" ControlType="Pipeline" />
+        <ControlItem Name="Arrow1_Copy4" ControlType="Arrow" />
+        <ControlItem Name="BLI_N2_02" ControlType="RSI_StdBatteryLimit">
+          <ModelTagName>BLI_N2_02</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="BLI_N2_03" ControlType="RSI_StdBatteryLimit">
+          <ModelTagName>BLI_N2_03</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="BLI_LO_02" ControlType="RSI_StdBatteryLimit">
+          <ModelTagName>BLI_LO_02</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="F_R35_093D6982A" ControlType="RSI_StdFAILUREInvisibleFilter">
+          <ModelTagName>F_R35_093D6982A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="F_R35_093D6982B" ControlType="RSI_StdFAILUREInvisibleFilter">
+          <ModelTagName>F_R35_093D6982B</ModelTagName>
+        </ControlItem>
+      </ControlItemCollection>
+    </Synoptic>
+    <Synoptic Name="93STG07">
+      <ControlItemCollection>
+        <ControlItem Name="Background_Disp1" ControlType="Background_Disp" />
+        <ControlItem Name="EmbeddedSymbol63" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol27" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol66" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol73" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol50" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol60" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol67" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol68" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol69" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol70" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol71" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol72" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol37" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol15" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol17" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol3" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol7" ControlType="SYM_IND_01">
+          <GraphicTagName>93TI2895</GraphicTagName>
+          <ModelTagName>R35_093TI2895</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="ACK" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="FP_CallOverlay_RIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="Border_BAD_CIN" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay_AIN" ControlType="FP_CallOverlay" />
+        <ControlItem Name="EmbeddedSymbol1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol2" ControlType="SYM_IND_01">
+          <GraphicTagName>93PI2895</GraphicTagName>
+          <ModelTagName>R35_093PI2895</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol5" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol6" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol8" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol10" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol14" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol16" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol18" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol19" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol20" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol21" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol23" ControlType="SYM_IND_01">
+          <GraphicTagName>93LI2742</GraphicTagName>
+          <ModelTagName>R35_093LI2742</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol24" ControlType="SYM_IND_01">
+          <GraphicTagName>93LI2741</GraphicTagName>
+          <ModelTagName>R35_093LI2741</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol25" ControlType="SYM_IND_01">
+          <GraphicTagName>93FXI2851</GraphicTagName>
+          <ModelTagName>R35_093FXI2851</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol26" ControlType="SYM_IND_01">
+          <GraphicTagName>93LXI2742</GraphicTagName>
+          <ModelTagName>R35_093LXI2741</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol28" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol29" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol30" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol31" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol33" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol35" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol34" ControlType="Navigaton" />
+        <ControlItem Name="Intersection1" ControlType="Intersection" />
+        <ControlItem Name="EmbeddedSymbol32" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol36" ControlType="SYM_IND_01">
+          <GraphicTagName>93PI2905</GraphicTagName>
+          <ModelTagName>R35_093PI2905</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol39" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol40" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol42" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol43" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol46" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol47" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol48" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol49" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol51" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol52" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol53" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol54" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol55" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol56" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol41" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol57" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol58" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol59" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol61" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol62" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol64" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol65" ControlType="Pipeline" />
+        <ControlItem Name="SYM_TITLE_11" ControlType="SYM_TITLE_1" />
+        <ControlItem Name="EmbeddedSymbol4" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol9" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol11" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol13" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol38" ControlType="Navigaton" />
+        <ControlItem Name="Symbol_0151" ControlType="Symbol_015" />
+        <ControlItem Name="Tank1" ControlType="Tank" />
+        <ControlItem Name="EmbeddedSymbol44" ControlType="SYM_IND_01">
+          <GraphicTagName>93PI2870</GraphicTagName>
+          <ModelTagName>R35_093PI2870</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol45" ControlType="SYM_IND_01">
+          <GraphicTagName>93TI2870</GraphicTagName>
+          <ModelTagName>R35_093TI2870</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_CTRVLV_031" ControlType="SYM_CTRVLV_03">
+          <GraphicTagName>FXV2851</GraphicTagName>
+          <ModelTagName>F_R35_093FCV2851</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="Disp_Vertical" ControlType="SYM_ShowDisp" />
+        <ControlItem Name="Disp_Horizontal" ControlType="SYM_ShowDisp" />
+        <ControlItem Name="EmbeddedSymbol22" ControlType="SYM_CTRVLV_03">
+          <GraphicTagName>LXV2742</GraphicTagName>
+          <ModelTagName>F_R35_093LCV2741</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_ALMIND_011" ControlType="SYM_ALMIND_STG">
+          <GraphicTagName>LXA2742</GraphicTagName>
+          <ModelTagName>LXA2742</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol74" ControlType="SYM_ALMIND_STG">
+          <GraphicTagName>FXA2851</GraphicTagName>
+          <ModelTagName>FXA2851</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol76" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>G-3172</GraphicTagName>
+          <ModelTagName>R35_093GM7277A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="MISMATCH_FAN_MOTOR" ControlType="SYM_ALARMBORDER_05" />
+        <ControlItem Name="EmbeddedSymbol75" ControlType="SYM_MTR_DT01AB">
+          <GraphicTagName>G-3173</GraphicTagName>
+          <ModelTagName>R35_093GM7277B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="SYM_PID_011" ControlType="SYM_PID_01">
+          <GraphicTagName>FIC-2851</GraphicTagName>
+          <ModelTagName>R35_093FIC2851</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="BADINPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADINPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT1" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="BADOUTPUT2" ControlType="SYM_IOBADBORDER_01" />
+        <ControlItem Name="FP_CallOverlay1" ControlType="FP_CallOverlay" />
+        <ControlItem Name="ACK_SYMBOL1" ControlType="ACK_SYMBOL" />
+        <ControlItem Name="ALRMBOARDER" ControlType="SYM_ALARMBORDER_01" />
+        <ControlItem Name="EmbeddedSymbol27_Copy" ControlType="SYM_PID_01">
+          <GraphicTagName>LIC-2742</GraphicTagName>
+          <ModelTagName>R35_093LIC2742</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy" ControlType="Navigaton" />
+        <ControlItem Name="A_R35BA200005001MV04" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005001MV04</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy4" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy3" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy2" ControlType="Navigaton" />
+        <ControlItem Name="A_R35BA200005001MV01" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005001MV01</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200005003MV01" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005003MV01</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200005003MV06" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005003MV06</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200005003MV02" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005003MV02</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200005003MV03" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005003MV03</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200005003MV07" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005003MV07</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200005003MV08" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005003MV08</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200005003MV09" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005003MV09</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200005003MV10" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005003MV10</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200005003MV04" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005003MV04</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200005003MV05" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005003MV05</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200005003MV16" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005003MV16</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093PZV2637" ControlType="RSI_PressureSafetyValve">
+          <ModelTagName>R35_093PZV2637</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy6" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy9" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol11_Copy1" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy2" ControlType="Pipeline" />
+        <ControlItem Name="R35_093PZV2733" ControlType="RSI_PressureSafetyValve">
+          <ModelTagName>R35_093PZV2733</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy5" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy10" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol11_Copy7" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy8" ControlType="Pipeline" />
+        <ControlItem Name="R35_093PZV2735" ControlType="RSI_PressureSafetyValve">
+          <ModelTagName>R35_093PZV2735</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy9" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy11" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol11_Copy10" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy11" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol11_Copy12" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy12" ControlType="Navigaton" />
+        <ControlItem Name="A_R35BA200005001MV06" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005001MV06</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200005001MV05" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005001MV05</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="EmbeddedSymbol11_Copy13" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy1" ControlType="Navigaton" />
+        <ControlItem Name="EmbeddedSymbol11_Copy14" ControlType="Pipeline" />
+        <ControlItem Name="EmbeddedSymbol12_Copy3" ControlType="Navigaton" />
+        <ControlItem Name="A_R35BA200005001MV03" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005001MV03</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="A_R35BA200005001MV02" ControlType="RSI_GlobeValve">
+          <ModelTagName>A_R35BA200005001MV02</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35BA200005001_M10" ControlType="RSI_StdBatteryLimit">
+          <ModelTagName>R35BA200005001_M10</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093LIT2741A" ControlType="RSI_StdTransmitter">
+          <ModelTagName>R35_093LIT2741A</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093LIT2742" ControlType="RSI_StdTransmitter">
+          <ModelTagName>R35_093LIT2742</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093LIT2741B" ControlType="RSI_StdTransmitter">
+          <ModelTagName>R35_093LIT2741B</ModelTagName>
+        </ControlItem>
+        <ControlItem Name="R35_093LIT2741C" ControlType="RSI_StdTransmitter">
+          <ModelTagName>R35_093LIT2741C</ModelTagName>
+        </ControlItem>
+      </ControlItemCollection>
+    </Synoptic>
+  </SynopticCollection>
+  <GroupCollection>
+    <Group Description="&lt;Empty&gt;">
+      <Pens>
+        <Pen Color="#FF00FFFF" />
+        <Pen Color="#FFFF00FF" />
+        <Pen Color="#FF800000" />
+        <Pen Color="#FF00FF00" />
+        <Pen Color="#FFFF0000" />
+        <Pen Color="#FFFFD700" />
+        <Pen Color="#FF008080" />
+        <Pen Color="#FFCD853F" />
+      </Pens>
+    </Group>
+  </GroupCollection>
+  <AlarmFilter invert="false" acceptSynopticAlarms="true" />
+  <TrendCollection>
+    <Trend Description="&lt;Empty&gt;">
+      <Pens>
+        <Pen Color="#FF00FFFF" />
+        <Pen Color="#FFFF00FF" />
+        <Pen Color="#FF800000" />
+        <Pen Color="#FF00FF00" />
+        <Pen Color="#FFFF0000" />
+        <Pen Color="#FFFFD700" />
+        <Pen Color="#FF008080" />
+        <Pen Color="#FFCD853F" />
+      </Pens>
+    </Trend>
+  </TrendCollection>
+  <ControlViewCollection />
+  <UserDefinedTrendCollection>
+    <Trend Description="Trend1" Button1TimeSpan="00:10:00" Button2TimeSpan="00:20:00" Button3TimeSpan="01:00:00">
+      <Pens>
+        <Pen Color="#FF00FFFF">
+          <TagName>Viewer</TagName>
+        </Pen>
+      </Pens>
+    </Trend>
+  </UserDefinedTrendCollection>
+  <Toc>
+    <TreeViewItem Header="STG" WindowName="">
+      <TreeViewItems>
+        <TreeViewItem Header="Common" WindowName="">
+          <TreeViewItems>
+            <TreeViewItem IsSlowLoaded="true" PageNumber="246" WindowName="01STG_DIAG" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="246" WindowName="01STG" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="314" WindowName="93STG_D_06" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="249" WindowName="02STG" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="261" WindowName="93STG03" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="314" WindowName="04STG" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="314" WindowName="05STG" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="314" WindowName="06STG" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="314" WindowName="93STG07" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="314" WindowName="08STG" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="314" WindowName="08STG_DIAG" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="314" WindowName="09STG" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="314" WindowName="10STG" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="314" WindowName="11STG_DIAG" />
+            <TreeViewItem IsSlowLoaded="true" PageNumber="314" WindowName="11STG" />
+            
+          </TreeViewItems>
+        </TreeViewItem>
+      </TreeViewItems>
+    </TreeViewItem>
+  </Toc>
+</DataBase>

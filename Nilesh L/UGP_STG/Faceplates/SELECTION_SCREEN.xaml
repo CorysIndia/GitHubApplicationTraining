@@ -1,0 +1,83 @@
+<RSIFacePlate x:Class="UGP_STG.HMI.SELECTION_SCREEN"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_STG.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+  <RSICanvas Width="600"
+             Height="140"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <RSIRectangle x:Name="Rectangle2"
+                  Width="600"
+                  Height="140"
+                  Fill="#FF9A9A9A"
+                  Stroke="#FF000000"
+                  StrokeThickness="1" />
+    <RSIText x:Name="Text1"
+             Canvas.Left="186"
+             Canvas.Top="20.62109"
+             Width="225"
+             Height="16.75781"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="PLEASE MAKE YOUR SELECTION"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="11"
+             TextElement.FontWeight="Bold" />
+    <hmi:QuickLinkButton x:Name="QuickLinkButton1"
+                         Canvas.Left="248"
+                         Canvas.Top="67"
+                         Width="101"
+                         Height="42" />
+    <hmi:QuickLinkButton x:Name="QuickLinkButton2"
+                         Canvas.Left="25"
+                         Canvas.Top="67"
+                         Width="101"
+                         Height="42" />
+    <hmi:QuickLinkButton x:Name="QuickLinkButton3"
+                         Canvas.Left="466"
+                         Canvas.Top="67.00001"
+                         Width="101"
+                         Height="42" />
+    <RSIText x:Name="Text2"
+             Canvas.Left="59"
+             Canvas.Top="79.62109"
+             Width="32"
+             Height="16.75781"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             Text="####"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="11"
+             TextElement.FontWeight="Bold">
+      <RSIText.Animations>
+        <Animation>
+          <ChangeText Text="Intouch_tCONF_LSTRING" />
+        </Animation>
+      </RSIText.Animations>
+    </RSIText>
+    <RSIText x:Name="Text3"
+             Canvas.Left="500"
+             Canvas.Top="79.62109"
+             Width="32"
+             Height="16.75781"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             Text="####"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="11"
+             TextElement.FontWeight="Bold">
+      <RSIText.Animations>
+        <Animation>
+          <ChangeText Text="Intouch_tCONF_RSTRING" />
+        </Animation>
+      </RSIText.Animations>
+    </RSIText>
+  </RSICanvas>
+</RSIFacePlate>

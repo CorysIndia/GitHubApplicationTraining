@@ -1,0 +1,60 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:BYPASS_SEQ}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:BYPASS_SEQ}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="170"
+                         Height="66.48437"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIPath x:Name="Element27"
+                         Canvas.Top="21.4844"
+                         Width="170"
+                         Height="44.99997"
+                         Data="M0,0 L1,0 1,1 0,1 0,0 0,0 z"
+                         Fill="#FF000099"
+                         Stretch="Fill"
+                         Stroke="#FFFFFFFF"
+                         StrokeThickness="1">
+                  <RSIPath.Animations />
+                </RSIPath>
+                <RSIText x:Name="Text1"
+                         Canvas.Left="7.8656"
+                         Width="153.2689"
+                         Height="17.875"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="XXXXXXXXXXXXXX"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12" />
+                <RSIText x:Name="Text2"
+                         Canvas.Left="14.3394"
+                         Canvas.Top="33"
+                         Width="142.3211"
+                         Height="17.875"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="XXXXXXXXXXXXX"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12" />
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

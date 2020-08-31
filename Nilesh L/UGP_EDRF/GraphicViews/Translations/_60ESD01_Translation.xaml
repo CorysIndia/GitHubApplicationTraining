@@ -1,0 +1,121 @@
+<UserControl x:Class="UGP_EDRF._60ESD01_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+  <RSICanvas Width="1500"
+             Height="750.000001907349"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:Background_Disp x:Name="Background_1"
+                         Canvas.Top="1.907349E-06"
+                         Width="1500"
+                         Height="750" />
+    <RSIRectangle x:Name="BACK"
+                  Canvas.Left="46"
+                  Canvas.Top="72.916501907349"
+                  Width="1408"
+                  Height="604.167"
+                  Fill="#FF717171"
+                  Stroke="#FF000000"
+                  StrokeThickness="1" />
+    <hmi:SYM_BYPASS_03 x:Name="E3"
+                           Canvas.Left="864.2574"
+                           Canvas.Top="118.500201907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="60PDI1537BY" TAGNAME2="M39-060-PDIT-1537-SOFT MOS ACTI" ModelName="60PDIT1537BP" MRST_BLK="60PDIT1537RS" />
+    <hmi:SYM_BYPASS_03 x:Name="E2"
+                           Canvas.Left="491.2574"
+                           Canvas.Top="118.500201907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="60PDI1536BY" TAGNAME2="M39-060-PDIT-1536-SOFT MOS ACTI" ModelName="60PDIT1536BP" MRST_BLK="60PDIT1536RS" />
+    <hmi:SYM_BYPASS_03 x:Name="E4"
+                           Canvas.Left="1237.257"
+                           Canvas.Top="118.500201907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="60PDI1538BY" TAGNAME2="M39-060-PDIT-1538-SOFT MOS ACTI" ModelName="60PDIT1538BP" MRST_BLK="60PDIT1538RS" />
+    <hmi:SYM_BYPASS_03 x:Name="E1"
+                           Canvas.Left="118.2574"
+                           Canvas.Top="118.474501907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="60PDI1534BY" TAGNAME2="M39-060-PDIT-1534-SOFT MOS ACTI" ModelName="60PDIT1534BP" MRST_BLK="60PDIT1534RS" />
+    <hmi:SYM_ESD_BYPASS x:Name="B"
+                             Canvas.Left="1209.743"
+                             Canvas.Top="604.750001907349"
+                             Width="200"
+                             Height="50" />
+    <hmi:SYM_NORMAL x:Name="N"
+                              Canvas.Left="836.2575"
+                              Canvas.Top="604.275701907349"
+                              Width="200.4851"
+                              Height="50.47424" />
+    <hmi:SYM_OPR x:Name="O"
+                        Canvas.Left="463.2574"
+                        Canvas.Top="604.749901907349"
+                        Width="200"
+                        Height="50" />
+    <hmi:SYM_SUPER x:Name="S"
+                          Canvas.Left="90.2574"
+                          Canvas.Top="604.749901907349"
+                          Width="200"
+                          Height="50" />
+    <hmi:SYM_TITLE_1 x:Name="TITLE"
+                          Width="1500"
+                          Height="32.986"
+                          ESD_NAV="false"
+                          PREV_RECENT="PREV"
+                          TRAIN_CLR="GREY" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol12"
+                           Canvas.Left="118.2574"
+                           Canvas.Top="280.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="60ZXSH0830BY" TAGNAME2="M39-060-ZV-0830-OPEN LIMIT SWI" ModelName="60ZXSH0830BP" MRST_BLK="60ZXSH0830RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol1"
+                           Canvas.Left="491.2574"
+                           Canvas.Top="280.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="60ZXSL0830BY" TAGNAME2="M39-003-ZV-0830-CLOSE LIMIT SWI" ModelName="60ZXSL0830BP" MRST_BLK="60ZXSL0830RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol2"
+                           Canvas.Left="864.2574"
+                           Canvas.Top="280.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="60ZXSH0831BY" TAGNAME2="M39-060-ZV-0831-OPEN LIMIT SWI" ModelName="60ZXSH0831BP" MRST_BLK="60ZXSH0831RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol3"
+                           Canvas.Left="1237.257"
+                           Canvas.Top="280.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="60ZXSL0831BY" TAGNAME2="M39-003-ZV-0831-CLOSE LIMIT SWI" ModelName="60ZXSL0831BP" MRST_BLK="60ZXSL0831RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol4"
+                           Canvas.Left="118.2574"
+                           Canvas.Top="440.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="60ZXSH0832BY" TAGNAME2="M39-060-ZV-0832-OPEN LIMIT SWI" ModelName="60ZXSH0832BP" MRST_BLK="60ZXSH0832RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol5"
+                           Canvas.Left="491.2574"
+                           Canvas.Top="440.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="60ZXSL0832BY" TAGNAME2="M39-003-ZV-0832-CLOSE LIMIT SWI" ModelName="60ZXSL0832BP" MRST_BLK="60ZXSL0832RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol6"
+                           Canvas.Left="864.2574"
+                           Canvas.Top="440.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="60ZXSH0835BY" TAGNAME2="M39-060-ZV-0835-OPEN LIMIT SWI" ModelName="60ZXSH0835BP" MRST_BLK="60ZXSH0835RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol7"
+                           Canvas.Left="1237.257"
+                           Canvas.Top="440.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="60ZXSL0835BY" TAGNAME2="M39-003-ZV-0835-CLOSE LIMIT SWI" ModelName="60ZXSL0835BP" MRST_BLK="60ZXSL0835RS" />
+  </RSICanvas>
+</UserControl>

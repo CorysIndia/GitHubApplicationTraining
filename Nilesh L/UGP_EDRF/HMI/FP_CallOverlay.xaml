@@ -1,0 +1,106 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:FP_CallOverlay}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:FP_CallOverlay}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="30"
+                         Height="140"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIRectangle x:Name="Action"
+                              Width="30"
+                              Height="140"
+                              Stroke="Transparent"
+                              StrokeThickness="0">
+                  <RSIRectangle.Animations>
+                    <Animation />
+                    <!--
+                      dim cpValues[21] as aaGraphic.CustomPropertyValuePair;
+                      dim graphicInfo as aaGraphic.GraphicInfo;
+                      graphicInfo.HasTitleBar = true;
+                      graphicInfo.HasCloseButton = false;
+                      graphicInfo.WindowTitle = Tagname;
+                      graphicInfo.WindowRelativePosition = aaGraphic.WindowRelativePosition.Window;
+                      if (LOC == aaGraphic.WindowLocation.TopLeftCorner) then {LOC = 2}
+                      if UL_OPEN then HideGraphic (Monitor+"_UL");endif;
+                      graphicInfo.Identity = Monitor+"_UL";
+                      UL_OPEN = true;
+                      graphicInfo.WindowLocation = aaGraphic.WindowLocation.TopLeftCorner;
+                      elseif (LOC == aaGraphic.WindowLocation.TopRightCorner) then {LOC = 4}
+                      if  UR_OPEN then HideGraphic (Monitor+"_UR");endif;
+                      graphicInfo.Identity = Monitor+"_UR";
+                      UR_OPEN = true;
+                      graphicInfo.WindowLocation = aaGraphic.WindowLocation.TopRightCorner;
+                      elseif (LOC == aaGraphic.WindowLocation.BottomLeftCorner) then {LOC = 9}
+                      if LL_OPEN then HideGraphic (Monitor+"_LL");endif;
+                      graphicInfo.Identity = Monitor+"_LL";
+                      LL_OPEN = true;
+                      graphicInfo.WindowLocation = aaGraphic.WindowLocation.BottomLeftCorner;
+                      elseif (LOC == aaGraphic.WindowLocation.BottomRightCorner) then {LOC = 11}
+                      if LR_OPEN then HideGraphic (Monitor+"_LR");endif;
+                      graphicInfo.Identity = Monitor+"_LR";
+                      LR_OPEN = true;
+                      graphicInfo.WindowLocation = aaGraphic.WindowLocation.BottomRightCorner;
+                      elseif (LOC == aaGraphic.WindowLocation.Bottom) then {LOC = 10}
+                      if BOTTOM_OPEN then HideGraphic (MONITOR+"_Bottom");endif;
+                      graphicInfo.Identity = Monitor+"_Bottom";
+                      BOTTOM_OPEN = true;
+                      graphicInfo.WindowLocation = aaGraphic.WindowLocation.Bottom;
+                      elseif (LOC == aaGraphic.WindowLocation.Top) then {LOC = 3}
+                      if TOP_OPEN then HideGraphic (MONITOR+"_TOP");endif;
+                      graphicInfo.Identity = Monitor+"_TOP";
+                      TOP_OPEN = true;
+                      graphicInfo.WindowLocation = aaGraphic.WindowLocation.Top;
+                      else
+                      HideGraphic (MONITOR+"_Center");
+                      graphicInfo.Identity = Monitor+"_Center";
+                      graphicInfo.WindowLocation = aaGraphic.WindowLocation.Center;
+                      endif;
+                      dim ID as string;
+                      ID = graphicInfo.Identity;
+                      cpValues[1] = new aaGraphic.CustomPropertyValuePair("LOC_1", ID, true); {Intouch:SGUG_(M(1|2|3|4))_(UL|UR|LL|LR|TOP|BTM)}
+                      cpValues[2] = new aaGraphic.CustomPropertyValuePair("CMPOVL", CMPOVL, true);
+                      cpValues[3] = new aaGraphic.CustomPropertyValuePair("CMPOVL2", CMPOVL2, true);
+                      cpValues[4] = new aaGraphic.CustomPropertyValuePair("CMPOVL3", CMPOVL3, true);
+                      cpValues[5] = new aaGraphic.CustomPropertyValuePair("CMPOVL4", CMPOVL4, true);
+                      cpValues[6] = new aaGraphic.CustomPropertyValuePair("CMPOVL5", CMPOVL5, true);
+                      cpValues[7] = new aaGraphic.CustomPropertyValuePair("CMPOVL6", CMPOVL6, true);
+                      cpValues[8] = new aaGraphic.CustomPropertyValuePair("BLKOVL", BLKOVL, true);
+                      cpValues[9] = new aaGraphic.CustomPropertyValuePair("BLKOVL2", BLKOVL2, true);
+                      cpValues[10] = new aaGraphic.CustomPropertyValuePair("BLKOVL3", BLKOVL3, true);
+                      cpValues[11] = new aaGraphic.CustomPropertyValuePair("BLKOVL4", BLKOVL4, true);
+                      cpValues[12] = new aaGraphic.CustomPropertyValuePair("BLKOVL5", BLKOVL5, true);
+                      cpValues[13] = new aaGraphic.CustomPropertyValuePair("BLKOVL6", BLKOVL6, true);
+                      cpValues[14] = new aaGraphic.CustomPropertyValuePair("PAROVL", PAROVL, true);
+                      cpValues[15] = new aaGraphic.CustomPropertyValuePair("PAROVL2", PAROVL2, true);
+                      cpValues[16] = new aaGraphic.CustomPropertyValuePair("PAROVL3", PAROVL3, true);
+                      cpValues[17] = new aaGraphic.CustomPropertyValuePair("PAROVL4", PAROVL3, true);
+                      cpValues[18] = new aaGraphic.CustomPropertyValuePair("Tagname", Tagname, true);
+                      cpValues[19] = new aaGraphic.CustomPropertyValuePair("PRT", PRT, true);
+                      cpValues[20] = new aaGraphic.CustomPropertyValuePair("LOC", LOC, true);
+                      cpValues[21] = new aaGraphic.CustomPropertyValuePair("DSCRP", DSCRP, true);
+                      
+                      graphicInfo.CustomProperties = cpValues;
+                      graphicInfo.WindowType = aaGraphic.WindowType.Modeless;
+                      graphicInfo.GraphicName = OverlayName;
+                      ShowGraphic(graphicInfo);
+                    -->
+                  </RSIRectangle.Animations>
+                </RSIRectangle>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

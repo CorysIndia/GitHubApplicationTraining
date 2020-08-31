@@ -1,0 +1,393 @@
+﻿<RSISynoptic
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:HMI="clr-namespace:UGP_EDRF.HMI" x:Class="UGP_EDRF.LOCAL_PANELS.EDRFGraphic_Hierarchy1"
+          Background="LightGray"
+          Height="1048"
+          Width="1920"
+          mc:Ignorable="d">
+    <Grid>
+        <!--  GRAPHIC Part  -->
+        <Canvas x:Name="GRAPHIC">
+            <RSIText x:Name="rSIText" Height="52.5" Canvas.Left="39" TextWrapping="Wrap" Canvas.Top="418.668" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFE3E3E3" Text="EDR OVERVIEW">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="PLANTOVIEW01"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy" Height="52.5" Canvas.Left="39" TextWrapping="Wrap" Text="D0007C REGAS FLOW CHART" Canvas.Top="479" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFC1C0BC">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="03DISP03"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy1" Height="52.5" Canvas.Left="39" TextWrapping="Wrap" Text="E0005 CONDENSER SUBCOOLER" Canvas.Top="539" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFA0A0A0">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05DISP03"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy2" Height="52.5" Canvas.Left="39" TextWrapping="Wrap" Text="C-0001 DE-METHANIZER" Canvas.Top="599" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FF85858C">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05DISP09"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy3" Height="52.5" Canvas.Left="190.999" TextWrapping="Wrap" Text="UNIT 1 &amp; 2 OVERVIEW" Canvas.Top="418.668" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFE3E3E3">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="02oview01"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy4" Height="52.5" Canvas.Left="190.999" TextWrapping="Wrap" Text="D0007D REGAS FLOW CHART" Canvas.Top="479" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFC1C0BC">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="03DISP04"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy5" Height="52.5" Canvas.Left="190.999" TextWrapping="Wrap" Text="D-0011 EXPANDER SEPARATOR" Canvas.Top="539" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFA0A0A0">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05disp04"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy6" Height="52.5" Canvas.Left="190.999" TextWrapping="Wrap" Text="G-0001A/B BOTTOM PUMP" Canvas.Top="599" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FF85858C">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05DISP10"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy7" Height="52.5" Canvas.Left="344" TextWrapping="Wrap" Text="UNIT 3 OVERVIEW" Canvas.Top="418.668" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFE3E3E3">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="03oview01"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy8" Height="52.5" Canvas.Left="344" TextWrapping="Wrap" Text="D0007E REGAS FLOW CHART" Canvas.Top="479" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFC1C0BC">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="03DISP05"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy9" Height="52.5" Canvas.Left="344" TextWrapping="Wrap" Text="E-0006 TUBESIDE REBOILER" Canvas.Top="539" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFA0A0A0">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05DISP05"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy10" Height="52.5" Canvas.Left="344" TextWrapping="Wrap" Text="FIRE AND GAS LAYOUT OVERVIEW" Canvas.Top="599" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FF85858C"/>
+            <RSIText x:Name="rSIText_Copy11" Height="52.5" Canvas.Left="498" TextWrapping="Wrap" Text="UNIT 5 OVERVIEW" Canvas.Top="418.668" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFE3E3E3">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05oview01"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy12" Height="52.5" Canvas.Left="498" TextWrapping="Wrap" Text="E-0001 1 &amp; 2 REGEN GAS SUPER HEATER" Canvas.Top="479" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFC1C0BC">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="03DISP07"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy13" Height="52.5" Canvas.Left="498" TextWrapping="Wrap" Text="E-0007 BOILERSIDE REBOILER" Canvas.Top="539" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFA0A0A0">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05DISP06"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy14" Height="52.5" Canvas.Left="498" TextWrapping="Wrap" Canvas.Top="599" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FF85858C" Text="DRYER A">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="DRYERA"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy15" Height="52.5" Canvas.Left="650.997" TextWrapping="Wrap" Text="UNIT 6 OVERVIEW" Canvas.Top="418.668" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFE3E3E3">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="06oview01"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy16" Height="52.5" Canvas.Left="650.997" TextWrapping="Wrap" Text="K-0001 REGEN GAS COMP" Canvas.Top="479" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFC1C0BC">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="03DISP10"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy17" Height="52.5" Canvas.Left="650.997" TextWrapping="Wrap" Text="K-0003A TUBE EXPANDER" Canvas.Top="539" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFA0A0A0">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05DISP07"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy18" Height="52.5" Canvas.Left="650.997" TextWrapping="Wrap" Canvas.Top="599" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FF85858C" Text="DRYER B">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="DRYERB"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy19" Height="52.5" Canvas.Left="804.5" TextWrapping="Wrap" Text="UNIT 7 OVERVIEW" Canvas.Top="418.668" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFE3E3E3">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="07OVIEW01"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy20" Height="52.5" Canvas.Left="804.5" TextWrapping="Wrap" Text="K-0001 REGEN L/O SYSTEM" Canvas.Top="479" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFC1C0BC">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="03DISP14"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy21" Height="52.5" Canvas.Left="804.5" TextWrapping="Wrap" Text="K-0003A CCS" Canvas.Top="539" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFA0A0A0">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="OVERVIEW_M39_K0003A"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy22" Height="52.5" Canvas.Left="804.5" TextWrapping="Wrap" Canvas.Top="599" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FF85858C" Text="DRYER C">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="DRYERC"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy23" Height="52.5" Canvas.Left="959.665" TextWrapping="Wrap" Text="HAWIYAH GAS INLET" Canvas.Top="418.668" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFE3E3E3" AutomationProperties.HelpText="   HAWJAY              OVE">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="02oview01"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy24" Height="52.5" Canvas.Left="959.665" TextWrapping="Wrap" Text="K-0001 REGEN SEAL SYSTEM" Canvas.Top="479" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFC1C0BC">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="03DISP17"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy25" Height="52.5" Canvas.Left="959.665" TextWrapping="Wrap" Text="K-0003A VMS" Canvas.Top="539" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFA0A0A0">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05DISP13"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy26" Height="52.5" Canvas.Left="959.665" TextWrapping="Wrap" Canvas.Top="599" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FF85858C" Text="DRYER D">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="DRYERD"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy27" Height="52.5" Canvas.Left="1112.997" TextWrapping="Wrap" Text="UBTG 1&amp;2 INLET" Canvas.Top="418.668" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFE3E3E3" AutomationProperties.HelpText=" UBTG 1&amp;1              INLET">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="01Disp03"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy28" Height="52.5" Canvas.Left="1112.997" TextWrapping="Wrap" Text="K-0001 CCS" Canvas.Top="479" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFC1C0BC">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="MAIN_MENU_M39_K_0001"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy29" Height="52.5" Canvas.Left="1112.997" TextWrapping="Wrap" Text="K-0003A SEAL SYATEM" Canvas.Top="539" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFA0A0A0">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05DISP14"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy30" Height="52.5" Canvas.Left="1112.997" TextWrapping="Wrap" Canvas.Top="599" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FF85858C" Text="DRYER E">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="DRYERE"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy31" Height="52.5" Canvas.Left="1266.329" TextWrapping="Wrap" Text="D0004 MERCURY REMOVAL BEDS" Canvas.Top="418.668" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFE3E3E3">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="02Disp01"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy32" Height="52.5" Canvas.Left="1266.329" TextWrapping="Wrap" Text="K-0001 VMC" Canvas.Top="479" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFC1C0BC">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="03DISP16"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy33" Height="52.5" Canvas.Left="1266.329" TextWrapping="Wrap" Text="K-0003B TURBO EXPANDER" Canvas.Top="539" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFA0A0A0">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05DISP08"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy34" Height="52.5" Canvas.Left="1421.996" TextWrapping="Wrap" Canvas.Top="599" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FF85858C">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy35" Height="52.5" Canvas.Left="1422" TextWrapping="Wrap" Text="D0005&amp;6 MERCURY REMOVAL DUST FILTER" Canvas.Top="418.668" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFE3E3E3">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="02Disp03"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy36" Height="52.5" Canvas.Left="1422" TextWrapping="Wrap" Text="D0021 STEAM CONDENSATE SYSTEM" Canvas.Top="479" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFC1C0BC">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="03DISP12"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy37" Height="52.5" Canvas.Left="1422" TextWrapping="Wrap" Text="K-0003B CCS" Canvas.Top="539" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFA0A0A0">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="OVERVIEW_M39_K0003B"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy38" Height="52.5" Canvas.Left="1266.997" TextWrapping="Wrap" Canvas.Top="599" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FF85858C" Text="DRYER SEQ">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="Seq_3"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy39" Height="52.5" Canvas.Left="1579.5" TextWrapping="Wrap" Text="D0007A REGAS FLOW CHART" Canvas.Top="418.668" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFE3E3E3">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="03DISP01"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy40" Height="52.5" Canvas.Left="1579.5" TextWrapping="Wrap" Text="E0004A FEED GAS EXCHANGER" Canvas.Top="479" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFC1C0BC">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05DISP01"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy41" Height="52.5" Canvas.Left="1579.5" TextWrapping="Wrap" Text="K-0003B VMS" Canvas.Top="539" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFA0A0A0">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05DISP15"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy42" Height="52.5" Canvas.Left="1579.5" TextWrapping="Wrap" Canvas.Top="599" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FF85858C">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy43" Height="52.5" Canvas.Left="1737" TextWrapping="Wrap" Text="D0007B REGAS FLOW CHART" Canvas.Top="418.668" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFE3E3E3">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="03DISP02"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy44" Height="52.5" Canvas.Left="1737" TextWrapping="Wrap" Text="E0004B FEED GAS EXCHANGER" Canvas.Top="479" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFC1C0BC">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05DISP02"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy45" Height="52.5" Canvas.Left="1737" TextWrapping="Wrap" Text="K-0003B SEAL SYSTEM" Canvas.Top="539" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FFA0A0A0">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link WindowName="05DISP14"/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy46" Height="52.5" Canvas.Left="1737" TextWrapping="Wrap" Canvas.Top="599" Width="149" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="0.5" Cursor="Hand" Background="#FF85858C">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="rSIText_Copy47" Height="36" Canvas.Left="39" TextWrapping="Wrap" Text="CONSOLE A&amp;B WS # 1" Canvas.Top="375.168" Width="1847" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" BorderBrush="Black" BorderThickness="1" Cursor="Hand" Background="#FFCFD9E2" FontSize="18.667">
+                <RSIText.Animations>
+                    <ClickAnimation>
+                        <Link/>
+                    </ClickAnimation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSIText x:Name="TextBox4" Width="30" VerticalContentAlignment="Center" Canvas.Top="997.599" Text="NEXT" Canvas.Left="1823" IsHitTestVisible="False" Height="20" HorizontalContentAlignment="Right" TextElement.FontFamily="Arial" TextElement.FontSize="10" Foreground="#FF000000" BorderBrush="Transparent"/>
+            <HMI:Navigaton x:Name="EmbeddedSymbol37"
+        Canvas.Left="1853"
+        Canvas.Top="999.217"
+        Width="29"
+        Height="38.783"
+        DISP="EDRFGraphic_Hierarchy2"
+        PRT="3"
+        Type="Main" />
+            <RSIText x:Name="TextBox4_Copy" Width="30" VerticalContentAlignment="Center" Canvas.Top="997.599" Text="PREV" Canvas.Left="42.5" IsHitTestVisible="False" Height="20" HorizontalContentAlignment="Right" TextElement.FontFamily="Arial" TextElement.FontSize="10" Foreground="#FF000000" BorderBrush="Transparent"/>
+            <HMI:Navigaton x:Name="EmbeddedSymbol37_Copy"
+        Canvas.Left="72.5"
+        Canvas.Top="999.217"
+        Width="29"
+        Height="38.783"
+        DISP="EDRFGraphic_Hierarchy3"
+        PRT="3"
+        Type="Main" RenderTransformOrigin="0.5,0.5" >
+                <HMI:Navigaton.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </HMI:Navigaton.RenderTransform>
+            </HMI:Navigaton>
+        </Canvas>
+
+        <!--  FOD Part  -->
+        <Canvas x:Name="FOD"
+                Visibility="{FODBinding}" d:IsLocked="True"/>
+
+        <!--  Battery Limit Part  -->
+        <Canvas x:Name="BL"
+                Visibility="{BLBinding}" d:IsLocked="True"/>
+
+        <!--  FAILURE Part  -->
+        <Canvas x:Name="FAILURE"
+                Visibility="{FAILUREBinding}" d:IsLocked="True"/>
+
+    </Grid>
+</RSISynoptic>

@@ -1,0 +1,280 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_ALMIND_01}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_ALMIND_01}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+                            <RSIGrid.Parameters>
+                                <Param Name="$AlarmColour" Value="Red"/>
+                            </RSIGrid.Parameters>
+                            <RSICanvas Width="90.80812"
+                         Height="47"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIText x:Name="TEXT"
+                         Canvas.Left="3"
+                         Canvas.Top="22"
+                         Width="85"
+                         Height="25"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="11"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" Background="#FFE0E0E0" Text="{TemplateBinding TAGNAME}">
+                  <RSIText.Animations>
+                                        <!--ACTIVE-->
+                                        <Animation Condition="$TAGNAME.CINAlarms.Alarms[CIN].Status == 3">
+                                            <SetVisible/>
+                                        </Animation>
+                                         <!--RETURNED-->
+                                        <Animation Condition="$TAGNAME.CINAlarms.Alarms[CIN].Status == 1">
+                                            <SetVisible/>
+                                                                               
+                                        </Animation>
+                                       <!--ACKNOWLEDGE-->
+                                        <Animation Condition="$TAGNAME.CINAlarms.Alarms[CIN].Status == 2">
+                                            <SetVisible/>
+                                           </Animation>
+                                        <!--INACTIVE-->
+                                        <Animation Condition="$TAGNAME.CINAlarms.Alarms[CIN].Status == 0">
+                                            <Invisible/>
+                                        </Animation>
+                                    </RSIText.Animations>
+                </RSIText>
+                <hmi:FP_CallOverlay x:Name="FP_CallOverlay1"
+                                    Canvas.Left="3"
+                                    Canvas.Top="22"
+                                    Width="85"
+                                    Height="25"
+                                    BLKOVL="{TemplateBinding BLK}"
+                                    CMPOVL="{TemplateBinding CMP}"
+                                    LOC="{TemplateBinding LOC}"
+                                    OverlayName="FP_CIN"
+                                    PRT="{TemplateBinding PRT}" />
+                <hmi:ACK_SYMBOL x:Name="ACK_SYMBOL1"
+                                Canvas.Left="3"
+                                Canvas.Top="22"
+                                Width="85"
+                                Height="25" />
+                <RSICanvas Name="Group1"
+                           Width="90.80812"
+                           Height="25"
+                           Left="0"
+                           Top="0" Visibility="{TemplateBinding TAG, Converter={EqualConverter true}}">
+                                    <RSIText x:Name="TAG"
+                           Width="90.80811"
+                           Height="25"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Bottom"
+                           Background="#00EFEFEF"
+                           BorderBrush="#00000000"
+                           Foreground="#FF000000"
+                           IsHitTestVisible="False"
+                           Text="{TemplateBinding TAGNAME}"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="12"
+                           TextWrapping="Wrap"/>
+                                </RSICanvas>
+                <RSIRectangle x:Name="ALARMBORDER"
+                                        Canvas.Left="3"
+                                        Canvas.Top="22"
+                                        Width="85"
+                                        Height="25" Stroke="Gray" Visibility="Hidden"  >
+                                    <RSIRectangle.Animations>
+                                        <!--ACTIVE--><!--
+                                        <Animation Condition="$TAGNAME.CINAlarms.Alarms[CIN].Status == 3">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$AlarmColour"/>
+                                            <Blink/>
+                                        </Animation>
+                                        --><!--RETURNED--><!--
+                                        <Animation Condition="$TAGNAME.CINAlarms.Alarms[CIN].Status == 1">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="Gray"/>
+                                            <Blink/>
+                                        </Animation>
+                                        --><!--ACKNOWLEDGE--><!--
+                                        <Animation Condition="$TAGNAME.CINAlarms.Alarms[CIN].Status == 2">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="BorderBrush" Value="$AlarmColour"/>
+                                        </Animation>
+                                        --><!--INACTIVE--><!--
+                                        <Animation Condition="$TAGNAME.CINAlarms.Alarms[CIN].Status == 0">
+                                            <Invisible/>
+                                        </Animation>-->
+
+
+                                        <!--LOW ALARM-->
+                                        <Animation Condition="(($TAGNAME.CINAlarms.Alarms[CIN].Status == 3) AND (($TAGNAME.SCGRP== 21) OR ($TAGNAME.SCGRP== 22) OR ($TAGNAME.SCGRP== 23)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Yellow"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 3)  AND ($TAGNAME.SCGRP== 24)">
+
+
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="(($TAGNAME.CINAlarms.Alarms[CIN].Status == 1)  AND (($TAGNAME.SCGRP== 21) OR ($TAGNAME.SCGRP== 22) OR ($TAGNAME.SCGRP== 23)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="yellow"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 1)  AND ($TAGNAME.SCGRP== 24)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                            <Blink/>
+                                        </Animation>
+
+
+                                        <Animation Condition="(($TAGNAME.CINAlarms.Alarms[CIN].Status == 2) AND (($TAGNAME.SCGRP== 21) OR ($TAGNAME.SCGRP== 22))) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 2) AND ($TAGNAME.SCGRP== 24) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 2) AND ($TAGNAME.SCGRP== 23) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Yellow"/>
+                                        </Animation>
+
+                                        <!--HIGH ALARM-->
+                                        <Animation Condition="(($TAGNAME.CINAlarms.Alarms[CIN].Status == 3) AND (($TAGNAME.SCGRP== 11) OR ($TAGNAME.SCGRP== 12) OR ($TAGNAME.SCGRP== 13)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Yellow"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 3)  AND ($TAGNAME.SCGRP== 14)">
+
+
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                            <Blink/>
+                                        </Animation>
+
+                                        <Animation Condition="(($TAGNAME.CINAlarms.Alarms[CIN].Status == 1)  AND (($TAGNAME.SCGRP== 11) OR ($TAGNAME.SCGRP== 12) OR ($TAGNAME.SCGRP== 13)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="yellow"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 1)  AND ($TAGNAME.SCGRP== 14)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                            <Blink/>
+                                        </Animation>
+
+
+                                        <Animation Condition="(($TAGNAME.CINAlarms.Alarms[CIN].Status == 2) AND (($TAGNAME.SCGRP== 11) OR ($TAGNAME.SCGRP== 12))) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 2) AND ($TAGNAME.SCGRP== 14) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Cyan"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 2) AND ($TAGNAME.SCGRP== 13) ">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Yellow"/>
+                                        </Animation>
+
+
+
+                                        <!--LOW LOW ALARM-->
+
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 3 AND (($TAGNAME.SCGRP == 41) OR ($TAGNAME.SCGRP == 42)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="red"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 3) AND ($TAGNAME.SCGRP == 43)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                            <Blink/>
+                                        </Animation
+>
+
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 1 AND (($TAGNAME.SCGRP == 41) OR ($TAGNAME.SCGRP == 42)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 1) AND ($TAGNAME.SCGRP == 3)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                            <Blink/>
+                                        </Animation
+>
+
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 2 AND (($TAGNAME.SCGRP == 41) OR ($TAGNAME.SCGRP == 42)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 2) AND ($TAGNAME.SCGRP == 43)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                        </Animation>
+
+                                        <!--HIGH HIGH ALARM-->
+
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 3 AND (($TAGNAME.SCGRP == 31) OR ($TAGNAME.SCGRP == 32)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="red"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 3) AND ($TAGNAME.SCGRP == 33)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                            <Blink/>
+                                        </Animation
+>
+
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 1 AND (($TAGNAME.SCGRP == 31) OR ($TAGNAME.SCGRP == 32)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                            <Blink/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 1) AND ($TAGNAME.SCGRP == 33)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                            <Blink/>
+                                        </Animation
+>
+
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 2 AND (($TAGNAME.SCGRP == 31) OR ($TAGNAME.SCGRP == 32)))">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Red"/>
+                                        </Animation>
+                                        <Animation Condition="($TAGNAME.CINAlarms.Alarms[CIN].Status == 2) AND ($TAGNAME.SCGRP == 33)">
+                                            <SetVisible/>
+                                            <ChangePropertyValue PropertyName="Stroke" Value="Orange"/>
+                                        </Animation>
+
+
+
+                                    </RSIRectangle.Animations>
+                                </RSIRectangle>
+                            </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+        <Setter Property="StandardFaceplateName" Value="FP_CIN"/>
+    </Style>
+</ResourceDictionary>

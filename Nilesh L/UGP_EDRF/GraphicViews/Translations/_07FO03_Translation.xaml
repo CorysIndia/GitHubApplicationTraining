@@ -1,0 +1,201 @@
+<UserControl x:Class="UGP_EDRF._07FO03_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+    <RSICanvas Width="1500"
+             Height="750.000001907349"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+        <hmi:Background_Disp x:Name="Background_Disp1"
+                         Canvas.Top="1.907349E-06"
+                         Width="1500"
+                         Height="750" />
+        <hmi:SYM_TITLE_BAR_01 x:Name="SYM_TITLE_BAR_011"
+                          Width="1500"
+                          Height="32.986"
+                          ESD_NAV="false"
+                          PREV_RECENT="PREV"
+                          TRAIN_CLR="GREY" />
+        <hmi:NameplateResetPanel_III x:Name="Panel"
+                                 Canvas.Left="596"
+                                 Canvas.Top="60.000001907349"
+                                 Width="308"
+                                 Height="28" LABELDescription01="G-0003A TRIPS" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO40"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="679.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZXIL0203" ModelName="07ZXIL0203_1_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO39"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="649.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZXIL0202" ModelName="07ZXIL0202_1_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO38"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="619.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZXIL0201" ModelName="07ZXIL0201_1_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO37"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="589.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZXIL0106" ModelName="07ZXIL0106_0156_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO36"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="559.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZX0886" ModelName="07ZX0886_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO35"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="529.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZX0251" ModelName="07ZX0251_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO34"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="499.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZX0223" ModelName="07ZX0223_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO33"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="469.999801907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZX0222" ModelName="07ZX0222_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO32"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="439.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZX0221" ModelName="07ZX0221_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO31"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="409.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZHS0886B" ModelName="07ZHS0886B_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO30"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="380.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZHS0885B" ModelName="07ZHS0885B_2_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO29"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="350.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZHS0884B" ModelName="07ZHS0884B_1_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO28"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="320.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZC7512" ModelName="07ZC7512_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO27"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="290.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZC7385" ModelName="07ZC7385_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO26"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="260.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZC7250" ModelName="07ZC7250_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO25"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="230.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZC7053" ModelName="07ZC7053_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO24"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="200.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZC7052" ModelName="07ZC7052_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO23"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="170.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZC7051" ModelName="07ZC7051_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO22"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="140.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07ZC7050" ModelName="07ZC7050_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO21"
+                           Canvas.Left="912.9981"
+                           Canvas.Top="110.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07VSHH1225" ModelName="07VSHH1225_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO12"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="409.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07PSHH0157" ModelName="07PSHH0157_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO11"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="379.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07GMX0886F" ModelName="07GMX0886F_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO10"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="349.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07GMX0885F" ModelName="XXX" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO09"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="320.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07GMX0885A" ModelName="XXX" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO08"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="290.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07GMX0884F" ModelName="XXX" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO07"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="260.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07FSLL0187B" ModelName="07FSLL0187B_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO06"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="230.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07FSLL0105B" ModelName="07FSLL0105B_2_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO05"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="200.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07FSLL0101B" ModelName="07FSLL0101B_1_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO04"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="170.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07FSHH0187B" ModelName="07FSHH0187B_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO03"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="140.000001907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07FSHH0105B" ModelName="07FSHH0105B_1_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO02"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="110.000001907349"
+                           Width="450.3998"
+                           Height="30.00001" DESCR="07FSHH0101B" ModelName="07FSHH0101B_1_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO20"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="529.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07VSHH1223" ModelName="07VSHH1223_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO17"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="499.999901907349"
+                           Width="450.3998"
+                           Height="29.99997" DESCR="07TUV_SD" ModelName="07TUV_SD_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO16"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="469.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07TSHH0285" ModelName="07TSHH0285_3_FO" />
+        <hmi:SYM_ESD_FO_IND_01 x:Name="FO15"
+                           Canvas.Left="132.9979"
+                           Canvas.Top="439.999901907349"
+                           Width="450.3998"
+                           Height="30" DESCR="07TSHH0283" ModelName="07TSHH0283_3_FO" />
+    </RSICanvas>
+</UserControl>

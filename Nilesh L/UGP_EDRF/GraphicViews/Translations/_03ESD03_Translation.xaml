@@ -1,0 +1,133 @@
+<UserControl x:Class="UGP_EDRF._03ESD03_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+  <RSICanvas Width="1500"
+             Height="750.000001907349"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:Background_Disp x:Name="Background_1"
+                         Canvas.Top="1.907349E-06"
+                         Width="1500"
+                         Height="750" />
+    <RSIRectangle x:Name="BACK"
+                  Canvas.Left="46"
+                  Canvas.Top="72.916501907349"
+                  Width="1408"
+                  Height="604.167"
+                  Fill="#FF717171"
+                  Stroke="#FF000000"
+                  StrokeThickness="1" />
+    <hmi:SYM_ESD_BYPASS x:Name="B"
+                             Canvas.Left="1209.743"
+                             Canvas.Top="604.750001907349"
+                             Width="200"
+                             Height="50" />
+    <hmi:SYM_NORMAL x:Name="N"
+                              Canvas.Left="836.2575"
+                              Canvas.Top="604.275701907349"
+                              Width="200.4851"
+                              Height="50.47424" />
+    <hmi:SYM_OPR x:Name="O"
+                        Canvas.Left="463.2574"
+                        Canvas.Top="604.749901907349"
+                        Width="200"
+                        Height="50" />
+    <hmi:SYM_SUPER x:Name="S"
+                          Canvas.Left="90.25742"
+                          Canvas.Top="604.749901907349"
+                          Width="200"
+                          Height="50" />
+    <hmi:SYM_TITLE_1 x:Name="TITLE"
+                          Width="1500"
+                          Height="32.986"
+                          ESD_NAV="false"
+                          PREV_RECENT="PREV"
+                          TRAIN_CLR="GREY" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol12"
+                           Canvas.Left="160"
+                           Canvas.Top="110.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSH0148BY" TAGNAME2="M39-003-ZV-0148-OPEN LIMIT SWI" ModelName="03ZXSH0148BP" MRST_BLK="03ZXSH0148RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol1"
+                           Canvas.Left="368"
+                           Canvas.Top="110.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSL0148BY" TAGNAME2="M39-003-ZV-0148-CLOSE LIMIT SWI" ModelName="03ZXSL0148BP" MRST_BLK="03ZXSL0148RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol2"
+                           Canvas.Left="576"
+                           Canvas.Top="110.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSH0149BY" TAGNAME2="M39-003-ZV-0149-OPEN LIMIT SWI" ModelName="03ZXSH0149BP" MRST_BLK="03ZXSH0149RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol3"
+                           Canvas.Left="783.9999"
+                           Canvas.Top="110.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSL0149BY" TAGNAME2="M39-003-ZV-0149-CLOSE LIMIT SWI" ModelName="03ZXSL0149BP" MRST_BLK="03ZXSL0149RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol4"
+                           Canvas.Left="992"
+                           Canvas.Top="110.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSH0151BY" TAGNAME2="M39-003-ZV-0151-OPEN LIMIT SWI" ModelName="03ZXSH0151BP" MRST_BLK="03ZXSH0151RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol5"
+                           Canvas.Left="1200"
+                           Canvas.Top="110.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSL0151BY" TAGNAME2="M39-003-ZV-0151-CLOSE LIMIT SWI" ModelName="03ZXSL0151BP" MRST_BLK="03ZXSL0151RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol6"
+                           Canvas.Left="160"
+                           Canvas.Top="270.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSH0152BY" TAGNAME2="M39-003-ZV-0152-OPEN LIMIT SWI" ModelName="03ZXSH0152BP" MRST_BLK="03ZXSH0152RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol7"
+                           Canvas.Left="368"
+                           Canvas.Top="270.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSL0152BY" TAGNAME2="M39-003-ZV-0152-CLOSE LIMIT SWI" ModelName="03ZXSL0152BP" MRST_BLK="03ZXSL0152RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol8"
+                           Canvas.Left="576"
+                           Canvas.Top="270.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSH0161BY" TAGNAME2="M39-003-ZV-0161-OPEN LIMIT SWI" ModelName="03ZXSH0161BP" MRST_BLK="03ZXSH0161RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol9"
+                           Canvas.Left="783.9999"
+                           Canvas.Top="270.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSL0161BY" TAGNAME2="M39-003-ZV-0161-CLOSE LIMIT SWI" ModelName="03ZXSL0161BP" MRST_BLK="03ZXSL0161RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol10"
+                           Canvas.Left="992"
+                           Canvas.Top="270.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSH0162BY" TAGNAME2="M39-003-ZV-0162-OPEN LIMIT SWI" ModelName="03ZXSH0162BP" MRST_BLK="03ZXSH0162RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol11"
+                           Canvas.Left="1200"
+                           Canvas.Top="270.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSL0162BY" TAGNAME2="M39-003-ZV-0162-CLOSE LIMIT SWI" ModelName="03ZXSL0162BP" MRST_BLK="03ZXSL0162RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol13"
+                           Canvas.Left="160"
+                           Canvas.Top="430.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSH0181BY" TAGNAME2="M39-003-ZV-0181-OPEN LIMIT SWI" ModelName="03ZXSH0181BP" MRST_BLK="03ZXSH0181RS" />
+    <hmi:SYM_BYPASS_03 x:Name="EmbeddedSymbol14"
+                           Canvas.Left="368"
+                           Canvas.Top="430.000001907349"
+                           Width="143.5182"
+                           Height="140.75"
+                           GraphicTagName="03ZXSL0181BY" TAGNAME2="M39-003-ZV-0181-CLOSE LIMIT SWI" ModelName="03ZXSL0181BP" MRST_BLK="03ZXSL0181RS" />
+  </RSICanvas>
+</UserControl>

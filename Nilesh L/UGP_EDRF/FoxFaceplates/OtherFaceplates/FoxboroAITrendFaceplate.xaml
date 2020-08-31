@@ -1,0 +1,197 @@
+﻿<RSIFacePlate
+    x:Class="UGP_EDRF.FoxFaceplates.OtherFaceplates.FoxboroAITrendFaceplate"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="800"
+    Height="600"
+    Background="LightGray"
+    mc:Ignorable="d">
+
+
+    <RSIGrid TextElement.FontSize="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!--  Row values  -->
+        <RSIGrid
+            Height="100"
+            Margin="5,10"
+            TextElement.Foreground="Blue">
+            <RSIGrid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="270" />
+                <ColumnDefinition Width="*" />
+            </RSIGrid.ColumnDefinitions>
+            <TextBlock Margin="10,0" Text="*****" />
+            <RSIText
+                Grid.Column="1"
+                Margin="10,0"
+                Text="$TAGNAME.MEAS" />
+            <RSIText Grid.Column="2" Text="\$Tagname.MEAS:#.###\" />
+        </RSIGrid>
+
+
+        <!--  Trends  -->
+        <RSITrend
+            x:Name="MainTrend"
+            Grid.Row="2"
+            AxisTextColor="Gray"
+            BackgroundColor="Black"
+            CursorVisibility="False"
+            GridLinesColor="Black"
+            IsLegendDisplayed="False"
+            PlotAreaColor="Gray"
+            TimeSpan="0:3:0"
+            UseCommonYAxis="True">
+            <RSITrend.ParameterDefinitions>
+                <TrendParameterDefinition
+                    Maximum="$TAGNAME.HSCI1"
+                    Minimum="$TAGNAME.LSCI1"
+                    TagName="$TAGNAME.MEAS"
+                    Color="Blue" />
+            </RSITrend.ParameterDefinitions>
+        </RSITrend>
+
+        <!--  Trend Span  -->
+        <Grid
+            Grid.Row="3"
+            Margin="15,5"
+            TextElement.FontSize="16"
+            TextElement.Foreground="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="7" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="80" />
+            </Grid.ColumnDefinitions>
+
+            <Button Margin="2,0" IsHitTestVisible="False">
+                <Image Source="../../Resources/Bitmaps/PageForward.png" />
+            </Button>
+            <Button
+                Grid.Column="1"
+                Margin="2,0"
+                IsHitTestVisible="False">
+                <Image Source="../../Resources/Bitmaps/PageBack.png" />
+            </Button>
+            <Button
+                Grid.Column="3"
+                Margin="1,0"
+                Background="Gray"
+                Content="R"
+                Foreground="White"
+                IsHitTestVisible="False" />
+            <RSIButton
+                Grid.Column="4"
+                Margin="1,0"
+                Background="Gray"
+                Content="1"
+                Foreground="White">
+                <RSIButton.Animations>
+                    <ClickAnimation>
+                        <SetTrendTimespan TimeSpan="01:00:00" TrendName="MainTrend" />
+                    </ClickAnimation>
+                </RSIButton.Animations>
+            </RSIButton>
+            <RSIButton
+                Grid.Column="5"
+                Margin="1,0"
+                Background="Gray"
+                Content="2"
+                Foreground="White">
+                <RSIButton.Animations>
+                    <ClickAnimation>
+                        <SetTrendTimespan TimeSpan="02:00:00" TrendName="MainTrend" />
+                    </ClickAnimation>
+                </RSIButton.Animations>
+            </RSIButton>
+            <RSIButton
+                Grid.Column="6"
+                Margin="1,0"
+                Background="Gray"
+                Content="4"
+                Foreground="White">
+                <RSIButton.Animations>
+                    <ClickAnimation>
+                        <SetTrendTimespan TimeSpan="04:00:00" TrendName="MainTrend" />
+                    </ClickAnimation>
+                </RSIButton.Animations>
+            </RSIButton>
+            <RSIButton
+                Grid.Column="7"
+                Margin="1,0"
+                Background="Gray"
+                Content="8"
+                Foreground="White">
+                <RSIButton.Animations>
+                    <ClickAnimation>
+                        <SetTrendTimespan TimeSpan="08:00:00" TrendName="MainTrend" />
+                    </ClickAnimation>
+                </RSIButton.Animations>
+            </RSIButton>
+            <RSIButton
+                Grid.Column="8"
+                Margin="1,0"
+                Background="Gray"
+                Content="12"
+                Foreground="White">
+                <RSIButton.Animations>
+                    <ClickAnimation>
+                        <SetTrendTimespan TimeSpan="12:00:00" TrendName="MainTrend" />
+                    </ClickAnimation>
+                </RSIButton.Animations>
+            </RSIButton>
+            <RSIButton
+                Grid.Column="9"
+                Margin="1,0"
+                Background="Gray"
+                Content="24"
+                Foreground="White">
+                <RSIButton.Animations>
+                    <ClickAnimation>
+                        <SetTrendTimespan TimeSpan="01:00:00:00" TrendName="MainTrend" />
+                    </ClickAnimation>
+                </RSIButton.Animations>
+            </RSIButton>
+            <RSIButton
+                Grid.Column="10"
+                Margin="1,0"
+                Background="Gray"
+                Content="96"
+                Foreground="White">
+                <RSIButton.Animations>
+                    <ClickAnimation>
+                        <SetTrendTimespan TimeSpan="04:00:00:00" TrendName="MainTrend" />
+                    </ClickAnimation>
+                </RSIButton.Animations>
+            </RSIButton>
+            <RSIButton
+                Grid.Column="11"
+                Margin="1,0"
+                Background="Gray"
+                Content="ZOOM"
+                Foreground="White"
+                IsHitTestVisible="False" />
+
+            <Button Content="Pause" Grid.Column="13" IsHitTestVisible="False" VerticalAlignment="Center" Padding="1,-3"/>
+        </Grid>
+
+    </RSIGrid>
+
+</RSIFacePlate>

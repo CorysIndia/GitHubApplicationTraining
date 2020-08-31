@@ -1,0 +1,98 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:aIndDesLab_04_L}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:aIndDesLab_04_L}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="519"
+                         Height="30"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSICanvas Name="Group2"
+                           Width="519"
+                           Height="30"
+                           Left="0"
+                           Top="0">
+                  <RSIRectangle x:Name="Rectangle3"
+                                Width="519"
+                                Height="30"
+                                Stroke="#FF343434"
+                                StrokeThickness="1">
+                    <RSIRectangle.Fill>
+                      <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                        <GradientStop Offset="0.5" Color="#FF000000" />
+                        <GradientStop Offset="0" Color="#FFBFBFBF" />
+                        <GradientStop Offset="1" Color="#FFBFBFBF" />
+                      </LinearGradientBrush>
+                    </RSIRectangle.Fill>
+                  </RSIRectangle>
+                  <RSICanvas Name="Group7"
+                             Width="511"
+                             Height="24"
+                             Left="3"
+                             Top="3">
+                    <RSIRectangle x:Name="Rectangle4"
+                                  Width="511"
+                                  Height="24"
+                                  Stroke="#FF000000"
+                                  StrokeThickness="1">
+                      <RSIRectangle.Fill>
+                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                          <GradientStop Offset="1" Color="#FF666666" />
+                          <GradientStop Offset="0" Color="#FF343434" />
+                        </LinearGradientBrush>
+                      </RSIRectangle.Fill>
+                    </RSIRectangle>
+                    <RSIText x:Name="Text3"
+                             Canvas.Left="4.816986"
+                             Canvas.Top="5.075806"
+                             Width="96.78271"
+                             Height="14.52344"
+                             VerticalAlignment="Center"
+                             Foreground="#FFFFFFFF"
+                             IsHitTestVisible="False"
+                             Text="DESCRIPTION :"
+                             TextElement.FontFamily="Arial"
+                             TextElement.FontSize="10"
+                             TextElement.FontWeight="Bold" />
+                  </RSICanvas>
+                  <RSIText x:Name="ValueTxt"
+                           Canvas.Left="112"
+                           Canvas.Top="8.191406"
+                           Width="21.68988"
+                           Height="14.52341"
+                           VerticalAlignment="Center"
+                           Foreground="#FF00FF00"
+                           Text="###"
+                           TextElement.FontFamily="Arial"
+                           TextElement.FontSize="10"
+                           TextElement.FontWeight="Bold">
+                    <RSIText.Animations>
+                      <Animation>
+                        <ChangeText Text="Value" />
+                      </Animation>
+                      <Animation Condition="Value_====false">
+                        <SetVisible />
+                      </Animation>
+                      <Animation Condition="Value_====true">
+                        <Invisible />
+                      </Animation>
+                    </RSIText.Animations>
+                  </RSIText>
+                </RSICanvas>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

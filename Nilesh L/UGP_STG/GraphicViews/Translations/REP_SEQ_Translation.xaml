@@ -1,0 +1,240 @@
+<UserControl x:Class="UGP_EDRF.REP_SEQ_Translation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+  <RSICanvas Width="290"
+             Height="280"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:Overlay_bac1 x:Name="Overlay_bac11"
+                      Width="290"
+                      Height="280" />
+    <RSIText x:Name="Text2"
+             Canvas.Left="9.781248092651"
+             Canvas.Top="50"
+             Width="118.2422"
+             Height="17.875"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="- Dryer B valves "
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIText x:Name="Text1"
+             Canvas.Left="9.558592092651"
+             Canvas.Top="80"
+             Width="119.125"
+             Height="17.875"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="- Dryer C valves "
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIText x:Name="Text3"
+             Canvas.Left="9.558592092651"
+             Canvas.Top="110"
+             Width="119.125"
+             Height="17.875"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="- Dryer D valves "
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIText x:Name="Text5"
+             Canvas.Left="9.558592092651"
+             Canvas.Top="140"
+             Width="128.9219"
+             Height="17.875"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="- Common valves "
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIText x:Name="Text4"
+             Canvas.Left="8.664061092651"
+             Canvas.Top="170"
+             Width="131.5938"
+             Height="17.875"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="- Timer is elapsed "
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIText x:Name="Text6"
+             Canvas.Left="12.203128092651"
+             Canvas.Top="200"
+             Width="127.1875"
+             Height="17.875"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="- PDI-0012 &lt; = 15"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIText x:Name="Text7"
+             Canvas.Left="122.999998092651"
+             Canvas.Top="10"
+             Width="43.5625"
+             Height="17.875"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             Text="TITLE"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+      <RSIText.Animations>
+        <Animation>
+          <ChangeText Text="BLKOVL" />
+        </Animation>
+      </RSIText.Animations>
+    </RSIText>
+    <RSIRectangle x:Name="Rectangle2"
+                  Canvas.Left="201.999998092651"
+                  Canvas.Top="50.46875"
+                  Width="23"
+                  Height="17.5"
+                  Fill="#FFB3B3B3"
+                  Stroke="#FF000000"
+                  StrokeThickness="1">
+      <RSIRectangle.Animations>
+        <Animation Condition="IADAS_3D0007_CF03_DISCREP_B_BO01_or_IADAS_3D0007_CF03_permissives_BO01">
+          <Blink PropertyName="Stroke" To="#FF00BA00" />
+        </Animation>
+      </RSIRectangle.Animations>
+    </RSIRectangle>
+    <RSIText x:Name="Text9"
+             Canvas.Left="207.499998092651"
+             Canvas.Top="49.98438"
+             Width="11"
+             Height="17.875"
+             HorizontalAlignment="Left"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="B"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIRectangle x:Name="Rectangle3"
+                  Canvas.Left="201.499998092651"
+                  Canvas.Top="79.96875"
+                  Width="23"
+                  Height="17.5"
+                  Fill="#FFB3B3B3"
+                  Stroke="#FF000000"
+                  StrokeThickness="1">
+      <RSIRectangle.Animations>
+        <Animation Condition="IADAS_3D0007_CF03_DISCREP_C_BO01_or_IADAS_3D0007_CF03_permissives_BO01">
+          <Blink PropertyName="Stroke" To="#FF00BA00" />
+        </Animation>
+      </RSIRectangle.Animations>
+    </RSIRectangle>
+    <RSIText x:Name="Text10"
+             Canvas.Left="207.999998092651"
+             Canvas.Top="80.48438"
+             Width="11.90996"
+             Height="17.875"
+             HorizontalAlignment="Left"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="C"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIRectangle x:Name="Rectangle4"
+                  Canvas.Left="201.999998092651"
+                  Canvas.Top="109.9688"
+                  Width="23"
+                  Height="17.5"
+                  Fill="#FFB3B3B3"
+                  Stroke="#FF000000"
+                  StrokeThickness="1">
+      <RSIRectangle.Animations>
+        <Animation Condition="IADAS_3D0007_CF03_DISCREP_D_BO01_or_IADAS_3D0007_CF03_permissives_BO01">
+          <Blink PropertyName="Stroke" To="#FF00BA00" />
+        </Animation>
+      </RSIRectangle.Animations>
+    </RSIRectangle>
+    <RSIText x:Name="Text11"
+             Canvas.Left="207.499998092651"
+             Canvas.Top="110.4844"
+             Width="11.90996"
+             Height="17.875"
+             HorizontalAlignment="Left"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="D"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIRectangle x:Name="Rectangle5"
+                  Canvas.Left="201.499998092651"
+                  Canvas.Top="140.4844"
+                  Width="23"
+                  Height="17.5"
+                  Fill="#FFB3B3B3"
+                  Stroke="#FF000000"
+                  StrokeThickness="1">
+      <RSIRectangle.Animations>
+        <Animation Condition="IADAS_3D0007_CF03_DISCREP_COM_BO01_or_IADAS_3D0007_CF03_permissives_BO01">
+          <Blink PropertyName="Stroke" To="#FF00BA00" />
+        </Animation>
+      </RSIRectangle.Animations>
+    </RSIRectangle>
+    <RSIText x:Name="Text12"
+             Canvas.Left="200.999998092651"
+             Canvas.Top="140"
+             Width="24.73792"
+             Height="17.875"
+             HorizontalAlignment="Left"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="CO"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <RSIRectangle x:Name="Rectangle1"
+                  Canvas.Left="201.999998092651"
+                  Canvas.Top="200"
+                  Width="23"
+                  Height="17.5"
+                  Fill="#FFB3B3B3"
+                  Stroke="#FF000000"
+                  StrokeThickness="1">
+      <RSIRectangle.Animations>
+        <Animation Condition="IADAS_3D0007_CF03_03PD0012_BO01">
+          <Blink PropertyName="Stroke" To="#FF00BA00" />
+        </Animation>
+      </RSIRectangle.Animations>
+    </RSIRectangle>
+    <RSIText x:Name="Text8"
+             Canvas.Left="207.999998092651"
+             Canvas.Top="200"
+             Width="11"
+             Height="17.875"
+             HorizontalAlignment="Left"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="P"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12" />
+    <hmi:SYM_SEQ_TMR_M x:Name="EmbeddedSymbol6"
+                       Canvas.Left="178.599998092651"
+                       Canvas.Top="169"
+                       Width="68.40002"
+                       Height="20"
+                       BLK="STEPS_TIM_2"
+                       CMP="3D0007_CF03"
+                       Count_Mode="Down"
+                       Display="Minutes_Seconds"
+                       Limit="false"
+                       PAR="TIMR3V"
+                       User_Input="false" />
+  </RSICanvas>
+</UserControl>

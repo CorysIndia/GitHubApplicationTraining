@@ -1,0 +1,475 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Style TargetType="{x:Type hmi:SYM_SOV}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type hmi:SYM_SOV}">
+                    <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+                        <RSIViewbox.Parameters>
+                            <Param Name="$CLOSE_COLOUR" Value="#FF343434"/>
+                        </RSIViewbox.Parameters>
+                        <RSIGrid Background="Transparent">
+                            <RSICanvas Width="137"
+                         Height="52.162"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                                <RSIText x:Name="LBEL_VERT"
+                         Canvas.Left="58"
+                         Canvas.Top="4.16199999999998"
+                         Width="79"
+                         Height="23"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding TAGNAME}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         Visibility="{TemplateBinding Orientation, Converter={EqualConverter VERT}}"/>
+                                <RSIText x:Name="LABEL_HORZ"
+                         Canvas.Top="34.162"
+                         Width="71"
+                         Height="18"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="{TemplateBinding TAGNAME}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12"
+                         Visibility="{TemplateBinding Orientation, Converter={EqualConverter HORZ}}"/>
+                                <RSICanvas Name="VLV_BODY_VERT"
+                           Width="30.00002"
+                           Height="30"
+                           Canvas.Left="20"
+                           Canvas.Top="0" Visibility="{TemplateBinding Orientation, Converter={EqualConverter VERT}}">
+                                    <RSIRectangle x:Name="Rectangle2"
+                                Canvas.Left="15"
+                                Canvas.Top="7.092"
+                                Width="3.333"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIPath x:Name="Polygon1"
+                           Canvas.Left="15"
+                           Canvas.Top="6.892"
+                           Width="6.867"
+                           Height="11.25"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FFE0E0E0"
+                           StrokeThickness="0">
+                                        <RSIPath.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIPath.Animations>
+                                        <RSIPath.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="-90" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIPath.RenderTransform>
+                                    </RSIPath>
+                                    <RSIRectangle x:Name="Rectangle3"
+                                Canvas.Left="11.25"
+                                Canvas.Top="3.759"
+                                Width="3.333"
+                                Height="18.75"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle4"
+                                Canvas.Left="15"
+                                Canvas.Top="27.092"
+                                Width="3.333"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0 OR $TAGNAME.IsClosing == True OR $TAGNAME.IsOpening == True ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle5"
+                                Canvas.Top="17.092"
+                                Width="3.333"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0" Canvas.Left="7.5">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.IsClosing == True OR $TAGNAME.IsOpening == True">
+                                                <ChangePropertyValue PropertyName="Fill" Value="Black"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIPath x:Name="Polygon2"
+                           Canvas.Left="15"
+                           Canvas.Top="23.959"
+                           Width="6.867"
+                           Height="11.25"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FFE0E0E0"
+                           StrokeThickness="0">
+                                        <RSIPath.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0 OR $TAGNAME.IsClosing == True OR $TAGNAME.IsOpening == True ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                        </RSIPath.Animations>
+                                        <RSIPath.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIPath.RenderTransform>
+                                    </RSIPath>
+                                    <RSIRectangle x:Name="Rectangle6"
+                                Canvas.Left="11.25"
+                                Canvas.Top="30.426"
+                                Width="3.333"
+                                Height="18.75"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0 OR $TAGNAME.IsClosing == True OR $TAGNAME.IsOpening == True ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle7"
+                                Canvas.Left="18.75"
+                                Canvas.Top="17.092"
+                                Width="3.333"
+                                Height="3.75"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.IsClosing == True OR $TAGNAME.IsOpening == True">
+                                                <ChangePropertyValue PropertyName="Fill" Value="Black"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle8"
+                                Canvas.Top="23.426"
+                                Width="16.688"
+                                Height="7.687"
+                                Fill="#FFE0E0E0"
+                                RenderTransformOrigin="0,0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.IsClosing == True OR $TAGNAME.IsOpening == True">
+                                                <ChangePropertyValue PropertyName="Fill" Value="Black"/>
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                        <RSIRectangle.RenderTransform>
+                                            <RotateTransform Angle="-90" />
+                                        </RSIRectangle.RenderTransform>
+                                    </RSIRectangle>
+                                </RSICanvas>
+                                <RSICanvas Name="VLV_BODY_HORZ"
+                           Width="30.00002"
+                           Height="30"
+                           Left="20.0001"
+                           Top="0"
+                           Visibility="{TemplateBinding Orientation,
+                                                        Converter={EqualConverter HORZ}}">
+                                    <RSIRectangle x:Name="Rectangle2_1"
+                                Canvas.Left="23.3333"
+                                Canvas.Top="15"
+                                Width="3.333374"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIPath x:Name="Polygon1_1"
+                           Canvas.Left="23.5333000000001"
+                           Canvas.Top="15"
+                           Width="6.866638"
+                           Height="11.25"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           RenderTransformOrigin="0,0"
+                           Stretch="Fill"
+                           Stroke="#FFE0E0E0"
+                           StrokeThickness="0">
+                                        <RSIPath.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                        </RSIPath.Animations>
+                                        <RSIPath.RenderTransform>
+                                            <TransformGroup>
+                                                <RotateTransform Angle="180" />
+                                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                            </TransformGroup>
+                                        </RSIPath.RenderTransform>
+                                    </RSIPath>
+                                    <RSIRectangle x:Name="Rectangle3_1"
+                                Canvas.Left="26.6666"
+                                Canvas.Top="11.25"
+                                Width="3.333313"
+                                Height="18.75"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0 ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle4_1"
+                                Canvas.Left="3.33330000000001"
+                                Canvas.Top="15"
+                                Width="3.333313"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0 OR $TAGNAME.IsClosing == True OR $TAGNAME.IsOpening == True ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle5_1"
+                                Canvas.Left="13.3333"
+                                Canvas.Top="7.5"
+                                Width="3.333313"
+                                Height="11.25"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.IsClosing == True OR $TAGNAME.IsOpening == True">
+                                                <ChangePropertyValue PropertyName="Fill" Value="Black"/>
+
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIPath x:Name="Polygon2_1"
+                           Canvas.Left="6.46659999999997"
+                           Canvas.Top="15"
+                           Width="6.866638"
+                           Height="11.25"
+                           Data="M0,0 L1,0.3333333 1,0.6666667 0,1 z"
+                           Fill="#FFE0E0E0"
+                           Stretch="Fill"
+                           Stroke="#FFE0E0E0"
+                           StrokeThickness="0">
+                                        <RSIPath.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0 OR $TAGNAME.IsClosing == True OR $TAGNAME.IsOpening == True ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                        </RSIPath.Animations>
+                                    </RSIPath>
+                                    <RSIRectangle x:Name="Rectangle6_1"
+                                Canvas.Top="11.25"
+                                Width="3.333313"
+                                Height="18.75"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0 OR $TAGNAME.IsClosing == True OR $TAGNAME.IsOpening == True ">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle7_1"
+                                Canvas.Left="13.3333"
+                                Canvas.Top="18.75"
+                                Width="3.333313"
+                                Height="3.75"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.IsClosing == True OR $TAGNAME.IsOpening == True">
+                                                <ChangePropertyValue PropertyName="Fill" Value="Black"/>
+
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                    <RSIRectangle x:Name="Rectangle8_1"
+                                Canvas.Left="7"
+                                Width="16.6875"
+                                Height="7.6875"
+                                Fill="#FFE0E0E0"
+                                Stroke="#FFE0E0E0"
+                                StrokeThickness="0">
+                                        <RSIRectangle.Animations>
+                                            <Animation Condition="$TAGNAME.IsOpening == True OR $TAGNAME.IsClosing == True" IsContinuous="True">
+                                                <Blink/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Position == 0">
+                                                <ChangePropertyValue PropertyName="Fill" Value="$CLOSE_COLOUR"/>
+
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.IsClosing == True OR $TAGNAME.IsOpening == True">
+                                                <ChangePropertyValue PropertyName="Fill" Value="Black"/>
+
+                                            </Animation>
+                                        </RSIRectangle.Animations>
+                                    </RSIRectangle>
+                                </RSICanvas>
+                                <hmi:SYM_CALL_OVERLAY_01 x:Name="Overlay"
+                                         Canvas.Left="20.0001"
+                                         Canvas.Top="0.161999999999978"
+                                         Width="30"
+                                         Height="30"
+                                         BLKOVL="{TemplateBinding BLK}"
+                                         CMPOVL="{TemplateBinding CMP}"
+                                         LOC="{TemplateBinding LOC}"
+                                         OverlayName="FP_SOV"
+                                         PRT="{TemplateBinding PRT}"
+                                         Visibility="{TemplateBinding Overlay,
+                                                                      Converter={EqualConverter true}}" />
+                            </RSICanvas>
+                            <RSI_HandValve ModelName="{TemplateBinding FailureFaceplateName}" Style="{DynamicResource UGP_ValveActuatorMalfunction}" Height="1.52" Width="2.292" HorizontalAlignment="Left" Margin="34.828,-1.52,0,0" VerticalAlignment="Top" FODFaceplateName="" MaintenanceFaceplateName="" BorderBrush="Transparent" Foreground="Transparent" ColorOpen="Transparent" ColorTravel="Transparent" ColorClose="Transparent"/>
+
+                        </RSIGrid>
+                    </RSIViewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+</ResourceDictionary>

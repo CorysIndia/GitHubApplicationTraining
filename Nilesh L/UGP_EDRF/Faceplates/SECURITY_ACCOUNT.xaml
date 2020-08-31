@@ -1,0 +1,124 @@
+<RSIFacePlate x:Class="UGP_EDRF.HMI.SECURITY_ACCOUNT"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+  <RSICanvas Width="383.73469"
+             Height="170"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <RSIRectangle x:Name="Rectangle1"
+                  Canvas.Left="117.99999"
+                  Canvas.Top="40"
+                  Width="166"
+                  Height="19"
+                  Fill="#FFFFFFFF"
+                  Stroke="#FFFFFF00"
+                  StrokeThickness="2">
+      <RSIRectangle.Animations>
+        <!--  User Input  -->
+      </RSIRectangle.Animations>
+    </RSIRectangle>
+    <RSIText x:Name="Text1"
+             Canvas.Left="27.99999"
+             Canvas.Top="42.73828"
+             Width="80"
+             Height="14.52344"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="USER NAME:"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="10"
+             TextElement.FontWeight="Bold" />
+    <RSIText x:Name="Text2"
+             Canvas.Left="27.99999"
+             Canvas.Top="78.73828"
+             Width="81"
+             Height="14.52344"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="PASSWORD:"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="10"
+             TextElement.FontWeight="Bold" />
+    <RSIRectangle x:Name="Rectangle2"
+                  Canvas.Left="117.99999"
+                  Canvas.Top="77"
+                  Width="166"
+                  Height="19"
+                  Fill="#FFFFFFFF"
+                  Stroke="#FFFFFF00"
+                  StrokeThickness="2">
+      <RSIRectangle.Animations>
+        <!--  User Input  -->
+      </RSIRectangle.Animations>
+    </RSIRectangle>
+    <RSIText x:Name="Text3"
+             Canvas.Left="123.99999"
+             Canvas.Top="41.73828"
+             Width="35"
+             Height="14.52344"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             Text="USER"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="10"
+             TextElement.FontWeight="Bold">
+      <RSIText.Animations>
+        <Animation>
+          <ChangeText Text="Intouch_?m_zOperatorEntered" />
+        </Animation>
+      </RSIText.Animations>
+    </RSIText>
+    <hmi:PbMom_03_M x:Name="PbMom_03_M1"
+                    Canvas.Top="129"
+                    Width="106"
+                    Height="41"
+                    NameStore="---" />
+    <hmi:PbMom_03_M x:Name="PbMom_03_M2"
+                    Canvas.Left="141.99999"
+                    Canvas.Top="128"
+                    Width="106"
+                    Height="41"
+                    NameStore="---" />
+    <hmi:PbMom_03_M x:Name="PbMom_03_M3"
+                    Canvas.Left="277.26539"
+                    Canvas.Top="128"
+                    Width="106.4693"
+                    Height="41"
+                    NameStore="---" />
+    <hmi:BUT_SEC_LONG_III x:Name="BUT_SEC_LONG_III1"
+                          Canvas.Left="62.99999"
+                          Width="241"
+                          Height="30"
+                          ACSL_NAME1="MONITOR"
+                          ACSL_NAME2="OPERATOR"
+                          ACSL_NAME3="SUPERVISOR"
+                          ACSL_NAME4="ADMINISTRATOR"
+                          ACSL_NAME5="ADMINISTRATOR" />
+    <RSIText x:Name="Text4"
+             Canvas.Left="123.99999"
+             Canvas.Top="80.73828"
+             Width="40"
+             Height="14.52344"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             Text="********"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="10"
+             TextElement.FontWeight="Bold">
+      <RSIText.Animations>
+        <Animation Condition="Intouch_?d_zpassowrdvis==true">
+          <SetVisible />
+        </Animation>
+        <Animation Condition="Intouch_?d_zpassowrdvis==false">
+          <Invisible />
+        </Animation>
+      </RSIText.Animations>
+    </RSIText>
+  </RSICanvas>
+</RSIFacePlate>

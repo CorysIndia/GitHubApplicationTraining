@@ -1,0 +1,550 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_STG.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:SYM_VMS_LEGEND}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:SYM_VMS_LEGEND}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="189.25"
+                         Height="150.75"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIBorder x:Name="Line1"
+                           Canvas.Left="-0.75"
+                           Canvas.Top="149.25"
+                           Width="190"
+                           Height="1.5">
+                  <RSIPath Data="M-0.75,149.25 L189.25,149.25"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1" />
+                </RSIBorder>
+                <RSIText x:Name="MR"
+                         Canvas.Left="7.33590000000001"
+                         Canvas.Top="118.031"
+                         Width="132.6641"
+                         Height="18.76447"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="SLOT REMOVED"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="BP"
+                         Canvas.Left="7.33590000000001"
+                         Canvas.Top="88.6873000000001"
+                         Width="132.6641"
+                         Height="18.76447"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="BYPASS"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="NOK"
+                         Canvas.Left="7.33590000000001"
+                         Canvas.Top="59.3437"
+                         Width="132.6641"
+                         Height="18.76453"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="NOT OK"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSIText x:Name="OK"
+                         Canvas.Left="7.33590000000001"
+                         Canvas.Top="30.0001"
+                         Width="132.6641"
+                         Height="18.76447"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="OK"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+                <RSICanvas Name="MRG"
+                           Width="22.00772"
+                           Height="22.00781"
+                           Left="146.7182"
+                           Top="118.0311">
+                  <RSIBorder x:Name="Line2"
+                             Canvas.Left="21.25766"
+                             Canvas.Top="-0.750100000000089"
+                             Width="22.00772"
+                             Height="22.00781"
+                             RenderTransformOrigin="0.0454386006365039,0.0454384148172853">
+                    <RSIPath Data="M21.2577,-0.750100000000089 L-0.75,21.2577"
+                             RenderTransformOrigin="0.5,0.5"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3">
+                      <RSIPath.LayoutTransform>
+                        <TransformGroup>
+                          <RotateTransform Angle="-180" />
+                          <ScaleTransform ScaleX="1" ScaleY="-1" />
+                        </TransformGroup>
+                      </RSIPath.LayoutTransform>
+                    </RSIPath>
+                    <RSIBorder.RenderTransform>
+                      <TransformGroup>
+                        <RotateTransform Angle="180" />
+                        <ScaleTransform ScaleX="1" ScaleY="-1" />
+                      </TransformGroup>
+                    </RSIBorder.RenderTransform>
+                  </RSIBorder>
+                  <RSIBorder x:Name="Line1_1"
+                             Canvas.Left="-0.75"
+                             Canvas.Top="-0.750100000000089"
+                             Width="22.00772"
+                             Height="22.00781">
+                    <RSIPath Data="M-0.75,-0.750100000000089 L21.2577,21.2577"
+                             Stretch="Fill"
+                             Stroke="#FFFF0000"
+                             StrokeThickness="3" />
+                  </RSIBorder>
+                </RSICanvas>
+                <RSICanvas Name="BPIND"
+                           Width="22.00772"
+                           Height="22.00781"
+                           Left="146.7182"
+                           Top="88.6873000000001">
+                  <RSICanvas Name="Group2"
+                             Width="22.00772"
+                             Height="22.00781"
+                             Left="0"
+                             Top="0">
+                    <RSIEllipse x:Name="Shadow"
+                                Canvas.Top="0.553699999999935"
+                                Width="22.00772"
+                                Height="21.45416"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                      <RSIEllipse.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                          <GradientStop Offset="1" Color="#FF666666" />
+                          <GradientStop Offset="0" Color="#FF727272" />
+                        </LinearGradientBrush>
+                      </RSIEllipse.Fill>
+                    </RSIEllipse>
+                    <RSIEllipse x:Name="OutsideChromeRing"
+                                Width="21.90631"
+                                Height="21.35529"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                      <RSIEllipse.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                          <GradientStop Offset="1" Color="#FFFFFFFF" />
+                          <GradientStop Offset="0" Color="#FF1A1A1A" />
+                        </LinearGradientBrush>
+                      </RSIEllipse.Fill>
+                    </RSIEllipse>
+                    <RSIEllipse x:Name="InsideChromeRing"
+                                Canvas.Left="0.446199999999976"
+                                Canvas.Top="0.434999999999945"
+                                Width="21.01379"
+                                Height="20.48523"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                      <RSIEllipse.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                          <GradientStop Offset="1" Color="#FFEFEFEF" />
+                          <GradientStop Offset="0" Color="#FF001E00" />
+                        </LinearGradientBrush>
+                      </RSIEllipse.Fill>
+                    </RSIEllipse>
+                  </RSICanvas>
+                  <RSICanvas Name="BPState_Yellow"
+                             Width="17.44391"
+                             Height="17.00519"
+                             Left="2.16589999999997"
+                             Top="2.44529999999997">
+                    <RSIEllipse x:Name="YellowGradient"
+                                Canvas.Left="-9.99999999748979E-05"
+                                Width="17.44391"
+                                Height="17.00519"
+                                Stroke="#FFE0D800"
+                                StrokeThickness="2">
+                      <RSIEllipse.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                          <GradientStop Offset="0.73" Color="#FFE0DD00" />
+                          <GradientStop Offset="0.5329" Color="#FFFFFC3B" />
+                          <GradientStop Offset="0" Color="#FFFEFC55" />
+                          <GradientStop Offset="1" Color="#FFFEFC55" />
+                          <GradientStop Offset="0.8029" Color="#FFFFFC3B" />
+                        </LinearGradientBrush>
+                      </RSIEllipse.Fill>
+                    </RSIEllipse>
+                    <RSICanvas Name="Reflection"
+                               Width="16.89624"
+                               Height="8.152893"
+                               IsHitTestVisible="false"
+                               Left="0.29200000000003"
+                               Top="0.249399999999923">
+                      <CanonicalSpline x:Name="Curve1"
+                                       Canvas.Left="16.8528"
+                                       Canvas.Top="6.78690000000006"
+                                       Width="16.86148"
+                                       Height="1.365967"
+                                       Points="0 1.371057 1.402062 9.622642 4.975946 3.249466 8.522338 9.958081 9.995877 -0.03774199 "
+                                       RenderTransformOrigin="0,0"
+                                       Stretch="Fill"
+                                       Stroke="#FF000000"
+                                       StrokeThickness="1"
+                                       Tension="0.5">
+                        <CanonicalSpline.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="180" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </CanonicalSpline.RenderTransform>
+                        <CanonicalSpline.Fill>
+                          <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                            <GradientStop Offset="0" Color="#FFFFFF00" />
+                            <GradientStop Offset="0" Color="#E0FFFFFF" />
+                            <GradientStop Offset="1" Color="#E0FFFFFF" />
+                          </LinearGradientBrush>
+                        </CanonicalSpline.Fill>
+                      </CanonicalSpline>
+                      <RSIPath x:Name="Arc1"
+                               Canvas.Left="0.0173999999999523"
+                               Width="16.87885"
+                               Height="6.950134"
+                               Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="1">
+                        <RSIPath.Fill>
+                          <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                            <GradientStop Offset="0" Color="#FFFFFF00" />
+                            <GradientStop Offset="0" Color="#E0FFFFFF" />
+                            <GradientStop Offset="1" Color="#E0FFFFFF" />
+                          </LinearGradientBrush>
+                        </RSIPath.Fill>
+                      </RSIPath>
+                    </RSICanvas>
+                    <RSIEllipse x:Name="WhiteRing"
+                                Canvas.Left="0.344800000000021"
+                                Canvas.Top="0.336199999999963"
+                                Width="16.75424"
+                                Height="16.33289"
+                                Stroke="#7FFFFFFF"
+                                StrokeThickness="2" />
+                  </RSICanvas>
+                </RSICanvas>
+                <RSICanvas Name="NOKIND"
+                           Width="22.00772"
+                           Height="22.00781"
+                           Left="146.7182"
+                           Top="59.3437">
+                  <RSICanvas Name="Group1"
+                             Width="22.00772"
+                             Height="22.00787"
+                             Left="0"
+                             Top="0">
+                    <RSIEllipse x:Name="Shadow_1"
+                                Canvas.Top="0.55359999999996"
+                                Width="22.00772"
+                                Height="21.45422"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                      <RSIEllipse.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                          <GradientStop Offset="1" Color="#FF666666" />
+                          <GradientStop Offset="0" Color="#FF727272" />
+                        </LinearGradientBrush>
+                      </RSIEllipse.Fill>
+                    </RSIEllipse>
+                    <RSIEllipse x:Name="OutsideChromeRing_1"
+                                Width="21.90631"
+                                Height="21.35535"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                      <RSIEllipse.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                          <GradientStop Offset="1" Color="#FFFFFFFF" />
+                          <GradientStop Offset="0" Color="#FF1A1A1A" />
+                        </LinearGradientBrush>
+                      </RSIEllipse.Fill>
+                    </RSIEllipse>
+                    <RSIEllipse x:Name="InsideChromeRing_1"
+                                Canvas.Left="0.446299999999951"
+                                Canvas.Top="0.434999999999945"
+                                Width="21.01379"
+                                Height="20.48529"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                      <RSIEllipse.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                          <GradientStop Offset="1" Color="#FFEFEFEF" />
+                          <GradientStop Offset="0" Color="#FF001E00" />
+                        </LinearGradientBrush>
+                      </RSIEllipse.Fill>
+                    </RSIEllipse>
+                  </RSICanvas>
+                  <RSICanvas Name="OffState_Red"
+                             Width="17.44388"
+                             Height="17.00519"
+                             Left="2.16589999999997"
+                             Top="2.44529999999997">
+                    <RSIEllipse x:Name="RedGradient"
+                                Canvas.Left="-9.99999999748979E-05"
+                                Width="17.44388"
+                                Height="17.00519"
+                                Stroke="#FF840000"
+                                StrokeThickness="2">
+                      <RSIEllipse.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                          <GradientStop Offset="0.73" Color="#FFFF0000" />
+                          <GradientStop Offset="0.5329" Color="#FFBA0000" />
+                          <GradientStop Offset="0" Color="#FF840000" />
+                          <GradientStop Offset="1" Color="#FF840000" />
+                          <GradientStop Offset="0.8029" Color="#FFBA0000" />
+                        </LinearGradientBrush>
+                      </RSIEllipse.Fill>
+                    </RSIEllipse>
+                    <RSICanvas Name="Reflection_1"
+                               Width="16.89621"
+                               Height="8.152893"
+                               IsHitTestVisible="false"
+                               Left="0.29200000000003"
+                               Top="0.249400000000037">
+                      <CanonicalSpline x:Name="Curve1_1"
+                                       Canvas.Left="16.8528"
+                                       Canvas.Top="6.78689999999995"
+                                       Width="16.86145"
+                                       Height="1.365967"
+                                       Points="0 1.371057 1.402062 9.622642 4.975946 3.249466 8.522338 9.958081 9.995877 -0.03774199 "
+                                       RenderTransformOrigin="0,0"
+                                       Stretch="Fill"
+                                       Stroke="#FF000000"
+                                       StrokeThickness="1"
+                                       Tension="0.5">
+                        <CanonicalSpline.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="180" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </CanonicalSpline.RenderTransform>
+                        <CanonicalSpline.Fill>
+                          <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                            <GradientStop Offset="0" Color="#FFFF0000" />
+                            <GradientStop Offset="0" Color="#E0FFFFFF" />
+                            <GradientStop Offset="1" Color="#E0FFFFFF" />
+                          </LinearGradientBrush>
+                        </CanonicalSpline.Fill>
+                      </CanonicalSpline>
+                      <RSIPath x:Name="Arc1_1"
+                               Canvas.Left="0.0173999999999523"
+                               Canvas.Top="-9.99999999748979E-05"
+                               Width="16.87885"
+                               Height="6.950134"
+                               Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="1">
+                        <RSIPath.Fill>
+                          <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                            <GradientStop Offset="0" Color="#FFFF0000" />
+                            <GradientStop Offset="0" Color="#E0FFFFFF" />
+                            <GradientStop Offset="1" Color="#E0FFFFFF" />
+                          </LinearGradientBrush>
+                        </RSIPath.Fill>
+                      </RSIPath>
+                    </RSICanvas>
+                    <RSIEllipse x:Name="WhiteRing_1"
+                                Canvas.Left="0.344800000000021"
+                                Canvas.Top="0.336099999999988"
+                                Width="16.75424"
+                                Height="16.33289"
+                                Stroke="#7FFFFFFF"
+                                StrokeThickness="2" />
+                  </RSICanvas>
+                </RSICanvas>
+                <RSICanvas Name="OKIND"
+                           Width="22.00772"
+                           Height="22.00775"
+                           Left="146.7182"
+                           Top="30.0001">
+                  <RSICanvas Name="Bezel"
+                             Width="22.00772"
+                             Height="22.00775"
+                             Left="0"
+                             Top="0">
+                    <RSIEllipse x:Name="Shadow_2"
+                                Canvas.Top="0.553600000000074"
+                                Width="22.00772"
+                                Height="21.45404"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                      <RSIEllipse.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                          <GradientStop Offset="1" Color="#FF666666" />
+                          <GradientStop Offset="0" Color="#FF727272" />
+                        </LinearGradientBrush>
+                      </RSIEllipse.Fill>
+                    </RSIEllipse>
+                    <RSIEllipse x:Name="OutsideChromeRing_2"
+                                Canvas.Top="-9.99999999748979E-05"
+                                Width="21.90631"
+                                Height="21.35522"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                      <RSIEllipse.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                          <GradientStop Offset="1" Color="#FFFFFFFF" />
+                          <GradientStop Offset="0" Color="#FF1A1A1A" />
+                        </LinearGradientBrush>
+                      </RSIEllipse.Fill>
+                    </RSIEllipse>
+                    <RSIEllipse x:Name="InsideChromeRing_2"
+                                Canvas.Left="0.446199999999976"
+                                Canvas.Top="0.435000000000059"
+                                Width="21.01379"
+                                Height="20.48517"
+                                Stroke="#FF000000"
+                                StrokeThickness="0">
+                      <RSIEllipse.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                          <GradientStop Offset="1" Color="#FFEFEFEF" />
+                          <GradientStop Offset="0" Color="#FF001E00" />
+                        </LinearGradientBrush>
+                      </RSIEllipse.Fill>
+                    </RSIEllipse>
+                  </RSICanvas>
+                  <RSICanvas Name="OnState_Green"
+                             Width="17.44388"
+                             Height="17.00513"
+                             Left="2.16579999999999"
+                             Top="2.44529999999997">
+                    <RSIEllipse x:Name="GreenGradient"
+                                Canvas.Left="-0.000100000000031741"
+                                Canvas.Top="-9.99999999748979E-05"
+                                Width="17.44388"
+                                Height="17.00513"
+                                StrokeThickness="2"> 
+                      <RSIEllipse.Stroke>
+                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                          <GradientStop Offset="0.27" Color="#FF003E00" />
+                          <GradientStop Offset="0" Color="#FF000000" />
+                          <GradientStop Offset="1" Color="#FF000000" />
+                        </LinearGradientBrush>
+                      </RSIEllipse.Stroke> 
+                      <RSIEllipse.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                          <GradientStop Offset="0.73" Color="#FF24FF24" />
+                          <GradientStop Offset="0.5329" Color="#FF00B000" />
+                          <GradientStop Offset="0" Color="#FF006C00" />
+                          <GradientStop Offset="1" Color="#FF006C00" />
+                          <GradientStop Offset="0.8029" Color="#FF00B000" />
+                        </LinearGradientBrush>
+                      </RSIEllipse.Fill>
+                    </RSIEllipse>
+                    <RSICanvas Name="Reflection_2"
+                               Width="16.89621"
+                               Height="8.152893"
+                               IsHitTestVisible="false"
+                               Left="0.291999999999973"
+                               Top="0.249300000000062">
+                      <CanonicalSpline x:Name="Curve1_2"
+                                       Canvas.Left="16.8528"
+                                       Canvas.Top="6.78689999999995"
+                                       Width="16.86145"
+                                       Height="1.365967"
+                                       Points="0 1.371057 1.402062 9.622642 4.975946 3.249466 8.522338 9.958081 9.995877 -0.03774199 "
+                                       RenderTransformOrigin="0,0"
+                                       Stretch="Fill"
+                                       Stroke="#FF000000"
+                                       StrokeThickness="1"
+                                       Tension="0.5">
+                        <CanonicalSpline.RenderTransform>
+                          <TransformGroup>
+                            <RotateTransform Angle="180" />
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                          </TransformGroup>
+                        </CanonicalSpline.RenderTransform>
+                        <CanonicalSpline.Fill>
+                          <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                            <GradientStop Offset="0" Color="#2B008400" />
+                            <GradientStop Offset="0" Color="#E0FFFFFF" />
+                            <GradientStop Offset="1" Color="#E0FFFFFF" />
+                          </LinearGradientBrush>
+                        </CanonicalSpline.Fill>
+                      </CanonicalSpline>
+                      <RSIPath x:Name="Arc1_2"
+                               Canvas.Left="0.0174000000000092"
+                               Width="16.87885"
+                               Height="6.950134"
+                               Data="M 0,1 A 0.5,0.5 90 0 1 1,1"
+                               Stretch="Fill"
+                               Stroke="#FF000000"
+                               StrokeThickness="1">
+                        <RSIPath.Fill>
+                          <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                            <GradientStop Offset="0" Color="#2B008400" />
+                            <GradientStop Offset="0" Color="#E0FFFFFF" />
+                            <GradientStop Offset="1" Color="#E0FFFFFF" />
+                          </LinearGradientBrush>
+                        </RSIPath.Fill>
+                      </RSIPath>
+                    </RSICanvas>
+                    <RSIEllipse x:Name="WhiteRing_2"
+                                Canvas.Left="0.344799999999964"
+                                Canvas.Top="0.336000000000013"
+                                Width="16.75424"
+                                Height="16.33282"
+                                Stroke="#7FFFFFFF"
+                                StrokeThickness="2" />
+                  </RSICanvas>
+                </RSICanvas>
+                <RSIBorder x:Name="Line3"
+                           Canvas.Left="-0.75"
+                           Canvas.Top="19.25"
+                           Width="190"
+                           Height="1.5">
+                  <RSIPath Data="M-0.75,19.25 L189.25,19.25"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1" />
+                </RSIBorder>
+                <RSIText x:Name="LEGEND"
+                         Canvas.Left="29.0232"
+                         Width="132.6641"
+                         Height="18.76447"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         BorderBrush="Transparent"
+                         Foreground="#FF000000"
+                         IsHitTestVisible="False"
+                         Text="LEGEND"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10"
+                         TextElement.FontWeight="Bold"
+                         TextWrapping="Wrap" />
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

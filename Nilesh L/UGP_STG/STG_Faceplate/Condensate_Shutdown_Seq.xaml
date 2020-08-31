@@ -1,0 +1,73 @@
+﻿<RSIFacePlate
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:Faceplate_Mimics="clr-namespace:UGP_STG.STG_Faceplate.Faceplate_Mimics"
+	mc:Ignorable="d"
+	x:Class="UGP_STG.STG_Faceplate.Condensate_Shutdown_Seq"
+	Width="506.5" 
+	Height="506.5"
+	Background="LightGray">
+    <RSICanvas  >
+        <RSIBitmap x:Name="rSIBitmap" HorizontalAlignment="Stretch" Height="506.5" Canvas.Left="-0.083" VerticalAlignment="Stretch" Width="506.583" Source="Condensate_Shutdown_Seq.png"/>
+        <Faceplate_Mimics:Transition_Step Height="21.5" Canvas.Left="121.291" Canvas.Top="151.999" Width="80.5" TagName="CONDENSATE_S51">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T51"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="CONDENSATE SHUTDOWN SEQUENCE ON"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="41.292" Canvas.Left="120.166" Canvas.Top="101.292" Width="81.625" TagName="CONDENSATE_S51">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S51"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="21.5" Canvas.Left="121.291" Canvas.Top="231.505" Width="80.5" TagName="CONDENSATE_S52">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T52"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="COND EXTRACTION VALVE"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="41.292" Canvas.Left="120.166" Canvas.Top="180.798" Width="81.625" TagName="CONDENSATE_S52">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S52"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Transition_Step Height="21.5" Canvas.Left="121.291" Canvas.Top="311.505" Width="80.5" TagName="CONDENSATE_S53">
+            <Faceplate_Mimics:Transition_Step.Parameters>
+                <Param Name="$TEXT" Value="T53"/>
+                <Param Name="$FACEPLATEDESCRIPTION" Value="STOP CONDENSATE PUMP STOP MIN FLOW CONTROLLER"/>
+            </Faceplate_Mimics:Transition_Step.Parameters>
+        </Faceplate_Mimics:Transition_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="41.292" Canvas.Left="120.166" Canvas.Top="260.798" Width="81.625" TagName="CONDENSATE_S53">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S53"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <Faceplate_Mimics:Intermediate_Step Height="41.292" Canvas.Left="120.166" Canvas.Top="340.79" Width="81.625" TagName="CONDENSATE_S54">
+            <Faceplate_Mimics:Intermediate_Step.Parameters>
+                <Param Name="$TEXT" Value="S54"/>
+            </Faceplate_Mimics:Intermediate_Step.Parameters>
+        </Faceplate_Mimics:Intermediate_Step>
+        <RSIButton x:Name="rSIButton_Copy1" Content="START" Canvas.Left="12.667" Canvas.Top="101.292" Width="99.686" BorderBrush="Black" Height="41.292" FontWeight="Bold" Background="Gray" Cursor="Hand">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Assignment Expression="1" Maximum="1" Minimum="0" Variable="CONDENSATE_ST_SD_SEQUENCE.RunFreeze"/>
+                </ClickAnimation>
+                <Animation Condition="CONDENSATE_ST_SD_SEQUENCE.RunFreeze == 1">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                </Animation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton x:Name="rSIButton_Copy2" Content="STOP" Canvas.Left="12.667" Canvas.Top="147.584" Width="99.686" BorderBrush="Black" Height="41.292" FontWeight="Bold" Background="Gray" Cursor="Hand">
+            <RSIButton.Animations>
+                <ClickAnimation>
+                    <Assignment Expression="0" Maximum="1" Minimum="0" Variable="CONDENSATE_ST_SD_SEQUENCE.RunFreeze"/>
+                </ClickAnimation>
+                <Animation Condition="CONDENSATE_ST_SD_SEQUENCE.RunFreeze == 0">
+                    <ChangePropertyValue PropertyName="Background" Value="Lime"/>
+                </Animation>
+            </RSIButton.Animations>
+        </RSIButton>
+    </RSICanvas>
+</RSIFacePlate>

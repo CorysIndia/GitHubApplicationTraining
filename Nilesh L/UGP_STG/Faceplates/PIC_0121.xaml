@@ -1,0 +1,26 @@
+<RSIFacePlate x:Class="UGP_STG.HMI.PIC_0121"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_STG.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+  <RSICanvas Width="318.9998"
+             Height="397"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+    <hmi:ContFpSpeed_01 x:Name="ContFpSpeed_011"
+                        Width="318.9998"
+                        Height="397" />
+    <hmi:Type1_Display_3Letter_III x:Name="Type1_Display_3Letter_III1"
+                                   Canvas.Left="169.499638"
+                                   Canvas.Top="288.462597586012"
+                                   Width="58.49999"
+                                   Height="38.53743" />
+    <hmi:Type1_Display_3Letter_III x:Name="Type1_Display_3Letter_III2"
+                                   Canvas.Left="230.499738"
+                                   Canvas.Top="288.462597586012"
+                                   Width="58.49999"
+                                   Height="38.53743" />
+  </RSICanvas>
+</RSIFacePlate>

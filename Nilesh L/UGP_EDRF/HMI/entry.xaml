@@ -1,0 +1,61 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:entry}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:entry}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="82.99994"
+                         Height="20"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                <RSIRectangle x:Name="ValueEdit"
+                              Canvas.Left="25.6413"
+                              Width="31.14063"
+                              Height="17.875"
+                              Fill="#FFEFEFEF"
+                              Stroke="#FF7E7E7E"
+                              StrokeThickness="1">
+                  <RSIRectangle.Animations>
+                    <!--  User Input  -->
+                  </RSIRectangle.Animations>
+                </RSIRectangle>
+                <RSIRectangle x:Name="Rectangle2"
+                              Width="82.99994"
+                              Height="20"
+                              Fill="#FFE0E0E0"
+                              Stroke="#FF7E7E7E"
+                              StrokeThickness="1" />
+                <RSIText x:Name="txt_Value"
+                         Canvas.Left="21.6895000000001"
+                         Canvas.Top="2.20260000000002"
+                         Width="39.76172"
+                         Height="14.52344"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Foreground="#FF000000"
+                         Text="{Value $OUT,
+                                      Converter={FormatConverter {}{0:0.##}}}"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="10">
+                  <RSIText.Animations>
+                    <Animation>
+                      <ChangeText Text="{Value $OUT, Converter={FormatConverter F2}}" />
+                    </Animation>
+                  </RSIText.Animations>
+                </RSIText>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

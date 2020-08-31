@@ -1,0 +1,531 @@
+<RSIFacePlate x:Class="UGP_EDRF.HMI.FIC_0001"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d">
+    <RSICanvas Width="322"
+             Height="397"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+        <hmi:ContFpSpeed_01 x:Name="ContFpSpeed_011"
+                        Width="322"
+                        Height="397" />
+        <hmi:Type1_Display_3Letter_III x:Name="Type1_Display_3Letter_III1"
+                                   Canvas.Left="164.175"
+                                   Canvas.Top="253.796"
+                                   Width="58.5"
+                                   Height="38.537" ZCINBlkUOTrueFalse="true" ZCINBlkUO="M39_006SIC3601" ZButtonText="True" Visibility="Hidden" />
+        <hmi:Type1_Display_3Letter_III x:Name="Type1_Display_3Letter_III2"
+                                   Canvas.Left="237.008"
+                                   Canvas.Top="253.796"
+                                   Width="58.5"
+                                   Height="38.537" ZCINBlkUOTrueFalse="false" ZCINBlkUO="M39_006SIC3601" ZButtonText="False" Visibility="Hidden" />
+        <RSICanvas Width="58.008"
+        Height="38.238"
+        TextElement.FontFamily="Arial"
+        TextElement.FontSize="12" Canvas.Left="164.667" Canvas.Top="302.667">
+            <RSICanvas.Parameters>
+                <Param Name="$ENB" Value="f006A_LS_ENB"/>
+            </RSICanvas.Parameters>
+            <RSIRectangle x:Name="RoundRectangle3"
+            Canvas.Left="0.00836999999999932"
+            Width="58"
+            Height="37"
+            StrokeThickness="1">
+                <RSIRectangle.Animations>
+                    <Animation Condition="$ENB.CIN == 1">
+                        <SetVisible/>
+                    </Animation>
+                    <Animation Condition="$ENB.CIN == 0">
+                        <Invisible/>
+                    </Animation>
+                </RSIRectangle.Animations>
+                <RSIRectangle.Stroke>
+                    <RadialGradientBrush>
+                        <GradientStop Offset="0" Color="#FF000000" />
+                        <GradientStop Offset="1" Color="#FFFFFFFF" />
+                    </RadialGradientBrush>
+                </RSIRectangle.Stroke>
+                <RSIRectangle.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Offset="0" Color="#FF004200" />
+                        <GradientStop Offset="0" Color="#FF2F822F" />
+                        <GradientStop Offset="1" Color="#FF23E623" />
+                    </RadialGradientBrush>
+                </RSIRectangle.Fill>
+            </RSIRectangle>
+            <RSIRectangle x:Name="RoundRectangle2"
+            Canvas.Left="0.19999"
+            Canvas.Top="0.237499"
+            Width="57"
+            Height="38"
+            StrokeThickness="1">
+                <RSIRectangle.Animations>
+                    <Animation Condition="$ENB.CIN == 1">
+                        <Invisible/>
+                    </Animation>
+                    <Animation Condition="$ENB.CIN == 0">
+                        <SetVisible/>
+                    </Animation>
+                </RSIRectangle.Animations>
+                <RSIRectangle.Stroke>
+                    <RadialGradientBrush>
+                        <GradientStop Offset="0" Color="#FF000000" />
+                        <GradientStop Offset="1" Color="#FFFFFFFF" />
+                    </RadialGradientBrush>
+                </RSIRectangle.Stroke>
+                <RSIRectangle.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Offset="0" Color="#FFB3B3B3" />
+                        <GradientStop Offset="0" Color="#FFB3B3B3" />
+                        <GradientStop Offset="0" Color="#FF7E7E7E" />
+                        <GradientStop Offset="0" Color="#FFB3B3B3" />
+                        <GradientStop Offset="1" Color="#FFB3B3B3" />
+                    </RadialGradientBrush>
+                </RSIRectangle.Fill>
+            </RSIRectangle>
+            <RSIRectangle x:Name="RoundRectangle1"
+            Canvas.Left="1.6"
+            Canvas.Top="1.637501"
+            Width="55"
+            Height="16"
+            StrokeThickness="0" Visibility="Hidden">
+                <RSIRectangle.Stroke>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0" Color="#FFE0E0E0" />
+                        <GradientStop Offset="0" Color="#FF4D4D4D" />
+                        <GradientStop Offset="1" Color="#FF4D4D4D" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Stroke>
+                <RSIRectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="0" Color="#FFFFFFFF" />
+                        <GradientStop Offset="0" Color="#00FFFFFF" />
+                        <GradientStop Offset="1" Color="#00FFFFFF" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Fill>
+                <RSIRectangle.Animations>
+                    <Animation Condition="Value==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="Value==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Value">
+                        <ChangeColor Color="" />
+                    </Animation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIText x:Name="Text3"
+            Canvas.Left="1.6"
+            Canvas.Top="1.638"
+            Width="54.208"
+            Height="35.362"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Foreground="#FF000000"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="ENB">
+                <RSIText.Animations>
+                    <Animation Condition="Value">
+                        <ChangeColor Color="#FF000000" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSICanvas x:Name="Group2"
+            Width="52.19998"
+            Height="27.4"
+            Canvas.Left="2.4"
+            Canvas.Top="5.237499">
+                <RSIBorder x:Name="Line1"
+                Canvas.Left="-0.75"
+                Canvas.Top="-3.409"
+                Width="52.2"
+                Height="30.059"/>
+            </RSICanvas>
+            <RSIBorder x:Name="Line1_1"
+            Canvas.Left="-0.75"
+            Canvas.Top="0.887501"
+            Width="1.5"
+            Height="34">
+                <RSIPath Data="M-0.75,0.887501 L-0.75,34.887499"
+                Stretch="Fill"
+                Stroke="#FF000000"
+                StrokeThickness="1" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line2_1"
+            Canvas.Left="1.04999"
+            Canvas.Top="-0.712501"
+            Width="53.00001"
+            Height="1.5">
+                <RSIPath Data="M1.04999,-0.712501 L54.05,-0.712501"
+                Stretch="Fill"
+                Stroke="#FF000000"
+                StrokeThickness="1" />
+            </RSIBorder>
+        </RSICanvas>
+        <RSICanvas Width="58.008"
+            Height="38.238"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="12" Canvas.Left="237.5" Canvas.Top="302.667">
+            <RSICanvas.Parameters>
+                <Param Name="$DIS" Value="f006A_LS_ENB"/>
+            </RSICanvas.Parameters>
+            <RSIRectangle x:Name="RoundRectangle4"
+                Canvas.Left="0.00836999999999932"
+                Width="58"
+                Height="37"
+                StrokeThickness="1">
+                <RSIRectangle.Animations>
+                    <Animation Condition="$DIS.CIN == 0">
+                        <SetVisible/>
+                    </Animation>
+                    <Animation Condition="$DIS.CIN == 1">
+                        <Invisible/>
+                    </Animation>
+                </RSIRectangle.Animations>
+                <RSIRectangle.Stroke>
+                    <RadialGradientBrush>
+                        <GradientStop Offset="0" Color="#FF000000" />
+                        <GradientStop Offset="1" Color="#FFFFFFFF" />
+                    </RadialGradientBrush>
+                </RSIRectangle.Stroke>
+                <RSIRectangle.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Offset="0" Color="#FF004200" />
+                        <GradientStop Offset="0" Color="#FF399B39" />
+                        <GradientStop Offset="1" Color="#FF1BD31B" />
+                    </RadialGradientBrush>
+                </RSIRectangle.Fill>
+            </RSIRectangle>
+            <RSIRectangle x:Name="RoundRectangle5"
+                Canvas.Left="0.19999"
+                Canvas.Top="0.237499"
+                Width="57"
+                Height="38"
+                StrokeThickness="1">
+                <RSIRectangle.Animations>
+                    <Animation Condition="$DIS.CIN == 0">
+                        <Invisible/>
+                    </Animation>
+                    <Animation Condition="$DIS.CIN == 1">
+                        <SetVisible/>
+                    </Animation>
+                </RSIRectangle.Animations>
+                <RSIRectangle.Stroke>
+                    <RadialGradientBrush>
+                        <GradientStop Offset="0" Color="#FF000000" />
+                        <GradientStop Offset="1" Color="#FFFFFFFF" />
+                    </RadialGradientBrush>
+                </RSIRectangle.Stroke>
+                <RSIRectangle.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Offset="0" Color="#FFB3B3B3" />
+                        <GradientStop Offset="0" Color="#FFB3B3B3" />
+                        <GradientStop Offset="0" Color="#FF7E7E7E" />
+                        <GradientStop Offset="0" Color="#FFB3B3B3" />
+                        <GradientStop Offset="1" Color="#FFB3B3B3" />
+                    </RadialGradientBrush>
+                </RSIRectangle.Fill>
+            </RSIRectangle>
+            <RSIRectangle x:Name="RoundRectangle6"
+                Canvas.Left="1.6"
+                Canvas.Top="1.637501"
+                Width="55"
+                Height="16"
+                StrokeThickness="0" Visibility="Hidden">
+                <RSIRectangle.Stroke>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0" Color="#FFE0E0E0" />
+                        <GradientStop Offset="0" Color="#FF4D4D4D" />
+                        <GradientStop Offset="1" Color="#FF4D4D4D" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Stroke>
+                <RSIRectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="0" Color="#FFFFFFFF" />
+                        <GradientStop Offset="0" Color="#00FFFFFF" />
+                        <GradientStop Offset="1" Color="#00FFFFFF" />
+                    </LinearGradientBrush>
+                </RSIRectangle.Fill>
+                <RSIRectangle.Animations>
+                    <Animation Condition="Value==true">
+                        <SetVisible />
+                    </Animation>
+                    <Animation Condition="Value==false">
+                        <Invisible />
+                    </Animation>
+                    <Animation Condition="Value">
+                        <ChangeColor Color="" />
+                    </Animation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIText x:Name="Text1"
+                Canvas.Left="1.6"
+                Canvas.Top="1.638"
+                Width="54.208"
+                Height="35.362"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="#FF000000"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="10"
+                TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="DIS">
+                <RSIText.Animations>
+                    <Animation Condition="Value">
+                        <ChangeColor Color="#FF000000" />
+                    </Animation>
+                </RSIText.Animations>
+            </RSIText>
+            <RSICanvas x:Name="Group1"
+                Width="52.19998"
+                Height="27.4"
+                Canvas.Left="2.4"
+                Canvas.Top="5.237499">
+                <RSIBorder x:Name="Line2"
+                    Canvas.Left="-0.75"
+                    Canvas.Top="-3.409"
+                    Width="52.2"
+                    Height="30.059"/>
+            </RSICanvas>
+            <RSIBorder x:Name="Line1_2"
+                Canvas.Left="-0.75"
+                Canvas.Top="0.887501"
+                Width="1.5"
+                Height="34">
+                <RSIPath Data="M-0.75,0.887501 L-0.75,34.887499"
+                    Stretch="Fill"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            </RSIBorder>
+            <RSIBorder x:Name="Line2_2"
+                Canvas.Left="1.04999"
+                Canvas.Top="-0.712501"
+                Width="53.00001"
+                Height="1.5">
+                <RSIPath Data="M1.04999,-0.712501 L54.05,-0.712501"
+                    Stretch="Fill"
+                    Stroke="#FF000000"
+                    StrokeThickness="1" />
+            </RSIBorder>
+        </RSICanvas>
+        <RSIText x:Name="SP_VAL"
+            Canvas.Left="184.675"
+            Canvas.Top="101.037"
+            Width="73.575"
+            Height="14.057"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Stretch"
+            Foreground="#FF00FF00"
+            Text="345.5 "
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center">
+            <RSIText.Animations>
+                <Animation>
+                    <ChangeText Text="\$TAGNAME.SPT:#.#\ "/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="PV_VAL"
+            Canvas.Left="182.8"
+            Canvas.Top="133.204"
+            Width="75.45"
+            Height="14.057"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Stretch"
+            Foreground="#FF00FF00"
+            Text="345.5 "
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center">
+            <RSIText.Animations>
+                <Animation>
+                    <ChangeText Text="\$TAGNAME.MEAS:#.#\ "/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText
+            x:Name="OP_CMD"
+            Canvas.Left="182.05"
+            Canvas.Top="164.27"
+            Width="76.2"
+            Height="14.148"
+            HorizontalAlignment="Right"
+            Foreground="#FF0000FF"
+            Text="345.5 "
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" IsInput="True">
+            <RSIText.Animations>
+                <Animation Condition="$TAGNAME.MODE == 0">
+                    <ChangePropertyValue PropertyName="IsInput" Value="True"/>
+                </Animation>
+                <Animation Condition="$TAGNAME.MODE == 1">
+                    <ChangePropertyValue PropertyName="IsInput" Value="False"/>
+                </Animation>
+                <Animation>
+                    <ChangeText Text="\$TAGNAME.OUT:#.#\"/>
+                </Animation>
+            </RSIText.Animations>
+            <!--RSIText.Animations>
+                                        <Animation>
+                                            <ChangeText Text="{Value Value, Converter={FormatConverter F1}}" />
+                                        </Animation>
+                                        <Animation Condition="Value_Fail">
+                                            <ChangeColor Color="#FF0000FF" />
+                                        </Animation>
+                                    </-->
+        </RSIText>
+        <RSIText x:Name="SP_UNIT"
+            Canvas.Left="211.558"
+            Canvas.Top="116.344"
+            Width="46.692"
+            Height="13.406"
+            HorizontalAlignment="Right"
+            Foreground="#FFFFFFFF"
+            IsHitTestVisible="False"
+            Text="MMSCFD"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF343434" />
+        <RSIText x:Name="SP_UNIT_Copy"
+            Canvas.Left="211.558"
+            Canvas.Top="147.261"
+            Width="46.692"
+            Height="13.406"
+            HorizontalAlignment="Right"
+            Foreground="#FFFFFFFF"
+            IsHitTestVisible="False"
+            Text="MMSCFD"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF343434" />
+        <RSIText x:Name="Label"
+            Width="309"
+            Height="28"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="MASTER FLOW CONTROL (FIC-0001)" FontSize="14" Canvas.Left="8" />
+        <RSIText x:Name="SP_UNIT_Copy1"
+            Canvas.Left="237.008"
+            Canvas.Top="82.631"
+            Width="21.242"
+            Height="13.406"
+            HorizontalAlignment="Right"
+            Foreground="#FFFFFFFF"
+            IsHitTestVisible="False"
+            Text="MMSCFD"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF343434" />
+        <RSIRectangle x:Name="Rectangle1"
+            Canvas.Left="184.675"
+            Canvas.Top="51.43"
+            Width="24.775"
+            Height="15.267"
+            Stroke="#FF666666"
+            StrokeThickness="1">
+            <RSIRectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="0" Color="#FFE0E0E0" />
+                    <GradientStop Offset="0" Color="#FFD7D3D3" />
+                    <GradientStop Offset="1" Color="#FF595959" />
+                </LinearGradientBrush>
+            </RSIRectangle.Fill>
+        </RSIRectangle>
+        <RSIText x:Name="Text3_Copy"
+            Canvas.Left="183.555"
+            Canvas.Top="51.43"
+            Width="25.895"
+            Height="13.406"
+            HorizontalAlignment="Left"
+            Foreground="#FF000000"
+            IsHitTestVisible="False"
+            Text="DCS"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <RSIRectangle x:Name="Rectangle1_Copy"
+            Canvas.Left="183.555"
+            Canvas.Top="66.697"
+            Width="74.695"
+            Height="15.934"
+            Stroke="#FF3E3E40"
+            StrokeThickness="1" Fill="#FF343434"/>
+        <RSIRectangle x:Name="Rectangle1_Copy1"
+            Canvas.Left="212.2"
+            Canvas.Top="50.763"
+            Width="46.692"
+            Height="15.934"
+            Stroke="#FF3C3C3E"
+            StrokeThickness="1">
+            <RSIRectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="0" Color="#FFE0E0E0" />
+                    <GradientStop Offset="0" Color="#FFD7D3D3" />
+                    <GradientStop Offset="1" Color="#FF343434" />
+                </LinearGradientBrush>
+            </RSIRectangle.Fill>
+        </RSIRectangle>
+        <RSIRectangle x:Name="Rectangle2_1"
+            Width="48.3"
+            Height="15"
+            Stroke="#FFFFFF00"
+            StrokeThickness="2" Canvas.Left="212.2" Canvas.Top="51.43">
+            <RSIRectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="1" Color="#FFEFEFEF" />
+                    <GradientStop Offset="0" Color="#FFFFFFFF" />
+                </LinearGradientBrush>
+            </RSIRectangle.Fill>
+        </RSIRectangle>
+        <RSIText x:Name="DCS_SP"
+            Canvas.Left="212.21"
+            Canvas.Top="51.43"
+            Width="48.29"
+            Height="15"
+            HorizontalAlignment="Right"
+            Foreground="#FF00FF00"
+            Text=""
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="10"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center">
+            <RSIText.Animations>
+                <!--<Animation Condition="$TAGNAME_in_dcs_enb_md.CIN == 1">
+                    <ChangePropertyValue PropertyName="IsInput" Value="True"/>
+                </Animation>
+                <Animation Condition="$TAGNAME_in_dcs_enb_md.CIN == 0">
+                    <ChangePropertyValue PropertyName="IsInput" Value="False"/>
+                </Animation>-->
+
+                <Animation>
+                    <ChangeText Text="\$TAGNAME_in_dcs_tsp.Value:#.#\"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+        <RSIText x:Name="TGT_UNIT"
+            Canvas.Left="211.558"
+            Canvas.Top="67.725"
+            Width="47.442"
+            Height="14.906"
+            HorizontalAlignment="Right"
+            IsHitTestVisible="False"
+            Text="MMSCFD"
+            TextElement.FontFamily="Arial"
+            TextElement.FontSize="9"
+            TextElement.FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF343434" Foreground="White" />
+        <RSIRectangle x:Name="Rectangle1_Copy2"
+            Canvas.Left="229.754"
+            Canvas.Top="82.631"
+            Width="30.746"
+            Height="15.028"
+            Stroke="#FF3C3C3E"
+            StrokeThickness="1" Fill="#FF343434"/>
+    </RSICanvas>
+</RSIFacePlate>

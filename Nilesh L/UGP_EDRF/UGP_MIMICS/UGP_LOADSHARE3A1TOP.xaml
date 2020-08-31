@@ -1,0 +1,118 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="UGP_EDRF.UGP_MIMICS.UGP_LOADSHARE3A1TOP"
+    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+    xmlns:System="clr-namespace:System;assembly=mscorlib"
+	Width="1872.689" 
+	Height="161.109"
+	Background="LightGray">
+    <RSIControl.Animations>
+        <Animation Condition="$LOADSHARE3A == 0">
+            <Invisible/>
+        </Animation>
+        <Animation Condition="$LOADSHARE3A == 1">
+            <SetVisible/>
+        </Animation>
+    </RSIControl.Animations>
+    <RSICanvas  >
+        <Border Background="Silver"
+                  BorderBrush="Silver"
+                  BorderThickness="1">
+            <StackPanel>
+                <RSICanvas Width="1870.6892166"
+             Height="159.10933"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="12">
+                    <RSIButton x:Name="Button1"
+               Canvas.Left="0.6892166"
+               Canvas.Top="48"
+               Width="285"
+               Height="5"
+               Background="#FFD3D3D3" />
+                    <RSIButton x:Name="Button2"
+               Canvas.Left="0.6892166"
+               Canvas.Top="94"
+               Width="286"
+               Height="5"
+               Background="#FFD3D3D3" />
+                    <hmi:Type2_AlarmIndicator_III x:Name="Type2_AlarmIndicator_III1"
+                                  Canvas.Left="2.6892316"
+                                  Canvas.Top="55.00002"
+                                  Width="91.00004"
+                                  Height="35.99997" ModelName="m005A_TRIP" />
+                    <hmi:Type2_AlarmIndicator_bypas_III x:Name="Type2_AlarmIndicator_bypas_III1"
+                                        Canvas.Left="190.6892166"
+                                        Canvas.Top="55.00002"
+                                        Width="90.00003"
+                                        Height="35.99997" ModelName="FAIL" />
+                    <hmi:Type2_AlarmIndicator_bypas_III x:Name="Type2_AlarmIndicator_bypas_III2"
+                                        Canvas.Left="97.6891966"
+                                        Canvas.Top="55.00002"
+                                        Width="90.00003"
+                                        Height="35.99997" ModelName="ALARM" />
+                    <RSIText x:Name="Text1"
+             Canvas.Left="599.6892166"
+             Width="676.5952"
+             Height="30.16406"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Foreground="#FF000000"
+             IsHitTestVisible="False"
+             Text="K-0003A TURBO-EXPANDER/BRAKE COMPRESSOR"
+             TextElement.FontFamily="Arial"
+             TextElement.FontSize="20"
+             TextElement.FontWeight="Bold" />
+                    <hmi:TriconexNamePlate_III x:Name="TriconexNamePlate_III1"
+                               Canvas.Left="1736.6892166"
+                               Canvas.Top="19"
+                               Width="132"
+                               Height="60"
+                               NameStore="ABOUT CCS" />
+                    <hmi:PbMom_03_ACK x:Name="PbMom_03_ACK1"
+                      Canvas.Left="1737.6892166"
+                      Canvas.Top="82.00003"
+                      Width="133"
+                      Height="23"
+                      NameStore="---" />
+                    <hmi:PbMom_03_M x:Name="PbMom_03_M2"
+                    Canvas.Left="1752.6892166"
+                    Canvas.Top="114"
+                    Width="107"
+                    Height="42.00001"
+                    NameStore="---" WinName="ALM ACK" />
+                    <hmi:QuickLink22Tabs_N2_s_19inch_III x:Name="QuickLink22Tabs_N2_s_19inch_III2"
+                                         Canvas.Top="112.0312"
+                                         Width="1263.438"
+                                         Height="47.0625"
+                                         Button1_NameStore="Main_Menu"
+                                         Button10_NameStore="Main Menu"
+                                         Button11_NameStore="Main Menu"
+                                         Button12_NameStore="Main Menu"
+                                         Button13_NameStore="Main Menu"
+                                         Button14_NameStore="Main Menu"
+                                         Button15_NameStore="OVERVIEW_M39_K0003B"
+                                         Button2_NameStore="Main_Menu_M39_K_0003A"
+                                         Button3_NameStore="OVERVIEW_M39_K0003A"
+                                         Button4_NameStore="TURBO_EXPANDER_A_STARTUP"
+                                         Button5_NameStore="SRG_CONTROL_M39_K_0003A"
+                                         Button6_NameStore="LOADSHARE_K0003AB"
+                                         Button7_NameStore="TURBO_EXPANDER_A_PERMISSIVES"
+                                         Button8_NameStore="05DISP07"
+                                         Button9_NameStore="Main Menu" Button1_TabVisible="True" Button2_TabVisible="True" Button3_TabVisible="True" Button4_TabVisible="True" Button5_TabVisible="True" Button6_TabVisible="True" Button7_TabVisible="True" Button8_TabVisible="True" Button15_TabVisible="True" Button1_TabName="MAIN            MENU" Button2_TabName="CCS        STATUS" Button3_TabName="COMPR OVERVIEW" Button4_TabName="TRBO-XPNDR STARTUP" Button5_TabName="SURGE CONTROL" Button6_TabName="LOADSHARE CONTROL" Button7_TabName="TRBO-XPNDR PERMISSIVE" Button8_TabName="DCS   OVERVIEW" Button15_TabName="K-0003B OVERVIEW" />
+                    <hmi:QuickLinkTab_N2_III x:Name="QuickLinkTab_N2_III1"
+                             Canvas.Left="1509.6892166"
+                             Canvas.Top="112.0312"
+                             Width="83"
+                             Height="47.07813"
+                             NameStore="OVERVIEW_M39_K0003B" Visibility="Hidden" />
+                    <TextBlock x:Name="rSIText3" Height="23" Canvas.Left="1744.667" TextWrapping="Wrap" Width="120" Text="{Binding Source={x:Static System:DateTime.Now}, StringFormat=\{0: MM/dd/yy\, hh:mm:ss\}}" VerticalAlignment="Bottom"/>
+                </RSICanvas>
+            </StackPanel>
+        </Border>
+    </RSICanvas>
+</RSIControl>

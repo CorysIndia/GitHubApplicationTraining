@@ -1,0 +1,65 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                    xmlns:hmi="clr-namespace:UGP_EDRF.HMI"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+  <Style TargetType="{x:Type hmi:CHART_2}">
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type hmi:CHART_2}">
+          <RSIViewbox Margin="{TemplateBinding ControlMargin}" Stretch="Fill">
+            <RSIGrid Background="Transparent">
+              <RSICanvas Width="105.1849"
+                         Height="93.44849"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12">
+                                <RSICanvas Name="Path3"
+                           Width="105.1849"
+                           Height="93.44849"
+                           IsHitTestVisible="false"
+                           Left="0"
+                           Top="0">
+                  <RSIPath x:Name="PolyLine1"
+                           Canvas.Left="-0.500099999999975"
+                           Canvas.Top="-0.5"
+                           Width="106.1849"
+                           Height="94.44849"
+                           Data="M0.5,0 L0,0.5 0.5,1 1,0.5 0.5,0 "
+                           Fill="#FF7E7E7E"
+                           Stretch="Fill"
+                           Stroke="#FF000000"
+                           StrokeThickness="1" >
+                                        <RSIPath.Animations>
+                                            <Animation Condition="$TAGNAME.Token == 1">
+                                                <ChangePropertyValue PropertyName="Fill" Value="Green"/>
+                                            </Animation>
+                                            <Animation Condition="$TAGNAME.Token == 0">
+                                                <ChangePropertyValue PropertyName="Fill" Value="red"/>
+                                            </Animation>
+                                        </RSIPath.Animations>
+                                    </RSIPath>
+                                </RSICanvas>
+                <hmi:FP_CallOverlay x:Name="CallOverlay_FIN"
+                                    Canvas.Left="52.94912189378"
+                                    Canvas.Top="-5.07611500211169E-05"
+                                    Width="65.57361"
+                                    Height="66.58252"
+                                    LOC="{TemplateBinding LOC}"
+                                    OverlayName="{TemplateBinding FP_NAME}"
+                                    PRT="{TemplateBinding PRT}"
+                                    RenderTransformOrigin="0,0">
+                  <hmi:FP_CallOverlay.RenderTransform>
+                    <RotateTransform Angle="45" />
+                  </hmi:FP_CallOverlay.RenderTransform>
+                </hmi:FP_CallOverlay>
+              </RSICanvas>
+            </RSIGrid>
+          </RSIViewbox>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+</ResourceDictionary>

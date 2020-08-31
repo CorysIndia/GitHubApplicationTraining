@@ -1,0 +1,58 @@
+<UserControl x:Class="UGP_STG._09STG" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+             xmlns:local="clr-namespace:UGP_STG" 
+             mc:Ignorable="d">
+    <Grid>
+        <!--  Graphic Part  -->
+        <local:_09STG_Translation x:Name="GRAPHIC" d:IsLocked="True"  />
+
+        <!-- Normal Graphic Layer Path -->
+        <Canvas x:Name="GRAPHIC_OVERLAY">
+        </Canvas>
+
+        <!-- FOD Part -->
+        <Canvas x:Name='FOD' Visibility="{FODBinding}">
+            <!-- Start FOD -->
+            <!-- Stop FOD -->
+        </Canvas>
+
+        <!-- BL Part -->
+        <Canvas x:Name='BL' Visibility='{BLBinding}' >
+            <!-- Start BL -->
+            <!-- Stop BL -->
+        </Canvas>
+
+        <!-- FAILURE Part -->
+        <Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' >
+            <RSI_StdTransmitter Canvas.Left="196.672" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2691A"/>
+            <RSI_StdTransmitter Canvas.Left="304.172" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2692A"/>
+            <RSI_StdTransmitter Canvas.Left="409.672" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2694A"/>
+            <RSI_StdTransmitter Canvas.Left="520.172" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2695A"/>
+            <RSI_StdTransmitter Canvas.Left="626.844" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2697A"/>
+            <RSI_StdTransmitter Canvas.Left="735.517" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2698A"/>
+            <RSI_StdTransmitter Canvas.Left="1035.532" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2700A"/>
+            <RSI_StdTransmitter Canvas.Left="1158.206" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2701A"/>
+            <RSI_StdTransmitter Canvas.Left="196.672" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="460.359" FailureFaceplateName="" ModelName="R35_093VIT2746A"/>
+            <RSI_StdTransmitter Canvas.Left="304.172" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="460.359" FailureFaceplateName="" ModelName="R35_093VIT2746B"/>
+            <RSI_StdTransmitter Canvas.Left="409.672" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="460.359" FailureFaceplateName="" ModelName="R35_093KIT2747"/>
+            <RSI_StdTransmitter Canvas.Left="520.172" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="460.359" FailureFaceplateName="" ModelName="R35_093VIT2735"/>
+            <RSI_StdTransmitter Canvas.Left="626.844" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="460.359" FailureFaceplateName="" ModelName="R35_093VIT2736"/>
+            <RSI_StdTransmitter Canvas.Left="1035.532" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="460.359" FailureFaceplateName="" ModelName="R35_093VIT2738"/>
+            <RSI_StdTransmitter Canvas.Left="1158.206" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="460.359" FailureFaceplateName="" ModelName="R35_093VIT2739"/>
+            <RSI_StdTransmitter Canvas.Left="319.172" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2692B"/>
+            <RSI_StdTransmitter Canvas.Left="424.672" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2694B"/>
+            <RSI_StdTransmitter Canvas.Left="535.172" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2695B"/>
+            <RSI_StdTransmitter Canvas.Left="641.844" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2697B"/>
+            <RSI_StdTransmitter Canvas.Left="750.517" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2698B"/>
+            <RSI_StdTransmitter Canvas.Left="1050.532" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2700B"/>
+            <RSI_StdTransmitter Canvas.Left="1173.206" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2701B"/>
+            <RSI_StdTransmitter Canvas.Left="210.004" Style="{DynamicResource RSI_StdTransmitterFailure_UGP}" Canvas.Top="180.036" FailureFaceplateName="" ModelName="R35_093TIT2691B"/>
+            <!-- Start FAILURE -->
+            <!-- Stop FAILURE -->
+        </Canvas>
+
+    </Grid>
+</UserControl>
