@@ -1,0 +1,23 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="TrainingApplication01.Stencils.Alarms"
+	Width="156" 
+	Height="43.5">
+    <Canvas>
+        <RSICanvas Height="49" Width="156"  >
+            <RSIButton HorizontalAlignment="Left" Height="30.968" VerticalAlignment="Top" Width="153" Background="#FFCBC8CF" Canvas.Left="1.333" Canvas.Top="7.063"/>
+            <RSIText HorizontalAlignment="Left" Height="19.954" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" Foreground="Black" FontWeight="Bold" FontSize="16" Text="$TagName" Canvas.Left="6.833" Canvas.Top="10.25"/>
+            <RSIEllipse Fill="#FF04C402" HorizontalAlignment="Left" Height="25.704" VerticalAlignment="Top" Width="29.75" Canvas.Left="114" Canvas.Top="10">
+                <RSIEllipse.Animations>
+                    <Animation Condition="$TAGNAME.CIN == 0">
+                        <ChangeColor Color="RED"/>
+                    </Animation>
+                </RSIEllipse.Animations>
+            </RSIEllipse>
+        </RSICanvas>
+    </Canvas>
+</RSIControl>

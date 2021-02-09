@@ -1,0 +1,25 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="TrainingApplication01.Stencils.Stencil_HS">
+    <RSIGrid HorizontalAlignment="Center" VerticalAlignment="Center" Width="100">
+        <RSICanvas Width="100"
+                         Height="35"
+                         TextElement.FontFamily="Arial"
+                         TextElement.FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <RSIText HorizontalAlignment="Center" Height="32.5" TextWrapping="Wrap" Text="$TAGNAME" VerticalAlignment="Center" Width="100" Background="#FF878486" FontWeight="Bold" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Canvas.Top="2.5"/>
+            <Rectangle Height="32.5" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Top="2.5">
+                <Rectangle.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0.003"/>
+                        <GradientStop Color="#FF676563" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Stroke>
+            </Rectangle>
+
+        </RSICanvas>
+    </RSIGrid>
+</RSIControl>

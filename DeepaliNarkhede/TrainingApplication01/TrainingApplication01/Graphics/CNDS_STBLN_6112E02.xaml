@@ -1,0 +1,887 @@
+﻿<RSISynoptic
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:Stencils1="clr-namespace:TrainingApplication01.Stencils1" x:Class="TrainingApplication01.Graphics.CNDS_STBLN_6112E02"
+          Background="Black"
+          Height="1048"
+          Width="1920"
+          mc:Ignorable="d">
+    <Grid>
+        <!--  GRAPHIC Part  -->
+        <Canvas x:Name="GRAPHIC">
+            <Rectangle Height="85" Canvas.Left="520.167" Canvas.Top="129.5" Width="425.833">
+                <Rectangle.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFF6F6F6" Offset="0"/>
+                        <GradientStop Color="#FFBEBCC6" Offset="1"/>
+                        <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    </RadialGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="#FFCFCFCF" Height="47.883" Stroke="DarkGray" Width="236.5"/>
+            <TextBlock HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="20"
+                Text="6112C01" Foreground="Black" FontWeight="Bold" Canvas.Left="77.5" Canvas.Top="10.641" />
+            <Rectangle Fill="#FFCFCFCF" Height="47.883" Stroke="DarkGray" Width="1678.5" Canvas.Left="241.5"/>
+            <TextBlock HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="20"
+                Text="CONDENSATE STABILIZATION" Canvas.Left="940.101" Foreground="Black" FontWeight="Bold" Canvas.Top="10.641" />
+            <Ellipse Height="87.666" Canvas.Left="505.917" Canvas.Top="509.583" Width="101.666">
+                <Ellipse.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFF6F6F6" Offset="0"/>
+                        <GradientStop Color="#FFBEBCC6" Offset="1"/>
+                        <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <RSIText Height="20.5" Canvas.Left="520.167" TextWrapping="Wrap" Text="6112-E10" Canvas.Top="540.667" Width="74.75" FontSize="18"/>
+            <RSIArc Height="6.698" Canvas.Left="502.331" Stroke="Black" Canvas.Top="550.329" Width="15.419" RenderTransformOrigin="0.5,0.5">
+                <RSIArc.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.205"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </RSIArc.RenderTransform>
+            </RSIArc>
+            <RSIArc Height="6.698" Canvas.Left="595.644" Stroke="Black" Canvas.Top="549.682" Width="15.419" RenderTransformOrigin="0.5,0.5">
+                <RSIArc.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="270.054"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </RSIArc.RenderTransform>
+            </RSIArc>
+            <RSIText Height="20.5" Canvas.Left="532.833" TextWrapping="Wrap" Text="6112-E09" Canvas.Top="129.5" Width="74.75" FontSize="18"/>
+            <Ellipse Height="87.666" Canvas.Left="925.375" Canvas.Top="510.708" Width="101.666">
+                <Ellipse.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFF6F6F6" Offset="0"/>
+                        <GradientStop Color="#FFBEBCC6" Offset="1"/>
+                        <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <RSIText Height="20.5" Canvas.Left="939.625" TextWrapping="Wrap" Text="6112-E02" Canvas.Top="541.792" Width="74.75" FontSize="18"/>
+            <RSIArc Height="6.698" Canvas.Left="921.789" Stroke="Black" Canvas.Top="551.454" Width="15.419" RenderTransformOrigin="0.5,0.5">
+                <RSIArc.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.205"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </RSIArc.RenderTransform>
+            </RSIArc>
+            <RSIArc Height="6.698" Canvas.Left="1015.102" Stroke="Black" Canvas.Top="550.807" Width="15.419" RenderTransformOrigin="0.5,0.5">
+                <RSIArc.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="270.054"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </RSIArc.RenderTransform>
+            </RSIArc>
+            <RSILine Height="4" Canvas.Left="90.584" Canvas.Top="552.782" Width="415.333" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Height="234.374" Canvas.Left="306.301" Canvas.Top="313.408" Width="249.167" Orientation="North_East">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="295.083" Canvas.Left="556" Canvas.Top="214.5" Width="8.542" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Orientation="Vertical">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="20.102" Canvas.Left="556" Canvas.Top="453.046" Width="4" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Orientation="Vertical" ArrowStartStyle="Normal">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Height="92.4" Canvas.Left="843.958" Canvas.Top="96.408" Width="129.51" Orientation="North_East">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="4" Canvas.Left="916.083" Canvas.Top="96.408" Width="20.375" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" ArrowEndStyle="Normal">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="4" Canvas.Left="559.875" Canvas.Top="257.282" Width="413.593" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="4" Canvas.Left="940.101" Canvas.Top="257.282" Width="20.375" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" ArrowEndStyle="Normal">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="434.384" Canvas.Left="973.468" Canvas.Top="76.324" Width="20.041" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Orientation="Vertical">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="4" Canvas.Left="977.635" Canvas.Top="277.741" Width="838.551" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="4" Canvas.Left="990.75" Canvas.Top="277.741" Width="20.375" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" ArrowEndStyle="Normal">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="4" Canvas.Left="607.583" Canvas.Top="552.782" Width="317.667" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Height="124.374" Canvas.Left="306.301" Canvas.Top="566.167" Width="249.167" Orientation="South_East">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Height="282.374" Canvas.Left="555.468" Canvas.Top="597.249" Width="465.906" Orientation="South_East">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="20.102" Canvas.Left="555.468" Canvas.Top="844.046" Width="4" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Orientation="Vertical" ArrowStartStyle="Normal">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Height="107.874" Canvas.Left="696.833" Canvas.Top="879.623" Width="198.167" Orientation="South_East">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="107.874" Canvas.Left="891.708" Canvas.Top="879.623" Width="8.542" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Orientation="Vertical">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Height="67.437" Canvas.Left="1021.374" Canvas.Top="875.686" Width="794.812" Orientation="South_East">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Height="100.374" Canvas.Left="858.468" Canvas.Top="556.782" Width="439.906" Orientation="South_East">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="100.374" Canvas.Left="1294.499" Canvas.Top="556.782" Width="8.542" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Orientation="Vertical">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="159.374" Canvas.Left="973.468" Canvas.Top="597.249" Width="8.542" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Orientation="Vertical">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="4" Canvas.Left="978.833" Canvas.Top="706.782" Width="835" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" ArrowEndStyle="Normal">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" Height="129.707" Canvas.Left="1117.968" Canvas.Top="715.782" Width="698.218" Orientation="South_East">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="4" Canvas.Left="1027.041" Canvas.Top="552.782" Width="789.145" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="4" Canvas.Left="978.833" Canvas.Top="706.782" Width="836.895" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20" ArrowEndStyle="Normal">
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+            </RSILine>
+            <RSILine Height="61.75" Canvas.Left="557.135" StrokeThickness="2" Canvas.Top="152.75" Width="7.407" Orientation="Vertical">
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+            </RSILine>
+            <RSILine Height="36.417" Canvas.Left="557.135" StrokeThickness="2" Canvas.Top="152.75" Width="48.647" Orientation="Diagonal">
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+            </RSILine>
+            <RSILine Height="39.167" Canvas.Left="602.135" StrokeThickness="2" Canvas.Top="150" Width="40.314" Orientation="Diagonal2">
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+            </RSILine>
+            <RSILine Height="39.167" Canvas.Left="638.468" StrokeThickness="2" Canvas.Top="150" Width="43.98" Orientation="Diagonal">
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+            </RSILine>
+            <RSILine Height="39.167" Canvas.Left="678.802" StrokeThickness="2" Canvas.Top="150" Width="46.314" Orientation="Diagonal2">
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+            </RSILine>
+            <RSILine Height="39.167" Canvas.Left="721.135" StrokeThickness="2" Canvas.Top="150" Width="43.98" Orientation="Diagonal">
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+            </RSILine>
+            <RSILine Height="39.167" Canvas.Left="761.469" StrokeThickness="2" Canvas.Top="150" Width="46.314" Orientation="Diagonal2">
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+            </RSILine>
+            <RSILine Height="39.167" Canvas.Left="804.135" StrokeThickness="2" Canvas.Top="150" Width="41.48" Orientation="Diagonal">
+                <RSILine.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Fill>
+                <RSILine.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSILine.Stroke>
+            </RSILine>
+            <RSILine Height="9" Canvas.Left="454.406" Canvas.Top="252.282" Width="101.594" Stroke="White" LineStyle="Dot"/>
+            <RSILine Height="9" Canvas.Left="559.875" Canvas.Top="320.032" Width="55.344" Stroke="White" LineStyle="Dot"/>
+            <RSILine Height="9" Canvas.Left="559.875" Canvas.Top="753.123" Width="55.344" Stroke="White" LineStyle="Dot"/>
+            <RSILine Stroke="White" LineStyle="Dot" Orientation="South_West" Height="33.829" Canvas.Left="709.685" Canvas.Top="292.079" Width="129.18"/>
+            <RSILine Stroke="White" LineStyle="Dot" Orientation="Vertical" Height="199.3" Canvas.Left="666.281" Canvas.Top="348.482" Width="10.667"/>
+            <RSILine Stroke="White" LineStyle="Dot" Orientation="Vertical" Height="164.25" Canvas.Left="666.281" Canvas.Top="561.782" Width="10.667"/>
+            <RSILine Stroke="White" ArrowHeadLength="15" ArrowHeadWidth="15" Orientation="Vertical" ArrowEndStyle="Normal" Height="15.167" Canvas.Left="666.281" Canvas.Top="412.199" Width="15.382"/>
+            <RSILine Stroke="White" LineStyle="Dot" Orientation="North_West" Height="42.017" Canvas.Left="565.675" Canvas.Top="802.041" Width="204.505"/>
+            <RSILine Height="9" Canvas.Left="90.584" Canvas.Top="802.041" Width="459.884" Stroke="White" LineStyle="Dot"/>
+            <RSILine Height="9" Canvas.Left="891.708" Canvas.Top="691.373" Width="76.76" Stroke="White" LineStyle="Dot"/>
+            <RSILine Stroke="White" LineStyle="Dot" Orientation="North_East" Height="47.741" Canvas.Left="1130.675" Canvas.Top="500.041" Width="161.305"/>
+            <RSILine Stroke="White" LineStyle="Dot" Orientation="Vertical" Height="61.25" Canvas.Left="1130.675" Canvas.Top="561.782" Width="10.667"/>
+            <RSILine Stroke="White" LineStyle="Dot" Orientation="Vertical" Height="26.75" Canvas.Left="1629.342" Canvas.Top="526.032" Width="10.667"/>
+            <RSILine Stroke="White" LineStyle="Dot" Orientation="Vertical" Height="29.417" Canvas.Left="1349.342" Canvas.Top="523.365" Width="10.667"/>
+            <RSILine Stroke="White" LineStyle="Dot" Orientation="Vertical" Height="16.75" Canvas.Left="1198.258" Canvas.Top="943.123" Width="10.667"/>
+            <RSIText TextWrapping="Wrap" Text="6112-P05A/B" FontSize="18" Height="20.5" Canvas.Left="1629.342" Canvas.Top="861.867" Width="105.875" Foreground="White"/>
+            <RSIText TextWrapping="Wrap" Text="NAPTHA" FontSize="16" Height="20.5" Canvas.Left="1652.842" Canvas.Top="955.367" Width="105.875" Foreground="White" FontWeight="Bold"/>
+            <RSI_BlockValve HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_BlockValve}" VerticalAlignment="Top" ModelName="RHS316" Orientation="East" Canvas.Left="295.551" Canvas.Top="419.398">
+                <RSI_BlockValve.ColorClose>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF951D28" Offset="0"/>
+                        <GradientStop Color="#FF951D28" Offset="1"/>
+                        <GradientStop Color="#FFEC6773" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorClose>
+                <RSI_BlockValve.ColorTravel>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5AC055" Offset="0"/>
+                        <GradientStop Color="#FF5AC055" Offset="1"/>
+                        <GradientStop Color="#FF90E48C" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorTravel>
+                <RSI_BlockValve.ColorOpen>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5AC055" Offset="0"/>
+                        <GradientStop Color="#FF5AC055" Offset="1"/>
+                        <GradientStop Color="#FF90E48C" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorOpen>
+            </RSI_BlockValve>
+            <RSI_BlockValve HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_BlockValve}" VerticalAlignment="Top" ModelName="RHS318" Orientation="West" Canvas.Left="525.417" Canvas.Top="626.686">
+                <RSI_BlockValve.ColorClose>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF951D28" Offset="0"/>
+                        <GradientStop Color="#FF951D28" Offset="1"/>
+                        <GradientStop Color="#FFEC6773" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorClose>
+                <RSI_BlockValve.ColorTravel>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5AC055" Offset="0"/>
+                        <GradientStop Color="#FF5AC055" Offset="1"/>
+                        <GradientStop Color="#FF90E48C" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorTravel>
+                <RSI_BlockValve.ColorOpen>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5AC055" Offset="0"/>
+                        <GradientStop Color="#FF5AC055" Offset="1"/>
+                        <GradientStop Color="#FF90E48C" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorOpen>
+            </RSI_BlockValve>
+            <RSI_BlockValve HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_BlockValve}" VerticalAlignment="Top" ModelName="RHS302" Orientation="West" Canvas.Left="943.351" Canvas.Top="365.928">
+                <RSI_BlockValve.ColorClose>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF951D28" Offset="0"/>
+                        <GradientStop Color="#FF951D28" Offset="1"/>
+                        <GradientStop Color="#FFEC6773" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorClose>
+                <RSI_BlockValve.ColorTravel>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5AC055" Offset="0"/>
+                        <GradientStop Color="#FF5AC055" Offset="1"/>
+                        <GradientStop Color="#FF90E48C" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorTravel>
+                <RSI_BlockValve.ColorOpen>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5AC055" Offset="0"/>
+                        <GradientStop Color="#FF5AC055" Offset="1"/>
+                        <GradientStop Color="#FF90E48C" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorOpen>
+            </RSI_BlockValve>
+            <RSI_BlockValve HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_BlockValve}" VerticalAlignment="Top" ModelName="RHS315" Canvas.Left="1284.488" Canvas.Top="247.079">
+                <RSI_BlockValve.ColorClose>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF951D28" Offset="0"/>
+                        <GradientStop Color="#FF951D28" Offset="1"/>
+                        <GradientStop Color="#FFEC6773" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorClose>
+                <RSI_BlockValve.ColorTravel>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5AC055" Offset="0"/>
+                        <GradientStop Color="#FF5AC055" Offset="1"/>
+                        <GradientStop Color="#FF90E48C" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorTravel>
+                <RSI_BlockValve.ColorOpen>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5AC055" Offset="0"/>
+                        <GradientStop Color="#FF5AC055" Offset="1"/>
+                        <GradientStop Color="#FF90E48C" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorOpen>
+            </RSI_BlockValve>
+            <RSIText TextWrapping="Wrap" Text="RESET ONLY IF TEMP&gt;43 C" FontSize="18" Height="46.5" Canvas.Left="687.408" Canvas.Top="352.482" Width="120.375" Foreground="White"/>
+            <RSI_BlockValve HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_BlockValve}" VerticalAlignment="Top" ModelName="RHS305" Canvas.Left="1176.398" Canvas.Top="676.792">
+                <RSI_BlockValve.ColorClose>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF951D28" Offset="0"/>
+                        <GradientStop Color="#FF951D28" Offset="1"/>
+                        <GradientStop Color="#FFEC6773" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorClose>
+                <RSI_BlockValve.ColorTravel>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5AC055" Offset="0"/>
+                        <GradientStop Color="#FF5AC055" Offset="1"/>
+                        <GradientStop Color="#FF90E48C" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorTravel>
+                <RSI_BlockValve.ColorOpen>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5AC055" Offset="0"/>
+                        <GradientStop Color="#FF5AC055" Offset="1"/>
+                        <GradientStop Color="#FF90E48C" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorOpen>
+            </RSI_BlockValve>
+            <RSI_BlockValve HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_BlockValve}" VerticalAlignment="Top" ModelName="RHS303" Canvas.Left="1176.398" Canvas.Top="811.491">
+                <RSI_BlockValve.ColorClose>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF951D28" Offset="0"/>
+                        <GradientStop Color="#FF951D28" Offset="1"/>
+                        <GradientStop Color="#FFEC6773" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorClose>
+                <RSI_BlockValve.ColorTravel>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5AC055" Offset="0"/>
+                        <GradientStop Color="#FF5AC055" Offset="1"/>
+                        <GradientStop Color="#FF90E48C" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorTravel>
+                <RSI_BlockValve.ColorOpen>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5AC055" Offset="0"/>
+                        <GradientStop Color="#FF5AC055" Offset="1"/>
+                        <GradientStop Color="#FF90E48C" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_BlockValve.ColorOpen>
+            </RSI_BlockValve>
+            <RSI_ControlValve HorizontalAlignment="Left" VerticalAlignment="Top" ModelName="TV363" ValveActuatorName="A_TC363" Style="{DynamicResource RSI_Stencil_ControlValve}" Canvas.Left="815.249" Canvas.Top="247.079" Orientation="South">
+                <RSI_ControlValve.ColorOpen>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_ControlValve.ColorOpen>
+                <RSI_ControlValve.ColorTravel>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                    </LinearGradientBrush>
+                </RSI_ControlValve.ColorTravel>
+            </RSI_ControlValve>
+            <RSI_ControlValve HorizontalAlignment="Left" VerticalAlignment="Top" ModelName="TV365" ValveActuatorName="A_TC365" Style="{DynamicResource RSI_Stencil_ControlValve_Red}" Canvas.Left="1109.218" Canvas.Top="623.032">
+                <RSI_ControlValve.ColorOpen>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="1"/>
+                        <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </RSI_ControlValve.ColorOpen>
+                <RSI_ControlValve.ColorTravel>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6D28B2" Offset="0"/>
+                        <GradientStop Color="#FF6D28B2" Offset="0.5"/>
+                        <GradientStop Color="#FFB68BE2" Offset="1"/>
+                    </LinearGradientBrush>
+                </RSI_ControlValve.ColorTravel>
+            </RSI_ControlValve>
+            <Stencils1:Alarm_Indication Height="100" Canvas.Left="665.115" Canvas.Top="220.908" TagName="ZAH336"/>
+            <RSIText TextWrapping="Wrap" Text="LV306" FontSize="18" Height="20.5" Canvas.Left="696.833" Canvas.Top="849.058" Width="49.875" Foreground="White"/>
+            <RSIText TextWrapping="Wrap" Text="LV303B" FontSize="18" Height="20.5" Canvas.Left="741.833" Canvas.Top="1009.785" Width="58.95" Foreground="White"/>
+            <RSIText TextWrapping="Wrap" Text="OPEN" FontSize="18" Height="20.5" Canvas.Left="815.249" Canvas.Top="854.123" Width="49.875" Foreground="White"/>
+            <RSIText TextWrapping="Wrap" Text="CLOSED" FontSize="18" Height="20.5" Canvas.Left="815.249" Canvas.Top="960.623" Width="66.875" Foreground="White"/>
+            <RSILine Stroke="White" LineStyle="Dot" Orientation="North_West" Height="35.208" Canvas.Left="707.083" Canvas.Top="916.708" Width="63.097"/>
+            <RSILine Height="9" Canvas.Left="90.584" Canvas.Top="916.708" Width="601.249" Stroke="White" LineStyle="Dot"/>
+        </Canvas>
+
+        <!--  FOD Part  -->
+        <Canvas x:Name="FOD"
+                Visibility="{FODBinding}" d:IsLocked="True"/>
+
+        <!--  Battery Limit Part  -->
+        <Canvas x:Name="BL"
+                Visibility="{BLBinding}" d:IsLocked="True"/>
+
+        <!--  FAILURE Part  -->
+        <Canvas x:Name="FAILURE"
+                Visibility="{FAILUREBinding}" d:IsLocked="True"/>
+        <RSI_ControlValve HorizontalAlignment="Left" VerticalAlignment="Top" ModelName="LV306" ValveActuatorName="A_LV306" Style="{DynamicResource RSI_Stencil_ControlValve_Red}" Margin="747.582,844.412,0,0">
+            <RSI_ControlValve.ColorOpen>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF6D28B2" Offset="0"/>
+                    <GradientStop Color="#FF6D28B2" Offset="1"/>
+                    <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                </LinearGradientBrush>
+            </RSI_ControlValve.ColorOpen>
+            <RSI_ControlValve.ColorTravel>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF6D28B2" Offset="0"/>
+                    <GradientStop Color="#FF6D28B2" Offset="0.5"/>
+                    <GradientStop Color="#FFB68BE2" Offset="1"/>
+                </LinearGradientBrush>
+            </RSI_ControlValve.ColorTravel>
+        </RSI_ControlValve>
+        <RSI_ControlValve HorizontalAlignment="Left" VerticalAlignment="Top" ModelName="LV303B" ValveActuatorName="A_LV303B" Style="{DynamicResource RSI_Stencil_ControlValve_Red}" Margin="747.582,952.412,0,0">
+            <RSI_ControlValve.ColorOpen>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF6D28B2" Offset="0"/>
+                    <GradientStop Color="#FF6D28B2" Offset="1"/>
+                    <GradientStop Color="#FFB68BE2" Offset="0.5"/>
+                </LinearGradientBrush>
+            </RSI_ControlValve.ColorOpen>
+            <RSI_ControlValve.ColorTravel>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF6D28B2" Offset="0"/>
+                    <GradientStop Color="#FF6D28B2" Offset="0.5"/>
+                    <GradientStop Color="#FFB68BE2" Offset="1"/>
+                </LinearGradientBrush>
+            </RSI_ControlValve.ColorTravel>
+        </RSI_ControlValve>
+        <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="PI302" TransmitterName="PT302" Margin="346.113,232.55,0,0"/>
+        <RSI_PID HorizontalAlignment="Left" VerticalAlignment="Top" Style="{DynamicResource RSI_Stencil_PID_Green}" ModelName="TC363" TransmitterName="TT363" Margin="601.113,294.695,0,0"/>
+        <RSI_PID HorizontalAlignment="Left" VerticalAlignment="Top" Style="{DynamicResource RSI_Stencil_PID_Red}" ModelName="LC306" TransmitterName="LT306" Margin="319.666,725.195,0,0"/>
+        <RSI_PID HorizontalAlignment="Left" VerticalAlignment="Top" Style="{DynamicResource RSI_Stencil_PID_Red}" ModelName="LC303" TransmitterName="LT303" Margin="319.666,844.412,0,0"/>
+        <RSI_PID HorizontalAlignment="Left" VerticalAlignment="Top" Style="{DynamicResource RSI_Stencil_PID_Green}" ModelName="TC303" TransmitterName="TT303" Margin="601.113,725.195,0,0"/>
+        <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="TI302" TransmitterName="TT302" Margin="784.082,672.8,0,0"/>
+        <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="PI304" TransmitterName="PT304" Margin="1131.582,959.945,0,0"/>
+        <RSI_PID HorizontalAlignment="Left" VerticalAlignment="Top" Style="{DynamicResource RSI_Stencil_PID_Red}" ModelName="TC365" TransmitterName="TT365" Margin="1277.998,467.945,0,0"/>
+        <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="TI304" TransmitterName="TT304" Margin="1575.582,488.445,0,0"/>
+        <RSIText TextWrapping="Wrap" Text="6112-V01" FontSize="18" Foreground="White" Margin="10.779,516.75,1830,510.75"/>
+        <RSI_Navigation HorizontalAlignment="Left" VerticalAlignment="Top" NavigationWindowName="" Style="{DynamicResource RSI_Stencil_Navigation}" Text="6112V01" Margin="10,538.928,0,0"/>
+        <RSIText TextWrapping="Wrap" Text="6112-C02" FontSize="18" Foreground="White" Margin="10.779,765.518,1830,261.982"/>
+        <RSI_Navigation HorizontalAlignment="Left" VerticalAlignment="Top" NavigationWindowName="" Style="{DynamicResource RSI_Stencil_Navigation}" Text="6112C02" Margin="10,787.696,0,0"/>
+        <RSI_Navigation HorizontalAlignment="Left" VerticalAlignment="Top" NavigationWindowName="" Style="{DynamicResource RSI_Stencil_Navigation}" Text="6112C01" Margin="10,902.445,0,0"/>
+        <RSI_Navigation HorizontalAlignment="Left" VerticalAlignment="Top" NavigationWindowName="" Style="{DynamicResource RSI_Stencil_Navigation}" Text="6112V05" Angle="-180" Margin="1816.138,264.824,0,0"/>
+        <RSIText TextWrapping="Wrap" Text="6112-E11" FontSize="18" Foreground="White" Margin="1816.138,288.08,23.862,739.42"/>
+        <RSIText TextWrapping="Wrap" Text="6112-E03" FontSize="18" Foreground="White" Margin="1816.917,565.005,23.862,462.495"/>
+        <RSI_Navigation HorizontalAlignment="Left" VerticalAlignment="Top" NavigationWindowName="" Style="{DynamicResource RSI_Stencil_Navigation}" Text="6112C01" Margin="1816.138,540.428,0,0"/>
+        <RSI_Navigation HorizontalAlignment="Left" VerticalAlignment="Top" NavigationWindowName="" Style="{DynamicResource RSI_Stencil_Navigation}" Text="6112C01" Angle="-180" Margin="1816.138,694.163,0,0"/>
+        <RSI_Navigation HorizontalAlignment="Left" VerticalAlignment="Top" NavigationWindowName="" Style="{DynamicResource RSI_Stencil_Navigation}" Text="6112C02" Angle="-180" Margin="1816.138,828.796,0,0"/>
+        <RSI_Navigation HorizontalAlignment="Left" VerticalAlignment="Top" NavigationWindowName="" Style="{DynamicResource RSI_Stencil_Navigation}" Text="6912V01" Margin="1816.138,926.3,0,0"/>
+        <RSIText TextWrapping="Wrap" Text="BD" FontFamily="Calibri" FontSize="20" BorderThickness="1" BorderBrush="#FFB68BE2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.547,0.626" Foreground="White" Margin="953.384,51.383,922.511,971.617"/>
+        <RSIText TextWrapping="Wrap" Text="FL" FontFamily="Calibri" FontSize="20" BorderThickness="1" BorderBrush="#FFB68BE2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.547,0.626" Foreground="#FFB68BE2" Margin="953.384,756.412,922.511,266.588"/>
+
+    </Grid>
+</RSISynoptic>

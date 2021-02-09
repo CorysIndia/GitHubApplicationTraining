@@ -1,0 +1,26 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="TrainingApplication01.TrendLabelTransmit"
+	Background="LightGray">
+    <RSIGrid>
+        <RSIStackPanel Orientation="Horizontal" Grid.Row="2">
+            <RSIRectangle Width="20" Height="20" Margin="10,0">
+                <RSIRectangle.Animations>
+                    <Animation>
+                        <ChangePropertyValue PropertyName="Fill" Value="$COLOR"/>
+                    </Animation>
+                </RSIRectangle.Animations>
+            </RSIRectangle>
+            <RSIText Text="$TAGNAME" BorderBrush="Black" BorderThickness="1" MinWidth="80" Margin="10,0" Height="20" TextAlignment="Center" FontSize="13.333" ></RSIText>
+            <RSIText Text="\$TAGNAME.Value.min\" IsInput="True" Background="White"  MinWidth="80" Margin="10,0" Height="20" TextAlignment="Center" FontSize="13.333"></RSIText>
+            <RSIText Text="\$TAGNAME.Value.max\" IsInput="True" Background="White"  MinWidth="80" Margin="10,0" Height="20" TextAlignment="Center" FontSize="13.333"></RSIText>
+            <RSIText Text="\$TAGNAME.Value:#.###\" BorderBrush="Black" BorderThickness="1" MinWidth="80" Margin="10,0" Height="20" TextAlignment="Center" FontSize="13.333"></RSIText>
+            <RSIText Text="\$TAGNAME.Value.CursorValue:#.###\" BorderBrush="Black" BorderThickness="1" MinWidth="80" Margin="10,0" Height="20" TextAlignment="Center" FontSize="13.333"></RSIText>
+            <RSIText Text="\$TAGNAME.EngineeringUnit\" BorderThickness="1" MinWidth="80" Margin="10,0" Height="20" TextAlignment="Center" FontSize="13.333"/>
+        </RSIStackPanel>
+    </RSIGrid>
+</RSIControl>

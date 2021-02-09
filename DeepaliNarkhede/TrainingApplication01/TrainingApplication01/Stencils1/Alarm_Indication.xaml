@@ -1,0 +1,18 @@
+﻿<RSIControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="TrainingApplication01.Stencils1.Alarm_Indication"
+	Width="100" Height="25">
+    <RSICanvas  >
+        <RSIText TextWrapping="Wrap" Text="$TagName" Width="100" Foreground="Maroon" FontSize="18">
+            <RSIText.Animations>
+                <Animation Condition="TAHH.CIN == 1">
+                    <ChangeColor Color="Green"/>
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+</RSIControl>
