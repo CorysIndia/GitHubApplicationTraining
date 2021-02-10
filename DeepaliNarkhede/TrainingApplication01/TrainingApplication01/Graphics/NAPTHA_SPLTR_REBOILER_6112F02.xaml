@@ -2196,9 +2196,9 @@
             <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="TI337" TransmitterName="TT337" Canvas.Left="210.811" Canvas.Top="514.38"/>
             <RSI_PID HorizontalAlignment="Left" VerticalAlignment="Top" Style="{DynamicResource RSI_Stencil_PID_Red}" ModelName="TC331" TransmitterName="TT331" Canvas.Left="384.424" Canvas.Top="661.5"/>
             <RSI_PID HorizontalAlignment="Left" VerticalAlignment="Top" Style="{DynamicResource RSI_Stencil_PID_Red}" ModelName="TC330" TransmitterName="TT330" Canvas.Left="254.916" Canvas.Top="661.5"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="230.5" Canvas.Top="483.055" TagName="TAHH337"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="673" Canvas.Top="592.055" TagName="PAHH331"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="849.699" Canvas.Top="636.744" TagName="PALL316"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="230.5" Canvas.Top="483.055" TagName="TAHH337"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="673" Canvas.Top="592.055" TagName="PAHH331"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="849.699" Canvas.Top="636.744" TagName="PALL316"/>
             <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="PI331" TransmitterName="PT331" Canvas.Left="682.333" Canvas.Top="622.7"/>
             <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="PI316" TransmitterName="PT316" Canvas.Left="866.99" Canvas.Top="666.833"/>
             <RSI_PID HorizontalAlignment="Left" VerticalAlignment="Top" Style="{DynamicResource RSI_Stencil_PID_Red}" ModelName="PC381" TransmitterName="PT381" Canvas.Left="366.51" Canvas.Top="759.843"/>
@@ -2229,10 +2229,10 @@
                     </LinearGradientBrush>
                 </RSI_BlockValve.ColorOpen>
             </RSI_BlockValve>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1163.958" Canvas.Top="136.327" TagName="ZI302"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="1163.958" Canvas.Top="136.327" TagName="ZI302"/>
             <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="TI338" TransmitterName="TT338" Canvas.Left="1508" Canvas.Top="234.045"/>
             <RSILine Height="29.387" Canvas.Left="1566.083" Canvas.Top="271.512" Width="5.667" Stroke="White" LineStyle="Dot" Orientation="Vertical"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1732.958" Canvas.Top="287.401" TagName="FALL313"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="1732.958" Canvas.Top="287.401" TagName="FALL313"/>
             <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="TI339" TransmitterName="TT339" Canvas.Left="1508" Canvas.Top="324.689"/>
             <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="TI361" TransmitterName="TT361" Canvas.Left="1508" Canvas.Top="383.232"/>
             <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="FI313" TransmitterName="FT313" Canvas.Left="1732.958" Canvas.Top="322.857"/>
@@ -2244,15 +2244,15 @@
             <RSILine Height="4.917" Canvas.Left="1672.791" Canvas.Top="473.514" Width="23.734" Stroke="#FF7C4AA1"/>
             <RSILine Height="5.325" Canvas.Left="1672.791" Canvas.Top="491.481" Width="23.734" Stroke="#FF7C4AA1"/>
             <RSILine Height="5.25" Canvas.Left="1677.817" Canvas.Top="483.431" Width="13.307" Stroke="#FF7C4AA1"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1272.625" Canvas.Top="552.941" TagName="BALL302A"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1402.625" Canvas.Top="552.941" TagName="BALL302B"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1534.958" Canvas.Top="551.644" TagName="BALL302C"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1272.625" Canvas.Top="576.964" TagName="BALL302D"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1402.625" Canvas.Top="576.964" TagName="BALL302E"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1534.958" Canvas.Top="576.964" TagName="BALL302F"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1246.625" Canvas.Top="759.843" TagName="PALL317"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1242.292" Canvas.Top="855.593" TagName="PAL329"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1736.625" Canvas.Top="568.632" TagName="FALL313"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="1272.625" Canvas.Top="552.941" TagName="BALL302A"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="1402.625" Canvas.Top="552.941" TagName="BALL302B"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="1534.958" Canvas.Top="551.644" TagName="BALL302C"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="1272.625" Canvas.Top="576.964" TagName="BALL302D"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="1402.625" Canvas.Top="576.964" TagName="BALL302E"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="1534.958" Canvas.Top="576.964" TagName="BALL302F"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="1246.625" Canvas.Top="759.843" TagName="PALL317"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="1242.292" Canvas.Top="855.593" TagName="PAL329"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="1736.625" Canvas.Top="568.632" TagName="FALL313"/>
             <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="TI360" TransmitterName="TT360" Canvas.Left="1508" Canvas.Top="489.523"/>
             <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="FI313" TransmitterName="FT313" Canvas.Left="1717.791" Canvas.Top="598.528"/>
             <RSI_PID HorizontalAlignment="Left" VerticalAlignment="Top" Style="{DynamicResource RSI_Stencil_PID_Green}" ModelName="FC312" TransmitterName="FT312" Canvas.Left="1788.613" Canvas.Top="454.152"/>

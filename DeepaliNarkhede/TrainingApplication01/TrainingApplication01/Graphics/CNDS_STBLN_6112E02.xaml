@@ -807,7 +807,7 @@
                     </LinearGradientBrush>
                 </RSI_ControlValve.ColorTravel>
             </RSI_ControlValve>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="665.115" Canvas.Top="220.908" TagName="ZAH336"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="665.115" Canvas.Top="220.908" TagName="ZAH336"/>
             <RSIText TextWrapping="Wrap" Text="LV306" FontSize="18" Height="20.5" Canvas.Left="696.833" Canvas.Top="849.058" Width="49.875" Foreground="White"/>
             <RSIText TextWrapping="Wrap" Text="LV303B" FontSize="18" Height="20.5" Canvas.Left="741.833" Canvas.Top="1009.785" Width="58.95" Foreground="White"/>
             <RSIText TextWrapping="Wrap" Text="OPEN" FontSize="18" Height="20.5" Canvas.Left="815.249" Canvas.Top="854.123" Width="49.875" Foreground="White"/>

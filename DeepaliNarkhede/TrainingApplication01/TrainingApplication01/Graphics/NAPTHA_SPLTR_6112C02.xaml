@@ -865,7 +865,7 @@
             <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="TI329" TransmitterName="TT329" Canvas.Left="729.613" Canvas.Top="350.698"/>
             <RSI_PID HorizontalAlignment="Left" VerticalAlignment="Top" Style="{DynamicResource RSI_Stencil_PID_Red}" ModelName="LC306" TransmitterName="LT306" Canvas.Left="726.238" Canvas.Top="471.301"/>
             <RSI_PID HorizontalAlignment="Left" VerticalAlignment="Top" Style="{DynamicResource RSI_Stencil_PID_Red}" ModelName="FC322" TransmitterName="FT322" Canvas.Left="559.571" Canvas.Top="631.496"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="759.5" Canvas.Top="567.394" TagName="LALL307"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="759.5" Canvas.Top="567.394" TagName="LALL307"/>
             <RSI_Pump HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_Pump}" VerticalAlignment="Top" ModelName="6112-P05A" MotorActuatorName="M_6112P05A" Canvas.Left="773.488" Canvas.Top="712.355" Orientation="West">
                 <RSI_Pump.ColorStop>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -960,7 +960,7 @@
             <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="PI311" TransmitterName="PT311" Canvas.Left="1125.839" Canvas.Top="521.547"/>
             <RSI_PVI HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_PVI_Green}" VerticalAlignment="Top" ModelName="TI349" TransmitterName="TT349" Canvas.Left="1447.391" Canvas.Top="521.547"/>
             <RSI_PID HorizontalAlignment="Left" VerticalAlignment="Top" Style="{DynamicResource RSI_Stencil_PID_Red}" ModelName="FC312" TransmitterName="FT312" Canvas.Left="1632.839" Canvas.Top="521.039"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1557.839" Canvas.Top="595.021" TagName="PAL313"/>
+            <Stencils1:Alarm_Indication Height="26" Canvas.Left="1557.839" Canvas.Top="595.021" TagName="PAL313"/>
             <RSILine Height="4" Canvas.Left="102.388" Canvas.Top="274.831" Width="814.65" StrokeThickness="4" ArrowHeadLength="20" ArrowHeadWidth="20">
                 <RSILine.Stroke>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

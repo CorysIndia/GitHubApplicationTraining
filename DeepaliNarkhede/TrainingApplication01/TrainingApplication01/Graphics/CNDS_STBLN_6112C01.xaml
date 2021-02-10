@@ -1505,12 +1505,12 @@
 
 
 
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="621.776" Canvas.Top="948" TagName="61-PAL-394"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="621.776" Canvas.Top="980.5" TagName="61-PAL-395"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1008.094" Canvas.Top="769.907" TagName="61-PAL-392"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="1008.094" Canvas.Top="802.407" TagName="61-PAL-393"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="640.813" Canvas.Top="779.443" TagName="PAL 305"/>
-            <Stencils1:Alarm_Indication Height="100" Canvas.Left="771.332" Canvas.Top="461.504" TagName="LALL 302"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="621.776" Canvas.Top="948" TagName="61-PAL-394"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="621.776" Canvas.Top="980.5" TagName="61-PAL-395"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="1008.094" Canvas.Top="769.907" TagName="61-PAL-392"/>
+            <Stencils1:Alarm_Indication Height="28" Canvas.Left="1008.094" Canvas.Top="802.407" TagName="61-PAL-393"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="640.813" Canvas.Top="779.443" TagName="PAL 305"/>
+            <Stencils1:Alarm_Indication Height="25" Canvas.Left="771.332" Canvas.Top="461.504" TagName="LALL 302"/>
             <RSI_Pump HorizontalAlignment="Left" Style="{DynamicResource RSI_Stencil_Pump}" VerticalAlignment="Top" ModelName="6112-P05A" MotorActuatorName="M_6112P05A" Canvas.Left="790.988" Canvas.Top="808.855" Orientation="West">
                 <RSI_Pump.ColorStop>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
