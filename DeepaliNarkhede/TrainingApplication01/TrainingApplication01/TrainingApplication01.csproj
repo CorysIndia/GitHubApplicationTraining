@@ -287,6 +287,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Faceplate\PumpFaceplate.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Graphics\CNDS_STBLN_6112C01.xaml">
       <SubType>Form</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -417,6 +421,9 @@
     <Compile Include="BootStrap\RSIEmulationViewModel.cs" />
     <Compile Include="ESDScreen.xaml.cs">
       <DependentUpon>ESDScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faceplate\PumpFaceplate.xaml.cs">
+      <DependentUpon>PumpFaceplate.xaml</DependentUpon>
     </Compile>
     <Compile Include="Graphics\CNDS_STBLN_6112C01.xaml.cs">
       <DependentUpon>CNDS_STBLN_6112C01.xaml</DependentUpon>

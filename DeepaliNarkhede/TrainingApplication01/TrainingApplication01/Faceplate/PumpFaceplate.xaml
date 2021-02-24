@@ -1,0 +1,135 @@
+﻿<RSIFacePlate
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="TrainingApplication01.Faceplate.PumpFaceplate"
+	Width="320" 
+	Height="299"
+	Background="LightGray">
+    <RSICanvas  >
+        <RSIRectangle
+            x:Name="Rectangle4"
+            Canvas.Left="3"
+            Canvas.Top="2"
+            Width="315"
+            Height="42"
+            Fill="#FFD2D2EB"
+            Stroke="#FFA5A58C"
+            StrokeThickness="1" />
+        <RSIRectangle
+            x:Name="Rectangle5"
+            Canvas.Left="260"
+            Canvas.Top="43"
+            Width="60"
+            Height="256"
+            Fill="#FFD2D2EB"
+            Stroke="#FFA5A58C"
+            StrokeThickness="1" />
+        <RSIText
+                x:Name="TAGNAME"
+                Canvas.Left="7"
+                Canvas.Top="5"
+                Width="309"
+                Height="16"
+                VerticalAlignment="Center"
+                Foreground="#FF000000"
+                Text="\M_$TAGNAME.ProcessDisplay\.\M_$TAGNAME.PointDescriptor\ "
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="14"
+                TextElement.FontWeight="Bold" />
+
+        <RSIText
+                x:Name="DescriptionField_0"
+                Canvas.Left="7"
+                Canvas.Top="24"
+                Width="Auto"
+                Height="16"
+                VerticalAlignment="Center"
+                Foreground="#FF000000"
+                Text="$TAGNAME AVAILABLE STATUS"
+                TextElement.FontFamily="Arial"
+                TextElement.FontSize="14" />
+
+        <RSIText
+                Canvas.Left="262"
+                Canvas.Top="85.294"
+                Width="54"
+                Height="33"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                FontFamily="Arial"
+                FontSize="10"
+                FontWeight="Bold"
+                IsHitTestVisible="False"
+                Text="REMOTE"
+                TextAlignment="Center">
+            <RSIText.Animations>
+                <Animation Condition="M_$TAGNAME.CommandPosition = 0">
+                    <ChangeText Text="LOCAL" />
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+
+        <RSIButton
+                Canvas.Left="262"
+                Canvas.Top="151.794"
+                Width="54"
+                Height="20"
+                Content="START"
+                FontWeight="Bold">
+            <RSIButton.Animations>
+                <Animation Condition="M_$TAGNAME.CommandPosition = 0 OR (M_$TAGNAME.CommandPosition = 1 AND M_$TAGNAME.Mode = 0)">
+                    <ChangePropertyValue PropertyName="IsEnabled" Value="False" />
+                </Animation>
+                <ClickAnimation Condition="M_$TAGNAME.CommandPosition = 1 AND M_$TAGNAME.Mode = 1">
+                    <Assignment Expression="1" Variable="M_$TAGNAME.DCSSwitch" />
+                </ClickAnimation>
+                <ClickAnimation Condition="M_6112P02A.Status == 1">
+                    <Assignment Expression="1" Variable="M_$TAGNAME"/>
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+        <RSIButton
+                Canvas.Left="262"
+                Canvas.Top="176.794"
+                Width="54"
+                Height="20"
+                Content="STOP"
+                FontWeight="Bold">
+            <RSIButton.Animations>
+                <Animation Condition="M_$TAGNAME.CommandPosition = 0 OR (M_$TAGNAME.CommandPosition = 1 AND M_$TAGNAME.Mode = 0)">
+                    <ChangePropertyValue PropertyName="IsEnabled" Value="False" />
+                </Animation>
+                <ClickAnimation Condition="M_$TAGNAME.CommandPosition = 1 AND M_$TAGNAME.Mode = 1">
+                    <Assignment Expression="0" Variable="M_$TAGNAME.DCSSwitch" />
+                </ClickAnimation>
+            </RSIButton.Animations>
+        </RSIButton>
+
+        <RSIText
+                    Grid.ColumnSpan="2"
+                    Padding="30,0,0,0"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    BorderBrush="Lime"
+                    BorderThickness="2"
+                    Text="TRIPPED" Canvas.Left="87.928" Canvas.Top="161.844">
+            <RSIText.Animations>
+                <Animation Condition="M_$TAGNAME.ESD = 1">
+                    <ChangeText Text="TRIPPED" />
+                    <ChangePropertyValue PropertyName="BorderBrush" Value="Red" />
+                </Animation>
+                <Animation Condition="M_$TAGNAME.ESD = 0 AND M_$TAGNAME.Status = 0">
+                    <ChangeText Text="STOPPED" />
+                    <ChangePropertyValue PropertyName="BorderBrush" Value="Red" />
+                </Animation>
+                <Animation Condition="M_$TAGNAME.ESD = 0 AND M_$TAGNAME.Status = 1">
+                    <ChangeText Text="RUNNING" />
+                    <ChangePropertyValue PropertyName="BorderBrush" Value="Lime" />
+                </Animation>
+            </RSIText.Animations>
+        </RSIText>
+    </RSICanvas>
+</RSIFacePlate>
